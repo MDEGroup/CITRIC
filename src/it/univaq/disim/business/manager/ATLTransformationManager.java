@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
@@ -41,18 +40,22 @@ import anatlyzer.atlext.ATL.Binding;
 import anatlyzer.atlext.ATL.InPatternElement;
 import anatlyzer.atlext.ATL.LazyRule;
 import anatlyzer.atlext.ATL.MatchedRule;
-import anatlyzer.atlext.ATL.ModuleElement;
 import anatlyzer.atlext.ATL.OutPatternElement;
 import anatlyzer.atlext.ATL.Rule;
 import anatlyzer.atlext.ATL.SimpleInPatternElement;
 import anatlyzer.atlext.ATL.SimpleOutPatternElement;
 import anatlyzer.atlext.OCL.NavigationOrAttributeCallExp;
-import anatlyzer.atlext.OCL.OperationCallExp;
-import anatlyzer.atlext.OCL.OperatorCallExp;
 import anatlyzer.atlext.OCL.impl.NavigationOrAttributeCallExpImpl;
 import it.univaq.disim.business.datamodel.ATLBinding;
+import it.univaq.disim.business.datamodel.RuleBinding;
 
 public class ATLTransformationManager {
+	
+//	ATLModel atlModel = new ATLModel();
+//	
+//	public ATLTransformationManager(String atlTransformationPath) {
+//		this.atlModel = loadATLTransformation(atlTransformationPath);
+//	}
 
 	public static List<MatchedRule> getAllTMatchedRules(ATLModel atlModel) {
 		List<MatchedRule> callableMethods = new ArrayList<MatchedRule>();
@@ -145,89 +148,181 @@ public class ATLTransformationManager {
 //		return atlBindings;
 //	}
 	
-	
 	public static List<ATLBinding> getAllBindings(String transformationPath){
 		List<ATLBinding> atlBindings = new ArrayList<ATLBinding>();
-		
-		AtlParser atlParser = new AtlParser();
-		ModelFactory modelFactory = new EMFModelFactory();
-		IReferenceModel atlMetamodel;
-		try {
-			atlMetamodel = modelFactory.getBuiltInResource("ATL.ecore");
-			EMFModel atlDynModel = (EMFModel) modelFactory.newModel(atlMetamodel);
-			atlParser.inject(atlDynModel, transformationPath);
-			Resource originalTrafo = atlDynModel.getResource();
-			ATLModel atlModel = new ATLModel(originalTrafo, originalTrafo.getURI().toFileString(), true);
-			
-			
-			// DEFINE OCL AND HELPER
-			OCL<?, EClassifier, ?, ?, ?, EParameter, ?, ?, ?, Constraint, EClass, EObject> ocl;
-			OCLHelper<EClassifier, ?, ?, Constraint> helper;
-			
-			// INSTANCIATE OCL
-			ocl = OCL.newInstance(EcoreEnvironmentFactory.INSTANCE);
-			// INSTANCIATE NEW HELPER FROM OCLEXPRESSION
-			helper = ocl.createOCLHelper();
-			// SET HELPER CONTEXT
-			helper.setContext(ATLPackage.eINSTANCE.getModule());
-			
-			// CREATE OCLEXPRESSION
-			OCLExpression<EClassifier> expression = helper.createQuery("Rule.allInstances()");
-			// CREATE QUERY FROM OCLEXPRESSION
-			Query<EClassifier, EClass, EObject> query = ocl.createQuery(expression);
-			
-			// EVALUATE OCL
-			HashSet<Object> success = (HashSet<Object>) query.evaluate(atlModel.getRoot());
-			for (Object object : success) {
-				Rule rule = (Rule) object;
-				//Get only Matched and Lazy rules in which we have informations about FROM side
-				if(rule instanceof MatchedRule || rule instanceof LazyRule) {
-					
-//					System.out.println(mR.getName());
-					ATLBinding atlBinding = new ATLBinding();
-					atlBinding.setRuleType(rule.getClass().getSimpleName());
-					atlBinding.setRuleName(rule.getName());
-					
-					if(rule instanceof MatchedRule) {
-						atlBinding.setMetaclassName(getInputMetaclassNameFromMatchedRule((MatchedRule) rule));
-					}else if(rule instanceof LazyRule) {
-						atlBinding.setMetaclassName(getInputMetaclassNameFromLazyRule((LazyRule) rule));
-					}
-					
-//					System.out.println("["+rule.getClass().getSimpleName()+"] "+rule.getName());
-					if(rule.getOutPattern() != null) {
-						for(OutPatternElement kk : rule.getOutPattern().getElements()) {
-							Set<String> atlRuleBindings = new HashSet<String>();
-							EList<Binding> bb = kk.getBindings();
-							for (Binding binding : bb) {
-//								System.out.println(binding.getValue());
-								if(binding.getValue() instanceof NavigationOrAttributeCallExp) {
-									NavigationOrAttributeCallExp fromBindingSide = (NavigationOrAttributeCallExp) binding.getValue();
-									atlRuleBindings.add(fromBindingSide.getName());
-//									System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName() +" = "+ fromBindingSide.getName());
-//								} else if(binding.getValue() instanceof CollectionOperationCallExpImpl) {
-//									CollectionOperationCallExpImpl fromBindingSide = (CollectionOperationCallExpImpl) binding.getValue();
-//									System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getArguments().get(0));
-								} else if(binding.getValue() instanceof NavigationOrAttributeCallExpImpl) {
-									NavigationOrAttributeCallExpImpl fromBindingSide = (NavigationOrAttributeCallExpImpl) binding.getValue();
-									atlRuleBindings.add(fromBindingSide.getName());
-//									System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getName());
-								}
-							}
-							atlBinding.setBindings(atlRuleBindings);
-							
-						}
-					}
-					atlBindings.add(atlBinding);
-				}
-			}
-		} catch (ATLCoreException | ParserException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		ATLModel atlModel = ATLTransformationManager.loadATLTransformation(transformationPath);
+		List<MatchedRule> rules = ATLTransformationManager.getAllTMatchedRules(atlModel);
+		for (MatchedRule rule : rules) {
+			ATLBinding atlBinding = new ATLBinding();
+			atlBinding.setRuleName(rule.getName());
+			atlBinding.setRuleType(rule.getClass().getName());
+			atlBinding.setInputMetaclassName(ATLTransformationManager.getInputMetaclassNameFromMatchedRule(rule));
+			atlBinding.setOutputMetaclassName(ATLTransformationManager.getOutputMetaclassNameFromRule(rule));
+			atlBinding.setBindings(ATLTransformationManager.getRuleBindings(rule));
+			atlBindings.add(atlBinding);
 		}
 		
 		return atlBindings;
 	}
+	
+	
+	private static List<RuleBinding> getRuleBindings(Rule rule){
+		List<RuleBinding> result = new ArrayList<RuleBinding>();
+		EList<OutPatternElement> elements = rule.getOutPattern().getElements();
+		for (OutPatternElement outPatternElement : elements) {
+			RuleBinding ruleBinding = new RuleBinding();
+				EList<Binding> bb = outPatternElement.getBindings();
+				for (Binding binding : bb) {
+					if(binding.getValue() instanceof NavigationOrAttributeCallExp) {
+						NavigationOrAttributeCallExp fromBindingSide = (NavigationOrAttributeCallExp) binding.getValue();
+						ruleBinding.setInput(binding.getPropertyName());
+						ruleBinding.setOutput(fromBindingSide.getName());
+//						System.out.println("\t["+fromBindingSide+"]"+binding.getPropertyName() +" = "+ fromBindingSide.getName());
+					} else if(binding.getValue() instanceof NavigationOrAttributeCallExpImpl) {
+						NavigationOrAttributeCallExpImpl fromBindingSide = (NavigationOrAttributeCallExpImpl) binding.getValue();
+						ruleBinding.setInput(binding.getPropertyName());
+						ruleBinding.setOutput(fromBindingSide.getName());
+//						System.out.println("\t["+fromBindingSide+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getName());
+					} 
+//						else if(binding.getValue() instanceof CollectionOperationCallExpImpl) {
+//						CollectionOperationCallExpImpl fromBindingSide = (CollectionOperationCallExpImpl) binding.getValue();
+//						System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getArguments().get(0));
+//					}
+				}
+				result.add(ruleBinding);
+		}
+		return result;
+	}
+	
+//	private static List<String> getRuleBindings(Rule rule){
+//		List<String> result = new ArrayList<String>();
+//		EList<OutPatternElement> elements = rule.getOutPattern().getElements();
+//		for (OutPatternElement outPatternElement : elements) {
+//			//Input Binding
+//			EList<Binding> bb = outPatternElement.getBindings();
+//			for (Binding binding : bb) {
+//				if(binding.getValue() instanceof NavigationOrAttributeCallExp) {
+//					NavigationOrAttributeCallExp fromBindingSide = (NavigationOrAttributeCallExp) binding.getValue();
+//					result.add(fromBindingSide.getName());
+//				} else if(binding.getValue() instanceof NavigationOrAttributeCallExpImpl) {
+//					NavigationOrAttributeCallExpImpl fromBindingSide = (NavigationOrAttributeCallExpImpl) binding.getValue();
+//					result.add(fromBindingSide.getName());
+////					System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getName());
+//				}
+//			}
+//			
+//			//Output Binding
+//			if(outPatternElement instanceof SimpleOutPatternElement) {
+//				SimpleOutPatternElement simpleOutPatternElement = (SimpleOutPatternElement) outPatternElement;
+//				EList<Binding> bindings = simpleOutPatternElement.getBindings();
+//				for (Binding binding : bindings) {
+//					result.add(binding.getPropertyName());
+//				}
+//			}
+//		}
+//		return result;
+//	}
+	
+//	private static List<String> getOutputBindingsFromRule(Rule rule){
+//		List<String> result = new ArrayList<String>();
+//		EList<OutPatternElement> elements = rule.getOutPattern().getElements();
+//		for (OutPatternElement outPatternElement : elements) {
+//			if(outPatternElement instanceof SimpleOutPatternElement) {
+//				SimpleOutPatternElement simpleOutPatternElement = (SimpleOutPatternElement) outPatternElement;
+////				bindings = simpleOutPatternElement.getType().getName();
+//				EList<Binding> bindings = simpleOutPatternElement.getBindings();
+//				for (Binding binding : bindings) {
+//					result.add(binding.getPropertyName());
+//				}
+//			}
+//		}
+//		return result;
+//	}
+	
+	
+	
+//	public static List<ATLBinding> getAllBindings_TO_DELETE(String transformationPath){
+//		List<ATLBinding> atlBindings = new ArrayList<ATLBinding>();
+//		
+//		AtlParser atlParser = new AtlParser();
+//		ModelFactory modelFactory = new EMFModelFactory();
+//		IReferenceModel atlMetamodel;
+//		try {
+//			atlMetamodel = modelFactory.getBuiltInResource("ATL.ecore");
+//			EMFModel atlDynModel = (EMFModel) modelFactory.newModel(atlMetamodel);
+//			atlParser.inject(atlDynModel, transformationPath);
+//			Resource originalTrafo = atlDynModel.getResource();
+//			ATLModel atlModel = new ATLModel(originalTrafo, originalTrafo.getURI().toFileString(), true);
+//			
+//			
+//			// DEFINE OCL AND HELPER
+//			OCL<?, EClassifier, ?, ?, ?, EParameter, ?, ?, ?, Constraint, EClass, EObject> ocl;
+//			OCLHelper<EClassifier, ?, ?, Constraint> helper;
+//			
+//			// INSTANCIATE OCL
+//			ocl = OCL.newInstance(EcoreEnvironmentFactory.INSTANCE);
+//			// INSTANCIATE NEW HELPER FROM OCLEXPRESSION
+//			helper = ocl.createOCLHelper();
+//			// SET HELPER CONTEXT
+//			helper.setContext(ATLPackage.eINSTANCE.getModule());
+//			
+//			// CREATE OCLEXPRESSION
+//			OCLExpression<EClassifier> expression = helper.createQuery("Rule.allInstances()");
+//			// CREATE QUERY FROM OCLEXPRESSION
+//			Query<EClassifier, EClass, EObject> query = ocl.createQuery(expression);
+//			
+//			// EVALUATE OCL
+//			HashSet<Object> success = (HashSet<Object>) query.evaluate(atlModel.getRoot());
+//			for (Object object : success) {
+//				Rule rule = (Rule) object;
+//				//Get only Matched and Lazy rules in which we have informations about FROM side
+//				if(rule instanceof MatchedRule || rule instanceof LazyRule) {
+//					
+////					System.out.println(mR.getName());
+//					ATLBinding atlBinding = new ATLBinding();
+//					atlBinding.setRuleType(rule.getClass().getSimpleName());
+//					atlBinding.setRuleName(rule.getName());
+//					
+//					if(rule instanceof MatchedRule) {
+//						atlBinding.setMetaclassName(getInputMetaclassNameFromMatchedRule((MatchedRule) rule));
+//					}else if(rule instanceof LazyRule) {
+//						atlBinding.setMetaclassName(getInputMetaclassNameFromLazyRule((LazyRule) rule));
+//					}
+//					
+////					System.out.println("["+rule.getClass().getSimpleName()+"] "+rule.getName());
+//					if(rule.getOutPattern() != null) {
+//						for(OutPatternElement kk : rule.getOutPattern().getElements()) {
+//							Set<String> atlRuleBindings = new HashSet<String>();
+//							EList<Binding> bb = kk.getBindings();
+//							for (Binding binding : bb) {
+////								System.out.println(binding.getValue());
+//								if(binding.getValue() instanceof NavigationOrAttributeCallExp) {
+//									NavigationOrAttributeCallExp fromBindingSide = (NavigationOrAttributeCallExp) binding.getValue();
+//									atlRuleBindings.add(fromBindingSide.getName());
+////									System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName() +" = "+ fromBindingSide.getName());
+////								} else if(binding.getValue() instanceof CollectionOperationCallExpImpl) {
+////									CollectionOperationCallExpImpl fromBindingSide = (CollectionOperationCallExpImpl) binding.getValue();
+////									System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getArguments().get(0));
+//								} else if(binding.getValue() instanceof NavigationOrAttributeCallExpImpl) {
+//									NavigationOrAttributeCallExpImpl fromBindingSide = (NavigationOrAttributeCallExpImpl) binding.getValue();
+//									atlRuleBindings.add(fromBindingSide.getName());
+////									System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getName());
+//								}
+//							}
+//							atlBinding.setBindings(atlRuleBindings);
+//							
+//						}
+//					}
+//					atlBindings.add(atlBinding);
+//				}
+//			}
+//		} catch (ATLCoreException | ParserException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+//		return atlBindings;
+//	}
 	
 //	private static void getAllBindingOperatorNames(Binding binding) {
 //		System.out.println("\t" + "[" + binding.getValue().eClass() + "] " + binding.getValue().eClass().getName());
@@ -357,11 +452,13 @@ public class ATLTransformationManager {
 //		String transformationPath = "resources/test/Company2CMS.atl";
 		String transformationPath = "resources/running_example/transformations/KM32EMF.atl";
 		
-		ATLModel atlModel = ATLTransformationManager.loadATLTransformation(transformationPath);
-		for (MatchedRule rule : ATLTransformationManager.getAllTMatchedRules(atlModel)) {
-			System.out.println(rule.getName());
-			System.out.println("\t"+ATLTransformationManager.getOutputMetaclassNameFromRule(rule));
-		}
+		ATLTransformationManager.getAllBindings(transformationPath);
+		
+//		ATLModel atlModel = ATLTransformationManager.loadATLTransformation(transformationPath);
+//		for (MatchedRule rule : ATLTransformationManager.getAllTMatchedRules(atlModel)) {
+//			System.out.println(rule.getName());
+//			System.out.println("\t"+ATLTransformationManager.getOutputMetaclassNameFromRule(rule));
+//		}
 		
 //		List<ATLBinding> atlBindings = ATLTransformationManager.getAllBindings(transformationPath);
 //		for (ATLBinding atlBinding : atlBindings) {

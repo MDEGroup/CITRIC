@@ -7,6 +7,7 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 
 import it.univaq.disim.business.datamodel.ATLBinding;
 import it.univaq.disim.business.datamodel.ModelStructuralFeature;
+import it.univaq.disim.business.datamodel.RuleBinding;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
 import it.univaq.disim.business.manager.MetamodelManager;
@@ -44,23 +45,23 @@ public class InformationLoss{
 		int countMetaclassOccurrences = 0;
 		int countNumberOfModelImpactedStructuralFeatures = 0;
 		for (ATLBinding atlBinding : atlBindings) {
-			if(!atlBinding.getMetaclassName().equalsIgnoreCase(tmp)) {
+			if(!atlBinding.getInputMetaclassName().equalsIgnoreCase(tmp)) {
 				//If exists a rule that impacts with a model metaclass 
 				for (ModelStructuralFeature modelStructuralFeature : modelStructuralFeatures) {
-					if(atlBinding.getMetaclassName().equalsIgnoreCase(modelStructuralFeature.geteClass().getName())) {
+					if(atlBinding.getInputMetaclassName().equalsIgnoreCase(modelStructuralFeature.geteClass().getName())) {
 						//used to avoid multiple rule with the same input metaclass
-						tmp = atlBinding.getMetaclassName();
+						tmp = atlBinding.getInputMetaclassName();
 						countMetaclassOccurrences++;
 						
 						//Let calculate StructuralFeatures
-						for (String ruleBinding : atlBinding.getBindings()) {
+						for (RuleBinding ruleBinding : atlBinding.getBindings()) {
 							for (EStructuralFeature modelMetaclassStructuralFeature : modelStructuralFeature.geteStructuralFeatures()) {
-								if(modelMetaclassStructuralFeature.getName().equalsIgnoreCase(ruleBinding)) {
+								if(modelMetaclassStructuralFeature.getName().equalsIgnoreCase(ruleBinding.getInput())) {
 									countNumberOfModelImpactedStructuralFeatures++;
 								}
 							}
 							for (EReference modelMetaclassReference : modelStructuralFeature.geteReferences()) {
-								if(modelMetaclassReference.getName().equalsIgnoreCase(ruleBinding)){
+								if(modelMetaclassReference.getName().equalsIgnoreCase(ruleBinding.getInput())){
 									countNumberOfModelImpactedStructuralFeatures++;
 								}
 							}

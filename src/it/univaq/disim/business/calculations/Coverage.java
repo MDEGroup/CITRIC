@@ -8,6 +8,7 @@ import it.univaq.disim.business.datamodel.ATLBinding;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
 import it.univaq.disim.business.manager.MetamodelManager;
+import it.univaq.disim.common.utils.Utils;
 
 public class Coverage{
 
@@ -36,20 +37,24 @@ public class Coverage{
 			}
 
 			if (nMetaclassesIntoInputMetamodel > 0 && nStructuralFeaturesIntoInputMetamodel > 0) {
-				coverage = (float) (((nRules / nMetaclassesIntoInputMetamodel)
-						+ (nTransformationBindings / nStructuralFeaturesIntoInputMetamodel)) * 0.5);
+				coverage = (float) (
+									((float)
+											((float) nRules / nMetaclassesIntoInputMetamodel) +
+											((float) nTransformationBindings / nStructuralFeaturesIntoInputMetamodel)
+									) * 0.5);
 			}
 			
-			System.out.println("# Input Metamodel Metaclasses: "+nMetaclassesIntoInputMetamodel);
-			System.out.println("# Input Metamodel Structural Features: "+nStructuralFeaturesIntoInputMetamodel);
-			System.out.println("# Transformation Rules: "+nRules);
-			System.out.println("# Transformation Bindings: "+nTransformationBindings);
+			System.out.println("a) # Transformation Rules: "+nRules);
+			System.out.println("b) # Input Metamodel Metaclasses: "+nMetaclassesIntoInputMetamodel);
+			System.out.println("c) # Transformation Bindings: "+nTransformationBindings);
+			System.out.println("d) # Input Metamodel Structural Features: "+nStructuralFeaturesIntoInputMetamodel);
+			System.out.println("Cov(T, MM) = [(a/b)+(c/d)*0.5]");
 		} catch (ParserException e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();
 		}
 
-		System.out.println("Cov(" + transformation.getName() + ") = " + coverage);
+		System.out.println("Cov(" + transformation.getName() + ", "+ Utils.getNameFromPath(transformation.getInputMetamodel())+") = " + coverage);
 		return coverage;
 	}
 	

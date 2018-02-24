@@ -91,6 +91,13 @@ public class Utils {
 		      sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
 		   return sb.toString();
 	}
+
+
+
+	public static String getNameFromPath(String path) {
+//		Path p = Paths.get(path);
+		return FilenameUtils.getName(path);
+	}
 	
 
 }

@@ -2,13 +2,13 @@ package it.univaq.disim.business.datamodel;
 
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ATLBinding {
 	private String ruleType;
 	private String ruleName;
-	private String metaclassName;
-	private Set<String> bindings;
+	private String inputMetaclassName;
+	private String outputMetaclassName;
+	private List<RuleBinding> bindings;
 	
 	
 	
@@ -24,16 +24,23 @@ public class ATLBinding {
 	public void setRuleName(String ruleName) {
 		this.ruleName = ruleName;
 	}
-	public String getMetaclassName() {
-		return metaclassName;
+	public String getInputMetaclassName() {
+		return inputMetaclassName;
 	}
-	public void setMetaclassName(String metaclassName) {
-		this.metaclassName = metaclassName;
+	public void setInputMetaclassName(String inputMetaclassName) {
+		this.inputMetaclassName = inputMetaclassName;
 	}
-	public Set<String> getBindings() {
+	
+	public String getOutputMetaclassName() {
+		return outputMetaclassName;
+	}
+	public void setOutputMetaclassName(String outputMetaclassName) {
+		this.outputMetaclassName = outputMetaclassName;
+	}
+	public List<RuleBinding> getBindings() {
 		return bindings;
 	}
-	public void setBindings(Set<String> bindings) {
+	public void setBindings(List<RuleBinding> bindings) {
 		this.bindings = bindings;
 	}
 	
