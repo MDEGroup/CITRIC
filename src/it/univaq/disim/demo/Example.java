@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import it.univaq.disim.business.calculations.Coverage;
-import it.univaq.disim.business.calculations.InformationLoss;
 import it.univaq.disim.business.controller.ChainController;
 import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
