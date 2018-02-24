@@ -1,0 +1,71 @@
+-- @name		SVG
+-- @version		1.0
+-- @domains     SVG
+-- @authors		Yu Sun, Frédéric Jouault
+-- @date		2007/10/07
+-- @description	This is a subsut of metamodel for SVG.
+-- @see         "KM3 User Manual", http://www.eclipse.org/gmt/atl/doc/
+
+package SVG {
+
+	-- Every class should extend LocatedElement, directly or indirectly.
+	-- This is a technical constraint to support text-to-model traceability.
+	abstract class LocatedElement {
+		attribute location[0-1] : String;
+		attribute commentsBefore[*] ordered : String;
+		attribute commentsAfter[*] ordered : String;
+	}
+
+-- BEGIN DSL-specific classes
+
+	class Svg extends LocatedElement {
+		attribute width : Integer;
+		attribute height : Integer;
+		attribute version : String;
+		attribute xmlns : String;
+		attribute standalone : String;		
+		attribute test : String;
+		reference children[0-*] ordered container : Element;
+	}
+	
+	abstract class Element extends LocatedElement {}
+	
+	class Group extends Element {
+		attribute translate_x : Integer;
+		attribute translate_y : Integer;
+		reference components[1-*] container : Element;
+	}
+
+	class Shape extends Element {
+		attribute x : Integer;
+		attribute y : Integer;
+		attribute fill : String;	
+	}
+	
+	class Rect extends Shape {
+		attribute rx : Integer;
+		attribute ry : Integer;
+		attribute width : Integer;
+		attribute height : Integer;
+		attribute stroke : String;
+		attribute stroke_width : Integer;
+		attribute opacity : Double;
+		attribute title : String;
+	}
+	
+	class Text extends Shape {
+		attribute font_size : Integer;
+		attribute font_family : String;
+		attribute contend : String;
+	}
+	
+
+-- END DSL-specific classes
+}
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype Integer;
+	datatype String;
+	datatype Double;
+}

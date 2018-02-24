@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Megamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.eclipse.org/gmt/2006/AM3" location="2:4-68:5" name="AMMACore">
+  <megamodelElements xsi:type="Metamodel" location="5:5-5:114" uri="/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore" name="Editor" version="" domains="" authors="" date="" description="" see="" locationType="workspace" relationEnds="//@megamodelElements.5/@relationEnds.1"/>
+  <megamodelElements xsi:type="Metamodel" location="6:5-6:117" uri="/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore" name="Outline" version="" domains="" authors="" date="" description="" see="" locationType="workspace" relationEnds="//@megamodelElements.7/@relationEnds.1"/>
+  <megamodelElements xsi:type="Metamodel" location="11:5-11:99" uri="/FileInfo/Metamodel/FileInfo.ecore" name="FileInfo" version="" domains="" authors="" date="" description="" see="" locationType="workspace" relationEnds="//@megamodelElements.8/@relationEnds.2"/>
+  <megamodelElements xsi:type="EBNFInjector" location="12:5-12:125" uri="/FileInfo/Syntax/FileInfo-parser.jar" name="FileInfo" version="" domains="" authors="" date="" description="" see="" locationType="workspace" relationEnds="//@megamodelElements.8/@relationEnds.3" extension="fi" classNamePrefix="FileInfo" antlrVersion="3"/>
+  <megamodelElements xsi:type="Editor" location="14:5-14:110" uri="/FileInfo/TGE/FileInfo-Editor.ecore" name="FileInfo-Editor" version="" domains="" authors="" date="" description="" see="" locationType="workspace" relationEnds="//@megamodelElements.5/@relationEnds.0 //@megamodelElements.8/@relationEnds.1" extension="fi"/>
+  <megamodelElements xsi:type="ConformedToMetamodel" location="15:5-15:110">
+    <relationEnds location="15:17-15:54" artifact="//@megamodelElements.4"/>
+    <relationEnds location="15:56-15:109" artifact="//@megamodelElements.0"/>
+  </megamodelElements>
+  <megamodelElements xsi:type="Outline" location="17:5-17:107" uri="/FileInfo/TGE/FileInfo-Outline.ecore" name="FileInfo-Outline" version="" domains="" authors="" date="" description="" see="" locationType="workspace" relationEnds="//@megamodelElements.7/@relationEnds.0 //@megamodelElements.8/@relationEnds.0"/>
+  <megamodelElements xsi:type="ConformedToMetamodel" location="18:5-18:113">
+    <relationEnds location="18:17-18:55" artifact="//@megamodelElements.6"/>
+    <relationEnds location="18:57-18:112" artifact="//@megamodelElements.1"/>
+  </megamodelElements>
+  <megamodelElements xsi:type="OutlineOfEditor" location="19:5-24:6">
+    <relationEnds location="20:6-20:44" artifact="//@megamodelElements.6"/>
+    <relationEnds location="21:6-21:43" artifact="//@megamodelElements.4"/>
+    <relationEnds location="22:6-22:42" artifact="//@megamodelElements.2"/>
+    <relationEnds location="23:6-23:44" artifact="//@megamodelElements.3"/>
+  </megamodelElements>
+  <megamodelElements xsi:type="ANTAction" location="28:5-45:6" uri="/TCSBuilder_ANTLR3/injector.xml" name="Inject FileInfo File to FileInfo Model" extension="fi">
+    <context location="32:17-34:8">
+      <properties location="33:21-33:36" propertyName="MUri" correspondingAttribute="uri"/>
+    </context>
+    <parameters location="36:8-39:9" artifact="//@megamodelElements.2">
+      <properties location="38:22-38:38" propertyName="MMUri" correspondingAttribute="uri"/>
+    </parameters>
+    <parameters location="40:8-43:9" artifact="//@megamodelElements.3">
+      <properties location="42:22-42:48" propertyName="EBNFInjectorUri" correspondingAttribute="uri"/>
+      <properties location="42:49-42:87" propertyName="classNamePrefix" correspondingAttribute="classNamePrefix"/>
+    </parameters>
+  </megamodelElements>
+  <megamodelElements xsi:type="Metamodel" location="48:5-48:97" uri="/FileInfo/Metamodel/FileInfo.xmi" name="FileInfo" version="" domains="" authors="" date="" description="" see="" locationType="workspace"/>
+  <megamodelElements xsi:type="ANTAction" location="49:5-66:6" uri="/TCSBuilder_ANTLR3/MDRInjector.xml" name="Inject FileInfo File to FileInfo Model (MDR based)" extension="fi">
+    <context location="53:17-55:8">
+      <properties location="54:21-54:36" propertyName="MUri" correspondingAttribute="uri"/>
+    </context>
+    <parameters location="57:8-60:9" artifact="//@megamodelElements.10">
+      <properties location="59:22-59:38" propertyName="MMUri" correspondingAttribute="uri"/>
+      <properties location="59:39-59:57" propertyName="MMName" correspondingAttribute="name"/>
+    </parameters>
+    <parameters location="61:8-64:9" artifact="//@megamodelElements.3">
+      <properties location="63:22-63:48" propertyName="EBNFInjectorUri" correspondingAttribute="uri"/>
+      <properties location="63:49-63:87" propertyName="classNamePrefix" correspondingAttribute="classNamePrefix"/>
+    </parameters>
+  </megamodelElements>
+</Megamodel>

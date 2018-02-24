@@ -1,0 +1,11 @@
+To run the KM32DOT ATL transformation example you have to :
+	- Create the launch configuration for KM32DOT.atl (see screenshots in ProjectConfiguration/)
+	- Run KM32DOT.atl in the first place
+	- Then modify the end of the first line of DOT2Text.atl by specifying the output directory.
+	- Save DOT2Text.atl and build it.
+	- Create the launch configuration for DOT2Text.atl (screenshots in PrrojectConfiguration/)
+	- Run DOT2Text.atl.
+	
+	In the version given in this archive, the output dot file name is "example.dot". If you want to have a graphical result, you have first to install dot (http://www.graphviz.org/Download.php).
+	Then, to have a png result for example, run in command line : "dot -Tpng  example.dot -o example.png"
+	Dot supports several formats (http://www.graphviz.org/cvs/doc/info/output.html), including JPEG and PostScript.

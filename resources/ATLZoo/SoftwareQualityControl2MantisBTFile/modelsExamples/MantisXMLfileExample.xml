@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<mantis xmlns="http://www.mantisbt.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mantisbt.org mantis.xsd">
+  <issue id="1">
+    <project id="0">Adapter</project>
+    <category></category>
+    <priority id="0"></priority>
+    <severity id="0"></severity>
+    <status id="0">open</status>
+    <reporter id="0" login="">D Kelsey, IBM UK</reporter>
+    <summary></summary>
+    <description>A consumer sends a UML2 Model to a provider. The Service Description defines the service as having a single input parameter of Model type with a Metaclass specification of "Model" taken from UML2.ecore. At the provider end a Hashmap is presented to the provider containing each of the elements of the model in flattened state. This makes it unusable by the provider which excepts the model it maintain it's original containment semantics and hierarchy.</description>
+    <version>V0 Beta</version>
+    <reproducibility id="0"></reproducibility>
+    <dateSubmitted>0</dateSubmitted>
+    <assignedTo id="0" login="">Andrey Sadovykh</assignedTo>
+    <note private="true">
+      <author id="0" login="">D Kelsey, IBM UK</author>
+      <timestamp>0</timestamp>
+      <text>This is a simple comment to illustrate this example.</text>
+    </note>
+    <lastUpdate>0</lastUpdate>
+  </issue>
+</mantis>

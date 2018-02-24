@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" startLine="1" endLine="6" name="project">
+  <children xsi:type="Attribute" name="id" value="gs-example"/>
+  <children xsi:type="Attribute" name="name" value="gs-example"/>
+  <children xsi:type="Text" startLine="1" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="2" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="2" endLine="5" name="build">
+    <children xsi:type="Text" startLine="2" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="3" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="3" endLine="3" name="defaultGoal">
+      <children xsi:type="Text" startLine="3" name="#text" value="build"/>
+    </children>
+    <children xsi:type="Text" startLine="3" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="4" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="4" endLine="4" name="sourceDirectory">
+      <children xsi:type="Text" startLine="4" name="#text" value="."/>
+    </children>
+    <children xsi:type="Text" startLine="4" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="5" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="5" name="#text" value="&#xA;"/>
+</Root>

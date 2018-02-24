@@ -1,0 +1,69 @@
+-- @name		CloneDr
+-- @version		1.0
+-- @domains     Code Clone
+-- @authors		Yu Sun, Frédéric Jouault
+-- @date		2007/12/02
+-- @description	This is a metamodel for CloneDr
+-- @see         "KM3 User Manual", http://www.eclipse.org/gmt/atl/doc/
+
+package CloneDr {
+
+	-- Every class should extend LocatedElement, directly or indirectly.
+	-- This is a technical constraint to support text-to-model traceability.
+	abstract class LocatedElement {
+		attribute location[0-1] : String;
+		attribute commentsBefore[*] ordered : String;
+		attribute commentsAfter[*] ordered : String;
+	}
+
+-- BEGIN DSL-specific classes
+	
+	class CloneDr extends LocatedElement {
+		reference groups[0-*] ordered container : CDGroup;	
+	}	
+	
+	class CDGroup extends LocatedElement {
+		reference head container : CDHead;
+		reference units[1-*] ordered container : CDUnit;
+		reference varibles[0-*] ordered container : CDVarible;
+	}
+	
+	class CDHead extends LocatedElement {
+		attribute tid : String;
+		attribute tno : String;
+		attribute tname : String;
+		attribute sim : String;
+		attribute pcount : String;
+		attribute nclones : String;
+		attribute esloc : String;
+	}
+	
+	class CDUnit extends LocatedElement {
+		attribute tid : String;
+		attribute rno : String;
+		attribute startLine : String;
+		attribute endLine : String;
+		attribute startC : String;
+		attribute endC : String;
+		attribute fileName : String;
+	}
+	
+	class CDVarible extends LocatedElement {
+		attribute tid : String;
+		attribute cid : String;
+		attribute pno : String;
+		attribute ai : String;
+		attribute sl : String;
+		attribute sc : String;
+		attribute el : String;
+		attribute ec : String;
+		attribute fileName : String;
+	}
+
+-- END DSL-specific classes
+}
+
+
+package PrimitiveTypes {
+	datatype String;
+}

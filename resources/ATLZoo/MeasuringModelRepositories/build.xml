@@ -1,0 +1,159 @@
+<!--
+ How to configure this ant script:
+	Run as->Ant Build...
+		Set:
+			- Base directory
+			- Run in same JRE
+			- Refresh
+			- Give correct ant-contrib.jar path
+-->
+
+<project name="atlantMeasure" default="atlantMeasure">
+	<!-- Give correct ant-contrib.jar path -->
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+	</taskdef>
+
+	<property name="km3MetaModel" value="KM3"/>
+	<property name="measureMetaModel" value="Measure"/>
+	<property name="tableMetaModel" value="Table"/>
+	<property name="htmlMetaModel" value="HTML"/>
+	<property name="svgMetaModel" value="SVG"/>
+	<property name="xmlMetaModel" value="XML"/>
+	<property name="metamodelsPath" value="Metamodels/"/>
+	<property name="inputModelsPath" value="InputModels/"/>
+	<property name="tmpModelsPath" value="TmpModels/"/>
+	<property name="outputModelsPath" value="OutputModels/"/>
+	
+	<target name="atlantMeasure" depends="loadModels_AtlantMeasure">		
+		<for param="e">
+		  <path>
+		    <fileset dir="${inputModelsPath}" includes="*.km3"/>
+		  </path>
+		  <sequential>
+			<antcall target="transformOne_AtlantMeasure" inheritall="true" inheritrefs="true">
+				<param name="sample" value="@{e}"/>
+			</antcall>
+		  </sequential>
+		</for>
+	</target>
+	
+	<!-- parameters: sample -->
+	<target name="transformOne_AtlantMeasure">
+		<basename property="name" file="${sample}" suffix=".km3"/>
+		<property name="km3Model" value="${name}-${km3MetaModel}.ecore"/>
+		<property name="measureModel" value="${name}-${measureMetaModel}.ecore"/>
+		<property name="tableModel" value="${name}-${tableMetaModel}.ecore"/>
+		<property name="tabularHtmlModel" value="${name}-Tabular${htmlMetaModel}.ecore"/>
+		<property name="svgBarChartModel" value="${name}-${svgMetaModel}BarChart.ecore"/>
+		<property name="svgPieChartModel" value="${name}-${svgMetaModel}PieChart.ecore"/>
+		<property name="xmlModel" value="${name}-${xmlMetaModel}.ecore"/>
+
+		<!-- Inject input model, save it and reload it -->
+		<am3.loadModel modelHandler="EMF" name="${km3Model}" metamodel="KM3" path="${inputModelsPath}${name}.km3">
+			<injector name="ebnf">
+				<param name="name" value="KM3"/>
+			</injector>
+		</am3.loadModel>
+
+		<!-- Perform measures on KM3 metamodel -->
+		<echo message="Perform measures on ${name} metamodel"/>
+		<am3.atl path="Transformations/${km3MetaModel}2${measureMetaModel}.atl">
+			<inModel name="${km3MetaModel}" model="${km3MetaModel}"/>
+			<inModel name="IN" model="${km3Model}"/>
+			<inModel name="${measureMetaModel}" model="${measureMetaModel}"/>
+			<outModel name="OUT" model="${measureModel}" metamodel="${measureMetaModel}"/>
+		</am3.atl>
+		
+		<!-- Export measurement data on generic table representation -->
+		<echo message="Export measurement data, from ${name} metamodel, into generic table representation"/>
+		<am3.atl path="Transformations/${measureMetaModel}2${tableMetaModel}.atl">
+			<inModel name="${measureMetaModel}" model="${measureMetaModel}"/>
+			<inModel name="IN" model="${measureModel}"/>
+			<inModel name="${tableMetaModel}" model="${tableMetaModel}"/>
+			<outModel name="OUT" model="${tableModel}" metamodel="${tableMetaModel}"/>
+		</am3.atl>
+		<!--
+		<am3.saveModel model="${tableModel}" path="${tmpModelsPath}${tableModel}"/>
+		-->
+
+		<!-- TabularHTML output -->
+		<echo message="Measurement data for ${name} metamodel stored in ${name}-Tabular${htmlMetaModel}.html"/>
+		<am3.atl path="Transformations/${tableMetaModel}2Tabular${htmlMetaModel}.atl">
+			<inModel name="${tableMetaModel}" model="${tableMetaModel}"/>
+			<inModel name="IN" model="${tableModel}"/>
+			<inModel name="${htmlMetaModel}" model="${htmlMetaModel}"/>
+			<outModel name="OUT" model="${tabularHtmlModel}" metamodel="${htmlMetaModel}"/>
+		</am3.atl>
+		<am3.atl path="Transformations/${htmlMetaModel}2${xmlMetaModel}.atl">
+			<inModel name="${htmlMetaModel}" model="${htmlMetaModel}"/>
+			<inModel name="IN" model="${tabularHtmlModel}"/>
+			<inModel name="${xmlMetaModel}" model="${xmlMetaModel}"/>
+			<outModel name="OUT" model="${xmlModel}" metamodel="${xmlMetaModel}"/>
+		</am3.atl>		
+		<am3.saveModel model="${xmlModel}" path="${outputModelsPath}TabularHTML/${name}-Tabular${htmlMetaModel}.html">
+			<extractor name="xml"/>
+		</am3.saveModel>
+
+		<!-- SVGBarChart output -->
+		<echo message="Measurement data for ${name} metamodel stored in ${name}-${svgMetaModel}BarChart.svg"/>
+		<am3.atl path="Transformations/${tableMetaModel}2${svgMetaModel}BarChart.atl">
+			<inModel name="${tableMetaModel}" model="${tableMetaModel}"/>
+			<inModel name="IN" model="${tableModel}"/>
+			<inModel name="${svgMetaModel}" model="${svgMetaModel}"/>
+			<outModel name="OUT" model="${svgBarChartModel}" metamodel="${svgMetaModel}"/>
+		</am3.atl>
+		<am3.atl path="Transformations/${svgMetaModel}2${xmlMetaModel}.atl">
+			<inModel name="${svgMetaModel}" model="${svgMetaModel}"/>
+			<inModel name="IN" model="${svgBarChartModel}"/>
+			<inModel name="${xmlMetaModel}" model="${xmlMetaModel}"/>
+			<outModel name="OUT" model="${xmlModel}" metamodel="${xmlMetaModel}"/>
+		</am3.atl>		
+		<am3.saveModel model="${xmlModel}" path="${outputModelsPath}SVGBarChart/${name}-${svgMetaModel}BarChart.svg">
+			<extractor name="xml"/>
+		</am3.saveModel>
+
+		<!-- SVGPieChart output -->
+		<echo message="Measurement data for ${name} metamodel stored in ${name}-${svgMetaModel}PieChart.svg"/>
+		<am3.atl path="Transformations/${tableMetaModel}2${svgMetaModel}PieChart.atl">
+			<inModel name="${tableMetaModel}" model="${tableMetaModel}"/>
+			<inModel name="IN" model="${tableModel}"/>
+			<inModel name="${svgMetaModel}" model="${svgMetaModel}"/>
+			<outModel name="OUT" model="${svgPieChartModel}" metamodel="${svgMetaModel}"/>
+		</am3.atl>		
+		<am3.atl path="Transformations/${svgMetaModel}2${xmlMetaModel}.atl">
+			<inModel name="${svgMetaModel}" model="${svgMetaModel}"/>
+			<inModel name="IN" model="${svgPieChartModel}"/>
+			<inModel name="${xmlMetaModel}" model="${xmlMetaModel}"/>
+			<outModel name="OUT" model="${xmlModel}" metamodel="${xmlMetaModel}"/>
+		</am3.atl>		
+		<am3.saveModel model="${xmlModel}" path="${outputModelsPath}SVGPieChart/${name}-${svgMetaModel}PieChart.svg">
+			<extractor name="xml"/>
+		</am3.saveModel>
+	</target>
+
+	<target name="loadModels_AtlantMeasure">
+		<!-- Load KM3 metamodel -->
+		<am3.loadModel modelHandler="EMF" name="KM3" metamodel="MOF" nsUri="http://www.eclipse.org/gmt/2005/KM3"/>
+		
+		<!-- Inject Measure metamodel and transform it to ECORE and save it -->
+		<am3.loadModel modelHandler="EMF" name="${measureMetaModel}-KM3" metamodel="KM3" path="${metamodelsPath}${measureMetaModel}.km3">
+			<injector name="ebnf">
+				<param name="name" value="KM3"/>
+			</injector>
+		</am3.loadModel>
+		<am3.atl path="Transformations/KM32EMF.atl">
+			<inModel name="KM3" model="KM3"/>
+			<inModel name="IN" model="${measureMetaModel}-KM3"/>
+			<inModel name="MOF" model="%EMF"/>
+			<outModel name="OUT" model="${measureMetaModel}" metamodel="%EMF"/>
+		</am3.atl>
+		<am3.saveModel model="${measureMetaModel}" path="${metamodelsPath}${measureMetaModel}.ecore"/>
+
+		<!-- Load all metamodels -->
+		<am3.loadModel modelHandler="EMF" name="${measureMetaModel}" metamodel="MOF" path="${metamodelsPath}${measureMetaModel}.ecore"/>
+		<am3.loadModel modelHandler="EMF" name="${tableMetaModel}" metamodel="MOF" path="${metamodelsPath}${tableMetaModel}.ecore"/>
+		<am3.loadModel modelHandler="EMF" name="${htmlMetaModel}" metamodel="MOF" path="${metamodelsPath}${htmlMetaModel}.ecore"/>
+		<am3.loadModel modelHandler="EMF" name="${svgMetaModel}" metamodel="MOF" path="${metamodelsPath}${svgMetaModel}.ecore"/>
+		<am3.loadModel modelHandler="EMF" name="${xmlMetaModel}" metamodel="MOF" path="${metamodelsPath}${xmlMetaModel}.ecore"/>
+	</target>	
+</project>

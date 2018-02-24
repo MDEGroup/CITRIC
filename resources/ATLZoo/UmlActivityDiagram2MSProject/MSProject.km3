@@ -1,0 +1,21 @@
+
+package MSProject {
+
+	class MSProject {
+		reference tasks[1-*] container : Task;
+	}
+	
+	abstract class NamedElement {
+		attribute name : String;
+	}
+	
+	class Task extends NamedElement {
+		attribute UID : String;
+		reference predecessors[*] : Task;
+	}
+
+}
+
+package PrimitiveTypes {
+  datatype String;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<tpB:BlockB xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tpB="platform:/resource/Port/Metamodel/TypeB.ecore">
+  <inputPorts name="pt1"/>
+  <inputPorts name="pt2"/>
+  <outputPorts name="ptOut"/>
+</tpB:BlockB>

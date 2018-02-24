@@ -1,0 +1,25 @@
+package Book {
+	class Book {
+        attribute title : String;
+		reference chapters[*] ordered container : Chapter oppositeOf book;		
+	}
+
+	class Chapter {
+		attribute title : String;
+		attribute nbPages : Integer;
+		attribute author : String;
+		reference book : Book oppositeOf chapters;
+	}
+}
+
+package PrimitiveTypes {
+	datatype Integer;
+	datatype String;
+	datatype Boolean;
+}
+
+
+
+
+
+

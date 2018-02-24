@@ -1,0 +1,2929 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '17972.0' height = '455.0' viewBox = '0 0 17972.0 455.0'>
+  <g transform = 'translate(216.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOD2::IIF</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (50%)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(638.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOD::AIF</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (50%)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(1060.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOD::CCF</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (12%)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(1482.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOD::ICF</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (50%)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(1904.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOD::RIF</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (33.3%)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(2326.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::ADI</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(2748.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::ANA</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (0.3)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(3170.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::AWI</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (1.4)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(3592.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::DSC</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (19)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(4014.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NAC</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (6)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(4436.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NIC</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (13)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(4858.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NLC</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (13)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(5280.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NMI</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(5702.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NNC</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (15)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(6124.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NOH</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (15)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(6546.0,227.5)'>
+    <rect width = '412.0' height = '435.0' x = '-206.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-96.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NSI</text>
+    <g transform = 'translate(-96.0,-20.0)'>
+      <circle r = '100.0' fill = 'rgb(255,0,0)' stroke = 'black'/>
+    </g>
+    <g>
+      <rect width = '182.0' height = '37.0' x = '14.0' y = '-18.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '19.0' y = '-7.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '51.0' y = '6.9' stroke = 'black' font-size = '16.0'>(100%) DTD (15)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(7052.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>EMOOSE::SIZE2</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 76.60444431189781,64.27876096865393 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(40.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(60.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(60.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(80.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(100.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 76.60444431189781,64.27876096865393 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(140.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(140.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(140.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 76.60444431189781,64.27876096865393 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(200.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(220.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(260.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(280.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(300.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(320.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(340.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(11.1%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(5.5%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(5.5%) DTD.Children (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(5.5%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(11.1%) DTD.DefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(11.1%) DTD.Entity (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.Enumeration (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.Leaf (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.Mixed (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.NoDefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.Notation (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.OtherAttributeType (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.RestrictedElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(5.5%) DTD.TypeDescription (1)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(7642.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOSE::CBO</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(72.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(324.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(20%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(10%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(10%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(20%) DTD.DefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(20%) DTD.NoDefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(10%) DTD.RestrictedElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(10%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(8232.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOSE::DIT</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(32.727272727272734)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(49.0909090909091)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(65.45454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(65.45454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(81.81818181818184)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(114.54545454545458)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(147.2727272727273)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(163.63636363636368)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(163.63636363636368)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.00000000000006)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(196.36363636363643)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(229.09090909090918)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(245.45454545454555)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(278.1818181818183)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(294.5454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(294.5454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(327.2727272727274)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.00000000000017)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(9.0%) DTD.AnyElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.AttributeDescription (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Children (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(9.0%) DTD.Choice (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(9.0%) DTD.DefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Element (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Entity (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Enumeration (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.Leaf (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Mixed (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.NoDefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Notation (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.RestrictedElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.Sequence (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(8822.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOSE::NOC</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 66.91306063588583,74.31448254773943 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(48.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(48.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 91.35454576426008,40.67366430758001 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(72.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 66.91306063588583,74.31448254773943 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(192.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 66.91306063588583,74.31448254773943 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(240.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 -49.99999999999998,86.60254037844388 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(13.3%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeList (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(6.6%) DTD.AttributeType (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(20%) DTD.Children (3)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Choice (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(0%) DTD.DefaultValue (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(13.3%) DTD.Element (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(13.3%) DTD.ElementContent (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(0%) DTD.NoDefaultValue (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(0%) DTD.RestrictedElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Sequence (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(33.3%) DTD.TypeDescription (5)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(9412.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>MOOSE::WRC</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(59.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(179.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(359.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.AttributeDescription (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.DefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(16.6%) DTD.NoDefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(0%) DTD.RestrictedElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(16.6%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(10002.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::CCD</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(12.857142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(38.57142857142857)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(51.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(51.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(64.28571428571428)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(77.14285714285714)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680299 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(128.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(141.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(141.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 78.18314824680299,62.34898018587335 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(192.85714285714286)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(218.57142857142858)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(231.42857142857144)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 78.18314824680299,62.34898018587335 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(270.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(295.7142857142857)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(308.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(334.2857142857143)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(347.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.AnyElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(7.1%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Children (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(14.2%) DTD.DefaultValue (4)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Element (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(10.7%) DTD.Entity (3)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Enumeration (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(7.1%) DTD.Leaf (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Mixed (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(10.7%) DTD.NoDefaultValue (3)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(7.1%) DTD.Notation (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.OtherAttributeType (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(7.1%) DTD.RestrictedElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.TypeDescription (1)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(10592.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::CSM</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 98.29730996839018,18.374951781657035 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(10.588235294117647)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 85.02171357296142,52.64321628773557 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(42.352941176470594)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24722294043558,36.12416661871529 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(63.529411764705884)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(63.529411764705884)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 98.29730996839018,18.374951781657035 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(74.11764705882354)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24722294043558,36.12416661871529 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(95.29411764705883)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 60.26346363792564,79.80172272802395 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(148.23529411764707)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 98.29730996839018,18.374951781657035 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(158.82352941176472)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(158.82352941176472)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 85.02171357296142,52.64321628773557 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(190.58823529411768)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 98.29730996839018,18.374951781657035 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(201.17647058823533)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24722294043558,36.12416661871529 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(222.35294117647064)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 98.29730996839018,18.374951781657035 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(232.9411764705883)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 73.90089172206591,67.36956436465572 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(275.2941176470589)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24722294043558,36.12416661871529 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(296.4705882352942)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 98.29730996839018,18.374951781657035 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(307.0588235294118)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24722294043558,36.12416661871529 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(328.23529411764713)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24722294043558,36.12416661871529 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(349.41176470588243)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 98.29730996839018,18.374951781657035 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(2.9%) DTD.AnyElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(8.8%) DTD.AttributeDescription (3)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(5.8%) DTD.AttributeList (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(2.9%) DTD.Children (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(5.8%) DTD.Choice (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(14.7%) DTD.DefaultValue (5)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(2.9%) DTD.Element (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(8.8%) DTD.Entity (3)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(2.9%) DTD.Enumeration (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(5.8%) DTD.Leaf (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(2.9%) DTD.Mixed (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(11.7%) DTD.NoDefaultValue (4)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(5.8%) DTD.Notation (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(2.9%) DTD.OtherAttributeType (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(5.8%) DTD.RestrictedElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(5.8%) DTD.Sequence (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(2.9%) DTD.TypeDescription (1)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(11182.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::DAC</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 6.123233995736766E-15,100.0 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(90.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(90.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(90.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(90.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(90.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 6.123233995736766E-15,100.0 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 6.123233995736766E-15,100.0 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(270.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(270.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(270.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 6.123233995736766E-15,100.0 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(25%) DTD.AttributeDescription (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeList (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Choice (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(25%) DTD.DefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(25%) DTD.NoDefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(25%) DTD.RestrictedElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Sequence (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(11772.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::DCC</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(72.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(324.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(20%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(10%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(10%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(20%) DTD.DefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(20%) DTD.NoDefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(10%) DTD.RestrictedElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(10%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(12362.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::DRC</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(59.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(179.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(359.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.AttributeDescription (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.DefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(16.6%) DTD.NoDefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(0%) DTD.RestrictedElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(16.6%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(12952.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::MAA</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 73.89503199256067,67.37599162029777 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(42.35792446170137)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24565190735723,36.12822166080094 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(63.53688669255206)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 73.89503199256067,67.37599162029777 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(105.89481115425343)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(105.89481115425343)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(105.89481115425343)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 73.89503199256067,67.37599162029777 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(148.2527356159548)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24565190735723,36.12822166080094 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(169.4316978468055)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 73.89503199256067,67.37599162029777 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(211.78962230850686)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(211.78962230850686)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 96.98499489370123,24.370284476565878 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(225.89481115425343)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(225.89481115425343)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24565190735723,36.12822166080094 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(247.07377338510412)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(247.07377338510412)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 88.12178469062503,47.271038310355756 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(275.28415107659725)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24565190735723,36.12822166080094 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(296.46311330744794)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(296.46311330744794)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 93.24565190735723,36.12822166080094 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(317.6420755382986)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 73.89503199256067,67.37599162029777 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(11.7%) DTD.AnyElement (100%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(5.8%) DTD.AttributeDescription (50%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(11.7%) DTD.AttributeList (100%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(11.7%) DTD.Choice (100%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(5.8%) DTD.DefaultValue (50%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(11.7%) DTD.Element (100%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(3.9%) DTD.Entity (33.3%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(5.8%) DTD.Leaf (50%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(7.8%) DTD.NoDefaultValue (66.6%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(5.8%) DTD.Notation (50%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(5.8%) DTD.RestrictedElement (50%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(11.7%) DTD.Sequence (100%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0%)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(13542.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::MCC</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680299 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(51.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 -22.252093395631434,97.49279121818236 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(154.28571428571428)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(154.28571428571428)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(154.28571428571428)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680299 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(205.7142857142857)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680299 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(257.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(257.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(257.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(257.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(257.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(257.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(257.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680299 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(308.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(308.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(308.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(308.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680299 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(14.2%) DTD.AttributeDescription (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(28.5%) DTD.AttributeList (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(14.2%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(14.2%) DTD.DefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(14.2%) DTD.NoDefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(0%) DTD.RestrictedElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(14.2%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(14132.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::MOA</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(72.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(324.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(20%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(10%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(10%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(20%) DTD.DefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(20%) DTD.NoDefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(10%) DTD.RestrictedElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(10%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(14722.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::MRA</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 1,1 -100.0,1.2246467991473532E-14 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 1,1 -100.0,1.2246467991473532E-14 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeDescription (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeList (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Choice (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(50%) DTD.DefaultValue (100%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(50%) DTD.NoDefaultValue (100%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(0%) DTD.RestrictedElement (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Sequence (0%)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0%)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(15312.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::MRM</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(72.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(324.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(20%) DTD.AttributeDescription (4)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(10%) DTD.AttributeList (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(10%) DTD.Choice (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(20%) DTD.DefaultValue (4)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(20%) DTD.NoDefaultValue (4)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(10%) DTD.RestrictedElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(10%) DTD.Sequence (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(15902.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NAD</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(72.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(108.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(144.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(216.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(288.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(324.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(20%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(10%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(10%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(20%) DTD.DefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(20%) DTD.NoDefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(10%) DTD.RestrictedElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(10%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(16492.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NOA</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(32.727272727272734)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(49.0909090909091)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(65.45454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(65.45454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(81.81818181818184)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(114.54545454545458)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(147.2727272727273)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(163.63636363636368)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(163.63636363636368)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.00000000000006)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(196.36363636363643)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(229.09090909090918)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(245.45454545454555)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(278.1818181818183)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(294.5454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(294.5454545454547)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(327.2727272727274)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(360.00000000000017)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(9.0%) DTD.AnyElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.AttributeDescription (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Children (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(9.0%) DTD.Choice (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(9.0%) DTD.DefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Element (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Entity (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Enumeration (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.Leaf (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Mixed (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.NoDefaultValue (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(4.5%) DTD.Notation (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.RestrictedElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(9.0%) DTD.Sequence (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(17082.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NOD</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(12.857142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(38.57142857142857)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(51.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(51.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(64.28571428571428)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(77.14285714285714)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680299 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(128.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(141.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(141.42857142857142)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 78.18314824680299,62.34898018587335 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(180.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(192.85714285714286)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(218.57142857142858)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(231.42857142857144)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 78.18314824680299,62.34898018587335 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(270.0)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(295.7142857142857)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(308.57142857142856)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.388373911755814 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(334.2857142857143)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(347.1428571428571)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 97.49279121818236,22.25209339563144 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.AnyElement (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(7.1%) DTD.AttributeDescription (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Children (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(14.2%) DTD.DefaultValue (4)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Element (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(10.7%) DTD.Entity (3)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Enumeration (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(7.1%) DTD.Leaf (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Mixed (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(10.7%) DTD.NoDefaultValue (3)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(7.1%) DTD.Notation (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.OtherAttributeType (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(7.1%) DTD.RestrictedElement (2)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(3.5%) DTD.TypeDescription (1)</text>
+      </g>
+    </g>
+  </g>
+  <g transform = 'translate(17672.0,227.5)'>
+    <rect width = '580.0' height = '435.0' x = '-290.0' y = '-217.5' fill = 'none' stroke = 'black'/>
+    <text x = '-180.0' y = '202.5' stroke = 'black' font-size = '20.0' text-anchor = 'middle'>QMOOD::NOR</text>
+    <g transform = 'translate(-180.0,-20.0)'>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,255,175)' stroke = 'black'/>
+      </g>
+      <g>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,255,94)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(59.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,255,14)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(188,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(108,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(119.99999999999999)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(27,255,0)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(179.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(0,255,53)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,134)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,255,214)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,215,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,135,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(0,54,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(26,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(239.99999999999997)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(107,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(187,0,255)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,242)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,162)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(299.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(255,0,81)' stroke = 'black'/>
+      </g>
+      <g transform = 'rotate(359.99999999999994)'>
+        <path d = 'M0,0 L100,0 A100,100 0 0,1 100.0,0.0 z' fill = 'rgb(255,0,0)' stroke = 'black'/>
+      </g>
+    </g>
+    <g>
+      <rect width = '350.0' height = '415.0' x = '-70.0' y = '-207.5' fill = 'none' stroke = 'black'/>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-196.5' fill = 'rgb(255,255,175)' stroke = 'black'/>
+        <text x = '-33.0' y = '-182.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AnyElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-175.5' fill = 'rgb(255,255,94)' stroke = 'black'/>
+        <text x = '-33.0' y = '-161.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.AttributeDescription (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-154.5' fill = 'rgb(255,255,14)' stroke = 'black'/>
+        <text x = '-33.0' y = '-140.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.AttributeList (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-133.5' fill = 'rgb(188,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-119.1' stroke = 'black' font-size = '16.0'>(0%) DTD.AttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-112.5' fill = 'rgb(108,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-98.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Children (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-91.5' fill = 'rgb(27,255,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '-77.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.Choice (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-70.5' fill = 'rgb(0,255,53)' stroke = 'black'/>
+        <text x = '-33.0' y = '-56.1' stroke = 'black' font-size = '16.0'>(16.6%) DTD.DefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-49.5' fill = 'rgb(0,255,134)' stroke = 'black'/>
+        <text x = '-33.0' y = '-35.1' stroke = 'black' font-size = '16.0'>(0%) DTD.Element (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-28.5' fill = 'rgb(0,255,214)' stroke = 'black'/>
+        <text x = '-33.0' y = '-14.1' stroke = 'black' font-size = '16.0'>(0%) DTD.ElementContent (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '-7.5' fill = 'rgb(0,215,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '6.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Entity (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '13.5' fill = 'rgb(0,135,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '27.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Enumeration (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '34.5' fill = 'rgb(0,54,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '48.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Leaf (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '55.5' fill = 'rgb(26,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '69.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Mixed (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '76.5' fill = 'rgb(107,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '90.9' stroke = 'black' font-size = '16.0'>(16.6%) DTD.NoDefaultValue (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '97.5' fill = 'rgb(187,0,255)' stroke = 'black'/>
+        <text x = '-33.0' y = '111.9' stroke = 'black' font-size = '16.0'>(0%) DTD.Notation (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '118.5' fill = 'rgb(255,0,242)' stroke = 'black'/>
+        <text x = '-33.0' y = '132.9' stroke = 'black' font-size = '16.0'>(0%) DTD.OtherAttributeType (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '139.5' fill = 'rgb(255,0,162)' stroke = 'black'/>
+        <text x = '-33.0' y = '153.9' stroke = 'black' font-size = '16.0'>(0%) DTD.RestrictedElement (0)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '160.5' fill = 'rgb(255,0,81)' stroke = 'black'/>
+        <text x = '-33.0' y = '174.9' stroke = 'black' font-size = '16.0'>(16.6%) DTD.Sequence (1)</text>
+      </g>
+      <g>
+        <rect width = '16.0' height = '16.0' x = '-65.0' y = '181.5' fill = 'rgb(255,0,0)' stroke = 'black'/>
+        <text x = '-33.0' y = '195.9' stroke = 'black' font-size = '16.0'>(0%) DTD.TypeDescription (0)</text>
+      </g>
+    </g>
+  </g>
+</svg>

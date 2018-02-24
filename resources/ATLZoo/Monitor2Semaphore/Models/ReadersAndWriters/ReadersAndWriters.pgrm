@@ -1,0 +1,41 @@
+program ReadersAndWritersProgram {
+	monitor ReadersAndWriters {
+		var readerCount : integer := 0;
+		var busy : boolean := false;
+		var OKToRead : condition;
+		var OKToWrite : condition;
+
+		procedure startRead() {
+			if busy or OKToWrite.queue() then {
+				OKToRead.wait();
+			}
+			readerCount := readerCount + 1;
+			OKToRead.signal();
+			-- Once one reader can start, they all can
+		}
+
+		procedure endRead() {
+			readerCount := readerCount - 1;
+			if readerCount = 0 then {
+				OKToWrite.signal();
+			}
+		}
+
+		procedure startWrite() {
+			if readerCount <> 0 or busy then {
+				OKToWrite.wait();
+			}
+			busy := true;
+		}
+
+		procedure endWrite() {
+			busy := false;
+			if OKToRead.queue() then {
+				OKToRead.signal();
+			} else {
+				OKToWrite.signal();
+			}
+		}
+	}
+}
+

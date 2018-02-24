@@ -1,0 +1,264 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '2293.0' height = '110.0'>
+  <g transform = 'translate(94.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Attribute Inheritance Factor per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (0.8)</text>
+      <rect x = '0.0' y = '0.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (0.4)</text>
+      <rect x = '0.0' y = '10.0' width = '60.508928571428584' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (0.3)</text>
+      <rect x = '0.0' y = '20.0' width = '55.00811688311689' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (0.3)</text>
+      <rect x = '0.0' y = '30.0' width = '54.02582908163266' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (0.7)</text>
+      <rect x = '0.0' y = '50.0' width = '117.0097870879121' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(343.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Depth Inheritance Tree per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (5.0)</text>
+      <rect x = '0.0' y = '0.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (3.0)</text>
+      <rect x = '0.0' y = '10.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (1.0)</text>
+      <rect x = '0.0' y = '20.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (1.0)</text>
+      <rect x = '0.0' y = '30.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (3.0)</text>
+      <rect x = '0.0' y = '50.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(592.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Number of Children per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (35.0)</text>
+      <rect x = '0.0' y = '0.0' width = '45.87378640776699' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (40.0)</text>
+      <rect x = '0.0' y = '10.0' width = '52.42718446601942' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (8.0)</text>
+      <rect x = '0.0' y = '20.0' width = '10.485436893203884' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (5.0)</text>
+      <rect x = '0.0' y = '30.0' width = '6.553398058252427' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (103.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(841.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Attributes Inherited per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (224.0)</text>
+      <rect x = '0.0' y = '0.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (62.0)</text>
+      <rect x = '0.0' y = '10.0' width = '37.36607142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (8.0)</text>
+      <rect x = '0.0' y = '20.0' width = '4.821428571428571' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (5.0)</text>
+      <rect x = '0.0' y = '30.0' width = '3.0133928571428568' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (181.0)</text>
+      <rect x = '0.0' y = '50.0' width = '109.08482142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1097.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '34.5' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Attributes per Metamodel</text>
+    <rect x = '-96.0' y = '-5.0' width = '251.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (251.0)</text>
+      <rect x = '0.0' y = '0.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (155.0)</text>
+      <rect x = '0.0' y = '10.0' width = '83.36653386454182' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (22.0)</text>
+      <rect x = '0.0' y = '20.0' width = '11.832669322709162' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (14.0)</text>
+      <rect x = '0.0' y = '30.0' width = '7.529880478087649' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (3.0)</text>
+      <rect x = '0.0' y = '40.0' width = '1.6135458167330676' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (234.0)</text>
+      <rect x = '0.0' y = '50.0' width = '125.85657370517927' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1346.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Classes per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (37.0)</text>
+      <rect x = '0.0' y = '0.0' width = '40.28225806451613' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (48.0)</text>
+      <rect x = '0.0' y = '10.0' width = '52.258064516129025' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (9.0)</text>
+      <rect x = '0.0' y = '20.0' width = '9.798387096774192' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (6.0)</text>
+      <rect x = '0.0' y = '30.0' width = '6.532258064516128' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (1.0)</text>
+      <rect x = '0.0' y = '40.0' width = '1.0887096774193548' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (124.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1595.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Packages per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (2.0)</text>
+      <rect x = '0.0' y = '0.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (2.0)</text>
+      <rect x = '0.0' y = '10.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (2.0)</text>
+      <rect x = '0.0' y = '20.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (2.0)</text>
+      <rect x = '0.0' y = '30.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (2.0)</text>
+      <rect x = '0.0' y = '40.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (2.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1844.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships Inherited per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (28.0)</text>
+      <rect x = '0.0' y = '0.0' width = '3.945720250521921' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (18.0)</text>
+      <rect x = '0.0' y = '10.0' width = '2.536534446764092' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (958.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(2093.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '90.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships per Metamodel</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '80.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V70,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>AM3 (37.0)</text>
+      <rect x = '0.0' y = '0.0' width = '4.540909090909091' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Ant (27.0)</text>
+      <rect x = '0.0' y = '10.0' width = '3.3136363636363635' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (8.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.9818181818181818' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (4.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.4909090909090909' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>SDM (1100.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+</svg>

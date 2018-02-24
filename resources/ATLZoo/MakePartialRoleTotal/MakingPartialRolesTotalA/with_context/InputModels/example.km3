@@ -1,0 +1,23 @@
+package example {
+	class A {
+		reference br [0-1] : B oppositeOf a;
+		reference cr [0-1] : C oppositeOf a;
+		attribute a : String;
+	}
+	
+	class B {
+		reference a : A oppositeOf br;
+		reference c[*] : C oppositeOf b;
+	}
+	
+	class C {
+		reference a : A oppositeOf cr;
+		reference b[*] : B oppositeOf c;
+	}
+}
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype Integer;
+	datatype String;
+}

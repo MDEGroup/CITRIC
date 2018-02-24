@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MantisRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Mantis">
+  <issues id="1" category="" summary="" description="A consumer sends a UML2 Model to a provider. The Service Description defines the service as having a single input parameter of Model type with a Metaclass specification of &quot;Model&quot; taken from UML2.ecore. At the provider end a Hashmap is presented to the provider containing each of the elements of the model in flattened state. This makes it unusable by the provider which excepts the model it maintain it's original containment semantics and hierarchy." version="V0 Beta" dateSubmitted="0" lastUpdate="0">
+    <project id="0" value="Adapter"/>
+    <priority id="0" value=""/>
+    <severity id="0" value=""/>
+    <status id="0" value="open"/>
+    <reporter id="0" value="D Kelsey, IBM UK" login=""/>
+    <reproducibility id="0" value=""/>
+    <assignedTo id="0" value="Andrey Sadovykh" login=""/>
+    <notes timestamp="0" text="This is a simple comment to illustrate this example.">
+      <author id="0" value="D Kelsey, IBM UK" login=""/>
+    </notes>
+  </issues>
+</MantisRoot>

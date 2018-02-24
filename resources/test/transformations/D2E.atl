@@ -1,0 +1,35 @@
+module D2E;
+
+create OUT : E from IN : D;
+
+helper def: counter : Integer = 1;
+
+rule N2R {
+	from
+		s : D!N
+	to
+		t : E!R (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+
+rule P2T {
+	from
+		s : D!P
+	to
+		t : E!T (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+
+rule V2T {
+	from
+		s : D!V
+	to
+		t : E!T (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}

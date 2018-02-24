@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ant.AntLaunchConfigurationType">
+<booleanAttribute key="org.eclipse.debug.core.appendEnvironmentVariables" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/QVT2ATLVM/QVT Compiler and Launcher.xml"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.ant.ui.DEFAULT_VM_INSTALL" value="false"/>
+<mapAttribute key="org.eclipse.ui.externaltools.ATTR_ANT_PROPERTIES">
+<mapEntry key="eclipse.running" value="true"/>
+<mapEntry key="workspace_loc" value="${workspace_loc}"/>
+<mapEntry key="eclipse.pdebuild.templates" value="/C:/Program Files/Eclipse 3.2.2/plugins/org.eclipse.pde.build_3.2.1.r321_v20060823/templates/"/>
+<mapEntry key="eclipse.home" value="C:\Program Files\Eclipse 3.2.2"/>
+<mapEntry key="eclipse.pdebuild.scripts" value="/C:/Program Files/Eclipse 3.2.2/plugins/org.eclipse.pde.build_3.2.1.r321_v20060823/scripts/"/>
+<mapEntry key="eclipse.pdebuild.home" value="/C:/Program Files/Eclipse 3.2.2/plugins/org.eclipse.pde.build_3.2.1.r321_v20060823/./"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="QVT2ATLVM"/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:/QVT2ATLVM/QVT Compiler and Launcher.xml}"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.ant.ui.remoteAntProcessFactory"/>
+</launchConfiguration>

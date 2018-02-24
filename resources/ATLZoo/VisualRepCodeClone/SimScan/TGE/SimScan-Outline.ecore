@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Outline xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Outline">
+  <nodes name="LocatedElement" icon="dummy">
+    <label label="LocatedElement"/>
+    <mapping mapString="LocatedElement"/>
+  </nodes>
+  <nodes name="SimScan" icon="dummy">
+    <label label="SimScan"/>
+    <mapping mapString="SimScan"/>
+  </nodes>
+  <nodes name="SSGroup" icon="dummy">
+    <label label="SSGroup"/>
+    <mapping mapString="SSGroup"/>
+  </nodes>
+  <nodes name="SSUnit" icon="dummy">
+    <label label="SSUnit"/>
+    <mapping mapString="SSUnit"/>
+  </nodes>
+</Outline>

@@ -1,0 +1,69 @@
+
+			megamodel 'AMMACore' {
+
+			--TODO?	import '/AMMACore/KM3/Editor/Editor.ecore';
+				metamodel{'Editor', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore', '', '', '', '', '', '', workspace}
+				metamodel{'Outline', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore', '', '', '', '', '', '', workspace}
+
+
+			-- @begin Editors
+			-- @begin Simian
+				metamodel{'Simian', '/Simian/Metamodel/Simian.ecore', '', '', '', '', '', '', workspace}
+				ebnfInjector{'Simian', '/Simian/Syntax/Simian-parser.jar', '', '', '', '', '', '', workspace, 'sim', 'Simian', 3}
+
+				editor{'Simian-Editor', '/Simian/TGE/Simian-Editor.ecore', '', '', '', '', '', '', workspace, 'sim'}
+				conformsTo {'/Simian/TGE/Simian-Editor.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore'}
+
+				outline{'Simian-Outline', '/Simian/TGE/Simian-Outline.ecore', '', '', '', '', '', '', workspace}
+				conformsTo {'/Simian/TGE/Simian-Outline.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore'}
+				outlineOfEditor {
+					'/Simian/TGE/Simian-Outline.ecore',
+					'/Simian/TGE/Simian-Editor.ecore',
+					'/Simian/Metamodel/Simian.ecore',
+					'/Simian/Syntax/Simian-parser.jar'
+				}
+			-- @end Simian
+			-- @end Editors
+			
+				antAction {
+						'sim',
+						'Inject Simian File to Simian Model',
+						'/TCSBuilder_ANTLR3/injector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/Simian/Metamodel/Simian.ecore',
+								properties { 'MMUri' = 'uri', }
+							}
+							param {
+								'/Simian/Syntax/Simian-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			
+			-- @begin MDR
+				metamodel{'Simian', '/Simian/Metamodel/Simian.xmi', '', '', '', '', '', '', workspace}
+				antAction {
+						'sim',
+						'Inject Simian File to Simian Model (MDR based)',
+						'/TCSBuilder_ANTLR3/MDRInjector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/Simian/Metamodel/Simian.xmi',
+								properties { 'MMUri' = 'uri', 'MMName' = 'name', }
+							}
+							param {
+								'/Simian/Syntax/Simian-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			-- @end MDR
+			}	
+		

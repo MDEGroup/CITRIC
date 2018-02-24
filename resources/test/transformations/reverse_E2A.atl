@@ -1,0 +1,19 @@
+module E2A;
+
+create OUT : A from IN : E;
+
+helper def: counter : Integer = 1;
+
+
+
+rule R_S2B {
+	from
+		r_1 : E!R, 
+		s_2 : E!S (r_1.name.substring(2,r_1.name.size()).debug('asd') = s_2.name.substring(2,s_2.name.size()))
+	to
+		t : A!B (name <- r_1.name + ' ' + s_2.name)
+	do {
+
+	}
+	
+}

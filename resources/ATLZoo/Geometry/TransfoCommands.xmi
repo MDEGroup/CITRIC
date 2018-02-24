@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" name="GeoTransfos">
+  <children xsi:type="Attribute" name="name" value="GeoTransfos"/>
+  <children xsi:type="Element" name="GeoTransfo">
+    <children xsi:type="Attribute" name="name" value="moveForward"/>
+    <children xsi:type="Attribute" name="freeze" value="true"/>
+    <children xsi:type="Element" name="Param">
+      <children xsi:type="Attribute" name="name" value="x"/>
+      <children xsi:type="Attribute" name="param" value="90.00"/>
+    </children>
+    <children xsi:type="Element" name="Param">
+      <children xsi:type="Attribute" name="name" value="y"/>
+      <children xsi:type="Attribute" name="param" value="0.0"/>
+    </children>
+    <children xsi:type="Element" name="Param">
+      <children xsi:type="Attribute" name="name" value="z"/>
+      <children xsi:type="Attribute" name="param" value="0.0"/>
+    </children>
+    <children xsi:type="Element" name="GeoTransfo">
+      <children xsi:type="Attribute" name="name" value="rotate"/>
+      <children xsi:type="Attribute" name="freeze" value="true"/>
+      <children xsi:type="Element" name="Param">
+        <children xsi:type="Attribute" name="name" value="rotationX"/>
+        <children xsi:type="Attribute" name="param" value="45.00"/>
+      </children>
+      <children xsi:type="Element" name="Param">
+        <children xsi:type="Attribute" name="name" value="rotationY"/>
+        <children xsi:type="Attribute" name="param" value="0.0"/>
+      </children>
+      <children xsi:type="Element" name="Param">
+        <children xsi:type="Attribute" name="name" value="rotationZ"/>
+        <children xsi:type="Attribute" name="param" value="0.0"/>
+      </children>
+    </children>
+  </children>
+</Root>

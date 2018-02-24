@@ -1,0 +1,59 @@
+program SingleResourceProgram {
+
+	var SingleResource_nonBusy_sem : boolean := false;
+
+	var SingleResource_nonBusy_count : integer := 0;
+
+	var SingleResource_mutex : boolean := true;
+
+	var SingleResource_urgent : boolean := false;
+
+	var SingleResource_urgentcount : integer := 0;
+
+	var SingleResource_busy : boolean := false;
+
+	procedure SingleResource_acquire() {
+		SingleResource_mutex.p();
+		if SingleResource_busy then {
+			this.SingleResource_nonBusy_wait();
+		} else {
+			SingleResource_busy := true;
+		}
+		if SingleResource_urgentcount > 0 then {
+			SingleResource_urgent.v();
+		} else {
+			SingleResource_mutex.v();
+		}
+	}
+
+	procedure SingleResource_release() {
+		SingleResource_mutex.p();
+		SingleResource_busy := false;
+		this.SingleResource_nonBusy_signal();
+		if SingleResource_urgentcount > 0 then {
+			SingleResource_urgent.v();
+		} else {
+			SingleResource_mutex.v();
+		}
+	}
+
+	procedure SingleResource_nonBusy_wait() {
+		SingleResource_nonBusy_count := SingleResource_nonBusy_count + 1;
+		if SingleResource_urgentcount > 0 then {
+			SingleResource_urgent.v();
+		} else {
+			SingleResource_mutex.v();
+		}
+		SingleResource_nonBusy_sem.p();
+		SingleResource_nonBusy_count := SingleResource_nonBusy_count - 1;
+	}
+
+	procedure SingleResource_nonBusy_signal() {
+		SingleResource_urgentcount := SingleResource_urgentcount + 1;
+		if SingleResource_nonBusy_count > 0 then {
+			SingleResource_nonBusy_sem.v();
+			SingleResource_urgent.p();
+		}
+		SingleResource_urgentcount := SingleResource_urgentcount - 1;
+	}
+}

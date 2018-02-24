@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" name="mantis">
+  <children xsi:type="Attribute" name="xmlns" value="http://www.mantisbt.org"/>
+  <children xsi:type="Attribute" name="xmlns:xsi" value="http://www.w3.org/2001/XMLSchema-instance"/>
+  <children xsi:type="Attribute" name="xsi:schemaLocation" value="http://www.mantisbt.org mantis.xsd"/>
+  <children xsi:type="Element" name="issue">
+    <children xsi:type="Attribute" name="id" value="1"/>
+    <children xsi:type="Element" name="project">
+      <children xsi:type="Attribute" name="id" value="0"/>
+      <children xsi:type="Text" value="Adapter"/>
+    </children>
+    <children xsi:type="Element" name="category">
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="priority">
+      <children xsi:type="Attribute" name="id" value="0"/>
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="severity">
+      <children xsi:type="Attribute" name="id" value="0"/>
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="status">
+      <children xsi:type="Attribute" name="id" value="0"/>
+      <children xsi:type="Text" value="open"/>
+    </children>
+    <children xsi:type="Element" name="reporter">
+      <children xsi:type="Attribute" name="id" value="0"/>
+      <children xsi:type="Attribute" name="login" value=""/>
+      <children xsi:type="Text" value="D Kelsey, IBM UK"/>
+    </children>
+    <children xsi:type="Element" name="summary">
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="description">
+      <children xsi:type="Text" value="A consumer sends a UML2 Model to a provider. The Service Description defines the service as having a single input parameter of Model type with a Metaclass specification of &quot;Model&quot; taken from UML2.ecore. At the provider end a Hashmap is presented to the provider containing each of the elements of the model in flattened state. This makes it unusable by the provider which excepts the model it maintain it's original containment semantics and hierarchy."/>
+    </children>
+    <children xsi:type="Element" name="version">
+      <children xsi:type="Text" value="V0 Beta"/>
+    </children>
+    <children xsi:type="Element" name="reproducibility">
+      <children xsi:type="Attribute" name="id" value="0"/>
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="dateSubmitted">
+      <children xsi:type="Text" value="0"/>
+    </children>
+    <children xsi:type="Element" name="assignedTo">
+      <children xsi:type="Attribute" name="id" value="0"/>
+      <children xsi:type="Attribute" name="login" value=""/>
+      <children xsi:type="Text" value="Andrey Sadovykh"/>
+    </children>
+    <children xsi:type="Element" name="note">
+      <children xsi:type="Attribute" name="private" value="true"/>
+      <children xsi:type="Element" name="author">
+        <children xsi:type="Attribute" name="id" value="0"/>
+        <children xsi:type="Attribute" name="login" value=""/>
+        <children xsi:type="Text" value="D Kelsey, IBM UK"/>
+      </children>
+      <children xsi:type="Element" name="timestamp">
+        <children xsi:type="Text" value="0"/>
+      </children>
+      <children xsi:type="Element" name="text">
+        <children xsi:type="Text" value="This is a simple comment to illustrate this example."/>
+      </children>
+    </children>
+    <children xsi:type="Element" name="lastUpdate">
+      <children xsi:type="Text" value="0"/>
+    </children>
+  </children>
+</Root>

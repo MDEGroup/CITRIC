@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="callTCSBuilder" default="main">
+	<property name="dsl.name" value="Simian"/>
+	<property name="dsl.ext" value="sim"/>
+	
+    <target name="main">
+        <ant antfile="../TCSBuilder_ANTLR3/BuildDSL.xml"/>
+    </target>
+</project>

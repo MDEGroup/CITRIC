@@ -1,0 +1,20 @@
+program SingleResourceProgram {
+	monitor SingleResource {
+		var busy : boolean := false;
+		var nonBusy : condition;
+
+		procedure acquire() {
+			if busy then {
+				nonBusy.wait();
+			} else {
+				busy := true;
+			}
+		}
+
+		procedure release() {
+			busy := false;
+			nonBusy.signal();
+		}
+	}
+}
+

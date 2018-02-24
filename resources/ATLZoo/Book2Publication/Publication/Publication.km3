@@ -1,0 +1,20 @@
+package Publication {
+	class Publication  {
+        attribute title: String;
+		attribute authors: String;
+		attribute nbPages: Integer;
+	}
+}
+
+package PrimitiveTypes {
+	datatype Integer;
+	datatype String;
+	datatype Boolean;
+}
+
+
+
+
+
+
+

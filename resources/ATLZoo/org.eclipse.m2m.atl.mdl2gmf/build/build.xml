@@ -1,0 +1,119 @@
+<project name="MDL2GMF" default="MDL2GMF">
+<!--
+	<property name="sample" value="../Sample/rose2.mdl"/>	
+	<property name="sample" value="../Sample/Topcased-mm_V24_V2toV3-last.mdl"/>
+-->	
+	<property name="sample" value="../Sample/QVT.mdl"/>
+	
+	<property name="MDLParserPath" value="../../MDL/Syntax/MDL-parser.jar"/>
+	<property name="projectPath" value="" />
+	<property name="TempPath" value="../temp" />	
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+	</taskdef>
+	
+	<target name="MDL2GMF" depends="loadModels">
+
+		
+		<!-- Transforms the MDL model into an UML model -->
+		<runtarget target="loadSampleModel" />
+				<am3.atl path="../MDL2UML21.asm">
+					<inModel name="IN" model="Sample"/>
+					<inModel name="MDL" model="MDL"/>			
+					<inModel name="UML" model="UML"/>
+					<library name="RoseUtil" path="../MDLHelpers.atl"/>
+					<outModel name="OUT" metamodel="UML" model="result" path="${sample}.uml" />
+				</am3.atl>
+				<am3.saveModel model="result" path="${sample}.uml"></am3.saveModel>
+		
+
+<!-- OR -->
+<!--
+		<am3.loadModel name="Sample" metamodel="MDL" path="${sample}.xmi"/>
+		<am3.loadModel name="result" metamodel="UML" path="${sample}.uml"/>
+-->
+		<!-- END-->
+		
+		
+		
+		
+		
+		<!-- Initializes the list of diagrams-->
+		<am3.query body="MDL!Object.allInstances()->select(e|e.type='ClassDiagram')
+			->iterate(e; acc:Sequence(String)=Sequence{}|
+			acc->append(e.properties->any(e|e.name='quid').value.value))" property="properties">
+		 <inModel name="MDL" model="MDL"/>
+		 <inModel name="IN" model="Sample"/>
+		</am3.query>
+		<property name="SequenceFile" value="${TempPath}/sequence.properties" />
+		<echo message="${properties}" file="${SequenceFile}"/>
+		<replace token="Sequence" file="${SequenceFile}"/>					
+		<replace token="{" file="${SequenceFile}"/>		
+		<replace token="}" file="${SequenceFile}"/>		
+		<replace token=" " file="${SequenceFile}"/>
+		<replace token="'" file="${SequenceFile}"/>
+		<loadfile property="sequence" srcFile="${SequenceFile}"/>
+		<!-- END-->
+		
+		<!-- Creates the Property Files-->
+		<for list="${sequence}" param="element">
+		  <sequential>
+		  	<copy file="../Metamodel/template.xmi" tofile="${TempPath}/Diagram_@{element}.xmi"/>
+		  	<replace token="@diagramID" value="@{element}" file="${TempPath}/Diagram_@{element}.xmi"/>
+		  </sequential>
+		</for>
+		<eclipse.refreshLocal resource="/org.eclipse.m2m.atl.mdl2gmf/temp"/>
+		<!-- END-->
+			
+		<!-- Creates the GMF Diagram for each Property File-->
+		<for param="e">
+		  <path>
+		    <fileset dir="${TempPath}" includes="*.xmi"/>
+		  </path>
+		  <sequential>
+			<antcall target="createDiagram" inheritall="true" inheritrefs="true">
+				<param name="myPropertyFile" value="@{e}"/>
+			</antcall>
+		  </sequential>
+		</for>
+		<!-- END-->
+		
+	</target>	
+	
+	<target name="createDiagram">
+		<basename property="name" file="${myPropertyFile}" suffix=".xmi"/>
+		<echo>${name}</echo>
+		<am3.loadModel modelHandler="EMF" name="PropertyModel" metamodel="Property" path="${TempPath}/${name}.xmi" />		
+		<!-- Create GMF Diagram -->
+		<am3.atl path="../MDL2GMF.asm" allowintermodelreferences="true">
+			<inModel name="INPROP" model="PropertyModel"/>
+			<inModel name="Property" model="Property"/>
+			<inModel name="INMDL" model="Sample"/>
+			<inModel name="MDL" model="MDL"/>
+			<inModel name="INUML" model="result"/>
+			<inModel name="UML" model="UML"/>
+			<inModel name="GMF" model="GMF"/>
+			<library name="RoseUtil" path="../MDLHelpers.asm"/>
+			<outModel name="OUT" metamodel="GMF" model="result2" path="../output/${name}.umlclass_diagram" />
+		</am3.atl>
+		<am3.saveModel model="result2" path="../output/${name}.umlclass_diagram"></am3.saveModel>
+    </target>
+	
+	<target name="loadModels">
+		<am3.loadModel modelHandler="EMF" name="GMF" metamodel="MOF" nsUri="http://www.eclipse.org/gmf/runtime/1.0.1/notation"/>
+		<am3.loadModel modelHandler="EMF" name="UML" metamodel="MOF" nsUri="http://www.eclipse.org/uml2/2.1.0/UML" />
+		<am3.loadModel modelHandler="EMF" name="Property" metamodel="MOF" path="../Metamodel/Property.ecore" />
+		<am3.loadModel modelhandler="EMF" name="MDL" metamodel="MOF" path="../../MDL/Metamodel/MDL.ecore"/>		
+	</target>
+	<target name="loadSampleModel">			
+		<am3.loadModel modelhandler="EMF" name="Sample" metamodel="MDL" path="${sample}">
+			<injector name="ebnf">
+				<param name="name" value="MDL"/>
+				<classpath>
+					<pathelement location="${MDLParserPath}"/>
+				</classpath>
+			</injector>
+		</am3.loadModel>			
+		<am3.saveModel model="Sample" path="${sample}.xmi"/>
+	</target>
+	
+</project>

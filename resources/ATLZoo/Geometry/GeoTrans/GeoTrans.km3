@@ -1,0 +1,28 @@
+package GeoTrans {
+
+	class GeoTransfos {
+		attribute name : String;
+		reference transfos[*] ordered container : GeoTransfo;
+	}
+	
+	class GeoTransfo {
+		attribute name : String;
+		attribute freeze : Boolean;
+		reference subGeoTransfos[*] ordered container : GeoTransfo oppositeOf superGeoTransfo;		
+		reference superGeoTransfo : GeoTransfo oppositeOf subGeoTransfos;		
+		reference params[*] ordered container : Param oppositeOf geoTransfo;		
+	}
+	
+	class Param {
+		attribute name : String;
+		attribute param : Double;
+		reference geoTransfo : GeoTransfo oppositeOf params;
+	}	
+}
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype Double;
+	datatype Integer;
+	datatype String;
+}

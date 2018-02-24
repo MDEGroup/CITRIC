@@ -1,0 +1,6 @@
+To run the UMLDI2SVG ATL transformation example you have to :
+	- Create launch configurations (see screenshots in ProjectConfiguration/)
+	- Run UMLDI2SVG in the first place
+	- Then run SVG2XML (to have a model ready to be serialized)
+	- Eventually, run XML2Text, once you have configured in the XML2Text.atl code
+	  the output path (first line of the query).

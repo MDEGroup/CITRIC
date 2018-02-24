@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Folder xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Folder" name="/">
+  <files xsi:type="Folder" name="home">
+    <files xsi:type="Folder" name="multimedia">
+      <files xsi:type="Folder" name="pictures">
+        <files name="sunfall.jpg"/>
+        <files name="sunshine.jpg"/>
+        <files name="sunrise.jpg"/>
+      </files>
+      <files xsi:type="Folder" name="music">
+        <files name="LaLaLa.bruell"/>
+        <files name="IsaSong.mp3"/>
+      </files>
+      <files name="info.txt"/>
+    </files>
+  </files>
+</Folder>

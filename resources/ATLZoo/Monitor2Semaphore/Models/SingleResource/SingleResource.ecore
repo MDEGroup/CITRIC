@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Program">
+  <Program location="1:1-19:2" name="SingleResourceProgram">
+    <monitors location="2:9-18:10" name="SingleResource">
+      <variables location="3:17-3:45" name="busy" type="/1">
+        <initialValue xsi:type="BooleanExp" location="3:39-3:44" symbol="false"/>
+      </variables>
+      <variables location="4:17-4:41" name="nonBusy" type="/2"/>
+      <procedures location="6:17-12:18" name="acquire">
+        <statements xsi:type="ConditionalStat" location="7:25-11:26">
+          <condition xsi:type="VariableExp" location="7:28-7:32" declaration="/0/@monitors.0/@variables.0"/>
+          <thenStats xsi:type="ExpressionStat" location="8:33-8:48">
+            <expression xsi:type="ProcedureCallExp" location="8:33-8:47" name="wait">
+              <source xsi:type="VariableExp" location="8:33-8:40" declaration="/0/@monitors.0/@variables.1"/>
+            </expression>
+          </thenStats>
+          <elseStats xsi:type="AssignmentStat" location="10:33-10:46">
+            <target location="10:33-10:37" declaration="/0/@monitors.0/@variables.0"/>
+            <value xsi:type="BooleanExp" location="10:41-10:45" symbol="true"/>
+          </elseStats>
+        </statements>
+      </procedures>
+      <procedures location="14:17-17:18" name="release">
+        <statements xsi:type="AssignmentStat" location="15:25-15:39">
+          <target location="15:25-15:29" declaration="/0/@monitors.0/@variables.0"/>
+          <value xsi:type="BooleanExp" location="15:33-15:38" symbol="false"/>
+        </statements>
+        <statements xsi:type="ExpressionStat" location="16:25-16:42">
+          <expression xsi:type="ProcedureCallExp" location="16:25-16:41" name="signal">
+            <source xsi:type="VariableExp" location="16:25-16:32" declaration="/0/@monitors.0/@variables.1"/>
+          </expression>
+        </statements>
+      </procedures>
+    </monitors>
+  </Program>
+  <Type name="boolean"/>
+  <Type name="condition"/>
+</xmi:XMI>

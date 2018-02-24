@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" startLine="1" endLine="55" name="project">
+  <children xsi:type="Attribute" name="xmlns:ant" value="jelly:ant"/>
+  <children xsi:type="Text" startLine="1" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="2" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="2" endLine="6" name="ant:path">
+    <children xsi:type="Attribute" name="id" value="classpath"/>
+    <children xsi:type="Text" startLine="2" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="3" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="3" endLine="5" name="ant:fileset">
+      <children xsi:type="Attribute" name="dir" value="${jwsdp.home}/common/lib"/>
+      <children xsi:type="Text" startLine="3" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="4" name="#text" value="      "/>
+      <children xsi:type="Element" startLine="4" endLine="4" name="ant:include">
+        <children xsi:type="Attribute" name="name" value="*.jar"/>
+      </children>
+      <children xsi:type="Text" startLine="4" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="5" name="#text" value="    "/>
+    </children>
+    <children xsi:type="Text" startLine="5" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="6" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="6" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="7" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="7" endLine="7" name="ant:property">
+    <children xsi:type="Attribute" name="name" value="example"/>
+    <children xsi:type="Attribute" name="value" value="GSApp"/>
+  </children>
+  <children xsi:type="Text" startLine="7" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="8" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="8" endLine="8" name="ant:property">
+    <children xsi:type="Attribute" name="name" value="path"/>
+    <children xsi:type="Attribute" name="value" value="/${example}"/>
+  </children>
+  <children xsi:type="Text" startLine="8" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="9" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="9" endLine="9" name="ant:property">
+    <children xsi:type="Attribute" name="name" value="build"/>
+    <children xsi:type="Attribute" name="value" value="${jwsdp.home}/docs/tutorial/examples/${example}/build"/>
+  </children>
+  <children xsi:type="Text" startLine="9" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="10" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="10" endLine="10" name="ant:property">
+    <children xsi:type="Attribute" name="name" value="url"/>
+    <children xsi:type="Attribute" name="value" value="http://localhost:8080/manager"/>
+  </children>
+  <children xsi:type="Text" startLine="10" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="11" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="11" endLine="11" name="ant:property">
+    <children xsi:type="Attribute" name="file" value="build.properties"/>
+  </children>
+  <children xsi:type="Text" startLine="11" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="12" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="12" endLine="12" name="ant:property">
+    <children xsi:type="Attribute" name="file" value="${user.home}/build.properties"/>
+  </children>
+  <children xsi:type="Text" startLine="12" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="13" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="13" endLine="13" name="ant:taskdef">
+    <children xsi:type="Attribute" name="name" value="install"/>
+    <children xsi:type="Attribute" name="classname" value="org.apache.catalina.ant.InstallTask"/>
+  </children>
+  <children xsi:type="Text" startLine="13" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="14" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="14" endLine="14" name="ant:taskdef">
+    <children xsi:type="Attribute" name="name" value="reload"/>
+    <children xsi:type="Attribute" name="classname" value="org.apache.catalina.ant.ReloadTask"/>
+  </children>
+  <children xsi:type="Text" startLine="14" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="15" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="15" endLine="15" name="ant:taskdef">
+    <children xsi:type="Attribute" name="name" value="remove"/>
+    <children xsi:type="Attribute" name="classname" value="org.apache.catalina.ant.RemoveTask"/>
+  </children>
+  <children xsi:type="Text" startLine="15" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="16" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="16" endLine="18" name="goal">
+    <children xsi:type="Attribute" name="name" value="init"/>
+    <children xsi:type="Text" startLine="16" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="17" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="17" endLine="17" name="ant:tstamp"/>
+    <children xsi:type="Text" startLine="17" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="18" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="18" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="19" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="19" endLine="24" name="goal">
+    <children xsi:type="Attribute" name="name" value="prepare"/>
+    <children xsi:type="Text" startLine="19" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="20" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="20" endLine="20" name="attainGoal">
+      <children xsi:type="Attribute" name="name" value="init"/>
+    </children>
+    <children xsi:type="Text" startLine="20" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="21" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="21" endLine="21" name="ant:mkdir">
+      <children xsi:type="Attribute" name="ant:dir" value="${build}"/>
+    </children>
+    <children xsi:type="Text" startLine="21" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="22" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="22" endLine="22" name="ant:mkdir">
+      <children xsi:type="Attribute" name="ant:dir" value="${build}/WEB-INF"/>
+    </children>
+    <children xsi:type="Text" startLine="22" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="23" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="23" endLine="23" name="ant:mkdir">
+      <children xsi:type="Attribute" name="ant:dir" value="${build}/WEB-INF/classes"/>
+    </children>
+    <children xsi:type="Text" startLine="23" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="24" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="24" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="25" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="25" endLine="28" name="goal">
+    <children xsi:type="Attribute" name="name" value="install"/>
+    <children xsi:type="Text" startLine="25" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="26" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="26" endLine="26" name="attainGoal">
+      <children xsi:type="Attribute" name="name" value="build"/>
+    </children>
+    <children xsi:type="Text" startLine="26" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="27" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="27" endLine="27" name="install">
+      <children xsi:type="Attribute" name="url" value="${url}"/>
+      <children xsi:type="Attribute" name="username" value="${username}"/>
+      <children xsi:type="Attribute" name="password" value="${password}"/>
+      <children xsi:type="Attribute" name="path" value="${path}"/>
+      <children xsi:type="Attribute" name="war" value="file:${build}"/>
+    </children>
+    <children xsi:type="Text" startLine="27" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="28" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="28" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="29" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="29" endLine="32" name="goal">
+    <children xsi:type="Attribute" name="name" value="reload"/>
+    <children xsi:type="Text" startLine="29" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="30" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="30" endLine="30" name="attainGoal">
+      <children xsi:type="Attribute" name="name" value="build"/>
+    </children>
+    <children xsi:type="Text" startLine="30" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="31" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="31" endLine="31" name="reload">
+      <children xsi:type="Attribute" name="url" value="${url}"/>
+      <children xsi:type="Attribute" name="username" value="${username}"/>
+      <children xsi:type="Attribute" name="password" value="${password}"/>
+      <children xsi:type="Attribute" name="path" value="${path}"/>
+    </children>
+    <children xsi:type="Text" startLine="31" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="32" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="32" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="33" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="33" endLine="35" name="goal">
+    <children xsi:type="Attribute" name="name" value="remove"/>
+    <children xsi:type="Text" startLine="33" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="34" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="34" endLine="34" name="remove">
+      <children xsi:type="Attribute" name="url" value="${url}"/>
+      <children xsi:type="Attribute" name="username" value="${username}"/>
+      <children xsi:type="Attribute" name="password" value="${password}"/>
+      <children xsi:type="Attribute" name="path" value="${path}"/>
+    </children>
+    <children xsi:type="Text" startLine="34" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="35" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="35" name="#text" value="&#xA;"/>
+  <children xsi:type="Text" startLine="36" name="#text" value="  "/>
+  <children xsi:type="Element" startLine="36" endLine="54" name="goal">
+    <children xsi:type="Attribute" name="name" value="build"/>
+    <children xsi:type="Text" startLine="36" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="37" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="37" endLine="37" name="attainGoal">
+      <children xsi:type="Attribute" name="name" value="prepare"/>
+    </children>
+    <children xsi:type="Text" startLine="37" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="38" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="38" endLine="41" name="ant:javac">
+      <children xsi:type="Attribute" name="srcdir" value="src"/>
+      <children xsi:type="Attribute" name="destdir" value="${build}/WEB-INF/classes"/>
+      <children xsi:type="Text" startLine="38" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="39" name="#text" value="      "/>
+      <children xsi:type="Element" startLine="39" endLine="39" name="ant:include">
+        <children xsi:type="Attribute" name="name" value="**/*.java"/>
+      </children>
+      <children xsi:type="Text" startLine="39" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="40" name="#text" value="      "/>
+      <children xsi:type="Element" startLine="40" endLine="40" name="ant:classpath">
+        <children xsi:type="Attribute" name="refid" value="classpath"/>
+      </children>
+      <children xsi:type="Text" startLine="40" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="41" name="#text" value="    "/>
+    </children>
+    <children xsi:type="Text" startLine="41" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="42" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="42" endLine="46" name="ant:copy">
+      <children xsi:type="Attribute" name="todir" value="${build}/WEB-INF"/>
+      <children xsi:type="Text" startLine="42" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="43" name="#text" value="      "/>
+      <children xsi:type="Element" startLine="43" endLine="45" name="ant:fileset">
+        <children xsi:type="Attribute" name="dir" value="web/WEB-INF"/>
+        <children xsi:type="Text" startLine="43" name="#text" value="&#xA;"/>
+        <children xsi:type="Text" startLine="44" name="#text" value="        "/>
+        <children xsi:type="Element" startLine="44" endLine="44" name="ant:include">
+          <children xsi:type="Attribute" name="name" value="web.xml"/>
+        </children>
+        <children xsi:type="Text" startLine="44" name="#text" value="&#xA;"/>
+        <children xsi:type="Text" startLine="45" name="#text" value="      "/>
+      </children>
+      <children xsi:type="Text" startLine="45" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="46" name="#text" value="    "/>
+    </children>
+    <children xsi:type="Text" startLine="46" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="47" name="#text" value="    "/>
+    <children xsi:type="Element" startLine="47" endLine="53" name="ant:copy">
+      <children xsi:type="Attribute" name="todir" value="${build}"/>
+      <children xsi:type="Text" startLine="47" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="48" name="#text" value="      "/>
+      <children xsi:type="Element" startLine="48" endLine="52" name="ant:fileset">
+        <children xsi:type="Attribute" name="dir" value="web"/>
+        <children xsi:type="Text" startLine="48" name="#text" value="&#xA;"/>
+        <children xsi:type="Text" startLine="49" name="#text" value="        "/>
+        <children xsi:type="Element" startLine="49" endLine="49" name="ant:include">
+          <children xsi:type="Attribute" name="name" value="*.html"/>
+        </children>
+        <children xsi:type="Text" startLine="49" name="#text" value="&#xA;"/>
+        <children xsi:type="Text" startLine="50" name="#text" value="        "/>
+        <children xsi:type="Element" startLine="50" endLine="50" name="ant:include">
+          <children xsi:type="Attribute" name="name" value="*.jsp"/>
+        </children>
+        <children xsi:type="Text" startLine="50" name="#text" value="&#xA;"/>
+        <children xsi:type="Text" startLine="51" name="#text" value="        "/>
+        <children xsi:type="Element" startLine="51" endLine="51" name="ant:include">
+          <children xsi:type="Attribute" name="name" value="*.gif"/>
+        </children>
+        <children xsi:type="Text" startLine="51" name="#text" value="&#xA;"/>
+        <children xsi:type="Text" startLine="52" name="#text" value="      "/>
+      </children>
+      <children xsi:type="Text" startLine="52" name="#text" value="&#xA;"/>
+      <children xsi:type="Text" startLine="53" name="#text" value="    "/>
+    </children>
+    <children xsi:type="Text" startLine="53" name="#text" value="&#xA;"/>
+    <children xsi:type="Text" startLine="54" name="#text" value="  "/>
+  </children>
+  <children xsi:type="Text" startLine="54" name="#text" value="&#xA;"/>
+</Root>

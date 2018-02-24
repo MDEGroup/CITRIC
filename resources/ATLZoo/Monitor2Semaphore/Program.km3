@@ -1,0 +1,127 @@
+
+package Program {
+
+	abstract class LocatedElement {
+		attribute location : String;
+	}
+    
+	abstract class NamedElement extends LocatedElement {
+		attribute name : String;
+	}
+	
+	abstract class Structure extends NamedElement {
+		reference variables[*] ordered container : VariableDeclaration oppositeOf structure;    
+	}
+	
+	abstract class ProcContainerElement extends Structure {
+		reference procedures[*] ordered container : Procedure oppositeOf "container";
+	}
+	
+	class Program extends ProcContainerElement {
+		reference monitors[*] ordered container : Monitor oppositeOf program;
+	}
+	
+	class Monitor extends ProcContainerElement {
+		reference program : Program oppositeOf monitors;
+	}
+	
+	-- Procedures
+	class Procedure extends Structure {
+		reference "container" : ProcContainerElement oppositeOf procedures;
+		reference parameters[*] ordered container : Parameter oppositeOf procedure;
+		reference statements[*] ordered container : Statement;
+	}
+	
+	class VariableDeclaration extends NamedElement {
+		reference type : Type;
+		reference initialValue[0-1] container : Expression;
+		reference structure : Structure oppositeOf variables;
+	}
+
+	class Parameter extends VariableDeclaration {
+		attribute direction : Direction;
+		reference procedure : Procedure oppositeOf parameters;
+	}
+
+	enumeration Direction {
+		literal in;
+		literal out;
+	}
+	-- End Procedures
+
+	-- Types
+	class Type extends NamedElement {
+	}
+	-- End Types
+
+	-- Expressions
+	abstract class Expression extends LocatedElement {
+	}
+    
+	class VariableExp extends Expression {
+		reference declaration : VariableDeclaration;
+	}
+    
+	-- PropertyCalls
+	abstract class PropertyCallExp extends Expression {
+		reference source container : Expression;
+		attribute name : String;
+	}
+
+	class OperatorCallExp extends PropertyCallExp {
+		reference right container : Expression;
+	}
+
+	class AttributeCallExp extends PropertyCallExp {
+	}
+
+	class ProcedureCallExp extends PropertyCallExp {
+		reference arguments[*] ordered container : Expression;
+	}
+	-- End PropertyCalls
+
+	-- Literals    
+	abstract class LiteralExp extends Expression {
+	}
+
+	class BooleanExp extends LiteralExp {
+		attribute symbol : Boolean;
+	}
+
+	class IntegerExp extends LiteralExp {
+		attribute symbol : Integer;
+	}
+	-- End Literals    
+	-- End Expressions
+
+	-- Statements
+	abstract class Statement extends LocatedElement {
+	}
+
+	class AssignmentStat extends Statement {
+		reference target container : VariableExp;
+		reference value container : Expression;
+	}
+    
+	class ConditionalStat extends Statement {
+		reference condition container : Expression;
+		reference thenStats[1-*] container : Statement;
+		reference elseStats[*] container : Statement;
+	}
+    
+	class WhileStat extends Statement {
+		reference condition container : Expression;
+		reference doStats[1-*] container : Statement;
+	}
+
+	class ExpressionStat extends Statement {
+		reference expression container : Expression;
+	}
+	-- End Statements
+}
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype Integer;
+	datatype String;
+}

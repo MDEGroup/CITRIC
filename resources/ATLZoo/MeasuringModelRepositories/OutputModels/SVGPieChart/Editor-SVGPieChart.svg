@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '2440.8' height = '406.8'>
+  <g transform = 'translate(183.06,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Attribute Inheritance Factor per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 66.91306063588583,74.31448254773943 z' fill = 'rgb(0,66,74)' stroke = 'black'/>
+      <text x = '66.91306063588583' y = '74.31448254773943' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(48.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 91.35454576426008,40.67366430758002 z' fill = 'rgb(48,91,40)' stroke = 'black'/>
+      <text x = '91.35454576426008' y = '40.67366430758002' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Block</text>
+    </g>
+    <g transform = 'rotate(72.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 66.91306063588583,74.31448254773943 z' fill = 'rgb(72,66,74)' stroke = 'black'/>
+      <text x = '66.91306063588583' y = '74.31448254773943' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- GroupElement</text>
+    </g>
+    <g transform = 'rotate(120.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 66.91306063588583,74.31448254773943 z' fill = 'rgb(120,66,74)' stroke = 'black'/>
+      <text x = '66.91306063588583' y = '74.31448254773943' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Element</text>
+    </g>
+    <g transform = 'rotate(168.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -10.452846326765355,99.45218953682733 z' fill = 'rgb(168,10,99)' stroke = 'black'/>
+      <text x = '-10.452846326765355' y = '99.45218953682733' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Format</text>
+    </g>
+    <g transform = 'rotate(264.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 91.35454576426008,40.67366430758002 z' fill = 'rgb(264,91,40)' stroke = 'black'/>
+      <text x = '91.35454576426008' y = '40.67366430758002' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Color</text>
+    </g>
+    <g transform = 'rotate(288.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 91.35454576426008,40.67366430758002 z' fill = 'rgb(288,91,40)' stroke = 'black'/>
+      <text x = '91.35454576426008' y = '40.67366430758002' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Font</text>
+    </g>
+    <g transform = 'rotate(312.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 66.91306063588583,74.31448254773943 z' fill = 'rgb(312,66,74)' stroke = 'black'/>
+      <text x = '66.91306063588583' y = '74.31448254773943' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Indent</text>
+    </g>
+  </g>
+  <g transform = 'translate(549.1800000000001,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Depth Inheritance Tree per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(0,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(45.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(45,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Block</text>
+    </g>
+    <g transform = 'rotate(90.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(90,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- GroupElement</text>
+    </g>
+    <g transform = 'rotate(135.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(135,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Element</text>
+    </g>
+    <g transform = 'rotate(180.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(180,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Format</text>
+    </g>
+    <g transform = 'rotate(225.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(225,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Color</text>
+    </g>
+    <g transform = 'rotate(270.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(270,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Font</text>
+    </g>
+    <g transform = 'rotate(315.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(315,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Indent</text>
+    </g>
+  </g>
+  <g transform = 'translate(915.3,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Number of Children per Class</text>
+    <g transform = '' fill = 'black'>
+      <circle x = '0.0' y = '0.0' r = '100.0' fill = 'blue' stroke = 'black'/>
+      <text x = '100.0' y = '0.0' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LocatedElement</text>
+    </g>
+  </g>
+  <g transform = 'translate(1281.42,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes Inherited per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(0,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(45.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(45,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Block</text>
+    </g>
+    <g transform = 'rotate(90.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(90,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- GroupElement</text>
+    </g>
+    <g transform = 'rotate(135.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(135,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Element</text>
+    </g>
+    <g transform = 'rotate(180.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(180,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Format</text>
+    </g>
+    <g transform = 'rotate(225.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(225,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Color</text>
+    </g>
+    <g transform = 'rotate(270.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(270,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Font</text>
+    </g>
+    <g transform = 'rotate(315.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(315,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Indent</text>
+    </g>
+  </g>
+  <g transform = 'translate(1647.54,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(0,95,28)' stroke = 'black'/>
+      <text x = '95.94929736144974' y = '28.173255684142973' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LocatedElement</text>
+    </g>
+    <g transform = 'rotate(16.363636363636367)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(16,84,54)' stroke = 'black'/>
+      <text x = '84.12535328311812' y = '54.06408174555977' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(49.0909090909091)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 41.54150130018863,90.96319953545185 z' fill = 'rgb(49,41,90)' stroke = 'black'/>
+      <text x = '41.54150130018863' y = '90.96319953545185' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Block</text>
+    </g>
+    <g transform = 'rotate(114.54545454545456)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(114,84,54)' stroke = 'black'/>
+      <text x = '84.12535328311812' y = '54.06408174555977' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- GroupElement</text>
+    </g>
+    <g transform = 'rotate(147.2727272727273)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(147,84,54)' stroke = 'black'/>
+      <text x = '84.12535328311812' y = '54.06408174555977' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Element</text>
+    </g>
+    <g transform = 'rotate(180.00000000000006)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.94929736144974,28.173255684142973 z' fill = 'rgb(180,95,28)' stroke = 'black'/>
+      <text x = '95.94929736144974' y = '28.173255684142973' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Format</text>
+    </g>
+    <g transform = 'rotate(196.36363636363643)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 41.54150130018863,90.96319953545185 z' fill = 'rgb(196,41,90)' stroke = 'black'/>
+      <text x = '41.54150130018863' y = '90.96319953545185' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Color</text>
+    </g>
+    <g transform = 'rotate(261.81818181818187)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 41.54150130018863,90.96319953545185 z' fill = 'rgb(261,41,90)' stroke = 'black'/>
+      <text x = '41.54150130018863' y = '90.96319953545185' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Font</text>
+    </g>
+    <g transform = 'rotate(327.27272727272737)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 84.12535328311812,54.06408174555977 z' fill = 'rgb(327,84,54)' stroke = 'black'/>
+      <text x = '84.12535328311812' y = '54.06408174555977' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Indent</text>
+    </g>
+  </g>
+  <g transform = 'translate(2013.66,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Relationships per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(0,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(45.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(45,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Block</text>
+    </g>
+    <g transform = 'rotate(90.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 6.123233995736766E-15,100.0 z' fill = 'rgb(90,0,100)' stroke = 'black'/>
+      <text x = '6.123233995736766E-15' y = '100.0' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- GroupElement</text>
+    </g>
+    <g transform = 'rotate(180.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.38795325112868,38.268343236508976 z' fill = 'rgb(180,92,38)' stroke = 'black'/>
+      <text x = '92.38795325112868' y = '38.268343236508976' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Element</text>
+    </g>
+    <g transform = 'rotate(202.5)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 6.123233995736766E-15,100.0 z' fill = 'rgb(202,0,100)' stroke = 'black'/>
+      <text x = '6.123233995736766E-15' y = '100.0' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Format</text>
+    </g>
+    <g transform = 'rotate(292.5)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.38795325112868,38.268343236508976 z' fill = 'rgb(292,92,38)' stroke = 'black'/>
+      <text x = '92.38795325112868' y = '38.268343236508976' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Color</text>
+    </g>
+    <g transform = 'rotate(315.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.38795325112868,38.268343236508976 z' fill = 'rgb(315,92,38)' stroke = 'black'/>
+      <text x = '92.38795325112868' y = '38.268343236508976' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Font</text>
+    </g>
+    <g transform = 'rotate(337.5)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.38795325112868,38.268343236508976 z' fill = 'rgb(337,92,38)' stroke = 'black'/>
+      <text x = '92.38795325112868' y = '38.268343236508976' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Indent</text>
+    </g>
+  </g>
+</svg>

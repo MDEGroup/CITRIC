@@ -1,0 +1,101 @@
+package sdl {
+
+	abstract class Element {
+		attribute ElName : String;
+	}
+
+	abstract class DocumentedElement extends Element {
+		
+	}
+
+	abstract class SemanticElement extends DocumentedElement {
+		attribute ontologyReference[0-1] : String;
+	}
+
+	class Definitions extends SemanticElement {
+		reference cmpMessageList[*] container : MessageList;
+		reference cmpMessage[*] ordered container : SimpleMessage;
+		reference cmpInterface[1-*] ordered container : Interface;
+		reference cmpType[*] ordered container : Type;
+	}
+
+	class Interface extends SemanticElement {
+		reference cmpOperation[1-*] ordered container : Operation;
+	}
+
+	class SimpleMessage extends Message {
+		reference cmpPart[1-*] ordered container : Part;
+	}
+
+	class Operation extends SemanticElement {
+		reference refOutputMessage : SimpleMessage;
+		reference refInputMessage : SimpleMessage;
+		reference refFunctionalException[0-1] : MessageList;
+		reference refTechnicalException[0-1] : MessageList;
+	}
+
+	class Part extends SemanticElement {
+		reference refPart : Type;
+		attribute optional[0-1] : Boolean;
+		attribute isArray[0-1] : Boolean;
+	}
+
+	class Type extends SemanticElement {
+		
+	}
+
+	class ComplexType extends Type {
+		reference cmpPart[1-*] ordered container : Part;
+	}
+
+	abstract class SimpleType extends Type {
+		
+	}
+
+	class SdlString extends SimpleType {
+		
+	}
+
+	class SdlReal extends SimpleType {
+		
+	}
+
+	class SdlInteger extends SimpleType {
+		
+	}
+
+	class SdlBoolean extends SimpleType {
+		
+	}
+
+	class SdlDateTime extends SimpleType {
+		
+	}
+
+	class SdlUri extends SimpleType {
+		
+	}
+
+	class MessageList extends Message {
+		reference cmpMessageList[*] ordered : SimpleMessage;
+	}
+
+	abstract class Message extends SemanticElement {
+		
+	}
+}
+
+package PrimitiveTypes {
+
+	datatype Integer;
+
+	datatype Long;
+
+	datatype Float;
+
+	datatype Double;
+
+	datatype Boolean;
+
+	datatype String;
+}

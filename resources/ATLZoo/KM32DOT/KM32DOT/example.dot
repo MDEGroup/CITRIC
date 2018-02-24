@@ -1,0 +1,97 @@
+digraph "KM3 Model in DOT" {
+graph[rankdir=BT,labeljust=l,labelloc=t,nodeSep=0.75,compound=true];
+ subgraph "cluster_PrimitiveTypes"{
+labelloc=t
+color=black
+label=PrimitiveTypes
+ node[shape=record];
+Boolean[label="{&#171;DataType&#187;\nBoolean|}"]
+;
+ node[shape=record];
+Integer[label="{&#171;DataType&#187;\nInteger|}"]
+;
+ node[shape=record];
+String[label="{&#171;DataType&#187;\nString|}"]
+;
+
+} subgraph "cluster_KM3"{
+labelloc=t
+color=black
+label=KM3
+ node[shape=record];
+LocatedElement[label="{/LocatedElement/|location : String| }"]
+;
+ node[shape=record];
+ModelElement[label="{/ModelElement/|name : String| }"]
+ ModelElement->Package[arrowhead=diamond,arrowtail=none,headlabel="package",taillabel="contents[*]{ordered}",group=Package,minlen=2,constraint=true,]
+ ModelElement->LocatedElement[arrowhead=onormal,group=LocatedElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Classifier[label="{Classifier| | }"]
+ Classifier->ModelElement[arrowhead=onormal,group=ModelElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+DataType[label="{DataType| | }"]
+ DataType->Classifier[arrowhead=onormal,group=Classifier,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Enumeration[label="{Enumeration| | }"]
+ Enumeration->Classifier[arrowhead=onormal,group=Classifier,minlen=2,constraint=true,]
+;
+ node[shape=record];
+EnumLiteral[label="{EnumLiteral| | }"]
+ EnumLiteral->Enumeration[arrowhead=diamond,arrowtail=none,headlabel="enum",taillabel="literals[*]{ordered}",group=Enumeration,minlen=2,constraint=true,]
+ EnumLiteral->ModelElement[arrowhead=onormal,group=ModelElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+TemplateParameter[label="{TemplateParameter| | }"]
+ TemplateParameter->Classifier[arrowhead=onormal,group=Classifier,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Class[label="{Class|isAbstract : Boolean| }"]
+ Class->TemplateParameter[arrowhead=vee,arrowtail=diamond,headlabel="parameters[*]{ordered}",group=TemplateParameter,minlen=2,constraint=true,]
+ Class->Class[arrowhead=vee,arrowtail=none,headlabel="supertypes[*]",group=Class,minlen=2,constraint=false,]
+ Class->Classifier[arrowhead=onormal,group=Classifier,minlen=2,constraint=true,]
+;
+ node[shape=record];
+TypedElement[label="{TypedElement|lower : Integer\nupper : Integer\nisOrdered : Boolean\nisUnique : Boolean| }"]
+ TypedElement->Classifier[arrowhead=vee,arrowtail=none,headlabel="type",group=Classifier,minlen=2,constraint=false,]
+ TypedElement->ModelElement[arrowhead=onormal,group=ModelElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+StructuralFeature[label="{StructuralFeature| | }"]
+ StructuralFeature->Class[arrowhead=diamond,arrowtail=none,headlabel="owner",taillabel="structuralFeatures[*]{ordered}",group=Class,minlen=2,constraint=true,]
+ StructuralFeature->StructuralFeature[arrowhead=none,arrowtail=none,headlabel="subsetOf[*]",taillabel="derivedFrom[*]",group=StructuralFeature,minlen=2,constraint=false,]
+ StructuralFeature->TypedElement[arrowhead=onormal,group=TypedElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Attribute[label="{Attribute| | }"]
+ Attribute->StructuralFeature[arrowhead=onormal,group=StructuralFeature,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Reference[label="{Reference|isContainer : Boolean| }"]
+ Reference->Reference[arrowhead=vee,arrowtail=none,headlabel="opposite[0-1]",group=Reference,minlen=2,constraint=false,]
+ Reference->StructuralFeature[arrowhead=onormal,group=StructuralFeature,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Operation[label="{Operation| | }"]
+ Operation->Class[arrowhead=diamond,arrowtail=none,headlabel="owner",taillabel="operations[*]{ordered}",group=Class,minlen=2,constraint=true,]
+ Operation->TypedElement[arrowhead=onormal,group=TypedElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Parameter[label="{Parameter| | }"]
+ Parameter->Operation[arrowhead=diamond,arrowtail=none,headlabel="owner",taillabel="parameters[*]{ordered}",group=Operation,minlen=2,constraint=true,]
+ Parameter->TypedElement[arrowhead=onormal,group=TypedElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Package[label="{Package| | }"]
+ Package->Metamodel[arrowhead=diamond,arrowtail=none,headlabel="metamodel",taillabel="contents[*]{ordered}",group=Metamodel,minlen=2,constraint=true,]
+ Package->ModelElement[arrowhead=onormal,group=ModelElement,minlen=2,constraint=true,]
+;
+ node[shape=record];
+Metamodel[label="{Metamodel| | }"]
+ Metamodel->LocatedElement[arrowhead=onormal,group=LocatedElement,minlen=2,constraint=true,]
+;
+
+}
+}

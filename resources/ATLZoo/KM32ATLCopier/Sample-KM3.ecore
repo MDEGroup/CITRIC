@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="KM3" location="1:1-12:2">
+  <contents location="1:1-8:2" name="Sample">
+    <contents xsi:type="Class" location="3:5-6:6" name="Test" isAbstract="false">
+      <structuralFeatures xsi:type="Attribute" location="4:9-4:33" name="name" lower="1" upper="1" isOrdered="false" isUnique="false" type="//@contents.1/@contents.0"/>
+      <structuralFeatures xsi:type="Attribute" location="5:9-5:40" name="description" lower="1" upper="1" isOrdered="false" isUnique="false" type="//@contents.1/@contents.0"/>
+    </contents>
+  </contents>
+  <contents location="10:1-12:2" name="PrimitiveTypes">
+    <contents xsi:type="DataType" location="11:9-11:25" name="String"/>
+  </contents>
+</Metamodel>

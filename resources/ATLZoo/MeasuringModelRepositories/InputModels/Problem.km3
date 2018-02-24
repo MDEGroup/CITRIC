@@ -1,0 +1,26 @@
+-- @nsURI http://www.eclipse.org/gmt/2005/Problem
+-- @nsPrefix pb
+package Problem {
+
+	class Problem {
+		attribute severity : Severity;
+		attribute location : String;
+		attribute description : String;
+	}
+
+	enumeration Severity {
+		literal critic;
+		literal error;
+		literal warning;
+	}
+}
+
+package PrimitiveTypes {
+
+	datatype Boolean;
+
+	datatype Integer;
+
+	datatype String;
+}
+

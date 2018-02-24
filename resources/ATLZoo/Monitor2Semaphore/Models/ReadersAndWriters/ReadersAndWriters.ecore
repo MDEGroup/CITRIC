@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Program">
+  <Program location="1:1-40:2" name="ReadersAndWritersProgram">
+    <monitors location="2:9-39:10" name="ReadersAndWriters">
+      <variables location="3:17-3:48" name="readerCount" type="/1">
+        <initialValue xsi:type="IntegerExp" location="3:46-3:47" symbol="0"/>
+      </variables>
+      <variables location="4:17-4:45" name="busy" type="/2">
+        <initialValue xsi:type="BooleanExp" location="4:39-4:44" symbol="false"/>
+      </variables>
+      <variables location="5:17-5:42" name="OKToRead" type="/3"/>
+      <variables location="6:17-6:43" name="OKToWrite" type="/3"/>
+      <procedures location="8:17-15:18" name="startRead">
+        <statements xsi:type="ConditionalStat" location="9:25-11:26">
+          <condition xsi:type="OperatorCallExp" location="9:28-9:53" name="or">
+            <source xsi:type="VariableExp" location="9:28-9:32" declaration="/0/@monitors.0/@variables.1"/>
+            <right xsi:type="ProcedureCallExp" location="9:36-9:53" name="queue">
+              <source xsi:type="VariableExp" location="9:36-9:45" declaration="/0/@monitors.0/@variables.3"/>
+            </right>
+          </condition>
+          <thenStats xsi:type="ExpressionStat" location="10:33-10:49">
+            <expression xsi:type="ProcedureCallExp" location="10:33-10:48" name="wait">
+              <source xsi:type="VariableExp" location="10:33-10:41" declaration="/0/@monitors.0/@variables.2"/>
+            </expression>
+          </thenStats>
+        </statements>
+        <statements xsi:type="AssignmentStat" location="12:25-12:56">
+          <target location="12:25-12:36" declaration="/0/@monitors.0/@variables.0"/>
+          <value xsi:type="OperatorCallExp" location="12:40-12:55" name="+">
+            <source xsi:type="VariableExp" location="12:40-12:51" declaration="/0/@monitors.0/@variables.0"/>
+            <right xsi:type="IntegerExp" location="12:54-12:55" symbol="1"/>
+          </value>
+        </statements>
+        <statements xsi:type="ExpressionStat" location="13:25-13:43">
+          <expression xsi:type="ProcedureCallExp" location="13:25-13:42" name="signal">
+            <source xsi:type="VariableExp" location="13:25-13:33" declaration="/0/@monitors.0/@variables.2"/>
+          </expression>
+        </statements>
+      </procedures>
+      <procedures location="17:17-22:18" name="endRead">
+        <statements xsi:type="AssignmentStat" location="18:25-18:56">
+          <target location="18:25-18:36" declaration="/0/@monitors.0/@variables.0"/>
+          <value xsi:type="OperatorCallExp" location="18:40-18:55" name="-">
+            <source xsi:type="VariableExp" location="18:40-18:51" declaration="/0/@monitors.0/@variables.0"/>
+            <right xsi:type="IntegerExp" location="18:54-18:55" symbol="1"/>
+          </value>
+        </statements>
+        <statements xsi:type="ConditionalStat" location="19:25-21:26">
+          <condition xsi:type="OperatorCallExp" location="19:28-19:43" name="=">
+            <source xsi:type="VariableExp" location="19:28-19:39" declaration="/0/@monitors.0/@variables.0"/>
+            <right xsi:type="IntegerExp" location="19:42-19:43" symbol="0"/>
+          </condition>
+          <thenStats xsi:type="ExpressionStat" location="20:33-20:52">
+            <expression xsi:type="ProcedureCallExp" location="20:33-20:51" name="signal">
+              <source xsi:type="VariableExp" location="20:33-20:42" declaration="/0/@monitors.0/@variables.3"/>
+            </expression>
+          </thenStats>
+        </statements>
+      </procedures>
+      <procedures location="24:17-29:18" name="startWrite">
+        <statements xsi:type="ConditionalStat" location="25:25-27:26">
+          <condition xsi:type="OperatorCallExp" location="25:28-25:52" name="or">
+            <source xsi:type="OperatorCallExp" location="25:28-25:44" name="&lt;>">
+              <source xsi:type="VariableExp" location="25:28-25:39" declaration="/0/@monitors.0/@variables.0"/>
+              <right xsi:type="IntegerExp" location="25:43-25:44" symbol="0"/>
+            </source>
+            <right xsi:type="VariableExp" location="25:48-25:52" declaration="/0/@monitors.0/@variables.1"/>
+          </condition>
+          <thenStats xsi:type="ExpressionStat" location="26:33-26:50">
+            <expression xsi:type="ProcedureCallExp" location="26:33-26:49" name="wait">
+              <source xsi:type="VariableExp" location="26:33-26:42" declaration="/0/@monitors.0/@variables.3"/>
+            </expression>
+          </thenStats>
+        </statements>
+        <statements xsi:type="AssignmentStat" location="28:25-28:38">
+          <target location="28:25-28:29" declaration="/0/@monitors.0/@variables.1"/>
+          <value xsi:type="BooleanExp" location="28:33-28:37" symbol="true"/>
+        </statements>
+      </procedures>
+      <procedures location="31:17-38:18" name="endWrite">
+        <statements xsi:type="AssignmentStat" location="32:25-32:39">
+          <target location="32:25-32:29" declaration="/0/@monitors.0/@variables.1"/>
+          <value xsi:type="BooleanExp" location="32:33-32:38" symbol="false"/>
+        </statements>
+        <statements xsi:type="ConditionalStat" location="33:25-37:26">
+          <condition xsi:type="ProcedureCallExp" location="33:28-33:44" name="queue">
+            <source xsi:type="VariableExp" location="33:28-33:36" declaration="/0/@monitors.0/@variables.2"/>
+          </condition>
+          <thenStats xsi:type="ExpressionStat" location="34:33-34:51">
+            <expression xsi:type="ProcedureCallExp" location="34:33-34:50" name="signal">
+              <source xsi:type="VariableExp" location="34:33-34:41" declaration="/0/@monitors.0/@variables.2"/>
+            </expression>
+          </thenStats>
+          <elseStats xsi:type="ExpressionStat" location="36:33-36:52">
+            <expression xsi:type="ProcedureCallExp" location="36:33-36:51" name="signal">
+              <source xsi:type="VariableExp" location="36:33-36:42" declaration="/0/@monitors.0/@variables.3"/>
+            </expression>
+          </elseStats>
+        </statements>
+      </procedures>
+    </monitors>
+  </Program>
+  <Type name="integer"/>
+  <Type name="boolean"/>
+  <Type name="condition"/>
+</xmi:XMI>

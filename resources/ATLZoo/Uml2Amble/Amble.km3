@@ -1,0 +1,77 @@
+package Amble {
+
+	abstract class Element {
+		attribute name : String; 
+	}
+	
+	class Program extends Element {
+		reference processes [*] container : Process;
+		reference networks [*] container : Network;
+	}
+ 
+	class Process extends Element {
+		attribute minId : Integer;
+		attribute maxId : Integer;
+		attribute instancesNb : Integer;
+		reference states [*] container : State;
+		reference transitions [*] container : Transition;
+		reference initial [0-1] container : Action;
+		reference variables [*] container : Variable;
+		reference connectedTo [*] : Network;
+	}
+ 
+	class State extends Element {
+		attribute isInitial : Boolean;
+		reference incoming [*] : Transition oppositeOf target;
+		reference outgoing [*] : Transition oppositeOf source;
+	}
+ 
+	abstract class Transition {
+		reference guard [0-1] container : Guard;
+		reference action [0-1] container : Action;
+		reference source : State oppositeOf outgoing;
+		reference target : State oppositeOf incoming;
+	}
+ 
+	class Trans extends Transition {
+		reference waitFor : Message;
+	}
+ 
+	class Strans extends Transition {
+	}
+ 
+	class Transall extends Transition {
+		reference waitFor : Message;
+	}
+ 
+	class Guard extends Element {
+	}
+ 
+	class Action extends Element {
+	}
+ 
+	class Network extends Element {
+		reference channels [*] container : Channel;
+	}
+ 
+	class Channel extends Element {
+		reference messages [*] container : Message;
+		reference source : Process;
+		reference target : Process;
+	}
+
+	class Message extends Element {
+	}
+
+	class Variable extends Element {
+		attribute type : String;
+		attribute initValue : String;
+	}
+ 
+}
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype String;
+	datatype Integer;
+}

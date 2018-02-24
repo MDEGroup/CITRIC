@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" x="20.0" y="67.0">
+  <defs>
+    <marker refX="10.0" refY="5.0" id="Association" markerWidth="11.0" markerHeight="11.0" orient="auto" fill="none" viewBox="0 0 10 10">
+      <g>
+        <path d="M 0 0 L 10 5 L 0 10" stroke="black"/>
+      </g>
+    </marker>
+    <marker refX="10.0" refY="5.0" id="Generalization" markerWidth="11.0" markerHeight="11.0" orient="auto" fill="white" viewBox="0 0 10 10">
+      <g>
+        <path d="M 0 0 L 10 5 L 0 10" stroke="black"/>
+        <path d="M 0.05 0.2 L 0.2 9.95" stroke="black"/>
+      </g>
+    </marker>
+    <marker refX="10.0" refY="5.0" id="Dependency" markerWidth="11.0" markerHeight="11.0" orient="auto" fill="none" viewBox="0 0 10 10">
+      <g>
+        <path d="M 0 0 L 10 5 L 0 10" stroke="black"/>
+      </g>
+    </marker>
+    <marker refX="10.0" refY="5.0" id="Aggregation" markerWidth="11.0" markerHeight="11.0" orient="180" fill="white" viewBox="0 0 10 10">
+      <g>
+        <path d="M 0 5 L 5 10 L 10 5 L 5 0 L 0 5" stroke="black"/>
+      </g>
+    </marker>
+    <marker refX="10.0" refY="5.0" id="Composition" markerWidth="11.0" markerHeight="11.0" orient="180" fill="black" viewBox="0 0 10 10">
+      <g>
+        <path d="M 0 5 L 5 10 L 10 5 L 5 0 L 0 5" stroke="black"/>
+      </g>
+    </marker>
+  </defs>
+  <g>
+    <rect x="150.0" y="137.0" width="150.4004" height="70.0" fill="white" stroke="black"/>
+    <line x1="150.0" y1="152.0" x2="300.4004" y2="152.0" stroke="black"/>
+    <text x="206.4121" y="149.0" fill="black" font-size="11px" font-weight="bold">Class1</text>
+    <g>
+      <text x="155.0" y="168.0" fill="black" font-size="11px">-attribute1:int</text>
+    </g>
+    <line x1="150.0" y1="179.0" x2="300.4004" y2="179.0" stroke="black"/>
+    <g>
+      <text x="155.0" y="193.0" fill="black" font-size="11px">+operation1(p1:int):float[]</text>
+    </g>
+  </g>
+  <g>
+    <rect x="490.0" y="137.0" width="232.3257" height="70.0" fill="white" stroke="black"/>
+    <line x1="490.0" y1="152.0" x2="722.3257" y2="152.0" stroke="black"/>
+    <text x="587.3748" y="149.0" fill="black" font-size="11px" font-weight="bold">Class2</text>
+    <g>
+      <text x="495.0" y="168.0" fill="black" font-size="11px">~attribute2:int1..*= 42</text>
+    </g>
+    <line x1="490.0" y1="179.0" x2="722.3257" y2="179.0" stroke="black"/>
+    <g>
+      <text x="495.0" y="193.0" fill="black" font-size="11px">#operation_2(p2:short[],p3:int):void</text>
+    </g>
+  </g>
+  <g>
+    <rect x="150.0" y="307.0" width="100.0" height="70.0" fill="white" stroke="black"/>
+    <line x1="150.0" y1="322.0" x2="250.0" y2="322.0" stroke="black"/>
+    <text x="181.2119" y="319.0" fill="black" font-size="11px" font-weight="bold">Class3</text>
+    <g/>
+    <line x1="150.0" y1="349.0" x2="250.0" y2="349.0" stroke="black"/>
+    <g/>
+  </g>
+  <g>
+    <rect x="540.0" y="17.0" width="120.4619" height="60.0" fill="white" stroke="black"/>
+    <line x1="540.0" y1="32.0" x2="660.4619" y2="32.0" stroke="black"/>
+    <text x="571.552" y="29.0" fill="black" font-size="11px" font-weight="bold">Interface1</text>
+    <g>
+      <text x="545.0" y="47.0" fill="black" font-size="11px" font-style="italic">+operation3():void</text>
+    </g>
+  </g>
+  <g>
+    <polyline points="250.0,337.0 590.0,337.0 590.0,207.0 " stroke="black" fill="white" marker-end="none" marker-start="url(#Composition)"/>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+  </g>
+  <g>
+    <polyline points="300.4004,172.0 490.0,172.0 " stroke="black" fill="white" marker-end="url(#Association)" marker-start="none"/>
+    <text x="361.0589" y="182.0" fill="black" font-size="10px">Association1</text>
+    <text x="313.3908" y="164.5" fill="black" font-size="10px">1..*</text>
+    <text x="456.1375" y="193.5" fill="black" font-size="10px">0..1</text>
+    <text x="313.3908" y="190.7495" fill="black" font-size="10px">theEnd</text>
+    <text x="410.1126" y="169.125" fill="black" font-size="10px">theOtherEnd</text>
+  </g>
+  <g>
+    <polyline points="590.0,137.0 590.0,77.0 " stroke="black" fill="white" stroke-dasharray="5,5" marker-end="url(#Dependency)"/>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+  </g>
+  <g>
+    <polyline points="200.0,137.0 200.0,47.0 540.0,47.0 " stroke="black" fill="white" stroke-dasharray="5,5" marker-end="url(#Dependency)"/>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+  </g>
+  <g>
+    <polyline points="200.0,307.0 200.0,207.0 " stroke="black" fill="white" marker-end="url(#Generalization)" marker-start="none"/>
+    <text x="0.0" y="0.0" fill="black" font-size="10px"></text>
+  </g>
+  <g>
+    <polyline points="590.0,137.0 590.0,77.0 " stroke="black" fill="white" stroke-dasharray="5,5" marker-end="url(#Generalization)"/>
+    <text x="529.0142" y="100.0" fill="black" font-size="10px">&#171; realize &#187;</text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="SimpleExample">
+  <ConceptA>
+    <Bs/>
+    <Bs/>
+    <Cs/>
+  </ConceptA>
+  <BReferencesC Property=""/>
+  <BReferencesC Property=""/>
+</xmi:XMI>

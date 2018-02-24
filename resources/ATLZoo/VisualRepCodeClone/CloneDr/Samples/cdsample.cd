@@ -1,0 +1,56 @@
+#1	5a7eb90	+1234	rule_name	0.972	3	2	15
+#2	5a7eb90	bb22a60	233	0	247	0	C:/software/clone tools/XORCracker.java
+#3	5a7eb90	bb22a60	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7eb90	bb22a60	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7eb90	bb22a60	3	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7eb90	5a0c460	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7eb90	5a0c460	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7eb90	5a0c460	3	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#1	5a7e550	+1234	rule_name	0.970	2	2	11
+#2	5a7e550	3bcb780	19	0	29	0	C:/software/clone tools/XOR.java
+#2	5a7e550	3bd6560	45	0	55	0	C:/software/clone tools/XOR.java
+#3	5a7e550	3bcb780	1	1	0	0	0	0	C:/software/clone tools/XOR.java
+#3	5a7e550	3bcb780	2	1	0	0	0	0	C:/software/clone tools/XOR.java
+#3	5a7e550	3bd6560	1	1	0	0	0	0	C:/software/clone tools/XOR.java
+#3	5a7e550	3bd6560	2	1	0	0	0	0	C:/software/clone tools/XOR.java
+#1	5a8a1d0	+1234	rule_name	0.985	5	2	7
+#2	5a8a1d0	bb4ae80	313	0	319	0	C:/software/clone tools/XORCracker.java
+#2	5a8a1d0	bb592a0	331	0	337	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb4ae80	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb4ae80	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb4ae80	3	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb4ae80	4	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb4ae80	5	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb592a0	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb592a0	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb592a0	3	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb592a0	4	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a1d0	bb592a0	5	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#1	5a8a550	+1234	rule_name	0.986	5	2	5
+#2	5a8a550	bb41620	305	0	309	0	C:/software/clone tools/XORCracker.java
+#2	5a8a550	bb51920	323	0	327	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb41620	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb41620	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb41620	3	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb41620	4	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb41620	5	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb51920	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb51920	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb51920	3	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb51920	4	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a550	bb51920	5	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#1	5a52750	+1234	rule_name	1.000	0	2	5
+#2	5a52750	5a3e1a0	493	0	497	0	C:/software/clone tools/XORCracker.java
+#2	5a52750	bb9c620	173	0	177	0	C:/software/clone tools/XOR.java
+#1	5a7e550	+1234	rule_name	0.983	2	2	3
+#2	5a7e550	bb06f20	171	0	173	0	C:/software/clone tools/XORCracker.java
+#2	5a7e550	5a26a40	443	0	445	0	C:/software/clone tools/XORCracker.java
+#3	5a7e550	bb06f20	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7e550	bb06f20	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7e550	5a26a40	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a7e550	5a26a40	2	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#1	5a8a8d0	+1234	rule_name	0.985	1	2	3
+#2	5a8a8d0	bb39dc0	281	0	283	0	C:/software/clone tools/XORCracker.java
+#2	5a8a8d0	bb90a60	143	0	145	0	C:/software/clone tools/XOR.java
+#3	5a8a8d0	bb39dc0	1	1	0	0	0	0	C:/software/clone tools/XORCracker.java
+#3	5a8a8d0	bb90a60	1	1	0	0	0	0	C:/software/clone tools/XOR.java

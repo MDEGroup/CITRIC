@@ -1,0 +1,244 @@
+-- @authors		Frédéric Jouault
+-- @date		2007/06/03
+-- @description	This ACG code generator generates .asm file that run on the ATL VM from QVT models.
+
+-- TODO:
+--	- deal with modelType (so that e.g., UML and not SimpleUml is used)
+acg QVT startsWith OperationalTransformation {
+
+	-- ACG uses the location to distinguish variable declarations
+	-- but the QVT metamodel does not have this feature.
+	-- Therefore, we emulate it using the xmi ID.
+	attribute Object::location =
+		self.__xmiID__;
+
+-- @begin TypeEncodings
+	function Class::encode() =
+		'M' + self.package.name + '!' + self.name + ';';
+-- @end TypeEncodings
+
+-- @begin Transformations
+	asm OperationalTransformation
+			name self.name {
+
+		analyze self.ownedOperation
+	}
+-- @end Transformations
+
+-- @begin Operations	
+	EntryOperation {
+		operation
+				context 'A'
+				name self.name {
+			analyze self.body.content
+		}
+	}
+	
+	Helper {
+		operation
+				context self.context.type.encode()
+				name self.name {
+			analyze self.body.content
+		}
+	}
+	
+	MappingOperation {
+		operation
+				context self.context.type.encode()
+				name self.name {
+			foreach(p in self.ownedParameter) {
+				param p.name : 'J'
+			}
+			foreach(result in self.result) {
+				push result.type.name
+				push result.type.package.name
+				new
+				variable result named result.name { [
+					analyze self.body.content
+					load self.result.first()	-- TODO: deal with several results
+				] }
+			}
+		}
+	}
+-- @end Operations	
+	
+-- @begin Statements
+	-- TODO: better matching (current is incomplete and complex)
+	ImperativeIterateExp |
+			self.name = 'xselect' and self.iterator.size() = 1 and
+			if self.body isa OperationCallExp then
+				if self.body.referredOperation.name = 'isKindOf' then
+					if self.body.argument.first() isa TypeExp then
+						self.body.source.oclIsUndefined()
+					else
+						false
+					endif
+				else
+					false
+				endif
+			else
+				false
+			endif {
+		analyze self.body.argument
+		push self.source.source.referredVariable.name
+		call 'J.allInstancesFrom(J):J'
+	}
+
+	ImperativeIterateExp | self.name = 'xselect' and self.iterator.size() = 1 {
+		push 'Sequence'
+		push '#native'
+		new
+		analyze self.source
+		let i = self.iterator.first() {
+			iterate
+				variable i named i.name {
+					analyze self.body
+					call 'B.not():B'
+					if thn
+						load i
+						call 'CJ.including(J):CJ'
+				  thn:
+				}
+			enditerate
+		}
+	}
+	
+	ImperativeIterateExp | self.name = 'xcollect' and self.iterator.size() = 1 {
+		push 'Sequence'
+		push '#native'
+		new
+		analyze self.source
+		let i = self.iterator.first() {
+			iterate
+				variable i named i.name {
+					analyze self.body
+					call 'CJ.including(J):CJ'
+				}
+			enditerate
+		}
+	}
+	
+	ImperativeIterateExp | self.name = 'xcollect' {
+		push 'Sequence'
+		push '#native'
+		new
+		analyze self.source
+		dup
+		foreach(i in self.iterator) {
+			if(i <> self.iterator.first()) {
+				dup_x1
+			}
+			iterate
+				variable i named i.name {
+					analyze self.body
+					call 'CJ.including(J):CJ'
+				}
+			enditerate
+			if(i = self.iterator.last()) {
+				pop
+			} else {
+				swap
+			}
+		}
+	}
+
+	AssignExp | self.left isa PropertyCallExp and not self.left.source.oclIsUndefined() {
+		analyze self.left.source
+		analyze self.value
+		set self.left.referredProperty.name
+	}
+	
+	AssignExp | self.left isa PropertyCallExp and self.left.source.oclIsUndefined() {
+--		analyze self.left.source
+--		analyze self.value
+--		set self.left.referredProperty.name
+	}	
+-- @end Statements
+
+-- @begin Expressions
+	OperationCallExp {
+		analyze self.source
+		analyze self.argument
+		call 'J.' + self.referredOperation.name + '(' + self.argument->collect(e | 'J').prepend('').sum() + '):J'
+	}
+	
+	OperationCallExp | self.source.type isa CollectionType and self.type isa PrimitiveType and self.type.name = 'Integer' {
+		analyze self.source
+		analyze self.argument
+		pushi 0
+		call 'CJ.including(J):CJ'
+		call 'J.' + self.referredOperation.name + '(' + self.argument->collect(e | 'J').prepend('').sum() + '):J'
+	}
+	
+	OperationCallExp |
+			if self.source isa VariableExp then
+				self.source.referredVariable isa ModelParameter and
+				self.referredOperation.name = 'objectsOfType'
+			else
+				false
+			endif {
+		analyze self.argument
+		push self.source.referredVariable.name
+		call 'J.allInstancesFrom(J):J'
+	}
+	
+	MappingCallExp {
+		analyze self.source
+		analyze self.argument
+		call 'J.' + self.referredOperation.name + '(' + self.argument->collect(e | 'J').prepend('').sum() + '):J'
+	}
+
+	TypeExp {
+		push self.referredType.name
+		push self.referredType.package.name
+		findme
+	}
+	
+	VariableExp | self.referredVariable.name = 'self' {
+		load 'self'
+	}
+	
+	VariableExp |
+			if self.referredVariable isa Parameter then
+				(self.referredVariable.kind.debug('kind').toString() = 'in').debug('=')
+			else
+				false
+			endif {
+		load self.referredVariable.name
+	}
+
+	VariableExp {
+		load self.referredVariable
+	}
+	
+	ObjectExp {
+--		push self.instantiatedClass.name
+--		push self.instantiatedClass.package.name
+--		new
+		analyze self.body.content
+	}
+	PropertyCallExp {
+		analyze self.source
+		get self.referredProperty.name
+	}
+	
+	StringLiteralExp {
+		push self.stringSymbol
+	}
+	
+	ResolveExp {
+		push 'TODO: should resolve'
+		call 'J.debug(J):J'
+	}
+	
+	IfExp {
+		analyze self.condition
+		if thn
+			analyze self.elseExpression
+			goto eoi
+	  thn:
+			analyze self.thenExpression
+	  eoi:
+	}
+-- @end Expressions	
+}

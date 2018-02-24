@@ -1,0 +1,46 @@
+module C2E;
+
+create OUT : E from IN : C;
+
+helper def: counter : Integer = 1;
+
+rule H2R {
+	from
+		s : C!H
+	to
+		t : E!R (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+
+rule I2S {
+	from
+		s : C!I
+	to
+		t : E!S (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+
+rule L2T {
+	from
+		s : C!L
+	to
+		t : E!T (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+
+rule M2U {
+	from
+		s : C!M
+	to
+		t : E!U (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tpA:BlockA xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:tpA="platform:/resource/Port/Metamodel/TypeA.ecore">
+  <inputPorts name="pt1"/>
+  <inputPorts name="pt2"/>
+  <outputPorts name="ptOut"/>
+</tpA:BlockA>

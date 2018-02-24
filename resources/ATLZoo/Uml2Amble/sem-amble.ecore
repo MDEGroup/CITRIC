@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Program xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Amble" name="Semaphore">
+  <processes name="Semaphore" minId="0" maxId="0" instancesNb="1" connectedTo="//@networks.0 //@networks.1">
+    <states name="Ready" isInitial="true" incoming="//@processes.0/@transitions.0 //@processes.0/@transitions.1" outgoing="//@processes.0/@transitions.0 //@processes.0/@transitions.1"/>
+    <transitions xsi:type="Transall" source="//@processes.0/@states.0" target="//@processes.0/@states.0" waitFor="//@networks.0/@channels.0/@messages.0">
+      <guard name="received_p"/>
+      <action name="supprimer_RC"/>
+    </transitions>
+    <transitions xsi:type="Transall" source="//@processes.0/@states.0" target="//@processes.0/@states.0" waitFor="//@networks.0/@channels.0/@messages.1">
+      <guard name="received_v"/>
+      <action name="ajout_RC"/>
+    </transitions>
+    <variables name="onHold" type="List" initValue="List.create()"/>
+    <variables name="freeResourcesNb" type="int" initValue="1"/>
+  </processes>
+  <processes name="User" minId="1" maxId="9" instancesNb="9" connectedTo="//@networks.0 //@networks.1">
+    <states name="WaitForCS" isInitial="false" incoming="//@processes.1/@transitions.0" outgoing="//@processes.1/@transitions.2"/>
+    <states name="InCS" isInitial="false" incoming="//@processes.1/@transitions.2" outgoing="//@processes.1/@transitions.1"/>
+    <states name="OutOfCS" isInitial="true" incoming="//@processes.1/@transitions.1" outgoing="//@processes.1/@transitions.0"/>
+    <transitions xsi:type="Strans" source="//@processes.1/@states.2" target="//@processes.1/@states.0">
+      <guard name="CSRequired"/>
+      <action name="send_p"/>
+    </transitions>
+    <transitions xsi:type="Strans" source="//@processes.1/@states.1" target="//@processes.1/@states.2">
+      <guard name="CS_used"/>
+      <action name="send_v"/>
+    </transitions>
+    <transitions xsi:type="Trans" source="//@processes.1/@states.0" target="//@processes.1/@states.1" waitFor="//@networks.1/@channels.0/@messages.0">
+      <guard name="received_ok"/>
+      <action name="set_CSRequired_to_false"/>
+    </transitions>
+    <initial name="initialization"/>
+    <variables name="CSRequired" type="bool" initValue="false"/>
+  </processes>
+  <networks name="Query">
+    <channels name="Query" source="//@processes.1" target="//@processes.0">
+      <messages name="p"/>
+      <messages name="v"/>
+    </channels>
+  </networks>
+  <networks name="Answer">
+    <channels name="Answer" source="//@processes.0" target="//@processes.1">
+      <messages name="ok"/>
+    </channels>
+  </networks>
+</Program>

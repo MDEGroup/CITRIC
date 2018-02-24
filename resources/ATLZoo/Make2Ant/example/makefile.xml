@@ -1,0 +1,22 @@
+<make>
+	<comment>Test d'un fichier makefile</comment>
+	<macro name="CC" value="gcc"/>
+	<macro name="CFLAGS" value="-wall -ansi"/>
+	<macro name="LDFLAGS" value="-wall -ansi"/>
+	<rule name="hello" depends="hello.o main.o">
+		<shellLine>@$(CC) -o hello hello.o main.o $(LDFLAGS)</shellLine>
+		<shellLine>skip</shellLine>
+	</rule>
+	<rule name="hello.o" depends="hello.c">
+		<shellLine>@$(CC) -o hello.o -c hello.c $(CFLAGS)</shellLine>
+	</rule>
+	<rule name="main.o" depends="main.c hello.h">
+		<shellLine>$(CC) -o main.o -c main.c $(CFLAGS)</shellLine>
+	</rule>
+	<rule name="clean">
+		<shellLine>rm -rf *.o</shellLine>
+	</rule>
+	<rule name="mrproper" depends="clean">
+		<shellLine>@rm -rf $(EXEC)</shellLine>
+	</rule>
+</make>

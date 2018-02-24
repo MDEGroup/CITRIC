@@ -1,0 +1,20 @@
+<GeoTransfos name="GeoTransfos">
+	
+		<GeoTransfo name="moveForward" freeze="true">
+
+			<Param name="x" param="90.00"/>
+			<Param name="y" param="0.0"/>
+			<Param name="z" param="0.0"/>
+			
+			<GeoTransfo name="rotate" freeze="true">
+
+				<Param name="rotationX" param="45.00"/>
+				<Param name="rotationY" param="0.0"/>
+				<Param name="rotationZ" param="0.0"/>
+				
+			</GeoTransfo>	
+			
+		</GeoTransfo>	
+
+</GeoTransfos>
+

@@ -1,0 +1,223 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '2640.6' height = '293.40000000000003'>
+  <g transform = 'translate(132.03000000000003,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Attribute Inheritance Factor per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -42.71698790167843,90.41713855573985 z' fill = 'rgb(0,42,90)' stroke = 'black'/>
+      <text x = '-42.71698790167843' y = '90.41713855573985' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(115.28808716984906)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 62.013826963342545,78.44925280307397 z' fill = 'rgb(115,62,78)' stroke = 'black'/>
+      <text x = '62.013826963342545' y = '78.44925280307397' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(166.96185481204927)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 68.23027043618181,73.10697775319053 z' fill = 'rgb(166,68,73)' stroke = 'black'/>
+      <text x = '68.23027043618181' y = '73.10697775319053' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(213.93800721404946)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 69.29326908761469,72.10022787170247 z' fill = 'rgb(213,69,72)' stroke = 'black'/>
+      <text x = '69.29326908761469' y = '72.10022787170247' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(260.0752997517282)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -17.23537655690385,98.50351158685527 z' fill = 'rgb(260,17,98)' stroke = 'black'/>
+      <text x = '-17.23537655690385' y = '98.50351158685527' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(396.0900000000001,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Depth Inheritance Tree per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -74.85107481711015,66.31226582407949 z' fill = 'rgb(0,74,66)' stroke = 'black'/>
+      <text x = '-74.85107481711015' y = '66.31226582407949' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(138.46153846153848)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 12.0536680255323,99.2708874098054 z' fill = 'rgb(138,12,99)' stroke = 'black'/>
+      <text x = '12.0536680255323' y = '99.2708874098054' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(221.53846153846155)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 88.54560256532099,46.47231720437686 z' fill = 'rgb(221,88,46)' stroke = 'black'/>
+      <text x = '88.54560256532099' y = '46.47231720437686' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(249.23076923076923)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 88.54560256532099,46.47231720437686 z' fill = 'rgb(249,88,46)' stroke = 'black'/>
+      <text x = '88.54560256532099' y = '46.47231720437686' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(276.9230769230769)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 12.0536680255323,99.2708874098054 z' fill = 'rgb(276,12,99)' stroke = 'black'/>
+      <text x = '12.0536680255323' y = '99.2708874098054' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(660.1500000000001,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Number of Children per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 40.72374523714576,91.33223184538988 z' fill = 'rgb(0,40,91)' stroke = 'black'/>
+      <text x = '40.72374523714576' y = '91.33223184538988' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(65.96858638743456)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 25.219315511054223,96.76769153572849 z' fill = 'rgb(65,25,96)' stroke = 'black'/>
+      <text x = '25.219315511054223' y = '96.76769153572849' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(141.36125654450262)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 96.55701616087617,26.014277428141224 z' fill = 'rgb(141,96,26)' stroke = 'black'/>
+      <text x = '96.55701616087617' y = '26.014277428141224' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(156.43979057591625)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.65034218411697,16.37406446050072 z' fill = 'rgb(156,98,16)' stroke = 'black'/>
+      <text x = '98.65034218411697' y = '16.37406446050072' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(165.86387434554976)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 1,1 -96.9718220416675,-24.422647889186155 z' fill = 'rgb(165,96,24)' stroke = 'black'/>
+      <text x = '-96.9718220416675' y = '-24.422647889186155' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(924.21,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes Inherited per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -97.81476007338057,20.79116908177593 z' fill = 'rgb(0,97,20)' stroke = 'black'/>
+      <text x = '-97.81476007338057' y = '20.79116908177593' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(168.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 68.8354575693754,72.53743710122878 z' fill = 'rgb(168,68,72)' stroke = 'black'/>
+      <text x = '68.8354575693754' y = '72.53743710122878' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(214.5)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.45218953682733,10.452846326765346 z' fill = 'rgb(214,99,10)' stroke = 'black'/>
+      <text x = '99.45218953682733' y = '10.452846326765346' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(220.5)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.78589232386035,6.540312923014306 z' fill = 'rgb(220,99,6)' stroke = 'black'/>
+      <text x = '99.78589232386035' y = '6.540312923014306' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(224.25)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -71.63019434246543,69.77904598416802 z' fill = 'rgb(224,71,69)' stroke = 'black'/>
+      <text x = '-71.63019434246543' y = '69.77904598416802' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(1188.2700000000002,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -68.2994074585541,73.04239139575321 z' fill = 'rgb(0,68,73)' stroke = 'black'/>
+      <text x = '-68.2994074585541' y = '73.04239139575321' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(133.0780559646539)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 13.606700277498035,99.06996370019692 z' fill = 'rgb(133,13,99)' stroke = 'black'/>
+      <text x = '13.606700277498035' y = '99.06996370019692' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(215.25773195876292)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.93492840048977,20.21756165295263 z' fill = 'rgb(215,97,20)' stroke = 'black'/>
+      <text x = '97.93492840048977' y = '20.21756165295263' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(226.92194403534614)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.16201012264251,12.918813739540635 z' fill = 'rgb(226,99,12)' stroke = 'black'/>
+      <text x = '99.16201012264251' y = '12.918813739540635' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(234.34462444771728)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.96146948528398,2.7757194279391504 z' fill = 'rgb(234,99,2)' stroke = 'black'/>
+      <text x = '99.96146948528398' y = '2.7757194279391504' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Problem</text>
+    </g>
+    <g transform = 'rotate(235.9351988217968)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -56.013018207888976,82.84045986860949 z' fill = 'rgb(235,56,82)' stroke = 'black'/>
+      <text x = '-56.013018207888976' y = '82.84045986860949' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(1452.3300000000002,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Classes per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 51.204286487057146,85.89598969306644 z' fill = 'rgb(0,51,85)' stroke = 'black'/>
+      <text x = '51.204286487057146' y = '85.89598969306644' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(59.20000000000001)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 22.835087011065568,97.35789028731602 z' fill = 'rgb(59,22,97)' stroke = 'black'/>
+      <text x = '22.835087011065568' y = '97.35789028731602' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(136.00000000000003)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 96.85831611286311,24.86898871648548 z' fill = 'rgb(136,96,24)' stroke = 'black'/>
+      <text x = '96.85831611286311' y = '24.86898871648548' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(150.40000000000003)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.59960370705049,16.67687467161023 z' fill = 'rgb(150,98,16)' stroke = 'black'/>
+      <text x = '98.59960370705049' y = '16.67687467161023' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(160.00000000000003)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.96101150403544,2.7921638723568876 z' fill = 'rgb(160,99,2)' stroke = 'black'/>
+      <text x = '99.96101150403544' y = '2.7921638723568876' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Problem</text>
+    </g>
+    <g transform = 'rotate(161.60000000000002)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 1,1 -94.88760116444965,-31.56490369471023 z' fill = 'rgb(161,94,31)' stroke = 'black'/>
+      <text x = '-94.88760116444965' y = '-31.56490369471023' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(1716.39,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Packages per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(0,50,86)' stroke = 'black'/>
+      <text x = '50.000000000000014' y = '86.60254037844386' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(59.99999999999999)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(59,50,86)' stroke = 'black'/>
+      <text x = '50.000000000000014' y = '86.60254037844386' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(119.99999999999999)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(119,50,86)' stroke = 'black'/>
+      <text x = '50.000000000000014' y = '86.60254037844386' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(179.99999999999997)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(179,50,86)' stroke = 'black'/>
+      <text x = '50.000000000000014' y = '86.60254037844386' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(239.99999999999997)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(239,50,86)' stroke = 'black'/>
+      <text x = '50.000000000000014' y = '86.60254037844386' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Problem</text>
+    </g>
+    <g transform = 'rotate(299.99999999999994)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 50.000000000000014,86.60254037844386 z' fill = 'rgb(299,50,86)' stroke = 'black'/>
+      <text x = '50.000000000000014' y = '86.60254037844386' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(1980.4500000000003,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Relationships Inherited per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.468676862638,17.433292199736083 z' fill = 'rgb(0,98,17)' stroke = 'black'/>
+      <text x = '98.468676862638' y = '17.433292199736083' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(10.0398406374502)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.3662061271743,11.24086650983413 z' fill = 'rgb(10,99,11)' stroke = 'black'/>
+      <text x = '99.3662061271743' y = '11.24086650983413' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(16.49402390438247)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 1,1 95.88493531758844,-28.391533582071276 z' fill = 'rgb(16,95,28)' stroke = 'black'/>
+      <text x = '95.88493531758844' y = '-28.391533582071276' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+  <g transform = 'translate(2244.5100000000007,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Relationships per Metamodel</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.0523821238654,19.64001934407096 z' fill = 'rgb(0,98,19)' stroke = 'black'/>
+      <text x = '98.0523821238654' y = '19.64001934407096' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- AM3</text>
+    </g>
+    <g transform = 'rotate(11.326530612244898)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.96130185675258,14.375699454868169 z' fill = 'rgb(11,98,14)' stroke = 'black'/>
+      <text x = '98.96130185675258' y = '14.375699454868169' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Ant</text>
+    </g>
+    <g transform = 'rotate(19.591836734693878)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.90866674170982,4.272974361491678 z' fill = 'rgb(19,99,4)' stroke = 'black'/>
+      <text x = '99.90866674170982' y = '4.272974361491678' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Editor</text>
+    </g>
+    <g transform = 'rotate(22.040816326530614)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.9771640780308,2.1369751787301547 z' fill = 'rgb(22,99,2)' stroke = 'black'/>
+      <text x = '99.9771640780308' y = '2.1369751787301547' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(23.26530612244898)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 1,1 91.86857246103585,-39.498929023093844 z' fill = 'rgb(23,91,39)' stroke = 'black'/>
+      <text x = '91.86857246103585' y = '-39.498929023093844' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- SDM</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Workbook xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="SpreadsheetMLSimplified">
+  <wb_worksheets name="SoftwareQualityControl">
+    <ws_table>
+      <t_cols autoFitWidth="false" width="90.75"/>
+      <t_cols autoFitWidth="false" width="96.0"/>
+      <t_cols autoFitWidth="false" width="219.0"/>
+      <t_cols index="5" autoFitWidth="false" width="85.5"/>
+      <t_cols autoFitWidth="false" width="69.0"/>
+      <t_cols autoFitWidth="false" width="180.0"/>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Control Responsible"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Andrey Sadovykh"/>
+          </c_data>
+        </r_cells>
+        <r_cells index="5">
+          <c_data>
+            <value xsi:type="StringValue" value="Controlled element"/>
+          </c_data>
+        </r_cells>
+        <r_cells index="7">
+          <c_data>
+            <value xsi:type="StringValue" value="Form reference"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Type of control"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Bug Tracking"/>
+          </c_data>
+        </r_cells>
+        <r_cells index="5"/>
+        <r_cells index="7"/>
+        <r_cells index="11">
+          <c_data>
+            <value xsi:type="StringValue" value="status List"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Component"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Adapter"/>
+          </c_data>
+        </r_cells>
+        <r_cells index="5">
+          <c_data>
+            <value xsi:type="StringValue" value="Element reference"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows autoFitHeight="false" height="13.5">
+        <r_cells index="5"/>
+        <r_cells index="11">
+          <c_data>
+            <value xsi:type="StringValue" value="open"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Development phase"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="V0"/>
+          </c_data>
+        </r_cells>
+        <r_cells index="5">
+          <c_data>
+            <value xsi:type="StringValue" value="Author of element"/>
+          </c_data>
+        </r_cells>
+        <r_cells index="11">
+          <c_data>
+            <value xsi:type="StringValue" value="closed"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Control scope"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Exhaustive"/>
+          </c_data>
+        </r_cells>
+        <r_cells index="5"/>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Control date"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="DateTimeTypeValue">
+              <value year="2005" month="6" day="24" hour="0" minute="0" second="0"/>
+            </value>
+          </c_data>
+        </r_cells>
+        <r_cells index="11">
+          <c_data>
+            <value xsi:type="StringValue" value="skipped"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows index="9" autoFitHeight="false" height="25.5">
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Bug #"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Component Version"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Bug Description"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Status"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Originator"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Responsible"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Comments/Answers"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Open Date"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="Close Date"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows autoFitHeight="false" height="128.25">
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="1.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="V0 Beta"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="A consumer sends a UML2 Model to a provider. The Service Description defines the service as having a single input parameter of Model type with a Metaclass specification of &quot;Model&quot; taken from UML2.ecore. At the provider end a Hashmap is presented to the provider containing each of the elements of the model in flattened state. This makes it unusable by the provider which excepts the model it maintain it's original containment semantics and hierarchy."/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="open"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="D Kelsey, IBM UK"/>
+          </c_data>
+        </r_cells>
+        <r_cells/>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="This is a simple comment to illustrate this example."/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="1st July 05"/>
+          </c_data>
+        </r_cells>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+      <t_rows>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+        <r_cells/>
+      </t_rows>
+    </ws_table>
+  </wb_worksheets>
+</Workbook>

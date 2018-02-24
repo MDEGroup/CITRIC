@@ -1,0 +1,69 @@
+
+			megamodel 'AMMACore' {
+
+			--TODO?	import '/AMMACore/KM3/Editor/Editor.ecore';
+				metamodel{'Editor', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore', '', '', '', '', '', '', workspace}
+				metamodel{'Outline', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore', '', '', '', '', '', '', workspace}
+
+
+			-- @begin Editors
+			-- @begin CloneDr
+				metamodel{'CloneDr', '/CloneDr/Metamodel/CloneDr.ecore', '', '', '', '', '', '', workspace}
+				ebnfInjector{'CloneDr', '/CloneDr/Syntax/CloneDr-parser.jar', '', '', '', '', '', '', workspace, 'cd', 'CloneDr', 3}
+
+				editor{'CloneDr-Editor', '/CloneDr/TGE/CloneDr-Editor.ecore', '', '', '', '', '', '', workspace, 'cd'}
+				conformsTo {'/CloneDr/TGE/CloneDr-Editor.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore'}
+
+				outline{'CloneDr-Outline', '/CloneDr/TGE/CloneDr-Outline.ecore', '', '', '', '', '', '', workspace}
+				conformsTo {'/CloneDr/TGE/CloneDr-Outline.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore'}
+				outlineOfEditor {
+					'/CloneDr/TGE/CloneDr-Outline.ecore',
+					'/CloneDr/TGE/CloneDr-Editor.ecore',
+					'/CloneDr/Metamodel/CloneDr.ecore',
+					'/CloneDr/Syntax/CloneDr-parser.jar'
+				}
+			-- @end CloneDr
+			-- @end Editors
+			
+				antAction {
+						'cd',
+						'Inject CloneDr File to CloneDr Model',
+						'/TCSBuilder_ANTLR3/injector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/CloneDr/Metamodel/CloneDr.ecore',
+								properties { 'MMUri' = 'uri', }
+							}
+							param {
+								'/CloneDr/Syntax/CloneDr-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			
+			-- @begin MDR
+				metamodel{'CloneDr', '/CloneDr/Metamodel/CloneDr.xmi', '', '', '', '', '', '', workspace}
+				antAction {
+						'cd',
+						'Inject CloneDr File to CloneDr Model (MDR based)',
+						'/TCSBuilder_ANTLR3/MDRInjector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/CloneDr/Metamodel/CloneDr.xmi',
+								properties { 'MMUri' = 'uri', 'MMName' = 'name', }
+							}
+							param {
+								'/CloneDr/Syntax/CloneDr-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			-- @end MDR
+			}	
+		

@@ -1,0 +1,31 @@
+package DXF {
+	class DXF {
+		reference meshes[*] ordered container : Mesh;
+		
+	}
+
+	class Mesh {
+		attribute name : String;
+		reference points[*] ordered container : Point oppositeOf mesh;
+		
+	}
+
+	class Point {
+		attribute name : String;
+		reference mesh : Mesh oppositeOf points;
+		attribute x : Double;
+		attribute y : Double;
+		attribute z : Double;
+		
+	}
+
+}
+
+package PrimitiveTypes {
+	datatype Double;
+
+	datatype Integer;
+
+	datatype String;
+
+}

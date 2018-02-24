@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<bugzilla version="" urlbase="" maintainer="">
+  <bug>
+    <bug_id>1</bug_id>
+    <exporter></exporter>
+    <urlbase></urlbase>
+    <bug_status>null</bug_status>
+    <product></product>
+    <priority>P1</priority>
+    <version>V0 Beta</version>
+    <rep_platform>all</rep_platform>
+    <assigned_to>Andrey Sadovykh</assigned_to>
+    <delta_ts></delta_ts>
+    <component>Adapter</component>
+    <reporter>D Kelsey, IBM UK</reporter>
+    <bug_severity>major</bug_severity>
+    <creation_ts>1st July 05</creation_ts>
+    <qa_contact>Andrey Sadovykh</qa_contact>
+    <op_sys>all</op_sys>
+    <short_desc>A consumer sends a UML2 Model to a provider. The Service Description defines the service as having a single input parameter of Model type with a Metaclass specification of "Model" taken from UML2.ecore. At the provider end a Hashmap is presented to the provider containing each of the elements of the model in flattened state. This makes it unusable by the provider which excepts the model it maintain it's original containment semantics and hierarchy.</short_desc>
+    <long_desc>
+      <who>D Kelsey, IBM UK</who>
+      <bug_when>1st July 05</bug_when>
+      <thetext></thetext>
+    </long_desc>
+  </bug>
+</bugzilla>

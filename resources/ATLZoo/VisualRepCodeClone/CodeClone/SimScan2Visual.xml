@@ -1,0 +1,119 @@
+<project name="SimScan2Visual" default="transformOne">
+	<property name="samplesPath" value="/SimScan/Samples/"/>
+	
+	<target name="transformOne" depends="loadModels">
+		
+		<property name="sample1" value="SimScan_sample"/>
+		<property name="sample2" value="FileInfo_SimScan"/>
+		<property name="sourceModel1" value="${samplesPath}${sample1}.ss"/>
+		<property name="sourceModel2" value="/FileInfo/Sample/${sample2}.fi"/>
+
+		<echo message="Transforming ${sample1}"/>
+				
+		<!-- Inject Simian model -->
+		<am3.loadModel modelHandler="EMF" name="${sample1}" metamodel="SimScan" path="${sourceModel1}">
+			<injector name="ebnf">
+				<param name="name" value="SimScan"/>
+				<classpath>
+					<pathelement location="/SimScan/Syntax/SimScan-parser.jar"/>
+				</classpath>
+			</injector>				
+		</am3.loadModel>
+		<am3.saveModel model="${sample1}" path="${samplesPath}IntermediateModels/${sample1}.ecore"></am3.saveModel>
+		
+		<!-- Inject FileInfo model -->
+		<am3.loadModel modelHandler="EMF" name="${sample2}" metamodel="FileInfo" path="${sourceModel2}">
+			<injector name="ebnf">
+				<param name="name" value="FileInfo"/>
+				<classpath>
+					<pathelement location="/FileInfo/Syntax/FileInfo-parser.jar"/>
+				</classpath>
+			</injector>				
+		</am3.loadModel>
+		<am3.saveModel model="${sample1}" path="${samplesPath}IntermediateModels/${sample2}.ecore"></am3.saveModel>
+
+
+		<!-- Transform SimScan model and FielInfo model into CodeClone model -->
+		<am3.atl path="/CodeClone/Transformations/SimScan2CodeClone.atl">
+			<option name="continueAfterError" value="true"/>
+			<inModel name="IN" model="${sample1}"/>
+			<inModel name="IN2" model="${sample2}"/>
+			<inModel name="SimScan" model="SimScan"/>
+			<inModel name="FileInfo" model="FileInfo"/>
+			<inModel name="CodeClone" model="CodeClone"/>
+			<outModel name="OUT" model="GenericCodeClone" metamodel="CodeClone"/>
+		</am3.atl>
+		<am3.saveModel model="GenericCodeClone" path="${samplesPath}IntermediateModels/GenericCodeClone.ecore"></am3.saveModel>
+		
+		<!-- Transform CodeClone model into SVG model form 1 -->
+		<am3.atl path="/CodeClone/Transformations/CodeClone2SVG.atl">
+			<option name="continueAfterError" value="true"/>
+			<inModel name="IN" model="GenericCodeClone"/>
+			<inModel name="SVG" model="SVG"/>
+			<inModel name="CodeClone" model="CodeClone"/>
+			<outModel name="OUT" model="SVG_Form1" metamodel="SVG"/>
+		</am3.atl>
+		<am3.saveModel model="SVG_Form1" path="${samplesPath}IntermediateModels/SVG_Form1.ecore"></am3.saveModel>
+
+		<!-- Transform SVG model into XML model -->
+		<am3.atl path="/CodeClone/Transformations/SVG2XML.atl">
+			<option name="continueAfterError" value="true"/>
+			<inModel name="IN" model="SVG_Form1"/>
+			<inModel name="SVG" model="SVG"/>
+			<inModel name="XML" model="XML"/>
+			<outModel name="OUT" model="XML_Form1" metamodel="XML"/>
+		</am3.atl>
+		<am3.saveModel model="XML_Form1" path="${samplesPath}IntermediateModels/XML_Form1.ecore"></am3.saveModel>
+		
+		<!-- Extract output SVG code  -->
+		<am3.saveModel model="XML_Form1" path="/SimScan/Samples/${sample1}_Form1.svg">
+			<extractor name="xml"/>
+		</am3.saveModel>
+
+		
+		
+		<!-- Transform CodeClone model into SVG model form 2 -->
+		<am3.atl path="/CodeClone/Transformations/CodeClone2SVG2.atl">
+			<option name="continueAfterError" value="true"/>
+			<inModel name="IN" model="GenericCodeClone"/>
+			<inModel name="SVG" model="SVG"/>
+			<inModel name="CodeClone" model="CodeClone"/>
+			<outModel name="OUT" model="SVG_Form2" metamodel="SVG"/>
+		</am3.atl>
+		<am3.saveModel model="SVG_Form2" path="${samplesPath}IntermediateModels/SVG_Form2.ecore"></am3.saveModel>
+
+		<!-- Transform SVG model into XML model -->
+		<am3.atl path="/CodeClone/Transformations/SVG2XML.atl">
+			<option name="continueAfterError" value="true"/>
+			<inModel name="IN" model="SVG_Form2"/>
+			<inModel name="SVG" model="SVG"/>
+			<inModel name="XML" model="XML"/>
+			<outModel name="OUT" model="XML_Form2" metamodel="XML"/>
+		</am3.atl>
+		<am3.saveModel model="XML_Form2" path="${samplesPath}IntermediateModels/XML_Form2.ecore"></am3.saveModel>
+		
+		<!-- Extract output SVG code  -->
+		<am3.saveModel model="XML_Form2" path="/SimScan/Samples/${sample1}_Form2.svg">
+			<extractor name="xml"/>
+		</am3.saveModel>
+		
+	</target>	
+	
+	<target name="loadModels">
+		<!-- Load XML metamodel -->
+		<am3.loadModel modelHandler="EMF" name="XML" metamodel="MOF" path="/CodeClone/Metamodels/XML/XML.ecore" />
+		
+		<!-- Load SVG metamodel -->
+		<am3.loadModel modelHandler="EMF" name="SVG" metamodel="MOF" path="/CodeClone/Metamodels/SVG/SVG.ecore" />
+
+		<!-- Load CodeClone metamodel -->
+		<am3.loadModel modelHandler="EMF" name="CodeClone" metamodel="MOF" path="/CodeClone/Metamodels/CodeClone/CodeClone.ecore" />
+
+		<!-- Load FileInfo metamodel -->
+		<am3.loadModel modelHandler="EMF" name="FileInfo" metamodel="MOF" path="/FileInfo/Metamodel/FileInfo.ecore" />
+		
+		<!-- Load Simian metamodel -->
+		<am3.loadModel modelHandler="EMF" name="SimScan" metamodel="MOF" path="/SimScan/Metamodel/SimScan.ecore" />
+		
+	</target>	
+</project>

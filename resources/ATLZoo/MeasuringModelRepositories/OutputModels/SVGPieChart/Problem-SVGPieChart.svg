@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '293.40000000000003' height = '293.40000000000003'>
+  <g transform = 'translate(132.03000000000003,132.03000000000003) scale(0.9)' fill = 'black'>
+    <rect x = '-144.20000000000002' y = '-144.20000000000002' width = '288.40000000000003' height = '288.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '119.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes per Class</text>
+    <g transform = '' fill = 'black'>
+      <circle x = '0.0' y = '0.0' r = '100.0' fill = 'blue' stroke = 'black'/>
+      <text x = '100.0' y = '0.0' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Problem</text>
+    </g>
+  </g>
+</svg>

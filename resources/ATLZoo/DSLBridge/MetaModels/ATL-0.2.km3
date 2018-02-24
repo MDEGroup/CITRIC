@@ -1,0 +1,210 @@
+package PrimitiveTypes {
+
+	datatype Double;
+
+	datatype Integer;
+
+	datatype String;
+
+	datatype Boolean;
+}
+
+package Core {
+
+	class Element {
+		attribute location : String;
+		attribute commentsBefore[*] ordered : String;
+		attribute commentsAfter[*] ordered : String;
+	}
+}
+
+package ATL {
+
+	class DerivedInPatternElement extends InPatternElement {
+		reference value container : OclExpression;
+	}
+
+	class Query extends Unit {
+		reference body container : OclExpression;
+		reference helpers[*] ordered container : Helper oppositeOf query;
+	}
+
+	class Module extends Unit {
+		attribute isRefining : Boolean;
+		reference inModels[1-*] ordered container : OclModel;
+		reference outModels[1-*] container : OclModel;
+		reference elements[*] ordered container : ModuleElement oppositeOf module;
+	}
+
+	class ActionBlock extends Element {
+		reference rule : Rule oppositeOf actionBlock;
+		reference statements[*] ordered container : Statement;
+	}
+
+	abstract class Statement extends Element {
+		
+	}
+
+	class ExpressionStat extends Statement {
+		reference expression container : OclExpression;
+	}
+
+	class BindingStat extends Statement {
+		reference source container : OclExpression;
+		attribute propertyName : String;
+		reference value container : OclExpression;
+	}
+
+	class IfStat extends Statement {
+		reference condition container : OclExpression;
+		reference thenStatements[*] ordered container : Statement;
+		reference elseStatements[*] ordered container : Statement;
+	}
+
+	class ForStat extends Statement {
+		reference iterator container : Iterator;
+		reference collection container : OclExpression;
+		reference statements[*] ordered container : Statement;
+	}
+
+	class Unit extends Element {
+		reference libraries[*] container : LibraryRef oppositeOf unit;
+		attribute name : String;
+	}
+
+	class Library extends Unit {
+		reference helpers[*] ordered container : Helper oppositeOf library;
+	}
+
+	abstract class Rule extends ModuleElement {
+		reference outPattern[0-1] container : OutPattern oppositeOf rule;
+		reference actionBlock[0-1] container : ActionBlock oppositeOf rule;
+		reference variables[*] ordered container : RuleVariableDeclaration oppositeOf rule;
+		attribute name : String;
+	}
+
+	abstract class OutPatternElement extends PatternElement {
+		reference outPattern : OutPattern oppositeOf elements;
+		reference sourceElement[0-1] : InPatternElement oppositeOf mapsTo;
+		reference bindings[*] ordered container : Binding oppositeOf outPatternElement;
+	}
+
+	class InPattern extends Element {
+		reference elements[1-*] container : InPatternElement oppositeOf inPattern;
+		reference rule : MatchedRule oppositeOf inPattern;
+		reference filter[0-1] container : OclExpression;
+	}
+
+	class OutPattern extends Element {
+		reference rule : Rule oppositeOf outPattern;
+		reference elements[1-*] ordered container : OutPatternElement oppositeOf outPattern;
+	}
+
+	abstract class ModuleElement extends Element {
+		reference module : Module oppositeOf elements;
+	}
+
+	class Helper extends ModuleElement {
+		reference query[0-1] : Query oppositeOf helpers;
+		reference library[0-1] : Library oppositeOf helpers;
+		reference definition container : OclFeatureDefinition;
+	}
+
+	class SimpleInPatternElement extends InPatternElement {
+		
+	}
+
+	class IterateInPatternElement extends InPatternElement {
+		reference collection container : OclExpression;
+	}
+
+	abstract class InPatternElement extends PatternElement {
+		reference mapsTo : OutPatternElement oppositeOf sourceElement;
+		reference inPattern : InPattern oppositeOf elements;
+	}
+
+	abstract class PatternElement extends VariableDeclaration {
+		
+	}
+
+	class CalledRule extends Rule {
+		reference parameters[*] container : Parameter;
+		attribute isEntrypoint : Boolean;
+	}
+
+	class Binding extends Element {
+		reference value container : OclExpression;
+		reference outPatternElement : OutPatternElement oppositeOf bindings;
+		attribute propertyName : String;
+	}
+
+	class ForEachOutPatternElement extends OutPatternElement {
+		reference collection container : OclExpression;
+		reference iterator container : Iterator;
+	}
+
+	class RuleVariableDeclaration extends VariableDeclaration {
+		reference rule : Rule oppositeOf variables;
+	}
+
+	class LibraryRef extends Element {
+		reference unit : Unit oppositeOf libraries;
+		attribute name : String;
+	}
+
+	class MatchedRule extends Rule {
+		reference inPattern[0-1] container : InPattern oppositeOf rule;
+		reference children[*] : MatchedRule oppositeOf superRule;
+		reference superRule[0-1] : MatchedRule oppositeOf children;
+		attribute isAbstract : Boolean;
+		attribute isRefining : Boolean;
+	}
+
+	class LazyMatchedRule extends MatchedRule {
+		attribute isUnique : Boolean;
+	}
+
+	class SimpleOutPatternElement extends OutPatternElement {
+		
+	}
+}
+
+package OCL {
+
+	abstract class OclFeature extends Element {
+		reference definition[0-1] : OclFeatureDefinition oppositeOf feature;
+		attribute name : String;
+	}
+
+	class Attribute extends OclFeature {
+		reference initExpression container : OclExpression oppositeOf owningAttribute;
+		reference type container : OclType oppositeOf "attribute";
+	}
+
+	class Operation extends OclFeature {
+		reference parameters[*] ordered container : Parameter oppositeOf "operation";
+		reference returnType container : OclType oppositeOf "operation";
+		reference body container : OclExpression oppositeOf owningOperation;
+	}
+
+	class Parameter extends VariableDeclaration {
+		reference "operation" : Operation oppositeOf parameters;
+	}
+
+	class OclModel extends Element {
+		reference metamodel : OclModel oppositeOf model;
+		reference elements[*] : OclModelElement oppositeOf model;
+		reference model[*] : OclModel oppositeOf metamodel;
+		attribute name : String;
+	}
+
+	class OclContextDefinition extends Element {
+		reference definition : OclFeatureDefinition oppositeOf context_;
+		reference context_ container : OclType oppositeOf definitions;
+	}
+
+	class OclFeatureDefinition extends Element {
+		reference feature container : OclFeature oppositeOf definition;
+		reference context_[0-1] container : OclContextDefinition oppositeOf definition;
+	}
+}

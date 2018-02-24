@@ -1,0 +1,33 @@
+<project name="atlanticXML" default="transformOne">
+	
+	<target name="transformOne" depends="loadModels">
+
+		<!-- Inject KM3 file into KM3 model -->
+		<am3.loadModel modelHandler="EMF" name="source" metamodel="KM3" path="Input/JavaAbstractSyntax.km3">
+			<injector name="ebnf">
+				<param name="name" value="KM3"/>
+			</injector>
+		 </am3.loadModel>
+		
+		<!-- Transform KM3 metamodel into Ecore model -->
+		<am3.atl path="Transformations/km32xml.asm">
+			<inModel name="IN" model="source"/>
+			<inModel name="KM3" model="KM3"/>
+			<inModel name="XML" model="XML"/>
+			<outModel name="OUT" model="target" metamodel="XML"/>
+			<library name="FQL" path="Transformations/LibFQL.asm" />
+		</am3.atl>
+
+		<!-- Save target model -->
+		<am3.saveModel model="target" path="Output/JavaAbstractSyntax.xml">
+			<extractor name="xml"/>
+		</am3.saveModel>
+	</target>
+
+	<target name="loadModels">
+		<!-- Load KM3 metamodel -->
+		<am3.loadModel modelHandler="EMF" name="KM3" metamodel="MOF" nsUri="http://www.eclipse.org/gmt/2005/KM3" />
+		<!-- Load XML metamodel-->
+		<am3.loadModel modelHandler="EMF" name="XML" metamodel="MOF" path="Metamodels/XML.ecore"/>
+	</target>	
+</project>

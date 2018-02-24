@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dmd xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:dmd">
+  <model name="SimpleExample" identity="14141e04-a097-496d-b2ab-d343fac336fa" id="i14141e04za097z496dzb2abzd343fac336fa" namespace="Example.SimpleExample.DomainModel" isLoaded="true">
+    <mdfmetadata xsi:type="modelmdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" majorversion="1" minorversion="0" alwaysgeneratecollection="false">
+      <copyright />
+      <stringtable resxfile="SimpleExample.Resource.resx" resourcesfile="Example.SimpleExample.DomainModel.SimpleExample.Resource" usefullyqualifiedname="false" />
+      <copyclosure name="SimpleExampleCopyClosure" doccomment="Copy closure visitor filter" />
+      <removeclosure name="SimpleExampleRemoveClosure" doccomment="Remove closure visitor filter" />
+    </mdfmetadata>
+    <extended>
+      <model>i2b131234z7959z458dz834fz2dc0769ce683</model>
+    </extended>
+    <relationships>
+      <relationship name="AHasBs" identity="d8f2f19e-0412-4223-b256-8b8fc893c8f1" namespace="Example.SimpleExample.DomainModel" id="id8f2f19ez0412z4223zb256z8b8fc893c8f1" isLoaded="true" isAbstract="false">
+        <mdfmetadata xsi:type="mdfclassmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" />
+        <roles>
+          <role name="Bs" identity="ebf7e8de-cb84-4252-8cff-7d10dc227b69" id="iebf7e8dezcb84z4252z8cffz7d10dc227b69" min="0" max="0" isUnbounded="true" accepts="all">
+            <mdfmetadata xsi:type="rolemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" isordered="true" isnavigablefrom="false" />
+            <source>i970b23f8z232fz4b27za560zee5289ba87aa</source>
+            <type>i1580bc4bzc7edz4423za8ebz306c01bf33ea</type>
+            <generatedProperty name="Bs" identity="41728b88-8dd2-4e98-8fe3-54e6f73e6f35">
+              <referenceType>i1580bc4bzc7edz4423za8ebz306c01bf33ea</referenceType>
+            </generatedProperty>
+          </role>
+          <role name="ConceptA" identity="5d44ccd3-6872-4643-b57e-9105dde5e1e9" id="i5d44ccd3z6872z4643zb57ez9105dde5e1e9" min="1" max="1" isUnbounded="false" accepts="none">
+            <mdfmetadata xsi:type="rolemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" isordered="true" isnavigablefrom="false" />
+            <source>i1580bc4bzc7edz4423za8ebz306c01bf33ea</source>
+            <type>i970b23f8z232fz4b27za560zee5289ba87aa</type>
+            <generatedProperty name="ConceptA" identity="a1f800b2-8e16-403d-852e-fde5252d73a5">
+              <referenceType>i970b23f8z232fz4b27za560zee5289ba87aa</referenceType>
+            </generatedProperty>
+          </role>
+        </roles>
+      </relationship>
+      <relationship name="AHasCs" identity="f9434de9-8d47-43a9-9fab-980bfb1e7ac1" namespace="Example.SimpleExample.DomainModel" id="if9434de9z8d47z43a9z9fabz980bfb1e7ac1" isLoaded="true" isAbstract="false">
+        <mdfmetadata xsi:type="mdfclassmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" />
+        <roles>
+          <role name="Cs" identity="0cf0be27-7402-4fc9-9092-26f85b286450" id="i0cf0be27z7402z4fc9z9092z26f85b286450" min="0" max="0" isUnbounded="true" accepts="all">
+            <mdfmetadata xsi:type="rolemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" isordered="true" isnavigablefrom="false" />
+            <source>i970b23f8z232fz4b27za560zee5289ba87aa</source>
+            <type>i0fe218f6zea4fz4547za390ze5e069524ae9</type>
+            <generatedProperty name="Cs" identity="10811143-70c3-4f14-a11d-92ea3488fea5">
+              <referenceType>i0fe218f6zea4fz4547za390ze5e069524ae9</referenceType>
+            </generatedProperty>
+          </role>
+          <role name="ConceptA" identity="80eac6fa-7c7e-4ce3-ad47-c61731fa1b11" id="i80eac6faz7c7ez4ce3zad47zc61731fa1b11" min="1" max="1" isUnbounded="false" accepts="none">
+            <mdfmetadata xsi:type="rolemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" isordered="true" isnavigablefrom="false" />
+            <source>i0fe218f6zea4fz4547za390ze5e069524ae9</source>
+            <type>i970b23f8z232fz4b27za560zee5289ba87aa</type>
+            <generatedProperty name="ConceptA" identity="0b76a96c-71b8-468b-9799-3f2d13200300">
+              <referenceType>i970b23f8z232fz4b27za560zee5289ba87aa</referenceType>
+            </generatedProperty>
+          </role>
+        </roles>
+      </relationship>
+      <relationship name="BReferencesC" identity="b15bde10-1034-46be-aa69-de99c2b260a0" namespace="Example.SimpleExample.DomainModel" id="ib15bde10z1034z46bezaa69zde99c2b260a0" isLoaded="true" isAbstract="false">
+        <mdfmetadata xsi:type="mdfclassmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" />
+        <valueProperties>
+          <property name="Property" identity="0a5a593f-f166-4da2-b85b-69549c8b24fb" id="i0a5a593fzf166z4da2zb85bz69549c8b24fb">
+            <mdfmetadata xsi:type="propertymdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" xpathexpression="" reversexpathexpression="" realattributename="" proxyattributename="" customstorage="false" allownulls="false" readwritestate="readwrite" tag="" />
+            <propertyInfo xsi:type="StringPropertyInfo" name="" identity="8df884da-44e5-4969-a5a0-2c4632f07ce9" default="" max="2147483647" />
+          </property>
+        </valueProperties>
+        <roles>
+          <role name="ReferencedC" identity="b1d368ec-ab53-422a-b3aa-45fec6560a39" id="ib1d368eczab53z422azb3aaz45fec6560a39" min="0" max="1" isUnbounded="false" accepts="none">
+            <mdfmetadata xsi:type="rolemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" isordered="true" isnavigablefrom="false" />
+            <source>i1580bc4bzc7edz4423za8ebz306c01bf33ea</source>
+            <type>i0fe218f6zea4fz4547za390ze5e069524ae9</type>
+            <generatedProperty name="ReferencedC" identity="0b59018f-3d1e-45a6-a2d2-4a7b4023c2e6">
+              <referenceType>i0fe218f6zea4fz4547za390ze5e069524ae9</referenceType>
+            </generatedProperty>
+          </role>
+          <role name="ReferringBs" identity="ce58c89b-2db4-4e44-9f8e-4a58c02a8351" id="ice58c89bz2db4z4e44z9f8ez4a58c02a8351" min="0" max="0" isUnbounded="true" accepts="none">
+            <mdfmetadata xsi:type="rolemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" isordered="true" isnavigablefrom="false" />
+            <source>i0fe218f6zea4fz4547za390ze5e069524ae9</source>
+            <type>i1580bc4bzc7edz4423za8ebz306c01bf33ea</type>
+            <generatedProperty name="ReferringBs" identity="42840280-d8a1-42a4-a618-5fb68de54993">
+              <referenceType>i1580bc4bzc7edz4423za8ebz306c01bf33ea</referenceType>
+            </generatedProperty>
+          </role>
+        </roles>
+      </relationship>
+    </relationships>
+    <trees>
+      <treenavigator name="intrinsic" identity="a53f184d-40f7-483d-b3ab-17475734bdf9" id="ia53f184dz40f7z483dzb3abz17475734bdf9">
+        <expressions>
+          <treeExpression xsi:type="RoleExpression" name="ArchitectureHasComponents.Components" identity="11df5b43-11c2-4e36-b3a0-7dda0ecba5cf" id="i11df5b43z11c2z4e36zb3a0z7dda0ecba5cf" definitionlevel="none" containmentstyle="embedding">
+            <source />
+            <role>iebf7e8dezcb84z4252z8cffz7d10dc227b69</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptAHasConceptC.ConceptC" identity="4ef05e30-5c1e-47c6-a698-2273af35f396" id="i4ef05e30z5c1ez47c6za698z2273af35f396" definitionlevel="none" containmentstyle="embedding">
+            <source />
+            <role>i0cf0be27z7402z4fc9z9092z26f85b286450</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptBHasConceptC.ConceptC" identity="5a944404-cd31-4e09-8c80-f8477e7df0eb" id="i5a944404zcd31z4e09z8c80zf8477e7df0eb" definitionlevel="none" containmentstyle="reference">
+            <source />
+            <role>ib1d368eczab53z422azb3aaz45fec6560a39</role>
+          </treeExpression>
+        </expressions>
+        <roots />
+      </treenavigator>
+      <treenavigator xsi:type="ShadowTreeNavigator" name="completeDiagram" identity="b1ef7722-6452-4499-a3a5-653464a63074" id="ib1ef7722z6452z4499za3a5z653464a63074">
+        <expressions>
+          <treeExpression xsi:type="RoleExpression" name="ArchitectureHasComponents.Components" identity="dbe796cd-e55d-4212-bc46-d4b807d1cb31" id="idbe796cdze55dz4212zbc46zd4b807d1cb31" definitionlevel="definition" containmentstyle="fromsource">
+            <source>i11df5b43z11c2z4e36zb3a0z7dda0ecba5cf</source>
+            <role>iebf7e8dezcb84z4252z8cffz7d10dc227b69</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptAHasConceptC.ConceptC" identity="e3f600e8-35e8-4912-af67-db9cb0413bb9" id="ie3f600e8z35e8z4912zaf67zdb9cb0413bb9" definitionlevel="definition" containmentstyle="fromsource">
+            <source>i4ef05e30z5c1ez47c6za698z2273af35f396</source>
+            <role>i0cf0be27z7402z4fc9z9092z26f85b286450</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptBHasConceptC.ConceptC" identity="15ed7a02-e20d-4708-94b9-c57538068ecd" id="i15ed7a02ze20dz4708z94b9zc57538068ecd" definitionlevel="use" containmentstyle="fromsource">
+            <source>i5a944404zcd31z4e09z8c80zf8477e7df0eb</source>
+            <role>ib1d368eczab53z422azb3aaz45fec6560a39</role>
+          </treeExpression>
+          <treeExpression xsi:type="ValuePropertyExpression" name="" identity="7615798b-d10e-4512-a813-f4a71e7b0d5c" id="i7615798bzd10ez4512za813zf4a71e7b0d5c">
+            <source />
+            <property>i0a5a593fzf166z4da2zb85bz69549c8b24fb</property>
+          </treeExpression>
+        </expressions>
+        <roots>
+          <root name="ConceptA" identity="8e7e7e1d-cb55-4acc-8309-7ce6fcd74082" id="i8e7e7e1dzcb55z4accz8309z7ce6fcd74082">
+            <source />
+            <referencetype>i970b23f8z232fz4b27za560zee5289ba87aa</referencetype>
+          </root>
+          <root name="BReferencesC" identity="d889245e-a48c-489c-a2d8-1a33695ea110" id="id889245eza48cz489cza2d8z1a33695ea110">
+            <source />
+            <referencetype>ib15bde10z1034z46bezaa69zde99c2b260a0</referencetype>
+          </root>
+        </roots>
+        <source>ia53f184dz40f7z483dzb3abz17475734bdf9</source>
+      </treenavigator>
+      <treenavigator xsi:type="ShadowTreeNavigator" name="serialization" identity="3888ed7d-c5ea-4d63-a8b6-8d41df65f60a" id="i3888ed7dzc5eaz4d63za8b6z8d41df65f60a">
+        <expressions />
+        <roots>
+          <root name="ConceptA" identity="a612f987-a66a-4a9b-866a-661bc0f7e0e1" id="ia612f987za66az4a9bz866az661bc0f7e0e1">
+            <source />
+            <referencetype>i970b23f8z232fz4b27za560zee5289ba87aa</referencetype>
+          </root>
+        </roots>
+        <source>ia53f184dz40f7z483dzb3abz17475734bdf9</source>
+      </treenavigator>
+      <treenavigator xsi:type="ShadowTreeNavigator" name="delete" identity="01ddc9f0-405f-447b-9ccf-8c00025a5fd4" id="i01ddc9f0z405fz447bz9ccfz8c00025a5fd4">
+        <expressions>
+          <treeExpression xsi:type="RoleExpression" name="AHasBs.Bs" identity="cd865622-f1a0-499b-bb2f-c34c99dc5a28" id="icd865622zf1a0z499bzbb2fzc34c99dc5a28" definitionlevel="none" containmentstyle="fromsource">
+            <source>i11df5b43z11c2z4e36zb3a0z7dda0ecba5cf</source>
+            <role>iebf7e8dezcb84z4252z8cffz7d10dc227b69</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="AHasBs.ConceptA" identity="ddf0817d-f815-437d-9ed5-5508a9af9da9" id="iddf0817dzf815z437dz9ed5z5508a9af9da9" definitionlevel="none" containmentstyle="reference">
+            <source />
+            <role>i5d44ccd3z6872z4643zb57ez9105dde5e1e9</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptAHasConceptC.ConceptC" identity="f2826d9e-283d-4863-8ec8-ca143cf006de" id="if2826d9ez283dz4863z8ec8zca143cf006de" definitionlevel="none" containmentstyle="fromsource">
+            <source>i4ef05e30z5c1ez47c6za698z2273af35f396</source>
+            <role>i0cf0be27z7402z4fc9z9092z26f85b286450</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptAHasConceptC.ConceptA" identity="e61c465f-f9a5-49f1-8d73-beecb4c47673" id="ie61c465fzf9a5z49f1z8d73zbeecb4c47673" definitionlevel="none" containmentstyle="reference">
+            <source />
+            <role>i80eac6faz7c7ez4ce3zad47zc61731fa1b11</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptBHasConceptC.ConceptC" identity="b629aef5-0c1c-4841-a8c8-bc6570371870" id="ib629aef5z0c1cz4841za8c8zbc6570371870" definitionlevel="none" containmentstyle="fromsource">
+            <source>i5a944404zcd31z4e09z8c80zf8477e7df0eb</source>
+            <role>ib1d368eczab53z422azb3aaz45fec6560a39</role>
+          </treeExpression>
+          <treeExpression xsi:type="RoleExpression" name="ConceptBHasConceptC.ConceptB" identity="0ff2d0ba-5038-447f-ba5e-9ff0f4214cfc" id="i0ff2d0baz5038z447fzba5ez9ff0f4214cfc" definitionlevel="none" containmentstyle="reference">
+            <source />
+            <role>ice58c89bz2db4z4e44z9f8ez4a58c02a8351</role>
+          </treeExpression>
+        </expressions>
+        <roots />
+        <source>ia53f184dz40f7z483dzb3abz17475734bdf9</source>
+      </treenavigator>
+    </trees>
+    <concepts>
+      <concept name="ConceptA" identity="970b23f8-232f-4b27-a560-ee5289ba87aa" namespace="Example.SimpleExample.DomainModel" id="i970b23f8z232fz4b27za560zee5289ba87aa" isLoaded="true" isAbstract="false">
+        <mdfmetadata xsi:type="conceptorshapemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" />
+      </concept>
+      <concept name="ConceptB" identity="1580bc4b-c7ed-4423-a8eb-306c01bf33ea" namespace="Example.SimpleExample.DomainModel" id="i1580bc4bzc7edz4423za8ebz306c01bf33ea" isLoaded="true" isAbstract="false">
+        <mdfmetadata xsi:type="conceptorshapemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" />
+      </concept>
+      <concept name="ConceptC" identity="0fe218f6-ea4f-4547-a390-e5e069524ae9" namespace="Example.SimpleExample.DomainModel" id="i0fe218f6zea4fz4547za390ze5e069524ae9" isLoaded="true" isAbstract="false">
+        <mdfmetadata xsi:type="conceptorshapemdfmetadata" accessmodifier="public" category="" description="" doccomment="" localize="false" />
+      </concept>
+    </concepts>
+  </model>
+</dmd>

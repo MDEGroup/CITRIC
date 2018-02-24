@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" name="bugzilla">
+  <children xsi:type="Attribute" name="version" value=""/>
+  <children xsi:type="Attribute" name="urlbase" value=""/>
+  <children xsi:type="Attribute" name="maintainer" value=""/>
+  <children xsi:type="Element" name="bug">
+    <children xsi:type="Element" name="bug_id">
+      <children xsi:type="Text" value="1"/>
+    </children>
+    <children xsi:type="Element" name="exporter">
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="urlbase">
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="bug_status">
+      <children xsi:type="Text" value="null"/>
+    </children>
+    <children xsi:type="Element" name="product">
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="priority">
+      <children xsi:type="Text" value="P1"/>
+    </children>
+    <children xsi:type="Element" name="version">
+      <children xsi:type="Text" value="V0 Beta"/>
+    </children>
+    <children xsi:type="Element" name="rep_platform">
+      <children xsi:type="Text" value="all"/>
+    </children>
+    <children xsi:type="Element" name="assigned_to">
+      <children xsi:type="Text" value="Andrey Sadovykh"/>
+    </children>
+    <children xsi:type="Element" name="delta_ts">
+      <children xsi:type="Text" value=""/>
+    </children>
+    <children xsi:type="Element" name="component">
+      <children xsi:type="Text" value="Adapter"/>
+    </children>
+    <children xsi:type="Element" name="reporter">
+      <children xsi:type="Text" value="D Kelsey, IBM UK"/>
+    </children>
+    <children xsi:type="Element" name="bug_severity">
+      <children xsi:type="Text" value="major"/>
+    </children>
+    <children xsi:type="Element" name="creation_ts">
+      <children xsi:type="Text" value="1st July 05"/>
+    </children>
+    <children xsi:type="Element" name="qa_contact">
+      <children xsi:type="Text" value="Andrey Sadovykh"/>
+    </children>
+    <children xsi:type="Element" name="op_sys">
+      <children xsi:type="Text" value="all"/>
+    </children>
+    <children xsi:type="Element" name="short_desc">
+      <children xsi:type="Text" value="A consumer sends a UML2 Model to a provider. The Service Description defines the service as having a single input parameter of Model type with a Metaclass specification of &quot;Model&quot; taken from UML2.ecore. At the provider end a Hashmap is presented to the provider containing each of the elements of the model in flattened state. This makes it unusable by the provider which excepts the model it maintain it's original containment semantics and hierarchy."/>
+    </children>
+    <children xsi:type="Element" name="long_desc">
+      <children xsi:type="Element" name="who">
+        <children xsi:type="Text" value="D Kelsey, IBM UK"/>
+      </children>
+      <children xsi:type="Element" name="bug_when">
+        <children xsi:type="Text" value="1st July 05"/>
+      </children>
+      <children xsi:type="Element" name="thetext">
+        <children xsi:type="Text" value=""/>
+      </children>
+    </children>
+  </children>
+</Root>

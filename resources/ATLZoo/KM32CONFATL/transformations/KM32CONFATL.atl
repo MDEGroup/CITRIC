@@ -1,0 +1,1057 @@
+-- @atlcompiler atl2006
+module KM32CONFATL; -- Module Template
+create OUT : ATL from IN : KM3;
+
+helper def: metaModel: KM3!OclModel =
+	KM3!Metamodel->allInstances()->asSequence()->first()
+;
+rule Module {
+	from 
+		mm:KM3!Metamodel
+	to  
+		-- module test;
+		-- create OUT:MADL from SRC:MADL, ARCH:MADL;
+		inOutMM:ATL!OclModel (
+			name <- mm.contents->any(p|p.name<>'Conformance' and p.name<>'PrimitiveTypes').name),
+		inM1:ATL!OclModel (
+			name <- 'IMPL',
+			metamodel <- inOutMM),
+		inM2:ATL!OclModel (
+			name <- 'ARCH',
+			metamodel <- inOutMM),
+		outM:ATL!OclModel (
+			name <- 'OUT',
+			metamodel <- inOutMM),
+			
+		atlMod:ATL!Module (
+			name <- 'CONF',
+			isRefining <- false,
+			inModels <- Sequence{inM1,inM2},
+			outModels <- Sequence{outM}),
+			
+		selfDecl:ATL!VariableDeclaration(
+			varName <- 'self'),			
+			
+		--helper context MADL!ViewElement def: isDivergent : Boolean =
+		-- self.isFromImplementation and self.oclType()->allInstancesFrom('ARCH')->forAll(m |
+		--  not m.isMapping(self)
+		-- );	
+		h1selfExp1:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1isFromImplementation:ATL!NavigationOrAttributeCallExp(
+			name <- 'isFromImplementation',
+			source <- h1selfExp1),
+		h1mExp:ATL!VariableExp(
+			name <- 'm',
+			referredVariable <- h1iterator),
+		h1selfExp2:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1isMapping:ATL!OperationCallExp (
+			operationName <- 'isMapping',
+			source <- h1mExp,
+			arguments <- Sequence{h1selfExp2}),
+		h1notExp:ATL!OperatorCallExp (
+			operationName <- 'not',
+			source <- h1isMapping),
+		h1selfExp3:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1oclType:ATL!OperationCallExp (
+			operationName <- 'oclType',
+			source <- h1selfExp3),
+		h1archStringExp:ATL!StringExp(
+			stringSymbol <- 'ARCH'),
+		h1allInstances:ATL!CollectionOperationCallExp (
+			operationName <- 'allInstancesFrom',
+			source <- h1oclType,
+			arguments <- Sequence{h1archStringExp}),
+		h1iterator:ATL!Iterator(
+			varName <- 'm'),
+		h1forAllExp:ATL!IteratorExp (
+			name <- 'forAll',
+			source <- h1allInstances,
+			body <- h1notExp,
+			iterators <- Set{h1iterator}),
+		h1andExp:ATL!OperatorCallExp (
+			operationName <- 'and',
+			source <- h1isFromImplementation,
+			arguments <- h1forAllExp),
+		h1boolType:ATL!BooleanType,
+		h1attr:ATL!Attribute (
+			name <- 'isDivergent',
+			initExpression <- h1andExp,
+			type <- h1boolType),
+		h1contextType:ATL!OclModelElement(
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),
+		h1contextDef:ATL!OclContextDefinition (
+			context_ <- h1contextType),
+		h1fd:ATL!OclFeatureDefinition(
+			feature <- h1attr,
+			context_ <- h1contextDef),
+		h1:ATL!Helper(
+			definition <- h1fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+
+		--helper context MADL!ViewElement def: isAbsent : Boolean =
+		-- self.isFromArchitecture and not self.oclType()->allInstancesFrom('IMPL')->exists(m |
+		--  m.isMapping(self)
+		-- );
+		h2selfExp1:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h2isFromArchitecture:ATL!NavigationOrAttributeCallExp(
+			name <- 'isFromArchitecture',
+			source <- h2selfExp1),
+		h2mExp:ATL!VariableExp(
+			name <- 'm',
+			referredVariable <- h2iterator),
+		h2selfExp2:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h2isMapping:ATL!OperationCallExp (
+			operationName <- 'isMapping',
+			source <- h2mExp,
+			arguments <- Sequence{h2selfExp2}),
+		h2selfExp3:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h2oclType:ATL!OperationCallExp (
+			operationName <- 'oclType',
+			source <- h2selfExp3),
+		h2implStringExp:ATL!StringExp(
+			stringSymbol <- 'IMPL'),
+		h2allInstances:ATL!CollectionOperationCallExp (
+			operationName <- 'allInstancesFrom',
+			source <- h2oclType,
+			arguments <- Sequence{h2implStringExp}),
+		h2iterator:ATL!Iterator(
+			varName <- 'm'),
+		h2existsExp:ATL!IteratorExp (
+			name <- 'exists',
+			source <- h2allInstances,
+			body <- h2isMapping,
+			iterators <- Set{h2iterator}),
+		h2notExp:ATL!OperatorCallExp (
+			operationName <- 'not',
+			source <- h2existsExp),
+		h2andExp:ATL!OperatorCallExp (
+			operationName <- 'and',
+			source <- h2isFromArchitecture,
+			arguments <- h2notExp),
+		h2boolType:ATL!BooleanType,
+		h2attr:ATL!Attribute (
+			name <- 'isAbsent',
+			initExpression <- h2andExp,
+			type <- h2boolType),
+		h2contextType:ATL!OclModelElement(
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),
+		h2contextDef:ATL!OclContextDefinition (
+			context_ <- h2contextType),
+		h2fd:ATL!OclFeatureDefinition(
+			feature <- h2attr,
+			context_ <- h2contextDef),
+		h2:ATL!Helper(
+			definition <- h2fd, 
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+			
+		--helper context MADL!ViewElement def: isConvergent : Boolean =
+		-- self.isFromImplementation and self.oclType()->allInstancesFrom('ARCH')->exists(m |
+		--  m.isMapping(self)
+		-- );			
+		h3selfExp1:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h3isFromImplementation:ATL!NavigationOrAttributeCallExp(
+			name <- 'isFromImplementation',
+			source <- h3selfExp1),
+		h3mExp:ATL!VariableExp(
+			name <- 'm',
+			referredVariable <- h3iterator),
+		h3selfExp2:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h3isMapping:ATL!OperationCallExp (
+			operationName <- 'isMapping',
+			source <- h3mExp,
+			arguments <- Sequence{h3selfExp2}),
+		h3selfExp3:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h3oclType:ATL!OperationCallExp (
+			operationName <- 'oclType',
+			source <- h3selfExp3),
+		h3implStringExp:ATL!StringExp(
+			stringSymbol <- 'ARCH'),
+		h3allInstances:ATL!CollectionOperationCallExp (
+			operationName <- 'allInstancesFrom',
+			source <- h3oclType,
+			arguments <- Sequence{h3implStringExp}),
+		h3iterator:ATL!Iterator(
+			varName <- 'm'),
+		h3existsExp:ATL!IteratorExp (
+			name <- 'exists',
+			source <- h3allInstances,
+			body <- h3isMapping,
+			iterators <- Set{h3iterator}),
+		h3andExp:ATL!OperatorCallExp (
+			operationName <- 'and',
+			source <- h3isFromImplementation,
+			arguments <- h3existsExp),
+		h3boolType:ATL!BooleanType,
+		h3attr:ATL!Attribute (
+			name <- 'isConvergent',
+			initExpression <- h3andExp,
+			type <- h3boolType),
+		h3contextType:ATL!OclModelElement(
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),
+		h3contextDef:ATL!OclContextDefinition (
+			context_ <- h3contextType),
+		h3fd:ATL!OclFeatureDefinition(
+			feature <- h3attr,
+			context_ <- h3contextDef),
+		h3:ATL!Helper(
+			definition <- h3fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+			
+		--helper context MADL!ViewElement def: match : MADL!ViewElement =
+		-- if self.isAbsent or self.isDivergent then
+		--  self
+		-- else
+		--  self.oclType().allInstancesFrom('IMPL')->any(p |
+		--   p.isMapping(self)
+		--  )
+		-- endif;
+		h4selfExp1:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h4absent:ATL!NavigationOrAttributeCallExp (
+			name <- 'isAbsent',
+			source <- h4selfExp1),
+		h4selfExp2:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h4divergent:ATL!NavigationOrAttributeCallExp (
+			name <- 'isDivergent',
+			source <- h4selfExp2),
+		h4cond:ATL!OperatorCallExp (
+			operationName <- 'or',
+			source <- h4absent,
+			arguments <- Sequence{h4divergent}),
+		h4then:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h4selfExp3:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h4iterator:ATL!Iterator(
+			varName <- 'p'),
+		h4p:ATL!VariableExp (
+			name <- 'p',
+			referredVariable <- h4iterator),
+		h4body:ATL!OperationCallExp(
+			operationName <- 'isMapping',
+			source <- h4p,
+			arguments <- Sequence{h4selfExp3}),
+		h4selfExp4:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h4type:ATL!OperationCallExp (
+			operationName <- 'oclType',
+			source <- h4selfExp4),
+		h4impl:ATL!StringExp(
+			stringSymbol <- 'IMPL'),
+		h4allInstances:ATL!OperationCallExp (
+			operationName <- 'allInstancesFrom',
+			source <- h4type,
+			arguments <- Sequence{h4impl}),
+		h4else:ATL!IteratorExp (
+			name <- 'any',
+			iterators <- Set{h4iterator},
+			body <- h4body,
+			source <- h4allInstances),
+		h4if:ATL!IfExp (
+			thenExpression <- h4then,
+			condition <- h4cond,
+			elseExpression <- h4else),
+		h4attrType:ATL!OclModelElement (
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),
+		h4attr:ATL!Attribute (
+			name <- 'match',
+			initExpression <- h4if,
+			type <- h4attrType),
+		h4contextType:ATL!OclModelElement(
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),
+		h4contextDef:ATL!OclContextDefinition (
+			context_ <- h4contextType),
+		h4fd:ATL!OclFeatureDefinition(
+			feature <- h4attr,
+			context_ <- h4contextDef),
+		h4:ATL!Helper(
+			definition <- h4fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),	
+			
+		--helper context MADL!ViewElement def: isFromImplementation : Boolean =
+		-- MADL!ViewElement->allInstancesFrom('IMPL')->includes(self);
+		h5viewPart:ATL!OclModelElement (
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),		
+		h5implString:ATL!StringExp (
+			stringSymbol <- 'IMPL'),		
+		h5allInstances:ATL!CollectionOperationCallExp(
+			operationName <- 'allInstancesFrom',
+			source <- h5viewPart,
+			arguments <- Sequence{h5implString}),		
+		h5selfExp:ATL!VariableExp(
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h5includes:ATL!CollectionOperationCallExp(
+			operationName <- 'includes',
+			source <- h5allInstances,
+			arguments <- Sequence{h5selfExp}),
+		h5attrtype:ATL!BooleanType,
+		h5attr:ATL!Attribute (
+			name <- 'isFromImplementation',
+			initExpression <- h5includes,
+			type <- h5attrtype),
+		h5contextType:ATL!OclModelElement(
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),
+		h5contextDef:ATL!OclContextDefinition (
+			context_ <- h5contextType),
+		h5fd:ATL!OclFeatureDefinition(
+			feature <- h5attr,
+			context_ <- h5contextDef),
+		h5:ATL!Helper(
+			definition <- h5fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+
+		--helper context MADL!ViewElement def: isFromArchitecture : Boolean =
+		-- not self.isFromImplementation		
+		h6selfExp:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),		
+		h6isFromImpl:ATL!NavigationOrAttributeCallExp (
+			name <- 'isFromImplementation',
+			source <- h6selfExp),		
+		h6not:ATL!OperatorCallExp(
+			operationName <- 'not',
+			source <- h6isFromImpl),		
+		h6attrtype:ATL!BooleanType,
+		h6attr:ATL!Attribute (
+			name <- 'isFromArchitecture',
+			initExpression <- h6not,
+			type <- h6attrtype),
+		h6contextType:ATL!OclModelElement(
+			name <- 'ViewElement',
+			model <- thisModule.metaModel),
+		h6contextDef:ATL!OclContextDefinition (
+			context_ <- h6contextType),
+		h6fd:ATL!OclFeatureDefinition(
+			feature <- h6attr,
+			context_ <- h6contextDef),
+		h6:ATL!Helper(
+			definition <- h6fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod'))
+}
+
+lazy rule ConcreteViewEntityOutPattern {
+	from ref:KM3!Reference
+	using {
+		sourceElementName:String = KM3!Class->allInstances()->any(c|c.structuralFeatures->includes(ref)).name;
+	}
+	to
+		b1:ATL!Binding(
+			propertyName <- ref.name,
+			value <- collect),
+		el_inVExp4:ATL!VariableExp (
+			name <- 'el_in',
+			referredVariable <- thisModule.resolveTemp(KM3!Class->allInstances()->any(c|c.structuralFeatures->includes(ref)),'el_in')),
+		el_inAllDep:ATL!NavigationOrAttributeCallExp(
+			name <- 'all'+ref.type.name,
+			source <- el_inVExp4),
+		iter:ATL!Iterator (
+			varName <- 'r'),
+		r:ATL!VariableExp (
+			name <- 'r',
+			referredVariable <- iter),
+		body:ATL!NavigationOrAttributeCallExp(
+			name <- 'match',
+			source <- r),
+		collect:ATL!IteratorExp(
+			name <- 'collect',
+			iterators <- Set{iter},
+			body <- body,
+			source <- el_inAllDep),
+			
+		--helper context MADL!Module def: allUses : Set(MADL!Uses) =
+		-- if self.isConvergent then
+		--  self.uses->union(self.arch.uses)
+		-- else
+		--  self.uses
+		-- endif;
+		selfDecl:ATL!VariableDeclaration(
+			varName <- 'self'),
+		h1selfExp4:ATL!VariableExp(
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1cond:ATL!NavigationOrAttributeCallExp(
+			name <- 'isConvergent',
+			source <- h1selfExp4),
+		h1selfExp3:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1usesExp:ATL!NavigationOrAttributeCallExp (
+			name <- ref.name,
+			source <- h1selfExp3),
+		h1selfExp2:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1archExp:ATL!NavigationOrAttributeCallExp (
+			name <- 'arch',
+			source <- h1selfExp2),
+		h1usesArchExp:ATL!NavigationOrAttributeCallExp (
+			name <- ref.name,
+			source <- h1archExp),			
+		h1then:ATL!CollectionOperationCallExp (
+			operationName <- 'union',
+			source <- h1usesExp,
+			arguments <- Sequence{h1usesArchExp}),
+		h1selfExp1:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1else:ATL!NavigationOrAttributeCallExp (
+			name <- ref.name,
+			source <- h1selfExp1),		
+		h1if:ATL!IfExp(
+			thenExpression <- h1then,
+			condition <- h1cond,
+			elseExpression <- h1else),			
+		h1setType:ATL!OclModelElement (
+			name <- ref.type.name,
+			model <- thisModule.metaModel),
+		h1attrType:ATL!SetType (
+			elementType <- h1setType),			
+		h1attr:ATL!Attribute (
+			name <- 'all'+ref.type.name,
+			initExpression <- h1if,
+			type <- h1attrType),
+		h1contextType:ATL!OclModelElement(
+			name <- sourceElementName,
+			model <- thisModule.metaModel),
+		h1contextDef:ATL!OclContextDefinition (
+			context_ <- h1contextType),
+		h1fd:ATL!OclFeatureDefinition(
+			feature <- h1attr,
+			context_ <- h1contextDef),
+		h1:ATL!Helper(
+			definition <- h1fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+
+		--helper context MADL!Module def: arch : MADL!Module =
+		-- MADL!Module->allInstancesFrom('ARCH')->any(m |
+		--  m.isMapping(self)
+		-- );
+		h2elType:ATL!OclModelElement(
+			name <- sourceElementName,
+			model <- thisModule.metaModel),
+		h2archString:ATL!StringExp (
+			stringSymbol <- 'ARCH'),
+		h2allInstances:ATL!CollectionOperationCallExp (
+			operationName <- 'allInstancesFrom',
+			source <- h2elType,
+			arguments <- Sequence{h2archString}),	
+		h2iterator:ATL!Iterator(
+			varName <- 'm'),
+		h2m:ATL!VariableExp (
+			name <- 'm',
+			referredVariable <- h2iterator),
+		h2selfExp:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h2body:ATL!OperationCallExp (
+			operationName <- 'isMapping',
+			source <- h2m,
+			arguments <- Sequence{h2selfExp}),
+		h2iterExp:ATL!IteratorExp (
+			name <- 'any',
+			body <- h2body,
+			source <- h2allInstances,				
+			iterators <- Set{h2iterator}),
+		h2attrtype:ATL!OclModelElement(
+			name <- sourceElementName,
+			model <- thisModule.metaModel),
+		h2attr:ATL!Attribute (
+			name <- 'arch',
+			initExpression <- h2iterExp,
+			type <- h2attrtype),
+		h2contextType:ATL!OclModelElement(
+			name <- sourceElementName,
+			model <- thisModule.metaModel),
+		h2contextDef:ATL!OclContextDefinition (
+			context_ <- h2contextType),
+		h2fd:ATL!OclFeatureDefinition(
+			feature <- h2attr,
+			context_ <- h2contextDef),
+		h2:ATL!Helper(
+			definition <- h2fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod'))		
+			
+			
+		
+}
+
+lazy rule ViewRootOutPattern {
+	from ref:KM3!Reference
+	to
+		b1:ATL!Binding(
+			propertyName <- ref.name,
+			value <- union),	
+		thisDecl:ATL!VariableDeclaration(
+			varName <- 'thisModule'),
+		thisExp:ATL!VariableExp (
+			name <- 'thisModule',
+			referredVariable <- thisDecl),
+		implArch:ATL!NavigationOrAttributeCallExp(
+			name <- 'rootArch',
+			source <- thisExp),
+		mods1:ATL!NavigationOrAttributeCallExp(
+			name <- ref.name,
+			source <- implArch),
+		impl_in2:ATL!VariableExp (
+			name <- 'impl_in',
+			referredVariable <- thisModule.resolveTemp(KM3!Class->allInstances()->any(c|c.structuralFeatures->includes(ref)),'impl_in_pe')),
+		mods2:ATL!NavigationOrAttributeCallExp(
+			name <- ref.name,
+			source <- impl_in2),
+		union:ATL!CollectionOperationCallExp (
+			operationName <- 'union',
+			source <- mods2,
+			arguments <- Sequence{mods1})
+}
+rule ViewRoot {
+	from
+		c:KM3!Class (
+			c.supertypes->exists(st|st.name='ViewRoot'))
+	to
+
+		--helper def: rootImpl : MADL!Implementation =
+		-- MADL!Implementation->allInstancesFrom('IMPL')->asSequence()->first();
+		h1se:ATL!StringExp (
+			stringSymbol <- 'IMPL'),
+		h1me1:ATL!OclModelElement(
+			name <- c.name,
+			model <- thisModule.metaModel),
+		h1allInstancesFrom:ATL!CollectionOperationCallExp (
+			operationName <- 'allInstancesFrom',
+			source <- h1me1,
+			arguments <- Sequence{h1se}),
+		h1asSequence:ATL!CollectionOperationCallExp (
+			operationName <- 'asSequence',
+			source <- h1allInstancesFrom),
+		h1first:ATL!CollectionOperationCallExp (
+			operationName <- 'first',
+			source <- h1asSequence),
+		h1me2:ATL!OclModelElement(
+			name <- c.name,
+			model <- thisModule.metaModel),
+		h1a:ATL!Attribute (
+			name <- 'rootImpl',
+			initExpression <- h1first,
+			type <- h1me2),
+		h1fd:ATL!OclFeatureDefinition(
+			feature <- h1a),
+		h1:ATL!Helper(
+			definition <- h1fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+			
+		--helper def: rootArch : MADL!Implementation =
+		-- MADL!Implementation->allInstancesFrom('ARCH')->asSequence()->first();
+		h2se:ATL!StringExp (
+			stringSymbol <- 'ARCH'),
+		h2me1:ATL!OclModelElement(
+			name <- c.name,
+			model <- thisModule.metaModel),
+		h2allInstancesFrom:ATL!CollectionOperationCallExp (
+			operationName <- 'allInstancesFrom',
+			source <- h2me1,
+			arguments <- Sequence{h2se}),
+		h2asSequence:ATL!CollectionOperationCallExp (
+			operationName <- 'asSequence',
+			source <- h2allInstancesFrom),
+		h2first:ATL!CollectionOperationCallExp (
+			operationName <- 'first',
+			source <- h2asSequence),
+		h2me2:ATL!OclModelElement(
+			name <- c.name,
+			model <- thisModule.metaModel),
+		h2a:ATL!Attribute (
+			name <- 'rootArch',
+			initExpression <- h2first,
+			type <- h2me2),
+		h2fd:ATL!OclFeatureDefinition(
+			feature <- h2a),
+		h2:ATL!Helper(
+			definition <- h2fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+
+			
+		--rule Implementation {
+		-- from
+		--  root_in : MADL!Implementation
+		--  (
+		--   thisModule.rootImpl = root_in
+		--  )
+		-- to
+		--  impl_out : MADL!Implementation (
+		--   modules <- root_in.modules->union(thisModule.rootArch.modules)
+		--  )
+		--}
+		thisDecl:ATL!VariableDeclaration(
+			varName <- 'thisModule'),
+		me3:ATL!OclModelElement(
+			name <- c.name,
+			model <- thisModule.metaModel),			
+		impl_in_pe:ATL!SimpleInPatternElement(
+			varName <- 'root_in',
+			type <- me3),
+		this:ATL!VariableExp(
+			name <- 'thisModule',
+			referredVariable <- thisDecl),
+		implementationImpl:ATL!NavigationOrAttributeCallExp(
+			name <- 'rootImpl',
+			source <- this),
+		impl_in:ATL!VariableExp (
+			name <- 'root_in',
+			referredVariable <- impl_in_pe),
+		filter:ATL!OperatorCallExp (
+			operationName <- '=',
+			source <- implementationImpl,
+			arguments <- Sequence{impl_in}),
+		inPattern:ATL!InPattern(
+			elements <- Set{impl_in_pe},
+			filter <- filter),
+		me4:ATL!OclModelElement(
+			name <- c.name,
+			model <- thisModule.metaModel),
+		outPatEl:ATL!SimpleOutPatternElement(
+			varName <- 'impl_out',
+			type <- me4,
+			bindings <- c.structuralFeatures->select(sf|sf.oclIsTypeOf(KM3!Reference))
+				->select(r|r.isContainer)->collect(r|thisModule.ViewRootOutPattern(r))),
+		outPattern:ATL!OutPattern(
+			elements <- Sequence{outPatEl}),
+		r:ATL!MatchedRule (
+			name <- c.name,
+			inPattern <- inPattern,
+			outPattern <- outPattern,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod'))
+}
+rule ConcreteViewEntity {
+	from
+		el:KM3!Class (
+			not el.isAbstract and
+			el.supertypes->exists(st|st.name='ViewEntity'))
+	to
+		--rule Module {
+		-- from
+		--  Modulein : MADL!Module
+		--  (
+		--   Modulein.isConvergent or Modulein.isDivergent or Modulein.isAbsent
+		--  )
+		-- to
+		--  r_out : MADL!Module (
+		--   uses <- Modulein.allUses->collect(r |
+		--    r.match
+		--   ),
+		--   conformance <- if Modulein.isConvergent then
+		--    #convergent
+		--   else
+		--    if Modulein.isDivergent then
+		--     #divergent
+		--    else
+		--     #absent
+		--    endif
+		--   endif,
+		--   name <- Modulein.name
+		--  )
+		--}
+		me:ATL!OclModelElement (
+			name <- el.name,
+			model <- thisModule.metaModel),
+		el_in:ATL!SimpleInPatternElement(
+			varName <- el.name+'in',
+			type <- me),
+		el_inVExp1:ATL!VariableExp (
+			name <- el.name+'in',
+			referredVariable <- el_in),
+		isconv:ATL!NavigationOrAttributeCallExp (
+			name <- 'isConvergent',
+			source <- el_inVExp1),
+		el_inVExp2:ATL!VariableExp (
+			name <- el.name+'in',
+			referredVariable <- el_in),
+		isdiv:ATL!NavigationOrAttributeCallExp (
+			name <- 'isDivergent',
+			source <- el_inVExp2),
+		or1:ATL!OperatorCallExp(
+			operationName <- 'or',
+			source <- isconv,
+			arguments <- Sequence{isdiv}),
+		el_inVExp3:ATL!VariableExp (
+			name <- 'el_in',
+			referredVariable <- el_in),
+		isabs:ATL!NavigationOrAttributeCallExp (
+			name <- 'isAbsent',
+			source <- el_inVExp3),
+		filter:ATL!OperatorCallExp (
+			operationName <- 'or',
+			source <- or1,
+			arguments <- Sequence{isabs}),
+		inPattern:ATL!InPattern(
+			elements <- Set{el_in},
+			filter <- filter),
+		el_inVExp5:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- el_in),
+		cond1:ATL!NavigationOrAttributeCallExp(
+			name <- 'isDivergent',
+			source <- el_inVExp5),
+		thenExp1:ATL!EnumLiteralExp(
+			name <- 'divergent'),
+		elseExp1:ATL!EnumLiteralExp(
+			name <- 'absent'),
+		elseExp2:ATL!IfExp(
+			thenExpression <- thenExp1,
+			condition <- cond1,
+			elseExpression <- elseExp1),
+		el_inVExp6:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- el_in),
+		cond2:ATL!NavigationOrAttributeCallExp(
+			name <- 'isConvergent',
+			source <- el_inVExp6),
+		thenExp2:ATL!EnumLiteralExp(
+			name <- 'convergent'),
+		ifExp:ATL!IfExp(
+			thenExpression <- thenExp2,
+			condition <- cond2,
+			elseExpression <- elseExp2),
+		b2:ATL!Binding(
+			propertyName <- 'conformance',
+			value <- ifExp),
+		el_inVExp7:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- el_in),
+		name:ATL!NavigationOrAttributeCallExp (
+			name <- 'name',
+			source <- el_inVExp7),
+		b3:ATL!Binding(
+			propertyName <- 'name',
+			value <- name),
+		me_out:ATL!OclModelElement (
+			name <- el.name,
+			model <- thisModule.metaModel),
+		outPatEl:ATL!SimpleOutPatternElement(
+			varName <- 'r_out',
+			type <- me_out,
+			bindings <- el.structuralFeatures->select(sf|sf.oclIsTypeOf(KM3!Reference))->select(ref|ref.type.supertypes->exists(st|st.name='ViewRelation'))->collect(r|thisModule.ConcreteViewEntityOutPattern(r))->append(Sequence{b2,b3})),
+		outPattern:ATL!OutPattern(
+			elements <- Sequence{outPatEl}),
+		r:ATL!MatchedRule (
+			name <- el.name,
+			inPattern <- inPattern,
+			outPattern <- outPattern,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod'))	
+}
+rule ViewEntity {
+	from
+		el:KM3!Class (
+			el.name='ViewEntity')
+	to
+		selfDecl:ATL!VariableDeclaration(
+			varName <- 'self'),
+			
+		--helper context MADL!ViewEntity def: isMapping(m : MADL!ViewEntity) : Boolean =
+		-- self.name = m.name;
+		h1me1:ATL!OclModelElement(
+			name <- 'ViewEntity',
+			model <- thisModule.metaModel),
+		h1par:ATL!Parameter(
+			varName <- 'm',
+			type <- h1me1),
+		h1retType:ATL!BooleanType,
+		h1selfExp1:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h1name1:ATL!NavigationOrAttributeCallExp(
+			source <- h1selfExp1,
+			name <- 'name'),
+		h1m:ATL!VariableExp(
+			name <- 'm',
+			referredVariable <- h1par),
+		h1name2:ATL!NavigationOrAttributeCallExp(
+			source <- h1m,
+			name <- 'name'),
+		h1comp:ATL!OperatorCallExp (
+			operationName <- '=',
+			source <- h1name1,
+			arguments <- Sequence{h1name2}),
+		h1op:ATL!Operation(
+			name <- 'isMapping',
+			parameters <- Sequence{h1par},
+			returnType <- h1retType,
+			body <- h1comp),
+		h1contextType:ATL!OclModelElement(
+			name <- 'ViewEntity',
+			model <- thisModule.metaModel),
+		h1contextDef:ATL!OclContextDefinition (
+			context_ <- h1contextType),
+		h1fd:ATL!OclFeatureDefinition(
+			feature <- h1op,
+			context_ <- h1contextDef),
+		h1:ATL!Helper(
+			definition <- h1fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod'))
+
+			
+}
+rule ConcreteViewRelation {
+	from
+		rel:KM3!Class (
+			rel.supertypes->exists(st|st.name='ViewRelation'))
+	using {
+				ref:KM3!Reference = rel.structuralFeatures->any(sf|sf.oclIsTypeOf(KM3!Reference));
+	}
+	to
+		selfDecl:ATL!VariableDeclaration(
+			varName <- 'self'),
+			
+		--helper context MADL!Uses def: isMapping(r : MADL!Uses) : Boolean =
+		-- self.uses.isMapping(r.uses) and self.sourceUses.isMapping(r.sourceUses);
+		h1me1:ATL!OclModelElement(
+			name <- rel.name,
+			model <- thisModule.metaModel),
+		h1par:ATL!Parameter(
+			varName <- 'r',
+			type <- h1me1),
+		h1retType:ATL!BooleanType,
+		h1varExp1:ATL!VariableExp(
+			name <- 'r',
+			referredVariable <- h1par),
+		h1rTarget:ATL!NavigationOrAttributeCallExp(
+			source <- h1varExp1,
+			name <- ref.name),
+		h1selfExp1:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),	
+		h1selfTarget:ATL!NavigationOrAttributeCallExp(
+			source <- h1selfExp1,
+			name <- ref.name),
+		h1isMapping1:ATL!OperationCallExp(
+			operationName <- 'isMapping',
+			source <- h1selfTarget,
+			arguments <- Sequence{h1rTarget}),
+		h1varExp2:ATL!VariableExp(
+			name <- 'r',
+			referredVariable <- h1par),
+		h1rSource:ATL!NavigationOrAttributeCallExp(
+			source <- h1varExp2,
+			name <- 'source'+rel.name),
+		h1selfExp2:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),	
+		h1selfSource:ATL!NavigationOrAttributeCallExp(
+			source <- h1selfExp2,
+			name <- 'source'+rel.name),
+		h1isMapping2:ATL!OperationCallExp(
+			operationName <- 'isMapping',
+			source <- h1selfSource,
+			arguments <- Sequence{h1rSource}),
+		h1and:ATL!OperatorCallExp(
+			operationName <- 'and',
+			source <- h1isMapping1,
+			arguments <- Sequence{h1isMapping2}),
+		h1op:ATL!Operation(
+			name <- 'isMapping',
+			parameters <- Sequence{h1par},
+			returnType <- h1retType,
+			body <- h1and),
+		h1contextType:ATL!OclModelElement(
+			name <- rel.name,
+			model <- thisModule.metaModel),
+		h1contextDef:ATL!OclContextDefinition (
+			context_ <- h1contextType),
+		h1fd:ATL!OclFeatureDefinition(
+			feature <- h1op,
+			context_ <- h1contextDef),
+		h1:ATL!Helper(
+			definition <- h1fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+			
+		--helper context MADL!Uses def: sourceUses : MADL!Module =
+		-- MADL!Module->allInstances()->any(m |
+		--  m.uses->includes(self)
+		-- );
+		h2me:ATL!OclModelElement(
+			name <- ref.type.name,
+			model <- thisModule.metaModel),
+		h2allInstances:ATL!CollectionOperationCallExp (
+			operationName <- 'allInstances',
+			source <- h2me),
+		h2selfExp:ATL!VariableExp (
+			name <- 'self',
+			referredVariable <- selfDecl),
+		h2iterator:ATL!Iterator (
+			varName <- 'm'),
+		h2m:ATL!VariableExp(
+			name <- 'm',
+			referredVariable <- h2iterator),
+		h2uses:ATL!NavigationOrAttributeCallExp(
+			name <- ref.name,
+			source <- h2m),
+		h2includes:ATL!CollectionOperationCallExp(
+			operationName <- 'includes',
+			source <- h2uses,
+			arguments <- Sequence{h2selfExp}),
+		h2iterExp:ATL!IteratorExp (
+			name <- 'any',
+			source <- h2allInstances,
+			body <- h2includes,
+			iterators <- Set{h2iterator}),
+		h2attrtype:ATL!OclModelElement(
+			name <- ref.type.name,
+			model <- thisModule.metaModel),
+		h2attr:ATL!Attribute (
+			name <- ('source'+rel.name),
+			initExpression <- h2iterExp,
+			type <- h2attrtype),
+		h2contextType:ATL!OclModelElement(
+			name <- rel.name,
+			model <- thisModule.metaModel),
+		h2contextDef:ATL!OclContextDefinition (
+			context_ <- h2contextType),
+		h2fd:ATL!OclFeatureDefinition(
+			feature <- h2attr,
+			context_ <- h2contextDef),
+		h2:ATL!Helper(
+			definition <- h2fd,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod')),
+
+		--rule Uses {
+		-- from
+		--  r_in : MADL!Uses
+		--  (
+		--   r_in.isConvergent or r_in.isDivergent or r_in.isAbsent
+		--  )
+		-- to
+		--  r_out : MADL!Uses (
+		--   uses <- r_in.uses.match,
+		--   conformance <- if r_in.isConvergent then
+		--    #convergent
+		--   else
+		--    if r_in.isDivergent then
+		--     #divergent
+		--    else
+		--     #absent
+		--    endif
+		--   endif
+		--  )
+		--}	
+		me:ATL!OclModelElement (
+			name <- rel.name,
+			model <- thisModule.metaModel),
+		r_in:ATL!SimpleInPatternElement(
+			varName <- 'r_in',
+			type <- me),
+		r_inVExp1:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- r_in),
+		isconv:ATL!NavigationOrAttributeCallExp (
+			name <- 'isConvergent',
+			source <- r_inVExp1),
+		r_inVExp2:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- r_in),
+		isdiv:ATL!NavigationOrAttributeCallExp (
+			name <- 'isDivergent',
+			source <- r_inVExp2),
+		or1:ATL!OperatorCallExp(
+			operationName <- 'or',
+			source <- isconv,
+			arguments <- Sequence{isdiv}),
+		r_inVExp3:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- r_in),
+		isabs:ATL!NavigationOrAttributeCallExp (
+			name <- 'isAbsent',
+			source <- r_inVExp3),
+		filter:ATL!OperatorCallExp (
+			operationName <- 'or',
+			source <- or1,
+			arguments <- Sequence{isabs}),
+		inPattern:ATL!InPattern(
+			elements <- Set{r_in},
+			filter <- filter),
+		r_inVExp4:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- r_in),
+		r_inUses:ATL!NavigationOrAttributeCallExp(
+			name <- ref.name,
+			source <- r_inVExp4),
+		match:ATL!NavigationOrAttributeCallExp(
+			name <- 'match',
+			source <- r_inUses),
+		b1:ATL!Binding(
+			propertyName <- ref.name,
+			value <- match),
+		r_inVExp5:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- r_in),
+		cond1:ATL!NavigationOrAttributeCallExp(
+			name <- 'isDivergent',
+			source <- r_inVExp5),
+		thenExp1:ATL!EnumLiteralExp(
+			name <- 'divergent'),
+		elseExp1:ATL!EnumLiteralExp(
+			name <- 'absent'),
+		elseExp2:ATL!IfExp(
+			thenExpression <- thenExp1,
+			condition <- cond1,
+			elseExpression <- elseExp1),
+		r_inVExp6:ATL!VariableExp (
+			name <- 'r_in',
+			referredVariable <- r_in),
+		cond2:ATL!NavigationOrAttributeCallExp(
+			name <- 'isConvergent',
+			source <- r_inVExp6),
+		thenExp2:ATL!EnumLiteralExp(
+			name <- 'convergent'),
+		ifExp:ATL!IfExp(
+			thenExpression <- thenExp2,
+			condition <- cond2,
+			elseExpression <- elseExp2),
+		b2:ATL!Binding(
+			propertyName <- 'conformance',
+			value <- ifExp),
+		me_out:ATL!OclModelElement (
+			name <- rel.name,
+			model <- thisModule.metaModel),
+		outPatEl:ATL!SimpleOutPatternElement(
+			varName <- 'r_out',
+			type <- me_out,
+			bindings <- Sequence{b1,b2}),
+		outPattern:ATL!OutPattern(
+			elements <- Sequence{outPatEl}),
+		r:ATL!MatchedRule (
+			name <- rel.name,
+			inPattern <- inPattern,
+			outPattern <- outPattern,
+			"module" <- thisModule.resolveTemp(thisModule.metaModel,'atlMod'))
+}

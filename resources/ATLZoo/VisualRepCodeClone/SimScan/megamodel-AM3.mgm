@@ -1,0 +1,69 @@
+
+			megamodel 'AMMACore' {
+
+			--TODO?	import '/AMMACore/KM3/Editor/Editor.ecore';
+				metamodel{'Editor', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore', '', '', '', '', '', '', workspace}
+				metamodel{'Outline', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore', '', '', '', '', '', '', workspace}
+
+
+			-- @begin Editors
+			-- @begin SimScan
+				metamodel{'SimScan', '/SimScan/Metamodel/SimScan.ecore', '', '', '', '', '', '', workspace}
+				ebnfInjector{'SimScan', '/SimScan/Syntax/SimScan-parser.jar', '', '', '', '', '', '', workspace, 'ss', 'SimScan', 3}
+
+				editor{'SimScan-Editor', '/SimScan/TGE/SimScan-Editor.ecore', '', '', '', '', '', '', workspace, 'ss'}
+				conformsTo {'/SimScan/TGE/SimScan-Editor.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore'}
+
+				outline{'SimScan-Outline', '/SimScan/TGE/SimScan-Outline.ecore', '', '', '', '', '', '', workspace}
+				conformsTo {'/SimScan/TGE/SimScan-Outline.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore'}
+				outlineOfEditor {
+					'/SimScan/TGE/SimScan-Outline.ecore',
+					'/SimScan/TGE/SimScan-Editor.ecore',
+					'/SimScan/Metamodel/SimScan.ecore',
+					'/SimScan/Syntax/SimScan-parser.jar'
+				}
+			-- @end SimScan
+			-- @end Editors
+			
+				antAction {
+						'ss',
+						'Inject SimScan File to SimScan Model',
+						'/TCSBuilder_ANTLR3/injector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/SimScan/Metamodel/SimScan.ecore',
+								properties { 'MMUri' = 'uri', }
+							}
+							param {
+								'/SimScan/Syntax/SimScan-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			
+			-- @begin MDR
+				metamodel{'SimScan', '/SimScan/Metamodel/SimScan.xmi', '', '', '', '', '', '', workspace}
+				antAction {
+						'ss',
+						'Inject SimScan File to SimScan Model (MDR based)',
+						'/TCSBuilder_ANTLR3/MDRInjector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/SimScan/Metamodel/SimScan.xmi',
+								properties { 'MMUri' = 'uri', 'MMName' = 'name', }
+							}
+							param {
+								'/SimScan/Syntax/SimScan-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			-- @end MDR
+			}	
+		

@@ -1,0 +1,56 @@
+-- @name		Simian
+-- @version		1.0
+-- @domains     Code Clone
+-- @authors		Yu Sun, Frédéric Jouault
+-- @date		2007/09/29
+-- @description	This is a metamodel for Simian
+-- @see         "KM3 User Manual", http://www.eclipse.org/gmt/atl/doc/
+
+package Simian {
+
+	-- Every class should extend LocatedElement, directly or indirectly.
+	-- This is a technical constraint to support text-to-model traceability.
+	abstract class LocatedElement {
+		attribute location[0-1] : String;
+		attribute commentsBefore[*] ordered : String;
+		attribute commentsAfter[*] ordered : String;
+	}
+
+-- BEGIN DSL-specific classes
+	class ClonePairs extends LocatedElement {
+		reference clonepart [0-*] container : ClonePair;
+		reference summary container : Summary;
+	}
+
+	class Summary extends LocatedElement{
+		attribute total_lines : Integer;
+		attribute total_blocks : Integer;
+		attribute clone_files : Integer;
+		attribute sig_lines : Integer;
+		attribute raw_lines : Integer;
+		attribute total_files : Integer;
+		attribute process_time : Double;
+	}
+	
+	class ClonePair extends LocatedElement {
+		attribute totallines : Integer;
+		reference clonesubpart [*] container : Clone;
+	}
+	
+	class Clone extends LocatedElement {
+		attribute start_line : Integer;
+		attribute end_line : Integer;
+	 	attribute file : String;	-- testfile     test.java   c:\test.java
+	}
+	
+
+-- END DSL-specific classes
+}
+
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype Integer;
+	datatype String;
+	datatype Double;
+}

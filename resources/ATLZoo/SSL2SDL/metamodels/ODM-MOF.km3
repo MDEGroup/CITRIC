@@ -1,0 +1,211 @@
+package ODM {
+
+	package Classes {
+
+		abstract class ValueRange {
+			
+		}
+
+		abstract class Value {
+			
+		}
+
+		class DeprecatedClass extends Class {
+			
+		}
+
+		class Class extends ValueRange, NamedElement {
+			reference theIntersected[*] : Class;
+			reference theTargetDisjointClass[*] : Class;
+			reference theTargetEquivalent[*] : Class;
+			reference theInstance[*] : ClassThing;
+			reference theSuperClass[*] : Class;
+			reference theAnnotationProperty[*] : AnnotationProperty;
+			reference theMember[*] : Class;
+			reference theComplemented[0-1] : Class;
+			attribute complete : Boolean;
+		}
+
+		class Restriction extends Class {
+			reference theProperty : Property;
+			reference theCardinality[0-1] : NonNegativeInteger;
+			reference theMinCardinality[0-1] : NonNegativeInteger;
+			reference theValue[0-1] : Value;
+			reference theMaxCardinality[0-1] : NonNegativeInteger;
+			reference theSValuesRange[0-1] : ValueRange;
+			reference theAValueRange[0-1] : ValueRange;
+		}
+	}
+
+	package Datatypes {
+
+		class Enumeration extends DataRange, NamedElement {
+			reference Enumerator[1-*] ordered : Literal;
+		}
+
+		class PrimitiveType extends Datatype {
+			
+		}
+
+		class TypedLiteral extends Literal {
+			reference theType : URIreference;
+		}
+
+		class PlainLiteral extends Literal {
+			attribute Language : String;
+		}
+
+		class URIreference extends Literal, AnnotationObject {
+			
+		}
+
+		class NonNegativeInteger extends TypedLiteral {
+			
+		}
+
+		class Literal extends Value, Element, AnnotationObject {
+			attribute lexicalForm : String;
+		}
+
+		abstract class DataRange extends ValueRange, Element {
+			
+		}
+
+		class DepricatedDatatype extends Datatype {
+			
+		}
+
+		class Datatype extends DataRange, NamedElement {
+			reference TypeDefinitionURI : URIreference;
+		}
+	}
+
+	package Individuals {
+
+		class DataTypePropertyThing extends Thing {
+			reference TheDTPRange : Literal;
+			reference Type : DatatypeProperty;
+			reference TheDTPDomain : ClassThing;
+		}
+
+		class ObjectPropertyThing extends Thing {
+			reference TheOPDomain : ClassThing;
+			reference Type : ObjectProperty;
+			reference TheOPRange : ClassThing;
+		}
+
+		class ClassThing extends Value, Thing, AnnotationObject {
+			reference theAnnotationProperty[*] : AnnotationProperty;
+			reference Type[1-*] : Class;
+			attribute name : String;
+		}
+
+		class AllDifferent extends Element {
+			reference Member[*] : Thing;
+		}
+
+		abstract class Thing extends Element {
+			reference theTargetSameThing[*] : Thing;
+			reference theTargetDifferentThing[*] : Thing;
+			attribute id : String;
+		}
+	}
+
+	package Ontology {
+
+		class OntologyProperty extends NamedElement {
+			reference Range[1-*] : Ontology;
+			reference Domain[1-*] : Ontology;
+		}
+
+		class Ontology extends NameSpace {
+			reference theAnnotationProperty[*] : AnnotationProperty;
+		}
+	}
+
+	package Properties {
+
+		class deprecatedDatatypeProperty extends DatatypeProperty {
+			
+		}
+
+		class FunctionalDatatypeProperty extends DatatypeProperty {
+			
+		}
+
+		class DeprecatedObejctProperty extends ObjectProperty {
+			
+		}
+
+		class FunctionalObjectProperty extends ObjectProperty {
+			
+		}
+
+		class InverseFunctionalProperty extends ObjectProperty {
+			
+		}
+
+		class TransitiveProperty extends ObjectProperty {
+			
+		}
+
+		class SymmetricProperty extends ObjectProperty {
+			
+		}
+
+		class DatatypeProperty extends Property {
+			reference theDataRange : DataRange;
+		}
+
+		class ObjectProperty extends Property {
+			reference theTargetInverse[0-1] : ObjectProperty;
+			reference theRange[*] : Class;
+		}
+
+		abstract class Property extends NamedElement {
+			reference theAnnotationProperty[*] : AnnotationProperty;
+			reference theDomain[*] : Class;
+			reference theSuperProperty[*] : Property;
+			reference theTargetEquivalent[*] : Property;
+		}
+	}
+
+	package Core {
+
+		abstract class NamedElement extends Element {
+			attribute name : String;
+			attribute id : String;
+		}
+
+		abstract class NameSpace extends NamedElement {
+			reference OwnedElement[*] container : Element;
+		}
+
+		abstract class AnnotationObject {
+			
+		}
+
+		class AnnotationProperty extends NamedElement {
+			reference theAnnotationObject : AnnotationObject;
+		}
+
+		abstract class Element {
+			
+		}
+	}
+}
+
+package PrimitiveTypes {
+
+	datatype Integer;
+
+	datatype Long;
+
+	datatype Float;
+
+	datatype Double;
+
+	datatype Boolean;
+
+	datatype String;
+}

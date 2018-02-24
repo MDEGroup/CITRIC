@@ -1,0 +1,20 @@
+<books>
+
+	<book title="livre">
+	 
+		<chapter title="chapter 1" nbPages="13" author="toto"/>
+		<chapter title="chapter 2" nbPages="17" author="toto"/>
+		<chapter title="chapter 3" nbPages="20" author="titi"/>
+	 
+	</book>
+	
+	<book title="article">
+
+		<chapter title="chapter 1" nbPages="13" author="Michel"/>
+		<chapter title="chapter 2" nbPages="1" author="David"/>
+
+	</book>
+	
+</books>
+
+

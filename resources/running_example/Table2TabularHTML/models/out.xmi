@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" name="html">
+  <children xsi:type="Element" name="head">
+    <children xsi:type="Element" name="title">
+      <children xsi:type="Text" value=""/>
+    </children>
+  </children>
+  <children xsi:type="Element" name="body">
+    <children xsi:type="Element" name="table">
+      <children xsi:type="Attribute" name="border" value="1"/>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="Package"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOD2::IIF"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOD::AIF"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOD::CCF"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOD::ICF"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOD::RIF"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::ADI"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::ANA"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::AWI"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::DSC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NAC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NIC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NLC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NMI"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NNC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NOH"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NSI"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="12%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="33.3%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0.3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1.4"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="19"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="6"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="13"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="13"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="15"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="15"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="15"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+    </children>
+    <children xsi:type="Element" name="table">
+      <children xsi:type="Attribute" name="border" value="1"/>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="Class"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="EMOOSE::SIZE2"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOSE::CBO"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOSE::DIT"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOSE::NOC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="MOOSE::WRC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::CCD"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::CSM"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::DAC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::DCC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::DRC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::MAA"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::MCC"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::MOA"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::MRA"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::MRM"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NAD"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NOA"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NOD"/>
+        </children>
+        <children xsi:type="Element" name="th">
+          <children xsi:type="Text" value="QMOOD::NOR"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.AnyElement"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="100%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.AttributeDescription"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="4"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.AttributeList"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="100%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.AttributeType"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Children"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Choice"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="100%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.DefaultValue"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="4"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="5"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="100%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="4"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="4"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Element"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="100%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.ElementContent"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Entity"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="33.3%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Enumeration"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Leaf"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Mixed"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.NoDefaultValue"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="4"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="66.6%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="100%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="4"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="3"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Notation"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.OtherAttributeType"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.RestrictedElement"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="50%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.Sequence"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="100%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="2"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+      <children xsi:type="Element" name="tr">
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="DTD.TypeDescription"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="5"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0%"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="1"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+        <children xsi:type="Element" name="td">
+          <children xsi:type="Text" value="0"/>
+          <children xsi:type="Attribute" name="align" value="right"/>
+        </children>
+      </children>
+    </children>
+  </children>
+</Root>

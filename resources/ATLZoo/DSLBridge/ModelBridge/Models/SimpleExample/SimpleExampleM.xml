@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="1" xmlns:om="http://Microsoft.VisualStudio.Modeling">
+    <om:SubStore SubstoreType="Microsoft.VisualStudio.Modeling.Core" />
+    <om:SubStore SubstoreType="Microsoft.VisualStudio.Modeling.Diagrams.CoreDesignSurface" />
+    <om:SubStore SubstoreType="Microsoft.VisualStudio.Modeling.Utilities.UtilitiesModel" />
+    <om:SubStore SubstoreType="Example.SimpleExample.DomainModel.SimpleExample" />
+    <om:SubStore SubstoreType="Example.SimpleExample.Designer.SimpleExampleDesigner" />
+    <om:ModelElement Type="Example.SimpleExample.DomainModel.ConceptA" Id="d86d3730-d7a0-481b-bdc2-dab72146d013">
+        <om:Property Name="Name" Value="" />
+        <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="7d9f3cc5-1ba7-4679-b493-8325f2098964">
+            <om:Role Name="Subject" Id="d86d3730-d7a0-481b-bdc2-dab72146d013" />
+            <om:Role Name="Presentation" Id="86c724e8-24f9-4ad1-b1b3-068a52133cbf" />
+        </om:ElementLink>
+        <om:ModelElement Type="Example.SimpleExample.DomainModel.ConceptB" Id="30477d0b-eb6d-4f53-b4cd-ed58abf5dafb" ParentLink="Example.SimpleExample.DomainModel.AHasBs">
+            <om:Property Name="Name" Value="B1" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="98048d4c-2556-42e0-94ed-0af27b02a3d8">
+                <om:Role Name="Subject" Id="30477d0b-eb6d-4f53-b4cd-ed58abf5dafb" />
+                <om:Role Name="Presentation" Id="d025db17-644a-4942-96f7-b67fac18eb69" />
+            </om:ElementLink>
+            <om:ElementLink Type="Example.SimpleExample.DomainModel.BReferencesC" Id="fbc8511b-c72b-4554-8888-23ca67b58e33">
+                <om:Role Name="ReferringBs" Id="30477d0b-eb6d-4f53-b4cd-ed58abf5dafb" />
+                <om:Role Name="ReferencedC" Id="1b07f1f7-fbc7-42e8-a827-f28a6d4e172c" />
+            </om:ElementLink>
+        </om:ModelElement>
+        <om:ModelElement Type="Example.SimpleExample.DomainModel.ConceptB" Id="5b91bf49-4f2e-44fb-acdf-76c393b91f3e" ParentLink="Example.SimpleExample.DomainModel.AHasBs">
+            <om:Property Name="Name" Value="B2" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="773cd0d6-db4e-4503-a5d4-d2c181d7931f">
+                <om:Role Name="Subject" Id="5b91bf49-4f2e-44fb-acdf-76c393b91f3e" />
+                <om:Role Name="Presentation" Id="044fcf6e-272e-46f0-956e-44b21f3aea4c" />
+            </om:ElementLink>
+            <om:ElementLink Type="Example.SimpleExample.DomainModel.BReferencesC" Id="c36ad301-9625-45ab-bba7-93cbec173cd6">
+                <om:Role Name="ReferringBs" Id="5b91bf49-4f2e-44fb-acdf-76c393b91f3e" />
+                <om:Role Name="ReferencedC" Id="1b07f1f7-fbc7-42e8-a827-f28a6d4e172c" />
+            </om:ElementLink>
+        </om:ModelElement>
+        <om:ModelElement Type="Example.SimpleExample.DomainModel.ConceptC" Id="1b07f1f7-fbc7-42e8-a827-f28a6d4e172c" ParentLink="Example.SimpleExample.DomainModel.AHasCs">
+            <om:Property Name="Name" Value="C1" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="a701a0ea-179b-4a51-bd23-17926dbb91dc">
+                <om:Role Name="Subject" Id="1b07f1f7-fbc7-42e8-a827-f28a6d4e172c" />
+                <om:Role Name="Presentation" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+            </om:ElementLink>
+            <om:ElementLink Type="Example.SimpleExample.DomainModel.BReferencesC" Id="fbc8511b-c72b-4554-8888-23ca67b58e33">
+                <om:Role Name="ReferencedC" Id="1b07f1f7-fbc7-42e8-a827-f28a6d4e172c" />
+                <om:Role Name="ReferringBs" Id="30477d0b-eb6d-4f53-b4cd-ed58abf5dafb" />
+            </om:ElementLink>
+            <om:ElementLink Type="Example.SimpleExample.DomainModel.BReferencesC" Id="c36ad301-9625-45ab-bba7-93cbec173cd6">
+                <om:Role Name="ReferencedC" Id="1b07f1f7-fbc7-42e8-a827-f28a6d4e172c" />
+                <om:Role Name="ReferringBs" Id="5b91bf49-4f2e-44fb-acdf-76c393b91f3e" />
+            </om:ElementLink>
+        </om:ModelElement>
+    </om:ModelElement>
+    <om:ModelElement Type="Example.SimpleExample.DomainModel.BReferencesC" Id="fbc8511b-c72b-4554-8888-23ca67b58e33">
+        <om:Property Name="Property" Value="" />
+        <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="79fda795-9640-4504-bf7e-a597c2e1f92a">
+            <om:Role Name="Subject" Id="fbc8511b-c72b-4554-8888-23ca67b58e33" />
+            <om:Role Name="Presentation" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+        </om:ElementLink>
+    </om:ModelElement>
+    <om:ModelElement Type="Example.SimpleExample.DomainModel.BReferencesC" Id="c36ad301-9625-45ab-bba7-93cbec173cd6">
+        <om:Property Name="Property" Value="" />
+        <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="9da075cf-8f1f-46fe-bbc2-1ec918ab09c0">
+            <om:Role Name="Subject" Id="c36ad301-9625-45ab-bba7-93cbec173cd6" />
+            <om:Role Name="Presentation" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+        </om:ElementLink>
+    </om:ModelElement>
+    <om:ModelElement Type="Example.SimpleExample.Designer.SimpleExampleDiagram" Id="86c724e8-24f9-4ad1-b1b3-068a52133cbf">
+        <om:Property Name="IsCompleteView" Value="False" />
+        <om:Property Name="DiagramId" Value="2ffeaab8-b005-41ff-96e5-b1739247bbcc" />
+        <om:Property Name="Name" Value="" />
+        <om:Property Name="BaseFontName" Value="Tahoma" />
+        <om:Property Name="BaseFontSize" Value="0,11458333581686" />
+        <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+        <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGAs=" />
+        <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="7d9f3cc5-1ba7-4679-b493-8325f2098964">
+            <om:Role Name="Presentation" Id="86c724e8-24f9-4ad1-b1b3-068a52133cbf" />
+            <om:Role Name="Subject" Id="d86d3730-d7a0-481b-bdc2-dab72146d013" />
+        </om:ElementLink>
+        <om:ModelElement Type="Example.SimpleExample.Designer.BShape" Id="d025db17-644a-4942-96f7-b67fac18eb69" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes">
+            <om:Property Name="FillColor" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAFFACw==" />
+            <om:Property Name="OutlineColor" Value="AAEAAAD/////AQAAAAAAAAAMAgAAACw==" />
+            <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+            <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAAMAgws=" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="98048d4c-2556-42e0-94ed-0af27b02a3d8">
+                <om:Role Name="Presentation" Id="d025db17-644a-4942-96f7-b67fac18eb69" />
+                <om:Role Name="Subject" Id="30477d0b-eb6d-4f53-b4cd-ed58abf5dafb" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ShapeHasDecorators" Id="47bfc098-44ad-488c-86ad-dc73f78b75e6">
+                <om:Role Name="Parent" Id="d025db17-644a-4942-96f7-b67fac18eb69" />
+                <om:Role Name="Decorators" Id="5b265cc4-233b-4d97-9ff0-059b4ef04aaa" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="7c92ea26-9c59-4efa-857f-45acd039893b">
+                <om:Role Name="Nodes" Id="d025db17-644a-4942-96f7-b67fac18eb69" />
+                <om:Role Name="Link" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+            </om:ElementLink>
+            <om:ModelElement Type="Microsoft.VisualStudio.Modeling.Utilities.TextShapeDecorator" Id="5b265cc4-233b-4d97-9ff0-059b4ef04aaa" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeHasRelativeChildShapes">
+                <om:Property Name="Content" Value="B1" />
+                <om:Property Name="Position" Value="Center" />
+                <om:Property Name="Name" Value="Name" />
+                <om:Property Name="Visibility" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAAs=" />
+                <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+                <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAA=" />
+                <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ShapeHasDecorators" Id="47bfc098-44ad-488c-86ad-dc73f78b75e6">
+                    <om:Role Name="Decorators" Id="5b265cc4-233b-4d97-9ff0-059b4ef04aaa" />
+                    <om:Role Name="Parent" Id="d025db17-644a-4942-96f7-b67fac18eb69" />
+                </om:ElementLink>
+            </om:ModelElement>
+        </om:ModelElement>
+        <om:ModelElement Type="Example.SimpleExample.Designer.CShape" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes">
+            <om:Property Name="FillColor" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAFF=" />
+            <om:Property Name="OutlineColor" Value="AAEAAAD/////AQAAAAAAAAAMAgAAw==" />
+            <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+            <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAAMAgs=" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="a701a0ea-179b-4a51-bd23-17926dbb91dc">
+                <om:Role Name="Presentation" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+                <om:Role Name="Subject" Id="1b07f1f7-fbc7-42e8-a827-f28a6d4e172c" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ShapeHasDecorators" Id="591154b6-3a73-4cc4-88e5-3ac9faa8ee7f">
+                <om:Role Name="Parent" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+                <om:Role Name="Decorators" Id="6449c912-607d-44d6-b3d9-328d27ddf6c6" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="0dacdc38-05fb-4802-86dc-a70869652afc">
+                <om:Role Name="Nodes" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+                <om:Role Name="Link" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="64050f02-563b-4a8c-99d5-0c04d5b47463">
+                <om:Role Name="Nodes" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+                <om:Role Name="Link" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+            </om:ElementLink>
+            <om:ModelElement Type="Microsoft.VisualStudio.Modeling.Utilities.TextShapeDecorator" Id="6449c912-607d-44d6-b3d9-328d27ddf6c6" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeHasRelativeChildShapes">
+                <om:Property Name="Content" Value="C1" />
+                <om:Property Name="Position" Value="Center" />
+                <om:Property Name="Name" Value="Name" />
+                <om:Property Name="Visibility" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAAs=" />
+                <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+                <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAPws=" />
+                <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ShapeHasDecorators" Id="591154b6-3a73-4cc4-88e5-3ac9faa8ee7f">
+                    <om:Role Name="Decorators" Id="6449c912-607d-44d6-b3d9-328d27ddf6c6" />
+                    <om:Role Name="Parent" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+                </om:ElementLink>
+            </om:ModelElement>
+        </om:ModelElement>
+        <om:ModelElement Type="Example.SimpleExample.Designer.BCLink" Id="a958be82-6413-4b2b-af17-8e15ff030272" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes">
+            <om:Property Name="Color" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXNCw==" />
+            <om:Property Name="DashStyle" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAFFAAs=" />
+            <om:Property Name="SourceArrowStyle" Value="EmptyArrow" />
+            <om:Property Name="TargetArrowStyle" Value="EmptyArrow" />
+            <om:Property Name="FixedFrom" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAHtAAs=" />
+            <om:Property Name="FixedTo" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAHtNaAs=" />
+            <om:Property Name="EdgePoints" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGBUAL" />
+            <om:Property Name="ManuallyRouted" Value="False" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="79fda795-9640-4504-bf7e-a597c2e1f92a">
+                <om:Role Name="Presentation" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+                <om:Role Name="Subject" Id="fbc8511b-c72b-4554-8888-23ca67b58e33" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ConnectorHasDecorators" Id="b1f6471f-a52b-4a5a-9a4a-b9925181ebd1">
+                <om:Role Name="Parent" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+                <om:Role Name="Decorators" Id="b7ad33c3-bfdd-43bc-9505-ed58194a602a" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="7c92ea26-9c59-4efa-857f-45acd039893b">
+                <om:Role Name="Link" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+                <om:Role Name="Nodes" Id="d025db17-644a-4942-96f7-b67fac18eb69" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="0dacdc38-05fb-4802-86dc-a70869652afc">
+                <om:Role Name="Link" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+                <om:Role Name="Nodes" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+            </om:ElementLink>
+            <om:ModelElement Type="Microsoft.VisualStudio.Modeling.Utilities.TextConnectorDecorator" Id="b7ad33c3-bfdd-43bc-9505-ed58194a602a" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeHasRelativeChildShapes">
+                <om:Property Name="Content" Value="" />
+                <om:Property Name="Position" Value="AAEAAAD/////AQAAAAAAAAAMAgAACw==" />
+                <om:Property Name="Name" Value="Label" />
+                <om:Property Name="Visibility" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAAs=" />
+                <om:Property Name="Offset" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAG==" />
+                <om:Property Name="Alignment" Value="AAEAAAD/////AQAAAAAAAAAMAgAAs=" />
+                <om:Property Name="Placement" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAs=" />
+                <om:Property Name="ManuallySized" Value="False" />
+                <om:Property Name="ManuallyPlaced" Value="False" />
+                <om:Property Name="Text" Value="" />
+                <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+                <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAPws=" />
+                <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ConnectorHasDecorators" Id="b1f6471f-a52b-4a5a-9a4a-b9925181ebd1">
+                    <om:Role Name="Decorators" Id="b7ad33c3-bfdd-43bc-9505-ed58194a602a" />
+                    <om:Role Name="Parent" Id="a958be82-6413-4b2b-af17-8e15ff030272" />
+                </om:ElementLink>
+            </om:ModelElement>
+        </om:ModelElement>
+        <om:ModelElement Type="Example.SimpleExample.Designer.BShape" Id="044fcf6e-272e-46f0-956e-44b21f3aea4c" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes">
+            <om:Property Name="FillColor" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAFF==" />
+            <om:Property Name="OutlineColor" Value="AAEAAAD/////AQAAAAAAAAAMAgAAw==" />
+            <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+            <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAAMAgPws=" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="773cd0d6-db4e-4503-a5d4-d2c181d7931f">
+                <om:Role Name="Presentation" Id="044fcf6e-272e-46f0-956e-44b21f3aea4c" />
+                <om:Role Name="Subject" Id="5b91bf49-4f2e-44fb-acdf-76c393b91f3e" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ShapeHasDecorators" Id="07ff925e-75ec-4e3c-841d-29cf76d47b15">
+                <om:Role Name="Parent" Id="044fcf6e-272e-46f0-956e-44b21f3aea4c" />
+                <om:Role Name="Decorators" Id="2dc4ff80-d3e4-4cf3-aeae-9525b63a4431" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="0a99b15f-2a3a-446c-b485-0142da24d173">
+                <om:Role Name="Nodes" Id="044fcf6e-272e-46f0-956e-44b21f3aea4c" />
+                <om:Role Name="Link" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+            </om:ElementLink>
+            <om:ModelElement Type="Microsoft.VisualStudio.Modeling.Utilities.TextShapeDecorator" Id="2dc4ff80-d3e4-4cf3-aeae-9525b63a4431" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeHasRelativeChildShapes">
+                <om:Property Name="Content" Value="B2" />
+                <om:Property Name="Position" Value="Center" />
+                <om:Property Name="Name" Value="Name" />
+                <om:Property Name="Visibility" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAAs=" />
+                <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+                <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAws=" />
+                <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ShapeHasDecorators" Id="07ff925e-75ec-4e3c-841d-29cf76d47b15">
+                    <om:Role Name="Decorators" Id="2dc4ff80-d3e4-4cf3-aeae-9525b63a4431" />
+                    <om:Role Name="Parent" Id="044fcf6e-272e-46f0-956e-44b21f3aea4c" />
+                </om:ElementLink>
+            </om:ModelElement>
+        </om:ModelElement>
+        <om:ModelElement Type="Example.SimpleExample.Designer.BCLink" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeContainsNestedChildShapes">
+            <om:Property Name="Color" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXNw==" />
+            <om:Property Name="DashStyle" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAFFAAs=" />
+            <om:Property Name="SourceArrowStyle" Value="EmptyArrow" />
+            <om:Property Name="TargetArrowStyle" Value="EmptyArrow" />
+            <om:Property Name="FixedFrom" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAHtAs=" />
+            <om:Property Name="FixedTo" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAHtNaAAs=" />
+            <om:Property Name="EdgePoints" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAGw==" />
+            <om:Property Name="ManuallyRouted" Value="False" />
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.SubjectHasPresentation" Id="9da075cf-8f1f-46fe-bbc2-1ec918ab09c0">
+                <om:Role Name="Presentation" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+                <om:Role Name="Subject" Id="c36ad301-9625-45ab-bba7-93cbec173cd6" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ConnectorHasDecorators" Id="e12e64d9-d1ad-4479-b388-31842e37d81a">
+                <om:Role Name="Parent" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+                <om:Role Name="Decorators" Id="9082f57a-3660-4702-bf0e-6ccef29cab19" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="0a99b15f-2a3a-446c-b485-0142da24d173">
+                <om:Role Name="Link" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+                <om:Role Name="Nodes" Id="044fcf6e-272e-46f0-956e-44b21f3aea4c" />
+            </om:ElementLink>
+            <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Diagrams.LinkConnectsToNode" Id="64050f02-563b-4a8c-99d5-0c04d5b47463">
+                <om:Role Name="Link" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+                <om:Role Name="Nodes" Id="16d82b85-45d4-4520-89b1-024b8f09f7c9" />
+            </om:ElementLink>
+            <om:ModelElement Type="Microsoft.VisualStudio.Modeling.Utilities.TextConnectorDecorator" Id="9082f57a-3660-4702-bf0e-6ccef29cab19" ParentLink="Microsoft.VisualStudio.Modeling.Diagrams.ParentShapeHasRelativeChildShapes">
+                <om:Property Name="Content" Value="" />
+                <om:Property Name="Position" Value="AAEAAAD/////AQAAAAAAAAAMAgAAw==" />
+                <om:Property Name="Name" Value="Label" />
+                <om:Property Name="Visibility" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAAs=" />
+                <om:Property Name="Offset" Value="AAEAAAD/////AQAAAAAAAAAMAgAAAG==" />
+                <om:Property Name="Alignment" Value="AAEAAAD/////AQAAAAAAAAAMAgAs=" />
+                <om:Property Name="Placement" Value="AAEAAAD/////AQAAAAAAAAAMAgAAs=" />
+                <om:Property Name="ManuallySized" Value="False" />
+                <om:Property Name="ManuallyPlaced" Value="False" />
+                <om:Property Name="Text" Value="" />
+                <om:Property Name="IsExpanded" Value="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uQm9vbGVhbgEAAAAHbV92YWx1ZQABAQs=" />
+                <om:Property Name="AbsoluteBounds" Value="AAEAAAD/////AQAAAAAAAAs=" />
+                <om:ElementLink Type="Microsoft.VisualStudio.Modeling.Utilities.ConnectorHasDecorators" Id="e12e64d9-d1ad-4479-b388-31842e37d81a">
+                    <om:Role Name="Decorators" Id="9082f57a-3660-4702-bf0e-6ccef29cab19" />
+                    <om:Role Name="Parent" Id="96f9b8e3-b55f-4bdb-9ab3-faf94847c479" />
+                </om:ElementLink>
+            </om:ModelElement>
+        </om:ModelElement>
+    </om:ModelElement>
+</om:MetaModel>

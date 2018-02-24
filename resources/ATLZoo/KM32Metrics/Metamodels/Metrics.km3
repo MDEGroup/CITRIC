@@ -1,0 +1,26 @@
+package Metrics {
+
+	abstract class Metric {
+		attribute context : String;
+		attribute label : String;
+	}
+	
+	class StringMetric extends Metric {
+		attribute data : String;
+	}
+	
+	class BooleanMetric extends Metric {
+		attribute data : Boolean;
+	}
+
+	class IntegerMetric extends Metric {
+		attribute data : Integer;
+	}
+}
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype Integer;
+	datatype String;
+}
+

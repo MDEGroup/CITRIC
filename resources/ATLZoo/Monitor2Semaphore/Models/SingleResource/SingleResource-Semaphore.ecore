@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Program">
+  <Program name="SingleResourceProgram">
+    <variables name="SingleResource_nonBusy_sem" type="/3">
+      <initialValue xsi:type="BooleanExp" symbol="false"/>
+    </variables>
+    <variables name="SingleResource_nonBusy_count" type="/4">
+      <initialValue xsi:type="IntegerExp" symbol="0"/>
+    </variables>
+    <variables name="SingleResource_mutex" type="/3">
+      <initialValue xsi:type="BooleanExp" symbol="true"/>
+    </variables>
+    <variables name="SingleResource_urgent" type="/3">
+      <initialValue xsi:type="BooleanExp" symbol="false"/>
+    </variables>
+    <variables name="SingleResource_urgentcount" type="/4">
+      <initialValue xsi:type="IntegerExp" symbol="0"/>
+    </variables>
+    <variables name="SingleResource_busy" type="/3">
+      <initialValue xsi:type="BooleanExp" symbol="false"/>
+    </variables>
+    <procedures name="SingleResource_acquire">
+      <statements xsi:type="ExpressionStat">
+        <expression xsi:type="ProcedureCallExp" name="p">
+          <source xsi:type="VariableExp" declaration="/0/@variables.2"/>
+        </expression>
+      </statements>
+      <statements xsi:type="ConditionalStat">
+        <condition xsi:type="VariableExp" declaration="/0/@variables.5"/>
+        <thenStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="SingleResource_nonBusy_wait">
+            <source xsi:type="VariableExp" declaration="/1"/>
+          </expression>
+        </thenStats>
+        <elseStats xsi:type="AssignmentStat">
+          <target declaration="/0/@variables.5"/>
+          <value xsi:type="BooleanExp" symbol="true"/>
+        </elseStats>
+      </statements>
+      <statements xsi:type="ConditionalStat">
+        <condition xsi:type="OperatorCallExp" name=">">
+          <source xsi:type="VariableExp" declaration="/0/@variables.4"/>
+          <right xsi:type="IntegerExp" symbol="0"/>
+        </condition>
+        <thenStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="v">
+            <source xsi:type="VariableExp" declaration="/0/@variables.3"/>
+          </expression>
+        </thenStats>
+        <elseStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="v">
+            <source xsi:type="VariableExp" declaration="/0/@variables.2"/>
+          </expression>
+        </elseStats>
+      </statements>
+    </procedures>
+    <procedures name="SingleResource_release">
+      <statements xsi:type="ExpressionStat">
+        <expression xsi:type="ProcedureCallExp" name="p">
+          <source xsi:type="VariableExp" declaration="/0/@variables.2"/>
+        </expression>
+      </statements>
+      <statements xsi:type="AssignmentStat">
+        <target declaration="/0/@variables.5"/>
+        <value xsi:type="BooleanExp" symbol="false"/>
+      </statements>
+      <statements xsi:type="ExpressionStat">
+        <expression xsi:type="ProcedureCallExp" name="SingleResource_nonBusy_signal">
+          <source xsi:type="VariableExp" declaration="/1"/>
+        </expression>
+      </statements>
+      <statements xsi:type="ConditionalStat">
+        <condition xsi:type="OperatorCallExp" name=">">
+          <source xsi:type="VariableExp" declaration="/0/@variables.4"/>
+          <right xsi:type="IntegerExp" symbol="0"/>
+        </condition>
+        <thenStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="v">
+            <source xsi:type="VariableExp" declaration="/0/@variables.3"/>
+          </expression>
+        </thenStats>
+        <elseStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="v">
+            <source xsi:type="VariableExp" declaration="/0/@variables.2"/>
+          </expression>
+        </elseStats>
+      </statements>
+    </procedures>
+    <procedures name="SingleResource_nonBusy_wait">
+      <statements xsi:type="AssignmentStat">
+        <target declaration="/0/@variables.1"/>
+        <value xsi:type="OperatorCallExp" name="+">
+          <source xsi:type="VariableExp" declaration="/0/@variables.1"/>
+          <right xsi:type="IntegerExp" symbol="1"/>
+        </value>
+      </statements>
+      <statements xsi:type="ConditionalStat">
+        <condition xsi:type="OperatorCallExp" name=">">
+          <source xsi:type="VariableExp" declaration="/0/@variables.4"/>
+          <right xsi:type="IntegerExp" symbol="0"/>
+        </condition>
+        <thenStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="v">
+            <source xsi:type="VariableExp" declaration="/0/@variables.3"/>
+          </expression>
+        </thenStats>
+        <elseStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="v">
+            <source xsi:type="VariableExp" declaration="/0/@variables.2"/>
+          </expression>
+        </elseStats>
+      </statements>
+      <statements xsi:type="ExpressionStat">
+        <expression xsi:type="ProcedureCallExp" name="p">
+          <source xsi:type="VariableExp" declaration="/0/@variables.0"/>
+        </expression>
+      </statements>
+      <statements xsi:type="AssignmentStat">
+        <target declaration="/0/@variables.1"/>
+        <value xsi:type="OperatorCallExp" name="-">
+          <source xsi:type="VariableExp" declaration="/0/@variables.1"/>
+          <right xsi:type="IntegerExp" symbol="1"/>
+        </value>
+      </statements>
+    </procedures>
+    <procedures name="SingleResource_nonBusy_signal">
+      <statements xsi:type="AssignmentStat">
+        <target declaration="/0/@variables.4"/>
+        <value xsi:type="OperatorCallExp" name="+">
+          <source xsi:type="VariableExp" declaration="/0/@variables.4"/>
+          <right xsi:type="IntegerExp" symbol="1"/>
+        </value>
+      </statements>
+      <statements xsi:type="ConditionalStat">
+        <condition xsi:type="OperatorCallExp" name=">">
+          <source xsi:type="VariableExp" declaration="/0/@variables.1"/>
+          <right xsi:type="IntegerExp" symbol="0"/>
+        </condition>
+        <thenStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="v">
+            <source xsi:type="VariableExp" declaration="/0/@variables.0"/>
+          </expression>
+        </thenStats>
+        <thenStats xsi:type="ExpressionStat">
+          <expression xsi:type="ProcedureCallExp" name="p">
+            <source xsi:type="VariableExp" declaration="/0/@variables.3"/>
+          </expression>
+        </thenStats>
+      </statements>
+      <statements xsi:type="AssignmentStat">
+        <target declaration="/0/@variables.4"/>
+        <value xsi:type="OperatorCallExp" name="-">
+          <source xsi:type="VariableExp" declaration="/0/@variables.4"/>
+          <right xsi:type="IntegerExp" symbol="1"/>
+        </value>
+      </statements>
+    </procedures>
+  </Program>
+  <VariableDeclaration name="this" type="/2"/>
+  <Type name="program"/>
+  <Type name="boolean"/>
+  <Type name="integer"/>
+</xmi:XMI>

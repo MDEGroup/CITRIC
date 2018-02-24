@@ -1,0 +1,115 @@
+program ReadersAndWritersProgram {
+
+	var ReadersAndWriters_OKToWrite_sem : boolean := false;
+
+	var ReadersAndWriters_OKToRead_sem : boolean := false;
+
+	var ReadersAndWriters_OKToWrite_count : integer := 0;
+
+	var ReadersAndWriters_OKToRead_count : integer := 0;
+
+	var ReadersAndWriters_mutex : boolean := true;
+
+	var ReadersAndWriters_urgent : boolean := false;
+
+	var ReadersAndWriters_urgentcount : integer := 0;
+
+	var ReadersAndWriters_busy : boolean := false;
+
+	var ReadersAndWriters_readerCount : integer := 0;
+
+	procedure ReadersAndWriters_startRead() {
+		ReadersAndWriters_mutex.p();
+		if ReadersAndWriters_busy or this.ReadersAndWriters_OKToWrite_queue() then {
+			this.ReadersAndWriters_OKToRead_wait();
+		}
+		ReadersAndWriters_readerCount := ReadersAndWriters_readerCount + 1;
+		this.ReadersAndWriters_OKToRead_signal();
+		if ReadersAndWriters_urgentcount > 0 then {
+			ReadersAndWriters_urgent.v();
+		} else {
+			ReadersAndWriters_mutex.v();
+		}
+	}
+
+	procedure ReadersAndWriters_endRead() {
+		ReadersAndWriters_mutex.p();
+		ReadersAndWriters_readerCount := ReadersAndWriters_readerCount - 1;
+		if ReadersAndWriters_readerCount = 0 then {
+			this.ReadersAndWriters_OKToWrite_signal();
+		}
+		if ReadersAndWriters_urgentcount > 0 then {
+			ReadersAndWriters_urgent.v();
+		} else {
+			ReadersAndWriters_mutex.v();
+		}
+	}
+
+	procedure ReadersAndWriters_startWrite() {
+		ReadersAndWriters_mutex.p();
+		if ReadersAndWriters_readerCount <> 0 or ReadersAndWriters_busy then {
+			this.ReadersAndWriters_OKToWrite_wait();
+		}
+		ReadersAndWriters_busy := true;
+		if ReadersAndWriters_urgentcount > 0 then {
+			ReadersAndWriters_urgent.v();
+		} else {
+			ReadersAndWriters_mutex.v();
+		}
+	}
+
+	procedure ReadersAndWriters_endWrite() {
+		ReadersAndWriters_mutex.p();
+		ReadersAndWriters_busy := false;
+		if this.ReadersAndWriters_OKToRead_queue() then {
+			this.ReadersAndWriters_OKToRead_signal();
+		} else {
+			this.ReadersAndWriters_OKToWrite_signal();
+		}
+		if ReadersAndWriters_urgentcount > 0 then {
+			ReadersAndWriters_urgent.v();
+		} else {
+			ReadersAndWriters_mutex.v();
+		}
+	}
+
+	procedure ReadersAndWriters_OKToWrite_wait() {
+		ReadersAndWriters_OKToWrite_count := ReadersAndWriters_OKToWrite_count + 1;
+		if ReadersAndWriters_urgentcount > 0 then {
+			ReadersAndWriters_urgent.v();
+		} else {
+			ReadersAndWriters_mutex.v();
+		}
+		ReadersAndWriters_OKToWrite_sem.p();
+		ReadersAndWriters_OKToWrite_count := ReadersAndWriters_OKToWrite_count - 1;
+	}
+
+	procedure ReadersAndWriters_OKToRead_wait() {
+		ReadersAndWriters_OKToRead_count := ReadersAndWriters_OKToRead_count + 1;
+		if ReadersAndWriters_urgentcount > 0 then {
+			ReadersAndWriters_urgent.v();
+		} else {
+			ReadersAndWriters_mutex.v();
+		}
+		ReadersAndWriters_OKToRead_sem.p();
+		ReadersAndWriters_OKToRead_count := ReadersAndWriters_OKToRead_count - 1;
+	}
+
+	procedure ReadersAndWriters_OKToWrite_signal() {
+		ReadersAndWriters_urgentcount := ReadersAndWriters_urgentcount + 1;
+		if ReadersAndWriters_OKToWrite_count > 0 then {
+			ReadersAndWriters_OKToWrite_sem.v();
+			ReadersAndWriters_urgent.p();
+		}
+		ReadersAndWriters_urgentcount := ReadersAndWriters_urgentcount - 1;
+	}
+
+	procedure ReadersAndWriters_OKToRead_signal() {
+		ReadersAndWriters_urgentcount := ReadersAndWriters_urgentcount + 1;
+		if ReadersAndWriters_OKToRead_count > 0 then {
+			ReadersAndWriters_OKToRead_sem.v();
+			ReadersAndWriters_urgent.p();
+		}
+		ReadersAndWriters_urgentcount := ReadersAndWriters_urgentcount - 1;
+	}
+}

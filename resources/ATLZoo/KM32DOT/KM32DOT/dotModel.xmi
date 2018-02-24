@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="DOT">
+  <Graph name="KM3 Model in DOT" type="digraph" rankDir="BT" labeljust="l" labelloc="t" concentrate="false" compound="true" nodeSeparation="0.75">
+    <nodes xsi:type="SubGraph" name="cluster_PrimitiveTypes" color="black" labelloc="t">
+      <label xsi:type="SimpleLabel" content="PrimitiveTypes"/>
+      <nodes xsi:type="Node" name="Boolean">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{&amp;#171;DataType&amp;#187;\nBoolean|}"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Integer">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{&amp;#171;DataType&amp;#187;\nInteger|}"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="String">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{&amp;#171;DataType&amp;#187;\nString|}"/>
+        </shape>
+      </nodes>
+    </nodes>
+    <nodes xsi:type="SubGraph" name="cluster_KM3" color="black" labelloc="t">
+      <label xsi:type="SimpleLabel" content="KM3"/>
+      <nodes xsi:type="Node" name="LocatedElement" referredBy="/5 /12">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{/LocatedElement/|location : String| }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="ModelElement" refers="/24 /12" referredBy="/3 /9 /13 /15">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{/ModelElement/|name : String| }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Classifier" refers="/13" referredBy="/6 /8 /10 /14 /22">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Classifier| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="DataType" refers="/14">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{DataType| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Enumeration" refers="/8" referredBy="/30">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Enumeration| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="EnumLiteral" refers="/30 /9">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{EnumLiteral| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="TemplateParameter" refers="/6" referredBy="/18">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{TemplateParameter| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Class" refers="/18 /16 /10" referredBy="/16 /27 /42">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Class|isAbstract : Boolean| }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="TypedElement" refers="/22 /15" referredBy="/2 /4 /11">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{TypedElement|lower : Integer\nupper : Integer\nisOrdered : Boolean\nisUnique : Boolean| }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="StructuralFeature" refers="/42 /36 /11" referredBy="/1 /7 /36">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{StructuralFeature| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Attribute" refers="/7">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Attribute| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Reference" refers="/20 /1" referredBy="/20">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Reference|isContainer : Boolean| }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Operation" refers="/27 /4" referredBy="/33">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Operation| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Parameter" refers="/33 /2">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Parameter| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Package" refers="/39 /3" referredBy="/24">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Package| | }"/>
+        </shape>
+      </nodes>
+      <nodes xsi:type="Node" name="Metamodel" refers="/5" referredBy="/39">
+        <shape xsi:type="RecordNodeShape" name="record">
+          <label xsi:type="SimpleLabel" content="{Metamodel| | }"/>
+        </shape>
+      </nodes>
+    </nodes>
+  </Graph>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.11" toNode="/0/@nodes.1/@nodes.9" constraint="true" group="StructuralFeature" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.13" toNode="/0/@nodes.1/@nodes.8" constraint="true" group="TypedElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.14" toNode="/0/@nodes.1/@nodes.1" constraint="true" group="ModelElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.12" toNode="/0/@nodes.1/@nodes.8" constraint="true" group="TypedElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.15" toNode="/0/@nodes.1/@nodes.0" constraint="true" group="LocatedElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.6" toNode="/0/@nodes.1/@nodes.2" constraint="true" group="Classifier" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.10" toNode="/0/@nodes.1/@nodes.9" constraint="true" group="StructuralFeature" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.4" toNode="/0/@nodes.1/@nodes.2" constraint="true" group="Classifier" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.5" toNode="/0/@nodes.1/@nodes.1" constraint="true" group="ModelElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.7" toNode="/0/@nodes.1/@nodes.2" constraint="true" group="Classifier" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.9" toNode="/0/@nodes.1/@nodes.8" constraint="true" group="TypedElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.1" toNode="/0/@nodes.1/@nodes.0" constraint="true" group="LocatedElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.2" toNode="/0/@nodes.1/@nodes.1" constraint="true" group="ModelElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.3" toNode="/0/@nodes.1/@nodes.2" constraint="true" group="Classifier" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.8" toNode="/0/@nodes.1/@nodes.1" constraint="true" group="ModelElement" minlen="2">
+    <arrowHead name="normal" isPlain="true"/>
+  </DirectedArc>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.7" toNode="/0/@nodes.1/@nodes.7" constraint="false" group="Class" minlen="2" headlabel="/17">
+    <arrowHead name="vee" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="supertypes[*]"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.7" toNode="/0/@nodes.1/@nodes.6" constraint="true" group="TemplateParameter" minlen="2" headlabel="/19">
+    <arrowHead name="vee" clipping="none" isPlain="false"/>
+    <arrowTail name="diamond" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="parameters[*]{ordered}"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.11" toNode="/0/@nodes.1/@nodes.11" constraint="false" group="Reference" minlen="2" headlabel="/21">
+    <arrowHead name="vee" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="opposite[0-1]"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.8" toNode="/0/@nodes.1/@nodes.2" constraint="false" group="Classifier" minlen="2" headlabel="/23">
+    <arrowHead name="vee" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="type"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.1" toNode="/0/@nodes.1/@nodes.14" constraint="true" group="Package" minlen="2" headlabel="/25" taillabel="/26">
+    <arrowHead name="diamond" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="package"/>
+  <SimpleLabel content="contents[*]{ordered}"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.12" toNode="/0/@nodes.1/@nodes.7" constraint="true" group="Class" minlen="2" headlabel="/28" taillabel="/29">
+    <arrowHead name="diamond" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="owner"/>
+  <SimpleLabel content="operations[*]{ordered}"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.5" toNode="/0/@nodes.1/@nodes.4" constraint="true" group="Enumeration" minlen="2" headlabel="/31" taillabel="/32">
+    <arrowHead name="diamond" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="enum"/>
+  <SimpleLabel content="literals[*]{ordered}"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.13" toNode="/0/@nodes.1/@nodes.12" constraint="true" group="Operation" minlen="2" headlabel="/34" taillabel="/35">
+    <arrowHead name="diamond" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="owner"/>
+  <SimpleLabel content="parameters[*]{ordered}"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.9" toNode="/0/@nodes.1/@nodes.9" constraint="false" group="StructuralFeature" minlen="2" headlabel="/37" taillabel="/38">
+    <arrowHead name="none" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="subsetOf[*]"/>
+  <SimpleLabel content="derivedFrom[*]"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.14" toNode="/0/@nodes.1/@nodes.15" constraint="true" group="Metamodel" minlen="2" headlabel="/40" taillabel="/41">
+    <arrowHead name="diamond" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="metamodel"/>
+  <SimpleLabel content="contents[*]{ordered}"/>
+  <DirectedArc style="none" fromNode="/0/@nodes.1/@nodes.9" toNode="/0/@nodes.1/@nodes.7" constraint="true" group="Class" minlen="2" headlabel="/43" taillabel="/44">
+    <arrowHead name="diamond" clipping="none" isPlain="false"/>
+    <arrowTail name="none" clipping="none" isPlain="false"/>
+  </DirectedArc>
+  <SimpleLabel content="owner"/>
+  <SimpleLabel content="structuralFeatures[*]{ordered}"/>
+</xmi:XMI>

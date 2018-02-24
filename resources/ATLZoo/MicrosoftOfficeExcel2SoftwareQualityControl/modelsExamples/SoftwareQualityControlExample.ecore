@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ControlsSequence xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="SoftwareQualityControl">
+  <controls responsible="Andrey Sadovykh" component="Adapter" developmentPhase="V0" scope="Exhaustive">
+    <date day="24" month="6" year="2005"/>
+    <type xsi:type="BugTracking">
+      <bugs number="1" componentVersion="V0 Beta" description="A consumer sends a UML2 Model to a provider. The Service Description defines the service as having a single input parameter of Model type with a Metaclass specification of &quot;Model&quot; taken from UML2.ecore. At the provider end a Hashmap is presented to the provider containing each of the elements of the model in flattened state. This makes it unusable by the provider which excepts the model it maintain it's original containment semantics and hierarchy." originator="D Kelsey, IBM UK" commentsAnswers="This is a simple comment to illustrate this example." openDate="1st July 05"/>
+    </type>
+  </controls>
+</ControlsSequence>

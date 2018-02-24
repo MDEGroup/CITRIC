@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '2440.8' height = '406.8'>
+  <g transform = 'translate(183.06,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Attribute Inheritance Factor per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -3.828568698926949E-14,100.0 z' fill = 'rgb(0,0,100)' stroke = 'black'/>
+      <text x = '-3.828568698926949E-14' y = '100.0' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(90.00000000000003)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 49.999999999999986,86.60254037844388 z' fill = 'rgb(90,49,86)' stroke = 'black'/>
+      <text x = '49.999999999999986' y = '86.60254037844388' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Node</text>
+    </g>
+    <g transform = 'rotate(150.00000000000003)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 49.999999999999986,86.60254037844388 z' fill = 'rgb(150,49,86)' stroke = 'black'/>
+      <text x = '49.999999999999986' y = '86.60254037844388' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Label</text>
+    </g>
+    <g transform = 'rotate(210.00000000000003)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 49.999999999999986,86.60254037844388 z' fill = 'rgb(210,49,86)' stroke = 'black'/>
+      <text x = '49.999999999999986' y = '86.60254037844388' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LabelSuite</text>
+    </g>
+    <g transform = 'rotate(270.00000000000006)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 -3.828568698926949E-14,100.0 z' fill = 'rgb(270,0,100)' stroke = 'black'/>
+      <text x = '-3.828568698926949E-14' y = '100.0' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Map</text>
+    </g>
+  </g>
+  <g transform = 'translate(549.1800000000001,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Depth Inheritance Tree per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(72.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(72,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Node</text>
+    </g>
+    <g transform = 'rotate(144.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(144,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Label</text>
+    </g>
+    <g transform = 'rotate(216.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(216,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LabelSuite</text>
+    </g>
+    <g transform = 'rotate(288.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(288,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Map</text>
+    </g>
+  </g>
+  <g transform = 'translate(915.3,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Number of Children per Class</text>
+    <g transform = '' fill = 'black'>
+      <circle x = '0.0' y = '0.0' r = '100.0' fill = 'blue' stroke = 'black'/>
+      <text x = '100.0' y = '0.0' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LocatedElement</text>
+    </g>
+  </g>
+  <g transform = 'translate(1281.42,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes Inherited per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(72.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(72,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Node</text>
+    </g>
+    <g transform = 'rotate(144.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(144,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Label</text>
+    </g>
+    <g transform = 'rotate(216.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(216,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LabelSuite</text>
+    </g>
+    <g transform = 'rotate(288.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(288,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Map</text>
+    </g>
+  </g>
+  <g transform = 'translate(1647.54,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 90.09688679024191,43.38837391175581 z' fill = 'rgb(0,90,43)' stroke = 'black'/>
+      <text x = '90.09688679024191' y = '43.38837391175581' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LocatedElement</text>
+    </g>
+    <g transform = 'rotate(25.71428571428571)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680297 z' fill = 'rgb(25,62,78)' stroke = 'black'/>
+      <text x = '62.34898018587336' y = '78.18314824680297' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(77.14285714285714)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 22.252093395631444,97.49279121818236 z' fill = 'rgb(77,22,97)' stroke = 'black'/>
+      <text x = '22.252093395631444' y = '97.49279121818236' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Node</text>
+    </g>
+    <g transform = 'rotate(154.28571428571428)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 22.252093395631444,97.49279121818236 z' fill = 'rgb(154,22,97)' stroke = 'black'/>
+      <text x = '22.252093395631444' y = '97.49279121818236' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Label</text>
+    </g>
+    <g transform = 'rotate(231.42857142857142)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 22.252093395631444,97.49279121818236 z' fill = 'rgb(231,22,97)' stroke = 'black'/>
+      <text x = '22.252093395631444' y = '97.49279121818236' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- LabelSuite</text>
+    </g>
+    <g transform = 'rotate(308.57142857142856)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 62.34898018587336,78.18314824680297 z' fill = 'rgb(308,62,78)' stroke = 'black'/>
+      <text x = '62.34898018587336' y = '78.18314824680297' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Map</text>
+    </g>
+  </g>
+  <g transform = 'translate(2013.66,183.06) scale(0.9)' fill = 'black'>
+    <rect x = '-200.9' y = '-200.9' width = '401.8' height = '401.8' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '175.9' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Relationships per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(0,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Outline</text>
+    </g>
+    <g transform = 'rotate(72.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 1,1 -80.90169943749474,-58.7785252292473 z' fill = 'rgb(72,80,58)' stroke = 'black'/>
+      <text x = '-80.90169943749474' y = '-58.7785252292473' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Node</text>
+    </g>
+    <g transform = 'rotate(288.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 30.901699437494745,95.10565162951535 z' fill = 'rgb(288,30,95)' stroke = 'black'/>
+      <text x = '30.901699437494745' y = '95.10565162951535' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Label</text>
+    </g>
+  </g>
+</svg>

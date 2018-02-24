@@ -1,0 +1,34 @@
+package SimpleExample {
+
+	class ConceptA {
+		reference Bs[*] ordered container : ConceptB oppositeOf ConceptA;
+		reference Cs[*] ordered container : ConceptC oppositeOf ConceptA;
+	}
+
+	class ConceptB {
+		reference ConceptA ordered : ConceptA oppositeOf Bs;
+		reference ReferencedC[0-1] ordered : BReferencesC oppositeOf ReferringBs;
+	}
+
+	class ConceptC {
+		reference ConceptA ordered : ConceptA oppositeOf Cs;
+		reference ReferringBs[*] ordered : BReferencesC oppositeOf ReferencedC;
+	}
+
+	class BReferencesC {
+		attribute Property : String;
+		reference ReferringBs[*] ordered : ConceptB oppositeOf ReferencedC;
+		reference ReferencedC[0-1] ordered : ConceptC oppositeOf ReferringBs;
+	}
+}
+
+package PrimitiveTypes {
+
+	datatype String;
+
+	datatype Integer;
+
+	datatype Boolean;
+
+	datatype Double;
+}

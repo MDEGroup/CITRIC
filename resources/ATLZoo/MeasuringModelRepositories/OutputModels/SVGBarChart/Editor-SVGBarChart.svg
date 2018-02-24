@@ -1,0 +1,249 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '1818.0' height = '140.0'>
+  <g transform = 'translate(143.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '13.5' y = '120.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Attribute Inheritance Factor per Class</text>
+    <rect x = '-138.0' y = '-5.0' width = '293.0' height = '110.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V100,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (0.5)</text>
+      <rect x = '0.0' y = '10.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Block (0.2)</text>
+      <rect x = '0.0' y = '20.0' width = '33.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>GroupElement (0.5)</text>
+      <rect x = '0.0' y = '30.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Element (0.5)</text>
+      <rect x = '0.0' y = '40.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Format (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Color (0.2)</text>
+      <rect x = '0.0' y = '60.0' width = '33.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Font (0.2)</text>
+      <rect x = '0.0' y = '70.0' width = '33.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Indent (0.5)</text>
+      <rect x = '0.0' y = '80.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(441.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '13.5' y = '120.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Depth Inheritance Tree per Class</text>
+    <rect x = '-138.0' y = '-5.0' width = '293.0' height = '110.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V100,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (1.0)</text>
+      <rect x = '0.0' y = '10.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Block (1.0)</text>
+      <rect x = '0.0' y = '20.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>GroupElement (1.0)</text>
+      <rect x = '0.0' y = '30.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Element (1.0)</text>
+      <rect x = '0.0' y = '40.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Format (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Color (1.0)</text>
+      <rect x = '0.0' y = '60.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Font (1.0)</text>
+      <rect x = '0.0' y = '70.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Indent (1.0)</text>
+      <rect x = '0.0' y = '80.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(739.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '13.5' y = '120.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Number of Children per Class</text>
+    <rect x = '-138.0' y = '-5.0' width = '293.0' height = '110.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V100,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (8.0)</text>
+      <rect x = '0.0' y = '0.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Block (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>GroupElement (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Element (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Format (0.0)</text>
+      <rect x = '0.0' y = '50.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Color (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Font (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Indent (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1037.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '13.5' y = '120.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Attributes Inherited per Class</text>
+    <rect x = '-138.0' y = '-5.0' width = '293.0' height = '110.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V100,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (1.0)</text>
+      <rect x = '0.0' y = '10.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Block (1.0)</text>
+      <rect x = '0.0' y = '20.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>GroupElement (1.0)</text>
+      <rect x = '0.0' y = '30.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Element (1.0)</text>
+      <rect x = '0.0' y = '40.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Format (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Color (1.0)</text>
+      <rect x = '0.0' y = '60.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Font (1.0)</text>
+      <rect x = '0.0' y = '70.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Indent (1.0)</text>
+      <rect x = '0.0' y = '80.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1335.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '13.5' y = '120.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships Inherited per Class</text>
+    <rect x = '-138.0' y = '-5.0' width = '293.0' height = '110.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V100,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Block (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>GroupElement (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Element (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Format (0.0)</text>
+      <rect x = '0.0' y = '50.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Color (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Font (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Indent (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1633.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '13.5' y = '120.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships per Class</text>
+    <rect x = '-138.0' y = '-5.0' width = '293.0' height = '110.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V100,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (2.0)</text>
+      <rect x = '0.0' y = '10.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Block (2.0)</text>
+      <rect x = '0.0' y = '20.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>GroupElement (4.0)</text>
+      <rect x = '0.0' y = '30.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Element (1.0)</text>
+      <rect x = '0.0' y = '40.0' width = '33.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Format (4.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Color (1.0)</text>
+      <rect x = '0.0' y = '60.0' width = '33.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Font (1.0)</text>
+      <rect x = '0.0' y = '70.0' width = '33.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Indent (1.0)</text>
+      <rect x = '0.0' y = '80.0' width = '33.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+</svg>

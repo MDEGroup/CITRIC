@@ -1,0 +1,12 @@
+package Sample {
+
+    class Test {
+    	attribute name : String;
+    	attribute description : String;
+    }
+
+}
+
+package PrimitiveTypes {
+        datatype String;
+}

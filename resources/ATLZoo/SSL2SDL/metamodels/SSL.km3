@@ -1,0 +1,214 @@
+package PrimitiveTypes {
+
+	datatype Integer;
+
+	datatype Long;
+
+	datatype Float;
+
+	datatype Double;
+
+	datatype Boolean;
+
+	datatype String;
+}
+
+package SSL {
+
+	package Instantiation {
+
+		class PropertyInstance extends SSLInstance {
+			reference Value : Value;
+			attribute InstanceOf : OntologyPropertyURI;
+			attribute name : String;
+		}
+
+		class ClassInstance extends Value, SSLInstance {
+			reference Property container : PropertyInstance;
+			attribute InstanceOf : OntologyClassURI;
+			attribute name : String;
+		}
+
+		class ContactInstance extends SSLInstance {
+			reference contType : ContactInformation;
+			reference Value : Value;
+			attribute InAssociation[0-1] : String;
+		}
+
+		class ParamInstance extends SSLInstance {
+			reference paramType : ServiceParameter;
+			reference Value : Value;
+			attribute InAssociation : String;
+			attribute paramTypeID : String;
+		}
+
+		abstract class Value {
+			
+		}
+
+		class AttrInstance extends SSLInstance {
+			reference AtrrType : ServiceAttribute;
+			reference Value : Value;
+			attribute AttrTypeID : String;
+		}
+
+		class ProfileInstance extends SSLInstance {
+			reference AtrrInstance[*] container : AttrInstance;
+			reference paramInstance[*] container : ParamInstance;
+			reference profType : ServiceProfile;
+			reference contInstance[*] container : ContactInstance;
+			attribute ProfTypeID : String;
+		}
+
+		abstract class SSLInstance {
+			attribute InstanceID : String;
+		}
+	}
+
+	package Types {
+
+		class OntologyPropertyURI extends URIReference {
+			
+		}
+
+		class Literal extends Value {
+			attribute LexicalForm : String;
+		}
+
+		class OntologyClassURI extends TypeURI {
+			
+		}
+
+		class OntologyThingURI extends URIReference {
+			
+		}
+
+		abstract class URIReference {
+			attribute lexicalform : String;
+		}
+
+		abstract class TypeURI extends URIReference {
+			
+		}
+
+		class EnumTypeURI extends DataRangeURI {
+			
+		}
+
+		class DataTypeURI extends DataRangeURI {
+			
+		}
+
+		abstract class DataRangeURI extends TypeURI {
+			
+		}
+
+		class Multiplicity {
+			attribute LowerBound : Integer;
+			attribute UpperBound[0-1] : Integer;
+		}
+	}
+
+	package Associations {
+
+		class Target extends AssociationEnd {
+			
+		}
+
+		class Source extends AssociationEnd {
+			
+		}
+
+		abstract class AssociationEnd extends ServiceConcept {
+			reference EndType : ServiceConcept;
+			attribute Multiplicity : Multiplicity;
+		}
+
+		class Association extends ServiceConcept {
+			reference TargetEnd container : Target;
+			reference SourceEnd container : Source;
+		}
+	}
+
+	package ServiceBehavior {
+
+		class ServiceOutput extends FunctionalityParameter {
+			reference coCondition[0-1] : Condition;
+		}
+
+		class ServiceInput extends FunctionalityParameter {
+			
+		}
+
+		class ServiceFunctionality extends ServiceConcept {
+			reference preCondition[0-1] : Condition;
+			reference Input[*] container : ServiceInput;
+			reference Output[*] container : ServiceOutput;
+		}
+
+		abstract class FunctionalityParameter extends ServiceConcept {
+			attribute Type : TypeURI;
+		}
+
+		class Condition extends ServiceConcept {
+			attribute ConditionExpression : String;
+		}
+	}
+
+	package Core {
+
+		class XYCoordinates {
+			attribute X : Integer;
+			attribute Y : Integer;
+		}
+
+		class ContactInformation extends ServiceConcept {
+			attribute Type : TypeURI;
+		}
+
+		class ServiceProfile extends NameSpace {
+			reference Category[*] : IndustryDomain;
+			reference Functionality[*] container : ServiceFunctionality;
+			reference Identifier container : ServiceIdentifier;
+			reference Domain[1-*] : DBEServiceDomain;
+			reference Attribute[*] container : ServiceAttribute;
+		}
+
+		class ServiceParameter extends ServiceConcept {
+			attribute Type : TypeURI;
+		}
+
+		class ServiceIdentifier extends ServiceConcept {
+			attribute Type : DataTypeURI;
+		}
+
+		class DBEServiceDomain extends ServiceConcept {
+			attribute DomainRef : OntologyClassURI;
+		}
+
+		class IndustryDomain extends ServiceConcept {
+			attribute TaxonomyName : String;
+			attribute TaxonomyRef[0-1] : URIReference;
+		}
+
+		class ServiceAttribute extends ServiceConcept {
+			attribute AttributeType : TypeURI;
+			attribute Multiplicity : Multiplicity;
+		}
+
+		abstract class NameSpace extends ServiceConcept {
+			reference OwnedElement[*] container : ServiceConcept;
+		}
+
+		class SemanticPackage extends NameSpace {
+			reference profInstance[*] container : ProfileInstance;
+		}
+
+		abstract class ServiceConcept {
+			reference Position[0-1] container : XYCoordinates;
+			attribute name : String;
+			attribute id : String;
+			attribute Documentation[0-1] : String;
+		}
+	}
+}

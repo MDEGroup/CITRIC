@@ -1,0 +1,184 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SimpleClassTransformationMaven</groupId>
+	<artifactId>SimpleClassTransformationMaven</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>public</id>
+			<name>Archiva Managed Public Repository</name>
+			<url>http://archiva.disim.univaq.it/repository/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>mvnRepo</id>
+			<name>Mvn Repository</name>
+			<url>http://mvnrepository.com</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>driver.emf4atl</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>common</artifactId>
+			<version>3.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>core.emf</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>core</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>driver.emf4atl</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>emftvm</artifactId>
+			<version>3.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>emftvm.compiler</artifactId>
+			<version>3.4.100.201308012235</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>engine</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>engine.emfvm</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>engine.emfvm.launch</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>engine.vm</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.m2m.atl</groupId>
+			<artifactId>dsls</artifactId>
+			<version>3.4.0</version>
+		</dependency>
+
+		<!-- Nuovi -->
+		<dependency>
+			<groupId>org.antlr</groupId>
+			<artifactId>antlr-runtime</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.core</groupId>
+			<artifactId>runtime</artifactId>
+			<version>3.9.100-v20131218-1515</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>ecore</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>ecore.xmi</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>common</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.emf</groupId>
+			<artifactId>compare</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		
+		<!-- OCL -->
+		<!-- https://mvnrepository.com/artifact/org.eclipse.ocl/ecore -->
+		<dependency>
+		    <groupId>org.eclipse.ocl</groupId>
+		    <artifactId>ecore</artifactId>
+		    <version>3.3.0-v20130520-1222</version>
+		</dependency>
+		
+	<!-- anATLyzer -->
+		<dependency>
+			<groupId>anatlyzer</groupId>
+			<artifactId>transML_complete</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>anatlyzer</groupId>
+			<artifactId>mutants</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>anatlyzer</groupId>
+			<artifactId>witness</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>anatlyzer</groupId>
+			<artifactId>typing</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>anatlyzer</groupId>
+			<artifactId>test.api</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		
+	</dependencies>
+
+</project>

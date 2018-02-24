@@ -1,0 +1,69 @@
+
+			megamodel 'AMMACore' {
+
+			--TODO?	import '/AMMACore/KM3/Editor/Editor.ecore';
+				metamodel{'Editor', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore', '', '', '', '', '', '', workspace}
+				metamodel{'Outline', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore', '', '', '', '', '', '', workspace}
+
+
+			-- @begin Editors
+			-- @begin FileInfo
+				metamodel{'FileInfo', '/FileInfo/Metamodel/FileInfo.ecore', '', '', '', '', '', '', workspace}
+				ebnfInjector{'FileInfo', '/FileInfo/Syntax/FileInfo-parser.jar', '', '', '', '', '', '', workspace, 'fi', 'FileInfo', 3}
+
+				editor{'FileInfo-Editor', '/FileInfo/TGE/FileInfo-Editor.ecore', '', '', '', '', '', '', workspace, 'fi'}
+				conformsTo {'/FileInfo/TGE/FileInfo-Editor.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Editor/Editor.ecore'}
+
+				outline{'FileInfo-Outline', '/FileInfo/TGE/FileInfo-Outline.ecore', '', '', '', '', '', '', workspace}
+				conformsTo {'/FileInfo/TGE/FileInfo-Outline.ecore', '/TCSBuilder_ANTLR3/AMMACore/KM3/Outline/Outline.ecore'}
+				outlineOfEditor {
+					'/FileInfo/TGE/FileInfo-Outline.ecore',
+					'/FileInfo/TGE/FileInfo-Editor.ecore',
+					'/FileInfo/Metamodel/FileInfo.ecore',
+					'/FileInfo/Syntax/FileInfo-parser.jar'
+				}
+			-- @end FileInfo
+			-- @end Editors
+			
+				antAction {
+						'fi',
+						'Inject FileInfo File to FileInfo Model',
+						'/TCSBuilder_ANTLR3/injector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/FileInfo/Metamodel/FileInfo.ecore',
+								properties { 'MMUri' = 'uri', }
+							}
+							param {
+								'/FileInfo/Syntax/FileInfo-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			
+			-- @begin MDR
+				metamodel{'FileInfo', '/FileInfo/Metamodel/FileInfo.xmi', '', '', '', '', '', '', workspace}
+				antAction {
+						'fi',
+						'Inject FileInfo File to FileInfo Model (MDR based)',
+						'/TCSBuilder_ANTLR3/MDRInjector.xml',
+						context = param {
+							properties { 'MUri' = 'uri', }
+						},
+						parameters = [
+							param {
+								'/FileInfo/Metamodel/FileInfo.xmi',
+								properties { 'MMUri' = 'uri', 'MMName' = 'name', }
+							}
+							param {
+								'/FileInfo/Syntax/FileInfo-parser.jar',
+								properties { 'EBNFInjectorUri' = 'uri', 'classNamePrefix' = 'classNamePrefix', }
+							}
+						]
+				}
+			-- @end MDR
+			}	
+		

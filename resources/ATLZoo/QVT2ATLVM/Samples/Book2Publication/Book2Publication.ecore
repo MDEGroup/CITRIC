@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qvttemplate="http:///qvttemplate.ecore" xmlns:qvtcore="http:///qvtcore.ecore" xmlns:qvtoperational="http:///qvtoperational.ecore" xmlns:essentialocl="http:///essentialocl.ecore" xmlns:qvtbase="http:///qvtbase.ecore" xmlns:imperativeocl="http:///imperativeocl.ecore" xmlns:qvt="http:///qvt.ecore" xmlns:emof="http:///emof.ecore" xmlns:qvtrelation="http:///qvtrelation.ecore">
+<emof:Package xmi:id="o-1" name="PrimitiveTypes">
+  <ownedType xmi:id="o0" xsi:type="emof:PrimitiveType" name="Boolean"/>
+  <ownedType xmi:id="o1" xsi:type="emof:PrimitiveType" name="Integer"/>
+  <ownedType xmi:id="o2" xsi:type="emof:PrimitiveType" name="String"/>
+  <ownedType xmi:id="o3" xsi:type="emof:PrimitiveType" name="UnlimitedNatural"/>
+</emof:Package>
+<emof:Package xmi:id="o4" name="OclLib">
+  <ownedType xmi:id="o5" xsi:type="emof:Class" name="OclObject">
+    <ownedOperation xmi:id="o6" xsi:type="emof:Operation" name="&lt;&gt;" type="o0">
+      <ownedParameter xmi:id="o7" xsi:type="emof:Parameter" name="" type="o5"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o8" xsi:type="emof:Operation" name="=" type="o0">
+      <ownedParameter xmi:id="o9" xsi:type="emof:Parameter" name="" type="o5"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o10" xsi:type="emof:Class" name="OclElement">
+    <ownedOperation xmi:id="o11" xsi:type="emof:Operation" name="&lt;&gt;" type="o0">
+      <ownedParameter xmi:id="o12" xsi:type="emof:Parameter" name="" type="o10"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o13" xsi:type="emof:Operation" name="container" type="o10"/>
+    <ownedOperation xmi:id="o14" xsi:type="emof:Operation" name="=" type="o0">
+      <ownedParameter xmi:id="o15" xsi:type="emof:Parameter" name="" type="o10"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o16" xsi:type="emof:Class" name="OclAny">
+    <ownedOperation xmi:id="o17" xsi:type="emof:Operation" name="&lt;&gt;" type="o0">
+      <ownedParameter xmi:id="o18" xsi:type="emof:Parameter" name="" type="o16"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o19" xsi:type="emof:Operation" name="oclAsType" type="o175">
+      <ownedParameter xmi:id="o20" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o21" xsi:type="emof:Operation" name="oclIsTypeOf" type="o0">
+      <ownedParameter xmi:id="o22" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o23" xsi:type="emof:Operation" name="oclIsUndefined" type="o0"/>
+    <ownedOperation xmi:id="o24" xsi:type="emof:Operation" name="oclIsInvalid" type="o0"/>
+    <ownedOperation xmi:id="o25" xsi:type="emof:Operation" name="=" type="o0">
+      <ownedParameter xmi:id="o26" xsi:type="emof:Parameter" name="" type="o16"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o27" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="allInstances" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o28" xsi:type="emof:Operation" name="oclIsKindOf" type="o0">
+      <ownedParameter xmi:id="o29" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o30" xsi:type="essentialocl:VoidType" name="OclVoid"/>
+  <ownedType xmi:id="o31" xsi:type="essentialocl:InvalidType" name="OclInvalid"/>
+  <ownedType xmi:id="o32" xsi:type="emof:Class" name="OclType">
+    <ownedOperation xmi:id="o33" xsi:type="emof:Operation" name="&lt;&gt;" type="o0">
+      <ownedParameter xmi:id="o34" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o35" xsi:type="emof:Operation" name="=" type="o0">
+      <ownedParameter xmi:id="o36" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o37" xsi:type="emof:Class" name="Real">
+    <ownedOperation xmi:id="o38" xsi:type="emof:Operation" name="&gt;" type="o0">
+      <ownedParameter xmi:id="o39" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o40" xsi:type="emof:Operation" name="&lt;" type="o0">
+      <ownedParameter xmi:id="o41" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o42" xsi:type="emof:Operation" name="round" type="o1"/>
+    <ownedOperation xmi:id="o43" xsi:type="emof:Operation" name="/" type="o37">
+      <ownedParameter xmi:id="o44" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o45" xsi:type="emof:Operation" name="floor" type="o1"/>
+    <ownedOperation xmi:id="o46" xsi:type="emof:Operation" name="&lt;=" type="o0">
+      <ownedParameter xmi:id="o47" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o48" xsi:type="emof:Operation" name="max" type="o37">
+      <ownedParameter xmi:id="o49" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o50" xsi:type="emof:Operation" name="min" type="o37">
+      <ownedParameter xmi:id="o51" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o52" xsi:type="emof:Operation" name="&gt;=" type="o0">
+      <ownedParameter xmi:id="o53" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o54" xsi:type="emof:Operation" name="-" type="o37"/>
+    <ownedOperation xmi:id="o55" xsi:type="emof:Operation" name="abs" type="o37"/>
+    <ownedOperation xmi:id="o56" xsi:type="emof:Operation" name="*" type="o37">
+      <ownedParameter xmi:id="o57" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o58" xsi:type="emof:Operation" name="-" type="o37">
+      <ownedParameter xmi:id="o59" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o60" xsi:type="emof:Operation" name="+" type="o37">
+      <ownedParameter xmi:id="o61" xsi:type="emof:Parameter" name="r" type="o37"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o62" xsi:type="emof:Class" name="Set">
+    <ownedOperation xmi:id="o63" xsi:type="emof:Operation" name="count" type="o1">
+      <ownedParameter xmi:id="o64" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o65" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="excluding" upper="-1" type="o175">
+      <ownedParameter xmi:id="o66" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o67" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="asSequence" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o68" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="union" upper="-1" type="o175">
+      <ownedParameter xmi:id="o69" xsi:type="emof:Parameter" isOrdered="false" isUnique="true" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o70" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="union" upper="-1" type="o175">
+      <ownedParameter xmi:id="o71" xsi:type="emof:Parameter" isOrdered="false" isUnique="false" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o72" xsi:type="emof:Operation" isOrdered="true" isUnique="true" name="asOrderedSet" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o73" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="asBag" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o74" xsi:type="emof:Operation" name="=" type="o0">
+      <ownedParameter xmi:id="o75" xsi:type="emof:Parameter" isOrdered="false" isUnique="true" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o76" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="including" upper="-1" type="o175">
+      <ownedParameter xmi:id="o77" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o78" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="flatten" upper="-1" type="o176"/>
+    <ownedOperation xmi:id="o79" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="intersection" upper="-1" type="o175">
+      <ownedParameter xmi:id="o80" xsi:type="emof:Parameter" isOrdered="false" isUnique="true" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o81" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="intersection" upper="-1" type="o175">
+      <ownedParameter xmi:id="o82" xsi:type="emof:Parameter" isOrdered="false" isUnique="false" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o83" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="asSet" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o84" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="symmetricDifference" upper="-1" type="o175">
+      <ownedParameter xmi:id="o85" xsi:type="emof:Parameter" isOrdered="false" isUnique="true" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o86" xsi:type="emof:Class" name="Collection">
+    <ownedOperation xmi:id="o87" xsi:type="emof:Operation" name="count" type="o1">
+      <ownedParameter xmi:id="o88" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o89" xsi:type="emof:Operation" name="excludes" type="o0">
+      <ownedParameter xmi:id="o90" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o91" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="product" upper="-1" type="o174">
+      <ownedParameter xmi:id="o92" xsi:type="emof:Parameter" isOrdered="true" isUnique="false" name="c2" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o93" xsi:type="emof:Operation" name="notEmpty" type="o0"/>
+    <ownedOperation xmi:id="o94" xsi:type="emof:Operation" name="excludesAll" type="o0">
+      <ownedParameter xmi:id="o95" xsi:type="emof:Parameter" isOrdered="true" isUnique="false" name="c2" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o96" xsi:type="emof:Operation" name="sum" type="o175"/>
+    <ownedOperation xmi:id="o97" xsi:type="emof:Operation" name="includes" type="o0">
+      <ownedParameter xmi:id="o98" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o99" xsi:type="emof:Operation" name="isEmpty" type="o0"/>
+    <ownedOperation xmi:id="o100" xsi:type="emof:Operation" name="includesAll" type="o0">
+      <ownedParameter xmi:id="o101" xsi:type="emof:Parameter" isOrdered="true" isUnique="false" name="c2" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o102" xsi:type="emof:Operation" name="size" type="o1"/>
+  </ownedType>
+  <ownedType xmi:id="o103" xsi:type="emof:Class" name="Bag">
+    <ownedOperation xmi:id="o104" xsi:type="emof:Operation" name="count" type="o1">
+      <ownedParameter xmi:id="o105" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o106" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="excluding" upper="-1" type="o175">
+      <ownedParameter xmi:id="o107" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o108" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="asSequence" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o109" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="union" upper="-1" type="o175">
+      <ownedParameter xmi:id="o110" xsi:type="emof:Parameter" isOrdered="false" isUnique="true" name="set" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o111" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="union" upper="-1" type="o175">
+      <ownedParameter xmi:id="o112" xsi:type="emof:Parameter" isOrdered="false" isUnique="false" name="bag" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o113" xsi:type="emof:Operation" isOrdered="true" isUnique="true" name="asOrderedSet" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o114" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="asBag" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o115" xsi:type="emof:Operation" name="=" type="o0">
+      <ownedParameter xmi:id="o116" xsi:type="emof:Parameter" isOrdered="false" isUnique="false" name="bag" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o117" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="including" upper="-1" type="o175">
+      <ownedParameter xmi:id="o118" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o119" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="flatten" upper="-1" type="o176"/>
+    <ownedOperation xmi:id="o120" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="intersection" upper="-1" type="o175">
+      <ownedParameter xmi:id="o121" xsi:type="emof:Parameter" isOrdered="false" isUnique="true" name="set" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o122" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="intersection" upper="-1" type="o175">
+      <ownedParameter xmi:id="o123" xsi:type="emof:Parameter" isOrdered="false" isUnique="false" name="bag" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o124" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="asSet" upper="-1" type="o175"/>
+  </ownedType>
+  <ownedType xmi:id="o125" xsi:type="emof:Class" name="Sequence">
+    <ownedOperation xmi:id="o126" xsi:type="emof:Operation" name="count" type="o1">
+      <ownedParameter xmi:id="o127" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o128" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="insertAt" upper="-1" type="o175">
+      <ownedParameter xmi:id="o129" xsi:type="emof:Parameter" name="index" type="o1"/>
+      <ownedParameter xmi:id="o130" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o131" xsi:type="emof:Operation" name="last" type="o175"/>
+    <ownedOperation xmi:id="o132" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="excluding" upper="-1" type="o175">
+      <ownedParameter xmi:id="o133" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o134" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="asSequence" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o135" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="union" upper="-1" type="o175">
+      <ownedParameter xmi:id="o136" xsi:type="emof:Parameter" isOrdered="true" isUnique="false" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o137" xsi:type="emof:Operation" isOrdered="true" isUnique="true" name="asOrderedSet" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o138" xsi:type="emof:Operation" isOrdered="false" isUnique="false" name="asBag" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o139" xsi:type="emof:Operation" name="=" type="o0">
+      <ownedParameter xmi:id="o140" xsi:type="emof:Parameter" isOrdered="true" isUnique="false" name="s" upper="-1" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o141" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="prepend" upper="-1" type="o175">
+      <ownedParameter xmi:id="o142" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o143" xsi:type="emof:Operation" name="indexOf" type="o1">
+      <ownedParameter xmi:id="o144" xsi:type="emof:Parameter" name="obj" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o145" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="subSequence" upper="-1" type="o175">
+      <ownedParameter xmi:id="o146" xsi:type="emof:Parameter" name="lower" type="o1"/>
+      <ownedParameter xmi:id="o147" xsi:type="emof:Parameter" name="upper" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o148" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="including" upper="-1" type="o175">
+      <ownedParameter xmi:id="o149" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o150" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="flatten" upper="-1" type="o176"/>
+    <ownedOperation xmi:id="o151" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="asSet" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o152" xsi:type="emof:Operation" name="first" type="o175"/>
+    <ownedOperation xmi:id="o153" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="append" upper="-1" type="o175">
+      <ownedParameter xmi:id="o154" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o155" xsi:type="emof:Operation" name="at" type="o175">
+      <ownedParameter xmi:id="o156" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o157" xsi:type="emof:Class" name="OrderedSet">
+    <ownedOperation xmi:id="o158" xsi:type="emof:Operation" isOrdered="true" isUnique="true" name="insertAt" upper="-1" type="o175">
+      <ownedParameter xmi:id="o159" xsi:type="emof:Parameter" name="index" type="o1"/>
+      <ownedParameter xmi:id="o160" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o161" xsi:type="emof:Operation" name="last" type="o175"/>
+    <ownedOperation xmi:id="o162" xsi:type="emof:Operation" name="indexOf" type="o1">
+      <ownedParameter xmi:id="o163" xsi:type="emof:Parameter" name="obj" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o164" xsi:type="emof:Operation" isOrdered="true" isUnique="true" name="append" upper="-1" type="o175">
+      <ownedParameter xmi:id="o165" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o166" xsi:type="emof:Operation" isOrdered="true" isUnique="true" name="prepend" upper="-1" type="o175">
+      <ownedParameter xmi:id="o167" xsi:type="emof:Parameter" name="object" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o168" xsi:type="emof:Operation" name="at" type="o175">
+      <ownedParameter xmi:id="o169" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o170" xsi:type="emof:Operation" isOrdered="true" isUnique="true" name="subOrderedSet" upper="-1" type="o175">
+      <ownedParameter xmi:id="o171" xsi:type="emof:Parameter" name="lower" type="o1"/>
+      <ownedParameter xmi:id="o172" xsi:type="emof:Parameter" name="upper" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o173" xsi:type="emof:Operation" name="first" type="o175"/>
+  </ownedType>
+  <ownedType xmi:id="o174" xsi:type="emof:Class" name="Tuple"/>
+  <ownedType xmi:id="o175" xsi:type="emof:Class" name="T"/>
+  <ownedType xmi:id="o176" xsi:type="emof:Class" name="T2"/>
+  <ownedType xmi:id="o177" xsi:type="emof:Class" name="String">
+    <ownedOperation xmi:id="o178" xsi:type="emof:Operation" name="substring" type="o2">
+      <ownedParameter xmi:id="o179" xsi:type="emof:Parameter" name="lower" type="o2"/>
+      <ownedParameter xmi:id="o180" xsi:type="emof:Parameter" name="upper" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o181" xsi:type="emof:Operation" name="toInteger" type="o1"/>
+    <ownedOperation xmi:id="o182" xsi:type="emof:Operation" name="toReal" type="o37"/>
+    <ownedOperation xmi:id="o183" xsi:type="emof:Operation" name="concat" type="o2">
+      <ownedParameter xmi:id="o184" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o185" xsi:type="emof:Operation" name="size" type="o1"/>
+  </ownedType>
+  <ownedType xmi:id="o186" xsi:type="emof:Class" name="Boolean">
+    <ownedOperation xmi:id="o187" xsi:type="emof:Operation" name="and" type="o0">
+      <ownedParameter xmi:id="o188" xsi:type="emof:Parameter" name="b" type="o0"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o189" xsi:type="emof:Operation" name="not" type="o0"/>
+    <ownedOperation xmi:id="o190" xsi:type="emof:Operation" name="xor" type="o0">
+      <ownedParameter xmi:id="o191" xsi:type="emof:Parameter" name="b" type="o0"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o192" xsi:type="emof:Operation" name="or" type="o0">
+      <ownedParameter xmi:id="o193" xsi:type="emof:Parameter" name="b" type="o0"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o194" xsi:type="emof:Operation" name="implies" type="o0">
+      <ownedParameter xmi:id="o195" xsi:type="emof:Parameter" name="b" type="o0"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o196" xsi:type="emof:Class" name="Integer">
+    <ownedOperation xmi:id="o197" xsi:type="emof:Operation" name="&gt;" type="o0">
+      <ownedParameter xmi:id="o198" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o199" xsi:type="emof:Operation" name="&lt;" type="o0">
+      <ownedParameter xmi:id="o200" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o201" xsi:type="emof:Operation" name="/" type="o37">
+      <ownedParameter xmi:id="o202" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o203" xsi:type="emof:Operation" name="min" type="o1">
+      <ownedParameter xmi:id="o204" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o205" xsi:type="emof:Operation" name="max" type="o1">
+      <ownedParameter xmi:id="o206" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o207" xsi:type="emof:Operation" name="&lt;=" type="o0">
+      <ownedParameter xmi:id="o208" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o209" xsi:type="emof:Operation" name="&gt;=" type="o0">
+      <ownedParameter xmi:id="o210" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o211" xsi:type="emof:Operation" name="-" type="o1">
+      <ownedParameter xmi:id="o212" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o213" xsi:type="emof:Operation" name="abs" type="o1"/>
+    <ownedOperation xmi:id="o214" xsi:type="emof:Operation" name="*" type="o1">
+      <ownedParameter xmi:id="o215" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o216" xsi:type="emof:Operation" name="div" type="o1">
+      <ownedParameter xmi:id="o217" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o218" xsi:type="emof:Operation" name="-" type="o1"/>
+    <ownedOperation xmi:id="o219" xsi:type="emof:Operation" name="+" type="o1">
+      <ownedParameter xmi:id="o220" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o221" xsi:type="emof:Operation" name="mod" type="o1">
+      <ownedParameter xmi:id="o222" xsi:type="emof:Parameter" name="i" type="o1"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o223" xsi:type="essentialocl:SetType" name="Set(T)" elementType="o175"/>
+  <ownedType xmi:id="o224" xsi:type="essentialocl:SequenceType" name="Sequence(T)" elementType="o175"/>
+  <ownedType xmi:id="o225" xsi:type="essentialocl:BagType" name="Bag(T)" elementType="o175"/>
+  <ownedType xmi:id="o226" xsi:type="essentialocl:OrderedSetType" name="OrderedSet()" elementType="o175"/>
+  <ownedType xmi:id="o227" xsi:type="essentialocl:SetType" name="Set(T2)" elementType="o176"/>
+  <ownedType xmi:id="o228" xsi:type="essentialocl:SetType" name="Set(Tuple)" elementType="o174"/>
+  <ownedType xmi:id="o229" xsi:type="essentialocl:BagType" name="Bag(T2)" elementType="o176"/>
+  <ownedType xmi:id="o230" xsi:type="essentialocl:SequenceType" name="Sequence(T2)" elementType="o176"/>
+  <ownedType xmi:id="o231" xsi:type="essentialocl:SetType" name="Set(OclElement)" elementType="o10"/>
+</emof:Package>
+<qvtoperational:Library xmi:id="o232" name="QvtLib">
+  <ownedType xmi:id="o233" xsi:type="emof:Class" name="Exception"/>
+  <ownedType xmi:id="o234" xsi:type="emof:Class" name="Model">
+    <ownedOperation xmi:id="o235" xsi:type="emof:Operation" name="asTransformation" type="o244">
+      <ownedParameter xmi:id="o236" xsi:type="emof:Parameter" name="" type="o234"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o237" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="objectsOfType" upper="-1" type="o10">
+      <ownedParameter xmi:id="o238" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o239" xsi:type="emof:Operation" name="createEmptyModel" type="o234"/>
+    <ownedOperation xmi:id="o240" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="objects" upper="-1" type="o10"/>
+    <ownedOperation xmi:id="o241" xsi:type="emof:Operation" isOrdered="false" isUnique="true" name="rootObjects" upper="-1" type="o10"/>
+    <ownedOperation xmi:id="o242" xsi:type="emof:Operation" name="removeElement" type="o30">
+      <ownedParameter xmi:id="o243" xsi:type="emof:Parameter" name="" type="o10"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o244" xsi:type="emof:Class" name="Transformation">
+    <ownedOperation xmi:id="o245" xsi:type="emof:Operation" name="parallelTransform" type="o249"/>
+    <ownedOperation xmi:id="o246" xsi:type="emof:Operation" name="transform" type="o249"/>
+    <ownedOperation xmi:id="o247" xsi:type="emof:Operation" name="wait" type="o249">
+      <ownedParameter xmi:id="o248" xsi:type="emof:Parameter" isOrdered="true" isUnique="false" name="" upper="-1" type="o249"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o249" xsi:type="emof:Class" name="Status">
+    <ownedOperation xmi:id="o250" xsi:type="emof:Operation" name="raisedException" type="o233"/>
+    <ownedOperation xmi:id="o251" xsi:type="emof:Operation" name="failed" type="o0"/>
+    <ownedOperation xmi:id="o252" xsi:type="emof:Operation" name="succeeded" type="o0"/>
+  </ownedType>
+  <ownedType xmi:id="o253" xsi:type="emof:Class" name="List">
+    <ownedOperation xmi:id="o254" xsi:type="emof:Operation" name="insertAt" type="o30">
+      <ownedParameter xmi:id="o255" xsi:type="emof:Parameter" name="" type="o175"/>
+      <ownedParameter xmi:id="o256" xsi:type="emof:Parameter" name="" type="o1"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o257" xsi:type="emof:Operation" name="add" type="o30">
+      <ownedParameter xmi:id="o258" xsi:type="emof:Parameter" name="" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o259" xsi:type="emof:Operation" name="joinfields" type="o2">
+      <ownedParameter xmi:id="o260" xsi:type="emof:Parameter" name="sep" type="o2"/>
+      <ownedParameter xmi:id="o261" xsi:type="emof:Parameter" name="begin" type="o2"/>
+      <ownedParameter xmi:id="o262" xsi:type="emof:Parameter" name="end" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o263" xsi:type="emof:Operation" name="append" type="o30">
+      <ownedParameter xmi:id="o264" xsi:type="emof:Parameter" name="" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o265" xsi:type="emof:Operation" name="prepend" type="o30">
+      <ownedParameter xmi:id="o266" xsi:type="emof:Parameter" name="" type="o175"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o267" xsi:type="emof:Class" name="Dictionary">
+    <ownedOperation xmi:id="o268" xsi:type="emof:Operation" name="get" type="o175">
+      <ownedParameter xmi:id="o269" xsi:type="emof:Parameter" name="" type="o283"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o270" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="keys" upper="-1" type="o283"/>
+    <ownedOperation xmi:id="o271" xsi:type="emof:Operation" name="clear" type="o30"/>
+    <ownedOperation xmi:id="o272" xsi:type="emof:Operation" name="defaultget" type="o175">
+      <ownedParameter xmi:id="o273" xsi:type="emof:Parameter" name="" type="o283"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o274" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="values" upper="-1" type="o175"/>
+    <ownedOperation xmi:id="o275" xsi:type="emof:Operation" name="put" type="o30">
+      <ownedParameter xmi:id="o276" xsi:type="emof:Parameter" name="" type="o283"/>
+      <ownedParameter xmi:id="o277" xsi:type="emof:Parameter" name="" type="o175"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o278" xsi:type="emof:Operation" name="isEmpty" type="o0"/>
+    <ownedOperation xmi:id="o279" xsi:type="emof:Operation" name="hasKey" type="o0">
+      <ownedParameter xmi:id="o280" xsi:type="emof:Parameter" name="" type="o283"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o281" xsi:type="emof:Operation" name="size" type="o1"/>
+  </ownedType>
+  <ownedType xmi:id="o282" xsi:type="emof:Class" name="AnonymousTuple"/>
+  <ownedType xmi:id="o283" xsi:type="emof:Class" name="KeyT"/>
+  <ownedType xmi:id="o284" xsi:type="emof:Class" name="String">
+    <ownedOperation xmi:id="o285" xsi:type="emof:Operation" name="trim" type="o2"/>
+    <ownedOperation xmi:id="o286" xsi:type="emof:Operation" name="quotify" type="o2">
+      <ownedParameter xmi:id="o287" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o288" xsi:type="emof:Operation" name="replace" type="o2">
+      <ownedParameter xmi:id="o289" xsi:type="emof:Parameter" name="m1" type="o2"/>
+      <ownedParameter xmi:id="o290" xsi:type="emof:Parameter" name="m2" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o291" xsi:type="emof:Operation" name="startStrCounter" type="o30">
+      <ownedParameter xmi:id="o292" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o293" xsi:type="emof:Operation" name="equalsIgnoreCase" type="o0">
+      <ownedParameter xmi:id="o294" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o295" xsi:type="emof:Operation" name="find" type="o1">
+      <ownedParameter xmi:id="o296" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o297" xsi:type="emof:Operation" name="size" type="o1"/>
+    <ownedOperation xmi:id="o298" xsi:type="emof:Operation" name="startsWith" type="o2">
+      <ownedParameter xmi:id="o299" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o300" xsi:type="emof:Operation" name="substringBefore" type="o2">
+      <ownedParameter xmi:id="o301" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o302" xsi:type="emof:Operation" name="toLower" type="o2"/>
+    <ownedOperation xmi:id="o303" xsi:type="emof:Operation" name="asInteger" type="o0"/>
+    <ownedOperation xmi:id="o304" xsi:type="emof:Operation" name="length" type="o1"/>
+    <ownedOperation xmi:id="o305" xsi:type="emof:Operation" name="restartAllStrCounter" type="o30">
+      <ownedParameter xmi:id="o306" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o307" xsi:type="emof:Operation" name="asFloat" type="o0"/>
+    <ownedOperation xmi:id="o308" xsi:type="emof:Operation" name="incrStrCounter" type="o1">
+      <ownedParameter xmi:id="o309" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o310" xsi:type="emof:Operation" name="format" type="o2">
+      <ownedParameter xmi:id="o311" xsi:type="emof:Parameter" name="value" type="o5"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o312" xsi:type="emof:Operation" name="indexOf" type="o1">
+      <ownedParameter xmi:id="o313" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o314" xsi:type="emof:Operation" name="matchFloat" type="o0"/>
+    <ownedOperation xmi:id="o315" xsi:type="emof:Operation" name="unquotify" type="o2">
+      <ownedParameter xmi:id="o316" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o317" xsi:type="emof:Operation" name="firstToLower" type="o2"/>
+    <ownedOperation xmi:id="o318" xsi:type="emof:Operation" name="matchBoolean" type="o0"/>
+    <ownedOperation xmi:id="o319" xsi:type="emof:Operation" name="getStrCounter" type="o1">
+      <ownedParameter xmi:id="o320" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o321" xsi:type="emof:Operation" name="asBoolean" type="o0"/>
+    <ownedOperation xmi:id="o322" xsi:type="emof:Operation" name="rfind" type="o1">
+      <ownedParameter xmi:id="o323" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o324" xsi:type="emof:Operation" name="substringAfter" type="o2">
+      <ownedParameter xmi:id="o325" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o326" xsi:type="emof:Operation" name="isQuoted" type="o0">
+      <ownedParameter xmi:id="o327" xsi:type="emof:Parameter" name="s" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o328" xsi:type="emof:Operation" name="matchIdentifier" type="o0"/>
+    <ownedOperation xmi:id="o329" xsi:type="emof:Operation" name="endsWith" type="o2">
+      <ownedParameter xmi:id="o330" xsi:type="emof:Parameter" name="match" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o331" xsi:type="emof:Operation" name="normalizeSpace" type="o2"/>
+    <ownedOperation xmi:id="o332" xsi:type="emof:Operation" name="toUpper" type="o2"/>
+    <ownedOperation xmi:id="o333" xsi:type="emof:Operation" name="matchInteger" type="o0"/>
+    <ownedOperation xmi:id="o334" xsi:type="emof:Operation" name="firstToUpper" type="o2"/>
+    <ownedOperation xmi:id="o335" xsi:type="emof:Operation" name="addSuffixNumber" type="o2"/>
+  </ownedType>
+  <ownedType xmi:id="o336" xsi:type="emof:Class" name="OclElement">
+    <ownedOperation xmi:id="o337" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="subobjects" upper="-1" type="o10"/>
+    <ownedOperation xmi:id="o338" xsi:type="emof:Operation" name="deepClone" type="o10"/>
+    <ownedOperation xmi:id="o339" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="allSubobjectsOfType" upper="-1" type="o10">
+      <ownedParameter xmi:id="o340" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o341" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="subobjectsOfKind" upper="-1" type="o10">
+      <ownedParameter xmi:id="o342" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o343" xsi:type="emof:Operation" name="isInvalid" type="o0"/>
+    <ownedOperation xmi:id="o344" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="allSubobjects" upper="-1" type="o10">
+      <ownedParameter xmi:id="o345" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o346" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="allSubobjectsOfKind" upper="-1" type="o10">
+      <ownedParameter xmi:id="o347" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o348" xsi:type="emof:Operation" name="asType" type="o175">
+      <ownedParameter xmi:id="o349" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o350" xsi:type="emof:Operation" name="markedAs" type="o0">
+      <ownedParameter xmi:id="o351" xsi:type="emof:Parameter" name="" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o352" xsi:type="emof:Operation" name="_globalId" type="o2"/>
+    <ownedOperation xmi:id="o353" xsi:type="emof:Operation" name="isKindOf" type="o0">
+      <ownedParameter xmi:id="o354" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o355" xsi:type="emof:Operation" name="stereotypedBy" type="o0">
+      <ownedParameter xmi:id="o356" xsi:type="emof:Parameter" name="" type="o2"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o357" xsi:type="emof:Operation" name="isTypeOf" type="o0">
+      <ownedParameter xmi:id="o358" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o359" xsi:type="emof:Operation" name="_localId" type="o2"/>
+    <ownedOperation xmi:id="o360" xsi:type="emof:Operation" name="markValue" type="o5"/>
+    <ownedOperation xmi:id="o361" xsi:type="emof:Operation" name="metaClassName" type="o2"/>
+    <ownedOperation xmi:id="o362" xsi:type="emof:Operation" name="clone" type="o10"/>
+    <ownedOperation xmi:id="o363" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="subobjectsOfType" upper="-1" type="o10">
+      <ownedParameter xmi:id="o364" xsi:type="emof:Parameter" name="" type="o32"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="o365" xsi:type="emof:Operation" name="isUndefined" type="o0"/>
+  </ownedType>
+  <ownedType xmi:id="o366" xsi:type="emof:Class" name="Integer">
+    <ownedOperation xmi:id="o367" xsi:type="emof:Operation" isOrdered="true" isUnique="false" name="range" upper="-1" type="o10">
+      <ownedParameter xmi:id="o368" xsi:type="emof:Parameter" name="start" type="o1"/>
+      <ownedParameter xmi:id="o369" xsi:type="emof:Parameter" name="end" type="o1"/>
+    </ownedOperation>
+  </ownedType>
+  <ownedType xmi:id="o370" xsi:type="imperativeocl:ListType" name="List(Status)" elementType="o249"/>
+  <ownedType xmi:id="o371" xsi:type="imperativeocl:ListType" name="List(KeyT)" elementType="o283"/>
+  <ownedType xmi:id="o372" xsi:type="imperativeocl:ListType" name="List(T)" elementType="o175"/>
+  <ownedType xmi:id="o373" xsi:type="imperativeocl:ListType" name="List(OclElement)" elementType="o10"/>
+</qvtoperational:Library>
+<emof:Package xmi:id="o374" name="BOOK">
+  <ownedType xmi:id="o375" xsi:type="emof:Class" name="Chapter">
+    <ownedAttribute xmi:id="o376" xsi:type="emof:Property" name="title" type="o2"/>
+    <ownedAttribute xmi:id="o377" xsi:type="emof:Property" name="nbPages" type="o1"/>
+  </ownedType>
+  <ownedType xmi:id="o378" xsi:type="emof:Class" name="Book">
+    <ownedAttribute xmi:id="o379" xsi:type="emof:Property" name="title" type="o2"/>
+    <ownedAttribute xmi:id="o380" xsi:type="emof:Property" isOrdered="true" isUnique="false" name="chapters" upper="-1" type="o375"/>
+  </ownedType>
+</emof:Package>
+<emof:Package xmi:id="o381" name="PUB">
+  <ownedType xmi:id="o382" xsi:type="emof:Class" name="Publication">
+    <ownedAttribute xmi:id="o383" xsi:type="emof:Property" name="title" type="o2"/>
+    <ownedAttribute xmi:id="o384" xsi:type="emof:Property" name="nbPages" type="o1"/>
+  </ownedType>
+</emof:Package>
+<qvtoperational:OperationalTransformation xmi:id="o385" name="Book2Publication" entry="o389" refined="o424" usedModelType="o419 o420">
+  <modelParameter xmi:id="o386" kind="in" name="bookModel" type="o419"/>
+  <modelParameter xmi:id="o387" kind="out" name="pubModel" type="o420"/>
+  <ownedAttribute xmi:id="o388" xsi:type="emof:Property" name="this" type="o385"/>
+  <ownedOperation xmi:id="o389" xsi:type="qvtoperational:EntryOperation" name="main">
+    <body xmi:id="o390" xsi:type="qvtoperational:OperationBody">
+      <content xmi:id="o391" xsi:type="imperativeocl:ImperativeIterateExp" name="xcollect" type="o422">
+        <body xmi:id="o392" xsi:type="qvtoperational:MappingCallExp" isStrict="false" referredOperation="o398" type="o382">
+          <source xmi:id="o393" xsi:type="essentialocl:VariableExp" referredVariable="o394"/>
+        </body>
+        <iterator xmi:id="o394" xsi:type="essentialocl:Variable" name="iter1" type="o10"/>
+        <source xmi:id="o395" xsi:type="essentialocl:OperationCallExp" referredOperation="o237" type="o231">
+          <argument xmi:id="o396" xsi:type="essentialocl:TypeExp" referredType="o378" type="o32"/>
+          <source xmi:id="o397" xsi:type="essentialocl:VariableExp" referredVariable="o386" type="o419"/>
+        </source>
+      </content>
+    </body>
+  </ownedOperation>
+  <ownedOperation xmi:id="o398" xsi:type="qvtoperational:MappingOperation" name="book_to_publication" refinedRelation="o427" type="o382">
+    <body xmi:id="o399" xsi:type="qvtoperational:MappingBody">
+      <content xmi:id="o400" xsi:type="qvtoperational:ObjectExp" instantiatedClass="o382" referredObject="o418" type="o382">
+        <body xmi:id="o401">
+          <content xmi:id="o402" xsi:type="imperativeocl:AssignExp" isReset="true">
+            <left xmi:id="o403" xsi:type="essentialocl:PropertyCallExp" referredProperty="o383" type="o2">
+              <source xmi:id="o404" xsi:type="essentialocl:VariableExp" referredVariable="o418"/>
+            </left>
+            <value xmi:id="o405" xsi:type="essentialocl:PropertyCallExp" referredProperty="o379" type="o2">
+              <source xmi:id="o406" xsi:type="essentialocl:VariableExp" referredVariable="o417" type="o378"/>
+            </value>
+          </content>
+          <content xmi:id="o407" xsi:type="imperativeocl:AssignExp" isReset="true">
+            <left xmi:id="o408" xsi:type="essentialocl:PropertyCallExp" referredProperty="o384" type="o1">
+              <source xmi:id="o409" xsi:type="essentialocl:VariableExp" referredVariable="o418"/>
+            </left>
+            <value xmi:id="o410" xsi:type="essentialocl:OperationCallExp" referredOperation="o96" type="o1">
+              <source xmi:id="o411" xsi:type="imperativeocl:ImperativeIterateExp" name="xcollect" type="o423">
+                <body xmi:id="o412" xsi:type="essentialocl:PropertyCallExp" referredProperty="o377" type="o1">
+                  <source xmi:id="o413" xsi:type="essentialocl:VariableExp" referredVariable="o414"/>
+                </body>
+                <iterator xmi:id="o414" xsi:type="essentialocl:Variable" name="iter1" type="o375"/>
+                <source xmi:id="o415" xsi:type="essentialocl:PropertyCallExp" referredProperty="o380" type="o421">
+                  <source xmi:id="o416" xsi:type="essentialocl:VariableExp" referredVariable="o417" type="o378"/>
+                </source>
+              </source>
+            </value>
+          </content>
+        </body>
+      </content>
+    </body>
+    <context xmi:id="o417" xsi:type="qvtoperational:MappingParameter" kind="in" name="self" extent="o386" type="o378"/>
+    <result xmi:id="o418" xsi:type="qvtoperational:MappingParameter" kind="out" name="result" extent="o387" type="o382"/>
+  </ownedOperation>
+  <ownedType xmi:id="o419" xsi:type="qvtoperational:ModelType" conformanceKind="effective" name="BOOK" metamodel="o374"/>
+  <ownedType xmi:id="o420" xsi:type="qvtoperational:ModelType" conformanceKind="effective" name="PUB" metamodel="o381"/>
+  <ownedType xmi:id="o421" xsi:type="essentialocl:SequenceType" name="Sequence(Chapter)" elementType="o375"/>
+  <ownedType xmi:id="o422" xsi:type="essentialocl:SetType" name="Set(Publication)" elementType="o382"/>
+  <ownedType xmi:id="o423" xsi:type="essentialocl:SequenceType" name="Sequence(Integer)" elementType="o1"/>
+</qvtoperational:OperationalTransformation>
+<qvtrelation:RelationalTransformation xmi:id="o424" name="R_Book2Publication">
+  <modelParameter xmi:id="o425" name="bookModel" usedPackage="o374"/>
+  <modelParameter xmi:id="o426" name="pubModel" usedPackage="o381"/>
+  <rule xmi:id="o427" xsi:type="qvtrelation:Relation" name="book_to_publication">
+    <domain xmi:id="o428" xsi:type="qvtrelation:RelationDomain" rootVariable="o434" typedModel="o425">
+      <pattern xmi:id="o429">
+        <templateExpression xmi:id="o430" xsi:type="qvttemplate:ObjectTemplateExp" referredClass="o378"/>
+      </pattern>
+    </domain>
+    <domain xmi:id="o431" xsi:type="qvtrelation:RelationDomain" rootVariable="o435" typedModel="o426">
+      <pattern xmi:id="o432">
+        <templateExpression xmi:id="o433" xsi:type="qvttemplate:ObjectTemplateExp" referredClass="o382"/>
+      </pattern>
+    </domain>
+    <variable xmi:id="o434" xsi:type="essentialocl:Variable" name="self" type="o378"/>
+    <variable xmi:id="o435" xsi:type="essentialocl:Variable" name="result" type="o382"/>
+  </rule>
+</qvtrelation:RelationalTransformation>
+</xmi:XMI>

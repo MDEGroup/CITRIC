@@ -1,0 +1,14 @@
+To get the LoadDXF.java running please set the paths/file names 
+in the LoadDXF.java correctly.
+Also set the path/file name in DXF2Code.atl
+
+
+execution order:
+
+run LoadDXF with TransfoCommands
+run XML2DXF with output from LoadDXF 
+
+run XML2GeoTrans with cube.dxf
+
+run GeomerticalTransformation with output from XML2DXF and XML2GeoTrans
+run DXF2Code with output from GeomerticalTransformation

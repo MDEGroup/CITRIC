@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<MSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="MSProject">
+  <tasks name="s3" UID="2" predecessors="//@tasks.1"/>
+  <tasks name="s1" UID="3" predecessors="//@tasks.3"/>
+  <tasks name="s2" UID="4" predecessors="//@tasks.1"/>
+  <tasks name="Initial_State_1" UID="1"/>
+  <tasks name="Final_State_1" UID="5" predecessors="//@tasks.5"/>
+  <tasks name="s4" UID="6" predecessors="//@tasks.2 //@tasks.0"/>
+</MSProject>

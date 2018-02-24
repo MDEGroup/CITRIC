@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" startLine="1" endLine="22" name="make">
+  <children xsi:type="Text" startLine="2" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="2" endLine="2" name="comment">
+    <children xsi:type="Text" startLine="2" name="#text" value="Test d'un fichier makefile"/>
+  </children>
+  <children xsi:type="Text" startLine="3" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="3" endLine="3" name="macro">
+    <children xsi:type="Attribute" name="name" value="CC"/>
+    <children xsi:type="Attribute" name="value" value="gcc"/>
+  </children>
+  <children xsi:type="Text" startLine="4" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="4" endLine="4" name="macro">
+    <children xsi:type="Attribute" name="name" value="CFLAGS"/>
+    <children xsi:type="Attribute" name="value" value="-wall -ansi"/>
+  </children>
+  <children xsi:type="Text" startLine="5" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="5" endLine="5" name="macro">
+    <children xsi:type="Attribute" name="name" value="LDFLAGS"/>
+    <children xsi:type="Attribute" name="value" value="-wall -ansi"/>
+  </children>
+  <children xsi:type="Text" startLine="6" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="6" endLine="9" name="rule">
+    <children xsi:type="Attribute" name="name" value="hello"/>
+    <children xsi:type="Attribute" name="depends" value="hello.o main.o"/>
+    <children xsi:type="Text" startLine="7" name="#text" value="&#xA;&#x9;&#x9;"/>
+    <children xsi:type="Element" startLine="7" endLine="7" name="shellLine">
+      <children xsi:type="Text" startLine="7" name="#text" value="@$(CC) -o hello hello.o main.o $(LDFLAGS)"/>
+    </children>
+    <children xsi:type="Text" startLine="8" name="#text" value="&#xA;&#x9;&#x9;"/>
+    <children xsi:type="Element" startLine="8" endLine="8" name="shellLine">
+      <children xsi:type="Text" startLine="8" name="#text" value="skip"/>
+    </children>
+    <children xsi:type="Text" startLine="9" name="#text" value="&#xA;&#x9;"/>
+  </children>
+  <children xsi:type="Text" startLine="10" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="10" endLine="12" name="rule">
+    <children xsi:type="Attribute" name="name" value="hello.o"/>
+    <children xsi:type="Attribute" name="depends" value="hello.c"/>
+    <children xsi:type="Text" startLine="11" name="#text" value="&#xA;&#x9;&#x9;"/>
+    <children xsi:type="Element" startLine="11" endLine="11" name="shellLine">
+      <children xsi:type="Text" startLine="11" name="#text" value="@$(CC) -o hello.o -c hello.c $(CFLAGS)"/>
+    </children>
+    <children xsi:type="Text" startLine="12" name="#text" value="&#xA;&#x9;"/>
+  </children>
+  <children xsi:type="Text" startLine="13" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="13" endLine="15" name="rule">
+    <children xsi:type="Attribute" name="name" value="main.o"/>
+    <children xsi:type="Attribute" name="depends" value="main.c hello.h"/>
+    <children xsi:type="Text" startLine="14" name="#text" value="&#xA;&#x9;&#x9;"/>
+    <children xsi:type="Element" startLine="14" endLine="14" name="shellLine">
+      <children xsi:type="Text" startLine="14" name="#text" value="$(CC) -o main.o -c main.c $(CFLAGS)"/>
+    </children>
+    <children xsi:type="Text" startLine="15" name="#text" value="&#xA;&#x9;"/>
+  </children>
+  <children xsi:type="Text" startLine="16" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="16" endLine="18" name="rule">
+    <children xsi:type="Attribute" name="name" value="clean"/>
+    <children xsi:type="Text" startLine="17" name="#text" value="&#xA;&#x9;&#x9;"/>
+    <children xsi:type="Element" startLine="17" endLine="17" name="shellLine">
+      <children xsi:type="Text" startLine="17" name="#text" value="rm -rf *.o"/>
+    </children>
+    <children xsi:type="Text" startLine="18" name="#text" value="&#xA;&#x9;"/>
+  </children>
+  <children xsi:type="Text" startLine="19" name="#text" value="&#xA;&#x9;"/>
+  <children xsi:type="Element" startLine="19" endLine="21" name="rule">
+    <children xsi:type="Attribute" name="name" value="mrproper"/>
+    <children xsi:type="Attribute" name="depends" value="clean"/>
+    <children xsi:type="Text" startLine="20" name="#text" value="&#xA;&#x9;&#x9;"/>
+    <children xsi:type="Element" startLine="20" endLine="20" name="shellLine">
+      <children xsi:type="Text" startLine="20" name="#text" value="@rm -rf $(EXEC)"/>
+    </children>
+    <children xsi:type="Text" startLine="21" name="#text" value="&#xA;&#x9;"/>
+  </children>
+  <children xsi:type="Text" startLine="22" name="#text" value="&#xA;"/>
+</Root>

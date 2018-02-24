@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Outline xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Outline">
+  <nodes name="LocatedElement" icon="dummy">
+    <label label="LocatedElement"/>
+    <mapping mapString="LocatedElement"/>
+  </nodes>
+  <nodes name="ClonePairs" icon="dummy">
+    <label label="ClonePairs"/>
+    <mapping mapString="ClonePairs"/>
+  </nodes>
+  <nodes name="Summary" icon="dummy">
+    <label label="Summary"/>
+    <mapping mapString="Summary"/>
+  </nodes>
+  <nodes name="ClonePair" icon="dummy">
+    <label label="ClonePair"/>
+    <mapping mapString="ClonePair"/>
+  </nodes>
+  <nodes name="Clone" icon="dummy">
+    <label label="Clone"/>
+    <mapping mapString="Clone"/>
+  </nodes>
+</Outline>

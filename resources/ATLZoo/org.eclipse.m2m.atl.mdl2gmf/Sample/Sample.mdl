@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<org.eclipse.atl.mdl:MDLFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.eclipse.atl.mdl="http://www.eclipse.org/atl/mdl" location="">
+  <elements xsi:type="org.eclipse.atl.mdl:Object" type="Petal" name="Petal">
+    <properties name="Version">
+      <value xsi:type="org.eclipse.atl.mdl:IntegerVal" value="50"/>
+    </properties>
+  </elements>
+  <elements xsi:type="org.eclipse.atl.mdl:Object" type="Design" name="Logical View" secondName="">
+    <properties name="is_unit">
+      <value xsi:type="org.eclipse.atl.mdl:BooleanVal" value="true"/>
+    </properties>
+    <properties name="attributes">
+      <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+        <value xsi:type="org.eclipse.atl.mdl:List" location="" type="Attribute_Set">
+          <elements xsi:type="org.eclipse.atl.mdl:Object" type="Attribute">
+            <properties name="tool">
+              <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Java"/>
+            </properties>
+            <properties name="name">
+              <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="IDE"/>
+            </properties>
+            <properties name="value">
+              <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Internal Editor"/>
+            </properties>
+          </elements>
+        </value>
+      </value>
+    </properties>
+    <properties name="root_usecase_package">
+      <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+        <value xsi:type="org.eclipse.atl.mdl:Object" type="Class_Category" name="Use Case View">
+          <properties name="quid">
+            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="4690C0AF0002"/>
+          </properties>
+          <properties name="logical_models">
+            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+              <value xsi:type="org.eclipse.atl.mdl:List" type="unit_reference_list"/>
+            </value>
+          </properties>
+          <properties name="logical_presentations">
+            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+              <value xsi:type="org.eclipse.atl.mdl:List" type="unit_reference_list">
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="UseCaseDiagram" name="Main"/>
+              </value>
+            </value>
+          </properties>
+        </value>
+      </value>
+    </properties>
+    <properties name="root_category">
+      <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+        <value xsi:type="org.eclipse.atl.mdl:Object" type="Class_Category" name="Logical View">
+          <properties name="quid">
+            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+          </properties>
+          <properties name="logical_models">
+            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+              <value xsi:type="org.eclipse.atl.mdl:List" type="unit_reference_list">
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyClasseA">
+                  <properties name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="111"/>
+                  </properties>
+                  <properties name="class_attributes">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List" location="" type="class_attribute_list">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="id">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                          </properties>
+                          <properties name="type">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="Currency"/>
+                          </properties>
+                          <properties name="initV">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Dolar"/>
+                          </properties>
+                          <properties name="exportControl">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="Protected"/>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="Name">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                          </properties>
+                          <properties name="type">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="String"/>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="isAbstract">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                          </properties>
+                          <properties name="type">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="MyClasseC"/>
+                          </properties>
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="111"/>
+                          </properties>
+                          <properties name="static">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="TRUE"/>
+                          </properties>
+                          <properties name="derived">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="TRUE"/>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                  <properties location="" name="Operations">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List" type="Operations">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Operation" name="getId">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="23123124"/>
+                          </properties>
+                          <properties name="result">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Integer"/>
+                          </properties>
+                          <properties name="opExportControl">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Public"/>
+                          </properties>
+                          <properties name="concurrency">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="Guarded"/>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Operation" name="setId">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="23123124"/>
+                          </properties>
+                          <properties name="opExportControl">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Implementation"/>
+                          </properties>
+                          <properties name="parameters">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:List" type="Parameters">
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Parameter" name="id">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="2121"/>
+                                  </properties>
+                                  <properties name="type">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="String"/>
+                                  </properties>
+                                </elements>
+                              </value>
+                            </value>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                  <properties name="nestedClasses">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List" type="nestedClasses">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="NestedClass">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="11"/>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyClasseA">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="1112"/>
+                          </properties>
+                          <properties name="class_attributes">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:List" location="" type="class_attribute_list">
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="id">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                                  </properties>
+                                  <properties name="type">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="Currency"/>
+                                  </properties>
+                                  <properties name="initV">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Dolar"/>
+                                  </properties>
+                                  <properties name="exportControl">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="Protected"/>
+                                  </properties>
+                                </elements>
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="Name">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                                  </properties>
+                                  <properties name="type">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="String"/>
+                                  </properties>
+                                </elements>
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="isAbstract">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                                  </properties>
+                                  <properties name="type">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="MyClasseC"/>
+                                  </properties>
+                                  <properties name="quidu">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="111"/>
+                                  </properties>
+                                  <properties name="static">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="TRUE"/>
+                                  </properties>
+                                  <properties name="derived">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="TRUE"/>
+                                  </properties>
+                                </elements>
+                              </value>
+                            </value>
+                          </properties>
+                          <properties location="" name="Operations">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:List" type="Operations">
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Operation" name="getId">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="23123124"/>
+                                  </properties>
+                                  <properties name="result">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Integer"/>
+                                  </properties>
+                                  <properties name="opExportControl">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Public"/>
+                                  </properties>
+                                  <properties name="concurrency">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="Guarded"/>
+                                  </properties>
+                                </elements>
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Operation" name="setId">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="23123124"/>
+                                  </properties>
+                                  <properties name="opExportControl">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Implementation"/>
+                                  </properties>
+                                  <properties name="parameters">
+                                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                                      <value xsi:type="org.eclipse.atl.mdl:List" type="Parameters">
+                                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Parameter" name="id">
+                                          <properties name="quid">
+                                            <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="2121"/>
+                                          </properties>
+                                          <properties name="type">
+                                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="String"/>
+                                          </properties>
+                                        </elements>
+                                      </value>
+                                    </value>
+                                  </properties>
+                                </elements>
+                              </value>
+                            </value>
+                          </properties>
+                          <properties name="nestedClasses">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:List" type="nestedClasses">
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="NestedClass">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:IdVal" location="" id="11"/>
+                                  </properties>
+                                </elements>
+                              </value>
+                            </value>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyClasseB">
+                  <properties name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="22"/>
+                  </properties>
+                  <properties name="class_attributes">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List" location="" type="class_attribute_list">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="brlouk">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class_Category" name="MyPackageA">
+                  <properties name="logical_models">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List" type="unit_reference_list">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyClasseC">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="1112"/>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class_Category" name="PackageAA">
+                          <properties name="logical_models">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:List" type="unit_reference_list">
+                                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyInterfaceA">
+                                  <properties name="quid">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                                  </properties>
+                                  <properties name="stereotype">
+                                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Interface"/>
+                                  </properties>
+                                </elements>
+                              </value>
+                            </value>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                  <properties name="logical_presentations">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List" type="unit_reference_list">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="UseCaseDiagram" name="Main"/>
+                      </value>
+                    </value>
+                  </properties>
+                  <properties location="" name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="1222"/>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyClasseD">
+                  <properties name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                  </properties>
+                  <properties name="class_attributes">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List" location="" type="class_attribute_list">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="ClassAttribute" name="brlouk">
+                          <properties name="quid">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="4690C0AF0001"/>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                  <properties name="realized_interfaces">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Realize_Relationship">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="22"/>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Realize_Relationship">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" value="111"/>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                  <properties name="used_nodes">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Uses_Relationship" secondName="">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="22"/>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="Association" name="1">
+                  <properties name="roles">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Role" name="a1">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="111"/>
+                          </properties>
+                          <properties name="is_navigable">
+                            <value xsi:type="org.eclipse.atl.mdl:BooleanVal" value="true"/>
+                          </properties>
+                          <properties name="client_cardinality">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:ValueElement">
+                                <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="*"/>
+                              </value>
+                            </value>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Role" name="b1">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="22"/>
+                          </properties>
+                          <properties name="is_aggregate">
+                            <value xsi:type="org.eclipse.atl.mdl:BooleanVal" value="true"/>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                  <properties name="AssociationClass">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="sd"/>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" location="" type="Association" name="2">
+                  <properties name="roles">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Role" name="a2">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="111"/>
+                          </properties>
+                          <properties name="is_navigable">
+                            <value xsi:type="org.eclipse.atl.mdl:BooleanVal" value="true"/>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="Role" name="b2">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="22"/>
+                          </properties>
+                          <properties name="is_navigable">
+                            <value xsi:type="org.eclipse.atl.mdl:BooleanVal" value="true"/>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyInterfaceA">
+                  <properties name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="147"/>
+                  </properties>
+                  <properties name="stereotype">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="Interface"/>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="Class" name="MyEnumeration">
+                  <properties name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="158"/>
+                  </properties>
+                  <properties name="stereotype">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" value="enumeration"/>
+                  </properties>
+                </elements>
+              </value>
+            </value>
+          </properties>
+          <properties name="logical_presentations">
+            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+              <value xsi:type="org.eclipse.atl.mdl:List" type="unit_reference_list">
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="ClassDiagram" name="ClassDiagram1">
+                  <properties name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="0001"/>
+                  </properties>
+                  <properties name="items">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="ClassView" name="Class" secondName="Logical View::MyClasseA">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="111"/>
+                          </properties>
+                          <properties location="" name="location">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:Position" x="313" y="141"/>
+                            </value>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="ClassView" name="Interface" secondName="Logical View::MyClasseA">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="147"/>
+                          </properties>
+                          <properties location="" name="location">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:Position" x="512" y="200"/>
+                            </value>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="ClassView" name="Enumeration" secondName="Logical View::MyClasseA">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="158"/>
+                          </properties>
+                          <properties location="" name="location">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:Position" x="100" y="200"/>
+                            </value>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="CategoryView" name="Package" secondName="Logical View::MyClasseA">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="1222"/>
+                          </properties>
+                          <properties location="" name="location">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:Position" x="100" y="400"/>
+                            </value>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                </elements>
+                <elements xsi:type="org.eclipse.atl.mdl:Object" type="ClassDiagram" name="ClassDiagram2">
+                  <properties name="quid">
+                    <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="0002"/>
+                  </properties>
+                  <properties name="items">
+                    <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                      <value xsi:type="org.eclipse.atl.mdl:List">
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="ClassView" name="Interface" secondName="Logical View::MyClasseA">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="147"/>
+                          </properties>
+                          <properties location="" name="location">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:Position" x="512" y="200"/>
+                            </value>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="ClassView" name="Enumeration" secondName="Logical View::MyClasseA">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="158"/>
+                          </properties>
+                          <properties location="" name="location">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:Position" x="100" y="200"/>
+                            </value>
+                          </properties>
+                        </elements>
+                        <elements xsi:type="org.eclipse.atl.mdl:Object" type="CategoryView" name="Package" secondName="Logical View::MyClasseA">
+                          <properties name="quidu">
+                            <value xsi:type="org.eclipse.atl.mdl:StringVal" location="" value="1222"/>
+                          </properties>
+                          <properties location="" name="location">
+                            <value xsi:type="org.eclipse.atl.mdl:ElementVal">
+                              <value xsi:type="org.eclipse.atl.mdl:Position" x="100" y="400"/>
+                            </value>
+                          </properties>
+                        </elements>
+                      </value>
+                    </value>
+                  </properties>
+                </elements>
+              </value>
+            </value>
+          </properties>
+        </value>
+      </value>
+    </properties>
+  </elements>
+</org.eclipse.atl.mdl:MDLFile>

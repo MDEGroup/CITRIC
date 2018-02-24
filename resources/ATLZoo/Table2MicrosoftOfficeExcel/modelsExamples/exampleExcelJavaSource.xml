@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+  <Worksheet ss:Name="Java source code Info">
+    <Table>
+      <Column ss:Width="150.0"/>
+      <Column ss:Width="150.0"/>
+      <Column ss:Width="150.0"/>
+      <Column ss:Width="150.0"/>
+      <Column ss:Width="150.0"/>
+      <Row>
+        <Cell>
+          <Data ss:Type="String"></Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">FirstClass.fc_m1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">FirstClass.fc_m2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">SecondClass.sc_m1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">SecondClass.sc_m2</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">FirstClass.fc_m1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">FirstClass.fc_m2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">2.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">SecondClass.sc_m1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">SecondClass.sc_m2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">1.0</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="Number">0.0</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

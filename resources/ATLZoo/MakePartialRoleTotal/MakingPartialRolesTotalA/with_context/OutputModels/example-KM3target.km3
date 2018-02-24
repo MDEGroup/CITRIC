@@ -1,0 +1,30 @@
+package example {
+
+ class A {
+  reference BTotalOrder : ATotalOrder;
+  reference CTotalOrder : ATotalOrder;
+  attribute a : String;
+ }
+
+ class B {
+  reference c[*] : C oppositeOf b;
+ }
+
+ class C {
+  reference b[*] : B oppositeOf c;
+ }
+
+ abstract class ATotalOrder extends B, C {
+  reference COppositeTotalOrder : A oppositeOf CTotalOrder;
+  reference BOppositeTotalOrder : A oppositeOf BTotalOrder;
+ }
+}
+
+package PrimitiveTypes {
+
+ datatype Boolean;
+
+ datatype Integer;
+
+ datatype String;
+}

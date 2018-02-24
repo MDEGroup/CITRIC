@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Workbook xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="SpreadsheetMLSimplified">
+  <wb_worksheets name="Java source code Info">
+    <ws_table>
+      <t_cols width="150.0"/>
+      <t_cols width="150.0"/>
+      <t_cols width="150.0"/>
+      <t_cols width="150.0"/>
+      <t_cols width="150.0"/>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value=""/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="FirstClass.fc_m1"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="FirstClass.fc_m2"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="SecondClass.sc_m1"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="SecondClass.sc_m2"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="FirstClass.fc_m1"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="FirstClass.fc_m2"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="2.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="SecondClass.sc_m1"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="1.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+      <t_rows>
+        <r_cells>
+          <c_data>
+            <value xsi:type="StringValue" value="SecondClass.sc_m2"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="1.0"/>
+          </c_data>
+        </r_cells>
+        <r_cells>
+          <c_data>
+            <value xsi:type="NumberValue" value="0.0"/>
+          </c_data>
+        </r_cells>
+      </t_rows>
+    </ws_table>
+  </wb_worksheets>
+</Workbook>

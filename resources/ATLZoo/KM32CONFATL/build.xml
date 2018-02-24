@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="KM32CONFATL" default="all" >
+	
+	<property name="sourcePath" value="models" />
+	<property name="archModel" value="architectureModel" />
+	<property name="implModel" value="implementationModel" />	
+	<property name="metaModel" value="MADL" />	
+	<property name="targetPath" value="target" />
+	<property name="targetPathDOT" value="${ant.project.name}/target" />
+
+	<target name="all" depends="APPLYATL,SOURCEMODELS2DOT,figs" />
+	
+	<target name="KM32CONFATL">
+		<am3.loadModel modelHandler="EMF" name="KM3" metamodel="MOF" path="metamodels/KM3.ecore" />
+		<am3.loadModel modelHandler="EMF" name="ATL" metamodel="MOF" path="metamodels/ATL-0.2.ecore" />
+		<am3.loadModel modelHandler="EMF" name="${metaModel}KM3" metamodel="KM3" path="metamodels/${metaModel}.km3">
+			<injector name="ebnf">
+				<param name="name" value="KM3" />
+			</injector>
+		</am3.loadModel>		
+		<am3.atl path="transformations/KM32CONFATL.atl" allowInterModelReferences="false">
+			<inModel name="IN" model="${metaModel}KM3" />
+			<inModel name="KM3" model="KM3" />
+			<inModel name="ATL" model="ATL" />
+			<outModel name="OUT" model="km32confatl" metamodel="ATL" />
+		</am3.atl>
+	</target>
+	
+	<target name="SAVEATL" depends="KM32CONFATL">
+		<am3.loadModel modelHandler="EMF" name="TCS" metamodel="MOF" path="metamodels/TCS.ecore" />
+		<am3.loadModel modelHandler="EMF" name="ATL-TCS" metamodel="TCS" path="metamodels/ATL-0.2-TCS.ecore" />
+		<am3.saveModel model="km32confatl" path="${targetPath}/conf4${metaModel}.atl">
+			<extractor name="ebnf">
+	        	<param name="format" value="ATL-TCS"/>
+				<param name="indentString" value=" "/>
+				<param name="serializeComments" value="false"/>
+			</extractor>
+		</am3.saveModel>
+	</target>
+
+	<target name="APPLYATL" depends="SAVEATL">
+		<am3.loadModel modelHandler="EMF" name="MOF" metamodel="MOF" nsUri="http://www.eclipse.org/emf/2002/Ecore" />
+		<am3.atl path="transformations/KM32EMF.atl" allowInterModelReferences="false">
+			<inModel name="IN" model="${metaModel}KM3" />
+			<inModel name="KM3" model="KM3" />
+			<inModel name="MOF" model="MOF" />
+			<outModel name="OUT" model="${metaModel}TMP" metamodel="MOF" />
+		</am3.atl>
+		<am3.saveModel model="${metaModel}TMP" path="${targetPath}/${metaModel}.ecore" />
+
+		<am3.loadModel modelHandler="EMF" name="${metaModel}" metamodel="MOF" path="${targetPath}/${metaModel}.ecore" />
+		<am3.loadModel modelHandler="EMF" name="${implModel}" metamodel="${metaModel}" path="${sourcePath}/${implModel}.ecore" />
+		<am3.loadModel modelHandler="EMF" name="${archModel}" metamodel="${metaModel}" path="${sourcePath}/${archModel}.ecore" />
+		<am3.loadModel modelHandler="EMF" name="DOT" metamodel="MOF" path="metamodels/DOT.ecore" />
+
+		<echo level="info">
+			Waiting for at most 30 s. for conf4${metaModel}.atl to be build ...
+
+			If it does not build, check that "Project->Build Automatically" is enabled ...
+		</echo>
+		<waitfor maxwait="30" maxwaitunit="second">
+		        <available file="${targetPath}/conf4${metaModel}.asm"/>
+		</waitfor>
+		
+		<am3.atl path="${targetPath}/conf4${metaModel}.atl" allowInterModelReferences="false">
+			<inModel name="IMPL" model="${implModel}" />
+			<inModel name="ARCH" model="${archModel}" />
+			<inModel name="${metaModel}" model="${metaModel}" />
+			<outModel name="OUT" model="conf4${metaModel}" metamodel="${metaModel}" />
+		</am3.atl>
+		
+		<am3.saveModel model="conf4${metaModel}" path="${targetPath}/conf4${metaModel}.ecore" />
+		<am3.atl path="transformations/${metaModel}2DOT.atl" allowInterModelReferences="false">
+			<inModel name="IN" model="conf4${metaModel}" />
+			<inModel name="${metaModel}" model="${metaModel}" />
+			<inModel name="DOT" model="DOT" />
+			<outModel name="OUT" model="conf4${metaModel}2dot" metamodel="DOT" />
+		</am3.atl>
+		<am3.saveModel model="conf4${metaModel}2dot" path="${targetPathDOT}/conf4${metaModel}2dot.dot">
+			<extractor name="atl">
+				<param name="queryPath" value="transformations/DOT2Text.atl" />
+			</extractor>
+		</am3.saveModel>
+	</target>
+	
+	<target name="SOURCEMODELS2DOT" depends="APPLYATL">
+		<am3.atl path="transformations/${metaModel}2DOT.atl" allowInterModelReferences="false">
+			<inModel name="IN" model="${archModel}" />
+			<inModel name="${metaModel}" model="${metaModel}" />
+			<inModel name="DOT" model="DOT" />
+			<outModel name="OUT" model="${archModel}2dot" metamodel="DOT" />
+		</am3.atl>
+		<am3.saveModel model="${archModel}2dot" path="${targetPathDOT}/${archModel}2dot.dot">
+			<extractor name="atl">
+				<param name="queryPath" value="transformations/DOT2Text.atl" />
+			</extractor>
+		</am3.saveModel>
+		<am3.atl path="transformations/${metaModel}2DOT.atl" allowInterModelReferences="false">
+			<inModel name="IN" model="${implModel}" />
+			<inModel name="${metaModel}" model="${metaModel}" />
+			<inModel name="DOT" model="DOT" />
+			<outModel name="OUT" model="${implModel}2dot" metamodel="DOT" />
+		</am3.atl>
+		<am3.saveModel model="${implModel}2dot" path="${targetPathDOT}/${implModel}2dot.dot">
+			<extractor name="atl">
+				<param name="queryPath" value="transformations/DOT2Text.atl" />
+			</extractor>
+		</am3.saveModel>
+	</target>
+	
+		
+	<target name="figs">
+		<apply executable="/usr/bin/dot" dest="." parallel="false">
+			<arg value="-Tps" />
+
+			<arg value="-Gratio=compress" />
+			<arg value="-Gnodesep=0.5" />
+			<arg value="-Granksep=0.5" />			
+			<srcfile />
+			<arg value="-o" />
+			<targetfile />
+			<fileset dir="${targetPath}/" includes="*.dot" />
+			<mapper type="glob" from="*.dot" to="${targetPath}/*.ps" />
+		</apply>
+	</target>
+
+</project>

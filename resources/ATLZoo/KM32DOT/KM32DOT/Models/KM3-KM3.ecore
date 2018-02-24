@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="KM3" location="1:1-83:2">
+  <contents location="1:1-5:2" name="PrimitiveTypes">
+    <contents xsi:type="DataType" location="2:9-2:26" name="Boolean"/>
+    <contents xsi:type="DataType" location="3:9-3:26" name="Integer"/>
+    <contents xsi:type="DataType" location="4:9-4:25" name="String"/>
+  </contents>
+  <contents location="7:1-83:2" name="KM3">
+    <contents xsi:type="Class" location="9:9-11:10" name="LocatedElement" isAbstract="true">
+      <structuralFeatures xsi:type="Attribute" location="10:17-10:45" name="location" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.2"/>
+    </contents>
+    <contents xsi:type="Class" location="13:9-16:10" name="ModelElement" isAbstract="true" supertypes="//@contents.1/@contents.0">
+      <structuralFeatures xsi:type="Attribute" location="14:17-14:41" name="name" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.2"/>
+      <structuralFeatures xsi:type="Reference" location="15:17-15:67" name="package" lower="1" upper="1" isOrdered="false" type="//@contents.1/@contents.14" isContainer="false" opposite="//@contents.1/@contents.14/@structuralFeatures.0"/>
+    </contents>
+    <contents xsi:type="Class" location="18:9-19:10" name="Classifier" isAbstract="false" supertypes="//@contents.1/@contents.1"/>
+    <contents xsi:type="Class" location="21:9-22:10" name="DataType" isAbstract="false" supertypes="//@contents.1/@contents.2"/>
+    <contents xsi:type="Class" location="24:9-26:10" name="Enumeration" isAbstract="false" supertypes="//@contents.1/@contents.2">
+      <structuralFeatures xsi:type="Reference" location="25:17-25:87" name="literals" lower="0" upper="-1" isOrdered="true" type="//@contents.1/@contents.5" isContainer="true" opposite="//@contents.1/@contents.5/@structuralFeatures.0"/>
+    </contents>
+    <contents xsi:type="Class" location="28:9-30:10" name="EnumLiteral" isAbstract="false" supertypes="//@contents.1/@contents.1">
+      <structuralFeatures xsi:type="Reference" location="29:17-29:66" name="enum" lower="1" upper="1" isOrdered="false" type="//@contents.1/@contents.4" isContainer="false" opposite="//@contents.1/@contents.4/@structuralFeatures.0"/>
+    </contents>
+    <contents xsi:type="Class" location="32:9-33:10" name="TemplateParameter" isAbstract="false" supertypes="//@contents.1/@contents.2"/>
+    <contents xsi:type="Class" location="35:9-41:10" name="Class" isAbstract="false" supertypes="//@contents.1/@contents.2">
+      <structuralFeatures xsi:type="Reference" location="36:17-36:79" name="parameters" lower="0" upper="-1" isOrdered="true" type="//@contents.1/@contents.6" isContainer="true"/>
+      <structuralFeatures xsi:type="Attribute" location="37:17-37:48" name="isAbstract" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="Reference" location="38:17-38:49" name="supertypes" lower="0" upper="-1" isOrdered="false" type="//@contents.1/@contents.7" isContainer="false"/>
+      <structuralFeatures xsi:type="Reference" location="39:17-39:104" name="structuralFeatures" lower="0" upper="-1" isOrdered="true" type="//@contents.1/@contents.9" isContainer="true" opposite="//@contents.1/@contents.9/@structuralFeatures.0"/>
+      <structuralFeatures xsi:type="Reference" location="40:17-40:88" name="operations" lower="0" upper="-1" isOrdered="true" type="//@contents.1/@contents.12" isContainer="true" opposite="//@contents.1/@contents.12/@structuralFeatures.0"/>
+    </contents>
+    <contents xsi:type="Class" location="43:9-49:10" name="TypedElement" isAbstract="false" supertypes="//@contents.1/@contents.1">
+      <structuralFeatures xsi:type="Attribute" location="44:17-44:43" name="lower" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.1"/>
+      <structuralFeatures xsi:type="Attribute" location="45:17-45:43" name="upper" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.1"/>
+      <structuralFeatures xsi:type="Attribute" location="46:17-46:47" name="isOrdered" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="Attribute" location="47:17-47:46" name="isUnique" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="Reference" location="48:17-48:45" name="type" lower="1" upper="1" isOrdered="false" type="//@contents.1/@contents.2" isContainer="false"/>
+    </contents>
+    <contents xsi:type="Class" location="51:9-55:10" name="StructuralFeature" isAbstract="false" supertypes="//@contents.1/@contents.8">
+      <structuralFeatures xsi:type="Reference" location="52:17-52:71" name="owner" lower="1" upper="1" isOrdered="false" type="//@contents.1/@contents.7" isContainer="false" opposite="//@contents.1/@contents.7/@structuralFeatures.3"/>
+      <structuralFeatures xsi:type="Reference" location="53:17-53:82" name="subsetOf" lower="0" upper="-1" isOrdered="false" type="//@contents.1/@contents.9" isContainer="false" opposite="//@contents.1/@contents.9/@structuralFeatures.2"/>
+      <structuralFeatures xsi:type="Reference" location="54:17-54:82" name="derivedFrom" lower="0" upper="-1" isOrdered="false" type="//@contents.1/@contents.9" isContainer="false" opposite="//@contents.1/@contents.9/@structuralFeatures.1"/>
+    </contents>
+    <contents xsi:type="Class" location="57:9-58:10" name="Attribute" isAbstract="false" supertypes="//@contents.1/@contents.9"/>
+    <contents xsi:type="Class" location="60:9-63:10" name="Reference" isAbstract="false" supertypes="//@contents.1/@contents.9">
+      <structuralFeatures xsi:type="Attribute" location="61:17-61:49" name="isContainer" lower="1" upper="1" isOrdered="false" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="Reference" location="62:17-62:53" name="opposite" lower="0" upper="1" isOrdered="false" type="//@contents.1/@contents.11" isContainer="false"/>
+    </contents>
+    <contents xsi:type="Class" location="65:9-68:10" name="Operation" isAbstract="false" supertypes="//@contents.1/@contents.8">
+      <structuralFeatures xsi:type="Reference" location="66:17-66:63" name="owner" lower="1" upper="1" isOrdered="false" type="//@contents.1/@contents.7" isContainer="false" opposite="//@contents.1/@contents.7/@structuralFeatures.4"/>
+      <structuralFeatures xsi:type="Reference" location="67:17-67:88" name="parameters" lower="0" upper="-1" isOrdered="true" type="//@contents.1/@contents.13" isContainer="true" opposite="//@contents.1/@contents.13/@structuralFeatures.0"/>
+    </contents>
+    <contents xsi:type="Class" location="70:9-72:10" name="Parameter" isAbstract="false" supertypes="//@contents.1/@contents.8">
+      <structuralFeatures xsi:type="Reference" location="71:17-71:67" name="owner" lower="1" upper="1" isOrdered="false" type="//@contents.1/@contents.12" isContainer="false" opposite="//@contents.1/@contents.12/@structuralFeatures.1"/>
+    </contents>
+    <contents xsi:type="Class" location="74:9-77:10" name="Package" isAbstract="false" supertypes="//@contents.1/@contents.1">
+      <structuralFeatures xsi:type="Reference" location="75:17-75:93" name="contents" lower="0" upper="-1" isOrdered="true" type="//@contents.1/@contents.1" isContainer="true" opposite="//@contents.1/@contents.1/@structuralFeatures.1"/>
+      <structuralFeatures xsi:type="Reference" location="76:17-76:69" name="metamodel" lower="1" upper="1" isOrdered="false" type="//@contents.1/@contents.15" isContainer="false" opposite="//@contents.1/@contents.15/@structuralFeatures.0"/>
+    </contents>
+    <contents xsi:type="Class" location="79:9-81:10" name="Metamodel" isAbstract="false" supertypes="//@contents.1/@contents.0">
+      <structuralFeatures xsi:type="Reference" location="80:17-80:88" name="contents" lower="0" upper="-1" isOrdered="true" type="//@contents.1/@contents.14" isContainer="true" opposite="//@contents.1/@contents.14/@structuralFeatures.1"/>
+    </contents>
+  </contents>
+</Metamodel>

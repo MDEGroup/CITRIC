@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="SVG">
+  <Svg namespace="http://www.w3.org/2000/svg" version="1.0">
+    <position xsi:type="AbsoluteCoord" x="20.0" y="67.0"/>
+    <size width="632.3257" height="420.0"/>
+    <children xsi:type="Defs">
+      <groupContent xsi:type="Marker" fill="none" viewBox="0 0 10 10" identifier="Association" refX="10.0" refY="5.0" markerWidth="11.0" markerHeight="11.0" orient="auto">
+        <drawing xsi:type="G">
+          <groupContent xsi:type="Path" stroke="black" d="M 0 0 L 10 5 L 0 10"/>
+        </drawing>
+      </groupContent>
+      <groupContent xsi:type="Marker" fill="white" viewBox="0 0 10 10" identifier="Generalization" refX="10.0" refY="5.0" markerWidth="11.0" markerHeight="11.0" orient="auto">
+        <drawing xsi:type="G">
+          <groupContent xsi:type="Path" stroke="black" d="M 0 0 L 10 5 L 0 10"/>
+          <groupContent xsi:type="Path" stroke="black" d="M 0.05 0.2 L 0.2 9.95"/>
+        </drawing>
+      </groupContent>
+      <groupContent xsi:type="Marker" fill="none" viewBox="0 0 10 10" identifier="Dependency" refX="10.0" refY="5.0" markerWidth="11.0" markerHeight="11.0" orient="auto">
+        <drawing xsi:type="G">
+          <groupContent xsi:type="Path" stroke="black" d="M 0 0 L 10 5 L 0 10"/>
+        </drawing>
+      </groupContent>
+      <groupContent xsi:type="Marker" fill="white" viewBox="0 0 10 10" identifier="Aggregation" refX="10.0" refY="5.0" markerWidth="11.0" markerHeight="11.0" orient="180">
+        <drawing xsi:type="G">
+          <groupContent xsi:type="Path" stroke="black" d="M 0 5 L 5 10 L 10 5 L 5 0 L 0 5"/>
+        </drawing>
+      </groupContent>
+      <groupContent xsi:type="Marker" fill="black" viewBox="0 0 10 10" identifier="Composition" refX="10.0" refY="5.0" markerWidth="11.0" markerHeight="11.0" orient="180">
+        <drawing xsi:type="G">
+          <groupContent xsi:type="Path" stroke="black" d="M 0 5 L 5 10 L 10 5 L 5 0 L 0 5"/>
+        </drawing>
+      </groupContent>
+    </children>
+    <children xsi:type="G" name="Class_Class1">
+      <groupContent xsi:type="Rect" fill="white" stroke="black">
+        <position xsi:type="AbsoluteCoord" x="150.0" y="137.0"/>
+        <size width="150.4004" height="70.0"/>
+      </groupContent>
+      <groupContent xsi:type="Line" stroke="black" between="/1 /2"/>
+      <groupContent xsi:type="Text" attribute="/3 /4" fill="black" fontSize="11px" content="Class1">
+        <position xsi:type="AbsoluteCoord" x="206.4121" y="149.0"/>
+      </groupContent>
+      <groupContent xsi:type="G" name="Attributes of Class_Class1">
+        <groupContent xsi:type="Text" fill="black" fontSize="11px" content="-attribute1:int">
+          <position xsi:type="AbsoluteCoord" x="155.0" y="168.0"/>
+        </groupContent>
+      </groupContent>
+      <groupContent xsi:type="Line" stroke="black" between="/5 /6"/>
+      <groupContent xsi:type="G" name="Operations of Class_Class1">
+        <groupContent xsi:type="Text" attribute="/22" fill="black" fontSize="11px" content="+operation1(p1:int):float[]">
+          <position xsi:type="AbsoluteCoord" x="155.0" y="193.0"/>
+        </groupContent>
+      </groupContent>
+    </children>
+    <children xsi:type="G" name="Class_Class2">
+      <groupContent xsi:type="Rect" fill="white" stroke="black">
+        <position xsi:type="AbsoluteCoord" x="490.0" y="137.0"/>
+        <size width="232.3257" height="70.0"/>
+      </groupContent>
+      <groupContent xsi:type="Line" stroke="black" between="/7 /8"/>
+      <groupContent xsi:type="Text" attribute="/9 /10" fill="black" fontSize="11px" content="Class2">
+        <position xsi:type="AbsoluteCoord" x="587.3748" y="149.0"/>
+      </groupContent>
+      <groupContent xsi:type="G" name="Attributes of Class_Class2">
+        <groupContent xsi:type="Text" fill="black" fontSize="11px" content="~attribute2:int1..*= 42">
+          <position xsi:type="AbsoluteCoord" x="495.0" y="168.0"/>
+        </groupContent>
+      </groupContent>
+      <groupContent xsi:type="Line" stroke="black" between="/11 /12"/>
+      <groupContent xsi:type="G" name="Operations of Class_Class2">
+        <groupContent xsi:type="Text" attribute="/24" fill="black" fontSize="11px" content="#operation_2(p2:short[],p3:int):void">
+          <position xsi:type="AbsoluteCoord" x="495.0" y="193.0"/>
+        </groupContent>
+      </groupContent>
+    </children>
+    <children xsi:type="G" name="Class_Class3">
+      <groupContent xsi:type="Rect" fill="white" stroke="black">
+        <position xsi:type="AbsoluteCoord" x="150.0" y="307.0"/>
+        <size width="100.0" height="70.0"/>
+      </groupContent>
+      <groupContent xsi:type="Line" stroke="black" between="/13 /14"/>
+      <groupContent xsi:type="Text" attribute="/15 /16" fill="black" fontSize="11px" content="Class3">
+        <position xsi:type="AbsoluteCoord" x="181.2119" y="319.0"/>
+      </groupContent>
+      <groupContent xsi:type="G" name="Attributes of Class_Class3"/>
+      <groupContent xsi:type="Line" stroke="black" between="/17 /18"/>
+      <groupContent xsi:type="G" name="Operations of Class_Class3"/>
+    </children>
+    <children xsi:type="G" name="Class_Interface1">
+      <groupContent xsi:type="Rect" fill="white" stroke="black">
+        <position xsi:type="AbsoluteCoord" x="540.0" y="17.0"/>
+        <size width="120.4619" height="60.0"/>
+      </groupContent>
+      <groupContent xsi:type="Line" stroke="black" between="/19 /20"/>
+      <groupContent xsi:type="Text" attribute="/21" fill="black" fontSize="11px" content="Interface1">
+        <position xsi:type="AbsoluteCoord" x="571.552" y="29.0"/>
+      </groupContent>
+      <groupContent xsi:type="G" name="Operations of Class_Interface1">
+        <groupContent xsi:type="Text" attribute="/23" fill="black" fontSize="11px" content="+operation3():void">
+          <position xsi:type="AbsoluteCoord" x="545.0" y="47.0"/>
+        </groupContent>
+      </groupContent>
+    </children>
+    <children xsi:type="G">
+      <groupContent xsi:type="Polyline" fill="white" stroke="black" markerEnd="none" markerStart="url(#Composition)">
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="250.0" y="337.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="590.0" y="337.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="590.0" y="207.0"/>
+        </waypoints>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+    </children>
+    <children xsi:type="G" name="Association1">
+      <groupContent xsi:type="Polyline" fill="white" stroke="black" markerEnd="url(#Association)" markerStart="none">
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="300.4004" y="172.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="490.0" y="172.0"/>
+        </waypoints>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="Association1">
+        <position xsi:type="AbsoluteCoord" x="361.0589" y="182.0"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="1..*">
+        <position xsi:type="AbsoluteCoord" x="313.3908" y="164.5"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="0..1">
+        <position xsi:type="AbsoluteCoord" x="456.1375" y="193.5"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="theEnd">
+        <position xsi:type="AbsoluteCoord" x="313.3908" y="190.7495"/>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="theOtherEnd">
+        <position xsi:type="AbsoluteCoord" x="410.1126" y="169.125"/>
+      </groupContent>
+    </children>
+    <children xsi:type="G">
+      <groupContent xsi:type="Polyline" fill="white" stroke="black" strokeDashArray="5,5" markerEnd="url(#Dependency)" markerStart="none">
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="590.0" y="137.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="590.0" y="77.0"/>
+        </waypoints>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+    </children>
+    <children xsi:type="G">
+      <groupContent xsi:type="Polyline" fill="white" stroke="black" strokeDashArray="5,5" markerEnd="url(#Dependency)" markerStart="none">
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="200.0" y="137.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="200.0" y="47.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="540.0" y="47.0"/>
+        </waypoints>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+    </children>
+    <children xsi:type="G">
+      <groupContent xsi:type="Polyline" fill="white" stroke="black" markerEnd="url(#Generalization)" markerStart="none">
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="200.0" y="307.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="200.0" y="207.0"/>
+        </waypoints>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="">
+        <position xsi:type="AbsoluteCoord" x="0.0" y="0.0"/>
+      </groupContent>
+    </children>
+    <children xsi:type="G">
+      <groupContent xsi:type="Polyline" fill="white" stroke="black" strokeDashArray="5,5" markerEnd="url(#Generalization)" markerStart="none">
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="590.0" y="137.0"/>
+        </waypoints>
+        <waypoints>
+          <position xsi:type="AbsoluteCoord" x="590.0" y="77.0"/>
+        </waypoints>
+      </groupContent>
+      <groupContent xsi:type="Text" fill="black" fontSize="10px" content="&amp;#171; realize &amp;#187;">
+        <position xsi:type="AbsoluteCoord" x="529.0142" y="100.0"/>
+      </groupContent>
+    </children>
+  </Svg>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="150.0" y="152.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="300.4004" y="152.0"/>
+  </Point>
+  <FontWeight attOwner="/0/@children.1/@groupContent.2" bold="true"/>
+  <FontStyle attOwner="/0/@children.1/@groupContent.2" italic="false"/>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="150.0" y="179.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="300.4004" y="179.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="490.0" y="152.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="722.3257" y="152.0"/>
+  </Point>
+  <FontWeight attOwner="/0/@children.2/@groupContent.2" bold="true"/>
+  <FontStyle attOwner="/0/@children.2/@groupContent.2" italic="false"/>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="490.0" y="179.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="722.3257" y="179.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="150.0" y="322.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="250.0" y="322.0"/>
+  </Point>
+  <FontWeight attOwner="/0/@children.3/@groupContent.2" bold="true"/>
+  <FontStyle attOwner="/0/@children.3/@groupContent.2" italic="false"/>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="150.0" y="349.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="250.0" y="349.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="540.0" y="32.0"/>
+  </Point>
+  <Point>
+    <position xsi:type="AbsoluteCoord" x="660.4619" y="32.0"/>
+  </Point>
+  <FontWeight attOwner="/0/@children.4/@groupContent.2" bold="true"/>
+  <FontStyle attOwner="/0/@children.1/@groupContent.5/@groupContent.0" italic="false"/>
+  <FontStyle attOwner="/0/@children.4/@groupContent.3/@groupContent.0" italic="true"/>
+  <FontStyle attOwner="/0/@children.2/@groupContent.5/@groupContent.0" italic="false"/>
+</xmi:XMI>

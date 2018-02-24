@@ -1,0 +1,92 @@
+-- @name 		Measure
+-- @version 	1.0
+-- @domains 	measurement data, metrics, metamodel
+-- @authors 	Eric Vepa (eric.vepa <at> gmail.com)
+-- @date 		2006/08/06
+-- @description This metamodel is a representation of measurement data on metamodels.
+
+--@begin package Measure
+package Measure {
+	--@begin abstract class MeasureSet
+	--@comments	defines an abstract set of measures on a named model element of a certain type
+	abstract class MeasureSet {
+	   	attribute elementName : String;
+	   	attribute elementType : ElementType;
+		reference measures [*] ordered container : Measure oppositeOf measureSet;
+	}
+	--@end abstract class MeasureSet
+	
+	--@begin enumeration ElementType
+	--@comments	defines the possible types for a model element
+	enumeration ElementType {
+	   	literal Attribute;
+	   	literal Class;
+	   	literal Package;
+	   	literal Metamodel;
+	}
+	--@end enumeration ElementType
+	
+	--@begin class MetamodelMeasureSet
+	--@comments	defines a set of measures on a metamodel
+	class MetamodelMeasureSet extends MeasureSet {
+		reference pkgMeasureSets [*] ordered container : PackageMeasureSet oppositeOf parentMeasureSet;
+	}
+	--@end class MetamodelMeasureSet
+	
+	--@begin class PackageMeasureSet
+	--@comments	defines a set of measures on a package
+	class PackageMeasureSet extends MeasureSet {
+		reference classMeasureSets [*] ordered container : ClassMeasureSet oppositeOf parentMeasureSet;
+		reference parentMeasureSet : MetamodelMeasureSet oppositeOf pkgMeasureSets;
+	}
+	--@end class PackageMeasureSet
+	
+	--@begin class ClassMeasureSet
+	--@comments	defines a set of measures on a class
+	class ClassMeasureSet extends MeasureSet {
+		reference attrMeasureSets [*] ordered container : AttributeMeasureSet oppositeOf parentMeasureSet;
+		reference parentMeasureSet : PackageMeasureSet oppositeOf classMeasureSets;
+	}
+	--@end class ClassMeasureSet
+	
+	--@begin class AttributeMeasureSet
+	--@comments	defines a set of measures on an attribute
+	class AttributeMeasureSet extends MeasureSet {
+		reference parentMeasureSet : ClassMeasureSet oppositeOf attrMeasureSets;
+	}
+	--@end class AttributeMeasureSet
+	
+	--@begin abstract class Measure
+	--@comments defines an abstract measure for a certain metric, with a unit and contained by a measure set
+	abstract class Measure {
+	   	reference metric : Metric;
+	   	attribute unit : String;
+		reference measureSet : MeasureSet oppositeOf measures;
+	}
+	--@end abstract class Measure
+	
+	--@begin class SimpleMeasure
+	--@comments defines a simple measure with a value stored as a Double
+	class SimpleMeasure extends Measure {
+	   	attribute value : Double;
+	   }
+	--@end class SimpleMeasure
+	
+	--@begin class Metric
+	--@comments defines a metric with a short and a complete name
+	class Metric {
+	   	attribute shortName : String;
+	   	attribute name : String;
+	}
+	--@end class Metric
+}
+--@end package Measure
+
+--@begin package PrimitiveTypes
+package PrimitiveTypes {
+	datatype String;
+	datatype Boolean;
+	datatype Integer;
+	datatype Double;
+}
+--@end package PrimitiveTypes

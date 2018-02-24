@@ -1,0 +1,27 @@
+module B2A;
+
+create OUT : A from IN : B;
+
+helper def: counter : Integer = 1;
+
+rule D2A {
+	from
+		s : B!D
+	to
+		t : A!A (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+
+rule F_G2C {
+	from
+		s_1 : B!F,
+		s_2 : B!G
+	to
+		t : A!C (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+	
+}

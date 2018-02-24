@@ -1,0 +1,75 @@
+package KM2 {
+
+	abstract class LocatedElement {
+		attribute location : String;
+	}
+
+	abstract class NamedElement extends LocatedElement {
+		attribute name : String;
+	}
+
+	class Model extends LocatedElement {
+		attribute metamodel : String;
+		reference contents[*] ordered container : ModelElement;
+	}
+
+	-- the name of a ModelElement is the name of its type
+	class ModelElement extends NamedElement {
+		attribute id[0-1] : String;
+		reference properties[*] ordered container : Property oppositeOf owner;
+	}
+
+	class Property extends NamedElement {
+		reference owner : ModelElement oppositeOf properties;
+		reference value container : Value oppositeOf owner;
+	}
+
+
+-- Values
+	abstract class Value extends LocatedElement {
+		reference owner : Property oppositeOf value;
+		reference set[0-1] : SetVal oppositeOf contents;
+	}
+
+	class ModelElementVal extends Value {
+		reference element container : ModelElement;
+	}
+
+	class ModelElementRefVal extends Value {
+		reference element : ModelElement;
+	}
+
+	class SetVal extends Value {
+		reference contents[*] ordered container : Value oppositeOf set;
+	}
+
+    -- PrimitiveValues
+	abstract class PrimitiveVal extends Value {
+
+	}
+
+	class BooleanVal extends PrimitiveVal {
+		attribute value : Boolean;
+	}
+
+	class DoubleVal extends PrimitiveVal {
+		attribute value : Double;
+	}
+
+	class IntegerVal extends PrimitiveVal {
+		attribute value : Integer;
+	}
+
+	class StringVal extends PrimitiveVal {
+		attribute value : String;
+	}
+    -- End PrimitiveValues
+-- End Values
+	package PrimitiveTypes {
+		datatype Boolean;
+		datatype Double;
+		datatype Integer;
+		datatype String;
+	}
+}
+

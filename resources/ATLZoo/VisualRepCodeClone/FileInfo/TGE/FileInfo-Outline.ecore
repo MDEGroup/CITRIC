@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Outline xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Outline">
+  <nodes name="LocatedElement" icon="dummy">
+    <label label="LocatedElement"/>
+    <mapping mapString="LocatedElement"/>
+  </nodes>
+  <nodes name="FileInfo" icon="dummy">
+    <label label="FileInfo"/>
+    <mapping mapString="FileInfo"/>
+  </nodes>
+  <nodes name="File" icon="dummy">
+    <label label="File">
+      <labelSuite label=" : "/>
+      <labelSuite methodCall="name"/>
+    </label>
+    <mapping mapString="File"/>
+  </nodes>
+</Outline>

@@ -1,0 +1,1185 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '1944.0' height = '530.0'>
+  <g transform = 'translate(164.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '3.0' y = '510.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Attribute Inheritance Factor per Class</text>
+    <rect x = '-159.0' y = '-5.0' width = '314.0' height = '500.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V490,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Project (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyName (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyValue (0.5)</text>
+      <rect x = '0.0' y = '30.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyLocation (0.5)</text>
+      <rect x = '0.0' y = '40.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyFile (0.0)</text>
+      <rect x = '0.0' y = '50.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyEnv (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Target (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Pattern (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Basic (0.0)</text>
+      <rect x = '0.0' y = '90.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mapper (0.0)</text>
+      <rect x = '0.0' y = '100.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InExcludes (0.0)</text>
+      <rect x = '0.0' y = '110.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Includes (1.0)</text>
+      <rect x = '0.0' y = '120.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Excludes (1.0)</text>
+      <rect x = '0.0' y = '130.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>IncludesFile (1.0)</text>
+      <rect x = '0.0' y = '140.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExcludesFile (1.0)</text>
+      <rect x = '0.0' y = '150.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileList (0.0)</text>
+      <rect x = '0.0' y = '160.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Filter (0.0)</text>
+      <rect x = '0.0' y = '170.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FiltersFile (0.0)</text>
+      <rect x = '0.0' y = '180.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PathElement (0.0)</text>
+      <rect x = '0.0' y = '190.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Set (0.0)</text>
+      <rect x = '0.0' y = '200.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PatternSet (0.0)</text>
+      <rect x = '0.0' y = '210.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileSet (0.0)</text>
+      <rect x = '0.0' y = '220.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FilterSet (0.0)</text>
+      <rect x = '0.0' y = '230.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Path (0.0)</text>
+      <rect x = '0.0' y = '240.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ClassPath (0.0)</text>
+      <rect x = '0.0' y = '250.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Task (0.0)</text>
+      <rect x = '0.0' y = '260.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TaskDef (0.0)</text>
+      <rect x = '0.0' y = '270.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>NewTask (0.0)</text>
+      <rect x = '0.0' y = '280.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Attribut (0.0)</text>
+      <rect x = '0.0' y = '290.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PreDefinedTask (0.0)</text>
+      <rect x = '0.0' y = '300.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExecutionTask (1.0)</text>
+      <rect x = '0.0' y = '310.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Exec (0.6)</text>
+      <rect x = '0.0' y = '320.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Java (0.5)</text>
+      <rect x = '0.0' y = '330.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MiscellaneousTask (1.0)</text>
+      <rect x = '0.0' y = '340.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Echo (0.5)</text>
+      <rect x = '0.0' y = '350.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Tstamp (1.0)</text>
+      <rect x = '0.0' y = '360.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '379.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FormatTstamp (0.0)</text>
+      <rect x = '0.0' y = '370.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '389.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>CompileTask (1.0)</text>
+      <rect x = '0.0' y = '380.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '399.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javac (0.3)</text>
+      <rect x = '0.0' y = '390.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '409.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>DocumentationTask (1.0)</text>
+      <rect x = '0.0' y = '400.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '419.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javadoc (0.2)</text>
+      <rect x = '0.0' y = '410.0' width = '36.81818181818181' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '429.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ArchiveTask (1.0)</text>
+      <rect x = '0.0' y = '420.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '439.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Jar (0.3)</text>
+      <rect x = '0.0' y = '430.0' width = '50.625' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '449.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileTask (1.0)</text>
+      <rect x = '0.0' y = '440.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '459.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mkdir (0.7)</text>
+      <rect x = '0.0' y = '450.0' width = '101.25' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '469.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Copy (0.2)</text>
+      <rect x = '0.0' y = '460.0' width = '36.81818181818181' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '479.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Delete (0.2)</text>
+      <rect x = '0.0' y = '470.0' width = '28.928571428571427' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(483.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '3.0' y = '510.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Depth Inheritance Tree per Class</text>
+    <rect x = '-159.0' y = '-5.0' width = '314.0' height = '500.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V490,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Project (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyName (1.0)</text>
+      <rect x = '0.0' y = '20.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyValue (2.0)</text>
+      <rect x = '0.0' y = '30.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyLocation (2.0)</text>
+      <rect x = '0.0' y = '40.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyFile (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyEnv (1.0)</text>
+      <rect x = '0.0' y = '60.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Target (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Pattern (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Basic (1.0)</text>
+      <rect x = '0.0' y = '90.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mapper (2.0)</text>
+      <rect x = '0.0' y = '100.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InExcludes (2.0)</text>
+      <rect x = '0.0' y = '110.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Includes (3.0)</text>
+      <rect x = '0.0' y = '120.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Excludes (3.0)</text>
+      <rect x = '0.0' y = '130.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>IncludesFile (3.0)</text>
+      <rect x = '0.0' y = '140.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExcludesFile (3.0)</text>
+      <rect x = '0.0' y = '150.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileList (2.0)</text>
+      <rect x = '0.0' y = '160.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Filter (2.0)</text>
+      <rect x = '0.0' y = '170.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FiltersFile (2.0)</text>
+      <rect x = '0.0' y = '180.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PathElement (2.0)</text>
+      <rect x = '0.0' y = '190.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Set (1.0)</text>
+      <rect x = '0.0' y = '200.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PatternSet (2.0)</text>
+      <rect x = '0.0' y = '210.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileSet (2.0)</text>
+      <rect x = '0.0' y = '220.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FilterSet (2.0)</text>
+      <rect x = '0.0' y = '230.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Path (2.0)</text>
+      <rect x = '0.0' y = '240.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ClassPath (2.0)</text>
+      <rect x = '0.0' y = '250.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Task (0.0)</text>
+      <rect x = '0.0' y = '260.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TaskDef (0.0)</text>
+      <rect x = '0.0' y = '270.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>NewTask (1.0)</text>
+      <rect x = '0.0' y = '280.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Attribut (0.0)</text>
+      <rect x = '0.0' y = '290.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PreDefinedTask (1.0)</text>
+      <rect x = '0.0' y = '300.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExecutionTask (2.0)</text>
+      <rect x = '0.0' y = '310.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Exec (3.0)</text>
+      <rect x = '0.0' y = '320.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Java (3.0)</text>
+      <rect x = '0.0' y = '330.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MiscellaneousTask (2.0)</text>
+      <rect x = '0.0' y = '340.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Echo (3.0)</text>
+      <rect x = '0.0' y = '350.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Tstamp (3.0)</text>
+      <rect x = '0.0' y = '360.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '379.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FormatTstamp (0.0)</text>
+      <rect x = '0.0' y = '370.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '389.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>CompileTask (2.0)</text>
+      <rect x = '0.0' y = '380.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '399.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javac (3.0)</text>
+      <rect x = '0.0' y = '390.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '409.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>DocumentationTask (2.0)</text>
+      <rect x = '0.0' y = '400.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '419.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javadoc (3.0)</text>
+      <rect x = '0.0' y = '410.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '429.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ArchiveTask (2.0)</text>
+      <rect x = '0.0' y = '420.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '439.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Jar (3.0)</text>
+      <rect x = '0.0' y = '430.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '449.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileTask (2.0)</text>
+      <rect x = '0.0' y = '440.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '459.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mkdir (3.0)</text>
+      <rect x = '0.0' y = '450.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '469.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Copy (3.0)</text>
+      <rect x = '0.0' y = '460.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '479.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Delete (3.0)</text>
+      <rect x = '0.0' y = '470.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(802.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '3.0' y = '510.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Number of Children per Class</text>
+    <rect x = '-159.0' y = '-5.0' width = '314.0' height = '500.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V490,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Project (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (3.0)</text>
+      <rect x = '0.0' y = '10.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyName (2.0)</text>
+      <rect x = '0.0' y = '20.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyValue (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyLocation (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyFile (0.0)</text>
+      <rect x = '0.0' y = '50.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyEnv (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Target (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Pattern (2.0)</text>
+      <rect x = '0.0' y = '80.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Basic (6.0)</text>
+      <rect x = '0.0' y = '90.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mapper (0.0)</text>
+      <rect x = '0.0' y = '100.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InExcludes (4.0)</text>
+      <rect x = '0.0' y = '110.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Includes (0.0)</text>
+      <rect x = '0.0' y = '120.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Excludes (0.0)</text>
+      <rect x = '0.0' y = '130.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>IncludesFile (0.0)</text>
+      <rect x = '0.0' y = '140.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExcludesFile (0.0)</text>
+      <rect x = '0.0' y = '150.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileList (0.0)</text>
+      <rect x = '0.0' y = '160.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Filter (0.0)</text>
+      <rect x = '0.0' y = '170.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FiltersFile (0.0)</text>
+      <rect x = '0.0' y = '180.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PathElement (0.0)</text>
+      <rect x = '0.0' y = '190.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Set (5.0)</text>
+      <rect x = '0.0' y = '200.0' width = '112.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PatternSet (0.0)</text>
+      <rect x = '0.0' y = '210.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileSet (0.0)</text>
+      <rect x = '0.0' y = '220.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FilterSet (0.0)</text>
+      <rect x = '0.0' y = '230.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Path (0.0)</text>
+      <rect x = '0.0' y = '240.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ClassPath (0.0)</text>
+      <rect x = '0.0' y = '250.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Task (2.0)</text>
+      <rect x = '0.0' y = '260.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TaskDef (0.0)</text>
+      <rect x = '0.0' y = '270.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>NewTask (0.0)</text>
+      <rect x = '0.0' y = '280.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Attribut (0.0)</text>
+      <rect x = '0.0' y = '290.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PreDefinedTask (6.0)</text>
+      <rect x = '0.0' y = '300.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExecutionTask (2.0)</text>
+      <rect x = '0.0' y = '310.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Exec (0.0)</text>
+      <rect x = '0.0' y = '320.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Java (0.0)</text>
+      <rect x = '0.0' y = '330.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MiscellaneousTask (2.0)</text>
+      <rect x = '0.0' y = '340.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Echo (0.0)</text>
+      <rect x = '0.0' y = '350.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Tstamp (0.0)</text>
+      <rect x = '0.0' y = '360.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '379.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FormatTstamp (0.0)</text>
+      <rect x = '0.0' y = '370.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '389.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>CompileTask (1.0)</text>
+      <rect x = '0.0' y = '380.0' width = '22.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '399.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javac (0.0)</text>
+      <rect x = '0.0' y = '390.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '409.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>DocumentationTask (1.0)</text>
+      <rect x = '0.0' y = '400.0' width = '22.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '419.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javadoc (0.0)</text>
+      <rect x = '0.0' y = '410.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '429.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ArchiveTask (1.0)</text>
+      <rect x = '0.0' y = '420.0' width = '22.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '439.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Jar (0.0)</text>
+      <rect x = '0.0' y = '430.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '449.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileTask (3.0)</text>
+      <rect x = '0.0' y = '440.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '459.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mkdir (0.0)</text>
+      <rect x = '0.0' y = '450.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '469.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Copy (0.0)</text>
+      <rect x = '0.0' y = '460.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '479.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Delete (0.0)</text>
+      <rect x = '0.0' y = '470.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1121.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '3.0' y = '510.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Attributes Inherited per Class</text>
+    <rect x = '-159.0' y = '-5.0' width = '314.0' height = '500.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V490,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Project (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyName (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyValue (1.0)</text>
+      <rect x = '0.0' y = '30.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyLocation (1.0)</text>
+      <rect x = '0.0' y = '40.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyFile (0.0)</text>
+      <rect x = '0.0' y = '50.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyEnv (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Target (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Pattern (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Basic (0.0)</text>
+      <rect x = '0.0' y = '90.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mapper (0.0)</text>
+      <rect x = '0.0' y = '100.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InExcludes (0.0)</text>
+      <rect x = '0.0' y = '110.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Includes (3.0)</text>
+      <rect x = '0.0' y = '120.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Excludes (3.0)</text>
+      <rect x = '0.0' y = '130.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>IncludesFile (3.0)</text>
+      <rect x = '0.0' y = '140.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExcludesFile (3.0)</text>
+      <rect x = '0.0' y = '150.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileList (0.0)</text>
+      <rect x = '0.0' y = '160.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Filter (0.0)</text>
+      <rect x = '0.0' y = '170.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FiltersFile (0.0)</text>
+      <rect x = '0.0' y = '180.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PathElement (0.0)</text>
+      <rect x = '0.0' y = '190.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Set (0.0)</text>
+      <rect x = '0.0' y = '200.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PatternSet (0.0)</text>
+      <rect x = '0.0' y = '210.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileSet (0.0)</text>
+      <rect x = '0.0' y = '220.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FilterSet (0.0)</text>
+      <rect x = '0.0' y = '230.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Path (0.0)</text>
+      <rect x = '0.0' y = '240.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ClassPath (0.0)</text>
+      <rect x = '0.0' y = '250.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Task (0.0)</text>
+      <rect x = '0.0' y = '260.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TaskDef (0.0)</text>
+      <rect x = '0.0' y = '270.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>NewTask (0.0)</text>
+      <rect x = '0.0' y = '280.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Attribut (0.0)</text>
+      <rect x = '0.0' y = '290.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PreDefinedTask (0.0)</text>
+      <rect x = '0.0' y = '300.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExecutionTask (3.0)</text>
+      <rect x = '0.0' y = '310.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Exec (3.0)</text>
+      <rect x = '0.0' y = '320.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Java (3.0)</text>
+      <rect x = '0.0' y = '330.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MiscellaneousTask (3.0)</text>
+      <rect x = '0.0' y = '340.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Echo (3.0)</text>
+      <rect x = '0.0' y = '350.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Tstamp (3.0)</text>
+      <rect x = '0.0' y = '360.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '379.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FormatTstamp (0.0)</text>
+      <rect x = '0.0' y = '370.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '389.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>CompileTask (3.0)</text>
+      <rect x = '0.0' y = '380.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '399.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javac (3.0)</text>
+      <rect x = '0.0' y = '390.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '409.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>DocumentationTask (3.0)</text>
+      <rect x = '0.0' y = '400.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '419.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javadoc (3.0)</text>
+      <rect x = '0.0' y = '410.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '429.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ArchiveTask (3.0)</text>
+      <rect x = '0.0' y = '420.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '439.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Jar (3.0)</text>
+      <rect x = '0.0' y = '430.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '449.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileTask (3.0)</text>
+      <rect x = '0.0' y = '440.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '459.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mkdir (3.0)</text>
+      <rect x = '0.0' y = '450.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '469.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Copy (3.0)</text>
+      <rect x = '0.0' y = '460.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '479.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Delete (3.0)</text>
+      <rect x = '0.0' y = '470.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1440.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '3.0' y = '510.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships Inherited per Class</text>
+    <rect x = '-159.0' y = '-5.0' width = '314.0' height = '500.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V490,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Project (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyName (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyValue (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyLocation (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyFile (0.0)</text>
+      <rect x = '0.0' y = '50.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyEnv (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Target (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Pattern (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Basic (0.0)</text>
+      <rect x = '0.0' y = '90.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mapper (0.0)</text>
+      <rect x = '0.0' y = '100.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InExcludes (0.0)</text>
+      <rect x = '0.0' y = '110.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Includes (0.0)</text>
+      <rect x = '0.0' y = '120.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Excludes (0.0)</text>
+      <rect x = '0.0' y = '130.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>IncludesFile (0.0)</text>
+      <rect x = '0.0' y = '140.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExcludesFile (0.0)</text>
+      <rect x = '0.0' y = '150.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileList (0.0)</text>
+      <rect x = '0.0' y = '160.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Filter (0.0)</text>
+      <rect x = '0.0' y = '170.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FiltersFile (0.0)</text>
+      <rect x = '0.0' y = '180.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PathElement (0.0)</text>
+      <rect x = '0.0' y = '190.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Set (0.0)</text>
+      <rect x = '0.0' y = '200.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PatternSet (0.0)</text>
+      <rect x = '0.0' y = '210.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileSet (0.0)</text>
+      <rect x = '0.0' y = '220.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FilterSet (0.0)</text>
+      <rect x = '0.0' y = '230.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Path (0.0)</text>
+      <rect x = '0.0' y = '240.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ClassPath (0.0)</text>
+      <rect x = '0.0' y = '250.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Task (0.0)</text>
+      <rect x = '0.0' y = '260.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TaskDef (0.0)</text>
+      <rect x = '0.0' y = '270.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>NewTask (1.0)</text>
+      <rect x = '0.0' y = '280.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Attribut (0.0)</text>
+      <rect x = '0.0' y = '290.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PreDefinedTask (1.0)</text>
+      <rect x = '0.0' y = '300.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExecutionTask (1.0)</text>
+      <rect x = '0.0' y = '310.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Exec (1.0)</text>
+      <rect x = '0.0' y = '320.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Java (1.0)</text>
+      <rect x = '0.0' y = '330.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MiscellaneousTask (1.0)</text>
+      <rect x = '0.0' y = '340.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Echo (1.0)</text>
+      <rect x = '0.0' y = '350.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Tstamp (1.0)</text>
+      <rect x = '0.0' y = '360.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '379.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FormatTstamp (0.0)</text>
+      <rect x = '0.0' y = '370.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '389.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>CompileTask (1.0)</text>
+      <rect x = '0.0' y = '380.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '399.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javac (1.0)</text>
+      <rect x = '0.0' y = '390.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '409.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>DocumentationTask (1.0)</text>
+      <rect x = '0.0' y = '400.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '419.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javadoc (1.0)</text>
+      <rect x = '0.0' y = '410.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '429.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ArchiveTask (1.0)</text>
+      <rect x = '0.0' y = '420.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '439.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Jar (1.0)</text>
+      <rect x = '0.0' y = '430.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '449.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileTask (1.0)</text>
+      <rect x = '0.0' y = '440.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '459.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mkdir (1.0)</text>
+      <rect x = '0.0' y = '450.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '469.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Copy (1.0)</text>
+      <rect x = '0.0' y = '460.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '479.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Delete (1.0)</text>
+      <rect x = '0.0' y = '470.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1759.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '3.0' y = '510.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships per Class</text>
+    <rect x = '-159.0' y = '-5.0' width = '314.0' height = '500.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V490,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Project (5.0)</text>
+      <rect x = '0.0' y = '0.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyName (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyValue (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyLocation (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyFile (0.0)</text>
+      <rect x = '0.0' y = '50.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PropertyEnv (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Target (2.0)</text>
+      <rect x = '0.0' y = '70.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Pattern (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Basic (0.0)</text>
+      <rect x = '0.0' y = '90.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mapper (0.0)</text>
+      <rect x = '0.0' y = '100.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InExcludes (0.0)</text>
+      <rect x = '0.0' y = '110.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Includes (0.0)</text>
+      <rect x = '0.0' y = '120.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Excludes (0.0)</text>
+      <rect x = '0.0' y = '130.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>IncludesFile (0.0)</text>
+      <rect x = '0.0' y = '140.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExcludesFile (0.0)</text>
+      <rect x = '0.0' y = '150.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileList (0.0)</text>
+      <rect x = '0.0' y = '160.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Filter (0.0)</text>
+      <rect x = '0.0' y = '170.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FiltersFile (0.0)</text>
+      <rect x = '0.0' y = '180.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PathElement (0.0)</text>
+      <rect x = '0.0' y = '190.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Set (0.0)</text>
+      <rect x = '0.0' y = '200.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PatternSet (1.0)</text>
+      <rect x = '0.0' y = '210.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileSet (3.0)</text>
+      <rect x = '0.0' y = '220.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FilterSet (2.0)</text>
+      <rect x = '0.0' y = '230.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Path (3.0)</text>
+      <rect x = '0.0' y = '240.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ClassPath (2.0)</text>
+      <rect x = '0.0' y = '250.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Task (1.0)</text>
+      <rect x = '0.0' y = '260.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TaskDef (0.0)</text>
+      <rect x = '0.0' y = '270.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>NewTask (3.0)</text>
+      <rect x = '0.0' y = '280.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Attribut (0.0)</text>
+      <rect x = '0.0' y = '290.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>PreDefinedTask (1.0)</text>
+      <rect x = '0.0' y = '300.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ExecutionTask (1.0)</text>
+      <rect x = '0.0' y = '310.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Exec (1.0)</text>
+      <rect x = '0.0' y = '320.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Java (2.0)</text>
+      <rect x = '0.0' y = '330.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MiscellaneousTask (1.0)</text>
+      <rect x = '0.0' y = '340.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Echo (1.0)</text>
+      <rect x = '0.0' y = '350.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Tstamp (2.0)</text>
+      <rect x = '0.0' y = '360.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '379.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FormatTstamp (0.0)</text>
+      <rect x = '0.0' y = '370.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '389.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>CompileTask (1.0)</text>
+      <rect x = '0.0' y = '380.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '399.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javac (3.0)</text>
+      <rect x = '0.0' y = '390.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '409.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>DocumentationTask (1.0)</text>
+      <rect x = '0.0' y = '400.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '419.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Javadoc (1.0)</text>
+      <rect x = '0.0' y = '410.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '429.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ArchiveTask (1.0)</text>
+      <rect x = '0.0' y = '420.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '439.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Jar (1.0)</text>
+      <rect x = '0.0' y = '430.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '449.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>FileTask (1.0)</text>
+      <rect x = '0.0' y = '440.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '459.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Mkdir (1.0)</text>
+      <rect x = '0.0' y = '450.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '469.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Copy (4.0)</text>
+      <rect x = '0.0' y = '460.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '479.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Delete (1.0)</text>
+      <rect x = '0.0' y = '470.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+</svg>

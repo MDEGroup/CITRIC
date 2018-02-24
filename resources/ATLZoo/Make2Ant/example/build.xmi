@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" name="project">
+  <children xsi:type="Attribute" name="name" value="makefile"/>
+  <children xsi:type="Element" name="description">
+    <children xsi:type="Text" value="Test d'un fichier makefile"/>
+  </children>
+  <children xsi:type="Attribute" name="basedir"/>
+  <children xsi:type="Attribute" name="default" value="hello"/>
+  <children xsi:type="Element" name="property">
+    <children xsi:type="Attribute" name="name" value="CC"/>
+    <children xsi:type="Attribute" name="value" value="gcc"/>
+  </children>
+  <children xsi:type="Element" name="property">
+    <children xsi:type="Attribute" name="name" value="CFLAGS"/>
+    <children xsi:type="Attribute" name="value" value="-wall -ansi"/>
+  </children>
+  <children xsi:type="Element" name="property">
+    <children xsi:type="Attribute" name="name" value="LDFLAGS"/>
+    <children xsi:type="Attribute" name="value" value="-wall -ansi"/>
+  </children>
+  <children xsi:type="Element" name="target">
+    <children xsi:type="Attribute" name="name" value="hello"/>
+    <children xsi:type="Attribute" name="depends" value="hello.o,main.o"/>
+    <children xsi:type="Element" name="exec">
+      <children xsi:type="Attribute" name="executable" value="$(CC) -o hello hello.o main.o $(LDFLAGS)"/>
+    </children>
+    <children xsi:type="Element" name="echo">
+      <children xsi:type="Attribute" name="message" value="skip"/>
+    </children>
+    <children xsi:type="Element" name="exec">
+      <children xsi:type="Attribute" name="executable" value="skip"/>
+    </children>
+  </children>
+  <children xsi:type="Element" name="target">
+    <children xsi:type="Attribute" name="name" value="hello.o"/>
+    <children xsi:type="Attribute" name="depends" value=""/>
+    <children xsi:type="Element" name="exec">
+      <children xsi:type="Attribute" name="executable" value="$(CC) -o hello.o -c hello.c $(CFLAGS)"/>
+    </children>
+  </children>
+  <children xsi:type="Element" name="target">
+    <children xsi:type="Attribute" name="name" value="main.o"/>
+    <children xsi:type="Attribute" name="depends" value=""/>
+    <children xsi:type="Element" name="echo">
+      <children xsi:type="Attribute" name="message" value="$(CC) -o main.o -c main.c $(CFLAGS)"/>
+    </children>
+    <children xsi:type="Element" name="exec">
+      <children xsi:type="Attribute" name="executable" value="$(CC) -o main.o -c main.c $(CFLAGS)"/>
+    </children>
+  </children>
+  <children xsi:type="Element" name="target">
+    <children xsi:type="Attribute" name="name" value="clean"/>
+    <children xsi:type="Attribute" name="depends" value=""/>
+    <children xsi:type="Element" name="echo">
+      <children xsi:type="Attribute" name="message" value="rm -rf *.o"/>
+    </children>
+    <children xsi:type="Element" name="exec">
+      <children xsi:type="Attribute" name="executable" value="rm -rf *.o"/>
+    </children>
+  </children>
+  <children xsi:type="Element" name="target">
+    <children xsi:type="Attribute" name="name" value="mrproper"/>
+    <children xsi:type="Attribute" name="depends" value="clean"/>
+    <children xsi:type="Element" name="exec">
+      <children xsi:type="Attribute" name="executable" value="rm -rf $(EXEC)"/>
+    </children>
+  </children>
+</Root>

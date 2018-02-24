@@ -1,0 +1,763 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '3187.8' height = '455.40000000000003'>
+  <g transform = 'translate(204.93,204.93) scale(0.9)' fill = 'black'>
+    <rect x = '-225.20000000000002' y = '-225.20000000000002' width = '450.40000000000003' height = '450.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '200.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Attribute Inheritance Factor per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.03422171849479,19.730468115303363 z' fill = 'rgb(0,98,19)' stroke = 'black'/>
+      <text x = '98.03422171849479' y = '19.730468115303363' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyValue</text>
+    </g>
+    <g transform = 'rotate(11.37938820052135)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.03422171849479,19.730468115303363 z' fill = 'rgb(11,98,19)' stroke = 'black'/>
+      <text x = '98.03422171849479' y = '19.730468115303363' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyLocation</text>
+    </g>
+    <g transform = 'rotate(22.7587764010427)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(22,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Includes</text>
+    </g>
+    <g transform = 'rotate(45.5175528020854)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(45,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Excludes</text>
+    </g>
+    <g transform = 'rotate(68.2763292031281)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(68,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- IncludesFile</text>
+    </g>
+    <g transform = 'rotate(91.0351056041708)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(91,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExcludesFile</text>
+    </g>
+    <g transform = 'rotate(113.79388200521349)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(113,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExecutionTask</text>
+    </g>
+    <g transform = 'rotate(136.5526584062562)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.17337372233396,23.607952884983792 z' fill = 'rgb(136,97,23)' stroke = 'black'/>
+      <text x = '97.17337372233396' y = '23.607952884983792' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Exec</text>
+    </g>
+    <g transform = 'rotate(150.20792424688182)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.03422171849479,19.730468115303363 z' fill = 'rgb(150,98,19)' stroke = 'black'/>
+      <text x = '98.03422171849479' y = '19.730468115303363' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Java</text>
+    </g>
+    <g transform = 'rotate(161.58731244740318)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(161,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- MiscellaneousTask</text>
+    </g>
+    <g transform = 'rotate(184.34608884844587)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.03422171849479,19.730468115303363 z' fill = 'rgb(184,98,19)' stroke = 'black'/>
+      <text x = '98.03422171849479' y = '19.730468115303363' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Echo</text>
+    </g>
+    <g transform = 'rotate(195.72547704896724)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(195,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Tstamp</text>
+    </g>
+    <g transform = 'rotate(218.48425345000993)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(218,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- CompileTask</text>
+    </g>
+    <g transform = 'rotate(241.24302985105263)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.12472306860958,13.20186640484815 z' fill = 'rgb(241,99,13)' stroke = 'black'/>
+      <text x = '99.12472306860958' y = '13.20186640484815' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javac</text>
+    </g>
+    <g transform = 'rotate(248.8292886514002)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(248,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- DocumentationTask</text>
+    </g>
+    <g transform = 'rotate(271.5880650524429)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.4137877017949,10.811975526352835 z' fill = 'rgb(271,99,10)' stroke = 'black'/>
+      <text x = '99.4137877017949' y = '10.811975526352835' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javadoc</text>
+    </g>
+    <g transform = 'rotate(277.7950040709091)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(277,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ArchiveTask</text>
+    </g>
+    <g transform = 'rotate(300.5537804719518)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.89265757363131,14.840561917410747 z' fill = 'rgb(300,98,14)' stroke = 'black'/>
+      <text x = '98.89265757363131' y = '14.840561917410747' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Jar</text>
+    </g>
+    <g transform = 'rotate(309.08832162234285)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 92.21417255901994,38.68522171650684 z' fill = 'rgb(309,92,38)' stroke = 'black'/>
+      <text x = '92.21417255901994' y = '38.68522171650684' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileTask</text>
+    </g>
+    <g transform = 'rotate(331.84709802338557)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.59515443950995,29.352452157975485 z' fill = 'rgb(331,95,29)' stroke = 'black'/>
+      <text x = '95.59515443950995' y = '29.352452157975485' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mkdir</text>
+    </g>
+    <g transform = 'rotate(348.9161803241676)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.4137877017949,10.811975526352835 z' fill = 'rgb(348,99,10)' stroke = 'black'/>
+      <text x = '99.4137877017949' y = '10.811975526352835' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Copy</text>
+    </g>
+    <g transform = 'rotate(355.1231193426338)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.63796815452149,8.501488224926327 z' fill = 'rgb(355,99,8)' stroke = 'black'/>
+      <text x = '99.63796815452149' y = '8.501488224926327' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Delete</text>
+    </g>
+  </g>
+  <g transform = 'translate(614.79,204.93) scale(0.9)' fill = 'black'>
+    <rect x = '-225.20000000000002' y = '-225.20000000000002' width = '450.40000000000003' height = '450.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '200.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Depth Inheritance Tree per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.73932315179498,7.215775580061609 z' fill = 'rgb(0,99,7)' stroke = 'black'/>
+      <text x = '99.73932315179498' y = '7.215775580061609' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyName</text>
+    </g>
+    <g transform = 'rotate(4.137931034482759)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(4,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyValue</text>
+    </g>
+    <g transform = 'rotate(12.413793103448278)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(12,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyLocation</text>
+    </g>
+    <g transform = 'rotate(20.689655172413794)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.73932315179498,7.215775580061609 z' fill = 'rgb(20,99,7)' stroke = 'black'/>
+      <text x = '99.73932315179498' y = '7.215775580061609' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyFile</text>
+    </g>
+    <g transform = 'rotate(24.82758620689655)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.73932315179498,7.215775580061609 z' fill = 'rgb(24,99,7)' stroke = 'black'/>
+      <text x = '99.73932315179498' y = '7.215775580061609' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyEnv</text>
+    </g>
+    <g transform = 'rotate(28.96551724137931)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.73932315179498,7.215775580061609 z' fill = 'rgb(28,99,7)' stroke = 'black'/>
+      <text x = '99.73932315179498' y = '7.215775580061609' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Basic</text>
+    </g>
+    <g transform = 'rotate(33.10344827586207)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(33,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mapper</text>
+    </g>
+    <g transform = 'rotate(41.37931034482759)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(41,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- InExcludes</text>
+    </g>
+    <g transform = 'rotate(49.6551724137931)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(49,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Includes</text>
+    </g>
+    <g transform = 'rotate(62.06896551724138)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(62,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Excludes</text>
+    </g>
+    <g transform = 'rotate(74.48275862068965)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(74,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- IncludesFile</text>
+    </g>
+    <g transform = 'rotate(86.89655172413792)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(86,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExcludesFile</text>
+    </g>
+    <g transform = 'rotate(99.31034482758619)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(99,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileList</text>
+    </g>
+    <g transform = 'rotate(107.58620689655172)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(107,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Filter</text>
+    </g>
+    <g transform = 'rotate(115.86206896551724)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(115,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FiltersFile</text>
+    </g>
+    <g transform = 'rotate(124.13793103448276)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(124,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PathElement</text>
+    </g>
+    <g transform = 'rotate(132.41379310344828)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.73932315179498,7.215775580061609 z' fill = 'rgb(132,99,7)' stroke = 'black'/>
+      <text x = '99.73932315179498' y = '7.215775580061609' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Set</text>
+    </g>
+    <g transform = 'rotate(136.55172413793105)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(136,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PatternSet</text>
+    </g>
+    <g transform = 'rotate(144.82758620689657)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(144,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileSet</text>
+    </g>
+    <g transform = 'rotate(153.1034482758621)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(153,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FilterSet</text>
+    </g>
+    <g transform = 'rotate(161.37931034482762)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(161,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Path</text>
+    </g>
+    <g transform = 'rotate(169.65517241379314)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(169,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ClassPath</text>
+    </g>
+    <g transform = 'rotate(177.93103448275866)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.73932315179498,7.215775580061609 z' fill = 'rgb(177,99,7)' stroke = 'black'/>
+      <text x = '99.73932315179498' y = '7.215775580061609' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- NewTask</text>
+    </g>
+    <g transform = 'rotate(182.06896551724142)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.73932315179498,7.215775580061609 z' fill = 'rgb(182,99,7)' stroke = 'black'/>
+      <text x = '99.73932315179498' y = '7.215775580061609' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PreDefinedTask</text>
+    </g>
+    <g transform = 'rotate(186.20689655172418)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(186,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExecutionTask</text>
+    </g>
+    <g transform = 'rotate(194.4827586206897)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(194,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Exec</text>
+    </g>
+    <g transform = 'rotate(206.896551724138)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(206,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Java</text>
+    </g>
+    <g transform = 'rotate(219.31034482758628)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(219,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- MiscellaneousTask</text>
+    </g>
+    <g transform = 'rotate(227.5862068965518)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(227,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Echo</text>
+    </g>
+    <g transform = 'rotate(240.00000000000009)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(240,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Tstamp</text>
+    </g>
+    <g transform = 'rotate(252.41379310344837)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(252,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- CompileTask</text>
+    </g>
+    <g transform = 'rotate(260.6896551724139)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(260,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javac</text>
+    </g>
+    <g transform = 'rotate(273.10344827586215)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(273,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- DocumentationTask</text>
+    </g>
+    <g transform = 'rotate(281.3793103448277)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(281,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javadoc</text>
+    </g>
+    <g transform = 'rotate(293.79310344827593)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(293,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ArchiveTask</text>
+    </g>
+    <g transform = 'rotate(302.06896551724145)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(302,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Jar</text>
+    </g>
+    <g transform = 'rotate(314.4827586206897)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.95865165556373,14.393931447411914 z' fill = 'rgb(314,98,14)' stroke = 'black'/>
+      <text x = '98.95865165556373' y = '14.393931447411914' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileTask</text>
+    </g>
+    <g transform = 'rotate(322.75862068965523)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(322,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mkdir</text>
+    </g>
+    <g transform = 'rotate(335.1724137931035)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(335,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Copy</text>
+    </g>
+    <g transform = 'rotate(347.58620689655174)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.66205557100866,21.497044021102408 z' fill = 'rgb(347,97,21)' stroke = 'black'/>
+      <text x = '97.66205557100866' y = '21.497044021102408' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Delete</text>
+    </g>
+  </g>
+  <g transform = 'translate(1024.65,204.93) scale(0.9)' fill = 'black'>
+    <rect x = '-225.20000000000002' y = '-225.20000000000002' width = '450.40000000000003' height = '450.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '200.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Number of Children per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 89.10065241883679,45.399049973954675 z' fill = 'rgb(0,89,45)' stroke = 'black'/>
+      <text x = '89.10065241883679' y = '45.399049973954675' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Property</text>
+    </g>
+    <g transform = 'rotate(27.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.10565162951535,30.901699437494738 z' fill = 'rgb(27,95,30)' stroke = 'black'/>
+      <text x = '95.10565162951535' y = '30.901699437494738' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyName</text>
+    </g>
+    <g transform = 'rotate(45.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.10565162951535,30.901699437494738 z' fill = 'rgb(45,95,30)' stroke = 'black'/>
+      <text x = '95.10565162951535' y = '30.901699437494738' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Pattern</text>
+    </g>
+    <g transform = 'rotate(63.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 58.778525229247315,80.90169943749474 z' fill = 'rgb(63,58,80)' stroke = 'black'/>
+      <text x = '58.778525229247315' y = '80.90169943749474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Basic</text>
+    </g>
+    <g transform = 'rotate(117.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 80.90169943749474,58.778525229247315 z' fill = 'rgb(117,80,58)' stroke = 'black'/>
+      <text x = '80.90169943749474' y = '58.778525229247315' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- InExcludes</text>
+    </g>
+    <g transform = 'rotate(153.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 70.71067811865476,70.71067811865474 z' fill = 'rgb(153,70,70)' stroke = 'black'/>
+      <text x = '70.71067811865476' y = '70.71067811865474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Set</text>
+    </g>
+    <g transform = 'rotate(198.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.10565162951535,30.901699437494738 z' fill = 'rgb(198,95,30)' stroke = 'black'/>
+      <text x = '95.10565162951535' y = '30.901699437494738' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Task</text>
+    </g>
+    <g transform = 'rotate(216.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 58.778525229247315,80.90169943749474 z' fill = 'rgb(216,58,80)' stroke = 'black'/>
+      <text x = '58.778525229247315' y = '80.90169943749474' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PreDefinedTask</text>
+    </g>
+    <g transform = 'rotate(270.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.10565162951535,30.901699437494738 z' fill = 'rgb(270,95,30)' stroke = 'black'/>
+      <text x = '95.10565162951535' y = '30.901699437494738' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExecutionTask</text>
+    </g>
+    <g transform = 'rotate(288.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.10565162951535,30.901699437494738 z' fill = 'rgb(288,95,30)' stroke = 'black'/>
+      <text x = '95.10565162951535' y = '30.901699437494738' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- MiscellaneousTask</text>
+    </g>
+    <g transform = 'rotate(306.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.76883405951378,15.643446504023087 z' fill = 'rgb(306,98,15)' stroke = 'black'/>
+      <text x = '98.76883405951378' y = '15.643446504023087' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- CompileTask</text>
+    </g>
+    <g transform = 'rotate(315.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.76883405951378,15.643446504023087 z' fill = 'rgb(315,98,15)' stroke = 'black'/>
+      <text x = '98.76883405951378' y = '15.643446504023087' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- DocumentationTask</text>
+    </g>
+    <g transform = 'rotate(324.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.76883405951378,15.643446504023087 z' fill = 'rgb(324,98,15)' stroke = 'black'/>
+      <text x = '98.76883405951378' y = '15.643446504023087' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ArchiveTask</text>
+    </g>
+    <g transform = 'rotate(333.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 89.10065241883679,45.399049973954675 z' fill = 'rgb(333,89,45)' stroke = 'black'/>
+      <text x = '89.10065241883679' y = '45.399049973954675' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileTask</text>
+    </g>
+  </g>
+  <g transform = 'translate(1434.5100000000002,204.93) scale(0.9)' fill = 'black'>
+    <rect x = '-225.20000000000002' y = '-225.20000000000002' width = '450.40000000000003' height = '450.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '200.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes Inherited per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.48693233918952,10.116832198743216 z' fill = 'rgb(0,99,10)' stroke = 'black'/>
+      <text x = '99.48693233918952' y = '10.116832198743216' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyValue</text>
+    </g>
+    <g transform = 'rotate(5.806451612903226)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.48693233918952,10.116832198743216 z' fill = 'rgb(5,99,10)' stroke = 'black'/>
+      <text x = '99.48693233918952' y = '10.116832198743216' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyLocation</text>
+    </g>
+    <g transform = 'rotate(11.612903225806452)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(11,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Includes</text>
+    </g>
+    <g transform = 'rotate(29.03225806451613)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(29,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Excludes</text>
+    </g>
+    <g transform = 'rotate(46.45161290322581)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(46,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- IncludesFile</text>
+    </g>
+    <g transform = 'rotate(63.87096774193549)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(63,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExcludesFile</text>
+    </g>
+    <g transform = 'rotate(81.29032258064517)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(81,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExecutionTask</text>
+    </g>
+    <g transform = 'rotate(98.70967741935485)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(98,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Exec</text>
+    </g>
+    <g transform = 'rotate(116.12903225806453)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(116,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Java</text>
+    </g>
+    <g transform = 'rotate(133.5483870967742)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(133,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- MiscellaneousTask</text>
+    </g>
+    <g transform = 'rotate(150.9677419354839)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(150,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Echo</text>
+    </g>
+    <g transform = 'rotate(168.3870967741936)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(168,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Tstamp</text>
+    </g>
+    <g transform = 'rotate(185.8064516129033)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(185,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- CompileTask</text>
+    </g>
+    <g transform = 'rotate(203.22580645161298)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(203,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javac</text>
+    </g>
+    <g transform = 'rotate(220.64516129032268)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(220,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- DocumentationTask</text>
+    </g>
+    <g transform = 'rotate(238.06451612903237)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(238,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javadoc</text>
+    </g>
+    <g transform = 'rotate(255.48387096774206)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(255,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ArchiveTask</text>
+    </g>
+    <g transform = 'rotate(272.90322580645176)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(272,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Jar</text>
+    </g>
+    <g transform = 'rotate(290.32258064516145)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(290,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileTask</text>
+    </g>
+    <g transform = 'rotate(307.74193548387115)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(307,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mkdir</text>
+    </g>
+    <g transform = 'rotate(325.16129032258084)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(325,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Copy</text>
+    </g>
+    <g transform = 'rotate(342.58064516129053)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 95.41392564000488,29.9363122973358 z' fill = 'rgb(342,95,29)' stroke = 'black'/>
+      <text x = '95.41392564000488' y = '29.9363122973358' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Delete</text>
+    </g>
+  </g>
+  <g transform = 'translate(1844.3700000000001,204.93) scale(0.9)' fill = 'black'>
+    <rect x = '-225.20000000000002' y = '-225.20000000000002' width = '450.40000000000003' height = '450.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '200.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Attributes per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(0,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Project</text>
+    </g>
+    <g transform = 'rotate(6.967741935483871)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.91785013128923,4.052557851681295 z' fill = 'rgb(6,99,4)' stroke = 'black'/>
+      <text x = '99.91785013128923' y = '4.052557851681295' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyName</text>
+    </g>
+    <g transform = 'rotate(9.290322580645162)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(9,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyValue</text>
+    </g>
+    <g transform = 'rotate(13.935483870967744)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(13,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyLocation</text>
+    </g>
+    <g transform = 'rotate(18.580645161290324)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.91785013128923,4.052557851681295 z' fill = 'rgb(18,99,4)' stroke = 'black'/>
+      <text x = '99.91785013128923' y = '4.052557851681295' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyFile</text>
+    </g>
+    <g transform = 'rotate(20.903225806451616)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.91785013128923,4.052557851681295 z' fill = 'rgb(20,99,4)' stroke = 'black'/>
+      <text x = '99.91785013128923' y = '4.052557851681295' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PropertyEnv</text>
+    </g>
+    <g transform = 'rotate(23.225806451612907)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.68829976729442,16.14371360748934 z' fill = 'rgb(23,98,16)' stroke = 'black'/>
+      <text x = '98.68829976729442' y = '16.14371360748934' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Target</text>
+    </g>
+    <g transform = 'rotate(32.51612903225807)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.05675197106018,24.082917116248765 z' fill = 'rgb(32,97,24)' stroke = 'black'/>
+      <text x = '97.05675197106018' y = '24.082917116248765' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mapper</text>
+    </g>
+    <g transform = 'rotate(46.451612903225815)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(46,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- InExcludes</text>
+    </g>
+    <g transform = 'rotate(53.41935483870969)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(53,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Includes</text>
+    </g>
+    <g transform = 'rotate(60.38709677419356)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(60,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Excludes</text>
+    </g>
+    <g transform = 'rotate(67.35483870967742)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(67,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- IncludesFile</text>
+    </g>
+    <g transform = 'rotate(74.3225806451613)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(74,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExcludesFile</text>
+    </g>
+    <g transform = 'rotate(81.29032258064517)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(81,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileList</text>
+    </g>
+    <g transform = 'rotate(85.93548387096774)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(85,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Filter</text>
+    </g>
+    <g transform = 'rotate(90.58064516129032)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.91785013128923,4.052557851681295 z' fill = 'rgb(90,99,4)' stroke = 'black'/>
+      <text x = '99.91785013128923' y = '4.052557851681295' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FiltersFile</text>
+    </g>
+    <g transform = 'rotate(92.90322580645162)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(92,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PathElement</text>
+    </g>
+    <g transform = 'rotate(97.54838709677419)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.91785013128923,4.052557851681295 z' fill = 'rgb(97,99,4)' stroke = 'black'/>
+      <text x = '99.91785013128923' y = '4.052557851681295' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileSet</text>
+    </g>
+    <g transform = 'rotate(99.87096774193549)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(99,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FilterSet</text>
+    </g>
+    <g transform = 'rotate(104.51612903225806)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(104,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Path</text>
+    </g>
+    <g transform = 'rotate(109.16129032258064)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.91785013128923,4.052557851681295 z' fill = 'rgb(109,99,4)' stroke = 'black'/>
+      <text x = '99.91785013128923' y = '4.052557851681295' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ClassPath</text>
+    </g>
+    <g transform = 'rotate(111.48387096774194)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(111,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- TaskDef</text>
+    </g>
+    <g transform = 'rotate(116.12903225806451)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.67153549717553,8.09845736145342 z' fill = 'rgb(116,99,8)' stroke = 'black'/>
+      <text x = '99.67153549717553' y = '8.09845736145342' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Attribut</text>
+    </g>
+    <g transform = 'rotate(120.77419354838709)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(120,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PreDefinedTask</text>
+    </g>
+    <g transform = 'rotate(127.74193548387096)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(127,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExecutionTask</text>
+    </g>
+    <g transform = 'rotate(134.70967741935482)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.95299412524945,20.129852008866006 z' fill = 'rgb(134,97,20)' stroke = 'black'/>
+      <text x = '97.95299412524945' y = '20.129852008866006' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Exec</text>
+    </g>
+    <g transform = 'rotate(146.32258064516128)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.05675197106018,24.082917116248765 z' fill = 'rgb(146,97,24)' stroke = 'black'/>
+      <text x = '97.05675197106018' y = '24.082917116248765' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Java</text>
+    </g>
+    <g transform = 'rotate(160.25806451612902)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(160,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- MiscellaneousTask</text>
+    </g>
+    <g transform = 'rotate(167.2258064516129)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.05675197106018,24.082917116248765 z' fill = 'rgb(167,97,24)' stroke = 'black'/>
+      <text x = '97.05675197106018' y = '24.082917116248765' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Echo</text>
+    </g>
+    <g transform = 'rotate(181.16129032258064)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(181,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Tstamp</text>
+    </g>
+    <g transform = 'rotate(188.1290322580645)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 97.95299412524945,20.129852008866006 z' fill = 'rgb(188,97,20)' stroke = 'black'/>
+      <text x = '97.95299412524945' y = '20.129852008866006' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FormatTstamp</text>
+    </g>
+    <g transform = 'rotate(199.74193548387098)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(199,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- CompileTask</text>
+    </g>
+    <g transform = 'rotate(206.70967741935485)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.4184388154437,35.67905953476356 z' fill = 'rgb(206,93,35)' stroke = 'black'/>
+      <text x = '93.4184388154437' y = '35.67905953476356' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javac</text>
+    </g>
+    <g transform = 'rotate(227.61290322580646)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(227,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- DocumentationTask</text>
+    </g>
+    <g transform = 'rotate(234.58064516129033)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 90.22213898145176,43.1273189244544 z' fill = 'rgb(234,90,43)' stroke = 'black'/>
+      <text x = '90.22213898145176' y = '43.1273189244544' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javadoc</text>
+    </g>
+    <g transform = 'rotate(260.1290322580645)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(260,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ArchiveTask</text>
+    </g>
+    <g transform = 'rotate(267.09677419354836)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 94.78761021918727,31.86391295706516 z' fill = 'rgb(267,94,31)' stroke = 'black'/>
+      <text x = '94.78761021918727' y = '31.86391295706516' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Jar</text>
+    </g>
+    <g transform = 'rotate(285.67741935483866)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.26146079195594,12.131051127045483 z' fill = 'rgb(285,99,12)' stroke = 'black'/>
+      <text x = '99.26146079195594' y = '12.131051127045483' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileTask</text>
+    </g>
+    <g transform = 'rotate(292.6451612903225)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 98.68829976729442,16.14371360748934 z' fill = 'rgb(292,98,16)' stroke = 'black'/>
+      <text x = '98.68829976729442' y = '16.14371360748934' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mkdir</text>
+    </g>
+    <g transform = 'rotate(301.9354838709677)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 90.22213898145176,43.1273189244544 z' fill = 'rgb(301,90,43)' stroke = 'black'/>
+      <text x = '90.22213898145176' y = '43.1273189244544' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Copy</text>
+    </g>
+    <g transform = 'rotate(327.4838709677419)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 84.32401600228823,53.75370057257305 z' fill = 'rgb(327,84,53)' stroke = 'black'/>
+      <text x = '84.32401600228823' y = '53.75370057257305' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Delete</text>
+    </g>
+  </g>
+  <g transform = 'translate(2254.23,204.93) scale(0.9)' fill = 'black'>
+    <rect x = '-225.20000000000002' y = '-225.20000000000002' width = '450.40000000000003' height = '450.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '200.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Relationships Inherited per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(0,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- NewTask</text>
+    </g>
+    <g transform = 'rotate(20.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(20,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PreDefinedTask</text>
+    </g>
+    <g transform = 'rotate(40.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(40,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExecutionTask</text>
+    </g>
+    <g transform = 'rotate(60.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(60,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Exec</text>
+    </g>
+    <g transform = 'rotate(80.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(80,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Java</text>
+    </g>
+    <g transform = 'rotate(100.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(100,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- MiscellaneousTask</text>
+    </g>
+    <g transform = 'rotate(120.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(120,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Echo</text>
+    </g>
+    <g transform = 'rotate(140.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(140,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Tstamp</text>
+    </g>
+    <g transform = 'rotate(160.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(160,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- CompileTask</text>
+    </g>
+    <g transform = 'rotate(180.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(180,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javac</text>
+    </g>
+    <g transform = 'rotate(200.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(200,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- DocumentationTask</text>
+    </g>
+    <g transform = 'rotate(220.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(220,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javadoc</text>
+    </g>
+    <g transform = 'rotate(240.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(240,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ArchiveTask</text>
+    </g>
+    <g transform = 'rotate(260.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(260,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Jar</text>
+    </g>
+    <g transform = 'rotate(280.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(280,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileTask</text>
+    </g>
+    <g transform = 'rotate(300.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(300,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mkdir</text>
+    </g>
+    <g transform = 'rotate(320.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(320,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Copy</text>
+    </g>
+    <g transform = 'rotate(340.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 93.96926207859084,34.20201433256687 z' fill = 'rgb(340,93,34)' stroke = 'black'/>
+      <text x = '93.96926207859084' y = '34.20201433256687' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Delete</text>
+    </g>
+  </g>
+  <g transform = 'translate(2664.09,204.93) scale(0.9)' fill = 'black'>
+    <rect x = '-225.20000000000002' y = '-225.20000000000002' width = '450.40000000000003' height = '450.40000000000003' fill = 'none' stroke = 'none'/>
+    <text x = '0.0' y = '200.20000000000002' stroke = 'blue' font-size = 'medium' text-anchor = 'middle'>Total Number of Relationships per Class</text>
+    <g transform = 'rotate(0.0)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 77.57112907044198,63.10879443260527 z' fill = 'rgb(0,77,63)' stroke = 'black'/>
+      <text x = '77.57112907044198' y = '63.10879443260527' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Project</text>
+    </g>
+    <g transform = 'rotate(39.130434782608695)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 96.29172873477992,26.979677115702426 z' fill = 'rgb(39,96,26)' stroke = 'black'/>
+      <text x = '96.29172873477992' y = '26.979677115702426' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Target</text>
+    </g>
+    <g transform = 'rotate(54.78260869565217)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(54,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PatternSet</text>
+    </g>
+    <g transform = 'rotate(62.608695652173914)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 91.7211301505453,39.840108984624145 z' fill = 'rgb(62,91,39)' stroke = 'black'/>
+      <text x = '91.7211301505453' y = '39.840108984624145' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileSet</text>
+    </g>
+    <g transform = 'rotate(86.08695652173913)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 96.29172873477992,26.979677115702426 z' fill = 'rgb(86,96,26)' stroke = 'black'/>
+      <text x = '96.29172873477992' y = '26.979677115702426' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FilterSet</text>
+    </g>
+    <g transform = 'rotate(101.73913043478261)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 91.7211301505453,39.840108984624145 z' fill = 'rgb(101,91,39)' stroke = 'black'/>
+      <text x = '91.7211301505453' y = '39.840108984624145' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Path</text>
+    </g>
+    <g transform = 'rotate(125.21739130434783)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 96.29172873477992,26.979677115702426 z' fill = 'rgb(125,96,26)' stroke = 'black'/>
+      <text x = '96.29172873477992' y = '26.979677115702426' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ClassPath</text>
+    </g>
+    <g transform = 'rotate(140.8695652173913)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(140,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Task</text>
+    </g>
+    <g transform = 'rotate(148.69565217391306)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 91.7211301505453,39.840108984624145 z' fill = 'rgb(148,91,39)' stroke = 'black'/>
+      <text x = '91.7211301505453' y = '39.840108984624145' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- NewTask</text>
+    </g>
+    <g transform = 'rotate(172.17391304347828)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(172,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- PreDefinedTask</text>
+    </g>
+    <g transform = 'rotate(180.00000000000003)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(180,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ExecutionTask</text>
+    </g>
+    <g transform = 'rotate(187.82608695652178)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(187,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Exec</text>
+    </g>
+    <g transform = 'rotate(195.65217391304353)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 96.29172873477992,26.979677115702426 z' fill = 'rgb(195,96,26)' stroke = 'black'/>
+      <text x = '96.29172873477992' y = '26.979677115702426' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Java</text>
+    </g>
+    <g transform = 'rotate(211.304347826087)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(211,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- MiscellaneousTask</text>
+    </g>
+    <g transform = 'rotate(219.13043478260875)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(219,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Echo</text>
+    </g>
+    <g transform = 'rotate(226.9565217391305)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 96.29172873477992,26.979677115702426 z' fill = 'rgb(226,96,26)' stroke = 'black'/>
+      <text x = '96.29172873477992' y = '26.979677115702426' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Tstamp</text>
+    </g>
+    <g transform = 'rotate(242.60869565217396)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(242,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- CompileTask</text>
+    </g>
+    <g transform = 'rotate(250.4347826086957)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 91.7211301505453,39.840108984624145 z' fill = 'rgb(250,91,39)' stroke = 'black'/>
+      <text x = '91.7211301505453' y = '39.840108984624145' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javac</text>
+    </g>
+    <g transform = 'rotate(273.91304347826093)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(273,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- DocumentationTask</text>
+    </g>
+    <g transform = 'rotate(281.7391304347827)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(281,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Javadoc</text>
+    </g>
+    <g transform = 'rotate(289.56521739130443)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(289,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- ArchiveTask</text>
+    </g>
+    <g transform = 'rotate(297.3913043478262)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(297,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Jar</text>
+    </g>
+    <g transform = 'rotate(305.2173913043479)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(305,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- FileTask</text>
+    </g>
+    <g transform = 'rotate(313.0434782608697)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(313,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Mkdir</text>
+    </g>
+    <g transform = 'rotate(320.8695652173914)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 85.44194045464886,51.95839500354336 z' fill = 'rgb(320,85,51)' stroke = 'black'/>
+      <text x = '85.44194045464886' y = '51.95839500354336' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Copy</text>
+    </g>
+    <g transform = 'rotate(352.17391304347836)' fill = 'black'>
+      <path d = 'M0,0 L100,0 A100,100 0 0,1 99.06859460363307,13.61666490962466 z' fill = 'rgb(352,99,13)' stroke = 'black'/>
+      <text x = '99.06859460363307' y = '13.61666490962466' stroke = 'blue' font-size = '10' text-anchor = 'start'>-- Delete</text>
+    </g>
+  </g>
+</svg>

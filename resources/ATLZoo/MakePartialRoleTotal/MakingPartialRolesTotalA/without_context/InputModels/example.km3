@@ -1,0 +1,14 @@
+package example {
+	class A {
+		reference br [0-1] : B oppositeOf a;
+		reference cr [0-1] : C oppositeOf a;
+	}
+	
+	class B {
+		reference a : A oppositeOf br;
+	}
+	
+	class C {
+		reference a : A oppositeOf cr;
+	}
+}

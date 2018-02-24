@@ -1,0 +1,77 @@
+package Editor {
+	abstract class LocatedElement {
+		attribute location : String;
+		
+	}
+
+	class Editor extends LocatedElement {
+		attribute extension : String;
+		reference block[*] container : Block oppositeOf editor;
+		reference group[*] container : GroupElement oppositeOf editor;
+		
+	}
+
+	class Block extends LocatedElement {
+		attribute type : String;
+		attribute blockbegin : String;
+		attribute blockend : String;
+		reference editor : Editor oppositeOf block;
+		reference format[0-1] container : Format oppositeOf blockFormat;
+		
+	}
+
+	class GroupElement extends LocatedElement {
+		attribute type : String;
+		reference editor : Editor oppositeOf group;
+		reference indent[0-1] container : Indent oppositeOf groupElementIndent;
+		reference format[0-1] container : Format oppositeOf groupElementFormat;
+		reference element[*] container : Element oppositeOf groupElement;
+		
+	}
+
+	class Element extends LocatedElement {
+		attribute element : String;
+		reference groupElement : GroupElement oppositeOf element;
+		
+	}
+
+	class Format extends LocatedElement {
+		reference color[0-1] container : Color oppositeOf format;
+		reference font[0-1] container : Font oppositeOf format;
+		reference groupElementFormat : GroupElement oppositeOf format;
+		reference blockFormat : Block oppositeOf format;
+		
+	}
+
+	class Color extends LocatedElement {
+		attribute red : Integer;
+		attribute green : Integer;
+		attribute blue : Integer;
+		reference format : Format oppositeOf color;
+		
+	}
+
+	class Font extends LocatedElement {
+		attribute font : String;
+		attribute bold : Boolean;
+		attribute italic : Boolean;
+		reference format : Format oppositeOf font;
+		
+	}
+
+	class Indent extends LocatedElement {
+		attribute retrait : String;
+		reference groupElementIndent : GroupElement oppositeOf indent;
+		
+	}
+
+}
+
+package PrimitiveTypes {
+	datatype String;
+
+	datatype Integer;
+
+	datatype Boolean;
+
+}

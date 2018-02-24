@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="UML2AnyLogicXML" name="UML2AnyLogicXML">
+
+    <property name="input.filebasename"  value="Input/PizzaOrder" />	
+    <property name="output.filebasename" value="Output/PizzaOrder" />	
+    	
+	<target name="UML2AnyLogicXML" depends="loadModels">
+		<am3.atl path="Transformations/UML2AnyLogic.atl" allowintermodelreferences="true">
+			<inmodel name="UML"   model="UML"/>
+			<inmodel name="DI"    model="DI"/>
+			<inmodel name="AnyLogic" model="AnyLogic"/>
+
+			<inmodel name="IN"    model="UMLModel"/>
+			<inmodel name="IN_DI" model="UMLModelDI"/>
+			
+			<outmodel name="OUT"  model="AnyLogicModel" metamodel="AnyLogic"/>
+		</am3.atl>
+		
+		<am3.atl path="Transformations/AnyLogic2XML.atl" allowintermodelreferences="true">
+			<inmodel name="AnyLogic" model="AnyLogic"/>
+			<inmodel name="XML" model="XML"/>
+			
+			<inmodel name="IN"    model="AnyLogicModel"/>
+			
+			<outmodel name="OUT"  model="AnyLogicXMLModel" metamodel="XML"/>
+		</am3.atl>
+		
+		<am3.saveModel model="AnyLogicXMLModel" path="${output.filebasename}.alp">
+			<extractor name="xml" />		
+		</am3.saveModel>
+	</target>
+	
+	<target name="UML2AnyLogic" depends="loadModels">
+		<am3.atl path="Transformations/UML2AnyLogic.atl" allowintermodelreferences="true">
+			<inmodel name="UML"   model="UML"/>
+			<inmodel name="DI"    model="DI"/>
+			<inmodel name="AnyLogic" model="AnyLogic"/>
+
+			<inmodel name="IN"    model="UMLModel"/>
+			<inmodel name="IN_DI" model="UMLModelDI"/>
+			
+			<outmodel name="OUT"  model="AnyLogicModel" metamodel="AnyLogic"/>
+		</am3.atl>
+		
+		
+		<am3.saveModel model="AnyLogicModel" path="${output.filebasename}.al" />
+	</target>
+	
+	<target name="AnyLogic2XML" depends="loadModels">	
+		<am3.loadModel modelHandler="EMF" name="AnyLogicModel" metamodel="AnyLogic" path="${output.filebasename}.al" />		
+
+		<am3.atl path="Transformations/AnyLogic2XML.atl" allowintermodelreferences="true">
+			<superimpose path="Transformations/AnyLogic2XML.atl"  />
+			<inmodel name="AnyLogic" model="AnyLogic"/>
+			<inmodel name="XML" model="XML"/>
+			
+			<inmodel name="IN"    model="AnyLogicModel"/>
+			
+
+			
+			<outmodel name="OUT"  model="AnyLogicXMLModel" metamodel="XML"/>
+		</am3.atl>
+		
+		<am3.saveModel model="AnyLogicXMLModel" path="${output.filebasename}.alp">
+			<extractor name="xml" />		
+		</am3.saveModel>
+	</target>
+	
+	<target name="loadModels"> 
+		<am3.loadModel modelHandler="EMF" name="UML"      metamodel="%EMF" nsuri="http://www.eclipse.org/uml2/2.1.0/UML" />		
+		<am3.loadModel modelHandler="EMF" name="DI"       metamodel="%EMF" nsuri="http://www.topcased.org/DI/1.0" />	
+		<am3.loadModel modelHandler="EMF" name="XML"      metamodel="%EMF" path="Metamodels/XML.ecore" />
+		<am3.loadModel modelHandler="EMF" name="AnyLogic" metamodel="%EMF" path="Metamodels/AnyLogic.ecore" />	
+		
+		<am3.loadModel modelHandler="EMF"    name="UMLModel"   metamodel="UML" path="${input.filebasename}.uml" />
+		<am3.loadModel modelHandler="TUDEMF" name="UMLModelDI" metamodel="DI"  path="${input.filebasename}.umldi" />
+	</target>
+	
+</project>

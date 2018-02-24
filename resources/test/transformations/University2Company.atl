@@ -1,0 +1,39 @@
+-- @path UniversityMM=/University2Company/metamodels/UniversityMM.ecore
+-- @path CompanyMM=/University2Company/metamodels/CompanyMM.ecore
+
+module University2Company;
+create OUT : CompanyMM from IN : UniversityMM;
+
+helper context UniversityMM!University def: familyName : String =OclUndefined;
+
+rule University2CompanyModel{
+from s:UniversityMM!University
+to t:CompanyMM!CompanyModel(
+	companies <- s.courses
+)
+}
+
+rule Course2Company{
+from s: UniversityMM!Course
+to t: CompanyMM!Company(
+ name <- 'Spinoff '+s.name	,
+ employees <- s.students
+)
+}
+
+rule Student2Employee{
+from s:UniversityMM!Student(s.avg_grade>=20 and s.avg_grade<30 and s.course.name='Computer Science')
+to t: CompanyMM!Employee(
+name <- s.name	,
+role<-#Developer
+)
+}
+
+rule Student2Director{
+from s:UniversityMM!Student(s.avg_grade= 30 and s.course.name='Economics')
+to t: CompanyMM!Employee(
+name <- s.name	,
+role <- #Director
+)
+}
+

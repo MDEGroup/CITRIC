@@ -1,0 +1,141 @@
+<!--
+  How to configure this ANT script:
+    - See the build.properties property file.
+    - The example file name can be set there (default to "example").
+    - Choose a source terminal model to measure among {KM3,UML2}.
+    - Choose a target presentation format among {HTML,SVG,XHTML}.
+      - If SVG is chosen, choose a kind of chart among {Bar,Pie}.
+-->
+<project name="ModelsMeasurement" default="presentation">
+	<!-- Project properties -->
+	<property file="build.properties" />
+	<!-- Needed for ant-contrib additional tasks -->
+	<taskdef resource="net/sf/antcontrib/antlib.xml" />
+
+	<!-- Launches the measurement transformation -->
+	<target name="measurement" depends="loadModels">
+		<am3.atl path="${transformations.dir}${source.metamodel.name}2${measure.metamodel.name}.asm">
+			<inModel name="${source.metamodel.name}" model="${source.metamodel.name}" />
+			<inModel name="IN" model="${source.model.file}" />
+			<library name="FLAME4${source.metamodel.name}" path="${lib.dir}FLAME4${source.metamodel.name}.asm" />
+			<library name="MOOD4${source.metamodel.name}" path="${lib.dir}MOOD4${source.metamodel.name}.asm" />
+			<library name="EMOOSE4${source.metamodel.name}" path="${lib.dir}EMOOSE4${source.metamodel.name}.asm" />
+			<library name="QMOOD4${source.metamodel.name}" path="${lib.dir}QMOOD4${source.metamodel.name}.asm" />
+			<inModel name="${measure.metamodel.name}" model="${measure.metamodel.name}" />
+			<outModel name="OUT" model="${measure.model.file}" metamodel="${measure.metamodel.name}" />
+		</am3.atl>
+		<am3.saveModel model="${measure.model.file}" path="${models.dir}${measure.model.file}" />
+	</target>
+
+	<!-- Launches the presentation transformations -->
+	<target name="presentation" depends="measurement">
+		<if>
+			<equals arg1="${target.metamodel.name}" arg2="HTML" />
+			<then>
+				<property name="target.name" value="Tabular${target.metamodel.name}" />
+				<property name="target.suffix" value=".html" />
+			</then>
+			<elseif>
+				<equals arg1="${target.metamodel.name}" arg2="SVG" />
+				<then>
+					<property name="target.name" value="${target.metamodel.name}${svg.chart.kind}Chart" />
+					<property name="target.suffix" value=".svg" />
+				</then>
+			</elseif>
+			<elseif>
+				<equals arg1="${target.metamodel.name}" arg2="XHTML" />
+				<then>
+					<property name="target.name" value="${target.metamodel.name}" />
+					<property name="target.suffix" value=".html" />
+				</then>
+			</elseif>
+		</if>
+		<property name="target.file" value="${example.name}-${target.name}4${source.metamodel.name}${target.suffix}" />
+
+		<if>
+			<not>
+				<equals arg1="${target.metamodel.name}" arg2="XHTML" />
+			</not>
+			<then>
+				<am3.atl path="${transformations.dir}${measure.metamodel.name}2${table.metamodel.name}.asm">
+					<inModel name="${measure.metamodel.name}" model="${measure.metamodel.name}" />
+					<inModel name="IN" model="${measure.model.file}" />
+					<inModel name="${table.metamodel.name}" model="${table.metamodel.name}" />
+					<library name="${measure.metamodel.name}Helpers" path="${lib.dir}${measure.metamodel.name}Helpers.asm" />
+					<outModel name="OUT" model="${table.model.file}" metamodel="${table.metamodel.name}" />
+				</am3.atl>
+				<!--am3.saveModel model="${table.model.file}" path="${models.dir}${table.model.file}" /-->
+
+				<am3.atl path="${transformations.dir}${table.metamodel.name}2${target.name}.asm">
+					<inModel name="${table.metamodel.name}" model="${table.metamodel.name}" />
+					<inModel name="IN" model="${table.model.file}" />
+					<inModel name="${target.metamodel.name}" model="${target.metamodel.name}" />
+					<library name="${table.metamodel.name}Helpers" path="${lib.dir}${table.metamodel.name}Helpers.asm" />
+					<outModel name="OUT" model="${target.model.file}" metamodel="${target.metamodel.name}" />
+				</am3.atl>
+				<!--am3.saveModel model="${target.model.file}" path="${models.dir}${target.model.file}" /-->
+			</then>
+			<else>
+				<am3.atl path="${transformations.dir}${measure.metamodel.name}2${target.metamodel.name}.asm">
+					<inModel name="${measure.metamodel.name}" model="${measure.metamodel.name}" />
+					<inModel name="IN" model="${measure.model.file}" />
+					<inModel name="${target.metamodel.name}" model="${target.metamodel.name}" />
+					<library name="${measure.metamodel.name}Helpers" path="${lib.dir}${measure.metamodel.name}Helpers.asm" />
+					<outModel name="OUT" model="${target.model.file}" metamodel="${target.metamodel.name}" />
+				</am3.atl>
+				<!--am3.saveModel model="${target.model.file}" path="${models.dir}${target.model.file}" /-->
+			</else>
+		</if>
+
+		<am3.atl path="${transformations.dir}${target.metamodel.name}2${xml.metamodel.name}.asm">
+			<inModel name="${target.metamodel.name}" model="${target.metamodel.name}" />
+			<inModel name="IN" model="${target.model.file}" />
+			<inModel name="${xml.metamodel.name}" model="${xml.metamodel.name}" />
+			<outModel name="OUT" model="${xml.model.file}" metamodel="${xml.metamodel.name}" />
+		</am3.atl>
+		<am3.saveModel model="${xml.model.file}" path="${models.dir}${target.file}">
+			<extractor name="xml" />
+		</am3.saveModel>
+
+		<if>
+			<equals arg1="${target.metamodel.name}" arg2="XHTML" />
+			<then>
+				<!-- Transforms the generated file into a valid XHTML file -->
+				<dirname file="${ant.file}" property="cwd.dir" />
+				<java fork="true" jar="${lib.dir}${valid.xhtml.jar}">
+					<arg value="${cwd.dir}/${models.dir}${target.file}" />
+				</java>
+			</then>
+		</if>
+	</target>
+
+	<!-- Loads the metamodels and the source model -->
+	<target name="loadModels">
+		<if>
+			<equals arg1="${source.metamodel.name}" arg2="KM3" />
+			<then>
+				<property name="source.file" value="${example.name}.km3" />
+				<am3.loadModel name="${source.metamodel.name}" metamodel="MOF" nsUri="${km3.metamodel.uri}" />
+
+				<am3.loadModel name="${source.model.file}" metamodel="${source.metamodel.name}" path="${models.dir}${source.file}">
+					<injector name="ebnf">
+						<param name="name" value="${source.metamodel.name}" />
+					</injector>
+				</am3.loadModel>
+			</then>
+			<elseif>
+				<equals arg1="${source.metamodel.name}" arg2="UML2" />
+				<then>
+					<property name="source.file" value="${example.name}.uml" />
+					<am3.loadModel modelHandler="${source.metamodel.name}" name="${source.metamodel.name}" metamodel="MOF" nsUri="${uml2.metamodel.uri}" />
+
+					<am3.loadModel modelhandler="${source.metamodel.name}" name="${source.model.file}" metamodel="${source.metamodel.name}" path="${models.dir}${source.file}" />
+				</then>
+			</elseif>
+		</if>
+		<am3.loadModel name="${measure.metamodel.name}" metamodel="MOF" path="${metamodels.dir}${measure.metamodel.name}.ecore" />
+		<am3.loadModel name="${table.metamodel.name}" metamodel="MOF" path="${metamodels.dir}${table.metamodel.name}.ecore" />
+		<am3.loadModel name="${target.metamodel.name}" metamodel="MOF" path="${metamodels.dir}${target.metamodel.name}.ecore" />
+		<am3.loadModel name="${xml.metamodel.name}" metamodel="MOF" path="${metamodels.dir}${xml.metamodel.name}.ecore" />
+	</target>
+</project>

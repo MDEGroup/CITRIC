@@ -1,0 +1,36 @@
+-- @name		FileInfo
+-- @version		1.0
+-- @domains     File
+-- @authors		Yu Sun, Frédéric Jouault
+-- @date		2007/11/1
+-- @description	This is a metamodel for FileInfo
+-- @see         "KM3 User Manual", http://www.eclipse.org/gmt/atl/doc/
+
+package FileInfo {
+
+	-- Every class should extend LocatedElement, directly or indirectly.
+	-- This is a technical constraint to support text-to-model traceability.
+	abstract class LocatedElement {
+		attribute location[0-1] : String;
+		attribute commentsBefore[*] ordered : String;
+		attribute commentsAfter[*] ordered : String;
+	}
+
+-- BEGIN DSL-specific classes
+	class FileInfo extends LocatedElement {
+		reference file[0-*] ordered container  : File;
+	}
+	
+	class File extends LocatedElement {
+		attribute name : String;
+		attribute totallines : Integer;
+	}
+
+
+-- END DSL-specific classes
+}
+
+package PrimitiveTypes {
+	datatype Integer;
+	datatype String;
+}

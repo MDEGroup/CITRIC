@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="Measure">
+  <MetamodelMeasureSet elementName="AM3" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/9" unit="" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/10" unit="" value="37.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/11" unit="per Package" value="18.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/12" unit="" value="251.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/13" unit="per Package" value="125.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/14" unit="per Class" value="6.783783783783784"/>
+    <measures xsi:type="SimpleMeasure" metric="/15" unit="" value="224.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/16" unit="per Package" value="112.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/17" unit="per Class" value="6.054054054054054"/>
+    <measures xsi:type="SimpleMeasure" metric="/18" unit="" value="37.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/19" unit="per Package" value="18.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/20" unit="per Class" value="1.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/21" unit="" value="28.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/22" unit="per Package" value="14.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/23" unit="per Class" value="0.7567567567567568"/>
+    <measures xsi:type="SimpleMeasure" metric="/24" unit="per Class" value="0.8924302788844621"/>
+    <measures xsi:type="SimpleMeasure" metric="/25" unit="" value="5.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/26" unit="per Package" value="2.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/27" unit="per Class" value="3.081081081081081"/>
+    <measures xsi:type="SimpleMeasure" metric="/28" unit="" value="35.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/29" unit="per Package" value="17.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/30" unit="per Class" value="0.9459459459459459"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="Editor" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/31" unit="" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/32" unit="" value="9.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/33" unit="per Package" value="4.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/34" unit="" value="22.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/35" unit="per Package" value="11.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/36" unit="per Class" value="2.4444444444444446"/>
+    <measures xsi:type="SimpleMeasure" metric="/37" unit="" value="8.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/38" unit="per Package" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/39" unit="per Class" value="0.8888888888888888"/>
+    <measures xsi:type="SimpleMeasure" metric="/40" unit="" value="8.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/41" unit="per Package" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/42" unit="per Class" value="0.8888888888888888"/>
+    <measures xsi:type="SimpleMeasure" metric="/43" unit="" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/44" unit="per Package" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/45" unit="per Class" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/46" unit="per Class" value="0.36363636363636365"/>
+    <measures xsi:type="SimpleMeasure" metric="/47" unit="" value="1.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/48" unit="per Package" value="0.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/49" unit="per Class" value="0.8888888888888888"/>
+    <measures xsi:type="SimpleMeasure" metric="/50" unit="" value="8.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/51" unit="per Package" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/52" unit="per Class" value="0.8888888888888888"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="Outline" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/53" unit="" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/54" unit="" value="6.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/55" unit="per Package" value="3.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/56" unit="" value="14.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/57" unit="per Package" value="7.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/58" unit="per Class" value="2.3333333333333335"/>
+    <measures xsi:type="SimpleMeasure" metric="/59" unit="" value="5.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/60" unit="per Package" value="2.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/61" unit="per Class" value="0.8333333333333334"/>
+    <measures xsi:type="SimpleMeasure" metric="/62" unit="" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/63" unit="per Package" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/64" unit="per Class" value="0.6666666666666666"/>
+    <measures xsi:type="SimpleMeasure" metric="/65" unit="" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/66" unit="per Package" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/67" unit="per Class" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/68" unit="per Class" value="0.35714285714285715"/>
+    <measures xsi:type="SimpleMeasure" metric="/69" unit="" value="1.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/70" unit="per Package" value="0.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/71" unit="per Class" value="0.8333333333333334"/>
+    <measures xsi:type="SimpleMeasure" metric="/72" unit="" value="5.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/73" unit="per Package" value="2.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/74" unit="per Class" value="0.8333333333333334"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="AM3" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/75" unit="" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/76" unit="" value="37.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/77" unit="per Package" value="18.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/78" unit="" value="251.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/79" unit="per Package" value="125.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/80" unit="per Class" value="6.783783783783784"/>
+    <measures xsi:type="SimpleMeasure" metric="/81" unit="" value="224.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/82" unit="per Package" value="112.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/83" unit="per Class" value="6.054054054054054"/>
+    <measures xsi:type="SimpleMeasure" metric="/84" unit="" value="37.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/85" unit="per Package" value="18.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/86" unit="per Class" value="1.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/87" unit="" value="28.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/88" unit="per Package" value="14.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/89" unit="per Class" value="0.7567567567567568"/>
+    <measures xsi:type="SimpleMeasure" metric="/90" unit="per Class" value="0.8924302788844621"/>
+    <measures xsi:type="SimpleMeasure" metric="/91" unit="" value="5.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/92" unit="per Package" value="2.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/93" unit="per Class" value="3.081081081081081"/>
+    <measures xsi:type="SimpleMeasure" metric="/94" unit="" value="35.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/95" unit="per Package" value="17.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/96" unit="per Class" value="0.9459459459459459"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="Problem" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/97" unit="" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/98" unit="" value="1.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/99" unit="per Package" value="0.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/100" unit="" value="3.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/101" unit="per Package" value="1.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/102" unit="per Class" value="3.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/103" unit="" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/104" unit="per Package" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/105" unit="per Class" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/106" unit="" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/107" unit="per Package" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/108" unit="per Class" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/109" unit="" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/110" unit="per Package" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/111" unit="per Class" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/112" unit="per Class" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/113" unit="" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/114" unit="per Package" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/115" unit="per Class" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/116" unit="" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/117" unit="per Package" value="0.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/118" unit="per Class" value="0.0"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="TCS" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/119" unit="" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/120" unit="" value="66.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/121" unit="per Package" value="33.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/122" unit="" value="147.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/123" unit="per Package" value="73.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/124" unit="per Class" value="2.227272727272727"/>
+    <measures xsi:type="SimpleMeasure" metric="/125" unit="" value="93.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/126" unit="per Package" value="46.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/127" unit="per Class" value="1.4090909090909092"/>
+    <measures xsi:type="SimpleMeasure" metric="/128" unit="" value="47.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/129" unit="per Package" value="23.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/130" unit="per Class" value="0.7121212121212122"/>
+    <measures xsi:type="SimpleMeasure" metric="/131" unit="" value="37.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/132" unit="per Package" value="18.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/133" unit="per Class" value="0.5606060606060606"/>
+    <measures xsi:type="SimpleMeasure" metric="/134" unit="per Class" value="0.6326530612244898"/>
+    <measures xsi:type="SimpleMeasure" metric="/135" unit="" value="3.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/136" unit="per Package" value="1.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/137" unit="per Class" value="1.9393939393939394"/>
+    <measures xsi:type="SimpleMeasure" metric="/138" unit="" value="65.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/139" unit="per Package" value="32.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/140" unit="per Class" value="0.9848484848484849"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="CoreANTLRActions" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/141" unit="" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/142" unit="" value="25.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/143" unit="per Package" value="6.25"/>
+    <measures xsi:type="SimpleMeasure" metric="/144" unit="" value="100.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/145" unit="per Package" value="25.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/146" unit="per Class" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/147" unit="" value="79.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/148" unit="per Package" value="19.75"/>
+    <measures xsi:type="SimpleMeasure" metric="/149" unit="per Class" value="3.16"/>
+    <measures xsi:type="SimpleMeasure" metric="/150" unit="" value="45.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/151" unit="per Package" value="11.25"/>
+    <measures xsi:type="SimpleMeasure" metric="/152" unit="per Class" value="1.8"/>
+    <measures xsi:type="SimpleMeasure" metric="/153" unit="" value="71.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/154" unit="per Package" value="17.75"/>
+    <measures xsi:type="SimpleMeasure" metric="/155" unit="per Class" value="2.84"/>
+    <measures xsi:type="SimpleMeasure" metric="/156" unit="per Class" value="0.79"/>
+    <measures xsi:type="SimpleMeasure" metric="/157" unit="" value="3.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/158" unit="per Package" value="1.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/159" unit="per Class" value="1.8"/>
+    <measures xsi:type="SimpleMeasure" metric="/160" unit="" value="24.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/161" unit="per Package" value="6.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/162" unit="per Class" value="0.96"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="OCLATLCore" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/163" unit="" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/164" unit="" value="35.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/165" unit="per Package" value="8.75"/>
+    <measures xsi:type="SimpleMeasure" metric="/166" unit="" value="69.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/167" unit="per Package" value="17.25"/>
+    <measures xsi:type="SimpleMeasure" metric="/168" unit="per Class" value="1.9714285714285715"/>
+    <measures xsi:type="SimpleMeasure" metric="/169" unit="" value="59.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/170" unit="per Package" value="14.75"/>
+    <measures xsi:type="SimpleMeasure" metric="/171" unit="per Class" value="1.6857142857142857"/>
+    <measures xsi:type="SimpleMeasure" metric="/172" unit="" value="88.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/173" unit="per Package" value="22.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/174" unit="per Class" value="2.5142857142857142"/>
+    <measures xsi:type="SimpleMeasure" metric="/175" unit="" value="70.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/176" unit="per Package" value="17.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/177" unit="per Class" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/178" unit="per Class" value="0.855072463768116"/>
+    <measures xsi:type="SimpleMeasure" metric="/179" unit="" value="4.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/180" unit="per Package" value="1.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/181" unit="per Class" value="1.9428571428571428"/>
+    <measures xsi:type="SimpleMeasure" metric="/182" unit="" value="34.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/183" unit="per Package" value="8.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/184" unit="per Class" value="0.9714285714285714"/>
+  </MetamodelMeasureSet>
+  <MetamodelMeasureSet elementName="Ant" elementType="Metamodel">
+    <measures xsi:type="SimpleMeasure" metric="/185" unit="" value="2.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/186" unit="" value="48.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/187" unit="per Package" value="24.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/188" unit="" value="155.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/189" unit="per Package" value="77.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/190" unit="per Class" value="3.2291666666666665"/>
+    <measures xsi:type="SimpleMeasure" metric="/191" unit="" value="62.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/192" unit="per Package" value="31.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/193" unit="per Class" value="1.2916666666666667"/>
+    <measures xsi:type="SimpleMeasure" metric="/194" unit="" value="27.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/195" unit="per Package" value="13.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/196" unit="per Class" value="0.5625"/>
+    <measures xsi:type="SimpleMeasure" metric="/197" unit="" value="18.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/198" unit="per Package" value="9.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/199" unit="per Class" value="0.375"/>
+    <measures xsi:type="SimpleMeasure" metric="/200" unit="per Class" value="0.4"/>
+    <measures xsi:type="SimpleMeasure" metric="/201" unit="" value="3.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/202" unit="per Package" value="1.5"/>
+    <measures xsi:type="SimpleMeasure" metric="/203" unit="per Class" value="1.8125"/>
+    <measures xsi:type="SimpleMeasure" metric="/204" unit="" value="40.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/205" unit="per Package" value="20.0"/>
+    <measures xsi:type="SimpleMeasure" metric="/206" unit="per Class" value="0.8333333333333334"/>
+  </MetamodelMeasureSet>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="TNP" name="Total Number of Packages"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNC" name="Total Number of Classes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNA" name="Total Number of Attributes"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNAI" name="Total Number of Attributes Inherited"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNR" name="Total Number of Relationships"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="TNRI" name="Total Number of Relationships Inherited"/>
+  <Metric shortName="AIF" name="Attribute Inheritance Factor"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="DIT" name="Depth Inheritance Tree"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+  <Metric shortName="NOC" name="Number of Children"/>
+</xmi:XMI>

@@ -1,0 +1,27 @@
+module E2D;
+
+create OUT : D from IN : E;
+
+helper def: counter : Integer = 1;
+
+rule R2N {
+	from
+		s : E!R
+	to
+		t : D!N (name <- t.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+
+rule T2P_V {
+	from
+		s : E!T
+	to
+		t_1 : D!P (name <- t_1.oclType().name.toString().toLower() + '_' + thisModule.counter),
+		t_2 : D!V (name <- t_2.oclType().name.toString().toLower() + '_' + thisModule.counter)
+	do {
+		thisModule.counter <- thisModule.counter + 1;
+	}
+}
+

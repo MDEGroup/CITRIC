@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Outline xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="Outline">
+  <nodes name="LocatedElement" icon="dummy">
+    <label label="LocatedElement"/>
+    <mapping mapString="LocatedElement"/>
+  </nodes>
+  <nodes name="CloneDr" icon="dummy">
+    <label label="CloneDr"/>
+    <mapping mapString="CloneDr"/>
+  </nodes>
+  <nodes name="CDGroup" icon="dummy">
+    <label label="CDGroup"/>
+    <mapping mapString="CDGroup"/>
+  </nodes>
+  <nodes name="CDHead" icon="dummy">
+    <label label="CDHead"/>
+    <mapping mapString="CDHead"/>
+  </nodes>
+  <nodes name="CDUnit" icon="dummy">
+    <label label="CDUnit"/>
+    <mapping mapString="CDUnit"/>
+  </nodes>
+  <nodes name="CDVarible" icon="dummy">
+    <label label="CDVarible"/>
+    <mapping mapString="CDVarible"/>
+  </nodes>
+</Outline>

@@ -1,0 +1,55 @@
+-- @name		Generic Code Clone
+-- @version		1.0
+-- @domains     Code Clone
+-- @authors		Yu Sun, Frédéric Jouault
+-- @date		2007/10/04
+-- @description	This is a metamodel for the Generic Code Clone
+-- @see         "KM3 User Manual", http://www.eclipse.org/gmt/atl/doc/
+
+package CodeClone {
+
+	-- Every class should extend LocatedElement, directly or indirectly.
+	-- This is a technical constraint to support text-to-model traceability.
+	abstract class LocatedElement {
+		attribute location[0-1] : String;
+		attribute commentsBefore[*] ordered : String;
+		attribute commentsAfter[*] ordered : String;
+	}
+
+-- BEGIN DSL-specific classes
+	class CodeClone extends LocatedElement {
+		attribute sourceToolName : String;
+		reference groups[0-*] ordered container : CloneGroup oppositeOf parent;
+	}
+	
+	class CloneGroup extends LocatedElement {
+		attribute totalUnits : Integer;
+		reference parent[0-1] : CodeClone oppositeOf groups;
+		reference units[1-*] ordered container : CloneUnit oppositeOf parent;
+	}
+	
+	class CloneUnit extends LocatedElement {
+		reference parent[0-1] : CloneGroup oppositeOf units;
+		attribute startLine : Integer;
+		attribute endLine : Integer;
+		attribute totalLines : Integer;
+		reference file : File;
+	}
+	
+	class FileList extends LocatedElement {
+		reference files[0-*] ordered container : File;
+	}
+	
+	class File extends LocatedElement {
+		attribute fileName : String;
+		attribute totalFileLines : Integer;
+	}
+	
+-- END DSL-specific classes
+
+}
+
+package PrimitiveTypes {
+	datatype Integer;
+	datatype String;
+}

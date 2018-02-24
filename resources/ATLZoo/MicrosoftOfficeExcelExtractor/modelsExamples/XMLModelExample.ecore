@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" name="Workbook" value="">
+  <children xsi:type="Attribute" name="xmlns" value="urn:schemas-microsoft-com:office:spreadsheet"/>
+  <children xsi:type="Attribute" name="xmlns:ss" value="urn:schemas-microsoft-com:office:spreadsheet"/>
+  <children xsi:type="Element" name="Worksheet">
+    <children xsi:type="Attribute" name="ss:Name" value="Java source code Info"/>
+    <children xsi:type="Element" name="Table">
+      <children xsi:type="Element" name="Column">
+        <children xsi:type="Attribute" name="ss:Width" value="150.0"/>
+      </children>
+      <children xsi:type="Element" name="Column">
+        <children xsi:type="Attribute" name="ss:Width" value="150.0"/>
+      </children>
+      <children xsi:type="Element" name="Column">
+        <children xsi:type="Attribute" name="ss:Width" value="150.0"/>
+      </children>
+      <children xsi:type="Element" name="Column">
+        <children xsi:type="Attribute" name="ss:Width" value="150.0"/>
+      </children>
+      <children xsi:type="Element" name="Column">
+        <children xsi:type="Attribute" name="ss:Width" value="150.0"/>
+      </children>
+      <children xsi:type="Element" name="Row">
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value=""/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="FirstClass.fc_m1"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="FirstClass.fc_m2"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="SecondClass.sc_m1"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="SecondClass.sc_m2"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="Element" name="Row">
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="FirstClass.fc_m1"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="Element" name="Row">
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="FirstClass.fc_m2"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="2.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="Element" name="Row">
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="SecondClass.sc_m1"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="1.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+      </children>
+      <children xsi:type="Element" name="Row">
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="String"/>
+            <children xsi:type="Text" value="SecondClass.sc_m2"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="1.0"/>
+          </children>
+        </children>
+        <children xsi:type="Element" name="Cell">
+          <children xsi:type="Element" name="Data">
+            <children xsi:type="Attribute" name="ss:Type" value="Number"/>
+            <children xsi:type="Text" value="0.0"/>
+          </children>
+        </children>
+      </children>
+    </children>
+  </children>
+</Root>

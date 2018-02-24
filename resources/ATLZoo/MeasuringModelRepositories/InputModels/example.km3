@@ -1,0 +1,149 @@
+package AM3 {
+
+	abstract class LocatedElement {
+		attribute location : String;
+	}
+
+	class Megamodel extends LocatedElement {
+		attribute name : String;
+		reference megamodelElements[*] container : MegamodelElement;
+		reference origins[*] container : Origin;
+	}
+
+	class Origin {
+		attribute name : String;
+		reference elements[*] : MegamodelElement;
+	}
+
+	abstract class MegamodelElement extends LocatedElement {}
+
+	enumeration LocationType {
+		literal EMFRegistry;
+		literal AM3Repository;
+		literal workspace;
+	}
+
+----------------------------------------------
+------------------ ARTIFACT
+----------------------------------------------
+	abstract class Artifact extends MegamodelElement {
+		attribute uri : String;
+		attribute name : String;
+		attribute shortName[0-1] : String;
+		attribute version[0-1] : String;
+		attribute domains[0-1] : String;
+		attribute authors[0-1] : String;
+		attribute date[0-1] : String;
+		attribute description[0-1] : String;
+		attribute see[0-1] : String;
+		attribute locationType : LocationType;
+		reference relationEnds[*] : RelationEnd oppositeOf artifact;
+	}
+
+	class Model extends Artifact {}
+
+	class Metamodel extends Model {}
+
+-- @begin ANT Transformations
+	class ANTTransformation extends Artifact {
+		reference context container : ANTParameter;
+		reference parameters[*] ordered container : ANTParameter;
+	}
+	
+	class ANTParameter extends LocatedElement {
+		attribute name : String;
+		attribute isOptional : Boolean;
+		attribute type[0-1] : String;
+		reference properties[*] container : Property;
+		attribute defaultValue[0-1] : String;
+		attribute reachableBy[0-1] : String;
+	}
+
+	class Property extends LocatedElement {
+		attribute propertyName : String;
+		attribute correspondingAttribute : String;
+	}
+
+-- @end ANT Transformations
+
+	abstract class ATLFile extends Artifact {}
+
+	class ATLTransformation extends ATLFile {}
+
+	class ATLLib extends ATLFile {}
+
+	class ATLQuery extends ATLFile {}
+
+	class TCS extends Artifact {
+		attribute uriContainer : String;
+	}
+
+	class Editor extends Artifact {
+		attribute extension : String;
+	}
+
+	class Outline extends Artifact {}
+
+	abstract class Projector extends Artifact {}
+
+	abstract class Injector extends Projector {}
+
+	class XMLInjector extends Injector {}
+
+	class EBNFInjector extends Injector {
+		attribute extension : String; -- extension of files associated to injector
+		attribute classNamePrefix : String; -- prefix of className (e.g. KM3)
+	}
+
+	abstract class Extractor extends Projector {
+		attribute extension : String;
+		attribute paramMetamodel : String;
+		attribute paramModel : String;
+	}
+
+	class ATLExtractor extends Extractor {}
+
+	class EBNFExtractor extends Extractor {}
+
+	class XMLExtractor extends Extractor {}
+
+----------------------------------------------
+------------------ RELATION END
+----------------------------------------------
+	class RelationEnd extends MegamodelElement {
+		reference artifact : Artifact oppositeOf relationEnds;
+		reference relation : Relation oppositeOf relationEnds;
+	}
+
+----------------------------------------------
+------------------ RELATION
+----------------------------------------------
+	abstract class Relation extends MegamodelElement {
+		reference relationEnds[*] ordered container : RelationEnd oppositeOf relation;
+	}
+
+	abstract class ATLTransformationParameter extends Relation {}
+
+	class Syntax extends Relation {}
+
+	class OutlineOfEditor extends Relation {}
+
+	class InputMetamodelOfTransformation extends ATLTransformationParameter {}
+
+	class OutputMetamodelOfTransformation extends ATLTransformationParameter {}
+
+	class LibOfTransformation extends ATLTransformationParameter {}
+
+	class ConformedToMetamodel extends Relation {}
+
+	class RepresentationOf extends Relation {}
+
+	abstract class ProjectorParameter extends Relation {}
+
+	class MetamodelOfProjectedFile extends ProjectorParameter {}
+}
+
+package PrimitiveTypes {
+	datatype Boolean;
+	datatype String;
+}

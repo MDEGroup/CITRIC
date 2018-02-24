@@ -1,0 +1,921 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '2532.0' height = '420.0'>
+  <g transform = 'translate(262.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '-46.0' y = '400.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Attribute Inheritance Factor per Class</text>
+    <rect x = '-257.0' y = '-5.0' width = '412.0' height = '390.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V380,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Megamodel (0.5)</text>
+      <rect x = '0.0' y = '10.0' width = '67.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Origin (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MegamodelElement (1.0)</text>
+      <rect x = '0.0' y = '30.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Artifact (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '12.272727272727273' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Model (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Metamodel (1.0)</text>
+      <rect x = '0.0' y = '60.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTTransformation (1.0)</text>
+      <rect x = '0.0' y = '70.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTParameter (0.1)</text>
+      <rect x = '0.0' y = '80.0' width = '22.5' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.3)</text>
+      <rect x = '0.0' y = '90.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLFile (1.0)</text>
+      <rect x = '0.0' y = '100.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformation (1.0)</text>
+      <rect x = '0.0' y = '110.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLLib (1.0)</text>
+      <rect x = '0.0' y = '120.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLQuery (1.0)</text>
+      <rect x = '0.0' y = '130.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TCS (0.9)</text>
+      <rect x = '0.0' y = '140.0' width = '123.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (0.9)</text>
+      <rect x = '0.0' y = '150.0' width = '123.75' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (1.0)</text>
+      <rect x = '0.0' y = '160.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Projector (1.0)</text>
+      <rect x = '0.0' y = '170.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Injector (1.0)</text>
+      <rect x = '0.0' y = '180.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLInjector (1.0)</text>
+      <rect x = '0.0' y = '190.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFInjector (0.8)</text>
+      <rect x = '0.0' y = '200.0' width = '114.23076923076923' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Extractor (0.7)</text>
+      <rect x = '0.0' y = '210.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLExtractor (1.0)</text>
+      <rect x = '0.0' y = '220.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFExtractor (1.0)</text>
+      <rect x = '0.0' y = '230.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLExtractor (1.0)</text>
+      <rect x = '0.0' y = '240.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RelationEnd (1.0)</text>
+      <rect x = '0.0' y = '250.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Relation (1.0)</text>
+      <rect x = '0.0' y = '260.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformationParameter (1.0)</text>
+      <rect x = '0.0' y = '270.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Syntax (1.0)</text>
+      <rect x = '0.0' y = '280.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutlineOfEditor (1.0)</text>
+      <rect x = '0.0' y = '290.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '300.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '310.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LibOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '320.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ConformedToMetamodel (1.0)</text>
+      <rect x = '0.0' y = '330.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RepresentationOf (1.0)</text>
+      <rect x = '0.0' y = '340.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ProjectorParameter (1.0)</text>
+      <rect x = '0.0' y = '350.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MetamodelOfProjectedFile (1.0)</text>
+      <rect x = '0.0' y = '360.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(679.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '-46.0' y = '400.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Depth Inheritance Tree per Class</text>
+    <rect x = '-257.0' y = '-5.0' width = '412.0' height = '390.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V380,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Megamodel (1.0)</text>
+      <rect x = '0.0' y = '10.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Origin (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MegamodelElement (1.0)</text>
+      <rect x = '0.0' y = '30.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Artifact (2.0)</text>
+      <rect x = '0.0' y = '40.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Model (3.0)</text>
+      <rect x = '0.0' y = '50.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Metamodel (4.0)</text>
+      <rect x = '0.0' y = '60.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTTransformation (3.0)</text>
+      <rect x = '0.0' y = '70.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTParameter (1.0)</text>
+      <rect x = '0.0' y = '80.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (1.0)</text>
+      <rect x = '0.0' y = '90.0' width = '27.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLFile (3.0)</text>
+      <rect x = '0.0' y = '100.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformation (4.0)</text>
+      <rect x = '0.0' y = '110.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLLib (4.0)</text>
+      <rect x = '0.0' y = '120.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLQuery (4.0)</text>
+      <rect x = '0.0' y = '130.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TCS (3.0)</text>
+      <rect x = '0.0' y = '140.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (3.0)</text>
+      <rect x = '0.0' y = '150.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (3.0)</text>
+      <rect x = '0.0' y = '160.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Projector (3.0)</text>
+      <rect x = '0.0' y = '170.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Injector (4.0)</text>
+      <rect x = '0.0' y = '180.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLInjector (5.0)</text>
+      <rect x = '0.0' y = '190.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFInjector (5.0)</text>
+      <rect x = '0.0' y = '200.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Extractor (4.0)</text>
+      <rect x = '0.0' y = '210.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLExtractor (5.0)</text>
+      <rect x = '0.0' y = '220.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFExtractor (5.0)</text>
+      <rect x = '0.0' y = '230.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLExtractor (5.0)</text>
+      <rect x = '0.0' y = '240.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RelationEnd (2.0)</text>
+      <rect x = '0.0' y = '250.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Relation (2.0)</text>
+      <rect x = '0.0' y = '260.0' width = '54.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformationParameter (3.0)</text>
+      <rect x = '0.0' y = '270.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Syntax (3.0)</text>
+      <rect x = '0.0' y = '280.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutlineOfEditor (3.0)</text>
+      <rect x = '0.0' y = '290.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InputMetamodelOfTransformation (4.0)</text>
+      <rect x = '0.0' y = '300.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutputMetamodelOfTransformation (4.0)</text>
+      <rect x = '0.0' y = '310.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LibOfTransformation (4.0)</text>
+      <rect x = '0.0' y = '320.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ConformedToMetamodel (3.0)</text>
+      <rect x = '0.0' y = '330.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RepresentationOf (3.0)</text>
+      <rect x = '0.0' y = '340.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ProjectorParameter (3.0)</text>
+      <rect x = '0.0' y = '350.0' width = '81.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MetamodelOfProjectedFile (4.0)</text>
+      <rect x = '0.0' y = '360.0' width = '108.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1096.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '-46.0' y = '400.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Number of Children per Class</text>
+    <rect x = '-257.0' y = '-5.0' width = '412.0' height = '390.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V380,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (4.0)</text>
+      <rect x = '0.0' y = '0.0' width = '77.14285714285714' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Megamodel (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Origin (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MegamodelElement (3.0)</text>
+      <rect x = '0.0' y = '30.0' width = '57.857142857142854' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Artifact (7.0)</text>
+      <rect x = '0.0' y = '40.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Model (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '19.285714285714285' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Metamodel (0.0)</text>
+      <rect x = '0.0' y = '60.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTTransformation (0.0)</text>
+      <rect x = '0.0' y = '70.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTParameter (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '90.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLFile (3.0)</text>
+      <rect x = '0.0' y = '100.0' width = '57.857142857142854' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformation (0.0)</text>
+      <rect x = '0.0' y = '110.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLLib (0.0)</text>
+      <rect x = '0.0' y = '120.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLQuery (0.0)</text>
+      <rect x = '0.0' y = '130.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TCS (0.0)</text>
+      <rect x = '0.0' y = '140.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (0.0)</text>
+      <rect x = '0.0' y = '150.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (0.0)</text>
+      <rect x = '0.0' y = '160.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Projector (2.0)</text>
+      <rect x = '0.0' y = '170.0' width = '38.57142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Injector (2.0)</text>
+      <rect x = '0.0' y = '180.0' width = '38.57142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLInjector (0.0)</text>
+      <rect x = '0.0' y = '190.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFInjector (0.0)</text>
+      <rect x = '0.0' y = '200.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Extractor (3.0)</text>
+      <rect x = '0.0' y = '210.0' width = '57.857142857142854' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLExtractor (0.0)</text>
+      <rect x = '0.0' y = '220.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFExtractor (0.0)</text>
+      <rect x = '0.0' y = '230.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLExtractor (0.0)</text>
+      <rect x = '0.0' y = '240.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RelationEnd (0.0)</text>
+      <rect x = '0.0' y = '250.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Relation (6.0)</text>
+      <rect x = '0.0' y = '260.0' width = '115.71428571428571' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformationParameter (3.0)</text>
+      <rect x = '0.0' y = '270.0' width = '57.857142857142854' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Syntax (0.0)</text>
+      <rect x = '0.0' y = '280.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutlineOfEditor (0.0)</text>
+      <rect x = '0.0' y = '290.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InputMetamodelOfTransformation (0.0)</text>
+      <rect x = '0.0' y = '300.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutputMetamodelOfTransformation (0.0)</text>
+      <rect x = '0.0' y = '310.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LibOfTransformation (0.0)</text>
+      <rect x = '0.0' y = '320.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ConformedToMetamodel (0.0)</text>
+      <rect x = '0.0' y = '330.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RepresentationOf (0.0)</text>
+      <rect x = '0.0' y = '340.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ProjectorParameter (1.0)</text>
+      <rect x = '0.0' y = '350.0' width = '19.285714285714285' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MetamodelOfProjectedFile (0.0)</text>
+      <rect x = '0.0' y = '360.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1513.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '-46.0' y = '400.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Attributes Inherited per Class</text>
+    <rect x = '-257.0' y = '-5.0' width = '412.0' height = '390.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V380,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Megamodel (1.0)</text>
+      <rect x = '0.0' y = '10.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Origin (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MegamodelElement (1.0)</text>
+      <rect x = '0.0' y = '30.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Artifact (1.0)</text>
+      <rect x = '0.0' y = '40.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Model (11.0)</text>
+      <rect x = '0.0' y = '50.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Metamodel (11.0)</text>
+      <rect x = '0.0' y = '60.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTTransformation (11.0)</text>
+      <rect x = '0.0' y = '70.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTParameter (1.0)</text>
+      <rect x = '0.0' y = '80.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (1.0)</text>
+      <rect x = '0.0' y = '90.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLFile (11.0)</text>
+      <rect x = '0.0' y = '100.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformation (11.0)</text>
+      <rect x = '0.0' y = '110.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLLib (11.0)</text>
+      <rect x = '0.0' y = '120.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLQuery (11.0)</text>
+      <rect x = '0.0' y = '130.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TCS (11.0)</text>
+      <rect x = '0.0' y = '140.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (11.0)</text>
+      <rect x = '0.0' y = '150.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (11.0)</text>
+      <rect x = '0.0' y = '160.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Projector (11.0)</text>
+      <rect x = '0.0' y = '170.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Injector (11.0)</text>
+      <rect x = '0.0' y = '180.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLInjector (11.0)</text>
+      <rect x = '0.0' y = '190.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFInjector (11.0)</text>
+      <rect x = '0.0' y = '200.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Extractor (11.0)</text>
+      <rect x = '0.0' y = '210.0' width = '106.07142857142857' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLExtractor (14.0)</text>
+      <rect x = '0.0' y = '220.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFExtractor (14.0)</text>
+      <rect x = '0.0' y = '230.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLExtractor (14.0)</text>
+      <rect x = '0.0' y = '240.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RelationEnd (1.0)</text>
+      <rect x = '0.0' y = '250.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Relation (1.0)</text>
+      <rect x = '0.0' y = '260.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformationParameter (1.0)</text>
+      <rect x = '0.0' y = '270.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Syntax (1.0)</text>
+      <rect x = '0.0' y = '280.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutlineOfEditor (1.0)</text>
+      <rect x = '0.0' y = '290.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '300.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '310.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LibOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '320.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ConformedToMetamodel (1.0)</text>
+      <rect x = '0.0' y = '330.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RepresentationOf (1.0)</text>
+      <rect x = '0.0' y = '340.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ProjectorParameter (1.0)</text>
+      <rect x = '0.0' y = '350.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MetamodelOfProjectedFile (1.0)</text>
+      <rect x = '0.0' y = '360.0' width = '9.642857142857142' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1930.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '-46.0' y = '400.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships Inherited per Class</text>
+    <rect x = '-257.0' y = '-5.0' width = '412.0' height = '390.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V380,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Megamodel (0.0)</text>
+      <rect x = '0.0' y = '10.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Origin (0.0)</text>
+      <rect x = '0.0' y = '20.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MegamodelElement (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Artifact (0.0)</text>
+      <rect x = '0.0' y = '40.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Model (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Metamodel (1.0)</text>
+      <rect x = '0.0' y = '60.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTTransformation (1.0)</text>
+      <rect x = '0.0' y = '70.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTParameter (0.0)</text>
+      <rect x = '0.0' y = '80.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '90.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLFile (1.0)</text>
+      <rect x = '0.0' y = '100.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformation (1.0)</text>
+      <rect x = '0.0' y = '110.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLLib (1.0)</text>
+      <rect x = '0.0' y = '120.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLQuery (1.0)</text>
+      <rect x = '0.0' y = '130.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TCS (1.0)</text>
+      <rect x = '0.0' y = '140.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (1.0)</text>
+      <rect x = '0.0' y = '150.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (1.0)</text>
+      <rect x = '0.0' y = '160.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Projector (1.0)</text>
+      <rect x = '0.0' y = '170.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Injector (1.0)</text>
+      <rect x = '0.0' y = '180.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLInjector (1.0)</text>
+      <rect x = '0.0' y = '190.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFInjector (1.0)</text>
+      <rect x = '0.0' y = '200.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Extractor (1.0)</text>
+      <rect x = '0.0' y = '210.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLExtractor (1.0)</text>
+      <rect x = '0.0' y = '220.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFExtractor (1.0)</text>
+      <rect x = '0.0' y = '230.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLExtractor (1.0)</text>
+      <rect x = '0.0' y = '240.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RelationEnd (0.0)</text>
+      <rect x = '0.0' y = '250.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Relation (0.0)</text>
+      <rect x = '0.0' y = '260.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformationParameter (1.0)</text>
+      <rect x = '0.0' y = '270.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Syntax (1.0)</text>
+      <rect x = '0.0' y = '280.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutlineOfEditor (1.0)</text>
+      <rect x = '0.0' y = '290.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '300.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '310.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LibOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '320.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ConformedToMetamodel (1.0)</text>
+      <rect x = '0.0' y = '330.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RepresentationOf (1.0)</text>
+      <rect x = '0.0' y = '340.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ProjectorParameter (1.0)</text>
+      <rect x = '0.0' y = '350.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MetamodelOfProjectedFile (1.0)</text>
+      <rect x = '0.0' y = '360.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(2347.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '-46.0' y = '400.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships per Class</text>
+    <rect x = '-257.0' y = '-5.0' width = '412.0' height = '390.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V380,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LocatedElement (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '19.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Megamodel (2.0)</text>
+      <rect x = '0.0' y = '10.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '29.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Origin (1.0)</text>
+      <rect x = '0.0' y = '20.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '39.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MegamodelElement (0.0)</text>
+      <rect x = '0.0' y = '30.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '49.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Artifact (1.0)</text>
+      <rect x = '0.0' y = '40.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '59.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Model (1.0)</text>
+      <rect x = '0.0' y = '50.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '69.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Metamodel (1.0)</text>
+      <rect x = '0.0' y = '60.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '79.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTTransformation (3.0)</text>
+      <rect x = '0.0' y = '70.0' width = '135.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '89.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ANTParameter (1.0)</text>
+      <rect x = '0.0' y = '80.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '99.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Property (0.0)</text>
+      <rect x = '0.0' y = '90.0' width = '0.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '109.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLFile (1.0)</text>
+      <rect x = '0.0' y = '100.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '119.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformation (1.0)</text>
+      <rect x = '0.0' y = '110.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '129.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLLib (1.0)</text>
+      <rect x = '0.0' y = '120.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '139.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLQuery (1.0)</text>
+      <rect x = '0.0' y = '130.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '149.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>TCS (1.0)</text>
+      <rect x = '0.0' y = '140.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '159.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Editor (1.0)</text>
+      <rect x = '0.0' y = '150.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '169.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Outline (1.0)</text>
+      <rect x = '0.0' y = '160.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '179.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Projector (1.0)</text>
+      <rect x = '0.0' y = '170.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '189.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Injector (1.0)</text>
+      <rect x = '0.0' y = '180.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '199.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLInjector (1.0)</text>
+      <rect x = '0.0' y = '190.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '209.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFInjector (1.0)</text>
+      <rect x = '0.0' y = '200.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '219.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Extractor (1.0)</text>
+      <rect x = '0.0' y = '210.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '229.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLExtractor (1.0)</text>
+      <rect x = '0.0' y = '220.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '239.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>EBNFExtractor (1.0)</text>
+      <rect x = '0.0' y = '230.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '249.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>XMLExtractor (1.0)</text>
+      <rect x = '0.0' y = '240.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '259.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RelationEnd (2.0)</text>
+      <rect x = '0.0' y = '250.0' width = '90.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '269.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Relation (1.0)</text>
+      <rect x = '0.0' y = '260.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '279.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ATLTransformationParameter (1.0)</text>
+      <rect x = '0.0' y = '270.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '289.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Syntax (1.0)</text>
+      <rect x = '0.0' y = '280.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '299.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutlineOfEditor (1.0)</text>
+      <rect x = '0.0' y = '290.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '309.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>InputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '300.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '319.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>OutputMetamodelOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '310.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '329.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>LibOfTransformation (1.0)</text>
+      <rect x = '0.0' y = '320.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '339.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ConformedToMetamodel (1.0)</text>
+      <rect x = '0.0' y = '330.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '349.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>RepresentationOf (1.0)</text>
+      <rect x = '0.0' y = '340.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '359.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>ProjectorParameter (1.0)</text>
+      <rect x = '0.0' y = '350.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '369.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>MetamodelOfProjectedFile (1.0)</text>
+      <rect x = '0.0' y = '360.0' width = '45.0' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+</svg>

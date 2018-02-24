@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<svg xmlns = 'http://www.w3.org/2000/svg' version = '1.1' width = '1524.0' height = '60.0'>
+  <g transform = 'translate(94.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '40.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Attribute Inheritance Factor per Class</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '30.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V20,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(343.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '40.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Depth Inheritance Tree per Class</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '30.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V20,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(592.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '40.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Number of Children per Class</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '30.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V20,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(841.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '40.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Attributes Inherited per Class</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '30.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V20,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1090.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '40.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships Inherited per Class</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '30.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V20,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+  <g transform = 'translate(1339.0,10.0) scale(1.0)' fill = 'black'>
+    <text x = '38.0' y = '40.0' stroke = 'blue' font-size = '12' text-anchor = 'middle'>Total Number of Relationships per Class</text>
+    <rect x = '-89.0' y = '-5.0' width = '244.0' height = '30.0' fill = 'none' stroke = 'blue'/>
+    <path d = 'M145,0 H0 V20,0 z' fill = 'none' stroke = 'black'/>
+    <g transform = '' fill = 'black'>
+      <text x = '-5.0' y = '9.0' stroke = 'blue' font-size = '8' text-anchor = 'end'>Problem (0.0)</text>
+      <rect x = '0.0' y = '0.0' width = 'NaN' height = '10.0' fill = 'blue' stroke = 'black'/>
+    </g>
+  </g>
+</svg>
