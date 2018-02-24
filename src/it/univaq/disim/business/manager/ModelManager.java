@@ -169,7 +169,7 @@ public class ModelManager extends BaseEcoreModelManager {
 					Set<EStructuralFeature> sFList = new HashSet<EStructuralFeature>();
 					for (EStructuralFeature sf : eClass.getEAllAttributes()) {
 						sFList.add(sf);
-						String sfValue = next.eGet(eClass.getEStructuralFeature(sf.getName())).toString();
+//						String sfValue = next.eGet(eClass.getEStructuralFeature(sf.getName())).toString();
 						// System.out.println("\t"+sf.getLowerBound()+"-"+sf.getUpperBound());
 //					System.out.println("\t[" + sf.getLowerBound() + "/" + sf.getUpperBound() + "] " + "Type->"+ sf.getEType().getName() + " Value: " + sfValue);
 						// System.out.println(attribute.getName());

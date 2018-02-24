@@ -12,14 +12,15 @@ import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
 import it.univaq.disim.business.manager.MetamodelManager;
 import it.univaq.disim.business.manager.ModelManager;
+import it.univaq.disim.common.utils.Utils;
 
 public class InformationLoss{
 	
 	public static void main(String[] args) {
 		Transformation t = new Transformation();
-		String inputMetamodelPath = "resources/test/CompanyMM.ecore";
-		String inputModelPath = "resources/test/company-model.xmi";
-		String atlTransformation = "resources/test/company2CMS.atl";
+		String inputMetamodelPath = "resources/running_example/metamodels/KM.ecore";
+		String inputModelPath = "resources/mutations/KM3_seed.xmi";
+		String atlTransformation = "resources/running_example/transformations/km3_2_java.atl";
 		t.setATLTransformation(atlTransformation);
 		t.setInputMetamodel(inputMetamodelPath);
 		t.setInputModel(inputModelPath);
@@ -32,7 +33,8 @@ public class InformationLoss{
 		float result = 0;
 		List<ModelStructuralFeature> modelStructuralFeatures = ModelManager.getAllModelStructuralFeaturesAndReferences(transformation.getInputModel(), transformation.getInputMetamodel());
 		List<ModelStructuralFeature> metamodelStructuralFeatures = MetamodelManager.getAllMetamodelStructuralFeaturesAndReferences(transformation.getInputMetamodel());
-		List<ATLBinding> atlBindings = ATLTransformationManager.getAllBindings(transformation.getATLTransformation());
+		ATLTransformationManager atlManager = new ATLTransformationManager(transformation.getATLTransformation());
+		List<ATLBinding> atlBindings = atlManager.getAllBindings();
 		
 		int totalNumberOfInputModelStructuralFeatures = 0;
 		for (ModelStructuralFeature modelInstance : modelStructuralFeatures) {
@@ -71,14 +73,14 @@ public class InformationLoss{
 				}
 			}
 		}
-		System.out.println("(a) #Input Model Metaclass Occurrences in ATL T: "+countMetaclassOccurrences);
-		System.out.println("(b) #Total Input Model Metaclass Occurrences in T: "+totalNumberofInputModelInstances);
-		System.out.println("(c) #Input Model Metaclass Structural Features Occurrences in T Rules: "+countNumberOfModelImpactedStructuralFeatures);
-		System.out.println("(d) #Total Input Model Metaclass Structural Features Occurrences in T Rules: "+totalNumberOfInputModelStructuralFeatures);
-		System.out.println("IL(T, m) = [2-(a/b)+(c/d)*0.5]");
+		System.out.println("\t(a) # Input Model Metaclass Occurrences in ATL T: "+countMetaclassOccurrences);
+		System.out.println("\t(b) # Total Input Model Metaclasses in MM: "+totalNumberofInputModelInstances);
+		System.out.println("\t(c) # Input Model Metaclass Structural Features Occurrences in ATL T Rules: "+countNumberOfModelImpactedStructuralFeatures);
+		System.out.println("\t(d) # Total Input Model Metaclass Structural Features in MM: "+totalNumberOfInputModelStructuralFeatures);
+		System.out.println("\tIL(T, m) = [2-(a/b)+(c/d)*0.5]");
 		
 		result = (float) (2 - ((float)(((float) countMetaclassOccurrences / totalNumberofInputModelInstances) + ((float) countNumberOfModelImpactedStructuralFeatures / totalNumberOfInputModelStructuralFeatures))*0.5));
-		System.out.println("IL("+transformation.getATLTransformation()+", "+transformation.getInputModel()+") = "+result);
+		System.out.println("IL("+Utils.getNameFromPath(transformation.getATLTransformation())+", "+Utils.getNameFromPath(transformation.getInputModel())+") = "+result);
 		
 		return result;
 	}

@@ -22,9 +22,9 @@ public class Coverage{
 		String inputMM = transformation.getInputMetamodel();
 		MetamodelManager.registerMetamodel(inputMM);
 		String atlTransformation = transformation.getATLTransformation();
-		System.out.println(atlTransformation);
+		ATLTransformationManager atlManager = new ATLTransformationManager(atlTransformation);
 		
-		List<ATLBinding> atlBindings = ATLTransformationManager.getAllBindings(transformation.getATLTransformation());
+		List<ATLBinding> atlBindings = atlManager.getAllBindings();
 
 		try {
 			int nMetaclassesIntoInputMetamodel = MetamodelManager.getAllMetamodelEClasses(inputMM).size();
@@ -44,11 +44,11 @@ public class Coverage{
 									) * 0.5);
 			}
 			
-			System.out.println("a) # Transformation Rules: "+nRules);
-			System.out.println("b) # Input Metamodel Metaclasses: "+nMetaclassesIntoInputMetamodel);
-			System.out.println("c) # Transformation Bindings: "+nTransformationBindings);
-			System.out.println("d) # Input Metamodel Structural Features: "+nStructuralFeaturesIntoInputMetamodel);
-			System.out.println("Cov(T, MM) = [(a/b)+(c/d)*0.5]");
+			System.out.println("\t(a) # Transformation Rules: "+nRules);
+			System.out.println("\t(b) # Input Metamodel Metaclasses: "+nMetaclassesIntoInputMetamodel);
+			System.out.println("\t(c) # Transformation Bindings: "+nTransformationBindings);
+			System.out.println("\t(d) # Input Metamodel Structural Features: "+nStructuralFeaturesIntoInputMetamodel);
+			System.out.println("\tCov(T, MM) = [(a/b)+(c/d)*0.5]");
 		} catch (ParserException e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();

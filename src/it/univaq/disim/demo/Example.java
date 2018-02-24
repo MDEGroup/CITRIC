@@ -68,7 +68,7 @@ public class Example {
 //		t_KM32EMF.setOutTag(KM32EMFOutTAG);
 		// t_KM32EMF.setOutPath(outPath_chain_1);
 		t_KM32EMF.setCoverage(Coverage.coverage(t_KM32EMF));
-		t_KM32EMF.setInformationLoss(InformationLoss.informationLoss(t_KM32EMF));
+//		t_KM32EMF.setInformationLoss(InformationLoss.informationLoss(t_KM32EMF));
 
 		return t_KM32EMF;
 	}
@@ -83,7 +83,7 @@ public class Example {
 //		t_EMF2Java.setOutTag(EMF2JavaOutTag);
 		// t_EMF2Java.setOutPath(outPath_chain_1);
 		t_EMF2Java.setCoverage(Coverage.coverage(t_EMF2Java));
-		t_EMF2Java.setInformationLoss(InformationLoss.informationLoss(t_EMF2Java));
+//		t_EMF2Java.setInformationLoss(InformationLoss.informationLoss(t_EMF2Java));
 		return t_EMF2Java;
 	}
 
@@ -97,7 +97,7 @@ public class Example {
 //		t_Java2Table.setOutTag(Java2TableOutTag);
 		// t_Java2Table.setOutPath(outPath_chain_1);
 		t_Java2Table.setCoverage(Coverage.coverage(t_Java2Table));
-		t_Java2Table.setInformationLoss(InformationLoss.informationLoss(t_Java2Table));
+//		t_Java2Table.setInformationLoss(InformationLoss.informationLoss(t_Java2Table));
 		return t_Java2Table;
 	}
 
@@ -111,7 +111,7 @@ public class Example {
 //		t_Table2HTML.setOutTag(Table2HTMLOutTag);
 		// t_Table2HTML.setOutPath(outPath_chain_1);
 		t_Table2HTML.setCoverage(Coverage.coverage(t_Table2HTML));
-		t_Table2HTML.setInformationLoss(InformationLoss.informationLoss(t_Table2HTML));
+//		t_Table2HTML.setInformationLoss(InformationLoss.informationLoss(t_Table2HTML));
 		return t_Table2HTML;
 	}
 
@@ -125,7 +125,7 @@ public class Example {
 //		t_HTML2XML.setOutTag(HTML2XMLOutTag);
 		// t_HTML2XML.setOutPath(outPath_chain_1);
 		t_HTML2XML.setCoverage(Coverage.coverage(t_HTML2XML));
-		t_HTML2XML.setInformationLoss(InformationLoss.informationLoss(t_HTML2XML));
+//		t_HTML2XML.setInformationLoss(InformationLoss.informationLoss(t_HTML2XML));
 		return t_HTML2XML;
 	}
 
@@ -139,7 +139,7 @@ public class Example {
 //		t_KM32Java.setOutTag(KM32JavaOutTag);
 		// t_KM32Java.setOutPath(outPath_chain_2);
 		t_KM32Java.setCoverage(Coverage.coverage(t_KM32Java));
-		t_KM32Java.setInformationLoss(InformationLoss.informationLoss(t_KM32Java));
+//		t_KM32Java.setInformationLoss(InformationLoss.informationLoss(t_KM32Java));
 		return t_KM32Java;
 	}
 
@@ -153,7 +153,7 @@ public class Example {
 //		t_KM32XML.setOutTag(KM32XMLOutTag);
 		// t_KM32XML.setOutPath(outPath_chain_3);
 		t_KM32XML.setCoverage(Coverage.coverage(t_KM32XML));
-		t_KM32XML.setInformationLoss(InformationLoss.informationLoss(t_KM32XML));
+//		t_KM32XML.setInformationLoss(InformationLoss.informationLoss(t_KM32XML));
 		return t_KM32XML;
 	}
 	
@@ -166,7 +166,7 @@ public class Example {
 		chain1Ts.add(Example.getTable2HTML());
 		chain1Ts.add(Example.getHTML2XML());
 		Chain chain1 = new Chain();
-		chain1.setName("Chain 1");
+		chain1.setName("Chain1");
 		chain1.setInputModel(inputModel);
 		chain1.setInputMetamodel(Example.StartMetamodel);
 		chain1.setOutputMetamodel(Example.EndMetamodel);
@@ -180,7 +180,7 @@ public class Example {
 		List<Transformation> chain2Ts = new ArrayList<Transformation>();
 		chain2Ts.add(Example.getKM32Java());
 		Chain chain2 = new Chain();
-		chain2.setName("Chain 2");
+		chain2.setName("Chain2");
 		chain2.setInputModel(inputModel);
 		chain2.setInputMetamodel(Example.StartMetamodel);
 		chain2.setOutputMetamodel(Example.EndMetamodel);
@@ -197,7 +197,7 @@ public class Example {
 		chain3Ts.add(Example.getTable2HTML());
 		chain3Ts.add(Example.getHTML2XML());
 		Chain chain3 = new Chain();
-		chain3.setName("Chain 3");
+		chain3.setName("Chain3");
 		chain3.setInputModel(inputModel);
 		chain3.setInputMetamodel(Example.StartMetamodel);
 		chain3.setOutputMetamodel(Example.EndMetamodel);
@@ -211,7 +211,7 @@ public class Example {
 		List<Transformation> chain4Ts = new ArrayList<Transformation>();
 		chain4Ts.add(Example.getKM32XML());
 		Chain chain4 = new Chain();
-		chain4.setName("Chain 4");
+		chain4.setName("Chain4");
 		chain4.setInputModel(inputModel);
 		chain4.setInputMetamodel(Example.StartMetamodel);
 		chain4.setOutputMetamodel(Example.EndMetamodel);
@@ -224,8 +224,8 @@ public class Example {
 	
 	public static void main(String[] args) {
 		String inputModel = "resources/mutations/KM3_seed.xmi";
-		Chain chain = Example.getChain4(inputModel);
-		System.out.println(chain.getInformationLoss());
+		Chain chain = Example.getChain3(inputModel);
+		System.out.println((float) chain.getInformationLoss());
 	}
 	
 }

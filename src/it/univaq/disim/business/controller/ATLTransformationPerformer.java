@@ -37,7 +37,8 @@ import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
 
 
-public class ATLTransformationController {
+public class ATLTransformationPerformer {
+	private ATLTransformationManager atlManager;
 	private IModel inModel;
 	private IModel outModel;
 
@@ -51,7 +52,7 @@ public class ATLTransformationController {
 
 	private Map<String, Object> options;
 
-	public ATLTransformationController() {
+	public ATLTransformationPerformer() {
 		options = new HashMap<String, Object>();
 		options.put("supportUML2Stereotypes", "false");
 		options.put("printExecutionTime", "true");
@@ -76,14 +77,15 @@ public class ATLTransformationController {
 			String model_in = transformation.getInputModel(); 
 			String metamodel_in  = transformation.getInputMetamodel();
 			String metamodel_out  = transformation.getOutputMetamodel();
-			String modules  = transformation.getATLTransformation();
+			String atlTransformationPath  = transformation.getATLTransformation();
 			String inTag  = transformation.getInTag();
 			String outTag  = transformation.getOutTag();
 			String outPath  = transformation.getOutPath();
+			this.atlManager = new ATLTransformationManager(atlTransformationPath);
 			
-			if(ATLTransformationManager.isValidTransformation(modules)) {
+			if(atlManager.isValidTransformation()) {
 				try {
-					set(model_in, metamodel_in, metamodel_out, modules, inTag, outTag);
+					set(model_in, metamodel_in, metamodel_out, atlTransformationPath, inTag, outTag);
 					//Eseguiamo la trasformazione
 					doTransformation(new NullProgressMonitor());
 					//Salviamo il modello creato in un file che ha il nome passato in input con outPath
@@ -95,7 +97,7 @@ public class ATLTransformationController {
 					//			//Andiamo a prenderci il contenuto del file (quindi del modello) per esporlo come JSON
 					//			String myContent = FileUtils.readFileToString(myTemp);
 					
-					System.out.println("Transformation "+modules+" executed!");
+					System.out.println("Transformation "+atlTransformationPath+" executed!");
 				} catch (ATLCoreException e) {
 					e.printStackTrace();
 				} catch (IOException e) {
@@ -104,7 +106,7 @@ public class ATLTransformationController {
 					e.printStackTrace();
 				}
 			}else {
-				ErrorModel atlErrors = ATLTransformationManager.getATLErrors(modules);
+				ErrorModel atlErrors = atlManager.getATLErrors();
 				System.out.println("The transformation has errors:");
 				for (Problem problem : atlErrors.getProblems()) {
 					System.out.println(problem.getDescription());
@@ -144,8 +146,8 @@ public class ATLTransformationController {
 			this.modules = modules;
 //			this.inTag = inTag;
 //			this.outTag = outTag;
-			this.inTag = ATLTransformationManager.getInTag(modules);
-			this.outTag = ATLTransformationManager.getOutTag(modules);
+			this.inTag = atlManager.getInTag();
+			this.outTag = atlManager.getOutTag();
 	}
 
 	/**
@@ -196,7 +198,7 @@ public class ATLTransformationController {
 		for (int i = 0; i < moduleNames.length; i++) {
 			
 			String asmModulePath = new Path(moduleNames[i].trim()).removeFileExtension().addFileExtension("asm").toString();
-			System.out.println(asmModulePath);
+//			System.out.println(asmModulePath);
 
 			Atl2006Compiler compiler = new Atl2006Compiler();
 //			compiler.compile(new FileInputStream(new File(moduleNames[i])), "resources/transformation/juri.asm");
@@ -211,7 +213,7 @@ public class ATLTransformationController {
 	
 
 	public static void main(String[] args) throws IOException {
-		ATLTransformationController atlTController = new ATLTransformationController();
+		ATLTransformationPerformer atlTController = new ATLTransformationPerformer();
 		String atlT = "resources/running_example/KM32EMF/KM32EMF.atl";
 		String metamodel_in = "resources/running_example/KM32EMF/KM.ecore";
 		String metamodel_out = "resources/running_example/KM32EMF/Sample.ecore";

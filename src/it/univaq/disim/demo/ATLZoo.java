@@ -131,8 +131,6 @@ public class ATLZoo {
 		boolean result = false;
 		for (String ext : ATL_TRANSFORMATION_EXT) {
 			if (file.toString().toLowerCase().endsWith(ext)) {
-				System.out.println(file.toString());
-				System.out.println(ATLTransformationManager.getInTag(file.toString()) + " - " + ATLTransformationManager.getOutTag(file.toString()));
 				result = true;
 			}
 		}

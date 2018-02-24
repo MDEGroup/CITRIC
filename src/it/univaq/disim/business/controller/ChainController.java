@@ -7,6 +7,7 @@ import java.util.Map;
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
+import it.univaq.disim.business.calculations.InformationLoss;
 import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.datamodel.Vertex;
@@ -19,6 +20,10 @@ public class ChainController {
 	private static String modelExtension = ".xmi";
 	private static boolean saveAllTempChainModels = false;
 	
+	
+	public static void main(String[] args) {
+
+	}
 
 	public static float calculateChainCoverage(Chain chain) {
 		
@@ -37,17 +42,18 @@ public class ChainController {
 
 	public static float calculateChainInformationLoss(Chain chain) {
 		
-		
 		float result = 0;
 		int count = 0;
 		String tempInputModel = chain.getInputModel();
-		String tempOutputModel = tempFolder + Utils.generateRandomString(10) + modelExtension;
-		ATLTransformationController atlController = new ATLTransformationController();
+		
+		ATLTransformationPerformer atlPerformer = new ATLTransformationPerformer();
 		
 		for (Transformation t : chain.getTransformations()) {
 			t.setInputModel(tempInputModel);
+			String tempOutputModel = tempFolder + chain.getName() + "_"+Utils.getNameFromPathWithoutExtension(t.getATLTransformation())+ "_"+count + modelExtension;
 			t.setOutPath(tempOutputModel);
-			atlController.run(t);
+			atlPerformer.run(t);
+			t.setInformationLoss(InformationLoss.informationLoss(t));
 			if(count == 0){
 				result = (float) t.getInformationLoss();
 			}else{
