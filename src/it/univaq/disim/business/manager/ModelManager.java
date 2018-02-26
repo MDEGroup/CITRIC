@@ -3,6 +3,7 @@ package it.univaq.disim.business.manager;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -124,6 +125,30 @@ public class ModelManager extends BaseEcoreModelManager {
 //	}
 
 
+	public static Resource serializeModelInstance(EObject eObject, String outputPath) {
+		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
+        Map<String, Object> m = reg.getExtensionToFactoryMap();
+        m.put("xmi", new XMIResourceFactoryImpl());
+
+        // Obtain a new resource set
+        ResourceSet resSet = new ResourceSetImpl();
+
+        // create a resource
+        Resource resource = resSet.createResource(URI.createURI(outputPath));
+        // Get the first model element and cast it to the right type, in my
+        // example everything is hierarchical included in this first node
+        resource.getContents().add(eObject);
+
+        // now save the content.
+        try {
+            resource.save(Collections.EMPTY_MAP);
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        
+        return resource;
+	}
 
 	public static List<EClass> getAllModelEClasses(Resource resource) {
 		List<EClass> result = new ArrayList<EClass>();

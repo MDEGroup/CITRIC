@@ -3,7 +3,8 @@ Bundle-ManifestVersion: 2
 Bundle-Name: SimpleClassTransformationMaven
 Bundle-SymbolicName: CITRIC
 Bundle-Version: 1.0.0.qualifier
-Export-Package: it.univaq.disim.common.graph,
- it.univaq.disim.common.parser,
+Export-Package: it.univaq.disim.business.controller,
  it.univaq.disim.business.datamodel,
- it.univaq.disim.business.controller
+ it.univaq.disim.business.manager,
+ it.univaq.disim.common.graph,
+ it.univaq.disim.common.parser

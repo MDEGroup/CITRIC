@@ -156,14 +156,14 @@ public class Visit {
 
 	}
 
-	private void visit(HashSet<String> allNodes, Graph graph) {
+	public void visit(HashSet<String> allNodes, Graph graph) {
 
 		for (String startNode : allNodes) {
 			for (String endNode : allNodes) {
 
 				if (!endNode.equals(startNode)) { // Avoid 2 equals nodes
 					System.out.println("[" + startNode + " to " + endNode + "]");
-					LinkedList<String> visited = new LinkedList();
+					LinkedList<String> visited = new LinkedList<String>();
 					visited.add(startNode);
 					new Visit().depthFirst(graph, visited, endNode);
 

@@ -171,7 +171,7 @@ public class Example {
 		chain1.setOutputMetamodel(Example.EndMetamodel);
 		chain1.setTransformations(chain1Ts);
 		chain1.setCoverage(ChainController.calculateChainCoverage(chain1));
-		chain1.setInformationLoss(ChainController.calculateChainInformationLoss(chain1));
+//		chain1.setInformationLoss(ChainController.calculateChainInformationLoss(chain1));
 		return chain1;
 	}
 	
@@ -185,7 +185,7 @@ public class Example {
 		chain2.setOutputMetamodel(Example.EndMetamodel);
 		chain2.setTransformations(chain2Ts);
 		chain2.setCoverage(ChainController.calculateChainCoverage(chain2));
-		chain2.setCoverage(ChainController.calculateChainInformationLoss(chain2));
+//		chain2.setCoverage(ChainController.calculateChainInformationLoss(chain2));
 		return chain2;
 	}
 	
@@ -202,7 +202,7 @@ public class Example {
 		chain3.setOutputMetamodel(Example.EndMetamodel);
 		chain3.setTransformations(chain3Ts);
 		chain3.setCoverage(ChainController.calculateChainCoverage(chain3));
-		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
+//		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
 		return chain3;
 	}
 	
@@ -216,7 +216,7 @@ public class Example {
 		chain4.setOutputMetamodel(Example.EndMetamodel);
 		chain4.setTransformations(chain4Ts);
 		chain4.setCoverage(ChainController.calculateChainCoverage(chain4));
-		chain4.setInformationLoss(ChainController.calculateChainInformationLoss(chain4));
+//		chain4.setInformationLoss(ChainController.calculateChainInformationLoss(chain4));
 		return chain4;
 	}
 	

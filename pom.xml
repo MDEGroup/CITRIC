@@ -47,6 +47,12 @@
 
 	<dependencies>
 		<dependency>
+		    <groupId>junit</groupId>
+		    <artifactId>junit</artifactId>
+		    <version>4.12</version>
+		    <scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.eclipse.m2m.atl</groupId>
 			<artifactId>driver.emf4atl</artifactId>
 			<version>3.4.0</version>
