@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<company:Company xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:company="http://it.gssi.cs.tse/company" name="IBM">
+  <employees name="John Doe" role="Director"/>
+  <employees name="Bobby Mason" role="Secretary"/>
+  <employees name="David Cooper" role="Secretary"/>
+  <employees name="Dominic Hamilton" role="SeniorDeveloper"/>
+  <employees name="Lukas Barrett"/>
+  <employees name="Christopher Bauer"/>
+</company:Company>

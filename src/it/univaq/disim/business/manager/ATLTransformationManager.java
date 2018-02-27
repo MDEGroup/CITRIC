@@ -32,7 +32,10 @@ import anatlyzer.atlext.ATL.Rule;
 import anatlyzer.atlext.ATL.SimpleInPatternElement;
 import anatlyzer.atlext.ATL.SimpleOutPatternElement;
 import anatlyzer.atlext.OCL.NavigationOrAttributeCallExp;
+import anatlyzer.atlext.OCL.impl.IteratorExpImpl;
 import anatlyzer.atlext.OCL.impl.NavigationOrAttributeCallExpImpl;
+import anatlyzer.atlext.OCL.impl.OperationCallExpImpl;
+import anatlyzer.atlext.OCL.impl.VariableExpImpl;
 import it.univaq.disim.business.datamodel.ATLBinding;
 import it.univaq.disim.business.datamodel.RuleBinding;
 
@@ -160,30 +163,55 @@ public class ATLTransformationManager {
 	}
 	
 	
-	private List<RuleBinding> getRuleBindings(Rule rule){
+	public List<RuleBinding> getRuleBindings(Rule rule){
 		List<RuleBinding> result = new ArrayList<RuleBinding>();
 		EList<OutPatternElement> elements = rule.getOutPattern().getElements();
 		for (OutPatternElement outPatternElement : elements) {
-			RuleBinding ruleBinding = new RuleBinding();
 				EList<Binding> bb = outPatternElement.getBindings();
 				for (Binding binding : bb) {
+					RuleBinding ruleBinding = new RuleBinding();
+//					System.out.println(binding.getValue());
+//					System.out.println(binding.getPropertyName());
 					if(binding.getValue() instanceof NavigationOrAttributeCallExp) {
 						NavigationOrAttributeCallExp fromBindingSide = (NavigationOrAttributeCallExp) binding.getValue();
-						ruleBinding.setInput(binding.getPropertyName());
-						ruleBinding.setOutput(fromBindingSide.getName());
+						ruleBinding.setOutput(binding.getPropertyName());
+						ruleBinding.setInput(fromBindingSide.getName());
 //						System.out.println("\t["+fromBindingSide+"]"+binding.getPropertyName() +" = "+ fromBindingSide.getName());
 					} else if(binding.getValue() instanceof NavigationOrAttributeCallExpImpl) {
 						NavigationOrAttributeCallExpImpl fromBindingSide = (NavigationOrAttributeCallExpImpl) binding.getValue();
-						ruleBinding.setInput(binding.getPropertyName());
-						ruleBinding.setOutput(fromBindingSide.getName());
+						ruleBinding.setOutput(binding.getPropertyName());
+						ruleBinding.setInput(fromBindingSide.getName());
 //						System.out.println("\t["+fromBindingSide+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getName());
+					} else if(binding.getValue() instanceof IteratorExpImpl) {
+						IteratorExpImpl it = (IteratorExpImpl) binding.getValue();
+						if(it.getSource() instanceof NavigationOrAttributeCallExp) {
+							NavigationOrAttributeCallExp fromBindingSide = (NavigationOrAttributeCallExp) it.getSource();
+							ruleBinding.setOutput(binding.getPropertyName());
+							ruleBinding.setInput(fromBindingSide.getName());
+						}else {
+							ruleBinding.setOutput(binding.getPropertyName());
+						}
+					}
+//					else if(binding.getValue() instanceof OperationCallExpImpl) {
+//						OperationCallExpImpl op = (OperationCallExpImpl) binding.getValue();
+//						
+//						if(op.getSource() instanceof VariableExpImpl) {
+//							VariableExpImpl var = (VariableExpImpl) op.getSource();
+//							System.out.println("@#@#"+var.getAppliedProperty());
+//						}
+////						NavigationOrAttributeCallExp fromBindingSide = (NavigationOrAttributeCallExp) op.getSource();
+////						ruleBinding.setOutput(binding.getPropertyName());
+////						ruleBinding.setInput(fromBindingSide.getName());
+					 else {
+//						System.out.println(binding.getValue());
+						ruleBinding.setOutput(binding.getPropertyName());
 					} 
 //						else if(binding.getValue() instanceof CollectionOperationCallExpImpl) {
 //						CollectionOperationCallExpImpl fromBindingSide = (CollectionOperationCallExpImpl) binding.getValue();
 //						System.out.println("\t["+fromBindingSide.getClass().getName()+"]"+binding.getPropertyName()+" = "+ fromBindingSide.getArguments().get(0));
 //					}
+					result.add(ruleBinding);
 				}
-				result.add(ruleBinding);
 		}
 		return result;
 	}

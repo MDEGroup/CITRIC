@@ -2,17 +2,10 @@ package it.univaq.disim.business.mutator.km3_mutations;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
-import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
 import KM3.Attribute;
 import KM3.Class;
@@ -24,7 +17,7 @@ import KM3.KM3Factory;
 import KM3.KM3Package;
 import KM3.Metamodel;
 import KM3.Package;
-import it.univaq.disim.Test;
+import KM3.Reference;
 import it.univaq.disim.business.manager.ModelManager;
 import it.univaq.disim.common.utils.Utils;
 
@@ -32,31 +25,46 @@ public class KM3ModelInstanceCreator {
 	
 	private KM3Factory km3Factory;
 	private Package km3Package;
+	private int NUMBER_OF_MUTATIONS;
+	private String baseMutationsPath = "resources/mutations/";
 	
-	public KM3ModelInstanceCreator() {
+	public KM3ModelInstanceCreator(int numberOfMutations) {
 		KM3Package.eINSTANCE.eClass();
         // Retrieve the default factory singleton
 		this.km3Factory = KM3Factory.eINSTANCE; 
+		this.NUMBER_OF_MUTATIONS = numberOfMutations;
 	}
 	
 	
 	public static void main(String[] args) throws IOException {
-		String outputPath = "resources/mutations/KM3_seed.xmi";
-		String test = "resources/mutations/test_model.xmi";
 		
-		KM3ModelInstanceCreator km3Creator = new KM3ModelInstanceCreator();
+		KM3ModelInstanceCreator km3Creator = new KM3ModelInstanceCreator(5);
+//		String outputPath = km3Creator.baseMutationsPath + "KM3_seed.xmi";
 //		Resource model = km3Creator.createSeedModel(outputPath);
-		Resource model = km3Creator.createKM3Model(test);
-		List<EClass> allModelEClasses = ModelManager.getAllModelEClasses(model);
+		List<Resource> models = km3Creator.generateInstances();
 		
-		for (EClass eClass : allModelEClasses) {
-			System.out.println(eClass.getName());
+		
+		
+		for (Resource model : models) {
+			List<EClass> allModelEClasses = ModelManager.getAllModelEClasses(model);
+			for (EClass eClass : allModelEClasses) {
+				System.out.println(eClass.getName());
+			}
 		}
 
 	}
 	
+	public List<Resource> generateInstances() {
+		List<Resource> resources = new ArrayList<Resource>();
+		for(int i=0; i<=this.NUMBER_OF_MUTATIONS; i++) {
+			Resource model = createKM3Model();
+			resources.add(model);
+		}
+		
+		return resources;
+	}
 
-	public Resource createKM3Model(String outputPath) {
+	public Resource createKM3Model() {
 		
 		// create the content of the model via this program
 		Metamodel km3Metamodel = km3Factory.createMetamodel();
@@ -78,13 +86,14 @@ public class KM3ModelInstanceCreator {
 		superTypeClasses.add(class1);
 		Class class3 = createClass(true, superTypeClasses);
 			Attribute attribute3 = createAttribute(class3, enumeration, 1, 1);
+			Reference ref1 = createReference(class3, dataTypeString, false, null);
 		
 		superTypeClasses.add(class2);
 		Class class4 = createClass(true, superTypeClasses);
 			Attribute attribute4 = createAttribute(class4, dataTypeBoolean, 1, 1);
 			
 		
-		return ModelManager.serializeModelInstance(km3Metamodel, outputPath); 
+		return ModelManager.serializeModelInstance(km3Metamodel, generateRandomOutputModelFileName(10)); 
 	}
 	
 	private Package createPackage(Metamodel km3Metamodel) {
@@ -96,6 +105,24 @@ public class KM3ModelInstanceCreator {
 		return km3Package;
 	}
 
+	private Reference createReference(Class owner, Classifier type, boolean isContainer, Reference opposite) {
+		Reference km3Reference = km3Factory.createReference();
+		km3Reference.setName(generateRandomReferenceName(10));
+		km3Reference.setPackage(km3Package);
+		km3Reference.setOwner(owner);
+		km3Reference.setType(type);
+		km3Reference.setLower(1);
+		km3Reference.setUpper(1);
+		km3Reference.setIsContainer(isContainer);
+		if(opposite != null) {
+			km3Reference.setOpposite(opposite);
+		}else {
+			km3Reference.setOpposite(km3Reference);
+		}
+		km3Package.getContents().add(km3Reference);
+		return km3Reference;
+	}
+	
 	private DataType createStringDataType() {
 		DataType km3DataTypeString = km3Factory.createDataType();
 		km3DataTypeString.setPackage(km3Package);
@@ -141,7 +168,9 @@ public class KM3ModelInstanceCreator {
 		km3Class.setPackage(km3Package);
 		km3Class.setIsAbstract(isAbstract);
 		km3Package.getContents().add(km3Class);
-		km3Class.getSupertypes().addAll(km3ClassSupertypes);
+		if(km3ClassSupertypes != null) {
+			km3Class.getSupertypes().addAll(km3ClassSupertypes);
+		}
 		return km3Class;
 	}
 	
@@ -158,8 +187,16 @@ public class KM3ModelInstanceCreator {
 		return km3Attribute;
 	}
 	
+	private String generateRandomOutputModelFileName(int len) {
+		return this.baseMutationsPath+"km3_instance_"+Utils.generateRandomString(len)+".xmi";
+	}
+	
 	private String generateRandomClassName(int len) {
 		return "class_"+Utils.generateRandomString(len);
+	}
+	
+	private String generateRandomReferenceName(int len) {
+		return "reference_"+Utils.generateRandomString(len);
 	}
 	
 	private String generateRandomAttributeName(int len) {

@@ -13,6 +13,9 @@ import it.univaq.disim.common.utils.Utils;
 public class Coverage{
 
 
+	private static final boolean VISUALIZE_CALCULATIONS = false;
+
+
 	public static float coverage(Transformation transformation) {
 
 		// System.out.println("Calculation Coverage for
@@ -44,17 +47,19 @@ public class Coverage{
 									) * 0.5);
 			}
 			
-			System.out.println("\t(a) # Transformation Rules: "+nRules);
-			System.out.println("\t(b) # Input Metamodel Metaclasses: "+nMetaclassesIntoInputMetamodel);
-			System.out.println("\t(c) # Transformation Bindings: "+nTransformationBindings);
-			System.out.println("\t(d) # Input Metamodel Structural Features: "+nStructuralFeaturesIntoInputMetamodel);
-			System.out.println("\tCov(T, MM) = [(a/b)+(c/d)*0.5]");
+			if(VISUALIZE_CALCULATIONS) {
+				System.out.println("\t(a) # Transformation Rules: "+nRules);
+				System.out.println("\t(b) # Input Metamodel Metaclasses: "+nMetaclassesIntoInputMetamodel);
+				System.out.println("\t(c) # Transformation Bindings: "+nTransformationBindings);
+				System.out.println("\t(d) # Input Metamodel Structural Features: "+nStructuralFeaturesIntoInputMetamodel);
+				System.out.println("\tCov(T, MM) = [(a/b)+(c/d)*0.5]");
+			}
 		} catch (ParserException e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();
 		}
 
-		System.out.println("Cov(" + transformation.getName() + ", "+ Utils.getNameFromPath(transformation.getInputMetamodel())+") = " + coverage);
+		System.out.println("Cov(" + Utils.getNameFromPath(transformation.getInputMetamodel()) + ", "+transformation.getName() +") = " + Utils.getFloatFormat(coverage));
 		return coverage;
 	}
 	
@@ -63,8 +68,8 @@ public class Coverage{
 
 	public static void main(String[] args) {
 
-		String atl = "resources/running_example/KM32EMF/KM32EMF.atl";
-		String inputMM = "resources/running_example/KM32EMF/KM.ecore";
+		String atl = "resources/running_example/transformations/emf2java.atl";
+		String inputMM = "resources/running_example/metamodels/Ecore.ecore";
 
 		Transformation t = new Transformation();
 		t.setATLTransformation(atl);

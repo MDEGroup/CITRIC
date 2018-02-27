@@ -18,6 +18,7 @@ import it.univaq.disim.common.algorithm.Edge;
 import it.univaq.disim.common.algorithm.Graph;
 import it.univaq.disim.common.algorithm.Vertex;
 import it.univaq.disim.demo.Example;
+import it.univaq.disim.demo.Example2;
 
 public class MutationGenerator {
 	
@@ -32,8 +33,10 @@ public class MutationGenerator {
 	}
 	
 	public static void main(String[] args) {
+//		String inputModel = "resources/example/models/projmanegement.xmi";
+//		Chain chain = Example2.getChain2(inputModel);
 		String inputModel = "resources/mutations/KM3_seed.xmi";
-		Chain chain = Example.getChain1(inputModel);
+		Chain chain = Example.getChain2(inputModel);
 		
 		MutationGenerator gen = new MutationGenerator(chain);
 //		Vertex source = new Vertex("Table", "Table");
@@ -59,12 +62,16 @@ public class MutationGenerator {
 		dijkstra.execute(source);
 		LinkedList<Vertex> path = dijkstra.getPath(destination);
 		if(path != null) {
+			StringBuilder sb = new StringBuilder();
+			int count = 0;
 			for (Vertex vertex : path) {
-				StringBuilder sb = new StringBuilder();
 				sb.append(vertex.getName());
-				sb.append(" -> ");
-				System.out.println(sb);
+				if(count < path.size()-1) {
+					sb.append(" -> ");
+				}
+				count++;
 			}
+			System.out.println(sb);
 		}else {
 //			System.out.println("No Path for "+source.getName()+" -> "+destination.getName());
 		}
@@ -72,10 +79,10 @@ public class MutationGenerator {
 		return path;
 	}
 	
-	private void addLane(String laneId, int sourceLocNo, int destLocNo, int duration) {
-		Edge lane = new Edge(laneId,nodes.get(sourceLocNo), nodes.get(destLocNo), duration );
-		edges.add(lane);
-	}
+//	private void addLane(String laneId, int sourceLocNo, int destLocNo, int duration) {
+//		Edge lane = new Edge(laneId,nodes.get(sourceLocNo), nodes.get(destLocNo), duration );
+//		edges.add(lane);
+//	}
 	
 //	public static void visitGraph(Chain chain) {
 //
@@ -179,8 +186,10 @@ public class MutationGenerator {
 				result.add(edge);
 				for (RuleBinding b : atlBinding.getBindings()) {
 					if(b.getInput() != null && b.getOutput() != null) {
-						Vertex source2 = new Vertex(atlBinding.getInputMetaclassName()+"_"+b.getInput(), atlBinding.getInputMetaclassName()+"_"+b.getInput());
-						Vertex target2 = new Vertex(atlBinding.getOutputMetaclassName()+"_"+b.getOutput(), atlBinding.getOutputMetaclassName()+"_"+b.getOutput());
+						String compositeInputEdgeName = atlBinding.getInputMetaclassName()+"_"+b.getInput();
+						String compositeOutputEdgeName = atlBinding.getOutputMetaclassName()+"_"+b.getOutput();
+						Vertex source2 = new Vertex(compositeInputEdgeName, compositeInputEdgeName);
+						Vertex target2 = new Vertex(compositeOutputEdgeName, compositeOutputEdgeName);
 						Edge edge2 = new Edge("Edge_"+count++, source2, target2, 1);
 						result.add(edge2);
 //						nodes.add(new Vertex(atlBinding.getInputMetaclassName()+"_"+b.getInput(), atlBinding.getOutputMetaclassName()+"_"+b.getOutput()));

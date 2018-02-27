@@ -16,6 +16,8 @@ import it.univaq.disim.common.utils.Utils;
 
 public class InformationLoss{
 	
+	private static boolean VISUALIZE_CALCULATIONS = false;
+	
 	public static void main(String[] args) {
 		Transformation t = new Transformation();
 		String inputMetamodelPath = "resources/running_example/metamodels/KM.ecore";
@@ -73,14 +75,16 @@ public class InformationLoss{
 				}
 			}
 		}
-		System.out.println("\t(a) # Input Model Metaclass Occurrences in ATL T: "+countMetaclassOccurrences);
-		System.out.println("\t(b) # Total Input Model Metaclasses in MM: "+totalNumberofInputModelInstances);
-		System.out.println("\t(c) # Input Model Metaclass Structural Features Occurrences in ATL T Rules: "+countNumberOfModelImpactedStructuralFeatures);
-		System.out.println("\t(d) # Total Input Model Metaclass Structural Features in MM: "+totalNumberOfInputModelStructuralFeatures);
-		System.out.println("\tIL(T, m) = [2-(a/b)+(c/d)*0.5]");
+		if(VISUALIZE_CALCULATIONS) {
+			System.out.println("\t(a) # Input Model Metaclass Occurrences in ATL T: "+countMetaclassOccurrences);
+			System.out.println("\t(b) # Total Input Model Metaclasses in MM: "+totalNumberofInputModelInstances);
+			System.out.println("\t(c) # Input Model Metaclass Structural Features Occurrences in ATL T Rules: "+countNumberOfModelImpactedStructuralFeatures);
+			System.out.println("\t(d) # Total Input Model Metaclass Structural Features in MM: "+totalNumberOfInputModelStructuralFeatures);
+			System.out.println("\tIL(T, m) = [2-(a/b)+(c/d)*0.5]");
+		}
 		
 		result = (float) (2 - ((float)(((float) countMetaclassOccurrences / totalNumberofInputModelInstances) + ((float) countNumberOfModelImpactedStructuralFeatures / totalNumberOfInputModelStructuralFeatures))*0.5));
-		System.out.println("IL("+Utils.getNameFromPath(transformation.getATLTransformation())+", "+Utils.getNameFromPath(transformation.getInputModel())+") = "+result);
+		System.out.println("IL("+Utils.getNameFromPath(transformation.getInputModel())+", "+Utils.getNameFromPath(transformation.getATLTransformation())+") = "+Utils.getFloatFormat(result));
 		
 		return result;
 	}

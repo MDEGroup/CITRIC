@@ -1,0 +1,36 @@
+-- @path Orgchart=/it.gssi.cs.tse/metamodels/Orgchart.ecore
+-- @path MM=/it.gssi.cs.tse/metamodels/CompanyMM.ecore
+
+module orgchart2Company;
+create OUT : MM from IN : Orgchart;
+
+helper  def: getModel: Orgchart!orgchartModel = OclUndefined;
+
+rule Orgchart2Company{
+	from s:Orgchart!orgchartModel
+	to t:MM!Company(
+	name <- s.president.companyName	,
+	employees <- s.president)
+	do{
+		thisModule.getModel<-s;
+	}
+}
+
+rule President2Employee{
+	from s:Orgchart!Member(s.boss.oclIsUndefined())
+	to t: MM!Employee(
+	name <- s.name,
+	role <- s.role,
+	company <- thisModule.getModel
+	)
+}
+
+rule Member2Employee{
+	from s: Orgchart!Member(not s.boss.oclIsUndefined())
+	to t: MM!Employee(
+		name<-s.name,
+		role <- s.role,
+			company <- thisModule.getModel
+		
+	)
+}

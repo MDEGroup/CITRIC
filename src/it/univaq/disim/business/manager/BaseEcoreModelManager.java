@@ -274,7 +274,7 @@ public abstract class BaseEcoreModelManager {
 				registerSubPackage(p);
 			}
 		}
-		System.out.println(path + " registered!");
+//		System.out.println(path + " registered!");
 	}
 
 	private static void registerSubPackage(EPackage p) {

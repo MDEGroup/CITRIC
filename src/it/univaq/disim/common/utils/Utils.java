@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.security.SecureRandom;
 import java.text.Collator;
+import java.text.DecimalFormat;
 import java.util.Arrays;
 
 import org.apache.commons.io.FilenameUtils;
@@ -97,6 +98,12 @@ public class Utils {
 	public static String getNameFromPath(String path) {
 //		Path p = Paths.get(path);
 		return FilenameUtils.getName(path);
+	}
+	
+	public static String getFloatFormat(float value) {
+		DecimalFormat df = new DecimalFormat();
+		df.setMaximumFractionDigits(2);
+		return df.format(value);
 	}
 	
 

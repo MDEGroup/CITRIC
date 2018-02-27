@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
-  <ecore:EPackage name="JavaSource">
+  <ecore:EPackage name="JavaSource" nsURI="nsURI" nsPrefix="ns">
     <eClassifiers xsi:type="ecore:EClass" name="JavaSource">
       <eStructuralFeatures xsi:type="ecore:EReference" name="classes" ordered="false"
           lowerBound="1" upperBound="-1" eType="#/0/ClassDeclaration" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false"
-          lowerBound="1" eType="#/1/String"/>
+          lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ClassDeclaration" eSuperTypes="#/0/NamedElement">
       <eStructuralFeatures xsi:type="ecore:EReference" name="superclass" ordered="false"
@@ -33,7 +33,5 @@
           lowerBound="1" eType="#/0/ClassDeclaration" eOpposite="#/0/ClassDeclaration/prop"/>
     </eClassifiers>
   </ecore:EPackage>
-  <ecore:EPackage name="PrimitiveTypes">
-    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
-  </ecore:EPackage>
+  <ecore:EPackage name="PrimitiveTypes"/>
 </xmi:XMI>

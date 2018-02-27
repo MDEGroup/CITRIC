@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns:JavaSource
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ns="nsURI"
+    xsi:schemaLocation="nsURI /CITRIC/resources/running_example/JavaSource2Table/JavaSource.ecore#/0">
+  <classes name="First Class"
+      superclass="//@classes.0">
+    <methods
+        name="First Method"/>
+    <prop name="First Property"/>
+  </classes>
+  <classes name="Second Class"
+      superclass="//@classes.1">
+    <methods
+        name="Second Method"/>
+    <prop name="Second Method"/>
+  </classes>
+</ns:JavaSource>

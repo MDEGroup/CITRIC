@@ -1,8 +1,10 @@
 package it.univaq.disim.test;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -18,8 +20,16 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.m2m.atl.common.ATLExecutionException;
+import org.eclipse.ocl.ParserException;
 
+import anatlyzer.atlext.ATL.MatchedRule;
+import it.univaq.disim.business.calculations.Coverage;
+import it.univaq.disim.business.calculations.InformationLoss;
+import it.univaq.disim.business.controller.ATLTransformationPerformer;
+import it.univaq.disim.business.datamodel.RuleBinding;
 import it.univaq.disim.business.datamodel.Transformation;
+import it.univaq.disim.business.manager.ATLTransformationManager;
 import it.univaq.disim.business.manager.MetamodelManager;
 import it.univaq.disim.business.manager.ModelManager;
 import it.univaq.disim.common.exceptions.AbstractCreationException;
@@ -27,93 +37,128 @@ import it.univaq.disim.common.exceptions.MetaModelNotFoundException;
 import it.univaq.disim.common.exceptions.ObjectNotContainedException;
 import it.univaq.disim.common.exceptions.ReferenceNonExistingException;
 import it.univaq.disim.common.exceptions.WrongAttributeTypeException;
+import it.univaq.disim.common.utils.Utils;
+import it.univaq.disim.demo.Example;
 
 public class Test {
 	
-	public static void main(String[] args) throws IOException, MetaModelNotFoundException, ReferenceNonExistingException {
+	public static void main(String[] args) throws IOException, MetaModelNotFoundException, ReferenceNonExistingException, ParserException {
 
-		String metamodel = "resources/mutations/ProjectManagement.ecore";
-		MetamodelManager.registerMetamodel(metamodel);
-		String outputURI = "resources/mutations/projmanagement.xmi";
-		String outputURI2 = "resources/mutations/bascio_mutation2.xmi";
-		
-		List<EPackage> loadMetaModel = MetamodelManager.loadMetaModel(metamodel);
-		Resource model = ModelManager.loadModel(outputURI);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-//		List<EClass> allModelEClasses = ModelManager.getAllModelEClasses(model);
-//		int randomRefIndex = ModelManager.getRandomIndex(allModelEClasses);
-//		EClass eClassCandidate = allModelEClasses.get(randomRefIndex);
-//		System.out.println(eClassCandidate.getName());
-//		System.out.println(EcoreUtil.getIdentification(eClassCandidate));
-//
-//		Test test = new Test();
-//		System.out.println(ModelManager.getAllModelEClasses(model).size());
-////		List<EReference> eClassReferences = ModelManager.getEClassReferences(eClassCandidate);
-////		for (EReference eReference : eClassReferences) {
-////			EClass eClass = Test.getEClassFromReference(eReference);
-////			System.out.println("\t"+eClass.getName());
-////			for (EReference eReference2 : eClass.getEReferences()) {
-////				EcoreUtil.remove(eReference2);
-////				System.out.println(eReference2.getEType());
-////			}
-////			
-////		}
-////		
-////		EcoreUtil.remove(eClassCandidate);
-//
-//		RemoveObjectMutator rom = new RemoveObjectMutator(model, loadMetaModel, eClassCandidate, new ObSelectionStrategy(metamodel, model), new );
-//		rom.mutate();
-//		
-//		System.out.println(ModelManager.getAllModelEClasses(model).size());
-//		List<EClass> allModelEClasses2 = ModelManager.getAllModelEClasses(model2);
-//		for (EClass eClass : allModelEClasses2) {
-//			System.out.println(eClass);
-//		}
-		
+//		String metamodelPath = "resources/running_example/metamodels/KM.ecore";
+//		String modelPath = "resources/mutations/KM3_seed.xmi";
+//		MetamodelManager.registerMetamodel(metamodelPath);
+		String atlTransformationPath1 = Example.getKM32Java().getATLTransformation();
+		String atlTransformationPath2 = Example.getKM32EMF().getATLTransformation();
+		String atlTransformationPath3 = Example.getKM32XML().getATLTransformation();
+		String atlTransformationPath4 = Example.getTable2HTML().getATLTransformation();
+		String atlTransformationPath5 = Example.getJava2Table().getATLTransformation();
+		String atlTransformationPath6 = Example.getEMF2Java().getATLTransformation();
+		String atlTransformationPath7 = Example.getHTML2XML().getATLTransformation();
 
-		
-		
-		
-//		
-//		ArrayList<EReference> allReferences = ModelManager.getAllReferences(model);
-//		for (EReference eReference : allReferences) {
-//			System.out.println(eReference);
-//		}
-//		System.out.println(allReferences.size());
-//		int randomRefIndex = ModelManager.getRandomIndex(allReferences);
-//		ModelManager.unsetReference("projects", allReferences.get(randomRefIndex));
-//		ArrayList<EReference> allReferences2 = ModelManager.getAllReferences(model);
-//		System.out.println(allReferences2.size());
-//		
 //		
 //
-//		Test test = new Test();
+//		System.out.println("-----------------------------------------");
+//		System.out.println("METAMODEL--------------------------------");
+//		System.out.println("-----------------------------------------");
+//		List<EPackage> metamodel = MetamodelManager.loadMetaModel(metamodelPath);
+//		Resource model = ModelManager.loadModel(modelPath);
+		
+//		for (EPackage ePackage : metamodel) {
+//			List<EClass> allMetamodelEClasses = MetamodelManager.getAllMetamodelEClasses(metamodelPath);
+//			for (EClass eClass : allMetamodelEClasses) {
+//				System.out.println(eClass.getName());
+//				for (EStructuralFeature sf : eClass.getEStructuralFeatures()) {
+//					System.out.println("\t"+sf.getName());
+//				}
+//			}
+//			System.out.println(ePackage.getName());
+//		}
+//		
+//		System.out.println("-----------------------------------------");
+//		System.out.println("MODEL------------------------------------");
+//		System.out.println("-----------------------------------------");
+//		
 //		List<EClass> allModelEClasses = ModelManager.getAllModelEClasses(model);
-//		int randomIndex = ModelManager.getRandomIndex(allModelEClasses);
-//		EClass eClassToDelete = allModelEClasses.get(randomIndex);
-//		System.out.println(eClassToDelete.getName());
-//		test.delete(model, eClassToDelete);
+//		for (EClass eClass : allModelEClasses) {
+//			System.out.println(eClass.getName());
+//			for (EStructuralFeature sf : eClass.getEStructuralFeatures()) {
+//				System.out.println("\t"+sf.getName());
+//			}
+//		}
 //		
-//	
 //		
 //		
-////		Resource mutated = test.deleteObject(model, eClassToDelete);
-//		
-//		System.out.println(ModelManager.getAllModelEClasses(model).size());
-//		EcoreUtil.remove(eClassToDelete);
-//		System.out.println(ModelManager.getAllModelEClasses(model).size());
+		System.out.println("-----------------------------------------");
+		System.out.println("TRANSFORMATION--"+Utils.getNameFromPath(atlTransformationPath7));
+		System.out.println("-----------------------------------------");
+		ATLTransformationManager atlManager = new ATLTransformationManager(atlTransformationPath7);
+		List<MatchedRule> allMatchedRules = atlManager.getAllMatchedRules();
+//		allMatchedRules.sort(Comparator.comparing(MatchedRule::getName()));
+		Collections.sort(allMatchedRules, new Comparator<MatchedRule>() {
+		    @Override
+		    public int compare(MatchedRule lhs, MatchedRule rhs) {
+		        // -1 - less than, 1 - greater than, 0 - equal, all inversed for descending
+		        return lhs.getName().compareToIgnoreCase(rhs.getName());
+		    }
+		});
+		
+		for (MatchedRule rule : allMatchedRules) {
+			System.out.println(rule.getName());
+			for (RuleBinding rBinding : atlManager.getRuleBindings(rule)) {
+				System.out.println("\t"+rBinding.getInput() + " -> "+rBinding.getOutput());
+			}
+		}
+		
+//		Transformation t = new Transformation();
+//		String inputMetamodelPath = "resources/running_example/metamodels/KM.ecore";
+//		String inputModelPath = "resources/running_example/models/KM3_seed.xmi";
+//		String atlTransformation = "resources/running_example/transformations/km3_2_java.atl";
+////		String atlTransformation = "resources/running_example/transformations/KM32EMF.atl";
+////		String atlTransformation = "resources/running_example/transformations/KM32XML.atl";
+//		t.setATLTransformation(atlTransformation);
+//		t.setInputMetamodel(inputMetamodelPath);
+//		t.setInputModel(inputModelPath);
+		
+//		InformationLoss.informationLoss(t);
+//		Coverage.coverage(t);
+		String km3ModelInstance = "resources/running_example/models/KM3_seed.xmi";
+		
+		Transformation km32Java = Example.getKM32Java();
+		km32Java.setInputModel(km3ModelInstance);
+		km32Java.setInformationLoss(InformationLoss.informationLoss(km32Java));
+		
+		Transformation km32xml = Example.getKM32XML();
+		km32xml.setInputModel(km3ModelInstance);
+		km32xml.setInformationLoss(InformationLoss.informationLoss(km32xml));
+		
+		Transformation km32emf = Example.getKM32EMF();
+		km32emf.setInputModel(km3ModelInstance);
+		km32emf.setInformationLoss(InformationLoss.informationLoss(km32emf));
+		
+//		String emfModelInstance = "resources/running_example/models/java-out-fromEMF.xmi";
+		String emfModelInstance = "resources/running_example/models/Sample.ecore";
+		Transformation emf2Java = Example.getEMF2Java();
+		emf2Java.setInputModel(emfModelInstance);
+//		emf2Java.setInformationLoss(InformationLoss.informationLoss(emf2Java));
+		
+		String javaModelInstance = "resources/running_example/models/javaSource.xmi";
+		Transformation java2Table = Example.getJava2Table();
+		java2Table.setInputModel(javaModelInstance);
+		java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
+		
+//		String tableModelInstance = "resources/running_example/models/java-out.xmi";
+		String tableModelInstance = "resources/running_example/models/Table.xmi";
+		Transformation table2html = Example.getTable2HTML();
+		table2html.setInputModel(tableModelInstance);
+		table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
+		
+		String htmlModelInstance = "resources/running_example/models/HTML.xmi";
+		Transformation html2xml = Example.getHTML2XML();
+		html2xml.setInputModel(htmlModelInstance);
+		html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
+		
+//		ATLTransformationPerformer perfomer = new ATLTransformationPerformer();
+//		perfomer.run(t);
 		
 	}
 	

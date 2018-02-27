@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ns:JavaSource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ns="nsURI">
+  <classes name="A">
+    <methods name="setNAME"/>
+    <methods name="getNAME"/>
+    <prop name="name"/>
+  </classes>
+  <classes name="B">
+    <methods name="setKIND"/>
+    <methods name="getKIND"/>
+    <prop name="kind"/>
+  </classes>
+  <classes name="C" superclass="//@classes.0">
+    <methods name="setVALUE"/>
+    <methods name="getVALUE"/>
+    <prop name="value"/>
+  </classes>
+  <classes name="D" superclass="//@classes.0">
+    <methods name="setISIT"/>
+    <methods name="getISIT"/>
+    <prop name="isIt"/>
+  </classes>
+</ns:JavaSource>

@@ -17,10 +17,10 @@ public class Example {
 
 	
 	private static String MM_KM3 = 			metamodelsPath + "KM.ecore";
-	private static String MM_EMF = 			metamodelsPath + "Sample.ecore";
+	private static String MM_EMF = 			metamodelsPath + "Ecore.ecore";
 	private static String MM_JavaSource = 	metamodelsPath + "JavaSource.ecore";
 	private static String MM_XML = 			metamodelsPath + "XML.ecore";
-	private static String MM_HTML = 		metamodelsPath + "HTML.ecore";
+	private static String MM_HTML = 			metamodelsPath + "HTML.ecore";
 	private static String MM_Table = 		metamodelsPath + "Table.ecore";
 	
 	public static String StartMetamodel = MM_KM3;
@@ -175,9 +175,13 @@ public class Example {
 		return chain1;
 	}
 	
+	
 	public static Chain getChain2(String inputModel) {
 		List<Transformation> chain2Ts = new ArrayList<Transformation>();
 		chain2Ts.add(Example.getKM32Java());
+		chain2Ts.add(Example.getJava2Table());
+		chain2Ts.add(Example.getTable2HTML());
+		chain2Ts.add(Example.getHTML2XML());
 		Chain chain2 = new Chain();
 		chain2.setName("Chain2");
 		chain2.setInputModel(inputModel);
@@ -185,16 +189,13 @@ public class Example {
 		chain2.setOutputMetamodel(Example.EndMetamodel);
 		chain2.setTransformations(chain2Ts);
 		chain2.setCoverage(ChainController.calculateChainCoverage(chain2));
-//		chain2.setCoverage(ChainController.calculateChainInformationLoss(chain2));
+//		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
 		return chain2;
 	}
 	
 	public static Chain getChain3(String inputModel) {
 		List<Transformation> chain3Ts = new ArrayList<Transformation>();
-		chain3Ts.add(Example.getKM32Java());
-		chain3Ts.add(Example.getJava2Table());
-		chain3Ts.add(Example.getTable2HTML());
-		chain3Ts.add(Example.getHTML2XML());
+		chain3Ts.add(Example.getKM32XML());
 		Chain chain3 = new Chain();
 		chain3.setName("Chain3");
 		chain3.setInputModel(inputModel);
@@ -202,28 +203,14 @@ public class Example {
 		chain3.setOutputMetamodel(Example.EndMetamodel);
 		chain3.setTransformations(chain3Ts);
 		chain3.setCoverage(ChainController.calculateChainCoverage(chain3));
-//		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
-		return chain3;
-	}
-	
-	public static Chain getChain4(String inputModel) {
-		List<Transformation> chain4Ts = new ArrayList<Transformation>();
-		chain4Ts.add(Example.getKM32XML());
-		Chain chain4 = new Chain();
-		chain4.setName("Chain4");
-		chain4.setInputModel(inputModel);
-		chain4.setInputMetamodel(Example.StartMetamodel);
-		chain4.setOutputMetamodel(Example.EndMetamodel);
-		chain4.setTransformations(chain4Ts);
-		chain4.setCoverage(ChainController.calculateChainCoverage(chain4));
 //		chain4.setInformationLoss(ChainController.calculateChainInformationLoss(chain4));
-		return chain4;
+		return chain3;
 	}
 	
 	
 	public static void main(String[] args) {
 		String inputModel = "resources/mutations/KM3_seed.xmi";
-		Chain chain = Example.getChain3(inputModel);
+		Chain chain = Example.getChain1(inputModel);
 		System.out.println((float) chain.getInformationLoss());
 	}
 	

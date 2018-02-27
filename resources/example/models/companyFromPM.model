@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:company="http://it.gssi.cs.tse/company">
+  <company:Company name="Startup OssMeter">
+    <employees name="Dylan Marshall"/>
+    <employees name="Harley Graham&#xA;"/>
+  </company:Company>
+  <company:Company name="Startup FARM">
+    <employees name="Ludovico Iovino" role="SeniorDeveloper"/>
+    <employees name="Cale Cortez&#xA;"/>
+    <employees name="Gibson Freeman&#xA;"/>
+    <employees name="Francesco Basciani" role="Director"/>
+  </company:Company>
+</xmi:XMI>
