@@ -214,13 +214,13 @@ public class ATLTransformationPerformer {
 
 	public static void main(String[] args) throws IOException {
 		ATLTransformationPerformer atlTController = new ATLTransformationPerformer();
-		String atlT = "resources/running_example/KM32EMF/KM32EMF.atl";
-		String metamodel_in = "resources/running_example/KM32EMF/KM.ecore";
-		String metamodel_out = "resources/running_example/KM32EMF/Sample.ecore";
-		String model_in = "resources/running_example/KM32EMF/km3_instance.xmi";
+		String atlT = "resources/running_example/transformations/emf2java.atl";
+		String metamodel_in = "resources/running_example/metamodels/Ecore.ecore";
+		String metamodel_out = "resources/running_example/metamodels/JavaSource.ecore";
+		String model_in = "resources/running_example/metamodels/Sample.ecore";
 //		String inTag = "KM3";
 //		String outTag = "MOF";
-		String outModelPath = "resources/results/bascio_result.xmi";
+		String outModelPath = "resources/running_example/models/bascio_result.xmi";
 		
 		Transformation t = new Transformation();
 		t.setATLTransformation(atlT);

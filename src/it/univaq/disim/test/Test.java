@@ -89,9 +89,9 @@ public class Test {
 //		
 //		
 		System.out.println("-----------------------------------------");
-		System.out.println("TRANSFORMATION--"+Utils.getNameFromPath(atlTransformationPath7));
+		System.out.println("TRANSFORMATION--"+Utils.getNameFromPath(atlTransformationPath3));
 		System.out.println("-----------------------------------------");
-		ATLTransformationManager atlManager = new ATLTransformationManager(atlTransformationPath7);
+		ATLTransformationManager atlManager = new ATLTransformationManager(atlTransformationPath3);
 		List<MatchedRule> allMatchedRules = atlManager.getAllMatchedRules();
 //		allMatchedRules.sort(Comparator.comparing(MatchedRule::getName()));
 		Collections.sort(allMatchedRules, new Comparator<MatchedRule>() {

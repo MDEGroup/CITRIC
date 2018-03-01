@@ -16,7 +16,7 @@ public class Example {
 	private final static String metamodelsPath = resourcesBasePath + runningExampleBasePath +"metamodels/";
 
 	
-	private static String MM_KM3 = 			metamodelsPath + "KM.ecore";
+	private static String MM_KM3 = 			metamodelsPath + "KM3.ecore";
 	private static String MM_EMF = 			metamodelsPath + "Ecore.ecore";
 	private static String MM_JavaSource = 	metamodelsPath + "JavaSource.ecore";
 	private static String MM_XML = 			metamodelsPath + "XML.ecore";

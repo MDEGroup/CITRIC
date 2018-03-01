@@ -4,10 +4,10 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:km3="http://www.eclipse.org/gmt/2005/KM3"
-    location="Metamodel_Pxa2wahmaG">
+    location="SampleMM">
   <contents
-      location="Li1lD"
-      name="package_sCeAhJFdxJ"
+      location="33"
+      name="Sample"
       package="//@contents.0">
     <contents
         xsi:type="km3:DataType"
@@ -23,27 +23,27 @@
         package="//@contents.0"/>
     <contents
         xsi:type="km3:Enumeration"
-        name="enumeration_Ajlt6uwMgz"
+        name="Kind"
         package="//@contents.0"
         literals="//@contents.0/@contents.4 //@contents.0/@contents.5"/>
     <contents
         xsi:type="km3:EnumLiteral"
-        name="enum_literal_sGlkSj0nVl"
+        name="firstKind"
         package="//@contents.0"
         enum="//@contents.0/@contents.3"/>
     <contents
         xsi:type="km3:EnumLiteral"
-        name="enum_literal_xp1TKipobl"
+        name="secondKind"
         package="//@contents.0"
         enum="//@contents.0/@contents.3"/>
     <contents
         xsi:type="km3:Class"
-        name="class_FdpkR3Cuik"
+        name="A"
         package="//@contents.0"
         isAbstract="true">
       <structuralFeatures
           xsi:type="km3:Attribute"
-          name="attribute_Ow5z7"
+          name="a attribute"
           package="//@contents.0"
           lower="1"
           upper="1"
@@ -51,26 +51,11 @@
     </contents>
     <contents
         xsi:type="km3:Class"
-        name="class_WayrYwcuoi"
-        package="//@contents.0"
-        isAbstract="true">
+        name="B"
+        package="//@contents.0">
       <structuralFeatures
           xsi:type="km3:Attribute"
-          name="attribute_M2MXv"
-          package="//@contents.0"
-          lower="1"
-          upper="1"
-          type="//@contents.0/@contents.1"/>
-    </contents>
-    <contents
-        xsi:type="km3:Class"
-        name="class_A2KEOX847E"
-        package="//@contents.0"
-        isAbstract="true"
-        supertypes="//@contents.0/@contents.6">
-      <structuralFeatures
-          xsi:type="km3:Attribute"
-          name="attribute_wqQsd"
+          name="b attribute"
           package="//@contents.0"
           lower="1"
           upper="1"
@@ -78,13 +63,25 @@
     </contents>
     <contents
         xsi:type="km3:Class"
-        name="class_8oHKBNezzC"
+        name="C"
         package="//@contents.0"
-        isAbstract="true"
+        supertypes="//@contents.0/@contents.6">
+      <structuralFeatures
+          xsi:type="km3:Attribute"
+          name="c attribute"
+          package="//@contents.0"
+          lower="1"
+          upper="1"
+          type="//@contents.0/@contents.1"/>
+    </contents>
+    <contents
+        xsi:type="km3:Class"
+        name="D"
+        package="//@contents.0"
         supertypes="//@contents.0/@contents.6 //@contents.0/@contents.7">
       <structuralFeatures
           xsi:type="km3:Attribute"
-          name="attribute_L2kDA"
+          name="d attribute"
           package="//@contents.0"
           lower="1"
           upper="1"

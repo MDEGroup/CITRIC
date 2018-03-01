@@ -20,9 +20,9 @@ public class InformationLoss{
 	
 	public static void main(String[] args) {
 		Transformation t = new Transformation();
-		String inputMetamodelPath = "resources/running_example/metamodels/KM.ecore";
+		String inputMetamodelPath = "resources/running_example/metamodels/KM3.ecore";
 		String inputModelPath = "resources/mutations/KM3_seed.xmi";
-		String atlTransformation = "resources/running_example/transformations/km3_2_java.atl";
+		String atlTransformation = "resources/running_example/transformations/KM32XML.atl";
 		t.setATLTransformation(atlTransformation);
 		t.setInputMetamodel(inputMetamodelPath);
 		t.setInputModel(inputModelPath);

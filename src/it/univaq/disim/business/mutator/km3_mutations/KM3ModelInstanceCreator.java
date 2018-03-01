@@ -23,15 +23,15 @@ import it.univaq.disim.common.utils.Utils;
 
 public class KM3ModelInstanceCreator {
 	
-	private KM3Factory km3Factory;
-	private Package km3Package;
+	private static KM3Factory km3Factory;
+	private static Package km3Package;
 	private int NUMBER_OF_MUTATIONS;
-	private String baseMutationsPath = "resources/mutations/";
+	private static String baseMutationsPath = "resources/mutations/";
 	
 	public KM3ModelInstanceCreator(int numberOfMutations) {
 		KM3Package.eINSTANCE.eClass();
         // Retrieve the default factory singleton
-		this.km3Factory = KM3Factory.eINSTANCE; 
+		km3Factory = KM3Factory.eINSTANCE; 
 		this.NUMBER_OF_MUTATIONS = numberOfMutations;
 	}
 	
@@ -63,6 +63,7 @@ public class KM3ModelInstanceCreator {
 		
 		return resources;
 	}
+	
 
 	public Resource createKM3Model() {
 		
@@ -70,7 +71,7 @@ public class KM3ModelInstanceCreator {
 		Metamodel km3Metamodel = km3Factory.createMetamodel();
 		km3Metamodel.setLocation(generateRandomMetamodelName(10));
 		
-		this.km3Package = createPackage(km3Metamodel);
+		km3Package = createPackage(km3Metamodel);
 		DataType dataTypeString = createStringDataType();
 		DataType dataTypeInteger = createIntegerDataType();
 		DataType dataTypeBoolean = createBooleanDataType();
@@ -78,25 +79,29 @@ public class KM3ModelInstanceCreator {
 		EnumLiteral enumLit_1 = createEnumLiteral(enumeration);
 		EnumLiteral enumLit_2 = createEnumLiteral(enumeration);
 		Class class1 = createClass(true, null);
-			Attribute attribute1 = createAttribute(class1, dataTypeString, 1, 1);
+			Attribute attribute1 = createAttribute(class1, dataTypeString, 1, 1, false, false);
 		Class class2 = createClass(true, null);
-			Attribute attribute2 = createAttribute(class2, dataTypeInteger, 1, 1);
+			Attribute attribute2 = createAttribute(class2, dataTypeInteger, 1, 1, false, false);
 			
 		List<Class> superTypeClasses = new ArrayList<Class>();
 		superTypeClasses.add(class1);
 		Class class3 = createClass(true, superTypeClasses);
-			Attribute attribute3 = createAttribute(class3, enumeration, 1, 1);
+			Attribute attribute3 = createAttribute(class3, enumeration, 1, 1, false, false);
 			Reference ref1 = createReference(class3, dataTypeString, false, null);
 		
 		superTypeClasses.add(class2);
 		Class class4 = createClass(true, superTypeClasses);
-			Attribute attribute4 = createAttribute(class4, dataTypeBoolean, 1, 1);
+			Attribute attribute4 = createAttribute(class4, dataTypeBoolean, 1, 1, false, false);
 			
 		
-		return ModelManager.serializeModelInstance(km3Metamodel, generateRandomOutputModelFileName(10)); 
+		return saveModelInstance(km3Metamodel); 
 	}
 	
-	private Package createPackage(Metamodel km3Metamodel) {
+	static Resource saveModelInstance(Metamodel metamodel) {
+		return ModelManager.serializeModelInstance(metamodel, generateRandomOutputModelFileName(10)); 
+	}
+	
+	static Package createPackage(Metamodel km3Metamodel) {
 		Package km3Package = km3Factory.createPackage();
 		km3Package.setName(generateRandomPackageName(10));
 		km3Package.setMetamodel(km3Metamodel);
@@ -105,7 +110,7 @@ public class KM3ModelInstanceCreator {
 		return km3Package;
 	}
 
-	private Reference createReference(Class owner, Classifier type, boolean isContainer, Reference opposite) {
+	 static Reference createReference(Class owner, Classifier type, boolean isContainer, Reference opposite) {
 		Reference km3Reference = km3Factory.createReference();
 		km3Reference.setName(generateRandomReferenceName(10));
 		km3Reference.setPackage(km3Package);
@@ -123,21 +128,21 @@ public class KM3ModelInstanceCreator {
 		return km3Reference;
 	}
 	
-	private DataType createStringDataType() {
+	 static DataType createStringDataType() {
 		DataType km3DataTypeString = km3Factory.createDataType();
 		km3DataTypeString.setPackage(km3Package);
 		km3DataTypeString.setName("String");
 		km3Package.getContents().add(km3DataTypeString);
 		return km3DataTypeString;
 	}
-	private DataType createIntegerDataType() {
+	 static DataType createIntegerDataType() {
 		DataType km3DataTypeInteger = km3Factory.createDataType();
 		km3DataTypeInteger.setPackage(km3Package);
 		km3DataTypeInteger.setName("Integer");
 		km3Package.getContents().add(km3DataTypeInteger);
 		return km3DataTypeInteger;
 	}
-	private DataType createBooleanDataType() {
+	 static DataType createBooleanDataType() {
 		DataType km3DataTypeBoolean = km3Factory.createDataType();
 		km3DataTypeBoolean.setPackage(km3Package);
 		km3DataTypeBoolean.setName("Boolean");
@@ -145,7 +150,7 @@ public class KM3ModelInstanceCreator {
 		return km3DataTypeBoolean;
 	}
 	
-	private Enumeration createEnumeration() {
+	 static Enumeration createEnumeration() {
 		Enumeration km3Enumeration = km3Factory.createEnumeration();
 		km3Enumeration.setName(generateRandomEnumerationName(10));
 		km3Enumeration.setPackage(km3Package);
@@ -153,7 +158,7 @@ public class KM3ModelInstanceCreator {
 		return km3Enumeration;
 	}
 	
-	private EnumLiteral createEnumLiteral(Enumeration km3Enumeration) {
+	 static EnumLiteral createEnumLiteral(Enumeration km3Enumeration) {
 		EnumLiteral km3EnumLiteral = km3Factory.createEnumLiteral();
 		km3EnumLiteral.setName(generateRandomEnumLiteralName(10));
 		km3EnumLiteral.setPackage(km3Package);
@@ -162,7 +167,7 @@ public class KM3ModelInstanceCreator {
 		return km3EnumLiteral;
 	}
 	
-	private Class createClass(boolean isAbstract, List<Class> km3ClassSupertypes) {
+	static Class createClass(boolean isAbstract, List<Class> km3ClassSupertypes) {
 		Class km3Class = km3Factory.createClass();
 		km3Class.setName(generateRandomClassName(10));
 		km3Class.setPackage(km3Package);
@@ -174,49 +179,55 @@ public class KM3ModelInstanceCreator {
 		return km3Class;
 	}
 	
-	private Attribute createAttribute(Class owner, Classifier km3DataType, int lower, int upper) {
+	static Attribute createAttribute(Class owner, Classifier km3DataType, int lower, int upper, boolean isOrdered, boolean isUnique) {
 		Attribute km3Attribute = km3Factory.createAttribute();
 		km3Attribute.setName(generateRandomAttributeName(5));
 		km3Attribute.setPackage(km3Package);
-		km3Attribute.setIsOrdered(false);
-		km3Attribute.setIsUnique(false);
 		km3Attribute.setLower(lower);
 		km3Attribute.setUpper(upper);
+		km3Attribute.setIsOrdered(isOrdered);
+		km3Attribute.setIsUnique(isUnique);
 		km3Attribute.setType(km3DataType);
 		km3Attribute.setOwner(owner);
 		return km3Attribute;
 	}
 	
-	private String generateRandomOutputModelFileName(int len) {
-		return this.baseMutationsPath+"km3_instance_"+Utils.generateRandomString(len)+".xmi";
+	static String generateRandomOutputModelFileName(int len) {
+		return baseMutationsPath+"km3_instance_"+Utils.generateRandomString(len)+".xmi";
 	}
 	
-	private String generateRandomClassName(int len) {
+	static String generateRandomClassName(int len) {
 		return "class_"+Utils.generateRandomString(len);
 	}
 	
-	private String generateRandomReferenceName(int len) {
+	static String generateRandomReferenceName(int len) {
 		return "reference_"+Utils.generateRandomString(len);
 	}
 	
-	private String generateRandomAttributeName(int len) {
+	static String generateRandomAttributeName(int len) {
 		return "attribute_"+Utils.generateRandomString(len);
 	}
 	
-	private String generateRandomPackageName(int len) {
+	static String generateRandomPackageName(int len) {
 		return "package_"+Utils.generateRandomString(len);
 	}
 	
-	private String generateRandomMetamodelName(int len) {
+	static String generateRandomMetamodelName(int len) {
 		return "Metamodel_"+Utils.generateRandomString(len);
 	}
 	
-	private String generateRandomEnumerationName(int len) {
+	static String generateRandomEnumerationName(int len) {
 		return "enumeration_"+Utils.generateRandomString(len);
 	}
 	
-	private String generateRandomEnumLiteralName(int len) {
+	static String generateRandomEnumLiteralName(int len) {
 		return "enum_literal_"+Utils.generateRandomString(len);
+	}
+	static String generateRandomStructuralFeature(int len) {
+		return "structural_feature_"+Utils.generateRandomString(len);
+	}
+	static String generateRandomParameter(int len) {
+		return "parameter_"+Utils.generateRandomString(len);
 	}
 	
 

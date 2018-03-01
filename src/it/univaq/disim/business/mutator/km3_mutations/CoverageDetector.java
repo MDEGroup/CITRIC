@@ -20,13 +20,13 @@ import it.univaq.disim.common.algorithm.Vertex;
 import it.univaq.disim.demo.Example;
 import it.univaq.disim.demo.Example2;
 
-public class MutationGenerator {
+public class CoverageDetector {
 	
 	private List<Vertex> nodes;
 	private List<Edge> edges;
 	private Chain chain;
 	
-	public MutationGenerator(Chain chain) {
+	public CoverageDetector(Chain chain) {
 		this.chain = chain;
 		this.nodes = getAllNodes();
 		this.edges = getAllEdges();
@@ -38,7 +38,7 @@ public class MutationGenerator {
 		String inputModel = "resources/mutations/KM3_seed.xmi";
 		Chain chain = Example.getChain2(inputModel);
 		
-		MutationGenerator gen = new MutationGenerator(chain);
+		CoverageDetector gen = new CoverageDetector(chain);
 //		Vertex source = new Vertex("Table", "Table");
 //		Vertex destination = new Vertex("Element", "Element");
 //		gen.testExcute(source, destination);
