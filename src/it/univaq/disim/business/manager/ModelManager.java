@@ -43,6 +43,7 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
+import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
@@ -61,11 +62,12 @@ public class ModelManager extends BaseEcoreModelManager {
 	public static void main(String[] args) {
 		
 		String inputMetamodelPath = "resources/test/CompanyMM.ecore";
+		boolean isMeta_Metamodel = false;
 		String inputModelPath = "resources/test/company-model.xmi";
 
 		
 		
-		for (ModelStructuralFeature sf : ModelManager.getAllModelStructuralFeaturesAndReferences(inputModelPath, inputMetamodelPath)) {
+		for (ModelStructuralFeature sf : ModelManager.getAllModelStructuralFeaturesAndReferences(inputModelPath, inputMetamodelPath, isMeta_Metamodel )) {
 			System.out.println(sf.geteClass().getName());
 			for (EStructuralFeature sSf : sf.geteStructuralFeatures()) {
 				System.out.println("\t"+sSf.getName());
@@ -85,6 +87,13 @@ public class ModelManager extends BaseEcoreModelManager {
 		ResourceSet resourceSet = new ResourceSetImpl();
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("xmi", new XMIResourceFactoryImpl());
 		Resource resource = resourceSet.getResource(URI.createURI(modelPath), true);
+		
+//		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
+//        Map<String, Object> m = reg.getExtensionToFactoryMap();
+//        m.put("xmi", new XMIResourceFactoryImpl());
+////        m.put("ecore", new EcoreResourceFactoryImpl());
+//        Resource resource = resourceSet.createResource(URI.createURI(modelPath));
+		
 		// Object rootPackage = null;
 		// if(!resource.getContents().isEmpty()){
 		// rootPackage = (Object) resource.getContents().get(0);
@@ -171,13 +180,15 @@ public class ModelManager extends BaseEcoreModelManager {
 	 * @param Input Metamodel
 	 * @return List<ModelStructuralFeature>
 	 */
-	public static List<ModelStructuralFeature> getAllModelStructuralFeaturesAndReferences(String inputModel, String inputMetamodel) {
+	public static List<ModelStructuralFeature> getAllModelStructuralFeaturesAndReferences(String inputModel, String inputMetamodel, boolean isMeta_Metamodel) {
 		
 		List<ModelStructuralFeature> mmSFList = new ArrayList<ModelStructuralFeature>();
 		
 		if(inputModel != null) {
-			//Register Metamodel in which input model is conform
-			ModelManager.registerMetamodel(inputMetamodel);
+			if(!isMeta_Metamodel) {
+				//Register Metamodel in which input model is conform
+				ModelManager.registerMetamodel(inputMetamodel);
+			}
 			//Load the input model as Resource
 			Resource modelResource = ModelManager.loadModel(inputModel);
 			if (modelResource != null) {
@@ -249,6 +260,7 @@ public class ModelManager extends BaseEcoreModelManager {
 
 		return mmSFList;
 	}
+	
 	
 	public static List<EReference> getEClassReferences(EClass eClass) {
 		List<EReference> refList = new ArrayList<EReference>();
@@ -1883,7 +1895,7 @@ public class ModelManager extends BaseEcoreModelManager {
 	public static List<EClass> getSiblingEClasses(String metamodel, EClass type) {
 		List<EClass> sibling = new ArrayList<EClass>();
 		try {
-			List<EPackage> packages = MetamodelManager.loadMetaModel(metamodel);
+			List<EPackage> packages = MetamodelManager.loadMetamodel(metamodel);
 
 			List<EClass> superTypes = type.getESuperTypes();
 			sibling.addAll(ModelManager.getESubClasses(packages, type));

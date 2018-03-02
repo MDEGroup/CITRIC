@@ -31,47 +31,57 @@ public class RunningExample {
 	private final static String runningExampleBasePath = "running_example/";
 	private final static String transformationsPath = resourcesBasePath + runningExampleBasePath + "transformations/";
 	private final static String metamodelsPath = resourcesBasePath + runningExampleBasePath +"metamodels/";
-	private final static String baseForModels = "mutations/";
+	private final static String baseForModels = resourcesBasePath + runningExampleBasePath +"models/";
 	private final static String baseForResults = "results/";
 	
 	
 	
 public static void main(String[] args) throws ATLCoreException, ParserException {
 		
-		String inputMetamodel = metamodelsPath + "KM.ecore";
+		String inputMetamodel = metamodelsPath + "KM3.ecore";
 		MetamodelManager.registerMetamodel(inputMetamodel);
 		
-		String inputModel_1 = resourcesBasePath + baseForModels +"KM3_seed.xmi";
+		String inputModel_1 = baseForModels +"KM3_seed.xmi";
 		
 		
 		List<String> inputModels = new ArrayList<String>();
 		inputModels.add(inputModel_1);
 		
 		
-		
-		List<List<Chain>> listOfListOfChains = new ArrayList<List<Chain>>();
-		
-		for (String inputModel : inputModels) {
-			Resource model = ModelManager.loadModel(inputModel);
-			if(model != null){
-				List<Chain> chains = calculateChains(inputModel);
-				listOfListOfChains.add(chains);
+		for (String string : inputModels) {
+			Chain chain = Example.getChain3(string);
+			
+			String tmpInputModel = chain.getInputModel();
+			for (Transformation t : chain.getTransformations()) {
+				t.setInputModel(tmpInputModel);
+				t.setOutPath(chain.getResultModel());
+				tmpInputModel = chain.getResultModel();
 			}
+			System.out.println((float)chain.getInformationLoss());
+			
 		}
 		
-		boolean isValid = ChainController.checkValidity(listOfListOfChains);
-//		System.out.println(isValid);
-		saveToCSV2(listOfListOfChains);
-		assert(isValid);
 	}
+
+	
+
+
+
 
 public static List<Chain> calculateChains(String inputModel) throws ATLCoreException, ParserException{
 		
-		String inputModelName = cleanInputModel(inputModel);
+//		String inputModelName = cleanInputModel(inputModel);
 		
-		String outPath_chain_1 = resourcesBasePath + baseForResults + inputModelName+"/output_model_chain_1.xmi";
-		String outPath_chain_2 = resourcesBasePath + baseForResults + inputModelName+"/output_model_chain_2.xmi";
-		String outPath_chain_3 = resourcesBasePath + baseForResults + inputModelName+"/output_model_chain_3.xmi";
+		
+		
+		
+	Chain chain = Example.getChain2(inputModel);
+	String tmpInputModel = chain.getInputModel();
+	for (Transformation t : chain.getTransformations()) {
+		t.setInputModel(tmpInputModel);
+		t.setOutPath(chain.getResultModel());
+		tmpInputModel = chain.getResultModel();
+	}
 		
 		
 //		ChainController chainController = new ChainController();

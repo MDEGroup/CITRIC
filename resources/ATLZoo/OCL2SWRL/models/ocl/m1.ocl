@@ -1,2 +1,0 @@
- context Customer
-   inv: self.name = 'Jos senior' implies self.age() > 21

@@ -1,3 +1,0 @@
-context Customer
-	inv ofAge:
- self.age >= 0

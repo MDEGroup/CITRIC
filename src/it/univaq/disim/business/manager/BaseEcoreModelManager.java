@@ -262,6 +262,7 @@ public abstract class BaseEcoreModelManager {
 		File fileName = new File(path);
 		URI uri = URI.createFileURI(fileName.getAbsolutePath());
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());
 		ResourceSet rs = new ResourceSetImpl();
 		// enable extended metadata
 		final ExtendedMetaData extendedMetaData = new BasicExtendedMetaData(rs.getPackageRegistry());

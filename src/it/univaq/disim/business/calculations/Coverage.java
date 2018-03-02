@@ -22,15 +22,21 @@ public class Coverage{
 		// "+transformation.getName()+" tranformation.");
 		float coverage = (float) 0.0;
 
-		String inputMM = transformation.getInputMetamodel();
-		MetamodelManager.registerMetamodel(inputMM);
+		
 		String atlTransformation = transformation.getATLTransformation();
 		ATLTransformationManager atlManager = new ATLTransformationManager(atlTransformation);
 		
 		List<ATLBinding> atlBindings = atlManager.getAllBindings();
 
 		try {
-			int nMetaclassesIntoInputMetamodel = MetamodelManager.getAllMetamodelEClasses(inputMM).size();
+			String inputMM = transformation.getInputMetamodel();
+			int nMetaclassesIntoInputMetamodel = 0;
+			if(!transformation.isMeta_Metamodel()) {
+				MetamodelManager.registerMetamodel(inputMM);
+				nMetaclassesIntoInputMetamodel = MetamodelManager.getAllMetamodelEClasses(inputMM).size();
+			}else {
+				nMetaclassesIntoInputMetamodel = MetamodelManager.getMeta_metamodelEClasses(inputMM).size();
+			}
 			int nStructuralFeaturesIntoInputMetamodel = MetamodelManager.getMetamodelStructuralFeatures(inputMM).size();
 
 			int nRules = atlBindings.size();
@@ -74,6 +80,7 @@ public class Coverage{
 		Transformation t = new Transformation();
 		t.setATLTransformation(atl);
 		t.setInputMetamodel(inputMM);
+		t.isMeta_Metamodel(true);
 		Coverage.coverage(t);
 		
 	}

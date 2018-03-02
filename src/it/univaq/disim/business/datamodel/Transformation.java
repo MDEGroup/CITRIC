@@ -10,6 +10,7 @@ public class Transformation {
 	private String ATLTransformation;
 	private String inputModel;
 	private String inputMetamodel;
+	private boolean isMeta_Metamodel = false;
 	private String outputMetamodel;
 	private String inTag;
 	private String outTag;
@@ -50,6 +51,13 @@ public class Transformation {
 	}
 	public void setInputMetamodel(String metamodel_in) {
 		this.inputMetamodel = metamodel_in;
+	}
+	
+	public boolean isMeta_Metamodel() {
+		return isMeta_Metamodel;
+	}
+	public void isMeta_Metamodel(boolean isMeta_Metamodel) {
+		this.isMeta_Metamodel = isMeta_Metamodel;
 	}
 	public String getOutputMetamodel() {
 		return outputMetamodel;

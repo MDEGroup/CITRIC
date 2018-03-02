@@ -30,7 +30,6 @@ import org.eclipse.ocl.ecore.EcoreEnvironmentFactory;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.eclipse.ocl.helper.OCLHelper;
 
-import anatlyzer.atlext.ATL.MatchedRule;
 import it.univaq.disim.business.datamodel.ModelStructuralFeature;
 import it.univaq.disim.common.exceptions.MetaModelNotFoundException;
 
@@ -38,11 +37,60 @@ public class MetamodelManager extends BaseEcoreModelManager{
 	
 	private static ResourceSet load_resourceSet = new ResourceSetImpl();
 	
+	
+	
+	public static void main(String[] args) throws MetaModelNotFoundException, ParserException {
+		String inputMM = "resources/running_example/metamodels/Ecore.ecore";
+//		MetamodelManager.registerMetamodel(inputMM);
+//		List<EPackage> loadedMetaModelEPackages = loadMetamodel(inputMM);
+//		System.out.println(loadMetaModel.size());
+		
+//		System.out.println(MetamodelManager.getAllMetamodelEClasses(inputMM).size());
+		
+		List<EClass> eClasses = getMeta_metamodelEClasses(inputMM);
+		
+		for (EClass eClass : eClasses) {
+			System.out.println(eClass.getName());
+		}
+		
+		Set<String> listWithoutRipetitions = new HashSet<String>();
+		List<ModelStructuralFeature> allMetamodelStructuralFeaturesAndReferences = MetamodelManager.getAllMetamodelStructuralFeaturesAndReferences(inputMM);
+		for (ModelStructuralFeature modelStructuralFeature : allMetamodelStructuralFeaturesAndReferences) {
+//			System.out.println(modelStructuralFeature.geteClass().getName());
+			for (EReference ref : modelStructuralFeature.geteReferences()) {
+				System.out.println("\t@#"+ref.getName());
+				listWithoutRipetitions.add(ref.getName());
+			}
+			for (EStructuralFeature sf : modelStructuralFeature.geteStructuralFeatures()) {
+//				System.out.println("\t"+sf.getName());
+				listWithoutRipetitions.add(sf.getName());
+			}
+		}
+		System.out.println(listWithoutRipetitions.size());		
+		
+
+	}
+	
+	
+	public static List<EClass> getMeta_metamodelEClasses(String inputMetamodel) {
+		List<EPackage> loadedMetaModelEPackages = new ArrayList<EPackage>();
+		try {
+			loadedMetaModelEPackages = loadMetamodel(inputMetamodel);
+		} catch (MetaModelNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		List<EClass> eClasses = new ArrayList<EClass>();
+		for (EPackage ePackage : loadedMetaModelEPackages) {
+			eClasses.addAll(BaseEcoreModelManager.getAllEClasses(ePackage));
+		}
+		return eClasses;
+	}
+	
+	
 	public static List<ModelStructuralFeature> getAllMetamodelStructuralFeaturesAndReferences(String inputMetamodel) {
 		
 		List<ModelStructuralFeature> mmSFList = new ArrayList<ModelStructuralFeature>();
-		
-		ResourceSet load_resourceSet = new ResourceSetImpl();
 		Resource resource = load_resourceSet.getResource(URI.createURI(inputMetamodel), true);
 
 		if (resource.isLoaded() && resource.getErrors() != null) {
@@ -51,7 +99,7 @@ public class MetamodelManager extends BaseEcoreModelManager{
 				
 				EObject next = eAllContents.next();
 				if (next instanceof EPackage) {
-					EPackage ePackage = (EPackage) next;
+//					EPackage ePackage = (EPackage) next;
 //					System.out.println("EPackage: "+ePackage.getName());
 				} else if (next instanceof EClass) {
 					EClass eClass = (EClass) next;
@@ -75,7 +123,6 @@ public class MetamodelManager extends BaseEcoreModelManager{
 								allSF.add(eSF.getName());
 //								System.out.println("\tSF: "+eStructuralFeature.getName());
 							}
-							
 						}
 						mmSF.setAllEStructuralFeatures(allSF);
 						mmSF.seteReferences(refList);
@@ -83,7 +130,6 @@ public class MetamodelManager extends BaseEcoreModelManager{
 						mmSFList.add(mmSF);
 					}
 				} 
-
 			}
 		}
 		return mmSFList;
@@ -162,31 +208,8 @@ public class MetamodelManager extends BaseEcoreModelManager{
 	}
 	
 
-	public static void main(String[] args) {
-		String inputMM = "resources/chain/running_example/KM32EMF/KM3.ecore";
-		MetamodelManager.registerMetamodel(inputMM);
-		
-		System.out.println(MetamodelManager.getMetamodelStructuralFeatures(inputMM).size());
-		
-		Set<String> listWithoutRipetitions = new HashSet<String>();
-		List<ModelStructuralFeature> allMetamodelStructuralFeaturesAndReferences = MetamodelManager.getAllMetamodelStructuralFeaturesAndReferences(inputMM);
-		for (ModelStructuralFeature modelStructuralFeature : allMetamodelStructuralFeaturesAndReferences) {
-//			System.out.println(modelStructuralFeature.geteClass().getName());
-			for (EReference ref : modelStructuralFeature.geteReferences()) {
-				System.out.println("\t"+ref.getName());
-				listWithoutRipetitions.add(ref.getName());
-			}
-			for (EStructuralFeature sf : modelStructuralFeature.geteStructuralFeatures()) {
-//				System.out.println("\t"+sf.getName());
-				listWithoutRipetitions.add(sf.getName());
-			}
-		}
-		System.out.println(listWithoutRipetitions.size());		
-		
-
-	}
 	
-	public static List<EPackage> loadMetaModel (String uri) throws MetaModelNotFoundException {
+	public static List<EPackage> loadMetamodel (String uri) throws MetaModelNotFoundException {
 		List<EPackage> metamodel = null;
 		try {
 			metamodel = new ArrayList<EPackage>();

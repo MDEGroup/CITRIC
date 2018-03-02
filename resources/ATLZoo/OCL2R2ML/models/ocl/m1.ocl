@@ -1,2 +1,0 @@
-context Customer 
-  	inv ofAge: age >= 18

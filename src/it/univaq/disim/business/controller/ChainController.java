@@ -12,16 +12,11 @@ import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.datamodel.Vertex;
 import it.univaq.disim.common.utils.Utils;
+import it.univaq.disim.demo.Example;
 
 
 public class ChainController {
 	
-	private static String tempFolder = "resources/temp/";
-	private static String modelExtension = ".xmi";
-	private static boolean saveAllTempChainModels = false;
-	
-	
-
 	public static float calculateChainCoverage(Chain chain) {
 		
 		float result = 0;
@@ -47,8 +42,8 @@ public class ChainController {
 		
 		for (Transformation t : chain.getTransformations()) {
 			t.setInputModel(tempInputModel);
-			String tempOutputModel = tempFolder + chain.getName() + "_"+Utils.getNameFromPathWithoutExtension(t.getATLTransformation())+ "_"+count + modelExtension;
-			t.setOutPath(tempOutputModel);
+//			String tempOutputModel = tempFolder + chain.getName() + "_"+Utils.getNameFromPathWithoutExtension(t.getATLTransformation())+ "_"+count + modelExtension;
+			t.setOutPath(chain.getResultModel());
 			atlPerformer.run(t);
 			t.setInformationLoss(InformationLoss.informationLoss(t));
 			if(count == 0){
@@ -57,12 +52,7 @@ public class ChainController {
 				result *= (float) t.getInformationLoss();
 			}
 			count++;
-			
-			if(saveAllTempChainModels) {
-//				tempInputModel = tempFolder + Utils.generateRandomString(10) + "_"+count+ modelExtension; //If we want to save 
-			}else {
-				tempInputModel = tempOutputModel; //We use the same random generated output model to save temporary chain models
-			}
+			tempInputModel = chain.getResultModel();
 		}
 		return result;
 	}

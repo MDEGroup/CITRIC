@@ -14,6 +14,11 @@ public class Example {
 	private final static String runningExampleBasePath = "running_example/";
 	private final static String transformationsPath = resourcesBasePath + runningExampleBasePath + "transformations/";
 	private final static String metamodelsPath = resourcesBasePath + runningExampleBasePath +"metamodels/";
+	private static final String baseForModels = "models/";
+	
+	public static String outPath_chain_1 = resourcesBasePath + runningExampleBasePath + baseForModels + "output_model_chain_1.xmi";
+	public static String outPath_chain_2 = resourcesBasePath + runningExampleBasePath + baseForModels + "output_model_chain_2.xmi";
+	public static String outPath_chain_3 = resourcesBasePath + runningExampleBasePath + baseForModels + "output_model_chain_3.xmi";
 
 	
 	private static String MM_KM3 = 			metamodelsPath + "KM3.ecore";
@@ -76,6 +81,7 @@ public class Example {
 		Transformation t_EMF2Java = new Transformation();
 		// t_EMF2Java.setInputModel(inputModelName);
 		t_EMF2Java.setInputMetamodel(MM_EMF);
+		t_EMF2Java.isMeta_Metamodel(true);
 		t_EMF2Java.setOutputMetamodel(MM_JavaSource);
 		t_EMF2Java.setATLTransformation(EMF2Java);
 //		t_EMF2Java.setInTag(EMF2JavaInTag);
@@ -170,8 +176,9 @@ public class Example {
 		chain1.setInputMetamodel(Example.StartMetamodel);
 		chain1.setOutputMetamodel(Example.EndMetamodel);
 		chain1.setTransformations(chain1Ts);
+		chain1.setResultModel(outPath_chain_1);
 		chain1.setCoverage(ChainController.calculateChainCoverage(chain1));
-//		chain1.setInformationLoss(ChainController.calculateChainInformationLoss(chain1));
+		chain1.setInformationLoss(ChainController.calculateChainInformationLoss(chain1));
 		return chain1;
 	}
 	
@@ -188,8 +195,9 @@ public class Example {
 		chain2.setInputMetamodel(Example.StartMetamodel);
 		chain2.setOutputMetamodel(Example.EndMetamodel);
 		chain2.setTransformations(chain2Ts);
+		chain2.setResultModel(outPath_chain_2);
 		chain2.setCoverage(ChainController.calculateChainCoverage(chain2));
-//		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
+		chain2.setInformationLoss(ChainController.calculateChainInformationLoss(chain2));
 		return chain2;
 	}
 	
@@ -202,16 +210,35 @@ public class Example {
 		chain3.setInputMetamodel(Example.StartMetamodel);
 		chain3.setOutputMetamodel(Example.EndMetamodel);
 		chain3.setTransformations(chain3Ts);
+		chain3.setResultModel(outPath_chain_3);
 		chain3.setCoverage(ChainController.calculateChainCoverage(chain3));
-//		chain4.setInformationLoss(ChainController.calculateChainInformationLoss(chain4));
+		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
 		return chain3;
 	}
 	
 	
 	public static void main(String[] args) {
-		String inputModel = "resources/mutations/KM3_seed.xmi";
-		Chain chain = Example.getChain1(inputModel);
-		System.out.println((float) chain.getInformationLoss());
+		String inputModel = "resources/running_example/models/KM3_seed.xmi";
+		String inputModel2 = "resources/running_example/models/sample-KM3.xmi";
+		
+		
+		
+		List<String> inputModels = new ArrayList<String>();
+		inputModels.add(inputModel);
+		inputModels.add(inputModel2);
+		
+		
+		for (String string : inputModels) {
+			Chain chain = Example.getChain3(string);
+			String tmpInputModel = chain.getInputModel();
+			for (Transformation t : chain.getTransformations()) {
+				t.setInputModel(tmpInputModel);
+				t.setOutPath(chain.getResultModel());
+				tmpInputModel = chain.getResultModel();
+			}
+			System.out.println((float)chain.getInformationLoss());
+			
+		}
 	}
 	
 }

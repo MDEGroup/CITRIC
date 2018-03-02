@@ -1,28 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ns:Table xmi:version="2.0"
+<nsURI:Table
+    xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ns="nsURI"
-    xsi:schemaLocation="nsURI /CITRIC/resources/running_example/metamodels/Table.ecore"
-    name="Table Example">
-  <rows name="Row 1">
-    <cells name="Cell 1"
-        content="Cell 1 Content"/>
-    <cells name="Cell 2"
-        content="Cell 1 Content 2"/>
+    xmlns:nsURI="http://www.eclipse.org/gmt/2005/Table"
+    name="MyTable">
+  <rows name="row 1">
+    <cells name="cell 1"
+        content="content 1"/>
+    <cells name="cell 2"
+        content="content 1"/>
+    <cells name="cell 3"
+        content="content 1"/>
+    <cells name="cell 4"
+        content="content 1"/>
+    <cells name="cell 5"
+        content="content 1"/>
+    <cells name="cell 6"
+        content="content 1"/>
+    <cells name="cell 7"
+        content="content 1"/>
   </rows>
-  <rows name="Row 2">
-    <cells name="Cell 1"
-        content="Cell 1 Content"/>
-    <cells name="Cell 2"
-        content="Cell 1 Content 2"/>
-    <cells name="Cell 3"
-        content="Cell 3 Content"/>
-    <cells name="Cell 4"
-        content="Cell 4 Content 2"/>
-    <cells name="Cell 5"
-        content="Cell 5 Content"/>
-    <cells name="Cell 6"
-        content="Cell 6 Content 2"/>
+  <rows name="row 2">
+    <cells name="cell 1"
+        content="content 1"/>
+    <cells name="cell 2"
+        content="content 1"/>
+    <cells name="cell 3"
+        content="content 1"/>
+    <cells name="cell 4"
+        content="content 1"/>
+    <cells name="cell 5"
+        content="content 1"/>
+    <cells name="cell 6"
+        content="content 1"/>
+    <cells name="cell 7"
+        content="content 1"/>
   </rows>
-</ns:Table>
+  <rows name="row 3">
+    <cells name="cell 1"
+        content="content 1"/>
+    <cells name="cell 2"
+        content="content 1"/>
+    <cells name="cell 3"
+        content="content 1"/>
+    <cells name="cell 4"
+        content="content 1"/>
+    <cells name="cell 5"
+        content="content 1"/>
+    <cells name="cell 6"
+        content="content 1"/>
+    <cells name="cell 7"
+        content="content 1"/>
+  </rows>
+  <rows name="row 4">
+    <cells name="cell 1"
+        content="content 1"/>
+    <cells name="cell 2"
+        content="content 1"/>
+    <cells name="cell 3"
+        content="content 1"/>
+    <cells name="cell 4"
+        content="content 1"/>
+    <cells name="cell 5"
+        content="content 1"/>
+    <cells name="cell 6"
+        content="content 1"/>
+    <cells name="cell 7"
+        content="content 1"/>
+  </rows>
+</nsURI:Table>

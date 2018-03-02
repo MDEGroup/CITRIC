@@ -1,5 +1,6 @@
 package it.univaq.disim.business.calculations;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.emf.ecore.EReference;
@@ -20,12 +21,13 @@ public class InformationLoss{
 	
 	public static void main(String[] args) {
 		Transformation t = new Transformation();
-		String inputMetamodelPath = "resources/running_example/metamodels/KM3.ecore";
+		String inputMetamodelPath = "resources/running_example/metamodels/HTML.ecore";
 		String inputModelPath = "resources/mutations/KM3_seed.xmi";
-		String atlTransformation = "resources/running_example/transformations/KM32XML.atl";
+		String atlTransformation = "resources/running_example/transformations/HTML2XML.atl";
 		t.setATLTransformation(atlTransformation);
 		t.setInputMetamodel(inputMetamodelPath);
 		t.setInputModel(inputModelPath);
+		
 		
 		InformationLoss.informationLoss(t);
 		
@@ -33,7 +35,7 @@ public class InformationLoss{
 	
 	public static float informationLoss(Transformation transformation) {
 		float result = 0;
-		List<ModelStructuralFeature> modelStructuralFeatures = ModelManager.getAllModelStructuralFeaturesAndReferences(transformation.getInputModel(), transformation.getInputMetamodel());
+		List<ModelStructuralFeature> modelStructuralFeatures = ModelManager.getAllModelStructuralFeaturesAndReferences(transformation.getInputModel(), transformation.getInputMetamodel(), transformation.isMeta_Metamodel());
 		List<ModelStructuralFeature> metamodelStructuralFeatures = MetamodelManager.getAllMetamodelStructuralFeaturesAndReferences(transformation.getInputMetamodel());
 		ATLTransformationManager atlManager = new ATLTransformationManager(transformation.getATLTransformation());
 		List<ATLBinding> atlBindings = atlManager.getAllBindings();

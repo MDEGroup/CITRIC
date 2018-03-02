@@ -33,8 +33,12 @@ import org.eclipse.m2m.atl.engine.emfvm.launch.EMFVMLauncher;
 import anatlyzer.atl.analyser.Analyser;
 import anatlyzer.atl.errors.Problem;
 import anatlyzer.atl.model.ErrorModel;
+import it.univaq.disim.business.datamodel.ModelStructuralFeature;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
+import it.univaq.disim.business.manager.MetamodelManager;
+import it.univaq.disim.business.manager.ModelManager;
+import it.univaq.disim.common.exceptions.MetaModelNotFoundException;
 
 
 public class ATLTransformationPerformer {
@@ -136,6 +140,7 @@ public class ATLTransformationPerformer {
 	private void set(String model_in, String metamodel_in, String metamodel_out, String modules, String inTag, String outTag) throws ATLCoreException {
 			ModelFactory factory = new EMFModelFactory();
 			IInjector injector = new EMFInjector();
+			
 			this.inmodelMetamodel = factory.newReferenceModel();
 			injector.inject(this.inmodelMetamodel,  metamodel_in);
 			this.outmodelMetamodel = factory.newReferenceModel();
@@ -212,15 +217,20 @@ public class ATLTransformationPerformer {
 	
 	
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, MetaModelNotFoundException {
 		ATLTransformationPerformer atlTController = new ATLTransformationPerformer();
-		String atlT = "resources/running_example/transformations/emf2java.atl";
-		String metamodel_in = "resources/running_example/metamodels/Ecore.ecore";
-		String metamodel_out = "resources/running_example/metamodels/JavaSource.ecore";
-		String model_in = "resources/running_example/metamodels/Sample.ecore";
+//		String atlT = "resources/running_example/transformations/emf2java.atl";
+//		String metamodel_in = "resources/running_example/metamodels/Ecore.ecore";
+//		String model_in = "resources/running_example/metamodels/Sample.ecore";
+		String metamodel_out = "resources/running_example/metamodels/HTML.ecore";
+		
+		String metamodel_in = "resources/running_example/metamodels/Table.ecore";
+		String model_in = "resources/running_example/models/Table.xmi";
+		String atlT = "resources/running_example/transformations/Table2TabularHTML.atl";
+		MetamodelManager.registerMetamodel(metamodel_in);
 //		String inTag = "KM3";
 //		String outTag = "MOF";
-		String outModelPath = "resources/running_example/models/bascio_result.xmi";
+		String outModelPath = "resources/running_example/models/HTML.xmi";
 		
 		Transformation t = new Transformation();
 		t.setATLTransformation(atlT);
