@@ -10,224 +10,232 @@
       name="Sample"
       package="//@contents.0">
     <contents
-        xsi:type="km3:DataType"
-        name="String"
-        package="//@contents.0"/>
-    <contents
-        xsi:type="km3:DataType"
-        name="Integer"
-        package="//@contents.0"/>
-    <contents
-        xsi:type="km3:DataType"
-        name="Boolean"
-        package="//@contents.0"/>
-    <contents
-        xsi:type="km3:Enumeration"
-        name="Kind"
+        xsi:type="km3:Operation"
+        name="operation 1"
         package="//@contents.0"
-        literals="//@contents.0/@contents.4 //@contents.0/@contents.5"/>
-    <contents
-        xsi:type="km3:EnumLiteral"
-        name="firstKind"
-        package="//@contents.0"
-        enum="//@contents.0/@contents.3"/>
-    <contents
-        xsi:type="km3:EnumLiteral"
-        name="secondKind"
-        package="//@contents.0"
-        enum="//@contents.0/@contents.3"/>
-    <contents
-        xsi:type="km3:Class"
-        name="A"
-        package="//@contents.0"
-        isAbstract="true">
-      <structuralFeatures
-          xsi:type="km3:Attribute"
-          name="a attribute"
-          package="//@contents.0"
-          lower="1"
-          upper="1"
-          type="//@contents.0/@contents.0"/>
-    </contents>
-    <contents
-        xsi:type="km3:Class"
-        name="B"
-        package="//@contents.0">
-      <structuralFeatures
-          xsi:type="km3:Attribute"
-          name="b attribute"
-          package="//@contents.0"
-          lower="1"
-          upper="1"
-          type="//@contents.0/@contents.3"/>
-    </contents>
-    <contents
-        xsi:type="km3:Class"
-        name="C"
-        package="//@contents.0"
-        supertypes="//@contents.0/@contents.6"
-        operations="//@contents.0/@contents.10">
-      <structuralFeatures
-          xsi:type="km3:Attribute"
-          name="c attribute"
-          package="//@contents.0"
-          lower="1"
-          upper="1"
-          type="//@contents.0/@contents.1"/>
-    </contents>
-    <contents
-        xsi:type="km3:Class"
-        name="D"
-        package="//@contents.0"
-        supertypes="//@contents.0/@contents.6 //@contents.0/@contents.7">
-      <structuralFeatures
-          xsi:type="km3:Attribute"
-          name="d attribute"
-          package="//@contents.0"
-          lower="1"
-          upper="1"
-          type="//@contents.0/@contents.2"/>
-    </contents>
+        lower="1"
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"
-        owner="//@contents.0/@contents.8"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
     <contents
         xsi:type="km3:Operation"
         name="operation 1"
         package="//@contents.0"
         lower="1"
-        upper="1"
-        type="//@contents.0/@contents.0"/>
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
+    <contents
+        xsi:type="km3:Operation"
+        name="operation 1"
+        package="//@contents.0"
+        lower="1"
+        upper="1"/>
   </contents>
 </km3:Metamodel>

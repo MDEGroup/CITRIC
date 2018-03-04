@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -47,20 +48,47 @@ public class Test {
 	private static String baseResultPath = "results/";
 	
 	public static void main(String[] args) throws IOException, MetaModelNotFoundException, ReferenceNonExistingException, ParserException {
-		String modelInstance_1 = baseResourcePath + "models/KM3_seed.xmi";
-		String modelInstance_2 = baseResourcePath+ "models/sample-KM3.xmi";
-		String modelInstance_3 = baseResourcePath+ "models/mutations/KM3_1.xmi";
+		String modelInstance_seed = baseResourcePath + 	"models/KM3_seed.xmi";
+		String modelInstance_1 = baseResourcePath + 		"models/mutations/KM3_1.xmi";
+		String modelInstance_2 = baseResourcePath + 		"models/mutations/KM3_2.xmi";
+		String modelInstance_3 = baseResourcePath + 		"models/mutations/KM3_3.xmi";
 		List<String> modelInstances = new ArrayList<String>();
+		modelInstances.add(modelInstance_seed);
 		modelInstances.add(modelInstance_1);
-//		modelInstances.add(modelInstance_2);
-//		modelInstances.add(modelInstance_3);
+		modelInstances.add(modelInstance_2);
+		modelInstances.add(modelInstance_3);
+		
+		HashMap<String, Float> resultChain1 = new HashMap<String, Float>();
+		HashMap<String, Float> resultChain2 = new HashMap<String, Float>();
+		HashMap<String, Float> resultChain3 = new HashMap<String, Float>();
 		
 		for (String model : modelInstances) {
-			System.out.println("IL("+model+") = "+(float) testChain1(model));
-			System.out.println("IL("+model+") = "+(float) testChain2(model));
-			System.out.println("IL("+model+") = "+(float) testChain3(model));
+			resultChain1.put(model, (float) testChain1(model));
+			resultChain2.put(model, (float) testChain2(model));
+			resultChain3.put(model, (float) testChain3(model));
 		}
 		
+		System.out.println("RESULTS:");
+		System.out.println("CHAIN 1:");
+		for (Entry<String, Float> entry : resultChain1.entrySet()) {
+		    String key = entry.getKey();
+		    float value = (float) entry.getValue();
+		    System.out.println(key +" = " + value);
+		}
+		System.out.println("-------------------------------------------");
+		System.out.println("CHAIN 2:");
+		for (Entry<String, Float> entry : resultChain2.entrySet()) {
+		    String key = entry.getKey();
+		    float value = (float) entry.getValue();
+		    System.out.println(key +" = " + value);
+		}
+		System.out.println("-------------------------------------------");
+		System.out.println("CHAIN 3:");
+		for (Entry<String, Float> entry : resultChain3.entrySet()) {
+		    String key = entry.getKey();
+		    float value = (float) entry.getValue();
+		    System.out.println(key +" = " + value);
+		}
 	}
 	
 	public static float testChain1(String modelInstance) {
@@ -142,6 +170,7 @@ public class Test {
 		String javaOutputModel2 = baseResourcePath + baseResultPath + "C2/JavaSource/out-JavaSource.xmi";
 		km32Java.setOutPath(javaOutputModel2);
 		perfomer.run(km32Java);
+		informationLoss = (float) km32Java.getInformationLoss();
 		System.out.println("------------------------------------------------------------");
 		
 		System.out.println("JavaSource -> Table");
