@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <nsPrefix:JavaSource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:nsPrefix="http://www.eclipse.org/gmt/2005/JavaSource">
-  <classes name="A">
-    <methods name="setA ATTRIBUTE"/>
-    <methods name="getA ATTRIBUTE"/>
-    <prop name="a attribute"/>
-  </classes>
-  <classes name="B">
-    <methods name="setB ATTRIBUTE"/>
-    <methods name="getB ATTRIBUTE"/>
-    <prop name="b attribute"/>
-  </classes>
-  <classes name="C" superclass="//@classes.0">
-    <methods name="setC ATTRIBUTE"/>
-    <methods name="getC ATTRIBUTE"/>
-    <prop name="c attribute"/>
-  </classes>
-  <classes name="D" superclass="//@classes.0">
-    <methods name="setD ATTRIBUTE"/>
-    <methods name="getD ATTRIBUTE"/>
-    <prop name="d attribute"/>
-  </classes>
+  <classes name="Root Class"/>
+  <classes name="Root Class"/>
+  <classes name="Root Class"/>
+  <classes name="Root Class"/>
+  <classes name="Root Class"/>
+  <classes name="Root Class"/>
+  <classes name="Root Class"/>
 </nsPrefix:JavaSource>

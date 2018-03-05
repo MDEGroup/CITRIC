@@ -102,7 +102,11 @@ public class Transformation {
 		return edgeWeight;
 	}
 	public void setEdgeWeight(float edgeWeight) {
+			if(this.informationLoss >= 1 && this.informationLoss <= 2) {
+				edgeWeight = (float) (Math.log(informationLoss) / Math.log(2));
+			}
 		this.edgeWeight = edgeWeight;
+			
 	}
 	
 	

@@ -7,6 +7,7 @@ import it.univaq.disim.business.calculations.Coverage;
 import it.univaq.disim.business.controller.ChainController;
 import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
+import it.univaq.disim.test.Test;
 
 public class Example {
 	
@@ -219,13 +220,9 @@ public class Example {
 	
 	public static void main(String[] args) {
 		String inputModel = "resources/running_example/models/KM3_seed.xmi";
-		String inputModel2 = "resources/running_example/models/sample-KM3.xmi";
-		
-		
 		
 		List<String> inputModels = new ArrayList<String>();
 		inputModels.add(inputModel);
-		inputModels.add(inputModel2);
 		
 		
 		for (String string : inputModels) {
@@ -234,6 +231,7 @@ public class Example {
 			for (Transformation t : chain.getTransformations()) {
 				t.setInputModel(tmpInputModel);
 				t.setOutPath(chain.getResultModel());
+				System.out.println("@#@#"+t.getEdgeWeight());
 				tmpInputModel = chain.getResultModel();
 			}
 			System.out.println((float)chain.getInformationLoss());

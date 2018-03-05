@@ -1,44 +1,18 @@
 package it.univaq.disim.test;
 
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.Random;
 import java.util.Map.Entry;
 
-import org.eclipse.emf.common.util.TreeIterator;
-import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.EStructuralFeature;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.emf.ecore.util.EcoreUtil;
-import org.eclipse.m2m.atl.common.ATLExecutionException;
 import org.eclipse.ocl.ParserException;
 
-import anatlyzer.atlext.ATL.MatchedRule;
-import it.univaq.disim.business.calculations.Coverage;
 import it.univaq.disim.business.calculations.InformationLoss;
 import it.univaq.disim.business.controller.ATLTransformationPerformer;
-import it.univaq.disim.business.datamodel.Chain;
-import it.univaq.disim.business.datamodel.RuleBinding;
 import it.univaq.disim.business.datamodel.Transformation;
-import it.univaq.disim.business.manager.ATLTransformationManager;
-import it.univaq.disim.business.manager.MetamodelManager;
-import it.univaq.disim.business.manager.ModelManager;
-import it.univaq.disim.common.exceptions.AbstractCreationException;
 import it.univaq.disim.common.exceptions.MetaModelNotFoundException;
-import it.univaq.disim.common.exceptions.ObjectNotContainedException;
 import it.univaq.disim.common.exceptions.ReferenceNonExistingException;
-import it.univaq.disim.common.exceptions.WrongAttributeTypeException;
 import it.univaq.disim.common.utils.Utils;
 import it.univaq.disim.demo.Example;
 
@@ -47,16 +21,23 @@ public class Test {
 	private static String baseResourcePath = "resources/running_example/";
 	private static String baseResultPath = "results/";
 	
+	
+	
 	public static void main(String[] args) throws IOException, MetaModelNotFoundException, ReferenceNonExistingException, ParserException {
-		String modelInstance_seed = baseResourcePath + 	"models/KM3_seed.xmi";
-		String modelInstance_1 = baseResourcePath + 		"models/mutations/KM3_1.xmi";
-		String modelInstance_2 = baseResourcePath + 		"models/mutations/KM3_2.xmi";
-		String modelInstance_3 = baseResourcePath + 		"models/mutations/KM3_3.xmi";
+		String modelInstance_seed = baseResourcePath + 	"models/mutations/KM3_seed.xmi";
+//		String modelInstance_1 = baseResourcePath + 		"models/mutations/KM3_1.xmi";
+//		String modelInstance_2 = baseResourcePath + 		"models/mutations/KM3_2.xmi";
+//		String modelInstance_3 = baseResourcePath + 		"models/mutations/KM3_3.xmi";
+//		String modelInstance_4 = baseResourcePath + 		"models/mutations/KM3_4.xmi";
+//		String modelInstance_5 = baseResourcePath + 		"models/mutations/KM3_5.xmi";
+		
 		List<String> modelInstances = new ArrayList<String>();
 		modelInstances.add(modelInstance_seed);
-		modelInstances.add(modelInstance_1);
-		modelInstances.add(modelInstance_2);
-		modelInstances.add(modelInstance_3);
+//		modelInstances.add(modelInstance_1);
+//		modelInstances.add(modelInstance_2);
+//		modelInstances.add(modelInstance_3);
+//		modelInstances.add(modelInstance_4);
+//		modelInstances.add(modelInstance_5);
 		
 		HashMap<String, Float> resultChain1 = new HashMap<String, Float>();
 		HashMap<String, Float> resultChain2 = new HashMap<String, Float>();
@@ -94,6 +75,7 @@ public class Test {
 	public static float testChain1(String modelInstance) {
 		
 		float informationLoss = 0;
+		float edgeWeight = 0;
 		
 		ATLTransformationPerformer perfomer = new ATLTransformationPerformer();
 		
@@ -103,9 +85,12 @@ public class Test {
 		km32emf.setInformationLoss(InformationLoss.informationLoss(km32emf));
 		String emfOuputModel = baseResourcePath + baseResultPath + "C1/EMF/out-EMF.xmi";
 		km32emf.setOutPath(emfOuputModel);
-		perfomer.run(km32emf);
+//		perfomer.run(km32emf);
 		informationLoss = (float) km32emf.getInformationLoss();
-		
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight = (float) km32emf.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+km32emf.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
 		System.out.println("EMF -> JavaSource");
@@ -117,6 +102,10 @@ public class Test {
 		emf2Java.setOutPath(javaOutputModel);
 //		perfomer.run(emf2Java);
 		informationLoss *= (float) emf2Java.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight += (float) emf2Java.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+emf2Java.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
 		System.out.println("JavaSource -> Table");
@@ -125,9 +114,13 @@ public class Test {
 		java2Table.setInputModel(javaModelInstance);
 		String tableOutputModel = baseResourcePath + baseResultPath + "C1/Table/out-Table.xmi";
 		java2Table.setOutPath(tableOutputModel);
-		perfomer.run(java2Table);
+//		perfomer.run(java2Table);
 		java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
 		informationLoss *= (float) java2Table.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight += (float) java2Table.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+java2Table.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
 		System.out.println("Table -> HTML");
@@ -136,9 +129,13 @@ public class Test {
 		table2html.setInputModel(tableModelInstance);
 		String htmlOutputModel = baseResourcePath + baseResultPath + "C1/TabularHTML/out-TabularHTML.xmi";
 		table2html.setOutPath(htmlOutputModel);
-		perfomer.run(table2html);
+//		perfomer.run(table2html);
 		table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
 		informationLoss *= (float) table2html.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight += (float) table2html.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+table2html.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 
 		System.out.println("HTML -> XML");
@@ -147,9 +144,13 @@ public class Test {
 		html2xml.setInputModel(htmlModelInstance);
 		String xmlOutputModel = baseResourcePath + baseResultPath + "C1/XML/out-XML.xmi";
 		html2xml.setOutPath(xmlOutputModel);
-		perfomer.run(html2xml);
+//		perfomer.run(html2xml);
 		html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
 		informationLoss *= (float) html2xml.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight += (float) html2xml.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+html2xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
 		
@@ -162,6 +163,7 @@ public class Test {
 		ATLTransformationPerformer perfomer = new ATLTransformationPerformer();
 		
 		float informationLoss = 0;
+		float edgeWeight = 0;
 		
 		System.out.println("KM3 -> JavaSource");
 		Transformation km32Java = Example.getKM32Java();
@@ -169,8 +171,12 @@ public class Test {
 		km32Java.setInformationLoss(InformationLoss.informationLoss(km32Java));
 		String javaOutputModel2 = baseResourcePath + baseResultPath + "C2/JavaSource/out-JavaSource.xmi";
 		km32Java.setOutPath(javaOutputModel2);
-		perfomer.run(km32Java);
+//		perfomer.run(km32Java);
 		informationLoss = (float) km32Java.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight = (float) km32Java.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+km32Java.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
 		System.out.println("JavaSource -> Table");
@@ -179,9 +185,13 @@ public class Test {
 		java2Table.setInputModel(javaModelInstance);
 		String tableOutputModel = baseResourcePath + baseResultPath + "C2/Table/out-Table.xmi";
 		java2Table.setOutPath(tableOutputModel);
-		perfomer.run(java2Table);
+//		perfomer.run(java2Table);
 		java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
 		informationLoss *= (float) java2Table.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight += (float) java2Table.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+java2Table.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 
 		System.out.println("Table -> HTML");
@@ -190,9 +200,13 @@ public class Test {
 		table2html.setInputModel(tableModelInstance);
 		String htmlOutputModel = baseResourcePath + baseResultPath + "C2/TabularHTML/out-TabularHTML.xmi";
 		table2html.setOutPath(htmlOutputModel);
-		perfomer.run(table2html);
+//		perfomer.run(table2html);
 		table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
 		informationLoss *= (float) table2html.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight += (float) table2html.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+table2html.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 
 		System.out.println("HTML -> XML");
@@ -201,9 +215,13 @@ public class Test {
 		html2xml.setInputModel(htmlModelInstance);
 		String xmlOutputModel = baseResourcePath + baseResultPath + "C2/XML/out-XML.xmi";
 		html2xml.setOutPath(xmlOutputModel);
-		perfomer.run(html2xml);
+//		perfomer.run(html2xml);
 		html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
 		informationLoss *= (float) html2xml.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		edgeWeight += (float) html2xml.getEdgeWeight();
+		System.out.println("Partial EDGE WEIGHT: "+edgeWeight);
+		System.out.println("Edge Weight: "+html2xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
 		return informationLoss;
@@ -220,8 +238,10 @@ public class Test {
 		km32xml.setInformationLoss(InformationLoss.informationLoss(km32xml));
 		String xmlOuputModel = baseResourcePath + baseResultPath + "C3/XML/out-XML.xmi";
 		km32xml.setOutPath(xmlOuputModel);
-		perfomer.run(km32xml);
+//		perfomer.run(km32xml);
 		informationLoss = (float) km32xml.getInformationLoss();
+		System.out.println("Partial IL: "+informationLoss);
+		System.out.println("Edge Weight: "+km32xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
 		return informationLoss;

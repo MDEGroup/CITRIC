@@ -41,21 +41,21 @@ public class Mutator {
 	private static int N_DATATYPE = 10;
 
 	public static void main(String[] args) {
-		String inputMetamodelPath = "resources/running_example/metamodels/KM3.ecore";
-		String atlTransformation = "resources/running_example/transformations/KM32XML.atl";
-
-		List<String> allMutations = getAllMutations();
-		for (String modelPath : allMutations) {
-			Transformation t = new Transformation();
-			String inputModelPath = modelPath;
-			t.setATLTransformation(atlTransformation);
-			t.setInputMetamodel(inputMetamodelPath);
-			t.setInputModel(inputModelPath);
-			
-			InformationLoss.informationLoss(t);
-			
-		}
-		
+//		String inputMetamodelPath = "resources/running_example/metamodels/KM3.ecore";
+//		String atlTransformation = "resources/running_example/transformations/KM32XML.atl";
+//
+//		List<String> allMutations = getAllMutations();
+//		for (String modelPath : allMutations) {
+//			Transformation t = new Transformation();
+//			String inputModelPath = modelPath;
+//			t.setATLTransformation(atlTransformation);
+//			t.setInputMetamodel(inputMetamodelPath);
+//			t.setInputModel(inputModelPath);
+//			
+//			InformationLoss.informationLoss(t);
+//			
+//		}
+		createSeed();
 	}
 	
 	public static List<String> getAllMutations(){
@@ -69,6 +69,12 @@ public class Mutator {
 		return mutations;
 	}
 	
+	public static void addKM3ClassInstances() {
+		
+	}
+	public static void removeKM3ClassInstances() {
+		
+	}
 	
 	public static String exampleWithParameter() {
 		Metamodel basicKM3Structure = createBasicKM3Structure();
@@ -233,6 +239,67 @@ public class Mutator {
 		
 		String outputPath = KM3ModelInstanceCreator.generateRandomOutputModelFileName(10);
 		ModelManager.serializeModelInstance(basicKM3Structure, outputPath);
+		return outputPath;
+	}
+	
+	
+	public static String createSeed() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(KM3ModelInstanceCreator.generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(KM3ModelInstanceCreator.generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		DataType km3DataTypeString = km3Factory.createDataType();
+		km3DataTypeString.setPackage(km3Package);
+		km3DataTypeString.setName("String");
+		km3Package.getContents().add(km3DataTypeString);
+		
+		Class km3Class1 = km3Factory.createClass();
+		km3Class1.setName(KM3ModelInstanceCreator.generateRandomClassName(10));
+		km3Class1.setPackage(km3Package);
+		km3Class1.setIsAbstract(true);
+		km3Package.getContents().add(km3Class1);
+		
+		Class km3Class2 = km3Factory.createClass();
+		km3Class2.setName(KM3ModelInstanceCreator.generateRandomClassName(10));
+		km3Class2.setPackage(km3Package);
+		km3Class2.setIsAbstract(true);
+		km3Package.getContents().add(km3Class2);
+		
+		Class km3Class3 = km3Factory.createClass();
+		km3Class3.setName(KM3ModelInstanceCreator.generateRandomClassName(10));
+		km3Class3.setPackage(km3Package);
+		km3Class3.setIsAbstract(true);
+		km3Package.getContents().add(km3Class3);
+		
+		Class km3Class4 = km3Factory.createClass();
+		km3Class4.setName(KM3ModelInstanceCreator.generateRandomClassName(10));
+		km3Class4.setPackage(km3Package);
+		km3Class4.setIsAbstract(true);
+		km3Package.getContents().add(km3Class4);
+		
+		Class km3Class5 = km3Factory.createClass();
+		km3Class5.setName(KM3ModelInstanceCreator.generateRandomClassName(10));
+		km3Class5.setPackage(km3Package);
+		km3Class5.setIsAbstract(true);
+		km3Package.getContents().add(km3Class5);
+		
+		while(N_OPERATIONS > 0) {
+			Operation op1 = createOperation(km3Class4, km3DataTypeString, false, false);
+			Parameter par = createParameter(op1, km3DataTypeString, true, false);
+			N_OPERATIONS--;
+		}
+		
+		String outputPath = KM3ModelInstanceCreator.generateRandomOutputModelFileName(10);
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
 		return outputPath;
 	}
 	

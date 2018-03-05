@@ -1,44 +1,112 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
   <ecore:EPackage name="Sample">
-    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
-    <eClassifiers xsi:type="ecore:EDataType" name="Integer"/>
-    <eClassifiers xsi:type="ecore:EDataType" name="Boolean"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="Kind">
-      <eLiterals name="firstKind" value="1"/>
-      <eLiterals name="secondKind" value="2"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Root Class">
+      <eOperations name="operation root" eType="/0/@eClassifiers.7">
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+        <eParameters name="parameter 1" eType="/0/@eClassifiers.7"/>
+      </eOperations>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
+      <eOperations name="operation 1" eType="/0/@eClassifiers.7"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="A" abstract="true">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="a attribute" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="B">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="b attribute" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.3"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="C" eSuperTypes="/0/@eClassifiers.4">
-      <eOperations name="operation 1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="c attribute" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.1"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="D" eSuperTypes="/0/@eClassifiers.4 /0/@eClassifiers.5">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="d attribute" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.2"/>
-    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Root Class"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Root Class"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Root Class"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Root Class"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Root Class"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Root Class"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="DataType String"/>
   </ecore:EPackage>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
-  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.0"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EOperation name="operation 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
+  <ecore:EParameter name="parameter 1" eType="/0/@eClassifiers.7"/>
 </xmi:XMI>
