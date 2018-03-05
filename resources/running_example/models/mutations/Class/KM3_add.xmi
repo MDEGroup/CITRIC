@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_kDXw3qoleB">
+  <contents location="EPLMI" name="package_ROs8QyC8d9" package="//@contents.0">
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_eNROVPZYr4" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_Ghje7U3Go7" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_2xDn3G4wCX" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_E9dzm1zReU" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_8Vxdm7cceh" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_dSbq70YsDy" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_BiUxVOd0OA" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_7KQN4MwUfa" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_E03YqzoeCD" package="//@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_5aPLBAT8lE" package="//@contents.0"/>
+  </contents>
+</km3:Metamodel>
