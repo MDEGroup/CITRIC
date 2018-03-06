@@ -86,7 +86,7 @@ public class InformationLoss{
 		}
 		
 		result = (float) (2 - ((float)(((float) countMetaclassOccurrences / totalNumberofInputModelInstances) + ((float) countNumberOfModelImpactedStructuralFeatures / totalNumberOfInputModelStructuralFeatures))*0.5));
-		System.out.println("IL("+Utils.getNameFromPath(transformation.getInputModel())+", "+Utils.getNameFromPath(transformation.getATLTransformation())+") = "+Utils.getFloatFormat(result));
+		System.out.println("IL("+Utils.getNameFromPath(transformation.getInputModel())+", "+Utils.getNameFromPath(transformation.getATLTransformation())+") = "+Utils.roundFloatValues(result, 2));
 		
 		return result;
 	}

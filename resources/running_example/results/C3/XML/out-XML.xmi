@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML" name="Metamodel">
   <children xsi:type="Element" name="Package">
-    <children xsi:type="Attribute" name="name" value="Sample"/>
+    <children xsi:type="Attribute" name="name" value="package_d0v7IfM2mL"/>
+    <children xsi:type="Element" name="DataType">
+      <children xsi:type="Attribute" name="name" value="String"/>
+    </children>
+    <children xsi:type="Element" name="Enumeration">
+      <children xsi:type="Attribute" name="name" value="enumeration_uIHjdqoDqY"/>
+      <children xsi:type="Element" name="EnumLiteral">
+        <children xsi:type="Attribute" name="name" value="enum_literal_ilGEk9GjTH"/>
+      </children>
+    </children>
     <children xsi:type="Element" name="Class">
-      <children xsi:type="Attribute" name="name" value="Root Class"/>
+      <children xsi:type="Attribute" name="name" value="class_if5FAiRka5"/>
       <children xsi:type="Attribute" name="isAbstract" value="false"/>
       <children xsi:type="Attribute" name="supertypes" value=""/>
+      <children xsi:type="Element" name="Attribute">
+        <children xsi:type="Attribute" name="name" value="attribute_FQJnW"/>
+        <children xsi:type="Attribute" name="lower" value="1"/>
+        <children xsi:type="Attribute" name="upper" value="1"/>
+        <children xsi:type="Attribute" name="isOrdered" value="false"/>
+        <children xsi:type="Attribute" name="isUnique" value="false"/>
+        <children xsi:type="Attribute" name="type" value="package_d0v7IfM2mL::String"/>
+      </children>
     </children>
-    <children xsi:type="Element" name="DataType">
-      <children xsi:type="Attribute" name="name" value="DataType String"/>
+    <children xsi:type="Element" name="Reference">
+      <children xsi:type="Attribute" name="name" value="reference_UBx7WZZvwM"/>
+      <children xsi:type="Attribute" name="lower" value="1"/>
+      <children xsi:type="Attribute" name="upper" value="1"/>
+      <children xsi:type="Attribute" name="isOrdered" value="false"/>
+      <children xsi:type="Attribute" name="isContainer" value="false"/>
+      <children xsi:type="Attribute" name="type" value="package_d0v7IfM2mL::String"/>
+      <children xsi:type="Attribute" name="opposite" value="reference_UBx7WZZvwM"/>
     </children>
   </children>
 </Root>

@@ -100,9 +100,12 @@ public class Utils {
 		return FilenameUtils.getName(path);
 	}
 	
-	public static String getFloatFormat(float value) {
+	public static String roundFloatValues(float value, int decimals) {
+		if(decimals < 0) {
+			decimals = 0;
+		}
 		DecimalFormat df = new DecimalFormat();
-		df.setMaximumFractionDigits(2);
+		df.setMaximumFractionDigits(decimals);
 		return df.format(value);
 	}
 	

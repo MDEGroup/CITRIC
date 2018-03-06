@@ -16,30 +16,140 @@ import KM3.Package;
 import KM3.Parameter;
 import KM3.Reference;
 import KM3.StructuralFeature;
+import it.univaq.disim.business.manager.ModelManager;
 import it.univaq.disim.common.utils.Utils;
 
 public abstract class KM3BasicMutator {
 	
-	protected static int N_INSTANCES_TO_ADD = 10;
 	
-	protected static String basicMutationPath = "resources/running_example/models/mutations/";
-	protected static String CLASS_PATH = 				basicMutationPath +	"Class/";
-	protected static String ATTRIBUTE_PATH = 			basicMutationPath +	"Attribute/";
-	protected static String CLASSIFIER_PATH = 			basicMutationPath +	"Classifier/";
-	protected static String DATATYPE_PATH = 				basicMutationPath +	"DataType/";
-	protected static String ENUMERATION_PATH = 			basicMutationPath +	"Enumeration/";
-	protected static String ENUMLITERAL_PATH = 			basicMutationPath +	"EnumLiteral/";
-	protected static String METAMODEL_PATH = 			basicMutationPath +	"Metamodel/";
-	protected static String OPERATION_PATH = 			basicMutationPath +	"Operation/";
-	protected static String PACKAGE_PATH = 				basicMutationPath +	"Package/";
-	protected static String PARAMETER_PATH = 			basicMutationPath +	"Parameter/";
-	protected static String REFERENCE_PATH = 			basicMutationPath +	"Reference/";
-	protected static String STRUCTURAL_FEATURE_PATH = 	basicMutationPath +	"StructuralFeature/";
+	protected static int N_INSTANCES_TO_ADD = 100;
+	protected static int N_BASIC_INSTANCES_TO_ADD = 5;
 	
+	public static String basicMutationPath = "resources/running_example/models/mutations/";
+	public static String CLASS_PATH = 				basicMutationPath +	"Class/";
+	public static String ATTRIBUTE_PATH = 			basicMutationPath +	"Attribute/";
+	public static String CLASSIFIER_PATH = 			basicMutationPath +	"Classifier/";
+	public static String DATATYPE_PATH = 			basicMutationPath +	"DataType/";
+	public static String ENUMERATION_PATH = 			basicMutationPath +	"Enumeration/";
+	public static String ENUMLITERAL_PATH = 			basicMutationPath +	"EnumLiteral/";
+	public static String METAMODEL_PATH = 			basicMutationPath +	"Metamodel/";
+	public static String OPERATION_PATH = 			basicMutationPath +	"Operation/";
+	public static String PACKAGE_PATH = 				basicMutationPath +	"Package/";
+	public static String PARAMETER_PATH = 			basicMutationPath +	"Parameter/";
+	public static String REFERENCE_PATH = 			basicMutationPath +	"Reference/";
+	public static String STRUCTURAL_FEATURE_PATH = 	basicMutationPath +	"StructuralFeature/";
+	
+	private static String COMPLETE_MODEL_PATH = "resources/running_example/models/mutations/KM3_complete.xmi";
+	private static final String SEED_MODEL_PATH = "resources/running_example/models/Sample-km3/sample-km3.xmi";;
 	
 	protected static KM3Factory km3Factory;
 	protected static Package km3Package;
 	
+	
+	public static void main(String[] args) {
+		createSeed();
+	}
+	
+	public static String createCompleteKM3ModelInstance() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		DataType stringDataType = createStringDataType();
+		
+		Enumeration enumeration = createEnumeration();
+		EnumLiteral createEnumLiteral = createEnumLiteral(enumeration);
+		
+		Class rootClass = createClass(false, null);
+		createAttribute(rootClass, stringDataType, 1, 1, false, false);
+		createReference(rootClass, stringDataType, false, null);
+		Operation ownerOperation = createOperation(rootClass, stringDataType, false, false);
+		
+		createParameter(ownerOperation, stringDataType, false, false);
+		createStructuralFeatures(rootClass, stringDataType, false, false);
+		
+		
+		
+		while(N_BASIC_INSTANCES_TO_ADD > 0) {
+			createClass(false, null);
+			Enumeration enumerationTmp = createEnumeration();
+			EnumLiteral createEnumLiteralTmp = createEnumLiteral(enumeration);
+			DataType stringDataTypeTmp = createStringDataType();
+			createAttribute(rootClass, stringDataType, 1, 1, false, false);
+			createReference(rootClass, stringDataType, false, null);
+			Operation opTmp = createOperation(rootClass, stringDataType, false, false);
+			
+			createParameter(opTmp, stringDataType, false, false);
+			createStructuralFeatures(rootClass, stringDataType, false, false);
+			N_BASIC_INSTANCES_TO_ADD--;
+		}
+
+		
+		
+		
+		String outputPath = COMPLETE_MODEL_PATH;
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String createSeed() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation("KM3 Metamodel");
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName("KM3 Package");
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		DataType stringDataType = createStringDataType();
+		stringDataType.setPackage(km3Package);
+		stringDataType.setName("String");
+		km3Package.getContents().add(stringDataType);
+		
+		Class rootClass = km3Factory.createClass();
+		rootClass.setName(("Root Class"));
+		rootClass.setPackage(km3Package);
+		rootClass.setIsAbstract(false);
+		km3Package.getContents().add(rootClass);
+		
+		
+		int countClass = 0;
+		while(countClass < 6) {
+			Class km3Class = km3Factory.createClass();
+			km3Class.setName(("Class_"+countClass));
+			km3Class.setPackage(km3Package);
+			km3Class.setIsAbstract(false);
+			km3Package.getContents().add(km3Class);
+			countClass++;
+		}
+
+		Operation ownerOperation = createOperation(rootClass, stringDataType, false, false);
+		
+		int countOpANDPar = 95;
+		while(countOpANDPar > 0) {
+			createParameter(ownerOperation, stringDataType, false, false);
+			createOperation(rootClass, stringDataType, false, false);
+			countOpANDPar--;
+		}
+		
+		String outputPath = SEED_MODEL_PATH;
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
 	
 	
 	static Attribute createAttribute(Class owner, Classifier km3DataType, int lower, int upper, boolean isOrdered, boolean isUnique) {
@@ -175,7 +285,7 @@ public abstract class KM3BasicMutator {
 		}
 		
 		
-		public static Metamodel createATLZooBasicKM3Structure() {
+		public static Metamodel createBasicKM3Structure() {
 			KM3Package.eINSTANCE.eClass();
 	        // Retrieve the default factory singleton
 			km3Factory = KM3Factory.eINSTANCE; 

@@ -20,6 +20,7 @@ public class Test {
 	
 	private static String baseResourcePath = "resources/running_example/";
 	private static String baseResultPath = "results/";
+	private static boolean PERFORM_TRANSFORMATIONS = true;
 	
 	
 	
@@ -85,7 +86,9 @@ public class Test {
 		km32emf.setInformationLoss(InformationLoss.informationLoss(km32emf));
 		String emfOuputModel = baseResourcePath + baseResultPath + "C1/EMF/out-EMF.xmi";
 		km32emf.setOutPath(emfOuputModel);
-//		perfomer.run(km32emf);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(km32emf);
+		}
 		informationLoss = (float) km32emf.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight = (float) km32emf.getEdgeWeight();
@@ -100,7 +103,9 @@ public class Test {
 		emf2Java.setInformationLoss(InformationLoss.informationLoss(emf2Java));
 		String javaOutputModel = baseResourcePath + baseResultPath + "C1/JavaSource/out-JavaSource.xmi";
 		emf2Java.setOutPath(javaOutputModel);
-//		perfomer.run(emf2Java);
+//		if(PERFORM_TRANSFORMATIONS) {
+//			perfomer.run(km32emf);
+//		}
 		informationLoss *= (float) emf2Java.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight += (float) emf2Java.getEdgeWeight();
@@ -114,7 +119,9 @@ public class Test {
 		java2Table.setInputModel(javaModelInstance);
 		String tableOutputModel = baseResourcePath + baseResultPath + "C1/Table/out-Table.xmi";
 		java2Table.setOutPath(tableOutputModel);
-//		perfomer.run(java2Table);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(java2Table);
+		}
 		java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
 		informationLoss *= (float) java2Table.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
@@ -129,7 +136,9 @@ public class Test {
 		table2html.setInputModel(tableModelInstance);
 		String htmlOutputModel = baseResourcePath + baseResultPath + "C1/TabularHTML/out-TabularHTML.xmi";
 		table2html.setOutPath(htmlOutputModel);
-//		perfomer.run(table2html);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(table2html);
+		}
 		table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
 		informationLoss *= (float) table2html.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
@@ -144,7 +153,9 @@ public class Test {
 		html2xml.setInputModel(htmlModelInstance);
 		String xmlOutputModel = baseResourcePath + baseResultPath + "C1/XML/out-XML.xmi";
 		html2xml.setOutPath(xmlOutputModel);
-//		perfomer.run(html2xml);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(html2xml);
+		}
 		html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
 		informationLoss *= (float) html2xml.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
@@ -171,7 +182,9 @@ public class Test {
 		km32Java.setInformationLoss(InformationLoss.informationLoss(km32Java));
 		String javaOutputModel2 = baseResourcePath + baseResultPath + "C2/JavaSource/out-JavaSource.xmi";
 		km32Java.setOutPath(javaOutputModel2);
-//		perfomer.run(km32Java);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(km32Java);
+		}
 		informationLoss = (float) km32Java.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight = (float) km32Java.getEdgeWeight();
@@ -185,7 +198,9 @@ public class Test {
 		java2Table.setInputModel(javaModelInstance);
 		String tableOutputModel = baseResourcePath + baseResultPath + "C2/Table/out-Table.xmi";
 		java2Table.setOutPath(tableOutputModel);
-//		perfomer.run(java2Table);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(java2Table);
+		}
 		java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
 		informationLoss *= (float) java2Table.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
@@ -200,7 +215,9 @@ public class Test {
 		table2html.setInputModel(tableModelInstance);
 		String htmlOutputModel = baseResourcePath + baseResultPath + "C2/TabularHTML/out-TabularHTML.xmi";
 		table2html.setOutPath(htmlOutputModel);
-//		perfomer.run(table2html);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(table2html);
+		}
 		table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
 		informationLoss *= (float) table2html.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
@@ -215,7 +232,9 @@ public class Test {
 		html2xml.setInputModel(htmlModelInstance);
 		String xmlOutputModel = baseResourcePath + baseResultPath + "C2/XML/out-XML.xmi";
 		html2xml.setOutPath(xmlOutputModel);
-//		perfomer.run(html2xml);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(html2xml);
+		}
 		html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
 		informationLoss *= (float) html2xml.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
@@ -238,7 +257,9 @@ public class Test {
 		km32xml.setInformationLoss(InformationLoss.informationLoss(km32xml));
 		String xmlOuputModel = baseResourcePath + baseResultPath + "C3/XML/out-XML.xmi";
 		km32xml.setOutPath(xmlOuputModel);
-//		perfomer.run(km32xml);
+		if(PERFORM_TRANSFORMATIONS) {
+			perfomer.run(km32xml);
+		}
 		informationLoss = (float) km32xml.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		System.out.println("Edge Weight: "+km32xml.getEdgeWeight());

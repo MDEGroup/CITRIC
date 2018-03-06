@@ -11,7 +11,7 @@ import KM3.Operation;
 import it.univaq.disim.business.manager.ModelManager;
 import it.univaq.disim.common.utils.Utils;
 
-public class AttributeMutation extends KM3BasicMutator{
+public class EnumLiteralMutation extends KM3BasicMutator{
 	
 	public static void main(String[] args) {
 		System.out.println("Start mutations....");
@@ -66,11 +66,11 @@ public class AttributeMutation extends KM3BasicMutator{
 		}
 		
 		while(N_INSTANCES_TO_ADD > 0) {
-			createAttribute(rootClass, stringDataType, 1, 1, false, false);
+			createEnumLiteral(enumeration);
 			N_INSTANCES_TO_ADD--;
 		}
 		
-		String outputPath = ATTRIBUTE_PATH + "KM3_metaclass_add.xmi";
+		String outputPath = ENUMLITERAL_PATH + "KM3_metaclass_add.xmi";
 		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
 		return outputPath;
 	}
@@ -110,9 +110,9 @@ public class AttributeMutation extends KM3BasicMutator{
 		while(N_BASIC_INSTANCES_TO_ADD > 0) {
 			createClass(false, null);
 			Enumeration enumerationTmp = createEnumeration();
-			EnumLiteral createEnumLiteralTmp = createEnumLiteral(enumeration);
+//			EnumLiteral createEnumLiteralTmp = createEnumLiteral(enumeration);
 			DataType stringDataTypeTmp = createStringDataType();
-//			createAttribute(rootClass, stringDataType, 1, 1, false, false);
+			createAttribute(rootClass, stringDataType, 1, 1, false, false);
 			createReference(rootClass, stringDataType, false, null);
 			Operation opTmp = createOperation(rootClass, stringDataType, false, false);
 			
@@ -122,7 +122,9 @@ public class AttributeMutation extends KM3BasicMutator{
 		}
 		
 		
-		String outputPath = ATTRIBUTE_PATH + "KM3_metaclass_remove.xmi";
+		
+		
+		String outputPath = ENUMLITERAL_PATH + "KM3_metaclass_remove.xmi";
 		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
 		return outputPath;
 	}

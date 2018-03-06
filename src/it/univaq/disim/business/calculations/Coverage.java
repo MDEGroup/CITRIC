@@ -65,7 +65,7 @@ public class Coverage{
 			// e.printStackTrace();
 		}
 
-		System.out.println("Cov(" + Utils.getNameFromPath(transformation.getInputMetamodel()) + ", "+transformation.getName() +") = " + Utils.getFloatFormat(coverage));
+		System.out.println("Cov(" + Utils.getNameFromPath(transformation.getInputMetamodel()) + ", "+transformation.getName() +") = " + Utils.roundFloatValues(coverage, 2));
 		return coverage;
 	}
 	

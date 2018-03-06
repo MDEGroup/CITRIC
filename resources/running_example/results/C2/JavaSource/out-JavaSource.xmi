@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<nsPrefix:JavaSource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:nsPrefix="http://www.eclipse.org/gmt/2005/JavaSource">
-  <classes name="Root Class"/>
-  <classes name="Root Class"/>
-  <classes name="Root Class"/>
-  <classes name="Root Class"/>
-  <classes name="Root Class"/>
-  <classes name="Root Class"/>
-  <classes name="Root Class"/>
+<nsPrefix:JavaSource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsPrefix="http://www.eclipse.org/gmt/2005/JavaSource">
+  <classes name="class_if5FAiRka5">
+    <methods name="setATTRIBUTE_FQJNW"/>
+    <methods name="getATTRIBUTE_FQJNW"/>
+    <prop name="attribute_FQJnW"/>
+  </classes>
+  <classes xsi:type="nsPrefix:Property" name="reference_UBx7WZZvwM"/>
 </nsPrefix:JavaSource>
