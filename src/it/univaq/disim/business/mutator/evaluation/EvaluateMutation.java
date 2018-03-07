@@ -177,24 +177,28 @@ public class EvaluateMutation {
 		 * ENUMERATION
 		 */
 		System.out.println("Start ENUMERATION mutations....");
+		String enumeration_modelInstance_basic = EnumerationMutation.basicInstance();
+		String enumeration_modelInstance_package_set = EnumerationMutation.setPackage();
+		String enumeration_modelInstance_package_unset = EnumerationMutation.unsetPackage();
+		String enumeration_modelInstance_name_set = EnumerationMutation.setName();
+		String enumeration_modelInstance_name_unset = EnumerationMutation.unsetName();
+		String enumeration_modelInstance_enum_set = EnumerationMutation.setEnum();
+		String enumeration_modelInstance_enum_unset = EnumerationMutation.unsetEnum();
 		String enumeration_modelInstance_add = EnumerationMutation.addInstances();
 		String enumeration_modelInstance_remove = EnumerationMutation.removeInstances();
 		System.out.println("Ended ENUMERATION mutations!");
 		
 		/**
-		 * DATA TYPE
-		 */
-		System.out.println("Start DATATYPE mutations....");
-		String dataType_modelInstance_add = DataTypeMutation.addInstances();
-		String dataType_modelInstance_remove = DataTypeMutation.removeInstances();
-		System.out.println("Ended DATATYPE mutations!");
-
-		
-
-		/**
 		 * ENUMLITERAL
 		 */
 		System.out.println("Start ENUMLITERAL mutations....");
+		String enumLiteral_modelInstance_basic = EnumLiteralMutation.basicInstance();
+		String enumLiteral_modelInstance_name_set = EnumLiteralMutation.setName();
+		String enumLiteral_modelInstance_name_unset = EnumLiteralMutation.unsetName();
+		String enumLiteral_modelInstance_package_set = EnumLiteralMutation.setPackage();
+		String enumLiteral_modelInstance_package_unset = EnumLiteralMutation.unsetPackage();
+		String enumLiteral_modelInstance_enum_set = EnumLiteralMutation.setEnum();
+		String enumLiteral_modelInstance_enum_unset = EnumLiteralMutation.unsetEnum();
 		String enumLiteral_modelInstance_add = EnumLiteralMutation.addInstances();
 		String enumLiteral_modelInstance_remove = EnumLiteralMutation.removeInstances();
 		System.out.println("Ended ENUMLITERAL mutations!");
@@ -203,118 +207,150 @@ public class EvaluateMutation {
 		 * STRUCTURAL FEATURE
 		 */
 		System.out.println("Start STRUCTURAL FEATURE mutations....");
+		String structuralFeature_modelInstance_basic = StructuralFeatureMutation.basciInstance();
+		String structuralFeature_modelInstance_package_set = StructuralFeatureMutation.setPackage();
+		String structuralFeature_modelInstance_package_unset = StructuralFeatureMutation.unsetPackage();
+		String structuralFeature_modelInstance_lower_set = StructuralFeatureMutation.setLower();
+		String structuralFeature_modelInstance_lower_unset = StructuralFeatureMutation.unsetLower();
+		String structuralFeature_modelInstance_upper_set = StructuralFeatureMutation.setUpper();
+		String structuralFeature_modelInstance_upper_unset = StructuralFeatureMutation.unsetUpper();
+		String structuralFeature_modelInstance_isOrdered_set = StructuralFeatureMutation.setIsOrdered();
+		String structuralFeature_modelInstance_isOrdered_unset = StructuralFeatureMutation.unsetIsOrdered();
+		String structuralFeature_modelInstance_isUnique_set = StructuralFeatureMutation.setIsUnique();
+		String structuralFeature_modelInstance_isUnique_unset = StructuralFeatureMutation.unsetIsUnique();
+		String structuralFeature_modelInstance_type_set = StructuralFeatureMutation.setType();
+		String structuralFeature_modelInstance_type_unset = StructuralFeatureMutation.unsetType();
+		String structuralFeature_modelInstance_owner_set = StructuralFeatureMutation.setOwner();
+		String structuralFeature_modelInstance_owner_unset = StructuralFeatureMutation.unsetOwner();
+		String structuralFeature_modelInstance_name_set = StructuralFeatureMutation.setName();
+		String structuralFeature_modelInstance_name_unset = StructuralFeatureMutation.unsetName();
 		String structuralFeature_modelInstance_add = StructuralFeatureMutation.addInstances();
 		String structuralFeature_modelInstance_remove = StructuralFeatureMutation.removeInstances();
 		System.out.println("Ended STRUCTURAL FEATURE mutations!");
 		
+		/**
+		 * DATA TYPE
+		 */
+		System.out.println("Start DATATYPE mutations....");
+		String dataType_modelInstance_basic = DataTypeMutation.basicInstance();
+		String dataType_modelInstance_package_set = DataTypeMutation.setPackage();
+		String dataType_modelInstance_package_unset = DataTypeMutation.unsetPackage();
+		String dataType_modelInstance_name_set = DataTypeMutation.setName();
+		String dataType_modelInstance_name_unset = DataTypeMutation.unsetName();
+		String dataType_modelInstance_add = DataTypeMutation.addInstances();
+		String dataType_modelInstance_remove = DataTypeMutation.removeInstances();
+		System.out.println("Ended DATATYPE mutations!");
+		
+		
+		
+		
 		
 		List<String> modelInstances = new ArrayList<String>();
-//		modelInstances.add(class_modelInstance_basic);
-//		modelInstances.add(class_modelInstance_add);
-//		modelInstances.add(class_modelInstance_remove);
-//		modelInstances.add(class_modelInstance_name_set);
-//		modelInstances.add(class_modelInstance_name_unset);
-//		modelInstances.add(class_modelInstance_package_set);
-//		modelInstances.add(class_modelInstance_package_unset);
-//		modelInstances.add(class_modelInstance_isAbstract_set);
-//		modelInstances.add(class_modelInstance_isAbstract_unset);
-//		modelInstances.add(class_modelInstance_structuralFeature_set);
-//		modelInstances.add(class_modelInstance_structuralFeature_unset);
-//		modelInstances.add(class_modelInstance_operation_set);
-//		modelInstances.add(class_modelInstance_operation_unset);
-//		modelInstances.add(class_modelInstance_supertype_set);
-//		modelInstances.add(class_modelInstance_supertype_unset);
+		modelInstances.add(class_modelInstance_basic);
+		modelInstances.add(class_modelInstance_add);
+		modelInstances.add(class_modelInstance_remove);
+		modelInstances.add(class_modelInstance_name_set);
+		modelInstances.add(class_modelInstance_name_unset);
+		modelInstances.add(class_modelInstance_package_set);
+		modelInstances.add(class_modelInstance_package_unset);
+		modelInstances.add(class_modelInstance_isAbstract_set);
+		modelInstances.add(class_modelInstance_isAbstract_unset);
+		modelInstances.add(class_modelInstance_structuralFeature_set);
+		modelInstances.add(class_modelInstance_structuralFeature_unset);
+		modelInstances.add(class_modelInstance_operation_set);
+		modelInstances.add(class_modelInstance_operation_unset);
+		modelInstances.add(class_modelInstance_supertype_set);
+		modelInstances.add(class_modelInstance_supertype_unset);
 		
-//		modelInstances.add(package_modelInstance_package_set);
-//		modelInstances.add(package_modelInstance_package_unset);
-//		modelInstances.add(package_modelInstance_metamodel_set);
-//		modelInstances.add(package_modelInstance_metamodel_unset);
-//		modelInstances.add(package_modelInstance_contents_set);
-//		modelInstances.add(package_modelInstance_contents_unset);
-//		modelInstances.add(package_modelInstance_name_set);
-//		modelInstances.add(package_modelInstance_name_unset);
-//		modelInstances.add(package_modelInstance_basic);
-//		modelInstances.add(package_modelInstance_remove);
-//		modelInstances.add(package_modelInstance_add);
+		modelInstances.add(package_modelInstance_package_set);
+		modelInstances.add(package_modelInstance_package_unset);
+		modelInstances.add(package_modelInstance_metamodel_set);
+		modelInstances.add(package_modelInstance_metamodel_unset);
+		modelInstances.add(package_modelInstance_contents_set);
+		modelInstances.add(package_modelInstance_contents_unset);
+		modelInstances.add(package_modelInstance_name_set);
+		modelInstances.add(package_modelInstance_name_unset);
+		modelInstances.add(package_modelInstance_basic);
+		modelInstances.add(package_modelInstance_remove);
+		modelInstances.add(package_modelInstance_add);
 		
-//		modelInstances.add(attribute_modelInstance_basic);
-//		modelInstances.add(attribute_modelInstance_owner_set);
-//		modelInstances.add(attribute_modelInstance_owner_unset);
-//		modelInstances.add(attribute_modelInstance_type_set);
-//		modelInstances.add(attribute_modelInstance_type_unset);
-//		modelInstances.add(attribute_modelInstance_unique_set);
-//		modelInstances.add(attribute_modelInstance_unique_unset);
-//		modelInstances.add(attribute_modelInstance_isOrdered_set);
-//		modelInstances.add(attribute_modelInstance_isOrdered_unset);
-//		modelInstances.add(attribute_modelInstance_upper_set);
-//		modelInstances.add(attribute_modelInstance_upper_unset);
-//		modelInstances.add(attribute_modelInstance_lower_set);
-//		modelInstances.add(attribute_modelInstance_lower_unset);
-//		modelInstances.add(attribute_modelInstance_name_set);
-//		modelInstances.add(attribute_modelInstance_name_unset);
-//		modelInstances.add(attribute_modelInstance_add);
-//		modelInstances.add(attribute_modelInstance_remove);
+		modelInstances.add(attribute_modelInstance_basic);
+		modelInstances.add(attribute_modelInstance_owner_set);
+		modelInstances.add(attribute_modelInstance_owner_unset);
+		modelInstances.add(attribute_modelInstance_type_set);
+		modelInstances.add(attribute_modelInstance_type_unset);
+		modelInstances.add(attribute_modelInstance_unique_set);
+		modelInstances.add(attribute_modelInstance_unique_unset);
+		modelInstances.add(attribute_modelInstance_isOrdered_set);
+		modelInstances.add(attribute_modelInstance_isOrdered_unset);
+		modelInstances.add(attribute_modelInstance_upper_set);
+		modelInstances.add(attribute_modelInstance_upper_unset);
+		modelInstances.add(attribute_modelInstance_lower_set);
+		modelInstances.add(attribute_modelInstance_lower_unset);
+		modelInstances.add(attribute_modelInstance_name_set);
+		modelInstances.add(attribute_modelInstance_name_unset);
+		modelInstances.add(attribute_modelInstance_add);
+		modelInstances.add(attribute_modelInstance_remove);
 		
-//		modelInstances.add(reference_modelInstance_opposite_set);
-//		modelInstances.add(reference_modelInstance_opposite_unset);
-//		modelInstances.add(reference_modelInstance_isContainer_set);
-//		modelInstances.add(reference_modelInstance_isContainer_unset);
-//		modelInstances.add(reference_modelInstance_owner_set);
-//		modelInstances.add(reference_modelInstance_owner_unset);
-//		modelInstances.add(reference_modelInstance_type_set);
-//		modelInstances.add(reference_modelInstance_type_unset);
-//		modelInstances.add(reference_modelInstance_isOrdered_set);
-//		modelInstances.add(reference_modelInstance_isOrdered_unset);
-//		modelInstances.add(reference_modelInstance_isUnique_set);
-//		modelInstances.add(reference_modelInstance_isUnique_unset);
-//		modelInstances.add(reference_modelInstance_upper_set);
-//		modelInstances.add(reference_modelInstance_upper_unset);
-//		modelInstances.add(reference_modelInstance_lower_set);
-//		modelInstances.add(reference_modelInstance_lower_unset);
-//		modelInstances.add(reference_modelInstance_name_set);
-//		modelInstances.add(reference_modelInstance_name_unset);
-//		modelInstances.add(reference_modelInstance_basic);
-//		modelInstances.add(reference_modelInstance_add);
-//		modelInstances.add(reference_modelInstance_remove);
+		modelInstances.add(reference_modelInstance_opposite_set);
+		modelInstances.add(reference_modelInstance_opposite_unset);
+		modelInstances.add(reference_modelInstance_isContainer_set);
+		modelInstances.add(reference_modelInstance_isContainer_unset);
+		modelInstances.add(reference_modelInstance_owner_set);
+		modelInstances.add(reference_modelInstance_owner_unset);
+		modelInstances.add(reference_modelInstance_type_set);
+		modelInstances.add(reference_modelInstance_type_unset);
+		modelInstances.add(reference_modelInstance_isOrdered_set);
+		modelInstances.add(reference_modelInstance_isOrdered_unset);
+		modelInstances.add(reference_modelInstance_isUnique_set);
+		modelInstances.add(reference_modelInstance_isUnique_unset);
+		modelInstances.add(reference_modelInstance_upper_set);
+		modelInstances.add(reference_modelInstance_upper_unset);
+		modelInstances.add(reference_modelInstance_lower_set);
+		modelInstances.add(reference_modelInstance_lower_unset);
+		modelInstances.add(reference_modelInstance_name_set);
+		modelInstances.add(reference_modelInstance_name_unset);
+		modelInstances.add(reference_modelInstance_basic);
+		modelInstances.add(reference_modelInstance_add);
+		modelInstances.add(reference_modelInstance_remove);
 		
+		modelInstances.add(operation_modelInstance_add);
+		modelInstances.add(operation_modelInstance_remove);
+		modelInstances.add(operation_modelInstance_name_set);
+		modelInstances.add(operation_modelInstance_name_unset);
+		modelInstances.add(operation_modelInstance_parameter_set);
+		modelInstances.add(operation_modelInstance_parameter_unset);
+		modelInstances.add(operation_modelInstance_owner_set);
+		modelInstances.add(operation_modelInstance_owner_unset);
+		modelInstances.add(operation_modelInstance_type_set);
+		modelInstances.add(operation_modelInstance_type_unset);
+		modelInstances.add(operation_modelInstance_isOrdered_set);
+		modelInstances.add(operation_modelInstance_isOrdered_unset);
+		modelInstances.add(operation_modelInstance_isUnique_set);
+		modelInstances.add(operation_modelInstance_isUnique_unset);
+		modelInstances.add(operation_modelInstance_upper_set);
+		modelInstances.add(operation_modelInstance_upper_unset);
+		modelInstances.add(operation_modelInstance_lower_set);
+		modelInstances.add(operation_modelInstance_lower_unset);
+		modelInstances.add(operation_modelInstance_basic);
 		
-//		modelInstances.add(operation_modelInstance_add);
-//		modelInstances.add(operation_modelInstance_remove);
-//		modelInstances.add(operation_modelInstance_name_set);
-//		modelInstances.add(operation_modelInstance_name_unset);
-//		modelInstances.add(operation_modelInstance_parameter_set);
-//		modelInstances.add(operation_modelInstance_parameter_unset);
-//		modelInstances.add(operation_modelInstance_owner_set);
-//		modelInstances.add(operation_modelInstance_owner_unset);
-//		modelInstances.add(operation_modelInstance_type_set);
-//		modelInstances.add(operation_modelInstance_type_unset);
-//		modelInstances.add(operation_modelInstance_isOrdered_set);
-//		modelInstances.add(operation_modelInstance_isOrdered_unset);
-//		modelInstances.add(operation_modelInstance_isUnique_set);
-//		modelInstances.add(operation_modelInstance_isUnique_unset);
-//		modelInstances.add(operation_modelInstance_upper_set);
-//		modelInstances.add(operation_modelInstance_upper_unset);
-//		modelInstances.add(operation_modelInstance_lower_set);
-//		modelInstances.add(operation_modelInstance_lower_unset);
-//		modelInstances.add(operation_modelInstance_basic);
-		
-//		modelInstances.add(parameter_modelInstance_basic);
-//		modelInstances.add(parameter_modelInstance_owner_set);
-//		modelInstances.add(parameter_modelInstance_owner_unset);
-//		modelInstances.add(parameter_modelInstance_type_set);
-//		modelInstances.add(parameter_modelInstance_type_unset);
-//		modelInstances.add(parameter_modelInstance_isOrdered_set);
-//		modelInstances.add(parameter_modelInstance_isOrdered_unset);
-//		modelInstances.add(parameter_modelInstance_isUnique_set);
-//		modelInstances.add(parameter_modelInstance_isUnique_unset);
-//		modelInstances.add(parameter_modelInstance_upper_set);
-//		modelInstances.add(parameter_modelInstance_upper_unset);
-//		modelInstances.add(parameter_modelInstance_lower_set);
-//		modelInstances.add(parameter_modelInstance_lower_unset);
-//		modelInstances.add(parameter_modelInstance_name_set);
-//		modelInstances.add(parameter_modelInstance_name_unset);
-//		modelInstances.add(parameter_modelInstance_remove);
-//		modelInstances.add(parameter_modelInstance_add);
+		modelInstances.add(parameter_modelInstance_basic);
+		modelInstances.add(parameter_modelInstance_owner_set);
+		modelInstances.add(parameter_modelInstance_owner_unset);
+		modelInstances.add(parameter_modelInstance_type_set);
+		modelInstances.add(parameter_modelInstance_type_unset);
+		modelInstances.add(parameter_modelInstance_isOrdered_set);
+		modelInstances.add(parameter_modelInstance_isOrdered_unset);
+		modelInstances.add(parameter_modelInstance_isUnique_set);
+		modelInstances.add(parameter_modelInstance_isUnique_unset);
+		modelInstances.add(parameter_modelInstance_upper_set);
+		modelInstances.add(parameter_modelInstance_upper_unset);
+		modelInstances.add(parameter_modelInstance_lower_set);
+		modelInstances.add(parameter_modelInstance_lower_unset);
+		modelInstances.add(parameter_modelInstance_name_set);
+		modelInstances.add(parameter_modelInstance_name_unset);
+		modelInstances.add(parameter_modelInstance_remove);
+		modelInstances.add(parameter_modelInstance_add);
 
 		modelInstances.add(metamodel_modelInstance_basic);
 		modelInstances.add(metamodel_modelInstance_location_set);
@@ -322,20 +358,57 @@ public class EvaluateMutation {
 		modelInstances.add(metamodel_modelInstance_remove);
 		modelInstances.add(metamodel_modelInstance_add);
 		
-//		modelInstances.add(enumLiteral_modelInstance_remove);
-//		modelInstances.add(enumLiteral_modelInstance_add);
+		modelInstances.add(enumeration_modelInstance_enum_set);
+		modelInstances.add(enumeration_modelInstance_enum_unset);
+		modelInstances.add(enumeration_modelInstance_name_set);
+		modelInstances.add(enumeration_modelInstance_name_unset);
+		modelInstances.add(enumeration_modelInstance_package_set);
+		modelInstances.add(enumeration_modelInstance_package_unset);
+		modelInstances.add(enumeration_modelInstance_basic);
+		modelInstances.add(enumeration_modelInstance_remove);
+		modelInstances.add(enumeration_modelInstance_add);
 		
-//		modelInstances.add(enumeration_modelInstance_remove);
-//		modelInstances.add(enumeration_modelInstance_add);
+		modelInstances.add(enumLiteral_modelInstance_enum_set);
+		modelInstances.add(enumLiteral_modelInstance_enum_unset);
+		modelInstances.add(enumLiteral_modelInstance_package_set);
+		modelInstances.add(enumLiteral_modelInstance_package_unset);
+		modelInstances.add(enumLiteral_modelInstance_name_set);
+		modelInstances.add(enumLiteral_modelInstance_name_unset);
+		modelInstances.add(enumLiteral_modelInstance_basic);
+		modelInstances.add(enumLiteral_modelInstance_remove);
+		modelInstances.add(enumLiteral_modelInstance_add);
 		
-//		modelInstances.add(dataType_modelInstance_remove);
-//		modelInstances.add(dataType_modelInstance_add);
+		modelInstances.add(structuralFeature_modelInstance_name_set);
+		modelInstances.add(structuralFeature_modelInstance_name_unset);
+		modelInstances.add(structuralFeature_modelInstance_owner_set);
+		modelInstances.add(structuralFeature_modelInstance_owner_unset);
+		modelInstances.add(structuralFeature_modelInstance_type_set);
+		modelInstances.add(structuralFeature_modelInstance_type_unset);
+		modelInstances.add(structuralFeature_modelInstance_isUnique_set);
+		modelInstances.add(structuralFeature_modelInstance_isUnique_unset);
+		modelInstances.add(structuralFeature_modelInstance_isOrdered_set);
+		modelInstances.add(structuralFeature_modelInstance_isOrdered_unset);
+		modelInstances.add(structuralFeature_modelInstance_upper_set);
+		modelInstances.add(structuralFeature_modelInstance_upper_unset);
+		modelInstances.add(structuralFeature_modelInstance_lower_set);
+		modelInstances.add(structuralFeature_modelInstance_lower_unset);
+		modelInstances.add(structuralFeature_modelInstance_package_set);
+		modelInstances.add(structuralFeature_modelInstance_package_unset);
+		modelInstances.add(structuralFeature_modelInstance_basic);
+		modelInstances.add(structuralFeature_modelInstance_add);
+		modelInstances.add(structuralFeature_modelInstance_remove);
+		
+		modelInstances.add(dataType_modelInstance_name_set);
+		modelInstances.add(dataType_modelInstance_name_unset);
+		modelInstances.add(dataType_modelInstance_package_set);
+		modelInstances.add(dataType_modelInstance_package_unset);
+		modelInstances.add(dataType_modelInstance_basic);
+		modelInstances.add(dataType_modelInstance_remove);
+		modelInstances.add(dataType_modelInstance_add);
 		
 		
 		
 		
-//		modelInstances.add(structuralFeature_modelInstance_add);
-//		modelInstances.add(structuralFeature_modelInstance_remove);
 		
 		HashMap<String, Float> resultChain1 = new HashMap<String, Float>();
 		HashMap<String, Float> resultChain2 = new HashMap<String, Float>();

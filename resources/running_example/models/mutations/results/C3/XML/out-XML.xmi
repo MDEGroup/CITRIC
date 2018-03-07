@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<Root xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="XML" name="Metamodel"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML">
+  <Root name="Metamodel"/>
+  <Element name="Package">
+    <children xsi:type="Attribute" name="name" value="package_p8PUQiR3uv"/>
+  </Element>
+  <Element name="DataType" value="String">
+    <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+</xmi:XMI>

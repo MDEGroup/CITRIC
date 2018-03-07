@@ -25,7 +25,7 @@ public abstract class KM3BasicMutator {
 	protected static int N_INSTANCES_TO_ADD = 100;
 	protected static int N_BASIC_INSTANCES_TO_ADD = 5;
 	
-	public static String basicMutationPath = "resources/running_example/models/mutations/";
+	public static String basicMutationPath = "resources/running_example/models/mutations/KM3/";
 	public static String CLASS_PATH = 				basicMutationPath +	"Class/";
 	public static String ATTRIBUTE_PATH = 			basicMutationPath +	"Attribute/";
 	public static String CLASSIFIER_PATH = 			basicMutationPath +	"Classifier/";
@@ -39,7 +39,7 @@ public abstract class KM3BasicMutator {
 	public static String REFERENCE_PATH = 			basicMutationPath +	"Reference/";
 	public static String STRUCTURAL_FEATURE_PATH = 	basicMutationPath +	"StructuralFeature/";
 	
-	private static String COMPLETE_MODEL_PATH = "resources/running_example/models/mutations/KM3_complete.xmi";
+	private static String COMPLETE_MODEL_PATH = "resources/running_example/models/mutations/KM3/KM3_complete.xmi";
 	private static final String SEED_MODEL_PATH = "resources/running_example/models/Sample-km3/sample-km3.xmi";;
 	
 	protected static KM3Factory km3Factory;
