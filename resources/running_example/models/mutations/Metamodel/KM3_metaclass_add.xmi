@@ -1,15 +1,2 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_War2QsRKtC">
-  <contents location="e9XAb" name="package_JJ6JFIRBvn" package="//@contents.0">
-    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_DzCZBH89r9" package="//@contents.0" literals="//@contents.0/@contents.2"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_XLNf9eBnHU" package="//@contents.0" enum="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:Class" name="class_R6gWZrco0O" package="//@contents.0" operations="//@contents.0/@contents.5">
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_y2Azv" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    </contents>
-    <contents xsi:type="km3:Reference" name="reference_7sgUbLwuNP" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
-    <contents xsi:type="km3:Operation" name="parameter_2y5qI5GP5t" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
-    <contents xsi:type="km3:Parameter" name="parameter_iQM9cjUMJJ" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_EwsqbgIWz2" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-  </contents>
-</km3:Metamodel>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_jClIuvXIM9"/>

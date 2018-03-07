@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_JmiYJ1xXIy">
-  <contents location="SxKTy" name="package_3dVRuphK42" package="//@contents.0">
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_wPOhLs6zJH">
+  <contents location="4nqfl" name="package_ELk94SA4R6" package="//@contents.0">
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_0JWWTgIHEc" package="//@contents.0" literals="//@contents.0/@contents.2"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_0zbUJ5dCvv" package="//@contents.0" enum="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:Class" name="class_wKH9IQF8fS" package="//@contents.0" operations="//@contents.0/@contents.5">
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_8ErJX" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_4EuVUduNdc" package="//@contents.0" literals="//@contents.0/@contents.2"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_HUaGkhHrDc" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Class" name="class_DJKEUMe0JO" package="//@contents.0" operations="//@contents.0/@contents.5">
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_ahbkw" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
     </contents>
-    <contents xsi:type="km3:Reference" name="reference_mNLY3OGFUc" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
-    <contents xsi:type="km3:Operation" name="parameter_p7MjGAAk5J" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
-    <contents xsi:type="km3:Parameter" name="parameter_L0q2GEqmmx" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_koAeLnzB7R" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_Thpzkyjalk" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
+    <contents xsi:type="km3:Operation" name="parameter_oLZaC7ULyY" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
+    <contents xsi:type="km3:Parameter" name="parameter_KJ32i3fQmG" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_LkoO0Tw24K" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
   </contents>
 </km3:Metamodel>

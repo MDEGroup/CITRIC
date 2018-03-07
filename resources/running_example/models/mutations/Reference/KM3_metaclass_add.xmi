@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_0HSgfpElFY">
-  <contents location="o5OQu" name="package_Tv7sliGMfH" package="//@contents.0">
-    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_zqS8XW1pAs" package="//@contents.0" literals="//@contents.0/@contents.2"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_D3PRi8kiUK" package="//@contents.0" enum="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:Class" name="class_16EOtZZqqi" package="//@contents.0" operations="//@contents.0/@contents.5">
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_VyG9R" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    </contents>
-    <contents xsi:type="km3:Reference" name="reference_vWZ1eepNVH" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
-    <contents xsi:type="km3:Operation" name="parameter_tjAE0XbK6O" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
-    <contents xsi:type="km3:Parameter" name="parameter_UwGH6bjwJa" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_WRBdF097O3" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_tfqaimllR9">
+  <contents location="bvq13" name="package_FiWzZGJbZs" package="//@contents.0">
+    <contents xsi:type="km3:Class" name="class_iuSVQrggb3" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_BNRHGmoESo" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.1"/>
   </contents>
 </km3:Metamodel>

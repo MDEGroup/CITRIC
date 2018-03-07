@@ -11,6 +11,7 @@ import java.security.SecureRandom;
 import java.text.Collator;
 import java.text.DecimalFormat;
 import java.util.Arrays;
+import java.util.Collection;
 
 import org.apache.commons.io.FilenameUtils;
 
@@ -107,6 +108,18 @@ public class Utils {
 		DecimalFormat df = new DecimalFormat();
 		df.setMaximumFractionDigits(decimals);
 		return df.format(value);
+	}
+	
+	public static boolean isEmptyObject(Object obj) {
+	    if (obj == null)
+	        return true;
+	    if (obj instanceof Collection)
+	        return ((Collection<?>) obj).size() == 0;
+
+	    // is below line expensive?
+	    final String s = String.valueOf(obj).trim();
+
+	    return s.length() == 0 || s.equalsIgnoreCase("null");
 	}
 	
 

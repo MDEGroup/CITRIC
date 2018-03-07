@@ -1,5 +1,8 @@
 package it.univaq.disim.business.mutator.km3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import KM3.Class;
 import KM3.DataType;
 import KM3.EnumLiteral;
@@ -13,14 +16,337 @@ import it.univaq.disim.common.utils.Utils;
 
 public class ClassMutation extends KM3BasicMutator{
 	
-	public static void main(String[] args) {
-		System.out.println("Start mutations....");
-		addInstances();
-		removeInstances();
-		System.out.println("Ended mutations!");
+	
+	public static String setOperation() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+
+		createOperation(km3Class, km3Class, false, false);
+		
+		String outputPath = CLASS_PATH + "KM3_operation_set.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String unsetOperation() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		createOperation(km3Class, km3Class, false, false);
+		
+		String outputPath = CLASS_PATH + "KM3_operation_unset.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String setStructuralFeature() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		createStructuralFeatures(km3Class, km3Class, false, false);
+		
+		String outputPath = CLASS_PATH + "KM3_structuralFeature_set.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String unsetStructuralFeature() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_structuralFeature_unset.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String setSupertypes() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		List<Class> supertypes = new ArrayList<Class>();
+		supertypes.add(km3Class);
+		
+		createClass(false, supertypes);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_supertypes_set.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String unsetSupertypes() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		
+		
+		String outputPath = CLASS_PATH + "KM3_supertypes_unset.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String setIsAbstract() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setIsAbstract(true);
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_isAbstract_set.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String unsetIsAbstract() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_isAbstract_unset.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
 	}
 	
 	
+	public static String setPackage() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_package_set.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+
+	public static String unsetPackage() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Package.getContents().add(km3Class);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_package_unset.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String setName() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setName((generateRandomClassName(10)));
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_name_set.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String unsetName() {
+		KM3Package.eINSTANCE.eClass();
+		// Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class km3Class = km3Factory.createClass();
+		km3Class.setPackage(km3Package);
+		km3Package.getContents().add(km3Class);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_name_unset.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
+	
+	public static String basicInstance() {
+		KM3Package.eINSTANCE.eClass();
+        // Retrieve the default factory singleton
+		km3Factory = KM3Factory.eINSTANCE; 
+		// create the content of the model via this program
+		Metamodel km3Metamodel = km3Factory.createMetamodel();
+		km3Metamodel.setLocation(generateRandomMetamodelName(10));
+		
+		km3Package = km3Factory.createPackage();
+		km3Package.setName(generateRandomPackageName(10));
+		km3Package.setMetamodel(km3Metamodel);
+		km3Package.setLocation(Utils.generateRandomString(5));
+		km3Package.setPackage(km3Package);
+		
+		Class rootClass = createClass(false, null);
+		
+		
+		String outputPath = CLASS_PATH + "KM3_Class_BASE.xmi";
+		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
+		return outputPath;
+	}
 
 	public static String addInstances() {
 		KM3Package.eINSTANCE.eClass();
@@ -36,47 +362,18 @@ public class ClassMutation extends KM3BasicMutator{
 		km3Package.setLocation(Utils.generateRandomString(5));
 		km3Package.setPackage(km3Package);
 		
-		DataType stringDataType = createStringDataType();
-		
-		Enumeration enumeration = createEnumeration();
-		EnumLiteral createEnumLiteral = createEnumLiteral(enumeration);
-		
 		Class rootClass = createClass(false, null);
-		createAttribute(rootClass, stringDataType, 1, 1, false, false);
-		createReference(rootClass, stringDataType, false, null);
-		Operation ownerOperation = createOperation(rootClass, stringDataType, false, false);
-		
-		createParameter(ownerOperation, stringDataType, false, false);
-		createStructuralFeatures(rootClass, stringDataType, false, false);
+		Class anotherClass = createClass(false, null);
 		
 		
-		
-		while(N_BASIC_INSTANCES_TO_ADD > 0) {
-			createClass(false, null);
-			Enumeration enumerationTmp = createEnumeration();
-			EnumLiteral createEnumLiteralTmp = createEnumLiteral(enumeration);
-			DataType stringDataTypeTmp = createStringDataType();
-			createAttribute(rootClass, stringDataType, 1, 1, false, false);
-			createReference(rootClass, stringDataType, false, null);
-			Operation opTmp = createOperation(rootClass, stringDataType, false, false);
-			
-			createParameter(opTmp, stringDataType, false, false);
-			createStructuralFeatures(rootClass, stringDataType, false, false);
-			N_BASIC_INSTANCES_TO_ADD--;
-		}
-		
-		
-		
-		while(N_INSTANCES_TO_ADD > 0) {
-			createClass(false, null);
-			N_INSTANCES_TO_ADD--;
-		}
 		
 		String outputPath = CLASS_PATH + "KM3_metaclass_add.xmi";
 		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
 		return outputPath;
 	}
 	
+	
+
 	
 	
 	
@@ -95,40 +392,10 @@ public class ClassMutation extends KM3BasicMutator{
 		km3Package.setLocation(Utils.generateRandomString(5));
 		km3Package.setPackage(km3Package);
 		
-		DataType stringDataType = createStringDataType();
-		
-		Enumeration enumeration = createEnumeration();
-		EnumLiteral createEnumLiteral = createEnumLiteral(enumeration);
-		
-		Class rootClass = createClass(false, null);
-		createAttribute(rootClass, stringDataType, 1, 1, false, false);
-		createReference(rootClass, stringDataType, false, null);
-		Operation ownerOperation = createOperation(rootClass, stringDataType, false, false);
-		
-		createParameter(ownerOperation, stringDataType, false, false);
-		createStructuralFeatures(rootClass, stringDataType, false, false);
-		
-		
-		
-		while(N_BASIC_INSTANCES_TO_ADD > 0) {
-			
-			//REMOVED CLASSES ADDED HERE
-//			createClass(false, null);
-			Enumeration enumerationTmp = createEnumeration();
-			EnumLiteral createEnumLiteralTmp = createEnumLiteral(enumeration);
-			DataType stringDataTypeTmp = createStringDataType();
-			createAttribute(rootClass, stringDataType, 1, 1, false, false);
-			createReference(rootClass, stringDataType, false, null);
-			Operation opTmp = createOperation(rootClass, stringDataType, false, false);
-			
-			createParameter(opTmp, stringDataType, false, false);
-			createStructuralFeatures(rootClass, stringDataType, false, false);
-			N_BASIC_INSTANCES_TO_ADD--;
-		}
-		
 		
 		String outputPath = CLASS_PATH + "KM3_metaclass_remove.xmi";
 		ModelManager.serializeModelInstance(km3Metamodel, outputPath);
 		return outputPath;
 	}
+
 }

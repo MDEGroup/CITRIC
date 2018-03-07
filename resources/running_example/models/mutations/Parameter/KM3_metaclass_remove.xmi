@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_1sFNCVstzR">
-  <contents location="oG9Lr" name="package_84uRDI5DCq" package="//@contents.0">
-    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_RHxUQqzIoF" package="//@contents.0" literals="//@contents.0/@contents.2"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_ntlNkTtPll" package="//@contents.0" enum="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:Class" name="class_og5384qKwV" package="//@contents.0" operations="//@contents.0/@contents.5">
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_RvFQc" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    </contents>
-    <contents xsi:type="km3:Reference" name="reference_gv1KBGAkQd" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
-    <contents xsi:type="km3:Operation" name="parameter_LnHUEKBhIG" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
-    <contents xsi:type="km3:Parameter" name="parameter_eC3ERxzF3o" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_tCEcJZqBA6" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_W2S2T2Zgj4">
+  <contents location="HTvCn" name="package_Ec7j1Y7SQW" package="//@contents.0">
+    <contents xsi:type="km3:Class" name="class_McKCIDanIn" package="//@contents.0" operations="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Operation" name="parameter_IrpklVg2Fg" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.0"/>
   </contents>
 </km3:Metamodel>

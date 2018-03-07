@@ -1,6 +1,5 @@
 package it.univaq.disim.business.calculations;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.emf.ecore.EReference;
@@ -11,6 +10,7 @@ import it.univaq.disim.business.datamodel.ModelStructuralFeature;
 import it.univaq.disim.business.datamodel.RuleBinding;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
+import it.univaq.disim.business.manager.KM3Manager;
 import it.univaq.disim.business.manager.MetamodelManager;
 import it.univaq.disim.business.manager.ModelManager;
 import it.univaq.disim.common.utils.Utils;
@@ -21,9 +21,10 @@ public class InformationLoss{
 	
 	public static void main(String[] args) {
 		Transformation t = new Transformation();
-		String inputMetamodelPath = "resources/running_example/metamodels/HTML.ecore";
-		String inputModelPath = "resources/mutations/KM3_seed.xmi";
-		String atlTransformation = "resources/running_example/transformations/HTML2XML.atl";
+		String inputMetamodelPath = "resources/running_example/metamodels/KM3.ecore";
+		String inputModelPath = "resources/running_example/models/mutations/Class/KM3_name_set.xmi";
+//		String inputModelPath = "resources/running_example/models/mutations/Class/KM3_name_unset.xmi";
+		String atlTransformation = "resources/running_example/transformations/KM32XML.atl";
 		t.setATLTransformation(atlTransformation);
 		t.setInputMetamodel(inputMetamodelPath);
 		t.setInputModel(inputModelPath);
@@ -35,6 +36,7 @@ public class InformationLoss{
 	
 	public static float informationLoss(Transformation transformation) {
 		float result = 0;
+		
 		List<ModelStructuralFeature> modelStructuralFeatures = ModelManager.getAllModelStructuralFeaturesAndReferences(transformation.getInputModel(), transformation.getInputMetamodel(), transformation.isMeta_Metamodel());
 		List<ModelStructuralFeature> metamodelStructuralFeatures = MetamodelManager.getAllMetamodelStructuralFeaturesAndReferences(transformation.getInputMetamodel());
 		ATLTransformationManager atlManager = new ATLTransformationManager(transformation.getATLTransformation());

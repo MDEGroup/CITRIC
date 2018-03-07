@@ -1,15 +1,160 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_RosGkjZrs9">
-  <contents location="UmyXc" name="package_YKdFjN3kpC" package="//@contents.0">
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_nVHhSiG84Q">
+  <contents location="9yNqQ" name="package_4PtP3Kksq4" package="//@contents.0">
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_JfErQoLwWY" package="//@contents.0" literals="//@contents.0/@contents.2"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_dMDcmQvJYB" package="//@contents.0" enum="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:Class" name="class_MxHstRky8K" package="//@contents.0" operations="//@contents.0/@contents.5">
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_XRlv2" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_0v5XkSBcOG" package="//@contents.0" literals="//@contents.0/@contents.2 //@contents.0/@contents.10 //@contents.0/@contents.18 //@contents.0/@contents.26 //@contents.0/@contents.34 //@contents.0/@contents.42"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_6X3KEJtgTv" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Class" name="class_n21D00g12F" package="//@contents.0" operations="//@contents.0/@contents.5 //@contents.0/@contents.13 //@contents.0/@contents.21 //@contents.0/@contents.29 //@contents.0/@contents.37 //@contents.0/@contents.45">
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_PGbeH" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_rwf3Z" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_dAfIj" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_tiMgj" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_bOtwe" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_VaoHY" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
     </contents>
-    <contents xsi:type="km3:Reference" name="reference_eeDhUEKIBx" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
-    <contents xsi:type="km3:Operation" name="parameter_wmixjPmtpm" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
-    <contents xsi:type="km3:Parameter" name="parameter_IWE9kiftqO" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_w18NWig6a8" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_mQWMVqrXN4" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
+    <contents xsi:type="km3:Operation" name="parameter_qh9dIDBari" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
+    <contents xsi:type="km3:Parameter" name="parameter_eGysW39Ld1" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_JHIVHMUv9A" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_iPuxxw2S1P" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_y3GSMssE69" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_hlGiD0ANG2" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_v90skbMJPj" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.12"/>
+    <contents xsi:type="km3:Operation" name="parameter_SL1jXIj9Gx" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.14"/>
+    <contents xsi:type="km3:Parameter" name="parameter_uhgxML6uOG" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.13"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_TDPAxUDWIN" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_YzeLcI7mg1" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_4xmewyMxg2" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_q6p7OlaDZ2" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_8gfF4zXTfo" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.20"/>
+    <contents xsi:type="km3:Operation" name="parameter_JK3cR18DNq" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.22"/>
+    <contents xsi:type="km3:Parameter" name="parameter_TRfmQveLYg" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.21"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_L7aPPtXlRl" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_0cBbBzF8gd" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_Vnw7yxtcEW" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_W7a9Cd9x7M" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_8veJ2RPNrz" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.28"/>
+    <contents xsi:type="km3:Operation" name="parameter_tMH6jeQUqc" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.30"/>
+    <contents xsi:type="km3:Parameter" name="parameter_Gc7ueaHzpC" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.29"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_z19MgBpCVv" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_JD07Yv7fDZ" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_wDxObkCqwH" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_8iv0q8GioU" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_VWQlc5ZcxD" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.36"/>
+    <contents xsi:type="km3:Operation" name="parameter_SKxWkMQuVE" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.38"/>
+    <contents xsi:type="km3:Parameter" name="parameter_sGrRcQ2Bph" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.37"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_SCHQ0XbCh2" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_x2aQZcG0kh" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_wgueTlccBL" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_j9kN545sVa" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_shZjizw63d" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.44"/>
+    <contents xsi:type="km3:Operation" name="parameter_eggunA2uNZ" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.46"/>
+    <contents xsi:type="km3:Parameter" name="parameter_VCXhUMTxC2" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.45"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_ovDNmylXhn" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
+    <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
   </contents>
 </km3:Metamodel>

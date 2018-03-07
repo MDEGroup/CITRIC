@@ -19,7 +19,7 @@ import it.univaq.disim.demo.Example;
 public class Test {
 	
 	private static String baseResourcePath = "resources/running_example/";
-	private static String baseResultPath = "results/";
+	private static String baseResultPath = "models/mutations/results/";
 	private static boolean PERFORM_TRANSFORMATIONS = true;
 	
 	

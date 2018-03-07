@@ -1,60 +1,60 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_dENomOgmQ3">
-  <contents location="K4Qqs" name="package_w9oYVPEnHr" package="//@contents.0">
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_p9Sj1EoCfe">
+  <contents location="ESzyC" name="package_joIhEj54ia" package="//@contents.0">
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_f6aidA2tRu" package="//@contents.0" literals="//@contents.0/@contents.2 //@contents.0/@contents.10 //@contents.0/@contents.18 //@contents.0/@contents.26 //@contents.0/@contents.34 //@contents.0/@contents.42"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_lPCEfbPmL3" package="//@contents.0" enum="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:Class" name="class_1C33plBtz2" package="//@contents.0" operations="//@contents.0/@contents.5 //@contents.0/@contents.13 //@contents.0/@contents.21 //@contents.0/@contents.29 //@contents.0/@contents.37 //@contents.0/@contents.45">
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_Jn15T" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_cKPGb" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_mRKkD" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_zVnru" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_No5EJ" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_LpQH8" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_P90GKgJQQg" package="//@contents.0" literals="//@contents.0/@contents.2 //@contents.0/@contents.10 //@contents.0/@contents.18 //@contents.0/@contents.26 //@contents.0/@contents.34 //@contents.0/@contents.42"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_9RAN9nPPYv" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Class" name="class_GkceDGEVL2" package="//@contents.0" operations="//@contents.0/@contents.5 //@contents.0/@contents.13 //@contents.0/@contents.21 //@contents.0/@contents.29 //@contents.0/@contents.37 //@contents.0/@contents.45">
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_NupIz" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_FD5ML" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_M9iD8" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_VvPdB" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_hW146" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_Pltni" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
     </contents>
-    <contents xsi:type="km3:Reference" name="reference_SBjep60KqU" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
-    <contents xsi:type="km3:Operation" name="parameter_e3byqwvmXH" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
-    <contents xsi:type="km3:Parameter" name="parameter_ndWZp1UskQ" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_ztau407Vg9" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    <contents xsi:type="km3:Class" name="class_QoHbYRybVb" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_SZ5uKwjgaU" package="//@contents.0"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_7tOviuhfLU" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Reference" name="reference_bbDjvS5a8T" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.4"/>
+    <contents xsi:type="km3:Operation" name="parameter_CwRqPz9ZjX" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.6"/>
+    <contents xsi:type="km3:Parameter" name="parameter_KuRM71o1Cj" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.5"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_bG9PGEfdLi" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_UvUZW82b9r" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_g2EiiwDLu3" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_rfKB79MciH" package="//@contents.0" enum="//@contents.0/@contents.1"/>
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Reference" name="reference_cWlip8x07Q" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.12"/>
-    <contents xsi:type="km3:Operation" name="parameter_0nIN5wpt38" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.14"/>
-    <contents xsi:type="km3:Parameter" name="parameter_VyncyleMvY" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.13"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_DEoVHJrXlv" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    <contents xsi:type="km3:Class" name="class_LqmnhSXh97" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_nzLx51oRY2" package="//@contents.0"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_4XYwklnxmC" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Reference" name="reference_YtBGxYAiyz" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.12"/>
+    <contents xsi:type="km3:Operation" name="parameter_1p5yOf0P0f" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.14"/>
+    <contents xsi:type="km3:Parameter" name="parameter_sKD194I87R" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.13"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_zn2ThoJc3G" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_yvYnAb5x0J" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_lMqCqZDaRd" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_FEeSNnnvI5" package="//@contents.0" enum="//@contents.0/@contents.1"/>
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Reference" name="reference_knMHVaDySc" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.20"/>
-    <contents xsi:type="km3:Operation" name="parameter_RZs0391ybC" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.22"/>
-    <contents xsi:type="km3:Parameter" name="parameter_YnWVtfKUk8" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.21"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_lFHSZqpMwO" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    <contents xsi:type="km3:Class" name="class_xdbIXUW2WN" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_jurmOWlKIw" package="//@contents.0"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_me12zo3Fuh" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Reference" name="reference_eiOMEDml4c" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.20"/>
+    <contents xsi:type="km3:Operation" name="parameter_uo9AkemFiD" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.22"/>
+    <contents xsi:type="km3:Parameter" name="parameter_0NcjFUX4jb" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.21"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_YpmhTEbqYx" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_aL7jjhz1HX" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_vgHKWMPUZH" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_zWFECbP9QX" package="//@contents.0" enum="//@contents.0/@contents.1"/>
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Reference" name="reference_QypThNCWEE" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.28"/>
-    <contents xsi:type="km3:Operation" name="parameter_hzuhpJwmY5" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.30"/>
-    <contents xsi:type="km3:Parameter" name="parameter_e1DEJ6jFxa" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.29"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_WkXQKhAGGg" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    <contents xsi:type="km3:Class" name="class_V3NiGwEJUz" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_G4J3hn9qBh" package="//@contents.0"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_fV4ncf6Va0" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Reference" name="reference_ef7CNEcDE1" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.28"/>
+    <contents xsi:type="km3:Operation" name="parameter_bsECertp8E" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.30"/>
+    <contents xsi:type="km3:Parameter" name="parameter_fL7tx9QHwD" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.29"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_w9XxhqALqs" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_zJmVdC53jq" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_cAHrwQ7uvB" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_HlcyKtN0UD" package="//@contents.0" enum="//@contents.0/@contents.1"/>
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Reference" name="reference_o876htr2Lw" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.36"/>
-    <contents xsi:type="km3:Operation" name="parameter_kQ2WZl71LN" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.38"/>
-    <contents xsi:type="km3:Parameter" name="parameter_Bu3eIWUUTA" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.37"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_xNrAC5kvox" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
-    <contents xsi:type="km3:Class" name="class_o42F6glitw" package="//@contents.0"/>
-    <contents xsi:type="km3:Enumeration" name="enumeration_eVUNEaOUWs" package="//@contents.0"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_99sBEoG3o8" package="//@contents.0" enum="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Reference" name="reference_Vqk0h6Ssrz" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.36"/>
+    <contents xsi:type="km3:Operation" name="parameter_350bztdHoF" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.38"/>
+    <contents xsi:type="km3:Parameter" name="parameter_jB6hAkw8zF" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.37"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_X4lSbjIBA5" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Class" name="class_G7PFX3gXox" package="//@contents.0"/>
+    <contents xsi:type="km3:Enumeration" name="enumeration_Wzfc20qE5z" package="//@contents.0"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_Iny36XMwV5" package="//@contents.0" enum="//@contents.0/@contents.1"/>
     <contents xsi:type="km3:DataType" name="String" package="//@contents.0"/>
-    <contents xsi:type="km3:Reference" name="reference_SLphCaAEDI" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.44"/>
-    <contents xsi:type="km3:Operation" name="parameter_nXXvtYHIHl" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.46"/>
-    <contents xsi:type="km3:Parameter" name="parameter_uMiVO1fpde" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.45"/>
-    <contents xsi:type="km3:StructuralFeature" name="structural_feature_lmwr5xhJVG" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_r7TdPRKhRW" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.44"/>
+    <contents xsi:type="km3:Operation" name="parameter_jY5b9DC5fM" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.3" parameters="//@contents.0/@contents.46"/>
+    <contents xsi:type="km3:Parameter" name="parameter_GCcrGc5Teu" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.45"/>
+    <contents xsi:type="km3:StructuralFeature" name="structural_feature_RB70CxqGHI" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
   </contents>
 </km3:Metamodel>

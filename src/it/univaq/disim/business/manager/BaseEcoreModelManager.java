@@ -258,7 +258,7 @@ public abstract class BaseEcoreModelManager {
 		return true;
 	}
 
-	public static void registerMetamodel(String path) {
+	public static Resource registerMetamodel(String path) {
 		File fileName = new File(path);
 		URI uri = URI.createFileURI(fileName.getAbsolutePath());
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
@@ -276,6 +276,7 @@ public abstract class BaseEcoreModelManager {
 			}
 		}
 //		System.out.println(path + " registered!");
+		return r;
 	}
 
 	private static void registerSubPackage(EPackage p) {

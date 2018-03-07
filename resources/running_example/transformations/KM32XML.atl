@@ -32,15 +32,7 @@ helper context KM3!ModelElement def: getFQLWithSeparator(separator: String) : St
 		endif
 	endif;
 
-abstract rule ModelElement {
-	from
-		i: KM3!ModelElement
-	to
-		attribute_name: XML!Attribute (
-			name <- 'name',
-			value <- i.name
-		)
-}
+
 
 rule Metamodel {
 	from 
@@ -52,22 +44,31 @@ rule Metamodel {
 		)
 }
 
-rule Package extends ModelElement {
+rule Package{
 	from
 		i: KM3!Package
 	to
+		attribute_name: XML!Attribute (
+				name <- 'name',
+				value <- i.name
+			),
 		o: XML!Element (
 			name <- 'Package',
 			children <- Sequence{attribute_name}->union(i.contents)
 		)
 }
 
-rule Class extends ModelElement {
+rule Class{
 	from
 		i: KM3!Class
 	to
+		attribute_name: XML!Attribute (
+				name <- 'name',
+				value <- i.name
+			),
 		o: XML!Element (
 			name <- 'Class',
+			value <- i.name,
 			children <- Sequence{attribute_name, attribute_isAbstract, reference_supertypes}->union(i.structuralFeatures)
 		),
 		attribute_isAbstract: XML!Attribute (
@@ -80,37 +81,52 @@ rule Class extends ModelElement {
 		)
 }
 
-rule DataType extends ModelElement {
+rule DataType{
 	from
 		i: KM3!DataType
 	to
+	attribute_name: XML!Attribute (
+				name <- 'name',
+				value <- i.name
+			),
 		o: XML!Element (
 			name <- 'DataType',
+			value <- i.name,
 			children <- Sequence{attribute_name}
 		)
 }
 
-rule Enumeration extends ModelElement {
+rule Enumeration{
 	from
 		i: KM3!Enumeration
 	to
+	attribute_name: XML!Attribute (
+				name <- 'name',
+				value <- i.name
+			),
 		o: XML!Element (
 			name <- 'Enumeration',
+			value <- i.name,
 			children <- Sequence{attribute_name}->union(i.literals)
 		)
 }
 
-rule EnumLiteral extends ModelElement {
+rule EnumLiteral{
 	from
 		i: KM3!EnumLiteral
 	to
+	attribute_name: XML!Attribute (
+				name <- 'name',
+				value <- i.name
+			),
 		o: XML!Element (
 			name <- 'EnumLiteral',
+			value <- i.name,
 			children <- Sequence{attribute_name}
 		)
 }
 
-abstract rule StructuralFeature extends ModelElement {
+abstract rule StructuralFeature {
 	from
 		i: KM3!StructuralFeature
 	to
@@ -137,8 +153,13 @@ rule Attribute extends StructuralFeature {
 	from
 		i: KM3!Attribute
 	to
+	attribute_name: XML!Attribute (
+				name <- 'name',
+				value <- i.name
+			),
 		o: XML!Element (
 			name <- 'Attribute',
+			value <- i.name,
 			children <- Sequence{attribute_name, attribute_lower, attribute_upper, attribute_isOrdered, attribute_isUnique, reference_type}
 		),
 		attribute_isUnique: XML!Attribute (
@@ -151,8 +172,13 @@ rule Reference extends StructuralFeature {
 	from
 		i: KM3!Reference
 	to
+	attribute_name: XML!Attribute (
+				name <- 'name',
+				value <- i.name
+			),
 		o: XML!Element (
 			name <- 'Reference',
+			value <- i.name,
 			children <- Sequence{attribute_name, attribute_lower, attribute_upper, attribute_isOrdered, attribute_isContainer, reference_type, reference_opposite}
 		),
 		attribute_isContainer: XML!Attribute (

@@ -126,16 +126,37 @@ public abstract class KM3BasicMutator {
 		rootClass.setIsAbstract(false);
 		km3Package.getContents().add(rootClass);
 		
+		Class class_A = km3Factory.createClass();
+		class_A.setName(("A"));
+		class_A.setPackage(km3Package);
+		class_A.setIsAbstract(false);
+		km3Package.getContents().add(class_A);
+		Class class_B = km3Factory.createClass();
+		class_B.setName(("B"));
+		class_B.setPackage(km3Package);
+		class_B.setIsAbstract(false);
+		km3Package.getContents().add(class_B);
+		Class class_C = km3Factory.createClass();
+		class_C.setName(("C"));
+		class_C.setPackage(km3Package);
+		class_C.setIsAbstract(false);
+		km3Package.getContents().add(class_C);
+		Class class_D = km3Factory.createClass();
+		class_D.setName(("D"));
+		class_D.setPackage(km3Package);
+		class_D.setIsAbstract(false);
+		km3Package.getContents().add(class_D);
+		Class class_E = km3Factory.createClass();
+		class_E.setName(("E"));
+		class_E.setPackage(km3Package);
+		class_E.setIsAbstract(false);
+		km3Package.getContents().add(class_E);
+		Class class_F = km3Factory.createClass();
+		class_F.setName(("F"));
+		class_F.setPackage(km3Package);
+		class_F.setIsAbstract(false);
+		km3Package.getContents().add(class_F);
 		
-		int countClass = 0;
-		while(countClass < 6) {
-			Class km3Class = km3Factory.createClass();
-			km3Class.setName(("Class_"+countClass));
-			km3Class.setPackage(km3Package);
-			km3Class.setIsAbstract(false);
-			km3Package.getContents().add(km3Class);
-			countClass++;
-		}
 
 		Operation ownerOperation = createOperation(rootClass, stringDataType, false, false);
 		

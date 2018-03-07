@@ -2,7 +2,11 @@ package it.univaq.disim.business.manager;
 
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -36,22 +40,40 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EParameter;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.emf.ecore.impl.DynamicEObjectImpl;
+import org.eclipse.emf.ecore.impl.EClassImpl;
+import org.eclipse.emf.ecore.impl.EReferenceImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.EcoreEList;
+import org.eclipse.emf.ecore.util.EcoreEList.Dynamic;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.XMLResource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
+import org.eclipse.ocl.OCL;
+import org.eclipse.ocl.ParserException;
+import org.eclipse.ocl.Query;
+import org.eclipse.ocl.ecore.Constraint;
+import org.eclipse.ocl.ecore.EcoreEnvironmentFactory;
+import org.eclipse.ocl.expressions.OCLExpression;
+import org.eclipse.ocl.helper.OCLHelper;
 
+import KM3.Class;
+import KM3.KM3Package;
+import KM3.Metamodel;
 import it.univaq.disim.business.datamodel.ModelStructuralFeature;
 import it.univaq.disim.common.exceptions.MetaModelNotFoundException;
 import it.univaq.disim.common.exceptions.ReferenceNonExistingException;
 import it.univaq.disim.common.exceptions.WrongAttributeTypeException;
+import it.univaq.disim.common.utils.Utils;
 
 public class ModelManager extends BaseEcoreModelManager {
 	
@@ -183,11 +205,11 @@ public class ModelManager extends BaseEcoreModelManager {
 	public static List<ModelStructuralFeature> getAllModelStructuralFeaturesAndReferences(String inputModel, String inputMetamodel, boolean isMeta_Metamodel) {
 		
 		List<ModelStructuralFeature> mmSFList = new ArrayList<ModelStructuralFeature>();
-		
+		Resource metamodel = null;
 		if(inputModel != null) {
 			if(!isMeta_Metamodel) {
 				//Register Metamodel in which input model is conform
-				ModelManager.registerMetamodel(inputMetamodel);
+				metamodel = ModelManager.registerMetamodel(inputMetamodel);
 			}
 			//Load the input model as Resource
 			Resource modelResource = ModelManager.loadModel(inputModel);
@@ -199,29 +221,41 @@ public class ModelManager extends BaseEcoreModelManager {
 					EClass eClass = next.eClass();
 					mmSF.seteClass(eClass);
 					
-//				System.out.println(eClass.getName());
+//					System.out.println(eClass.getName());
 					// CLASS STRUCTURAL FEATURES
-					
 					Set<EStructuralFeature> sFList = new HashSet<EStructuralFeature>();
 					for (EStructuralFeature sf : eClass.getEAllAttributes()) {
-						sFList.add(sf);
-//						String sfValue = next.eGet(eClass.getEStructuralFeature(sf.getName())).toString();
-						// System.out.println("\t"+sf.getLowerBound()+"-"+sf.getUpperBound());
-//					System.out.println("\t[" + sf.getLowerBound() + "/" + sf.getUpperBound() + "] " + "Type->"+ sf.getEType().getName() + " Value: " + sfValue);
-						// System.out.println(attribute.getName());
+						String sfValue = null;
+						if(next.eGet(eClass.getEStructuralFeature(sf.getName())) != null && sf.getName() != null) {
+							sfValue = next.eGet(eClass.getEStructuralFeature(sf.getName())).toString();
+						}
+						if(sfValue != null) {
+							sFList.add(sf);
+						}
+//						System.out.println("\t "+sf.getName()+" [" + sf.getLowerBound() + "/" + sf.getUpperBound() + "] " + "Type->"+ sf.getEType().getName() + " Value: " + sfValue);
 					}
 					mmSF.seteStructuralFeatures(sFList);
 					
 					// EClass References
 					Set<EReference> refList = new HashSet<EReference>();
 					for (EReference reference : eClass.getEAllReferences()) {
-						refList.add(reference);
-//					System.out.println("\t[" + reference.getLowerBound() + "/" + reference.getUpperBound()+ "] Reference: " + reference.getName() + "-> class: " + eClass.getName());
-						// EObject value = (EObject) next.eGet(reference);
-						// String key = reference.getName();
-						// EClass referenceTo = (EClass) value.eClass();
+						Object eGet = next.eGet(reference);
+						if(eGet != null && !Utils.isEmptyObject(eGet)) {
+							refList.add(reference);
+						}
+//						
+//						System.out.println(eClass.getName());
+//						EClass eReferenceType = reference.getEReferenceType();
+//						System.out.println("\t\t"+eReferenceType.getName());
+//						System.out.println("\t[" + reference.getLowerBound() + "/" + reference.getUpperBound()+ "] " + reference.getName()+" - "+reference.getEReferenceType());
+//						 EObject value = (EObject) next.eGet(reference);
+//						 String key = reference.getName();
+//						 EClass referenceTo = (EClass) value.eClass();
+//						 System.out.println(key +" - "+referenceTo);
 					}
 					mmSF.seteReferences(refList);
+					
+					
 					
 					// CLASS ATTRIBUTES
 					// for (EAttribute attribute : eClass.getEAllAttributes()) {
@@ -260,6 +294,8 @@ public class ModelManager extends BaseEcoreModelManager {
 
 		return mmSFList;
 	}
+	
+	
 	
 	
 	public static List<EReference> getEClassReferences(EClass eClass) {
