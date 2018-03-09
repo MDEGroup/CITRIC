@@ -262,7 +262,7 @@ public class RunningExample {
 	}
 	
 	public static void main(String[] args) {
-		String inputModel = "resources/running_example/models/KM3_seed.xmi";
+		String inputModel = "resources/running_example/models/Sample-km3/sample-km3.xmi";
 		
 		List<String> inputModels = new ArrayList<String>();
 		inputModels.add(inputModel);

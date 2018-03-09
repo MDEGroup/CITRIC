@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<nsPrefix:JavaSource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:nsPrefix="http://www.eclipse.org/gmt/2005/JavaSource"/>
+<nsPrefix:JavaSource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:nsPrefix="http://www.eclipse.org/gmt/2005/JavaSource">
+  <classes name="class_GkceDGEVL2">
+    <methods name="setATTRIBUTE_NUPIZ"/>
+    <methods name="getATTRIBUTE_NUPIZ"/>
+    <methods name="setATTRIBUTE_FD5ML"/>
+    <methods name="getATTRIBUTE_FD5ML"/>
+    <methods name="setATTRIBUTE_M9ID8"/>
+    <methods name="getATTRIBUTE_M9ID8"/>
+    <methods name="setATTRIBUTE_VVPDB"/>
+    <methods name="getATTRIBUTE_VVPDB"/>
+    <methods name="setATTRIBUTE_HW146"/>
+    <methods name="getATTRIBUTE_HW146"/>
+    <methods name="setATTRIBUTE_PLTNI"/>
+    <methods name="getATTRIBUTE_PLTNI"/>
+    <prop name="attribute_NupIz"/>
+    <prop name="attribute_FD5ML"/>
+    <prop name="attribute_M9iD8"/>
+    <prop name="attribute_VvPdB"/>
+    <prop name="attribute_hW146"/>
+    <prop name="attribute_Pltni"/>
+  </classes>
+  <classes xsi:type="nsPrefix:Property" name="reference_bbDjvS5a8T"/>
+  <classes name="class_UvUZW82b9r"/>
+  <classes xsi:type="nsPrefix:Property" name="reference_YtBGxYAiyz"/>
+  <classes name="class_yvYnAb5x0J"/>
+  <classes xsi:type="nsPrefix:Property" name="reference_eiOMEDml4c"/>
+  <classes name="class_aL7jjhz1HX"/>
+  <classes xsi:type="nsPrefix:Property" name="reference_ef7CNEcDE1"/>
+  <classes name="class_zJmVdC53jq"/>
+  <classes xsi:type="nsPrefix:Property" name="reference_Vqk0h6Ssrz"/>
+  <classes name="class_G7PFX3gXox"/>
+  <classes xsi:type="nsPrefix:Property" name="reference_r7TdPRKhRW"/>
+</nsPrefix:JavaSource>

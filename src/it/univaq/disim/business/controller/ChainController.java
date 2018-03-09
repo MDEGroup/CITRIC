@@ -46,10 +46,14 @@ public class ChainController {
 			t.setOutPath(chain.getResultModel());
 			atlPerformer.run(t);
 			t.setInformationLoss(InformationLoss.informationLoss(t));
+			float tmpIL = (float) t.getInformationLoss();
+			if(tmpIL == 2) {
+				tmpIL = Integer.MAX_VALUE;
+			}
 			if(count == 0){
-				result = (float) t.getInformationLoss();
+				result = tmpIL;
 			}else{
-				result *= (float) t.getInformationLoss();
+				result *= tmpIL;
 			}
 			count++;
 			tempInputModel = chain.getResultModel();

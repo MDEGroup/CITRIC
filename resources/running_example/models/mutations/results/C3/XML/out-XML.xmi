@@ -2,9 +2,192 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML">
   <Root name="Metamodel"/>
   <Element name="Package">
-    <children xsi:type="Attribute" name="name" value="package_vsmwGJlobh"/>
+    <children xsi:type="Attribute" name="name" value="package_joIhEj54ia"/>
+  </Element>
+  <Element name="Class" value="class_GkceDGEVL2">
+    <children xsi:type="Attribute" name="name" value="class_GkceDGEVL2"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
+  </Element>
+  <Element name="Class" value="class_UvUZW82b9r">
+    <children xsi:type="Attribute" name="name" value="class_UvUZW82b9r"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
+  </Element>
+  <Element name="Class" value="class_yvYnAb5x0J">
+    <children xsi:type="Attribute" name="name" value="class_yvYnAb5x0J"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
+  </Element>
+  <Element name="Class" value="class_aL7jjhz1HX">
+    <children xsi:type="Attribute" name="name" value="class_aL7jjhz1HX"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
+  </Element>
+  <Element name="Class" value="class_zJmVdC53jq">
+    <children xsi:type="Attribute" name="name" value="class_zJmVdC53jq"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
+  </Element>
+  <Element name="Class" value="class_G7PFX3gXox">
+    <children xsi:type="Attribute" name="name" value="class_G7PFX3gXox"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
   </Element>
   <Element name="DataType" value="String">
     <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+  <Element name="DataType" value="String">
+    <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+  <Element name="DataType" value="String">
+    <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+  <Element name="DataType" value="String">
+    <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+  <Element name="DataType" value="String">
+    <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+  <Element name="DataType" value="String">
+    <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+  <Element name="Enumeration" value="enumeration_P90GKgJQQg">
+    <children xsi:type="Attribute" name="name" value="enumeration_P90GKgJQQg"/>
+  </Element>
+  <Element name="Enumeration" value="enumeration_g2EiiwDLu3">
+    <children xsi:type="Attribute" name="name" value="enumeration_g2EiiwDLu3"/>
+  </Element>
+  <Element name="Enumeration" value="enumeration_lMqCqZDaRd">
+    <children xsi:type="Attribute" name="name" value="enumeration_lMqCqZDaRd"/>
+  </Element>
+  <Element name="Enumeration" value="enumeration_vgHKWMPUZH">
+    <children xsi:type="Attribute" name="name" value="enumeration_vgHKWMPUZH"/>
+  </Element>
+  <Element name="Enumeration" value="enumeration_cAHrwQ7uvB">
+    <children xsi:type="Attribute" name="name" value="enumeration_cAHrwQ7uvB"/>
+  </Element>
+  <Element name="Enumeration" value="enumeration_Wzfc20qE5z">
+    <children xsi:type="Attribute" name="name" value="enumeration_Wzfc20qE5z"/>
+  </Element>
+  <Element name="EnumLiteral" value="enum_literal_9RAN9nPPYv">
+    <children xsi:type="Attribute" name="name" value="enum_literal_9RAN9nPPYv"/>
+  </Element>
+  <Element name="EnumLiteral" value="enum_literal_rfKB79MciH">
+    <children xsi:type="Attribute" name="name" value="enum_literal_rfKB79MciH"/>
+  </Element>
+  <Element name="EnumLiteral" value="enum_literal_FEeSNnnvI5">
+    <children xsi:type="Attribute" name="name" value="enum_literal_FEeSNnnvI5"/>
+  </Element>
+  <Element name="EnumLiteral" value="enum_literal_zWFECbP9QX">
+    <children xsi:type="Attribute" name="name" value="enum_literal_zWFECbP9QX"/>
+  </Element>
+  <Element name="EnumLiteral" value="enum_literal_HlcyKtN0UD">
+    <children xsi:type="Attribute" name="name" value="enum_literal_HlcyKtN0UD"/>
+  </Element>
+  <Element name="EnumLiteral" value="enum_literal_Iny36XMwV5">
+    <children xsi:type="Attribute" name="name" value="enum_literal_Iny36XMwV5"/>
+  </Element>
+  <Element name="Attribute" value="attribute_NupIz">
+    <children xsi:type="Attribute" name="name" value="attribute_NupIz"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+  </Element>
+  <Element name="Attribute" value="attribute_FD5ML">
+    <children xsi:type="Attribute" name="name" value="attribute_FD5ML"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+  </Element>
+  <Element name="Attribute" value="attribute_M9iD8">
+    <children xsi:type="Attribute" name="name" value="attribute_M9iD8"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+  </Element>
+  <Element name="Attribute" value="attribute_VvPdB">
+    <children xsi:type="Attribute" name="name" value="attribute_VvPdB"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+  </Element>
+  <Element name="Attribute" value="attribute_hW146">
+    <children xsi:type="Attribute" name="name" value="attribute_hW146"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+  </Element>
+  <Element name="Attribute" value="attribute_Pltni">
+    <children xsi:type="Attribute" name="name" value="attribute_Pltni"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+  </Element>
+  <Element name="Reference" value="reference_bbDjvS5a8T">
+    <children xsi:type="Attribute" name="name" value="reference_bbDjvS5a8T"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+    <children xsi:type="Attribute" name="opposite" value="reference_bbDjvS5a8T"/>
+  </Element>
+  <Element name="Reference" value="reference_YtBGxYAiyz">
+    <children xsi:type="Attribute" name="name" value="reference_YtBGxYAiyz"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+    <children xsi:type="Attribute" name="opposite" value="reference_YtBGxYAiyz"/>
+  </Element>
+  <Element name="Reference" value="reference_eiOMEDml4c">
+    <children xsi:type="Attribute" name="name" value="reference_eiOMEDml4c"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+    <children xsi:type="Attribute" name="opposite" value="reference_eiOMEDml4c"/>
+  </Element>
+  <Element name="Reference" value="reference_ef7CNEcDE1">
+    <children xsi:type="Attribute" name="name" value="reference_ef7CNEcDE1"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+    <children xsi:type="Attribute" name="opposite" value="reference_ef7CNEcDE1"/>
+  </Element>
+  <Element name="Reference" value="reference_Vqk0h6Ssrz">
+    <children xsi:type="Attribute" name="name" value="reference_Vqk0h6Ssrz"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+    <children xsi:type="Attribute" name="opposite" value="reference_Vqk0h6Ssrz"/>
+  </Element>
+  <Element name="Reference" value="reference_r7TdPRKhRW">
+    <children xsi:type="Attribute" name="name" value="reference_r7TdPRKhRW"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="package_joIhEj54ia::String"/>
+    <children xsi:type="Attribute" name="opposite" value="reference_r7TdPRKhRW"/>
   </Element>
 </xmi:XMI>

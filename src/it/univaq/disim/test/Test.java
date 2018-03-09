@@ -22,10 +22,20 @@ public class Test {
 	private static String baseResultPath = "models/mutations/results/";
 	private static boolean PERFORM_TRANSFORMATIONS = true;
 	
+	private static String modelChain1;
+	private static float informationLossChain1;
+	private static float weightChain1;
+	private static String modelChain2;
+	private static float informationLossChain2;
+	private static float weightChain2;
+	private static String modelChain3;
+	private static float informationLossChain3;
+	private static float weightChain3;
 	
 	
 	public static void main(String[] args) throws IOException, MetaModelNotFoundException, ReferenceNonExistingException, ParserException {
-		String modelInstance_seed = baseResourcePath + 	"models/mutations/KM3_seed.xmi";
+//		String modelInstance_seed = baseResourcePath + 	"models/Sample-km3/sample-km3.xmi";
+		String modelInstance_seed = baseResourcePath + 	"models/mutations/KM3/KM3_complete.xmi";
 //		String modelInstance_1 = baseResourcePath + 		"models/mutations/KM3_1.xmi";
 //		String modelInstance_2 = baseResourcePath + 		"models/mutations/KM3_2.xmi";
 //		String modelInstance_3 = baseResourcePath + 		"models/mutations/KM3_3.xmi";
@@ -50,6 +60,7 @@ public class Test {
 			resultChain3.put(model, (float) testChain3(model));
 		}
 		
+		
 		System.out.println("RESULTS:");
 		System.out.println("CHAIN 1:");
 		for (Entry<String, Float> entry : resultChain1.entrySet()) {
@@ -71,6 +82,17 @@ public class Test {
 		    float value = (float) entry.getValue();
 		    System.out.println(key +" = " + value);
 		}
+		
+		
+		for (String model : modelInstances) {
+			testChain1(model);
+			testChain2(model);
+			testChain3(model);
+		}
+		
+		System.out.println(modelChain1 + " - "+ informationLossChain1+ " - "+weightChain1);
+		System.out.println(modelChain2 + " - "+ informationLossChain2+ " - "+weightChain2);
+		System.out.println(modelChain3 + " - "+ informationLossChain3+ " - "+weightChain3);
 	}
 	
 	public static float testChain1(String modelInstance) {
@@ -164,6 +186,9 @@ public class Test {
 		System.out.println("Edge Weight: "+html2xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
+		modelChain1 = modelInstance;
+		informationLossChain1 = informationLoss;
+		weightChain1 = edgeWeight;
 		
 		return informationLoss;
 	}
@@ -243,6 +268,10 @@ public class Test {
 		System.out.println("Edge Weight: "+html2xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
+		modelChain2 = modelInstance;
+		informationLossChain2 = informationLoss;
+		weightChain2 = edgeWeight;
+		
 		return informationLoss;
 	}
 	
@@ -264,6 +293,10 @@ public class Test {
 		System.out.println("Partial IL: "+informationLoss);
 		System.out.println("Edge Weight: "+km32xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
+		
+		modelChain3 = modelInstance;
+		informationLossChain3 = informationLoss;
+		weightChain3 = km32xml.getEdgeWeight();
 		
 		return informationLoss;
 	}

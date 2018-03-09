@@ -1,4 +1,61 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="package_vsmwGJlobh">
-  <eClassifiers xsi:type="ecore:EDataType" name="String"/>
-</ecore:EPackage>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <ecore:EPackage name="package_joIhEj54ia">
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_P90GKgJQQg">
+      <eLiterals name="enum_literal_9RAN9nPPYv" value="1"/>
+      <eLiterals name="enum_literal_rfKB79MciH" value="2"/>
+      <eLiterals name="enum_literal_FEeSNnnvI5" value="3"/>
+      <eLiterals name="enum_literal_zWFECbP9QX" value="4"/>
+      <eLiterals name="enum_literal_HlcyKtN0UD" value="5"/>
+      <eLiterals name="enum_literal_Iny36XMwV5" value="6"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="class_GkceDGEVL2">
+      <eOperations name="parameter_CwRqPz9ZjX" eType="/0/@eClassifiers.0">
+        <eParameters name="parameter_KuRM71o1Cj" eType="/0/@eClassifiers.0"/>
+      </eOperations>
+      <eOperations name="parameter_1p5yOf0P0f" eType="/0/@eClassifiers.0">
+        <eParameters name="parameter_sKD194I87R" eType="/0/@eClassifiers.0"/>
+      </eOperations>
+      <eOperations name="parameter_uo9AkemFiD" eType="/0/@eClassifiers.0">
+        <eParameters name="parameter_0NcjFUX4jb" eType="/0/@eClassifiers.0"/>
+      </eOperations>
+      <eOperations name="parameter_bsECertp8E" eType="/0/@eClassifiers.0">
+        <eParameters name="parameter_fL7tx9QHwD" eType="/0/@eClassifiers.0"/>
+      </eOperations>
+      <eOperations name="parameter_350bztdHoF" eType="/0/@eClassifiers.0">
+        <eParameters name="parameter_jB6hAkw8zF" eType="/0/@eClassifiers.0"/>
+      </eOperations>
+      <eOperations name="parameter_jY5b9DC5fM" eType="/0/@eClassifiers.0">
+        <eParameters name="parameter_GCcrGc5Teu" eType="/0/@eClassifiers.0"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_NupIz" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_FD5ML" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_M9iD8" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_VvPdB" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_hW146" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Pltni" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="class_UvUZW82b9r"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_g2EiiwDLu3"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+    <eClassifiers xsi:type="ecore:EClass" name="class_yvYnAb5x0J"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_lMqCqZDaRd"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+    <eClassifiers xsi:type="ecore:EClass" name="class_aL7jjhz1HX"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_vgHKWMPUZH"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+    <eClassifiers xsi:type="ecore:EClass" name="class_zJmVdC53jq"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_cAHrwQ7uvB"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+    <eClassifiers xsi:type="ecore:EClass" name="class_G7PFX3gXox"/>
+    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_Wzfc20qE5z"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+  </ecore:EPackage>
+  <ecore:EReference name="reference_bbDjvS5a8T" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/1"/>
+  <ecore:EReference name="reference_YtBGxYAiyz" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/2"/>
+  <ecore:EReference name="reference_eiOMEDml4c" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/3"/>
+  <ecore:EReference name="reference_ef7CNEcDE1" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/4"/>
+  <ecore:EReference name="reference_Vqk0h6Ssrz" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/5"/>
+  <ecore:EReference name="reference_r7TdPRKhRW" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/6"/>
+</xmi:XMI>

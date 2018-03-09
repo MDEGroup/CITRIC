@@ -2,11 +2,16 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML">
   <Root name="Metamodel"/>
   <Element name="Package">
-    <children xsi:type="Attribute" name="name" value="Sample"/>
+    <children xsi:type="Attribute" name="name" value="KM3 Package"/>
+  </Element>
+  <Element name="Class" value="Root Class">
+    <children xsi:type="Attribute" name="name" value="Root Class"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
   </Element>
   <Element name="Class" value="A">
     <children xsi:type="Attribute" name="name" value="A"/>
-    <children xsi:type="Attribute" name="isAbstract" value="true"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
     <children xsi:type="Attribute" name="supertypes" value=""/>
   </Element>
   <Element name="Class" value="B">
@@ -17,61 +22,24 @@
   <Element name="Class" value="C">
     <children xsi:type="Attribute" name="name" value="C"/>
     <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value="Sample::A"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
   </Element>
   <Element name="Class" value="D">
     <children xsi:type="Attribute" name="name" value="D"/>
     <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value="Sample::A, Sample::B"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
+  </Element>
+  <Element name="Class" value="E">
+    <children xsi:type="Attribute" name="name" value="E"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
+  </Element>
+  <Element name="Class" value="F">
+    <children xsi:type="Attribute" name="name" value="F"/>
+    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+    <children xsi:type="Attribute" name="supertypes" value=""/>
   </Element>
   <Element name="DataType" value="String">
     <children xsi:type="Attribute" name="name" value="String"/>
-  </Element>
-  <Element name="DataType" value="Integer">
-    <children xsi:type="Attribute" name="name" value="Integer"/>
-  </Element>
-  <Element name="DataType" value="Boolean">
-    <children xsi:type="Attribute" name="name" value="Boolean"/>
-  </Element>
-  <Element name="Enumeration" value="Kind">
-    <children xsi:type="Attribute" name="name" value="Kind"/>
-  </Element>
-  <Element name="EnumLiteral" value="firstKind">
-    <children xsi:type="Attribute" name="name" value="firstKind"/>
-  </Element>
-  <Element name="EnumLiteral" value="secondKind">
-    <children xsi:type="Attribute" name="name" value="secondKind"/>
-  </Element>
-  <Element name="Attribute" value="a attribute">
-    <children xsi:type="Attribute" name="name" value="a attribute"/>
-    <children xsi:type="Attribute" name="lower" value="1"/>
-    <children xsi:type="Attribute" name="upper" value="1"/>
-    <children xsi:type="Attribute" name="isOrdered" value="false"/>
-    <children xsi:type="Attribute" name="isUnique" value="false"/>
-    <children xsi:type="Attribute" name="type" value="Sample::String"/>
-  </Element>
-  <Element name="Attribute" value="b attribute">
-    <children xsi:type="Attribute" name="name" value="b attribute"/>
-    <children xsi:type="Attribute" name="lower" value="1"/>
-    <children xsi:type="Attribute" name="upper" value="1"/>
-    <children xsi:type="Attribute" name="isOrdered" value="false"/>
-    <children xsi:type="Attribute" name="isUnique" value="false"/>
-    <children xsi:type="Attribute" name="type" value="Sample::Kind"/>
-  </Element>
-  <Element name="Attribute" value="c attribute">
-    <children xsi:type="Attribute" name="name" value="c attribute"/>
-    <children xsi:type="Attribute" name="lower" value="1"/>
-    <children xsi:type="Attribute" name="upper" value="1"/>
-    <children xsi:type="Attribute" name="isOrdered" value="false"/>
-    <children xsi:type="Attribute" name="isUnique" value="false"/>
-    <children xsi:type="Attribute" name="type" value="Sample::Integer"/>
-  </Element>
-  <Element name="Attribute" value="d attribute">
-    <children xsi:type="Attribute" name="name" value="d attribute"/>
-    <children xsi:type="Attribute" name="lower" value="1"/>
-    <children xsi:type="Attribute" name="upper" value="1"/>
-    <children xsi:type="Attribute" name="isOrdered" value="false"/>
-    <children xsi:type="Attribute" name="isUnique" value="false"/>
-    <children xsi:type="Attribute" name="type" value="Sample::Boolean"/>
   </Element>
 </xmi:XMI>
