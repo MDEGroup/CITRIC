@@ -1,7 +1,5 @@
 package it.univaq.disim.common.graph;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -11,7 +9,6 @@ import java.util.List;
 
 import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
-import it.univaq.disim.demo.ATLZoo;
 
 public class Visit {
 
@@ -30,16 +27,17 @@ public class Visit {
 	
 	public static void main(String[] args) throws IOException {
 		
-		List<Transformation> atlZooTransformations = ATLZoo.getTransformations();
-
-		Visit search = new Visit();
-//		Graph graph = search.createGraph(allNodesPathFile);
-		Graph graph = search.createGraph(atlZooTransformations);
-
-		HashSet<String> allNodes = search.getAllNodes(atlZooTransformations);
-
-		search.visit(allNodes, graph);
-		search.writeToFile();
+////		List<Transformation> atlZooTransformations = ATLZoo.getTransformations();
+//		List<Transformation> atlZooTransformations = RunningExample.getChain1(inputModel)
+//
+//		Visit search = new Visit();
+////		Graph graph = search.createGraph(allNodesPathFile);
+//		Graph graph = search.createGraph(atlZooTransformations);
+//
+//		HashSet<String> allNodes = search.getAllNodes(atlZooTransformations);
+//
+//		search.visit(allNodes, graph);
+//		search.writeToFile();
 	}
 	
 	

@@ -17,7 +17,7 @@ import it.univaq.disim.common.algorithm.DijkstraAlgorithm;
 import it.univaq.disim.common.algorithm.Edge;
 import it.univaq.disim.common.algorithm.Graph;
 import it.univaq.disim.common.algorithm.Vertex;
-import it.univaq.disim.demo.Example;
+import it.univaq.disim.demo.RunningExample;
 
 public class CoverageDetector {
 	
@@ -35,7 +35,7 @@ public class CoverageDetector {
 //		String inputModel = "resources/example/models/projmanegement.xmi";
 //		Chain chain = Example2.getChain2(inputModel);
 		String inputModel = "resources/running_example/models/mutations/KM3_seed.xmi";
-		Chain chain = Example.getChain2(inputModel);
+		Chain chain = RunningExample.getChain2(inputModel);
 		
 		CoverageDetector gen = new CoverageDetector(chain);
 //		Vertex source = new Vertex("Table", "Table");

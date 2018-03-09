@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_U7KecQbej2">
-  <contents location="MI0j2" name="package_vE9z3WU6Ds" package="//@contents.0">
-    <contents xsi:type="km3:Class" name="class_CsXWlZeoyC" package="//@contents.0" operations="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:Operation" name="parameter_hSm0iecmy3" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.0" parameters="//@contents.0/@contents.2"/>
-    <contents xsi:type="km3:Parameter" name="parameter_xXvNZBhCpg" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.1"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_xl4tSi03Lh">
+  <contents location="IKCqn" name="package_j8EPlD3BcV" package="//@contents.0">
+    <contents xsi:type="km3:Class" name="class_ApCkHBUKh9" package="//@contents.0" operations="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:Operation" name="parameter_YCn1zaD3Fo" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.0" parameters="//@contents.0/@contents.2"/>
+    <contents xsi:type="km3:Parameter" name="parameter_YvgNYJczay" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" owner="//@contents.0/@contents.1"/>
   </contents>
 </km3:Metamodel>

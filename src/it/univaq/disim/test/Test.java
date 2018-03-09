@@ -14,7 +14,7 @@ import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.common.exceptions.MetaModelNotFoundException;
 import it.univaq.disim.common.exceptions.ReferenceNonExistingException;
 import it.univaq.disim.common.utils.Utils;
-import it.univaq.disim.demo.Example;
+import it.univaq.disim.demo.RunningExample;
 
 public class Test {
 	
@@ -81,7 +81,7 @@ public class Test {
 		ATLTransformationPerformer perfomer = new ATLTransformationPerformer();
 		
 		System.out.println("KM3 -> EMF");
-		Transformation km32emf = Example.getKM32EMF();
+		Transformation km32emf = RunningExample.getKM32EMF();
 		km32emf.setInputModel(modelInstance);
 		km32emf.setInformationLoss(InformationLoss.informationLoss(km32emf));
 		String emfOuputModel = baseResourcePath + baseResultPath + "C1/EMF/out-EMF.xmi";
@@ -98,7 +98,7 @@ public class Test {
 		
 		System.out.println("EMF -> JavaSource");
 		String emfModelInstance = baseResourcePath + "models/Sample.ecore";
-		Transformation emf2Java = Example.getEMF2Java();
+		Transformation emf2Java = RunningExample.getEMF2Java();
 		emf2Java.setInputModel(emfModelInstance);
 		emf2Java.setInformationLoss(InformationLoss.informationLoss(emf2Java));
 		String javaOutputModel = baseResourcePath + baseResultPath + "C1/JavaSource/out-JavaSource.xmi";
@@ -115,7 +115,7 @@ public class Test {
 		
 		System.out.println("JavaSource -> Table");
 		String javaModelInstance = baseResourcePath  + "models/JavaSource.xmi";
-		Transformation java2Table = Example.getJava2Table();
+		Transformation java2Table = RunningExample.getJava2Table();
 		java2Table.setInputModel(javaModelInstance);
 		String tableOutputModel = baseResourcePath + baseResultPath + "C1/Table/out-Table.xmi";
 		java2Table.setOutPath(tableOutputModel);
@@ -132,7 +132,7 @@ public class Test {
 		
 		System.out.println("Table -> HTML");
 		String tableModelInstance = baseResourcePath + "models/Table.xmi";
-		Transformation table2html = Example.getTable2HTML();
+		Transformation table2html = RunningExample.getTable2HTML();
 		table2html.setInputModel(tableModelInstance);
 		String htmlOutputModel = baseResourcePath + baseResultPath + "C1/TabularHTML/out-TabularHTML.xmi";
 		table2html.setOutPath(htmlOutputModel);
@@ -149,7 +149,7 @@ public class Test {
 
 		System.out.println("HTML -> XML");
 		String htmlModelInstance = baseResourcePath + "models/HTML.xmi";
-		Transformation html2xml = Example.getHTML2XML();
+		Transformation html2xml = RunningExample.getHTML2XML();
 		html2xml.setInputModel(htmlModelInstance);
 		String xmlOutputModel = baseResourcePath + baseResultPath + "C1/XML/out-XML.xmi";
 		html2xml.setOutPath(xmlOutputModel);
@@ -177,7 +177,7 @@ public class Test {
 		float edgeWeight = 0;
 		
 		System.out.println("KM3 -> JavaSource");
-		Transformation km32Java = Example.getKM32Java();
+		Transformation km32Java = RunningExample.getKM32Java();
 		km32Java.setInputModel(modelInstance);
 		km32Java.setInformationLoss(InformationLoss.informationLoss(km32Java));
 		String javaOutputModel2 = baseResourcePath + baseResultPath + "C2/JavaSource/out-JavaSource.xmi";
@@ -194,7 +194,7 @@ public class Test {
 		
 		System.out.println("JavaSource -> Table");
 		String javaModelInstance = baseResourcePath + "models/JavaSource.xmi";
-		Transformation java2Table = Example.getJava2Table();
+		Transformation java2Table = RunningExample.getJava2Table();
 		java2Table.setInputModel(javaModelInstance);
 		String tableOutputModel = baseResourcePath + baseResultPath + "C2/Table/out-Table.xmi";
 		java2Table.setOutPath(tableOutputModel);
@@ -211,7 +211,7 @@ public class Test {
 
 		System.out.println("Table -> HTML");
 		String tableModelInstance = baseResourcePath + "models/Table.xmi";
-		Transformation table2html = Example.getTable2HTML();
+		Transformation table2html = RunningExample.getTable2HTML();
 		table2html.setInputModel(tableModelInstance);
 		String htmlOutputModel = baseResourcePath + baseResultPath + "C2/TabularHTML/out-TabularHTML.xmi";
 		table2html.setOutPath(htmlOutputModel);
@@ -228,7 +228,7 @@ public class Test {
 
 		System.out.println("HTML -> XML");
 		String htmlModelInstance = baseResourcePath + "models/HTML.xmi";
-		Transformation html2xml = Example.getHTML2XML();
+		Transformation html2xml = RunningExample.getHTML2XML();
 		html2xml.setInputModel(htmlModelInstance);
 		String xmlOutputModel = baseResourcePath + baseResultPath + "C2/XML/out-XML.xmi";
 		html2xml.setOutPath(xmlOutputModel);
@@ -252,7 +252,7 @@ public class Test {
 		float informationLoss = 0;
 		
 		System.out.println("KM3 -> XML");
-		Transformation km32xml = Example.getKM32XML();
+		Transformation km32xml = RunningExample.getKM32XML();
 		km32xml.setInputModel(modelInstance);
 		km32xml.setInformationLoss(InformationLoss.informationLoss(km32xml));
 		String xmlOuputModel = baseResourcePath + baseResultPath + "C3/XML/out-XML.xmi";
@@ -272,7 +272,7 @@ public class Test {
 		ATLTransformationPerformer perfomer = new ATLTransformationPerformer();
 		
 		System.out.println("KM3 -> XML");
-		Transformation km32xml = Example.getKM32XML();
+		Transformation km32xml = RunningExample.getKM32XML();
 		km32xml.setInputModel(modelInstance);
 		km32xml.setInformationLoss(InformationLoss.informationLoss(km32xml));
 		String xmlOuputModel = baseResourcePath + "models/out-"+Utils.getNameFromPathWithoutExtension(km32xml.getOutputMetamodel())+".xmi";
@@ -282,7 +282,7 @@ public class Test {
 		
 		
 		System.out.println("KM3 -> EMF");
-		Transformation km32emf = Example.getKM32EMF();
+		Transformation km32emf = RunningExample.getKM32EMF();
 		km32emf.setInputModel(modelInstance);
 		km32emf.setInformationLoss(InformationLoss.informationLoss(km32emf));
 		String emfOuputModel = baseResourcePath + "models/out-"+Utils.getNameFromPathWithoutExtension(km32emf.getOutputMetamodel())+".xmi";
@@ -292,7 +292,7 @@ public class Test {
 		
 		System.out.println("EMF -> JavaSource");
 		String emfModelInstance = baseResourcePath + "models/Sample.ecore";
-		Transformation emf2Java = Example.getEMF2Java();
+		Transformation emf2Java = RunningExample.getEMF2Java();
 		emf2Java.setInputModel(emfModelInstance);
 		emf2Java.setInformationLoss(InformationLoss.informationLoss(emf2Java));
 		String javaOutputModel = baseResourcePath + "models/out-"+Utils.getNameFromPathWithoutExtension(emf2Java.getOutputMetamodel())+".xmi";
@@ -301,7 +301,7 @@ public class Test {
 		System.out.println("------------------------------------------------------------");
 		
 			System.out.println("KM3 -> JavaSource");
-			Transformation km32Java = Example.getKM32Java();
+			Transformation km32Java = RunningExample.getKM32Java();
 			km32Java.setInputModel(modelInstance);
 			km32Java.setInformationLoss(InformationLoss.informationLoss(km32Java));
 			String javaOutputModel2 = baseResourcePath + "models/out-"+Utils.getNameFromPathWithoutExtension(km32Java.getOutputMetamodel())+".xmi";
@@ -312,7 +312,7 @@ public class Test {
 			
 		System.out.println("JavaSource -> Table");
 		String javaModelInstance = baseResourcePath + "models/out-km32javasource.xmi";
-		Transformation java2Table = Example.getJava2Table();
+		Transformation java2Table = RunningExample.getJava2Table();
 		java2Table.setInputModel(javaModelInstance);
 		String tableOutputModel = baseResourcePath + "models/out-"+Utils.getNameFromPathWithoutExtension(java2Table.getOutputMetamodel())+".xmi";
 		java2Table.setOutPath(tableOutputModel);
@@ -322,7 +322,7 @@ public class Test {
 		System.out.println("------------------------------------------------------------");
 		System.out.println("Table -> HTML");
 		String tableModelInstance = baseResourcePath + "models/Table.xmi";
-		Transformation table2html = Example.getTable2HTML();
+		Transformation table2html = RunningExample.getTable2HTML();
 		table2html.setInputModel(tableModelInstance);
 		String htmlOutputModel = baseResourcePath + "models/out-"+Utils.getNameFromPathWithoutExtension(table2html.getOutputMetamodel())+".xmi";
 		table2html.setOutPath(htmlOutputModel);
@@ -332,7 +332,7 @@ public class Test {
 
 		System.out.println("HTML -> XML");
 		String htmlModelInstance = baseResourcePath + "models/HTML.xmi";
-		Transformation html2xml = Example.getHTML2XML();
+		Transformation html2xml = RunningExample.getHTML2XML();
 		html2xml.setInputModel(htmlModelInstance);
 		String xmlOutputModel = baseResourcePath + "models/out-"+Utils.getNameFromPathWithoutExtension(html2xml.getOutputMetamodel())+".xmi";
 		html2xml.setOutPath(xmlOutputModel);

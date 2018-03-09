@@ -20,7 +20,13 @@ import it.univaq.disim.test.Test;
 
 public class EvaluateMutation {
 	
+	
 	public static void main(String[] args) {
+		evaluateMutations();
+	}
+	
+	
+	public static void evaluateMutations() {
 		
 //		String completeModelInstance = KM3BasicMutator.createCompleteKM3ModelInstance();
 		
@@ -441,5 +447,6 @@ public class EvaluateMutation {
 		    System.out.println("IL = "+key +" = " + value);
 		}
 	}
+	
 	
 }

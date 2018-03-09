@@ -12,7 +12,7 @@ import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.datamodel.Vertex;
 import it.univaq.disim.common.utils.Utils;
-import it.univaq.disim.demo.Example;
+import it.univaq.disim.demo.RunningExample;
 
 
 public class ChainController {

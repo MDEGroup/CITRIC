@@ -16,6 +16,20 @@ public class Coverage{
 	private static final boolean VISUALIZE_CALCULATIONS = false;
 
 
+	public static void main(String[] args) {
+
+		String atl = "resources/running_example/transformations/emf2java.atl";
+		String inputMM = "resources/running_example/metamodels/Ecore.ecore";
+
+		Transformation t = new Transformation();
+		t.setATLTransformation(atl);
+		t.setInputMetamodel(inputMM);
+		t.isMeta_Metamodel(true);
+		Coverage.coverage(t);
+		
+	}
+
+	
 	public static float coverage(Transformation transformation) {
 
 		// System.out.println("Calculation Coverage for
@@ -72,17 +86,5 @@ public class Coverage{
 
 	
 
-	public static void main(String[] args) {
-
-		String atl = "resources/running_example/transformations/emf2java.atl";
-		String inputMM = "resources/running_example/metamodels/Ecore.ecore";
-
-		Transformation t = new Transformation();
-		t.setATLTransformation(atl);
-		t.setInputMetamodel(inputMM);
-		t.isMeta_Metamodel(true);
-		Coverage.coverage(t);
-		
-	}
-
+	
 }

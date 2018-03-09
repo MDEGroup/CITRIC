@@ -1,231 +1,286 @@
 package it.univaq.disim.demo;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.io.FilenameUtils;
-import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.m2m.atl.core.ATLCoreException;
-import org.eclipse.ocl.ParserException;
-
 import it.univaq.disim.business.calculations.Coverage;
-import it.univaq.disim.business.calculations.InformationLoss;
-import it.univaq.disim.business.controller.ATLTransformationPerformer;
 import it.univaq.disim.business.controller.ChainController;
 import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
-import it.univaq.disim.business.manager.MetamodelManager;
-import it.univaq.disim.business.manager.ModelManager;
-import it.univaq.disim.common.utils.CSVUtils;
-import it.univaq.disim.common.utils.Utils;
+import it.univaq.disim.test.Test;
 
 public class RunningExample {
-
-	private static final String STRING_FORMAT = "#.##";
 	
 	private final static String resourcesBasePath = "resources/";
-	private final static String csvFile = resourcesBasePath + "csv/";
 	private final static String runningExampleBasePath = "running_example/";
 	private final static String transformationsPath = resourcesBasePath + runningExampleBasePath + "transformations/";
 	private final static String metamodelsPath = resourcesBasePath + runningExampleBasePath +"metamodels/";
-	private final static String baseForModels = resourcesBasePath + runningExampleBasePath +"models/";
-	private final static String baseForResults = "results/";
+	private static final String baseForModels = "models/";
+	
+	public static String outPath_chain_1 = resourcesBasePath + runningExampleBasePath + baseForModels + "output_model_chain_1.xmi";
+	public static String outPath_chain_2 = resourcesBasePath + runningExampleBasePath + baseForModels + "output_model_chain_2.xmi";
+	public static String outPath_chain_3 = resourcesBasePath + runningExampleBasePath + baseForModels + "output_model_chain_3.xmi";
+
+	
+	private static String MM_KM3 = 			metamodelsPath + "KM3.ecore";
+	private static String MM_EMF = 			metamodelsPath + "Ecore.ecore";
+	private static String MM_JavaSource = 	metamodelsPath + "JavaSource.ecore";
+	private static String MM_XML = 			metamodelsPath + "XML.ecore";
+	private static String MM_HTML = 			metamodelsPath + "HTML.ecore";
+	private static String MM_Table = 		metamodelsPath + "Table.ecore";
+	
+	public static String StartMetamodel = MM_KM3;
+	public static String EndMetamodel = MM_XML;
 	
 	
+	private static String KM32EMF = 	transformationsPath + "KM32EMF.atl";
+//		private static String KM32EMFinTAG = "KM3";
+//		private static String KM32EMFOutTAG = "MOF";
 	
-public static void main(String[] args) throws ATLCoreException, ParserException {
+	private static 	String KM32Java = 	transformationsPath + "km3_2_java.atl";
+//		private static String KM32JavaInTag = "KM3";
+//		private static String KM32JavaOutTag = "Java";
 		
-		String inputMetamodel = metamodelsPath + "KM3.ecore";
-		MetamodelManager.registerMetamodel(inputMetamodel);
+	private static String EMF2Java = 	transformationsPath + "emf2java.atl";
+//		private static String EMF2JavaInTag = "EMF";
+//		private static String EMF2JavaOutTag = "Java";
 		
-		String inputModel_1 = baseForModels +"KM3_seed.xmi";
+	private static String KM32XML = 	transformationsPath + "KM32XML.atl";
+//		private static 	String KM32XMLInTag = "KM3";
+//		private static 	String KM32XMLOutTag = "XML";
+		
+	private static String Java2Table = 	transformationsPath + "JavaSource2Table.atl";
+//		private static 	String Java2TableInTag = "JavaSource";
+//		private static 	String Java2TableOutTag = "Table";
+		
+	private static String Table2HTML = 	transformationsPath + "Table2TabularHTML.atl";
+//		private static 	String Table2HTMLInTag = "Table";
+//		private static 	String Table2HTMLOutTag = "HTML";
+		
+	private static String HTML2XML = 	transformationsPath + "HTML2XML.atl";
+//		private static 	String HTML2XMLInTag = "HTML";
+//		private static 	String HTML2XMLOutTag = "XML";	
 		
 		
-		List<String> inputModels = new ArrayList<String>();
-		inputModels.add(inputModel_1);
+
+	public static Transformation getKM32EMF() {
+		Transformation t_KM32EMF = new Transformation();
+		// t_KM32EMF.setInputModel(inputModelName);
+		t_KM32EMF.setInputMetamodel(MM_KM3);
+		t_KM32EMF.setOutputMetamodel(MM_EMF);
+		t_KM32EMF.setATLTransformation(KM32EMF);
+//		t_KM32EMF.setInTag(KM32EMFinTAG);
+//		t_KM32EMF.setOutTag(KM32EMFOutTAG);
+		// t_KM32EMF.setOutPath(outPath_chain_1);
+		t_KM32EMF.setCoverage(Coverage.coverage(t_KM32EMF));
+//		t_KM32EMF.setInformationLoss(InformationLoss.informationLoss(t_KM32EMF));
+
+		return t_KM32EMF;
+	}
+
+	public static Transformation getEMF2Java() {
+		Transformation t_EMF2Java = new Transformation();
+		// t_EMF2Java.setInputModel(inputModelName);
+		t_EMF2Java.setInputMetamodel(MM_EMF);
+		t_EMF2Java.isMeta_Metamodel(true);
+		t_EMF2Java.setOutputMetamodel(MM_JavaSource);
+		t_EMF2Java.setATLTransformation(EMF2Java);
+//		t_EMF2Java.setInTag(EMF2JavaInTag);
+//		t_EMF2Java.setOutTag(EMF2JavaOutTag);
+		// t_EMF2Java.setOutPath(outPath_chain_1);
+		t_EMF2Java.setCoverage(Coverage.coverage(t_EMF2Java));
+//		t_EMF2Java.setInformationLoss(InformationLoss.informationLoss(t_EMF2Java));
+		return t_EMF2Java;
+	}
+
+	public static Transformation getJava2Table() {
+		Transformation t_Java2Table = new Transformation();
+		// t_Java2Table.setInputModel(inputModelName);
+		t_Java2Table.setInputMetamodel(MM_JavaSource);
+		t_Java2Table.setOutputMetamodel(MM_Table);
+		t_Java2Table.setATLTransformation(Java2Table);
+//		t_Java2Table.setInTag(Java2TableInTag);
+//		t_Java2Table.setOutTag(Java2TableOutTag);
+		// t_Java2Table.setOutPath(outPath_chain_1);
+		t_Java2Table.setCoverage(Coverage.coverage(t_Java2Table));
+//		t_Java2Table.setInformationLoss(InformationLoss.informationLoss(t_Java2Table));
+		return t_Java2Table;
+	}
+
+	public static Transformation getTable2HTML() {
+		Transformation t_Table2HTML = new Transformation();
+		// t_Table2HTML.setInputModel(inputModelName);
+		t_Table2HTML.setInputMetamodel(MM_Table);
+		t_Table2HTML.setOutputMetamodel(MM_HTML);
+		t_Table2HTML.setATLTransformation(Table2HTML);
+//		t_Table2HTML.setInTag(Table2HTMLInTag);
+//		t_Table2HTML.setOutTag(Table2HTMLOutTag);
+		// t_Table2HTML.setOutPath(outPath_chain_1);
+		t_Table2HTML.setCoverage(Coverage.coverage(t_Table2HTML));
+//		t_Table2HTML.setInformationLoss(InformationLoss.informationLoss(t_Table2HTML));
+		return t_Table2HTML;
+	}
+
+	public static Transformation getHTML2XML() {
+		Transformation t_HTML2XML = new Transformation();
+		// t_HTML2XML.setInputModel(inputModelName);
+		t_HTML2XML.setInputMetamodel(MM_HTML);
+		t_HTML2XML.setOutputMetamodel(MM_XML);
+		t_HTML2XML.setATLTransformation(HTML2XML);
+//		t_HTML2XML.setInTag(HTML2XMLInTag);
+//		t_HTML2XML.setOutTag(HTML2XMLOutTag);
+		// t_HTML2XML.setOutPath(outPath_chain_1);
+		t_HTML2XML.setCoverage(Coverage.coverage(t_HTML2XML));
+//		t_HTML2XML.setInformationLoss(InformationLoss.informationLoss(t_HTML2XML));
+		return t_HTML2XML;
+	}
+
+	public static Transformation getKM32Java() {
+		Transformation t_KM32Java = new Transformation();
+		// t_KM32Java.setInputModel(inputModelName);
+		t_KM32Java.setInputMetamodel(MM_KM3);
+		t_KM32Java.setOutputMetamodel(MM_JavaSource);
+		t_KM32Java.setATLTransformation(KM32Java);
+//		t_KM32Java.setInTag(KM32JavaInTag);
+//		t_KM32Java.setOutTag(KM32JavaOutTag);
+		// t_KM32Java.setOutPath(outPath_chain_2);
+		t_KM32Java.setCoverage(Coverage.coverage(t_KM32Java));
+//		t_KM32Java.setInformationLoss(InformationLoss.informationLoss(t_KM32Java));
+		return t_KM32Java;
+	}
+
+	public static Transformation getKM32XML() {
+		Transformation t_KM32XML = new Transformation();
+		// t_KM32XML.setInputModel(inputModelName);
+		t_KM32XML.setInputMetamodel(MM_KM3);
+		t_KM32XML.setOutputMetamodel(MM_XML);
+		t_KM32XML.setATLTransformation(KM32XML);
+//		t_KM32XML.setInTag(KM32XMLInTag);
+//		t_KM32XML.setOutTag(KM32XMLOutTag);
+		// t_KM32XML.setOutPath(outPath_chain_3);
+		t_KM32XML.setCoverage(Coverage.coverage(t_KM32XML));
+//		t_KM32XML.setInformationLoss(InformationLoss.informationLoss(t_KM32XML));
+		return t_KM32XML;
+	}
+	
+	
+	public static Chain getChain1(String inputModel) {
+		List<Transformation> chain1Ts = new ArrayList<Transformation>();
+		chain1Ts.add(RunningExample.getKM32EMF());
+		chain1Ts.add(RunningExample.getEMF2Java());
+		chain1Ts.add(RunningExample.getJava2Table());
+		chain1Ts.add(RunningExample.getTable2HTML());
+		chain1Ts.add(RunningExample.getHTML2XML());
+		Chain chain1 = new Chain();
+		chain1.setName("Chain1");
+		chain1.setInputModel(inputModel);
+		chain1.setInputMetamodel(RunningExample.StartMetamodel);
+		chain1.setOutputMetamodel(RunningExample.EndMetamodel);
+		chain1.setTransformations(chain1Ts);
+		chain1.setResultModel(outPath_chain_1);
+		chain1.setCoverage(ChainController.calculateChainCoverage(chain1));
+		chain1.setInformationLoss(ChainController.calculateChainInformationLoss(chain1));
+		return chain1;
+	}
+	
+	
+	public static Chain getChain2(String inputModel) {
+		List<Transformation> chain2Ts = new ArrayList<Transformation>();
+		chain2Ts.add(RunningExample.getKM32Java());
+		chain2Ts.add(RunningExample.getJava2Table());
+		chain2Ts.add(RunningExample.getTable2HTML());
+		chain2Ts.add(RunningExample.getHTML2XML());
+		Chain chain2 = new Chain();
+		chain2.setName("Chain2");
+		chain2.setInputModel(inputModel);
+		chain2.setInputMetamodel(RunningExample.StartMetamodel);
+		chain2.setOutputMetamodel(RunningExample.EndMetamodel);
+		chain2.setTransformations(chain2Ts);
+		chain2.setResultModel(outPath_chain_2);
+		chain2.setCoverage(ChainController.calculateChainCoverage(chain2));
+		chain2.setInformationLoss(ChainController.calculateChainInformationLoss(chain2));
+		return chain2;
+	}
+	
+	public static Chain getChain3(String inputModel) {
+		List<Transformation> chain3Ts = new ArrayList<Transformation>();
+		chain3Ts.add(RunningExample.getKM32XML());
+		Chain chain3 = new Chain();
+		chain3.setName("Chain3");
+		chain3.setInputModel(inputModel);
+		chain3.setInputMetamodel(RunningExample.StartMetamodel);
+		chain3.setOutputMetamodel(RunningExample.EndMetamodel);
+		chain3.setTransformations(chain3Ts);
+		chain3.setResultModel(outPath_chain_3);
+		chain3.setCoverage(ChainController.calculateChainCoverage(chain3));
+		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
+		return chain3;
+	}
+	
+	
+	public static void testRunningExampleChain1(List<String> inputModelList) {
 		
-		
-		for (String string : inputModels) {
-			Chain chain = Example.getChain3(string);
-			
+		for (String string : inputModelList) {
+			Chain chain = RunningExample.getChain1(string);
 			String tmpInputModel = chain.getInputModel();
 			for (Transformation t : chain.getTransformations()) {
 				t.setInputModel(tmpInputModel);
 				t.setOutPath(chain.getResultModel());
+				System.out.println("Edge Weight :"+t.getEdgeWeight());
 				tmpInputModel = chain.getResultModel();
 			}
 			System.out.println((float)chain.getInformationLoss());
-			
 		}
-		
 	}
-
+	public static void testRunningExampleChain2(List<String> inputModelList) {
+		
+		for (String string : inputModelList) {
+			Chain chain = RunningExample.getChain2(string);
+			String tmpInputModel = chain.getInputModel();
+			for (Transformation t : chain.getTransformations()) {
+				t.setInputModel(tmpInputModel);
+				t.setOutPath(chain.getResultModel());
+				System.out.println("Edge Weight :"+t.getEdgeWeight());
+				tmpInputModel = chain.getResultModel();
+			}
+			System.out.println((float)chain.getInformationLoss());
+		}
+	}
+	public static void testRunningExampleChain3(List<String> inputModelList) {
+		
+		for (String string : inputModelList) {
+			Chain chain = RunningExample.getChain3(string);
+			String tmpInputModel = chain.getInputModel();
+			for (Transformation t : chain.getTransformations()) {
+				t.setInputModel(tmpInputModel);
+				t.setOutPath(chain.getResultModel());
+				System.out.println("Edge Weight :"+t.getEdgeWeight());
+				tmpInputModel = chain.getResultModel();
+			}
+			System.out.println((float)chain.getInformationLoss());
+		}
+	}
 	
-
-
-
-
-public static List<Chain> calculateChains(String inputModel) throws ATLCoreException, ParserException{
+	public static void main(String[] args) {
+		String inputModel = "resources/running_example/models/KM3_seed.xmi";
 		
-//		String inputModelName = cleanInputModel(inputModel);
+		List<String> inputModels = new ArrayList<String>();
+		inputModels.add(inputModel);
 		
+		testRunningExampleChain3(inputModels);
 		
-		
-		
-	Chain chain = Example.getChain2(inputModel);
-	String tmpInputModel = chain.getInputModel();
-	for (Transformation t : chain.getTransformations()) {
-		t.setInputModel(tmpInputModel);
-		t.setOutPath(chain.getResultModel());
-		tmpInputModel = chain.getResultModel();
-	}
-		
-		
-//		ChainController chainController = new ChainController();
-//		chainController.executeChain(Example.getChain1());
-//		chainController.executeChain(Example.getChain2());
-//		chainController.executeChain(Example.getChain3());
-//		chainController.executeChain(Example.getChain4());
-//		
-//		
-//		ATLTransformationController myT = null;
-//		try {
-//			myT = new ATLTransformationController();
+//		for (String string : inputModels) {
+//			Chain chain = RunningExample.getChain3(string);
+//			String tmpInputModel = chain.getInputModel();
+//			for (Transformation t : chain.getTransformations()) {
+//				t.setInputModel(tmpInputModel);
+//				t.setOutPath(chain.getResultModel());
+//				System.out.println("Edge Weight :"+t.getEdgeWeight());
+//				tmpInputModel = chain.getResultModel();
+//			}
+//			System.out.println((float)chain.getInformationLoss());
 //			
-//			System.out.println("Esecuzione Catena 1: A2B -> B2C -> C2E");
-//			System.out.println("Esecuzione T: A2B");
-//			myT.run(t_KM32EMF);
-//			t_B2C.setInformationLoss(InformationLoss.informationLoss(t_B2C));
-//			
-//			System.out.println("Esecuzione T: B2C");
-//			myT.run(t_B2C);
-//			t_C2E.setInformationLoss(InformationLoss.informationLoss(t_C2E));
-//			
-//			System.out.println("Esecuzione T: C2E");
-//			myT.run(t_C2E);
-//			System.out.println("----------------------------------------");
-//			
-//			System.out.println("Esecuzione Catena 2: A2D -> D2E");
-//			System.out.println("Esecuzione T: A2D");
-//			t_A2D.setInformationLoss(InformationLoss.informationLoss(t_A2D));
-//			myT.run(t_A2D);
-//			t_D2E.setInformationLoss(InformationLoss.informationLoss(t_D2E));
-//			
-//			System.out.println("Esecuzione T: D2E");
-//			myT.run(t_D2E);
-//			System.out.println("----------------------------------------");
-//			
-//			System.out.println("Esecuzione Catena 3: A2E");
-//			System.out.println("Esecuzione T: A2E");
-//			t_A2E.setInformationLoss(InformationLoss.informationLoss(t_A2E));
-//			myT.run(t_A2E);
-//			
-//			System.out.println("----------------------------------------");
-//			
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
 //		}
-//		
-//		chain4.setResultModelElements(Calculations.inputModelElements(outPath_chain_1, MM_E));
-//		chain4.setResultModelElements(Calculations.inputModelElements(outPath_chain_2, MM_E));
-//		chain4.setResultModelElements(Calculations.inputModelElements(outPath_chain_3, MM_E));
-//		
-//		chain4.setInformationLoss(ChainController.calculateChainInformationLoss(chain4));
-//		chain4.setInformationLoss(ChainController.calculateChainInformationLoss(chain4));
-//		chain4.setInformationLoss(ChainController.calculateChainInformationLoss(chain4));
-//		
-//		chain4.setWeight(ChainController.calculateChainWeight(chain4));
-//		chain4.setWeight(ChainController.calculateChainWeight(chain4));
-//		chain4.setWeight(ChainController.calculateChainWeight(chain4));
-//		
-//		/**
-//		 * Write results on CSV file
-//		 */
-		 List<Chain> allChains = new ArrayList<Chain>();
-//		allChains.add(chain4);
-//		allChains.add(chain4);
-//		allChains.add(chain4);
-		
-		
-		return allChains;
 	}
-
-
-private static String cleanInputModel(String inputModel) {
-	return FilenameUtils.getBaseName(inputModel);
-}
-
-private static void saveToCSV2(List<List<Chain>> listOfAllChains){
 	
-	DecimalFormat df = new DecimalFormat(STRING_FORMAT);
-	
-	String resultFile = csvFile+"result.csv";
-	
-	try {
-		FileWriter writer = new FileWriter(resultFile);
-		
-		List<String> header = new ArrayList<String>();
-		header.add(" ");
-		header.add("Model ID");
-		header.add("Instances");
-		header.add("IL Chain 1");
-		header.add("Weight Chain 1");
-		header.add("Chain 1 - Elements in Output Model");
-		header.add("IL Chain 2");
-		header.add("Weight Chain 2");
-		header.add("Chain 2 - Elements in Output Model");
-		header.add("IL Chain 3");
-		header.add("Weight Chain 3");
-		header.add("Chain 3 - Elements in Output Model");
-		CSVUtils.writeLine(writer, header);
-		
-		//Calculate the coverage once
-		
-		List<String> covLine = new ArrayList<String>();
-		covLine.add("COV");
-		covLine.add(Utils.getNameFromPathWithoutExtension(listOfAllChains.get(0).get(0).getTransformations().get(0).getInputModel()));
-		covLine.add(" - ");
-		covLine.add(df.format(listOfAllChains.get(0).get(0).getCoverage()));
-		covLine.add(" - ");
-		covLine.add(" - ");
-		covLine.add(df.format(listOfAllChains.get(0).get(1).getCoverage()));
-		covLine.add(" - ");
-		covLine.add(" - ");
-		covLine.add(df.format(listOfAllChains.get(0).get(2).getCoverage()));
-		covLine.add(" - ");
-		covLine.add(" - ");
-		CSVUtils.writeLine(writer, covLine);
-
-		for (List<Chain> allChains : listOfAllChains) {
-			List<String> ilLine = new ArrayList<String>();
-			ilLine.add(Utils.getNameFromPathWithoutExtension(allChains.get(0).getTransformations().get(0).getInputModel()));
-//			ilLine.add(allChains.get(0).getInputModelElements());
-//			ilLine.add(df.format(allChains.get(0).getInformationLoss()));
-//			ilLine.add(df.format(allChains.get(0).getWeight()));
-//			ilLine.add(allChains.get(0).getResultModelElements());
-//			ilLine.add(df.format(allChains.get(1).getInformationLoss()));
-//			ilLine.add(df.format(allChains.get(1).getWeight()));
-//			ilLine.add(allChains.get(1).getResultModelElements());
-//			ilLine.add(df.format(allChains.get(2).getInformationLoss()));
-//			ilLine.add(df.format(allChains.get(2).getWeight()));
-//			ilLine.add(allChains.get(2).getResultModelElements());
-			CSVUtils.writeLine(writer, ilLine);
-		}
-		
-		
-		writer.flush();
-		writer.close();
-		
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-}
-
-
-
 }
