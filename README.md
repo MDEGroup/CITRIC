@@ -3,13 +3,11 @@ ChaIning TRansformations Information Coverage - Automated Selection of Optimal M
 
 ## DEMO
 In the  
-'''
+```
 it/univaq/disim/demo/Demo.java
-'''
+```
 class there are some demos for the paper.
 
 
-```
-Give examples
-```
+
 
