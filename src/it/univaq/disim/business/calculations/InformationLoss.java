@@ -18,6 +18,8 @@ import it.univaq.disim.common.utils.Utils;
 public class InformationLoss{
 	
 	private static boolean VISUALIZE_CALCULATIONS = false;
+	private static boolean PERTURBATION = false;
+	private static float PERTURBATION_VALUE = (float) 0.1;
 	
 	public static void main(String[] args) {
 		Transformation t = new Transformation();
@@ -88,8 +90,12 @@ public class InformationLoss{
 		}
 		
 		result = (float) (2 - ((float)(((float) countMetaclassOccurrences / totalNumberofInputModelInstances) + ((float) countNumberOfModelImpactedStructuralFeatures / totalNumberOfInputModelStructuralFeatures))*0.5));
-		System.out.println("IL("+Utils.getNameFromPath(transformation.getInputModel())+", "+Utils.getNameFromPath(transformation.getATLTransformation())+") = "+Utils.roundFloatValues(result, 2));
 		
+		if(PERTURBATION && (PERTURBATION_VALUE + result) >= 2) {
+			result = 2;
+		}
+		
+		System.out.println("IL("+Utils.getNameFromPath(transformation.getInputModel())+", "+Utils.getNameFromPath(transformation.getATLTransformation())+") = "+Utils.roundFloatValues(result, 2));
 		return result;
 	}
 	

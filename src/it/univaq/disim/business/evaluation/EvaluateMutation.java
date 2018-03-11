@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map.Entry;
 
+import it.univaq.disim.business.datamodel.ChainResult;
 import it.univaq.disim.business.evaluation.mutator.AttributeMutation;
 import it.univaq.disim.business.evaluation.mutator.ClassMutation;
 import it.univaq.disim.business.evaluation.mutator.DataTypeMutation;
@@ -266,186 +267,209 @@ public class EvaluateMutation {
 		modelInstances.add(class_modelInstance_supertype_set);
 		modelInstances.add(class_modelInstance_supertype_unset);
 		
-		modelInstances.add(package_modelInstance_package_set);
-		modelInstances.add(package_modelInstance_package_unset);
-		modelInstances.add(package_modelInstance_metamodel_set);
-		modelInstances.add(package_modelInstance_metamodel_unset);
-		modelInstances.add(package_modelInstance_contents_set);
-		modelInstances.add(package_modelInstance_contents_unset);
-		modelInstances.add(package_modelInstance_name_set);
-		modelInstances.add(package_modelInstance_name_unset);
-		modelInstances.add(package_modelInstance_basic);
-		modelInstances.add(package_modelInstance_remove);
-		modelInstances.add(package_modelInstance_add);
-		
-		modelInstances.add(attribute_modelInstance_basic);
-		modelInstances.add(attribute_modelInstance_owner_set);
-		modelInstances.add(attribute_modelInstance_owner_unset);
-		modelInstances.add(attribute_modelInstance_type_set);
-		modelInstances.add(attribute_modelInstance_type_unset);
-		modelInstances.add(attribute_modelInstance_unique_set);
-		modelInstances.add(attribute_modelInstance_unique_unset);
-		modelInstances.add(attribute_modelInstance_isOrdered_set);
-		modelInstances.add(attribute_modelInstance_isOrdered_unset);
-		modelInstances.add(attribute_modelInstance_upper_set);
-		modelInstances.add(attribute_modelInstance_upper_unset);
-		modelInstances.add(attribute_modelInstance_lower_set);
-		modelInstances.add(attribute_modelInstance_lower_unset);
-		modelInstances.add(attribute_modelInstance_name_set);
-		modelInstances.add(attribute_modelInstance_name_unset);
-		modelInstances.add(attribute_modelInstance_add);
-		modelInstances.add(attribute_modelInstance_remove);
-		
-		modelInstances.add(reference_modelInstance_opposite_set);
-		modelInstances.add(reference_modelInstance_opposite_unset);
-		modelInstances.add(reference_modelInstance_isContainer_set);
-		modelInstances.add(reference_modelInstance_isContainer_unset);
-		modelInstances.add(reference_modelInstance_owner_set);
-		modelInstances.add(reference_modelInstance_owner_unset);
-		modelInstances.add(reference_modelInstance_type_set);
-		modelInstances.add(reference_modelInstance_type_unset);
-		modelInstances.add(reference_modelInstance_isOrdered_set);
-		modelInstances.add(reference_modelInstance_isOrdered_unset);
-		modelInstances.add(reference_modelInstance_isUnique_set);
-		modelInstances.add(reference_modelInstance_isUnique_unset);
-		modelInstances.add(reference_modelInstance_upper_set);
-		modelInstances.add(reference_modelInstance_upper_unset);
-		modelInstances.add(reference_modelInstance_lower_set);
-		modelInstances.add(reference_modelInstance_lower_unset);
-		modelInstances.add(reference_modelInstance_name_set);
-		modelInstances.add(reference_modelInstance_name_unset);
-		modelInstances.add(reference_modelInstance_basic);
-		modelInstances.add(reference_modelInstance_add);
-		modelInstances.add(reference_modelInstance_remove);
-		
-		modelInstances.add(operation_modelInstance_add);
-		modelInstances.add(operation_modelInstance_remove);
-		modelInstances.add(operation_modelInstance_name_set);
-		modelInstances.add(operation_modelInstance_name_unset);
-		modelInstances.add(operation_modelInstance_parameter_set);
-		modelInstances.add(operation_modelInstance_parameter_unset);
-		modelInstances.add(operation_modelInstance_owner_set);
-		modelInstances.add(operation_modelInstance_owner_unset);
-		modelInstances.add(operation_modelInstance_type_set);
-		modelInstances.add(operation_modelInstance_type_unset);
-		modelInstances.add(operation_modelInstance_isOrdered_set);
-		modelInstances.add(operation_modelInstance_isOrdered_unset);
-		modelInstances.add(operation_modelInstance_isUnique_set);
-		modelInstances.add(operation_modelInstance_isUnique_unset);
-		modelInstances.add(operation_modelInstance_upper_set);
-		modelInstances.add(operation_modelInstance_upper_unset);
-		modelInstances.add(operation_modelInstance_lower_set);
-		modelInstances.add(operation_modelInstance_lower_unset);
-		modelInstances.add(operation_modelInstance_basic);
-		
-		modelInstances.add(parameter_modelInstance_basic);
-		modelInstances.add(parameter_modelInstance_owner_set);
-		modelInstances.add(parameter_modelInstance_owner_unset);
-		modelInstances.add(parameter_modelInstance_type_set);
-		modelInstances.add(parameter_modelInstance_type_unset);
-		modelInstances.add(parameter_modelInstance_isOrdered_set);
-		modelInstances.add(parameter_modelInstance_isOrdered_unset);
-		modelInstances.add(parameter_modelInstance_isUnique_set);
-		modelInstances.add(parameter_modelInstance_isUnique_unset);
-		modelInstances.add(parameter_modelInstance_upper_set);
-		modelInstances.add(parameter_modelInstance_upper_unset);
-		modelInstances.add(parameter_modelInstance_lower_set);
-		modelInstances.add(parameter_modelInstance_lower_unset);
-		modelInstances.add(parameter_modelInstance_name_set);
-		modelInstances.add(parameter_modelInstance_name_unset);
-		modelInstances.add(parameter_modelInstance_remove);
-		modelInstances.add(parameter_modelInstance_add);
-
-		modelInstances.add(metamodel_modelInstance_basic);
-		modelInstances.add(metamodel_modelInstance_location_set);
-		modelInstances.add(metamodel_modelInstance_location_unset);
-		modelInstances.add(metamodel_modelInstance_remove);
-		modelInstances.add(metamodel_modelInstance_add);
-		
-		modelInstances.add(enumeration_modelInstance_enum_set);
-		modelInstances.add(enumeration_modelInstance_enum_unset);
-		modelInstances.add(enumeration_modelInstance_name_set);
-		modelInstances.add(enumeration_modelInstance_name_unset);
-		modelInstances.add(enumeration_modelInstance_package_set);
-		modelInstances.add(enumeration_modelInstance_package_unset);
-		modelInstances.add(enumeration_modelInstance_basic);
-		modelInstances.add(enumeration_modelInstance_remove);
-		modelInstances.add(enumeration_modelInstance_add);
-		
-		modelInstances.add(enumLiteral_modelInstance_enum_set);
-		modelInstances.add(enumLiteral_modelInstance_enum_unset);
-		modelInstances.add(enumLiteral_modelInstance_package_set);
-		modelInstances.add(enumLiteral_modelInstance_package_unset);
-		modelInstances.add(enumLiteral_modelInstance_name_set);
-		modelInstances.add(enumLiteral_modelInstance_name_unset);
-		modelInstances.add(enumLiteral_modelInstance_basic);
-		modelInstances.add(enumLiteral_modelInstance_remove);
-		modelInstances.add(enumLiteral_modelInstance_add);
-		
-		modelInstances.add(structuralFeature_modelInstance_name_set);
-		modelInstances.add(structuralFeature_modelInstance_name_unset);
-		modelInstances.add(structuralFeature_modelInstance_owner_set);
-		modelInstances.add(structuralFeature_modelInstance_owner_unset);
-		modelInstances.add(structuralFeature_modelInstance_type_set);
-		modelInstances.add(structuralFeature_modelInstance_type_unset);
-		modelInstances.add(structuralFeature_modelInstance_isUnique_set);
-		modelInstances.add(structuralFeature_modelInstance_isUnique_unset);
-		modelInstances.add(structuralFeature_modelInstance_isOrdered_set);
-		modelInstances.add(structuralFeature_modelInstance_isOrdered_unset);
-		modelInstances.add(structuralFeature_modelInstance_upper_set);
-		modelInstances.add(structuralFeature_modelInstance_upper_unset);
-		modelInstances.add(structuralFeature_modelInstance_lower_set);
-		modelInstances.add(structuralFeature_modelInstance_lower_unset);
-		modelInstances.add(structuralFeature_modelInstance_package_set);
-		modelInstances.add(structuralFeature_modelInstance_package_unset);
-		modelInstances.add(structuralFeature_modelInstance_basic);
-		modelInstances.add(structuralFeature_modelInstance_add);
-		modelInstances.add(structuralFeature_modelInstance_remove);
-		
-		modelInstances.add(dataType_modelInstance_name_set);
-		modelInstances.add(dataType_modelInstance_name_unset);
-		modelInstances.add(dataType_modelInstance_package_set);
-		modelInstances.add(dataType_modelInstance_package_unset);
-		modelInstances.add(dataType_modelInstance_basic);
-		modelInstances.add(dataType_modelInstance_remove);
-		modelInstances.add(dataType_modelInstance_add);
-		
-		
+//		modelInstances.add(package_modelInstance_package_set);
+//		modelInstances.add(package_modelInstance_package_unset);
+//		modelInstances.add(package_modelInstance_metamodel_set);
+//		modelInstances.add(package_modelInstance_metamodel_unset);
+//		modelInstances.add(package_modelInstance_contents_set);
+//		modelInstances.add(package_modelInstance_contents_unset);
+//		modelInstances.add(package_modelInstance_name_set);
+//		modelInstances.add(package_modelInstance_name_unset);
+//		modelInstances.add(package_modelInstance_basic);
+//		modelInstances.add(package_modelInstance_remove);
+//		modelInstances.add(package_modelInstance_add);
+//		
+//		modelInstances.add(attribute_modelInstance_basic);
+//		modelInstances.add(attribute_modelInstance_owner_set);
+//		modelInstances.add(attribute_modelInstance_owner_unset);
+//		modelInstances.add(attribute_modelInstance_type_set);
+//		modelInstances.add(attribute_modelInstance_type_unset);
+//		modelInstances.add(attribute_modelInstance_unique_set);
+//		modelInstances.add(attribute_modelInstance_unique_unset);
+//		modelInstances.add(attribute_modelInstance_isOrdered_set);
+//		modelInstances.add(attribute_modelInstance_isOrdered_unset);
+//		modelInstances.add(attribute_modelInstance_upper_set);
+//		modelInstances.add(attribute_modelInstance_upper_unset);
+//		modelInstances.add(attribute_modelInstance_lower_set);
+//		modelInstances.add(attribute_modelInstance_lower_unset);
+//		modelInstances.add(attribute_modelInstance_name_set);
+//		modelInstances.add(attribute_modelInstance_name_unset);
+//		modelInstances.add(attribute_modelInstance_add);
+//		modelInstances.add(attribute_modelInstance_remove);
+//		
+//		modelInstances.add(reference_modelInstance_opposite_set);
+//		modelInstances.add(reference_modelInstance_opposite_unset);
+//		modelInstances.add(reference_modelInstance_isContainer_set);
+//		modelInstances.add(reference_modelInstance_isContainer_unset);
+//		modelInstances.add(reference_modelInstance_owner_set);
+//		modelInstances.add(reference_modelInstance_owner_unset);
+//		modelInstances.add(reference_modelInstance_type_set);
+//		modelInstances.add(reference_modelInstance_type_unset);
+//		modelInstances.add(reference_modelInstance_isOrdered_set);
+//		modelInstances.add(reference_modelInstance_isOrdered_unset);
+//		modelInstances.add(reference_modelInstance_isUnique_set);
+//		modelInstances.add(reference_modelInstance_isUnique_unset);
+//		modelInstances.add(reference_modelInstance_upper_set);
+//		modelInstances.add(reference_modelInstance_upper_unset);
+//		modelInstances.add(reference_modelInstance_lower_set);
+//		modelInstances.add(reference_modelInstance_lower_unset);
+//		modelInstances.add(reference_modelInstance_name_set);
+//		modelInstances.add(reference_modelInstance_name_unset);
+//		modelInstances.add(reference_modelInstance_basic);
+//		modelInstances.add(reference_modelInstance_add);
+//		modelInstances.add(reference_modelInstance_remove);
+//		
+//		modelInstances.add(operation_modelInstance_add);
+//		modelInstances.add(operation_modelInstance_remove);
+//		modelInstances.add(operation_modelInstance_name_set);
+//		modelInstances.add(operation_modelInstance_name_unset);
+//		modelInstances.add(operation_modelInstance_parameter_set);
+//		modelInstances.add(operation_modelInstance_parameter_unset);
+//		modelInstances.add(operation_modelInstance_owner_set);
+//		modelInstances.add(operation_modelInstance_owner_unset);
+//		modelInstances.add(operation_modelInstance_type_set);
+//		modelInstances.add(operation_modelInstance_type_unset);
+//		modelInstances.add(operation_modelInstance_isOrdered_set);
+//		modelInstances.add(operation_modelInstance_isOrdered_unset);
+//		modelInstances.add(operation_modelInstance_isUnique_set);
+//		modelInstances.add(operation_modelInstance_isUnique_unset);
+//		modelInstances.add(operation_modelInstance_upper_set);
+//		modelInstances.add(operation_modelInstance_upper_unset);
+//		modelInstances.add(operation_modelInstance_lower_set);
+//		modelInstances.add(operation_modelInstance_lower_unset);
+//		modelInstances.add(operation_modelInstance_basic);
+//		
+//		modelInstances.add(parameter_modelInstance_basic);
+//		modelInstances.add(parameter_modelInstance_owner_set);
+//		modelInstances.add(parameter_modelInstance_owner_unset);
+//		modelInstances.add(parameter_modelInstance_type_set);
+//		modelInstances.add(parameter_modelInstance_type_unset);
+//		modelInstances.add(parameter_modelInstance_isOrdered_set);
+//		modelInstances.add(parameter_modelInstance_isOrdered_unset);
+//		modelInstances.add(parameter_modelInstance_isUnique_set);
+//		modelInstances.add(parameter_modelInstance_isUnique_unset);
+//		modelInstances.add(parameter_modelInstance_upper_set);
+//		modelInstances.add(parameter_modelInstance_upper_unset);
+//		modelInstances.add(parameter_modelInstance_lower_set);
+//		modelInstances.add(parameter_modelInstance_lower_unset);
+//		modelInstances.add(parameter_modelInstance_name_set);
+//		modelInstances.add(parameter_modelInstance_name_unset);
+//		modelInstances.add(parameter_modelInstance_remove);
+//		modelInstances.add(parameter_modelInstance_add);
+//
+//		modelInstances.add(metamodel_modelInstance_basic);
+//		modelInstances.add(metamodel_modelInstance_location_set);
+//		modelInstances.add(metamodel_modelInstance_location_unset);
+//		modelInstances.add(metamodel_modelInstance_remove);
+//		modelInstances.add(metamodel_modelInstance_add);
+//		
+//		modelInstances.add(enumeration_modelInstance_enum_set);
+//		modelInstances.add(enumeration_modelInstance_enum_unset);
+//		modelInstances.add(enumeration_modelInstance_name_set);
+//		modelInstances.add(enumeration_modelInstance_name_unset);
+//		modelInstances.add(enumeration_modelInstance_package_set);
+//		modelInstances.add(enumeration_modelInstance_package_unset);
+//		modelInstances.add(enumeration_modelInstance_basic);
+//		modelInstances.add(enumeration_modelInstance_remove);
+//		modelInstances.add(enumeration_modelInstance_add);
+//		
+//		modelInstances.add(enumLiteral_modelInstance_enum_set);
+//		modelInstances.add(enumLiteral_modelInstance_enum_unset);
+//		modelInstances.add(enumLiteral_modelInstance_package_set);
+//		modelInstances.add(enumLiteral_modelInstance_package_unset);
+//		modelInstances.add(enumLiteral_modelInstance_name_set);
+//		modelInstances.add(enumLiteral_modelInstance_name_unset);
+//		modelInstances.add(enumLiteral_modelInstance_basic);
+//		modelInstances.add(enumLiteral_modelInstance_remove);
+//		modelInstances.add(enumLiteral_modelInstance_add);
+//		
+//		modelInstances.add(structuralFeature_modelInstance_name_set);
+//		modelInstances.add(structuralFeature_modelInstance_name_unset);
+//		modelInstances.add(structuralFeature_modelInstance_owner_set);
+//		modelInstances.add(structuralFeature_modelInstance_owner_unset);
+//		modelInstances.add(structuralFeature_modelInstance_type_set);
+//		modelInstances.add(structuralFeature_modelInstance_type_unset);
+//		modelInstances.add(structuralFeature_modelInstance_isUnique_set);
+//		modelInstances.add(structuralFeature_modelInstance_isUnique_unset);
+//		modelInstances.add(structuralFeature_modelInstance_isOrdered_set);
+//		modelInstances.add(structuralFeature_modelInstance_isOrdered_unset);
+//		modelInstances.add(structuralFeature_modelInstance_upper_set);
+//		modelInstances.add(structuralFeature_modelInstance_upper_unset);
+//		modelInstances.add(structuralFeature_modelInstance_lower_set);
+//		modelInstances.add(structuralFeature_modelInstance_lower_unset);
+//		modelInstances.add(structuralFeature_modelInstance_package_set);
+//		modelInstances.add(structuralFeature_modelInstance_package_unset);
+//		modelInstances.add(structuralFeature_modelInstance_basic);
+//		modelInstances.add(structuralFeature_modelInstance_add);
+//		modelInstances.add(structuralFeature_modelInstance_remove);
+//		
+//		modelInstances.add(dataType_modelInstance_name_set);
+//		modelInstances.add(dataType_modelInstance_name_unset);
+//		modelInstances.add(dataType_modelInstance_package_set);
+//		modelInstances.add(dataType_modelInstance_package_unset);
+//		modelInstances.add(dataType_modelInstance_basic);
+//		modelInstances.add(dataType_modelInstance_remove);
+//		modelInstances.add(dataType_modelInstance_add);
 		
 		
-		
-		HashMap<String, Float> resultChain1 = new HashMap<String, Float>();
-		HashMap<String, Float> resultChain2 = new HashMap<String, Float>();
-		HashMap<String, Float> resultChain3 = new HashMap<String, Float>();
+		List<ChainResult> resultChain1 = new ArrayList<ChainResult>();
+		List<ChainResult> resultChain2 = new ArrayList<ChainResult>();
+		List<ChainResult> resultChain3 = new ArrayList<ChainResult>();
 		
 		for (String model : modelInstances) {
-			resultChain1.put(model, (float) Test.testChain1(model));
-			resultChain2.put(model, (float) Test.testChain2(model));
-			resultChain3.put(model, (float) Test.testChain3(model));
+			resultChain1.add(Test.testChain1(model));
+			resultChain2.add(Test.testChain2(model));
+			resultChain3.add(Test.testChain3(model));
 		}
 		
 		System.out.println("RESULTS:");
 		System.out.println("CHAIN 1:");
-		for (Entry<String, Float> entry : resultChain1.entrySet()) {
-		    String key = entry.getKey();
-		    float value = (float) entry.getValue();
-		    System.out.println("IL = "+key +" = " + value);
+		for (ChainResult chainResult : resultChain1) {
+			System.out.println(chainResult.getModel() + " - "+ chainResult.getInformationLoss()+" - "+chainResult.getWeight());
 		}
-		System.out.println("-------------------------------------------");
 		System.out.println("CHAIN 2:");
-		for (Entry<String, Float> entry : resultChain2.entrySet()) {
-		    String key = entry.getKey();
-		    float value = (float) entry.getValue();
-		    System.out.println("IL = "+key +" = " + value);
+		for (ChainResult chainResult : resultChain2) {
+			System.out.println(chainResult.getModel() + " - "+ chainResult.getInformationLoss()+" - "+chainResult.getWeight());
 		}
-		System.out.println("-------------------------------------------");
 		System.out.println("CHAIN 3:");
-		for (Entry<String, Float> entry : resultChain3.entrySet()) {
-		    String key = entry.getKey();
-		    float value = (float) entry.getValue();
-//		    System.out.println("IL = "+key +" = " + Utils.roundFloatValues(value, 2));
-		    System.out.println("IL = "+key +" = " + value);
+		for (ChainResult chainResult : resultChain3) {
+			System.out.println(chainResult.getModel() + " - "+ chainResult.getInformationLoss()+" - "+chainResult.getWeight());
 		}
+		
+		
+		
+//		HashMap<String, Float> resultChain1 = new HashMap<String, Float>();
+//		HashMap<String, Float> resultChain2 = new HashMap<String, Float>();
+//		HashMap<String, Float> resultChain3 = new HashMap<String, Float>();
+//		
+//		for (String model : modelInstances) {
+//			resultChain1.put(model, (float) Test.testChain1(model));
+//			resultChain2.put(model, (float) Test.testChain2(model));
+//			resultChain3.put(model, (float) Test.testChain3(model));
+//		}
+//		
+//		System.out.println("RESULTS:");
+//		System.out.println("CHAIN 1:");
+//		for (Entry<String, Float> entry : resultChain1.entrySet()) {
+//		    String key = entry.getKey();
+//		    float value = (float) entry.getValue();
+//		    System.out.println("IL = "+key +" = " + value);
+//		}
+//		System.out.println("-------------------------------------------");
+//		System.out.println("CHAIN 2:");
+//		for (Entry<String, Float> entry : resultChain2.entrySet()) {
+//		    String key = entry.getKey();
+//		    float value = (float) entry.getValue();
+//		    System.out.println("IL = "+key +" = " + value);
+//		}
+//		System.out.println("-------------------------------------------");
+//		System.out.println("CHAIN 3:");
+//		for (Entry<String, Float> entry : resultChain3.entrySet()) {
+//		    String key = entry.getKey();
+//		    float value = (float) entry.getValue();
+////		    System.out.println("IL = "+key +" = " + Utils.roundFloatValues(value, 2));
+//		    System.out.println("IL = "+key +" = " + value);
+//		}
 	}
 	
 	

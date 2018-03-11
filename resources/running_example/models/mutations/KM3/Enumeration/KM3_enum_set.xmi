@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_rrkYcrBTUa">
-  <contents location="4L3D8" name="package_s62xm4qfN7" package="//@contents.0">
-    <contents xsi:type="km3:Enumeration" name="enumeration_KJXqCN6Skg" package="//@contents.0" literals="//@contents.0/@contents.1"/>
-    <contents xsi:type="km3:EnumLiteral" name="enum_literal_8vHIKXBdqq" package="//@contents.0" enum="//@contents.0/@contents.0"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_ZzjBAq6I0A">
+  <contents location="9At7Q" name="package_UXL3W81yqG" package="//@contents.0">
+    <contents xsi:type="km3:Enumeration" name="enumeration_gSR7SuayL8" package="//@contents.0" literals="//@contents.0/@contents.1"/>
+    <contents xsi:type="km3:EnumLiteral" name="enum_literal_HBGexdbqy5" package="//@contents.0" enum="//@contents.0/@contents.0"/>
   </contents>
 </km3:Metamodel>

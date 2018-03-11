@@ -10,6 +10,7 @@ import org.eclipse.ocl.ParserException;
 
 import it.univaq.disim.business.calculations.InformationLoss;
 import it.univaq.disim.business.controller.ATLTransformationPerformer;
+import it.univaq.disim.business.datamodel.ChainResult;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.common.exceptions.MetaModelNotFoundException;
 import it.univaq.disim.common.exceptions.ReferenceNonExistingException;
@@ -20,22 +21,18 @@ public class Test {
 	
 	private static String baseResourcePath = "resources/running_example/";
 	private static String baseResultPath = "models/mutations/results/";
-	private static boolean PERFORM_TRANSFORMATIONS = true;
+	private static boolean PERFORM_TRANSFORMATIONS = false;
 	
-	private static String modelChain1;
-	private static float informationLossChain1;
-	private static float weightChain1;
-	private static String modelChain2;
-	private static float informationLossChain2;
-	private static float weightChain2;
-	private static String modelChain3;
-	private static float informationLossChain3;
-	private static float weightChain3;
+	
 	
 	
 	public static void main(String[] args) throws IOException, MetaModelNotFoundException, ReferenceNonExistingException, ParserException {
 //		String modelInstance_seed = baseResourcePath + 	"models/Sample-km3/sample-km3.xmi";
-		String modelInstance_seed = baseResourcePath + 	"models/mutations/KM3/KM3_complete.xmi";
+		String modelInstance_seed = baseResourcePath + 	"models/KM3_big_mutation.xmi";
+//		String modelInstance_seed = baseResourcePath + 	"models/mutations/KM3/KM3_complete.xmi";
+//		String modelInstance_seed = baseResourcePath + 	"models/KM3_seed.xmi";
+//		String modelInstance_seed = baseResourcePath + 	"models/KM3_graph.xmi";
+//		String modelInstance_seed = baseResourcePath + 	"models/KM3_test.xmi";
 //		String modelInstance_1 = baseResourcePath + 		"models/mutations/KM3_1.xmi";
 //		String modelInstance_2 = baseResourcePath + 		"models/mutations/KM3_2.xmi";
 //		String modelInstance_3 = baseResourcePath + 		"models/mutations/KM3_3.xmi";
@@ -50,52 +47,32 @@ public class Test {
 //		modelInstances.add(modelInstance_4);
 //		modelInstances.add(modelInstance_5);
 		
-		HashMap<String, Float> resultChain1 = new HashMap<String, Float>();
-		HashMap<String, Float> resultChain2 = new HashMap<String, Float>();
-		HashMap<String, Float> resultChain3 = new HashMap<String, Float>();
+		
+		ChainResult resultChain1 = new ChainResult();
+		ChainResult resultChain2 = new ChainResult();
+		ChainResult resultChain3 = new ChainResult();
+		
+	
 		
 		for (String model : modelInstances) {
-			resultChain1.put(model, (float) testChain1(model));
-			resultChain2.put(model, (float) testChain2(model));
-			resultChain3.put(model, (float) testChain3(model));
+			resultChain1 = testChain1(model);
+			resultChain2 = testChain2(model);
+			resultChain3 = testChain3(model);
 		}
-		
 		
 		System.out.println("RESULTS:");
 		System.out.println("CHAIN 1:");
-		for (Entry<String, Float> entry : resultChain1.entrySet()) {
-		    String key = entry.getKey();
-		    float value = (float) entry.getValue();
-		    System.out.println(key +" = " + value);
-		}
-		System.out.println("-------------------------------------------");
+		System.out.println(resultChain1.getModel() + " - "+ resultChain1.getInformationLoss()+" - "+resultChain1.getWeight() + " time: "+resultChain1.getExecutionTime()+" millisec ("+resultChain1.getExecutionTime()/1000+" sec)");
 		System.out.println("CHAIN 2:");
-		for (Entry<String, Float> entry : resultChain2.entrySet()) {
-		    String key = entry.getKey();
-		    float value = (float) entry.getValue();
-		    System.out.println(key +" = " + value);
-		}
-		System.out.println("-------------------------------------------");
+		System.out.println(resultChain2.getModel() + " - "+ resultChain2.getInformationLoss()+" - "+resultChain2.getWeight() + " time: "+resultChain2.getExecutionTime()+" millisec ("+resultChain2.getExecutionTime()/1000+" sec)");
 		System.out.println("CHAIN 3:");
-		for (Entry<String, Float> entry : resultChain3.entrySet()) {
-		    String key = entry.getKey();
-		    float value = (float) entry.getValue();
-		    System.out.println(key +" = " + value);
-		}
-		
-		
-		for (String model : modelInstances) {
-			testChain1(model);
-			testChain2(model);
-			testChain3(model);
-		}
-		
-		System.out.println(modelChain1 + " - "+ informationLossChain1+ " - "+weightChain1);
-		System.out.println(modelChain2 + " - "+ informationLossChain2+ " - "+weightChain2);
-		System.out.println(modelChain3 + " - "+ informationLossChain3+ " - "+weightChain3);
+		System.out.println(resultChain3.getModel() + " - "+ resultChain3.getInformationLoss()+" - "+resultChain3.getWeight() + " time: "+resultChain3.getExecutionTime()+" millisec ("+resultChain3.getExecutionTime()/1000+" sec)");
 	}
 	
-	public static float testChain1(String modelInstance) {
+	public static ChainResult testChain1(String modelInstance) {
+		
+		long inizio = System.currentTimeMillis();
+
 		
 		float informationLoss = 0;
 		float edgeWeight = 0;
@@ -186,17 +163,28 @@ public class Test {
 		System.out.println("Edge Weight: "+html2xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
-		modelChain1 = modelInstance;
-		informationLossChain1 = informationLoss;
-		weightChain1 = edgeWeight;
+//		modelChain1 = modelInstance;
+//		informationLossChain1 = informationLoss;
+//		weightChain1 = edgeWeight;
 		
-		return informationLoss;
+		ChainResult result = new ChainResult();
+		result.setInformationLoss(informationLoss);
+		result.setWeight(edgeWeight);
+		result.setModel(modelInstance);
+		
+		long fine = System.currentTimeMillis();
+		long time=(fine-inizio);
+		result.setExecutionTime(time);
+		
+		return result;
 	}
 	
 
 	
-	public static float testChain2(String modelInstance) {
+	public static ChainResult testChain2(String modelInstance) {
 		ATLTransformationPerformer perfomer = new ATLTransformationPerformer();
+		
+		long inizio = System.currentTimeMillis();
 		
 		float informationLoss = 0;
 		float edgeWeight = 0;
@@ -268,16 +256,26 @@ public class Test {
 		System.out.println("Edge Weight: "+html2xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
-		modelChain2 = modelInstance;
-		informationLossChain2 = informationLoss;
-		weightChain2 = edgeWeight;
+//		modelChain2 = modelInstance;
+//		informationLossChain2 = informationLoss;
+//		weightChain2 = edgeWeight;
+//		
+		ChainResult result = new ChainResult();
+		result.setInformationLoss(informationLoss);
+		result.setWeight(edgeWeight);
+		result.setModel(modelInstance);
 		
-		return informationLoss;
+		long fine = System.currentTimeMillis();
+		long time=(fine-inizio);
+		result.setExecutionTime(time);
+		
+		return result;
 	}
 	
-	public static float testChain3(String modelInstance) {
+	public static ChainResult testChain3(String modelInstance) {
 		ATLTransformationPerformer perfomer = new ATLTransformationPerformer();
 		
+		long inizio = System.currentTimeMillis();
 		float informationLoss = 0;
 		
 		System.out.println("KM3 -> XML");
@@ -294,11 +292,20 @@ public class Test {
 		System.out.println("Edge Weight: "+km32xml.getEdgeWeight());
 		System.out.println("------------------------------------------------------------");
 		
-		modelChain3 = modelInstance;
-		informationLossChain3 = informationLoss;
-		weightChain3 = km32xml.getEdgeWeight();
+//		modelChain3 = modelInstance;
+//		informationLossChain3 = informationLoss;
+//		weightChain3 = km32xml.getEdgeWeight();
 		
-		return informationLoss;
+		ChainResult result = new ChainResult();
+		result.setInformationLoss(informationLoss);
+		result.setWeight(km32xml.getEdgeWeight());
+		result.setModel(modelInstance);
+		
+		long fine = System.currentTimeMillis();
+		long time=(fine-inizio);
+		result.setExecutionTime(time);
+		
+		return result;
 	}
 	
 	public static void testAll(String modelInstance) {

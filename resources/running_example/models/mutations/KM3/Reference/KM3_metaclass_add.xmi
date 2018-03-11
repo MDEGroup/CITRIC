@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_SoqzOmk0lZ">
-  <contents location="QdE1m" name="package_6fwFvfVJzT" package="//@contents.0">
-    <contents xsi:type="km3:Class" name="class_kR2l0aLkA0" package="//@contents.0"/>
-    <contents xsi:type="km3:Reference" name="reference_2gcB4Y3t2f" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.1"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_oXUooDkv06">
+  <contents location="RyXfV" name="package_PEPOKVuAbp" package="//@contents.0">
+    <contents xsi:type="km3:Class" name="class_JPW7JROcEu" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_XobbTLcsZB" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0" opposite="//@contents.0/@contents.1"/>
   </contents>
 </km3:Metamodel>

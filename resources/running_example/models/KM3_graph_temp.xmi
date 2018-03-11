@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<km3:Metamodel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:km3="http://www.eclipse.org/gmt/2005/KM3"
+    location="KM3 Graph">
+  <contents
+      name="Main Package Content"
+      package="//@contents.0">
+    <contents
+        xsi:type="km3:DataType"
+        name="String Data Type"
+        package="//@contents.0"/>
+    <contents
+        xsi:type="km3:Class"
+        name="Graph"
+        package="//@contents.0"
+        isAbstract="true"/>
+    <contents
+        xsi:type="km3:Class"
+        name="Node"
+        package="//@contents.0"
+        supertypes="//@contents.0/@contents.1">
+      <structuralFeatures
+          xsi:type="km3:Attribute"
+          name="name"
+          type="//@contents.0/@contents.0"/>
+    </contents>
+    <contents
+        xsi:type="km3:Class"
+        name="Edge"
+        package="//@contents.0"
+        supertypes="//@contents.0/@contents.1">
+      <structuralFeatures
+          xsi:type="km3:Attribute"
+          name="name"
+          package="//@contents.0"
+          type="//@contents.0/@contents.0"/>
+      <structuralFeatures
+          xsi:type="km3:Reference"
+          name="sourceNode"
+          package="//@contents.0"
+          lower="1"
+          upper="1"
+          type="//@contents.0/@contents.2"/>
+      <structuralFeatures
+          xsi:type="km3:Reference"
+          name="targetNode"
+          package="//@contents.0"
+          lower="1"
+          upper="1"
+          type="//@contents.0/@contents.2"/>
+    </contents>
+  </contents>
+</km3:Metamodel>

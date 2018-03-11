@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_hNpftNrmxn">
-  <contents location="GuC4d" name="package_UALwjM6FVN" package="//@contents.0">
-    <contents xsi:type="km3:Class" name="class_2KZ54RqcAi" package="//@contents.0">
-      <structuralFeatures xsi:type="km3:Attribute" name="attribute_OGNzx" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_qHOPQknsRa">
+  <contents location="2C1pV" name="package_nCwqxuE65v" package="//@contents.0">
+    <contents xsi:type="km3:Class" name="class_qWzF0DUs7i" package="//@contents.0">
+      <structuralFeatures xsi:type="km3:Attribute" name="attribute_Ec2Mo" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
     </contents>
   </contents>
 </km3:Metamodel>
