@@ -1,712 +1,207 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
-  <ecore:EPackage name="Big Package Content">
+  <ecore:EPackage name="Graph Package Content">
     <eClassifiers xsi:type="ecore:EDataType" name="String"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_rN7wk7m5Ba">
-      <eOperations name="parameter_DPB1J8SVVG" eType="/0/@eClassifiers.0">
-        <eParameters name="parameter_khMhvM59gk" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_LyzfNkpt5B" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_qyOh7mhnl3" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_JwTIBKyCXl" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_af4WEqgzWC" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_XYz7U8yAjP" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_u764oOD8Bw" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_8PkZhfbO5d" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_2hPggFTx73" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_FEXTPmaDRz" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_wX83CPAyBd" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_4YoU9dDLmf" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_VTvRhdXmYy" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_U7uWJkCPeu" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_1pyph6vfdI" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_0AFywtlayl" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_ZMqgwyQ7iI" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_8xnvu5kqUP" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_LLaVzidZTM" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_qmOkTA42sP" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_rE6OKusnFl" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_grOWyPfu0I" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_WfGOlOQQdq" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_0Mx89J4hpZ" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_FYMAsW95xq" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_aQaf2zLNgU" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_SiIUdnrx1y" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_zpEIZPZkRY" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_zYvjDgawy7" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_0o85uMuPul" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_kajuGwiuD1" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_SI0wCJ89fL" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_qduI7DO3Ci" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_CQ65eM0p8J" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_o1t8U3gR5m" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_eUYLuipeeK" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_7IrBTqrIiR" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_1DqXu5X948" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_jXrczocDbl" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_8aHpP112EE" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_ngZr9yGsfS" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_JJeO8EY4MC" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_G4RJT5HY3j" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_NKHM1KXx6X" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_EVKcXDgldM" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_hxbjvzBqGO" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_fK6re6xyQU" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_2KvfoegAmX" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_cJr6NISpOT" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_ZJIq0S6imv" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_kVO6MhmVgo" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_aWo4U5YKVB" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_zU2ZAmxEyL" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_51jr4DhNod" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_Bhs2LDmuE2" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_GFb7NQ4OKM" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_bHHqquZIGg" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_2MQXCV8iC1" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_s7VnsAVsYK" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_9HImKA6xI2" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_uEzNEgKoHA" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_0CiKN2UpF5" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_scXVw7Huky" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_b26Tzb4dQ0" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_MgQaOnA87W" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_cnVnL4XFnc" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_PtkWFiiBLc" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_1yyxlhB6TM" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_cOme7Sy2Xv" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_xEOAbvcx8V" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_ANAQ5n4JZN" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_IQt1kFWwL2" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_kfWlCtja9K" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_vSeyvmZBng" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_nE9HOowrN6" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_DgyrkQj47E" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_9hnVH0HzS6" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_SMDzRma560" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_mzLjIaSu9c" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_dnZElg1unG" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_5xsNYAKCn6" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_Ig4eHo4SGG" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_g5nlougcgs" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_e2y94oXOmE" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_1ukjjjMqjK" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_KsDeVdNumv" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_LRsHGR3qid" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_ILZ62KgY5P" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_NHvSABj2aj" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_DSsVMk0c22" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_r5cevDOSXT" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_mFpzIYLaMI" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_l3yqEn5Xo9" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_9w2N98iXmi" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_MIQXAUgApl" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_zEAkAksuws" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_0hIJA8MiGI" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_SrOZXDerU4" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_4fCdA7XAvP" eType="/0/@eClassifiers.0"/>
-        <eParameters name="parameter_yvOWQW2ie9" eType="/0/@eClassifiers.0"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Graph" abstract="true">
+      <eOperations name="operationForGraph1()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph2()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph3()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph4()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph5()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph6()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph7()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph8()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph9()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph10()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph11()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph12()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph13()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph14()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph15()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph16()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph17()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph18()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph19()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph20()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph21()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph22()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph23()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph24()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph25()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph26()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph27()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph28()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph29()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph30()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph31()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph32()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph33()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph34()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph35()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph36()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph37()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph38()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph39()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph40()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph41()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph42()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph43()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph44()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph45()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph46()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph47()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph48()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph49()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph50()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph51()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph52()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph53()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph54()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph55()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph56()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph57()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph58()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph59()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph60()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph61()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph62()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph63()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph64()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph65()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph66()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph67()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph68()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph69()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph70()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph71()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph72()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph73()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph74()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph75()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph76()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph77()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph78()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph79()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph80()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph81()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph82()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph83()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph84()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph85()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph86()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph87()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph88()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph89()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph90()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph91()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph92()" eType="/0/@eClassifiers.1"/>
+      <eOperations name="operationForGraph93()" eType="/0/@eClassifiers.1"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Node" eSuperTypes="/0/@eClassifiers.1">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Edge" eSuperTypes="/0/@eClassifiers.1">
+      <eOperations name="getName" eType="/0/@eClassifiers.0">
+        <eParameters name="parameterForGraph1()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph2()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph3()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph4()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph5()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph6()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph7()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph8()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph9()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph10()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph11()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph12()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph13()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph14()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph15()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph16()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph17()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph18()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph19()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph20()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph21()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph22()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph23()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph24()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph25()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph26()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph27()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph28()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph29()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph30()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph31()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph32()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph33()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph34()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph35()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph36()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph37()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph38()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph39()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph40()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph41()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph42()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph43()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph44()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph45()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph46()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph47()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph48()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph49()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph50()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph51()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph52()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph53()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph54()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph55()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph56()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph57()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph58()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph59()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph60()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph61()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph62()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph63()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph64()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph65()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph66()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph67()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph68()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph69()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph70()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph71()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph72()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph73()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph74()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph75()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph76()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph77()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph78()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph79()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph80()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph81()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph82()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph83()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph84()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph85()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph86()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph87()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph88()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph89()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph90()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph91()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph92()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph93()" eType="/0/@eClassifiers.0"/>
+        <eParameters name="parameterForGraph94()" eType="/0/@eClassifiers.0"/>
       </eOperations>
-      <eOperations name="parameter_xmvqUjUdNN" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_6OlQBDkyh3" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_UCO9e7dTcA" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_rgM1AvOrK8" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_1WM3YQHUlD" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Znamq1B2Hz" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_CkVVjGrniY" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_fUo5T5HM81" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_ozdslq7cI9" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_BDkbW55z25" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_B276Xp5jKI" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_vrgrtLnszx" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_WRZk5UEmpY" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_hq79xeKieG" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_rYAmUcWnZI" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_aKn1mcXUeM" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_acVCXgQ1TQ" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_xtUBOusu0l" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_IY9LNn9LtS" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_e6yIKyUuFM" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_wN3z188JP5" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_zUabcMlgsV" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_s7sd6RERnC" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Th4ERIXcDT" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Bjh0bykVPA" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_xayzdxqRXm" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_OtUCDCUVNK" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_gdqGZrA5MQ" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_dWZYRXMDe5" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_xnCUGEuQvL" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_0FYCgcrrdE" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_28I5JaTpKc" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_kkJV0xrtgp" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_93no5CGOz9" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_DjxIuUhlKo" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_84ZmByKDJb" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_1hTRPgmHff" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_hPqMbOdTva" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_pBK59rkqIA" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_2DJmzGfHCu" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_gBmEbDa1C7" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_q8NQQkLQ1U" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_GjI1KpLsTq" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_XqioEFTiVD" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_YelZYmGt9u" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_sGwSXZyjvS" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_4tiNnnZ4CN" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_JDCgFmjoUi" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_pvf0YE1n0f" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_TH9BMgAyzj" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Dtr334PSNW" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_glJGE7M0kA" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_bgw9wOZZiH" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_h8ev5TaOWk" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_5WAP24kXlx" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_bFqFqbuImx" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_xzK6zkkomc" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_pIQfJTxzhZ" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_axsfiW6Ll0" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_35Qnc9CMzp" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_6sf2cE1RPM" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_OpSGK0ejUF" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_EvhcmmQXwd" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_F4bHqntlAA" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_yTLpIJWg9G" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_lk9wlWlKal" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Nyz0mSBWZT" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_MNRVZQqsP6" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_zhk1NylH47" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_jYpRrEvWf0" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_YN2kWDD6zE" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Kb2lxYVZQL" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_g0T8OEIvwq" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_2f4uu2l8eL" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Q46E6iev2r" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Bl3DZQXaFg" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_JXt1LtvTrS" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_kS4tpSENbw" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_wW8RmpUhua" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_FlhaphNtZl" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_BwjW8kQdAj" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_A0ambUqeug" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_WaSHENDJIb" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_s5R6YBBAn1" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_yEL3jhw77g" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_O94umlh4WP" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_2Z7psUuMYa" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_CETW0LhJ2s" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_XmMmVqrDPr" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_iOfvj636JV" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_FKLE83cvk8" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_BjWN2uTmMM" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_GpkF0jsBtj" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_n3iuUbDg3N" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_ioA0umh8vO" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_80yfYHhmpt" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_ZMzMHtaHas" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_IjIr5MsjPC" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_Bzny9WS6zj" eType="/0/@eClassifiers.0"/>
-      <eOperations name="parameter_1jYlcYCA5n" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_HjIMU" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_VjwAu" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_jGyRs" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_PEDDb" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_iUO3E" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_l0P8n" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_QDxan" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_eN3Rv" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_oTDyH" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_5oTn5" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_5IvUp" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_yVuRT" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_BndNl" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_8OOOE" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_BsTOT" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_edfce" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_5gPQY" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_p0Mdh" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_zSTq5" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_8pBd7" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_3eAhz" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_uUoQ6" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_NWN3w" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_JMptQ" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_uQyEO" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Bv8Pg" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_h8jIY" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_OyxYF" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_C6L4G" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Twdcj" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_xaIKB" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_ZF84K" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_bLajA" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_fGbYq" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_NIcKF" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_KBT7V" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_LgF6L" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Xu929" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_JNvxc" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_WBepC" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_i8To2" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_v3pns" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_2LIEB" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_HjtTU" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_7mvof" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_RH6mL" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_QKAEQ" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_0OV7M" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_3pxVR" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_hIO3C" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Em7Ky" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_FJ3wl" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Ki6N4" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_xEONx" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_8sAef" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_gYdfD" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_FdKBH" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_GbC0h" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_34uRT" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_TM83f" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_ECupM" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_w97iq" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_0CXrw" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_1Uvxo" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Go8Bq" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_FTHlH" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_K0k30" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_EDVWM" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_fLTbr" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_eQ3Tb" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_UgVb2" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_2o9BD" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_v2Lxi" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_N768O" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_KGnIE" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_KAnuI" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_GvVBv" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_cItt1" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_7ata6" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_pgc0q" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_OZCVe" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_2QVNB" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_HhkUR" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_yXRNZ" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_EFYnY" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_8YAlS" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_sysHo" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_j79VI" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_UejZo" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_Vy7cy" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_zLnBH" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_c4i4M" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_bZOPW" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_qCWTo" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_C9B7t" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_FQR19" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_wMWiY" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_LQrQx" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_tMsFS" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attribute_uNStp" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+      <eOperations name="setName" eType="/0/@eClassifiers.0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="sourceNode" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.3"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="targetNode" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.3"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_GywgJyqO5Z">
-      <eLiterals name="enum_literal_i8RBFxyC72" value="1"/>
-      <eLiterals name="enum_literal_V59SNbQ9Da" value="2"/>
-      <eLiterals name="enum_literal_fjPCFWpatf" value="3"/>
-      <eLiterals name="enum_literal_P2KCdMn0Os" value="4"/>
-      <eLiterals name="enum_literal_KEUf6PeBk2" value="5"/>
-      <eLiterals name="enum_literal_tuc1MdLfkV" value="6"/>
-      <eLiterals name="enum_literal_KbmU2KqlfO" value="7"/>
-      <eLiterals name="enum_literal_QfPAaOOCeb" value="8"/>
-      <eLiterals name="enum_literal_zA03CqrzBb" value="9"/>
-      <eLiterals name="enum_literal_DrnElHhZ3w" value="10"/>
-      <eLiterals name="enum_literal_M4hM8pQOeJ" value="11"/>
-      <eLiterals name="enum_literal_JcuywgUzgk" value="12"/>
-      <eLiterals name="enum_literal_RlSFYwYSMZ" value="13"/>
-      <eLiterals name="enum_literal_AKGx1MQxji" value="14"/>
-      <eLiterals name="enum_literal_zoeF3kWR7W" value="15"/>
-      <eLiterals name="enum_literal_rIVePSQGwx" value="16"/>
-      <eLiterals name="enum_literal_zteqrqhpY2" value="17"/>
-      <eLiterals name="enum_literal_fN66J81o6u" value="18"/>
-      <eLiterals name="enum_literal_rYErGOXiG9" value="19"/>
-      <eLiterals name="enum_literal_PrPGpNADfC" value="20"/>
-      <eLiterals name="enum_literal_OGYiMog3Vq" value="21"/>
-      <eLiterals name="enum_literal_p9fAXUMRYI" value="22"/>
-      <eLiterals name="enum_literal_3p84m0vyww" value="23"/>
-      <eLiterals name="enum_literal_UCLrSay52g" value="24"/>
-      <eLiterals name="enum_literal_3zGEezlIgD" value="25"/>
-      <eLiterals name="enum_literal_BuJ0BH3wNz" value="26"/>
-      <eLiterals name="enum_literal_9UDRSZW79M" value="27"/>
-      <eLiterals name="enum_literal_FDqOcCKFgk" value="28"/>
-      <eLiterals name="enum_literal_Qo8MVcI7lz" value="29"/>
-      <eLiterals name="enum_literal_8u5Jmx8P8o" value="30"/>
-      <eLiterals name="enum_literal_3ZphzH3ZXM" value="31"/>
-      <eLiterals name="enum_literal_WrxJ93ItcR" value="32"/>
-      <eLiterals name="enum_literal_4TBfwpjVl9" value="33"/>
-      <eLiterals name="enum_literal_dNQjRq4lv9" value="34"/>
-      <eLiterals name="enum_literal_d6Pger3m0J" value="35"/>
-      <eLiterals name="enum_literal_pjBHEwVQqf" value="36"/>
-      <eLiterals name="enum_literal_7gfMfdAWFY" value="37"/>
-      <eLiterals name="enum_literal_UWQaIK7w21" value="38"/>
-      <eLiterals name="enum_literal_NP5Vct73GD" value="39"/>
-      <eLiterals name="enum_literal_a5LnIPaheW" value="40"/>
-      <eLiterals name="enum_literal_oDfLaXPah5" value="41"/>
-      <eLiterals name="enum_literal_Ww5dLBtRoZ" value="42"/>
-      <eLiterals name="enum_literal_FLhhQ7zSmq" value="43"/>
-      <eLiterals name="enum_literal_u701BlwTtJ" value="44"/>
-      <eLiterals name="enum_literal_T0d9y9CZ7T" value="45"/>
-      <eLiterals name="enum_literal_UKvQ81caK9" value="46"/>
-      <eLiterals name="enum_literal_srqgCHT0ux" value="47"/>
-      <eLiterals name="enum_literal_81VnqcZiGR" value="48"/>
-      <eLiterals name="enum_literal_Kz25sr8kRX" value="49"/>
-      <eLiterals name="enum_literal_GuwPQlQtbW" value="50"/>
-      <eLiterals name="enum_literal_R4Ah366Eur" value="51"/>
-      <eLiterals name="enum_literal_Jjd9AWPQv1" value="52"/>
-      <eLiterals name="enum_literal_PmUzyCWb67" value="53"/>
-      <eLiterals name="enum_literal_VSj4crzcXF" value="54"/>
-      <eLiterals name="enum_literal_C5fJ4Q1OzJ" value="55"/>
-      <eLiterals name="enum_literal_BP30M3doch" value="56"/>
-      <eLiterals name="enum_literal_9U7YUQPai7" value="57"/>
-      <eLiterals name="enum_literal_53rKkIIdVK" value="58"/>
-      <eLiterals name="enum_literal_CCOfGhLcT1" value="59"/>
-      <eLiterals name="enum_literal_3jkfnCTM6k" value="60"/>
-      <eLiterals name="enum_literal_iJmMnOJdWW" value="61"/>
-      <eLiterals name="enum_literal_rOViGDGLyk" value="62"/>
-      <eLiterals name="enum_literal_OUTj3QEzQj" value="63"/>
-      <eLiterals name="enum_literal_qBkOguTfey" value="64"/>
-      <eLiterals name="enum_literal_4JxJz9tzey" value="65"/>
-      <eLiterals name="enum_literal_aCon1uqN1X" value="66"/>
-      <eLiterals name="enum_literal_xEKHcY5Fpq" value="67"/>
-      <eLiterals name="enum_literal_898BOJBEPK" value="68"/>
-      <eLiterals name="enum_literal_MJmqSHqHxI" value="69"/>
-      <eLiterals name="enum_literal_7oAiZVzFti" value="70"/>
-      <eLiterals name="enum_literal_GvyjFKgGua" value="71"/>
-      <eLiterals name="enum_literal_AshpabAWPc" value="72"/>
-      <eLiterals name="enum_literal_9fhkqPwp60" value="73"/>
-      <eLiterals name="enum_literal_raItvUMSpX" value="74"/>
-      <eLiterals name="enum_literal_UC5zJ0nUDR" value="75"/>
-      <eLiterals name="enum_literal_yeSUlXhEY9" value="76"/>
-      <eLiterals name="enum_literal_AiBEtv77vY" value="77"/>
-      <eLiterals name="enum_literal_QD43HwwjPC" value="78"/>
-      <eLiterals name="enum_literal_SFDxa4FIS4" value="79"/>
-      <eLiterals name="enum_literal_3vVOQ5kFZH" value="80"/>
-      <eLiterals name="enum_literal_Oyolje2VfK" value="81"/>
-      <eLiterals name="enum_literal_SlIzkZj2Ld" value="82"/>
-      <eLiterals name="enum_literal_7osMASNtJm" value="83"/>
-      <eLiterals name="enum_literal_j3sxFS85OQ" value="84"/>
-      <eLiterals name="enum_literal_xXAhG05w45" value="85"/>
-      <eLiterals name="enum_literal_It59besr4W" value="86"/>
-      <eLiterals name="enum_literal_28paut34ER" value="87"/>
-      <eLiterals name="enum_literal_vQqQL73osz" value="88"/>
-      <eLiterals name="enum_literal_dFAO7fKxOw" value="89"/>
-      <eLiterals name="enum_literal_yZRC8GBVrs" value="90"/>
-      <eLiterals name="enum_literal_lGpJ7cjvQ5" value="91"/>
-      <eLiterals name="enum_literal_jcIv4lD5lK" value="92"/>
-      <eLiterals name="enum_literal_oqgOvDlfbI" value="93"/>
-      <eLiterals name="enum_literal_8mdJtzxj0B" value="94"/>
-      <eLiterals name="enum_literal_Nt9NSnWsib" value="95"/>
-      <eLiterals name="enum_literal_Nqtw5lyO7o" value="96"/>
-      <eLiterals name="enum_literal_BFHYoppuMV" value="97"/>
-      <eLiterals name="enum_literal_0yF5APfwyH" value="98"/>
-      <eLiterals name="enum_literal_Xv9coRDM5b" value="99"/>
-      <eLiterals name="enum_literal_kdBbnVkT6z" value="100"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="class_hwZyCL8Xxp"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ZBL4SA1HJP"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_Sg2ALcI4wx"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_b9CmDrXJ6k"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_L4JJ1f80L9"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_CNsfkInDZU"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_IWefaFQlTT"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ZDlPf2L7De"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_1euXYZ4LMK"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ffJIWq42qz"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_hlZJyiZStA"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_83pw0ujtyK"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_k4icMYDTbY"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_cMvVqgS3iF"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_wM8lFf6wU1"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_91B4m0d6eq"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_mLHklhjcLc"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_5oSqPuinHh"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_eNPxbtUqW8"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_cbKatrTSju"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_O8gOGuDWBs"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_5VF2RG9BBc"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_RDueR84kgU"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_gEKJx9gzkI"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_QPpSaNiE00"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_al3dbEmAq7"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_cIBguy3Pn0"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_nRK1qe0NJE"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_qm9XZuH2Z7"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_JlnPRFL77y"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_nqEp2Ak0il"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_G6UpJTKdwz"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_qgPuUM5qzD"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_BY0RZTklGx"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_NahmMKmQ4i"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_qEsJldAo63"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_KZjGgJ3vgk"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_uzLfXIqFOA"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_vH5PJIhwiJ"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_vhsujdmm3O"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_n08w2YA4Ud"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_oCeIdcuNXt"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_3awGRsPw2w"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_lhqjuv1vNR"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_18qxiIwoIJ"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_NRNjuhCurb"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_OnxXspSHVe"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_XLKBWwkoGr"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_HTklP2IpSH"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_wvT8ZCU3PP"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_nWfHteVazR"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_Ua7PpsNeFj"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_fY1KHDOKIm"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_tLJNJzozdX"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_bEAkLwA4vF"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_lATfZTfLTx"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_zW9EKPn5l0"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_KcttLcnAJ4"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_dmcudBshFy"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_X3foG9tCWz"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_ZIC566FICJ"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_KgPdYJ6RPr"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_B3HYm0SuX2"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ePArJ4sBIQ"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_lZU5aNfNVY"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_0M1zSj3Rq2"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_dJPuG1e3h5"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_98oTyWLTxp"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_Q7xjlGdGIF"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_qGfEaGyzl5"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_lKm3aOoN4S"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_0zxAq9xyAq"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_maazAjxUp2"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_eI24T6sM1v"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_DYFUinEJOR"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_GsjmC4jr0b"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_x3KWhLkIQl"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_jMCUUUTuWR"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_xZ8bw9m48C"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_LhJe57Jhfw"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_Vhxu9x2Efc"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_5Txx89nsA2"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_Jl0dXD9zUf"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_XE25PT96lT"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_dohwDVGVjs"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_WyTUsmaCk2"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_A9IflQICut"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ppYZi6R9U3"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_BFQOWYWIpC"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_VYhruVEUMR"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_MXOcAzGJRy"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_GWDIp6kzEM"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_eLsVmZVziv"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_Z28G0HyRXd"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_8JW9V8E3nH"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_CJVjoewfTr"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_sokPSodTfS"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_LZ2CySkD24"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_palLvoLIGR"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_om6hx0cLy7"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_hGtL3OhnaY"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_dDsyjT4VIa"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_iFsK9R5ccB"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_NsR4zWTKUV"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_fwO97vPavs"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_FYhmDr1UpG"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_LUjaZ6Y2DL"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_cmUJ7gFw1M"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_b3IJvxq6bq"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_lV8jWD8GeH"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_bLzcsRjiBw"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_MKP48aUXN8"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_1ZCwqHQhpo"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_3JYhZ1DZXY"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_yLnTvgSdcx"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_elm3OVNejr"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_ZlrhvQZ0jT"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ogJdsWep9X"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_X6zicJ0osq"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_la5yRQd0g3"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_KT7YAa1lc3"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_6SWtAshJYh"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_tGG4MDOmDS"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_kpfaWDHL6Y"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_2z9voAwh6T"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_PJM9cudBjA"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_CqL6RUd3Cn"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_pUoAqi980m"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_M2Xi5ZQOSJ"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_0LN33wLcmh"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_2FbMhyC2rS"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_r5biYN87rB"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_Li9Z16Ns2i"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_0vCo1Nymob"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_ciXosfcuHD"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_gB1n4rPVYm"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_uhyjOb8zIK"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_BdCgE08nr5"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_DxKf4WTFyv"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_Ta01a5Aaqi"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_UGjxWRhnTA"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_2hM3rSL3vw"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_rxrj3fr2ym"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_MYDjoNPGrO"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_o5FiWspkie"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_nReJlmSXmA"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_G7ogWRPjDq"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_Kte0fB3vlS"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_0gkE09s06I"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_3zXBkYFRSJ"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_bDNalP1lV4"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_GWSkpoxDzo"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_Vu35urbakF"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_urE8hq3fEz"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_9X3AUxaJtq"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_aSTRp8UELJ"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_KnmjFLal7w"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_yHcIPdLGJ9"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_dai23AAvLH"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ckeBGsdQzm"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_5cDpmrGp1D"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_Ht7sF3agIA"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_U8Ld9fOTkT"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_7aW3UH4LYe"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_gDevepzSQs"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_ChJqe0MFgY"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_jElsb25Wdg"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_abzCujAR8q"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_G0a73RmeNW"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_zfLnNBgxTe"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_LS6Xm3A8mA"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_vAoJJ9ulzc"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_eO9aqRiEW3"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_Icc2aC4wxt"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_IOtgHmoiNv"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_d0ZgJ3Qxwx"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_3jaS2MD2di"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_jvaK8XQOp3"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_TNj5bzYnq0"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_wKUXP4xjmG"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_plnxfncKmE"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_cCQIIBq3Xh"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_a3cReTy4uN"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_V2tx5GAxVL"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_ZjrLSQLNHo"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_kgYQH3Wyii"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_XyGmAZQTdX"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_BrHcy98yyj"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_ZGPxE6ClJa"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_VONb6V0bkj"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_lyhnvdPQ36"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_qEwvvhuEOw"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_zOahPPgzLz"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_XJrkDF5OtF"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_32ESNMOEN7"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_KNC9MPaqTB"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_5pW3zCaTEk"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_aCJlGOQcyv"/>
-    <eClassifiers xsi:type="ecore:EClass" name="class_wpxydbCCTc"/>
-    <eClassifiers xsi:type="ecore:EEnum" name="enumeration_UVJoYRfzs4"/>
   </ecore:EPackage>
-  <ecore:EReference name="reference_Ue85rr9L7W" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/1"/>
-  <ecore:EReference name="reference_gQM9mNh5Zf" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/2"/>
-  <ecore:EReference name="reference_CbU8Z4LXHf" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/3"/>
-  <ecore:EReference name="reference_Vocn5hgZn3" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/4"/>
-  <ecore:EReference name="reference_rVCJGK6m7G" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/5"/>
-  <ecore:EReference name="reference_VP9Vh4fHzB" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/6"/>
-  <ecore:EReference name="reference_0FeZBziVyy" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/7"/>
-  <ecore:EReference name="reference_0mARVOHxrg" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/8"/>
-  <ecore:EReference name="reference_NVpuTdXSDq" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/9"/>
-  <ecore:EReference name="reference_U1IXjHD3rw" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/10"/>
-  <ecore:EReference name="reference_0pT0Nyhn4O" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/11"/>
-  <ecore:EReference name="reference_s9fwWNmp5S" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/12"/>
-  <ecore:EReference name="reference_nxTFnDnoxh" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/13"/>
-  <ecore:EReference name="reference_tg7oegYOtA" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/14"/>
-  <ecore:EReference name="reference_prT49RwPjX" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/15"/>
-  <ecore:EReference name="reference_wB7ujLS1Lc" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/16"/>
-  <ecore:EReference name="reference_WylKogpMlv" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/17"/>
-  <ecore:EReference name="reference_cKQTgTSvaB" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/18"/>
-  <ecore:EReference name="reference_jTQw9XRTur" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/19"/>
-  <ecore:EReference name="reference_lZYF7wh3Or" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/20"/>
-  <ecore:EReference name="reference_igdTMuoYuu" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/21"/>
-  <ecore:EReference name="reference_Uwy7lGO9ix" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/22"/>
-  <ecore:EReference name="reference_qj51luSVOT" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/23"/>
-  <ecore:EReference name="reference_Ab5wsvs140" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/24"/>
-  <ecore:EReference name="reference_KH3wvFpXv4" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/25"/>
-  <ecore:EReference name="reference_ZssTcnuAWR" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/26"/>
-  <ecore:EReference name="reference_zsHzMPBFKp" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/27"/>
-  <ecore:EReference name="reference_mS0YE70iC4" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/28"/>
-  <ecore:EReference name="reference_kVM9LA38tq" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/29"/>
-  <ecore:EReference name="reference_kHLMffHn8P" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/30"/>
-  <ecore:EReference name="reference_fWtxiPMEHC" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/31"/>
-  <ecore:EReference name="reference_RxiPTors1x" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/32"/>
-  <ecore:EReference name="reference_Im5LcTH06r" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/33"/>
-  <ecore:EReference name="reference_BpzEQqBVfK" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/34"/>
-  <ecore:EReference name="reference_lxQIhHB4yL" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/35"/>
-  <ecore:EReference name="reference_Yko0maVYM6" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/36"/>
-  <ecore:EReference name="reference_FJZArOHURq" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/37"/>
-  <ecore:EReference name="reference_FxLrkPFsuw" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/38"/>
-  <ecore:EReference name="reference_VNMuOgwCMR" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/39"/>
-  <ecore:EReference name="reference_eKjkhFXCkX" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/40"/>
-  <ecore:EReference name="reference_NvwcOhRLSw" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/41"/>
-  <ecore:EReference name="reference_487tvBtgYx" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/42"/>
-  <ecore:EReference name="reference_fARKDBdhSA" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/43"/>
-  <ecore:EReference name="reference_p0Ub7qcRig" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/44"/>
-  <ecore:EReference name="reference_McjQnUiWv8" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/45"/>
-  <ecore:EReference name="reference_afylb0cENk" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/46"/>
-  <ecore:EReference name="reference_yrNKYtx4vQ" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/47"/>
-  <ecore:EReference name="reference_RWeD8rEPn2" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/48"/>
-  <ecore:EReference name="reference_OaoVnIYVBx" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/49"/>
-  <ecore:EReference name="reference_xO9O59xVBF" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/50"/>
-  <ecore:EReference name="reference_KKVqV5DVsx" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/51"/>
-  <ecore:EReference name="reference_9MIXPJdw0G" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/52"/>
-  <ecore:EReference name="reference_OuNAYwn9zu" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/53"/>
-  <ecore:EReference name="reference_Y4aHLMBXbM" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/54"/>
-  <ecore:EReference name="reference_qcf7xdegvv" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/55"/>
-  <ecore:EReference name="reference_txQHgiLPVu" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/56"/>
-  <ecore:EReference name="reference_W9x1KvMODf" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/57"/>
-  <ecore:EReference name="reference_lqKrv0tX1f" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/58"/>
-  <ecore:EReference name="reference_SeyBpr2JrI" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/59"/>
-  <ecore:EReference name="reference_N1RrZy0wVS" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/60"/>
-  <ecore:EReference name="reference_0sKFoCOZTm" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/61"/>
-  <ecore:EReference name="reference_CzEySzo5iq" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/62"/>
-  <ecore:EReference name="reference_1seiGmEIq8" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/63"/>
-  <ecore:EReference name="reference_BANFtcTpZd" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/64"/>
-  <ecore:EReference name="reference_1O0mLYMvyX" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/65"/>
-  <ecore:EReference name="reference_F03gzx6eqT" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/66"/>
-  <ecore:EReference name="reference_Yf6e1RvSSE" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/67"/>
-  <ecore:EReference name="reference_2cx9EZ5QJC" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/68"/>
-  <ecore:EReference name="reference_G6vh0ylOZR" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/69"/>
-  <ecore:EReference name="reference_4ncI0SKlvl" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/70"/>
-  <ecore:EReference name="reference_BqD2UcnL8A" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/71"/>
-  <ecore:EReference name="reference_bjTFfIXTt0" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/72"/>
-  <ecore:EReference name="reference_EsQyPyg2fK" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/73"/>
-  <ecore:EReference name="reference_OVUaAD6gD3" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/74"/>
-  <ecore:EReference name="reference_9kDYTBs2QX" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/75"/>
-  <ecore:EReference name="reference_ifnIAMQhMN" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/76"/>
-  <ecore:EReference name="reference_iL3grhagup" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/77"/>
-  <ecore:EReference name="reference_UmQqyk0SiG" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/78"/>
-  <ecore:EReference name="reference_3LLdXTVlvu" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/79"/>
-  <ecore:EReference name="reference_nlp7OrIRK2" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/80"/>
-  <ecore:EReference name="reference_jVEgIRgCmx" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/81"/>
-  <ecore:EReference name="reference_82am5pSNrO" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/82"/>
-  <ecore:EReference name="reference_cvSHKkWjNG" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/83"/>
-  <ecore:EReference name="reference_E5BNutyxmo" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/84"/>
-  <ecore:EReference name="reference_clCirOkxPu" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/85"/>
-  <ecore:EReference name="reference_UlsLmcEjJA" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/86"/>
-  <ecore:EReference name="reference_HXVDvKyrGv" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/87"/>
-  <ecore:EReference name="reference_AS7r98K7W0" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/88"/>
-  <ecore:EReference name="reference_IZG6mlGsss" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/89"/>
-  <ecore:EReference name="reference_QG5qjB2P2G" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/90"/>
-  <ecore:EReference name="reference_CsPc3hRZDZ" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/91"/>
-  <ecore:EReference name="reference_uSAREGEA6E" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/92"/>
-  <ecore:EReference name="reference_OjdLNZnblu" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/93"/>
-  <ecore:EReference name="reference_B7uVtB4w8u" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/94"/>
-  <ecore:EReference name="reference_o0HXMt3tMz" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/95"/>
-  <ecore:EReference name="reference_3Fbm1bbH9G" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/96"/>
-  <ecore:EReference name="reference_sOgfXNzY0T" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/97"/>
-  <ecore:EReference name="reference_AJJL0SLis3" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/98"/>
-  <ecore:EReference name="reference_3nYcAh9y3s" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/99"/>
-  <ecore:EReference name="reference_g2xec4jCg9" lowerBound="1" upperBound="1" eType="/0/@eClassifiers.0" eOpposite="/100"/>
+  <ecore:EPackage name="Operations"/>
 </xmi:XMI>

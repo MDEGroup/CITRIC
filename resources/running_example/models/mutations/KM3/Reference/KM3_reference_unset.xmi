@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_TfJC5wtohc">
-  <contents location="bI4vH" name="package_fo03TaPyQr" package="//@contents.0">
-    <contents xsi:type="km3:Class" name="class_98TIDYPXGd" package="//@contents.0"/>
-    <contents xsi:type="km3:Reference" name="reference_gru3yqWV9O" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_DNR221eti4">
+  <contents location="sp3t4" name="package_sFqcstFPRG" package="//@contents.0">
+    <contents xsi:type="km3:Class" name="class_rScyVO7CDE" package="//@contents.0"/>
+    <contents xsi:type="km3:Reference" name="reference_wDKImXwZTV" package="//@contents.0" lower="1" upper="1" type="//@contents.0/@contents.0"/>
   </contents>
 </km3:Metamodel>

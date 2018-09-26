@@ -25,7 +25,6 @@ public class InformationLoss{
 		Transformation t = new Transformation();
 		String inputMetamodelPath = "resources/running_example/metamodels/KM3.ecore";
 		String inputModelPath = "resources/running_example/models/mutations/KM3/Class/KM3_name_set.xmi";
-//		String inputModelPath = "resources/running_example/models/mutations/KM3/Class/KM3_name_unset.xmi";
 		String atlTransformation = "resources/running_example/transformations/KM32XML.atl";
 		t.setATLTransformation(atlTransformation);
 		t.setInputMetamodel(inputMetamodelPath);

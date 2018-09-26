@@ -22,13 +22,14 @@ public class Test {
 	private static String baseResourcePath = "resources/running_example/";
 	private static String baseResultPath = "models/mutations/results/";
 	private static boolean PERFORM_TRANSFORMATIONS = false;
+	private static boolean PERFORM_INFORMATION_LOSS_CALCULATION = true;
 	
 	
 	
 	
 	public static void main(String[] args) throws IOException, MetaModelNotFoundException, ReferenceNonExistingException, ParserException {
-//		String modelInstance_seed = baseResourcePath + 	"models/Sample-km3/sample-km3.xmi";
-		String modelInstance_seed = baseResourcePath + 	"models/KM3_big_mutation.xmi";
+		String modelInstance_seed = baseResourcePath + 	"models/Sample-km3/sample-km3.xmi";
+//		String modelInstance_seed = baseResourcePath + 	"models/KM3_big_mutation.xmi";
 //		String modelInstance_seed = baseResourcePath + 	"models/mutations/KM3/KM3_complete.xmi";
 //		String modelInstance_seed = baseResourcePath + 	"models/KM3_seed.xmi";
 //		String modelInstance_seed = baseResourcePath + 	"models/KM3_graph.xmi";
@@ -82,7 +83,9 @@ public class Test {
 		System.out.println("KM3 -> EMF");
 		Transformation km32emf = RunningExample.getKM32EMF();
 		km32emf.setInputModel(modelInstance);
-		km32emf.setInformationLoss(InformationLoss.informationLoss(km32emf));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			km32emf.setInformationLoss(InformationLoss.informationLoss(km32emf));
+		}
 		String emfOuputModel = baseResourcePath + baseResultPath + "C1/EMF/out-EMF.xmi";
 		km32emf.setOutPath(emfOuputModel);
 		if(PERFORM_TRANSFORMATIONS) {
@@ -99,7 +102,9 @@ public class Test {
 		String emfModelInstance = baseResourcePath + "models/Sample.ecore";
 		Transformation emf2Java = RunningExample.getEMF2Java();
 		emf2Java.setInputModel(emfModelInstance);
-		emf2Java.setInformationLoss(InformationLoss.informationLoss(emf2Java));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			emf2Java.setInformationLoss(InformationLoss.informationLoss(emf2Java));
+		}
 		String javaOutputModel = baseResourcePath + baseResultPath + "C1/JavaSource/out-JavaSource.xmi";
 		emf2Java.setOutPath(javaOutputModel);
 //		if(PERFORM_TRANSFORMATIONS) {
@@ -121,7 +126,9 @@ public class Test {
 		if(PERFORM_TRANSFORMATIONS) {
 			perfomer.run(java2Table);
 		}
-		java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
+		}
 		informationLoss *= (float) java2Table.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight += (float) java2Table.getEdgeWeight();
@@ -138,7 +145,9 @@ public class Test {
 		if(PERFORM_TRANSFORMATIONS) {
 			perfomer.run(table2html);
 		}
-		table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
+		}
 		informationLoss *= (float) table2html.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight += (float) table2html.getEdgeWeight();
@@ -155,7 +164,9 @@ public class Test {
 		if(PERFORM_TRANSFORMATIONS) {
 			perfomer.run(html2xml);
 		}
-		html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
+		}
 		informationLoss *= (float) html2xml.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight += (float) html2xml.getEdgeWeight();
@@ -192,7 +203,9 @@ public class Test {
 		System.out.println("KM3 -> JavaSource");
 		Transformation km32Java = RunningExample.getKM32Java();
 		km32Java.setInputModel(modelInstance);
-		km32Java.setInformationLoss(InformationLoss.informationLoss(km32Java));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			km32Java.setInformationLoss(InformationLoss.informationLoss(km32Java));
+		}
 		String javaOutputModel2 = baseResourcePath + baseResultPath + "C2/JavaSource/out-JavaSource.xmi";
 		km32Java.setOutPath(javaOutputModel2);
 		if(PERFORM_TRANSFORMATIONS) {
@@ -214,7 +227,9 @@ public class Test {
 		if(PERFORM_TRANSFORMATIONS) {
 			perfomer.run(java2Table);
 		}
-		java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			java2Table.setInformationLoss(InformationLoss.informationLoss(java2Table));
+		}
 		informationLoss *= (float) java2Table.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight += (float) java2Table.getEdgeWeight();
@@ -231,7 +246,9 @@ public class Test {
 		if(PERFORM_TRANSFORMATIONS) {
 			perfomer.run(table2html);
 		}
-		table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			table2html.setInformationLoss(InformationLoss.informationLoss(table2html));
+		}
 		informationLoss *= (float) table2html.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight += (float) table2html.getEdgeWeight();
@@ -248,7 +265,9 @@ public class Test {
 		if(PERFORM_TRANSFORMATIONS) {
 			perfomer.run(html2xml);
 		}
-		html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			html2xml.setInformationLoss(InformationLoss.informationLoss(html2xml));
+		}
 		informationLoss *= (float) html2xml.getInformationLoss();
 		System.out.println("Partial IL: "+informationLoss);
 		edgeWeight += (float) html2xml.getEdgeWeight();
@@ -281,7 +300,9 @@ public class Test {
 		System.out.println("KM3 -> XML");
 		Transformation km32xml = RunningExample.getKM32XML();
 		km32xml.setInputModel(modelInstance);
-		km32xml.setInformationLoss(InformationLoss.informationLoss(km32xml));
+		if(PERFORM_INFORMATION_LOSS_CALCULATION) {
+			km32xml.setInformationLoss(InformationLoss.informationLoss(km32xml));
+		}
 		String xmlOuputModel = baseResourcePath + baseResultPath + "C3/XML/out-XML.xmi";
 		km32xml.setOutPath(xmlOuputModel);
 		if(PERFORM_TRANSFORMATIONS) {

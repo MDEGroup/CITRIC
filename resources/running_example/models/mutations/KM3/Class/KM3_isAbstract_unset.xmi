@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
-<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_aLdgN5IHwl">
-  <contents location="RFeDt" name="package_jMc1t3e1by" package="//@contents.0">
-    <contents xsi:type="km3:Class" name="class_hnvkE3uzG0" package="//@contents.0"/>
+<km3:Metamodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:km3="http://www.eclipse.org/gmt/2005/KM3" location="Metamodel_PlDWj7Q2Fm">
+  <contents location="VulSZ" name="package_Yo8QVyIRk1" package="//@contents.0">
+    <contents xsi:type="km3:Class" name="class_8H07FWLFgT" package="//@contents.0"/>
   </contents>
 </km3:Metamodel>

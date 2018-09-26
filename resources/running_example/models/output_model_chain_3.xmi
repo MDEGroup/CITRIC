@@ -2,44 +2,61 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="XML">
   <Root name="Metamodel"/>
   <Element name="Package">
-    <children xsi:type="Attribute" name="name" value="KM3 Package"/>
+    <children xsi:type="Attribute" name="name" value="Graph Package Content"/>
   </Element>
-  <Element name="Class" value="Root Class">
-    <children xsi:type="Attribute" name="name" value="Root Class"/>
-    <children xsi:type="Attribute" name="isAbstract" value="false"/>
+  <Element name="Package">
+    <children xsi:type="Attribute" name="name" value="Operations"/>
+  </Element>
+  <Element name="Class" value="Graph">
+    <children xsi:type="Attribute" name="name" value="Graph"/>
+    <children xsi:type="Attribute" name="isAbstract" value="true"/>
     <children xsi:type="Attribute" name="supertypes" value=""/>
   </Element>
-  <Element name="Class" value="A">
-    <children xsi:type="Attribute" name="name" value="A"/>
+  <Element name="Class" value="Node">
+    <children xsi:type="Attribute" name="name" value="Node"/>
     <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value=""/>
+    <children xsi:type="Attribute" name="supertypes" value="Graph Package Content::Graph"/>
   </Element>
-  <Element name="Class" value="B">
-    <children xsi:type="Attribute" name="name" value="B"/>
+  <Element name="Class" value="Edge">
+    <children xsi:type="Attribute" name="name" value="Edge"/>
     <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value=""/>
-  </Element>
-  <Element name="Class" value="C">
-    <children xsi:type="Attribute" name="name" value="C"/>
-    <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value=""/>
-  </Element>
-  <Element name="Class" value="D">
-    <children xsi:type="Attribute" name="name" value="D"/>
-    <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value=""/>
-  </Element>
-  <Element name="Class" value="E">
-    <children xsi:type="Attribute" name="name" value="E"/>
-    <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value=""/>
-  </Element>
-  <Element name="Class" value="F">
-    <children xsi:type="Attribute" name="name" value="F"/>
-    <children xsi:type="Attribute" name="isAbstract" value="false"/>
-    <children xsi:type="Attribute" name="supertypes" value=""/>
+    <children xsi:type="Attribute" name="supertypes" value="Graph Package Content::Graph"/>
   </Element>
   <Element name="DataType" value="String">
     <children xsi:type="Attribute" name="name" value="String"/>
+  </Element>
+  <Element name="Attribute" value="name">
+    <children xsi:type="Attribute" name="name" value="name"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="Graph Package Content::String"/>
+  </Element>
+  <Element name="Attribute" value="name">
+    <children xsi:type="Attribute" name="name" value="name"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isUnique" value="false"/>
+    <children xsi:type="Attribute" name="type" value="Graph Package Content::String"/>
+  </Element>
+  <Element name="Reference" value="sourceNode">
+    <children xsi:type="Attribute" name="name" value="sourceNode"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="Graph Package Content::Edge"/>
+    <children xsi:type="Attribute" name="opposite" value=""/>
+  </Element>
+  <Element name="Reference" value="targetNode">
+    <children xsi:type="Attribute" name="name" value="targetNode"/>
+    <children xsi:type="Attribute" name="lower" value="1"/>
+    <children xsi:type="Attribute" name="upper" value="1"/>
+    <children xsi:type="Attribute" name="isOrdered" value="false"/>
+    <children xsi:type="Attribute" name="isContainer" value="false"/>
+    <children xsi:type="Attribute" name="type" value="Graph Package Content::Edge"/>
+    <children xsi:type="Attribute" name="opposite" value=""/>
   </Element>
 </xmi:XMI>

@@ -179,7 +179,7 @@ public class RunningExample {
 		chain1.setTransformations(chain1Ts);
 		chain1.setResultModel(outPath_chain_1);
 		chain1.setCoverage(ChainController.calculateChainCoverage(chain1));
-		chain1.setInformationLoss(ChainController.calculateChainInformationLoss(chain1));
+//		chain1.setInformationLoss(ChainController.calculateChainInformationLoss(chain1));
 		return chain1;
 	}
 	
@@ -198,7 +198,7 @@ public class RunningExample {
 		chain2.setTransformations(chain2Ts);
 		chain2.setResultModel(outPath_chain_2);
 		chain2.setCoverage(ChainController.calculateChainCoverage(chain2));
-		chain2.setInformationLoss(ChainController.calculateChainInformationLoss(chain2));
+//		chain2.setInformationLoss(ChainController.calculateChainInformationLoss(chain2));
 		return chain2;
 	}
 	
@@ -213,7 +213,7 @@ public class RunningExample {
 		chain3.setTransformations(chain3Ts);
 		chain3.setResultModel(outPath_chain_3);
 		chain3.setCoverage(ChainController.calculateChainCoverage(chain3));
-		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
+//		chain3.setInformationLoss(ChainController.calculateChainInformationLoss(chain3));
 		return chain3;
 	}
 	
@@ -267,20 +267,20 @@ public class RunningExample {
 		List<String> inputModels = new ArrayList<String>();
 		inputModels.add(inputModel);
 		
-		testRunningExampleChain3(inputModels);
+		testRunningExampleChain1(inputModels);
 		
-//		for (String string : inputModels) {
-//			Chain chain = RunningExample.getChain3(string);
-//			String tmpInputModel = chain.getInputModel();
-//			for (Transformation t : chain.getTransformations()) {
-//				t.setInputModel(tmpInputModel);
-//				t.setOutPath(chain.getResultModel());
-//				System.out.println("Edge Weight :"+t.getEdgeWeight());
-//				tmpInputModel = chain.getResultModel();
-//			}
-//			System.out.println((float)chain.getInformationLoss());
-//			
-//		}
+		for (String string : inputModels) {
+			Chain chain = RunningExample.getChain3(string);
+			String tmpInputModel = chain.getInputModel();
+			for (Transformation t : chain.getTransformations()) {
+				t.setInputModel(tmpInputModel);
+				t.setOutPath(chain.getResultModel());
+				System.out.println("Edge Weight :"+t.getEdgeWeight());
+				tmpInputModel = chain.getResultModel();
+			}
+			System.out.println((float)chain.getInformationLoss());
+			
+		}
 	}
 	
 }

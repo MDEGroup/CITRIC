@@ -1,5 +1,7 @@
 package it.univaq.disim.common.graph;
 
+
+
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
@@ -38,6 +40,4 @@ public class Graph {
         }
         return new LinkedList<String>(adjacent);
     }
-    
-    
 }
