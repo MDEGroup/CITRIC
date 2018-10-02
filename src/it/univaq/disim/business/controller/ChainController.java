@@ -106,7 +106,6 @@ public class ChainController {
 
 
 	private static Chain dijkstra(List<Chain> list) {
-
 		
 		 ArrayList<Vertex> vertexSet = new ArrayList<>();
 		 HashMap<String, Vertex> parent = new HashMap<String, Vertex>();

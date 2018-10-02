@@ -41,19 +41,29 @@ public class Demo {
 		/*
 		 * Perform DEMO Chain Discovery into the provided resource folder
 		 */
-		demoChainsDiscovery(resourceFolder, inputMetamodelPath, 
-				outputMetamodelPath, inputModelPath);
+//		demoChainsDiscovery(resourceFolder, inputMetamodelPath, outputMetamodelPath, inputModelPath);
+//		
+//		ChainDetector.run(inputModelPath);
 		
-		ChainDetector.run(inputModelPath);
+		Graph graph = graphRepresentation(resourceFolder);
+		
+		List<Chain> unrankedChainList = chainsDiscoverer(graph, inputMetamodelPath, outputMetamodelPath, inputModelPath);
+		
+		System.out.println(chainList.size());
+		
+		printChains(chainList);
+		
+		List<Chain> rankedChainList = chainRanker(unrankedChainList);
+		
+		Chain optimalChain = optimalChainSelector(rankedChainList);
+		
+		chainExecution(optimalChain);
 	}
 
 	
 	
 	
-	
-	private static List<Chain> demoChainsDiscovery(String resourceFolder, 
-			String inputMetamodelPath, String outputMetamodelPath, String inputModelPath) {
-
+	private static Graph graphRepresentation(String resourceFolder) {
 		System.out.println("----------------------------------");
 		System.out.println("Navigate Resource Folder...");
 		System.out.println("----------------------------------");
@@ -65,16 +75,77 @@ public class Demo {
 			e.printStackTrace();
 		}
 
-		String inputMetamodelName = Utils.getNameFromPathWithoutExtension(inputMetamodelPath);
-		String outputMetamodelName = Utils.getNameFromPathWithoutExtension(outputMetamodelPath);
-
 		System.out.println("----------------------------------");
 		System.out.println("Graph creation...");
 		System.out.println("----------------------------------");
-		createGraph(inputMetamodelName, outputMetamodelName);
+		
+		// this graph is directional
+		Graph graph = new Graph();
 
+		for (Transformation t : transformationList) {
+			graph.addEdge(t.getInTag(), t.getOutTag());
+		}
+		return graph;
+	}
+	
+	
+	
+	private static List<Chain> chainsDiscoverer(Graph graph, String inputMetamodelPath, String outputMetamodelPath, String inputModelPath) {
+		
+		String inputMetamodelName = Utils.getNameFromPathWithoutExtension(inputMetamodelPath);
+		String outputMetamodelName = Utils.getNameFromPathWithoutExtension(outputMetamodelPath);
+		
+		LinkedList<String> visited = new LinkedList();
+		visited.add(inputMetamodelName);
+		detectAllChainsInDepthFirst(graph, visited, outputMetamodelName);
+		
 		return null;
 	}
+	
+	
+	
+	private static List<Chain> chainRanker(List<Chain> unrankedChainList){
+		
+		
+		return null;
+	}
+	
+	private static Chain optimalChainSelector(List<Chain> rankedChainList) {
+		
+		
+		return null;
+	}
+	
+	private static void chainExecution(Chain bestChain) {
+		
+	}
+	
+	
+	
+//	private static List<Chain> demoChainsDiscovery(String resourceFolder, 
+//			String inputMetamodelPath, String outputMetamodelPath, String inputModelPath) {
+//
+//		System.out.println("----------------------------------");
+//		System.out.println("Navigate Resource Folder...");
+//		System.out.println("----------------------------------");
+//		Path resourceFolderPath = Paths.get(resourceFolder);
+//		try {
+//			navigateRootFolder(resourceFolderPath);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//
+//		String inputMetamodelName = Utils.getNameFromPathWithoutExtension(inputMetamodelPath);
+//		String outputMetamodelName = Utils.getNameFromPathWithoutExtension(outputMetamodelPath);
+//
+//		System.out.println("----------------------------------");
+//		System.out.println("Graph creation...");
+//		System.out.println("----------------------------------");
+//		createGraph(inputMetamodelName, outputMetamodelName);
+//
+//		return null;
+//	}
 
 	static void navigateRootFolder(Path path) throws IOException {
 		if (Files.isDirectory(path)) {
@@ -89,24 +160,8 @@ public class Demo {
 			checkArtifactType(path);
 		}
 	}
-
-	private static void createGraph(String startNode, String endNode) {
-
-		// this graph is directional
-		Graph graph = new Graph();
-
-		for (Transformation t : transformationList) {
-			graph.addEdge(t.getInTag(), t.getOutTag());
-		}
-
-		LinkedList<String> visited = new LinkedList();
-		visited.add(startNode);
-		detectAllChainsInDepthFirst(graph, visited, endNode);
-
-		printChains();
-
-	}
-
+	
+	
 	private static void checkArtifactType(Path path) {
 
 		String artifactPath = path.toString();
@@ -136,6 +191,27 @@ public class Demo {
 		}
 
 	}
+	
+	
+
+//	private static void createGraph(String startNode, String endNode) {
+//
+//		// this graph is directional
+//		Graph graph = new Graph();
+//
+//		for (Transformation t : transformationList) {
+//			graph.addEdge(t.getInTag(), t.getOutTag());
+//		}
+//
+//		LinkedList<String> visited = new LinkedList();
+//		visited.add(startNode);
+//		detectAllChainsInDepthFirst(graph, visited, endNode);
+//
+//		printChains();
+//
+//	}
+
+
 
 	private static void detectAllChainsInDepthFirst(Graph graph, LinkedList<String> visited, String END) {
 		LinkedList<String> nodes = graph.adjacentNodes(visited.getLast());
@@ -168,10 +244,11 @@ public class Demo {
 		}
 		chainList.add(chain);
 	}
+	
 
-	private static void printChains() {
+	private static void printChains(List<List<String>> chainListToPrint) {
 		int i = 1;
-		for (List<String> chain : chainList) {
+		for (List<String> chain : chainListToPrint) {
 			System.out.print("Chain " + i++ + ": ");
 			int count = chain.size();
 			for (String string : chain) {
