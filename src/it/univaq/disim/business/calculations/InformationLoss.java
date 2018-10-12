@@ -10,7 +10,6 @@ import it.univaq.disim.business.datamodel.ModelStructuralFeature;
 import it.univaq.disim.business.datamodel.RuleBinding;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
-import it.univaq.disim.business.manager.KM3Manager;
 import it.univaq.disim.business.manager.MetamodelManager;
 import it.univaq.disim.business.manager.ModelManager;
 import it.univaq.disim.common.utils.Utils;

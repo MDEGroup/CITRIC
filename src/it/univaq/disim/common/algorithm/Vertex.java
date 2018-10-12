@@ -1,14 +1,22 @@
 package it.univaq.disim.common.algorithm;
 
+import java.util.List;
+
+import org.eclipse.emf.ecore.EPackage;
+
 public class Vertex {
 	final private String id;
 	final private String name;
+	final private List<EPackage> metamodel;
 	
 	
-	public Vertex(String id, String name) {
+	public Vertex(String id, String name, List<EPackage> metamodel) {
 		this.id = id;
 		this.name = name;
+		this.metamodel = metamodel;
 	}
+	
+	
 	public String getId() {
 		return id;
 	}
@@ -17,6 +25,11 @@ public class Vertex {
 		return name;
 	}
 	
+	public List<EPackage> getMetamodel() {
+		return metamodel;
+	}
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

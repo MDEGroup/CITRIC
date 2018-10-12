@@ -77,7 +77,7 @@ public class MetricCalculation{
 	
 
 	
-	private static boolean checkIfTransformation(Path file) {
+	public static boolean checkIfTransformation(Path file) {
 		boolean result = false;
 		for (String ext : ATL_TRANSFORMATION_EXT) {
 			if (file.toString().toLowerCase().endsWith(ext)) {

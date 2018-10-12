@@ -4,11 +4,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.junit.Test;
-
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
-
 public class TestDijkstraAlgorithm2 {
 
 	
@@ -20,12 +15,12 @@ public class TestDijkstraAlgorithm2 {
 //			nodes.add(location);
 //		}
 
-		Vertex KM3 = new Vertex("Vertex_KM3", "KM3");
-		Vertex EMF = new Vertex("Vertex_EMF", "EMF");
-		Vertex JavaSource = new Vertex("Vertex_JavaSource", "JavaSource");
-		Vertex Table = new Vertex("Vertex_Table", "Table");
-		Vertex HTML = new Vertex("Vertex_HTML", "HTML");
-		Vertex XML = new Vertex("Vertex_XML", "XML");
+		Vertex KM3 = new Vertex("Vertex_KM3", "KM3", null);
+		Vertex EMF = new Vertex("Vertex_EMF", "EMF", null);
+		Vertex JavaSource = new Vertex("Vertex_JavaSource", "JavaSource", null);
+		Vertex Table = new Vertex("Vertex_Table", "Table", null);
+		Vertex HTML = new Vertex("Vertex_HTML", "HTML", null);
+		Vertex XML = new Vertex("Vertex_XML", "XML", null);
 		
 		nodes.add(KM3);
 		nodes.add(EMF);

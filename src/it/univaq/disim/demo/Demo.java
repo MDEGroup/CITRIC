@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import it.univaq.disim.business.calculations.MetricCalculation;
 import it.univaq.disim.business.datamodel.Chain;
 import it.univaq.disim.business.datamodel.Transformation;
 import it.univaq.disim.business.manager.ATLTransformationManager;
@@ -46,6 +47,7 @@ public class Demo {
 //		ChainDetector.run(inputModelPath);
 		
 		Graph graph = graphRepresentation(resourceFolder);
+		
 		
 		List<Chain> unrankedChainList = chainsDiscoverer(graph, inputMetamodelPath, outputMetamodelPath, inputModelPath);
 		
@@ -167,7 +169,7 @@ public class Demo {
 		String artifactPath = path.toString();
 		System.out.println(artifactPath);
 
-		if (Utils.getPathExtension(artifactPath).equalsIgnoreCase("atl")) {
+		if (MetricCalculation.checkIfTransformation(path)) {
 			ATLTransformationManager manager = new ATLTransformationManager(artifactPath);
 
 			Transformation t = new Transformation();
