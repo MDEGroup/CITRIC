@@ -21,7 +21,7 @@ public class ChainDetector {
 
 	private static String baseResourcePath = "resources/running_example/";
 	private static String baseResultPath = "models/mutations/results/";
-	private static boolean PERFORM_TRANSFORMATIONS = true;
+	private static boolean PERFORM_TRANSFORMATIONS = false;
 	private static boolean PERFORM_INFORMATION_LOSS_CALCULATION = true;
 
 	
