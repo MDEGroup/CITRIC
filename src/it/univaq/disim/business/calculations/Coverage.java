@@ -18,8 +18,8 @@ public class Coverage{
 
 	public static void main(String[] args) {
 
-		String atl = "resources/running_example/transformations/emf2java.atl";
-		String inputMM = "resources/running_example/metamodels/Ecore.ecore";
+		String atl = "resources/running_example/transformations/KM32XML.atl";
+		String inputMM = "resources/running_example/metamodels/KM3.ecore";
 
 		Transformation t = new Transformation();
 		t.setATLTransformation(atl);
@@ -64,7 +64,7 @@ public class Coverage{
 									((float)
 											((float) nRules / nMetaclassesIntoInputMetamodel) +
 											((float) nTransformationBindings / nStructuralFeaturesIntoInputMetamodel)
-									) * 0.5);
+									) * 0.5) ;
 			}
 			
 			if(VISUALIZE_CALCULATIONS) {
@@ -79,7 +79,7 @@ public class Coverage{
 			// e.printStackTrace();
 		}
 
-		System.out.println("Cov(" + Utils.getNameFromPath(transformation.getInputMetamodel()) + ", "+transformation.getName() +") = " + Utils.roundFloatValues(coverage, 2));
+		System.out.println("Cov(" + Utils.getNameFromPath(transformation.getInputMetamodel()) + ", "+transformation.getName() +") = " + Utils.roundFloatValues(coverage*(float)0.5, 2));
 		return coverage;
 	}
 	

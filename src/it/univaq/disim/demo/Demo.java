@@ -103,7 +103,7 @@ public class Demo {
 		visited.add(startNode);
 		detectAllChainsInDepthFirst(graph, visited, endNode);
 
-		printChains();
+//		printChains();
 
 	}
 

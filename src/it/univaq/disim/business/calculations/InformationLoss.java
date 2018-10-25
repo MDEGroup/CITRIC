@@ -20,6 +20,11 @@ public class InformationLoss{
 	private static boolean PERTURBATION = false;
 	private static float PERTURBATION_VALUE = (float) 0.1;
 	
+	
+	
+	
+
+	
 	public static void main(String[] args) {
 		Transformation t = new Transformation();
 		String inputMetamodelPath = "resources/running_example/metamodels/KM3.ecore";
@@ -95,7 +100,7 @@ public class InformationLoss{
 			result = 2;
 		}
 		
-		System.out.println("IL("+Utils.getNameFromPath(transformation.getInputModel())+", "+Utils.getNameFromPath(transformation.getATLTransformation())+") = "+Utils.roundFloatValues(result, 2));
+		System.out.println("IL("+Utils.getNameFromPath(transformation.getATLTransformation())+", "+Utils.getNameFromPath(transformation.getInputModel())+", "+Utils.getNameFromPath(transformation.getInputMetamodel())+") = "+Utils.roundFloatValues(result, 2));
 		return result;
 	}
 	
